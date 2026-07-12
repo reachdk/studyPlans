@@ -1,0 +1,195 @@
+# studyPlans configuration
+
+generation:
+  common_instruction: |
+    Generate the requested artifact using only the selected approved sources.
+
+    Treat the requirements below as acceptance criteria for the completed
+    artifact. They do not prescribe NotebookLM's internal drafting sequence,
+    generation timing or delivery mechanics. For a native Studio artifact,
+    generate it asynchronously in the selected native format; do not replace
+    generation with a contract-feasibility response.
+
+    Source rules:
+    - Use the approved chapter pack as the generation source.
+    - If the official NCERT chapter is also selected, treat it as canonical
+      when it conflicts with the chapter pack.
+    - Do not use web research, prior knowledge, unsupported facts or unlabeled enrichment.
+    - Preserve NCERT terminology, equations, units and instructional sequence.
+
+    Coverage rules:
+    - When the artifact instruction names a chapter-pack section, every entry
+      in that section is required.
+    - When an assessment domain names multiple topics, cover every named topic;
+      covering one topic does not satisfy the whole domain.
+    - A coverage table may cite an item only for content that item explicitly
+      tests; one named topic cannot serve as evidence for another.
+    - State each requirement explicitly; titles and implications do not count.
+    - Examples and secondary detail must not displace required entries.
+    - Preserve qualifiers including direction, sign, zero, average, constant
+      and validity conditions.
+
+    Accuracy rules:
+    - Do not strengthen a relationship or name its trend unless the source
+      explicitly states or mathematically establishes it.
+    - Do not introduce an unmentioned physical quantity, mechanism or causal
+      explanation to justify a source relationship. If the source defers an
+      explanation, report only the stated observation.
+    - Do not turn a developing, conditional or limited technology claim into
+      an absolute claim such as instant, guaranteed or complete.
+    - Describe a mathematical trend only from its stated formula. Never replace
+      a squared relationship with "exponential" or infer one trend rule for
+      other quantities.
+    - In visuals, use only source-provided values and dimensions. Do not infer
+      or invent an unlabeled measurement.
+    - Diagram geometry, labels and arrows must agree. A zero quantity must not
+      be drawn as a non-zero segment, and one motion sequence must use one
+      consistent direction.
+    - In signed assessment items, declare one positive direction and use it in
+      the question, working and answer.
+    - A graph-plotting task must require the learner to plot the graph. Asking
+      only for plotting steps does not satisfy a graph-plotting requirement.
+    - State enough direction and value conditions for exactly one defensible answer.
+
+    The final artifact must have explicit coverage, source-supported claims and
+    complete non-empty required fields. Wherever equations, calculations,
+    units, signs or answer keys occur, they must be correct. Counts and duration
+    explicitly described as directional are targets; all other artifact
+    requirements are mandatory.
+
+artifacts:
+  diagram_pack:
+    enabled: true
+    instruction: |
+      Create a structured Markdown diagram pack from the Required Visuals
+      section of the approved chapter pack.
+
+      Return only the Required Visuals entries in source order, with no
+      introduction, conclusion or global rendering rules. For each entry,
+      reproduce its ID and every clause without summarising: visual name,
+      purpose and required content, and accuracy constraints. Then add only a
+      preferred visual type and placement grounded in the matching chapter
+      section.
+
+      Use every ID unchanged and exactly once. Preserve formula names, qualifiers
+      and figure or table references. Do not infer causal explanations or add
+      unsupported content.
+
+  presentation:
+    enabled: true
+    instruction: |
+      Create a native NotebookLM teaching presentation in the chapter's original
+      instructional sequence. Target 15-20 slides, but treat the slide count as
+      directional because NotebookLM controls it dynamically.
+
+      State every Core Concept Checklist item explicitly and include every
+      presentation-relevant Required Visuals item, grouping related items on one
+      slide where necessary.
+
+      Include representative activities, applications, misconceptions and a
+      revision summary. Verify all labels, equations and relationships.
+      Never omit content or reduce quality or accuracy to meet the slide target.
+
+  mind_map:
+    enabled: true
+    instruction: |
+      Create a four-level concept map using the chapter title as the root and
+      its major sections as first-level branches.
+
+      Represent every Core Concept Checklist item as its own leaf using the
+      checklist wording verbatim. Do not shorten, paraphrase, merge or split
+      checklist items, and do not rely on a parent branch to supply words or
+      qualifiers omitted from a leaf. Include related examples, activities,
+      applications and misconceptions only as additional leaves.
+
+      Do not add unsupported branches.
+
+  audio:
+    enabled: true
+    instruction: |
+      Create a single-narrator, text-to-speech-ready Markdown audio script in
+      the chapter's original instructional sequence. Target 1,800-2,100 spoken
+      words directionally for an approximately 12-15 minute recording.
+
+      State every Core Concept Checklist item explicitly and concisely, with
+      balanced attention across chapter sections.
+      Use only source-supported examples and applications.
+      Use the Core Concept Checklist as the complete outline. Except for
+      content explicitly required by a checklist item, omit opening hooks,
+      historical sidebars, Ready to Go Beyond, Journey Beyond and closing
+      thought experiments.
+      Do not add external enrichment, extended analogies or conversational filler.
+      Return only the narration with short spoken section headings; do not add
+      dialogue labels, citations, production notes or unstated explanations.
+      Never omit content or reduce quality or accuracy to meet the word target.
+
+  flashcards:
+    enabled: true
+    instruction: |
+      Create exactly 30 unique flashcards distributed across the Core Concept
+      Checklist, relationships, processes, applications and misconceptions.
+
+      Start with one card for each Core Concept Checklist item in source order.
+      Map checklist items to cards one-to-one: do not merge or split items, and
+      state every clause and qualifier from that checklist item on its card.
+      Only then use the remaining cards for relationships, processes,
+      applications and misconceptions without duplicating a tested idea.
+
+      Every front and back must be complete and non-empty.
+
+  quiz:
+    enabled: true
+    instruction: |
+      Create exactly 25 mixed-difficulty native NotebookLM quiz questions using
+      the chapter's Assessment Blueprint.
+
+      Start with one question for each Core Concept Checklist item in source
+      order. Do not merge or split checklist items; each question must test
+      every clause and qualifier in its item rather than merely mention its
+      topic. For each checklist question, the stem and correct option together
+      must state every clause and qualifier using the source's exact subject,
+      causal direction and physical quantity. Do not distribute required
+      clauses among distractors or substitute a related quantity. Use the
+      remaining questions only for Assessment Blueprint and Minimum Balanced
+      Assessment requirements not already met. Do not assess authoritative
+      enrichment or optional historical context.
+
+      Include every named topic within every assessment domain. Use the
+      blueprint weights directionally. Include every item type, count and
+      distinct subcategory named by the Minimum Balanced Assessment. One listed
+      subcategory does not satisfy another.
+
+      When the Minimum Balanced Assessment requires a constructed or
+      free-response task that the native quiz cannot support, test the same
+      knowledge through an unambiguous sequencing, selection or
+      error-identification question rather than omit it.
+      Every question must be fully specified and have exactly one defensible answer.
+      Every solution and answer-letter mapping must be correct.
+
+  paper_standard:
+    enabled: true
+    instruction: |
+      Create a 40-mark school-style paper using the chapter's Assessment Blueprint.
+
+      Cover every assessment domain and include every item type required by the
+      Minimum Balanced Assessment. Any graph-plotting task must require the
+      student to draw the graph with labeled axes, units and a suitable scale,
+      not merely describe how to plot it. Also include source-appropriate
+      objective, explanation, interpretation, application and integrative questions.
+
+      Every answer, unit, assumption, option letter and mark allocation must be
+      correct, and the marks must total 40.
+
+  paper_diagnostic:
+    enabled: true
+    instruction: |
+      Create a 40-mark application and misconception diagnostic paper using
+      the chapter's Assessment Blueprint and Common Misconceptions sections.
+
+      Cover every high-priority misconception, every assessment domain and every
+      item type required by the Minimum Balanced Assessment. Any graph-plotting
+      task must require the student to draw the graph, not describe plotting steps.
+      Every answer must be correct and the marks must total exactly 40.
+
+study_plans:
+  output_dir: output
