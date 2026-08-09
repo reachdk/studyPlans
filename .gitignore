@@ -1,0 +1,6 @@
+.DS_Store
+.notebooklm-profile/
+.notebooklm-comet-profile/
+.notebooklm-chrome-profile/
+.venv/
+__pycache__/
