@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+from hashlib import sha256
 import re
 import shutil
 import subprocess
@@ -593,8 +594,70 @@ def download_and_split_assessments(page, masters: list[str]) -> set[Path]:
     return outputs
 
 
+def studio_split_prompt(masters: list[str]) -> tuple[str, set[str]]:
+    instructions = []
+    outputs = set()
+    for master in masters:
+        question_paper, answer_key = assessment_output_paths(master)
+        outputs.update((question_paper.name, answer_key.name))
+        instructions.append(
+            f'- Split "{master}" into "{question_paper.name}" containing every page before '
+            f'the ANSWER KEY AND MARKING SCHEME heading and "{answer_key.name}" starting with that page.'
+        )
+    prompt = """Create exactly the PDF artifacts listed below in Studio from the completed master PDFs. Copy the existing pages verbatim; do not regenerate, summarise, correct, reorder, or reformat them. Do not create any other artifact.
+
+""" + "\n".join(instructions) + f"\n\n{STUDIO_EXECUTE_NOW}"
+    return prompt, outputs
+
+
+def pdf_signature(path: Path) -> list[tuple[float, float, str, str]]:
+    reader = PdfReader(path)
+    return [
+        (
+            round(float(page.mediabox.width), 2),
+            round(float(page.mediabox.height), 2),
+            re.sub(r"\s+", " ", page.extract_text() or "").strip(),
+            sha256(contents.get_data() if (contents := page.get_contents()) is not None else b"").hexdigest(),
+        )
+        for page in reader.pages
+    ]
+
+
+def try_studio_split_assessments(
+    page, masters: list[str], local_outputs: set[Path]
+) -> bool:
+    prompt, expected = studio_split_prompt(masters)
+    before = artifact_title_counts(page)
+    local_by_name = {path.name: path for path in local_outputs}
+    try:
+        existing = sorted(expected & before.keys())
+        if existing:
+            raise RuntimeError(f"Studio split outputs already exist: {existing}")
+        send_chat_instruction(page, prompt, "Experimental Studio assessment split")
+        wait_for_artifacts(page, sum(before.values()) + len(expected))
+        created = artifact_title_counts(page) - before
+        if created != Counter(expected):
+            raise RuntimeError(f"Studio created {dict(created)} instead of {sorted(expected)}")
+
+        temporary_root = ROOT / "tmp" / "pdfs"
+        temporary_root.mkdir(parents=True, exist_ok=True)
+        with TemporaryDirectory(prefix="studio-split-", dir=temporary_root) as directory:
+            for title in sorted(expected):
+                downloaded = Path(directory) / title
+                download_artifact(page, title, downloaded)
+                if pdf_signature(downloaded) != pdf_signature(local_by_name[title]):
+                    raise RuntimeError(f"{title} differs from the local lossless split")
+    except Exception as error:
+        print(f"Studio split trial failed; keeping local PDFs: {error}")
+        return False
+    print("Studio split trial passed: all four PDFs match the local splits")
+    return True
+
+
 def send_chat_instruction(page, prompt: str, label: str) -> None:
     print(f"Requesting {label}...")
+    responding = page.get_by_role("button", name="Stop generating")
+    responding.wait_for(state="hidden", timeout=1_800_000)
     query = page.get_by_role("textbox", name="Query box")
     deadline = time.monotonic() + 300
     while not query.is_editable():
@@ -603,7 +666,6 @@ def send_chat_instruction(page, prompt: str, label: str) -> None:
         page.wait_for_timeout(1_000)
     query.fill(prompt)
     page.get_by_role("button", name="Submit").last.click()
-    responding = page.get_by_role("button", name="Stop generating")
     responding.wait_for(state="visible", timeout=30_000)
     responding.wait_for(state="hidden", timeout=1_800_000)
     print(f"{label} request accepted")
@@ -706,7 +768,7 @@ def launch_context(playwright, profile_name: str):
     )
 
 
-def run_browser(stream: str, paths: list[Path]) -> str:
+def run_browser(stream: str, paths: list[Path], try_studio_split: bool = False) -> str:
     stream_code, _, display_name = stream_details(stream)
     is_mathematics = stream_code == "MATH"
     from playwright.sync_api import expect, sync_playwright
@@ -757,7 +819,9 @@ def run_browser(stream: str, paths: list[Path]) -> str:
             ]
             for (_, prompt, _), master in zip(jobs[3:], masters):
                 artifacts = create_assessment_master(page, prompt, master, artifacts)
-            download_and_split_assessments(page, masters)
+            local_outputs = download_and_split_assessments(page, masters)
+            if try_studio_split:
+                try_studio_split_assessments(page, masters, local_outputs)
         elif stream_code == "ENG":
             for path in paths:
                 select_sources(page, [path.name], filenames)
@@ -782,7 +846,9 @@ def run_browser(stream: str, paths: list[Path]) -> str:
             ]
             for (_, prompt, _), master in zip(jobs[2:], masters):
                 artifacts = create_assessment_master(page, prompt, master, artifacts)
-            download_and_split_assessments(page, masters)
+            local_outputs = download_and_split_assessments(page, masters)
+            if try_studio_split:
+                try_studio_split_assessments(page, masters, local_outputs)
         else:
             presentation_prompt = PRESENTATION.format(subject=display_name)
             for path in paths:
@@ -838,12 +904,18 @@ def main() -> int:
     if sys.argv[1:] == ["--self-test"]:
         self_test()
         return 0
+    if sys.argv[1:] not in ([], ["--split"]):
+        print("Usage: notebooklm_batch.py [--self-test|--split]", file=sys.stderr)
+        return 2
+    try_studio_split = sys.argv[1:] == ["--split"]
 
     stream = input("Stream code (PHY/CHEM/BIO/HIST/GEO/ECO/POL/MATH/ENG): ").strip()
     try:
         numbers = parse_chapters(input("Chapters (for example 4,6-7): "))
         stream_code, _, display_name = stream_details(stream)
         paths = resolve_chapters(stream_code, numbers)
+        if try_studio_split and stream_code not in {"MATH", "ENG"}:
+            raise ValueError("--split is supported only for MATH and ENG")
     except (TypeError, ValueError) as error:
         print(f"Error: {error}", file=sys.stderr)
         return 2
@@ -856,7 +928,7 @@ def main() -> int:
         print("Cancelled")
         return 0
 
-    run_browser(stream_code, paths)
+    run_browser(stream_code, paths, try_studio_split)
     return 0
 
 

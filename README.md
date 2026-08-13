@@ -56,6 +56,14 @@ Download the current local chapter catalogue if it is not already present:
 .venv/bin/python notebooklm_batch.py
 ```
 
+To run the optional one-shot Studio split comparison for Mathematics or English, use:
+
+```bash
+.venv/bin/python notebooklm_batch.py --split
+```
+
+The normal local splits are created first. A failed or mismatched Studio trial is reported without replacing them.
+
 Example input:
 
 ```text

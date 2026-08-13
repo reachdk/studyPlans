@@ -6,6 +6,7 @@ from tempfile import TemporaryDirectory
 import json
 
 import notebooklm_batch as app
+from pypdf.generic import DecodedStreamObject
 
 
 class Checkbox:
@@ -214,6 +215,52 @@ class NotebookLMBatchTests(unittest.TestCase):
             self.assertEqual(questions.name, "G9-MATH-C01_C02-Diag-QP.pdf")
             self.assertEqual(answers.name, "G9-MATH-C01_C02-Diag-Key.pdf")
 
+    def test_experimental_split_names_both_outputs_for_both_masters(self):
+        prompt, outputs = app.studio_split_prompt([
+            "G9-MATH-C01_C02-Diag-Master.pdf",
+            "G9-MATH-C01_C02-Exam-Master.pdf",
+        ])
+        self.assertEqual(outputs, {
+            "G9-MATH-C01_C02-Diag-QP.pdf",
+            "G9-MATH-C01_C02-Diag-Key.pdf",
+            "G9-MATH-C01_C02-Exam-QP.pdf",
+            "G9-MATH-C01_C02-Exam-Key.pdf",
+        })
+        self.assertIn("Copy the existing pages verbatim", prompt)
+
+    def test_pdf_signature_includes_page_drawing_commands(self):
+        with TemporaryDirectory() as directory:
+            paths = [Path(directory) / name for name in ("one.pdf", "two.pdf")]
+            for path, drawing in zip(paths, (b"0 0 m 1 1 l S", b"0 1 m 1 0 l S")):
+                writer = app.PdfWriter()
+                writer.add_blank_page(width=612, height=792)
+                page = writer.pages[-1]
+                stream = DecodedStreamObject()
+                stream.set_data(drawing)
+                stream.indirect_reference = writer._add_object(stream)
+                page.replace_contents(stream)
+                with path.open("wb") as output:
+                    writer.write(output)
+
+            self.assertNotEqual(app.pdf_signature(paths[0]), app.pdf_signature(paths[1]))
+
+    def test_failed_studio_split_keeps_the_local_fallback(self):
+        masters = [
+            "G9-MATH-C01_C02-Diag-Master.pdf",
+            "G9-MATH-C01_C02-Exam-Master.pdf",
+        ]
+        local_outputs = {
+            Path("G9-MATH-C01_C02-Diag-QP.pdf"),
+            Path("G9-MATH-C01_C02-Diag-Key.pdf"),
+            Path("G9-MATH-C01_C02-Exam-QP.pdf"),
+            Path("G9-MATH-C01_C02-Exam-Key.pdf"),
+        }
+        with (
+            mock.patch.object(app, "artifact_title_counts", return_value=Counter(masters)),
+            mock.patch.object(app, "send_chat_instruction", side_effect=TimeoutError("no split")),
+        ):
+            self.assertFalse(app.try_studio_split_assessments(mock.Mock(), masters, local_outputs))
+
     def test_completed_master_is_downloaded_from_its_studio_menu(self):
         page = mock.Mock()
         card = mock.Mock()
@@ -259,13 +306,14 @@ class NotebookLMBatchTests(unittest.TestCase):
         query = mock.Mock()
         query.is_editable.return_value = True
         responding = mock.Mock()
-        page.get_by_role.side_effect = [query, mock.Mock(), responding]
+        page.get_by_role.side_effect = [responding, query, mock.Mock()]
 
         app.send_chat_instruction(page, "prompt", "PDF")
 
         query.is_editable.assert_called_once()
         query.fill.assert_called_once_with("prompt")
         responding.wait_for.assert_has_calls([
+            mock.call(state="hidden", timeout=1_800_000),
             mock.call(state="visible", timeout=30_000),
             mock.call(state="hidden", timeout=1_800_000),
         ])
