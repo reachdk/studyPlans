@@ -4,3 +4,4 @@
 .notebooklm-chrome-profile/
 .venv/
 __pycache__/
+output/pdf/

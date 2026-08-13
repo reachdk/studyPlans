@@ -1,14 +1,35 @@
 # NotebookLM Class 9 Study Builder
 
-Creates a new personal NotebookLM notebook from selected local NCERT chapters and generates:
+Creates a new personal NotebookLM notebook from selected local NCERT chapters.
+
+For Science and Social Science the notebook contains:
 
 - One Slide Deck per chapter
 - One combined Flashcard deck
 - One combined Mind Map
-- One assessment question-paper PDF
-- One assessment answer-key PDF
+- One assessment master PDF
 
-The program asks for a subject and chapter numbers, resolves the matching PDFs under `downloads/class-09`, uploads them through an isolated Google Chrome instance, and asks NotebookLM chat to create the configured artifacts with its Studio tools.
+The program downloads the master and copies its pages into separate question-paper and answer-key PDFs under `output/pdf/`. The master remains in Studio; the local split does not ask NotebookLM to regenerate or reformat it.
+
+For `N` selected English Kaveri units it generates `N + 4` Studio artifacts and four local assessment PDFs:
+
+- `N` source-specific Chapter Pack PDFs
+- One combined Flashcard deck
+- One combined Quiz
+- Two timed assessment master PDFs in Studio
+- Two local Question Paper PDFs and two matching Answer Key PDFs
+
+For Mathematics it generates five Studio artifacts and four local assessment PDFs:
+
+- One combined chapter Revision Guide PDF
+- One combined Flashcard deck
+- One combined Mind Map
+- One Diagnostic master PDF and one Cumulative master PDF in Studio
+- Local Question Paper and Answer Key PDFs for both assessments
+
+The program asks for a stream code and chapter numbers, resolves the matching PDFs under `downloads/class-09`, uploads them through an isolated Google Chrome instance, and asks NotebookLM chat to create the configured artifacts with its Studio tools. Supported stream codes are `PHY`, `CHEM`, `BIO`, `HIST`, `GEO`, `ECO`, `POL`, `MATH`, and `ENG`.
+
+Notebook and artifact titles follow one sortable convention. For example, a Physics run for chapters 4 and 6 creates notebook `G9-PHY-C04_C06`; its combined cards are `G9-PHY-C04_C06-Cards`, while chapter 6 slides are `G9-PHY-C06-Forces-Affect-Motion-Slides`. PDF artifacts retain their `.pdf` extension. English scopes use `U`, such as `G9-ENG-U01_U03`.
 
 ## Setup
 
@@ -38,15 +59,17 @@ Download the current local chapter catalogue if it is not already present:
 Example input:
 
 ```text
-Subject: Physics
+Stream code (PHY/CHEM/BIO/HIST/GEO/ECO/POL/MATH/ENG): PHY
 Chapters (for example 4,6-7): 4,6
 
-Resolved chapters:
+Resolved PHY (Physics) chapters:
   04 — Describing Motion Around Us
   06 — How Forces Affect Motion
 
 Create the NotebookLM notebook? [y/N] y
 ```
+
+All subject-specific paper sizes scale automatically with the selected chapter scope. Flashcard counts and chapter coverage also scale automatically; Mathematics additionally retains the CBSE cognitive-weighting split. English and Mathematics do not create Slide Decks.
 
 On the first run, confirm NotebookLM opens while signed in to Google Chrome, quit Chrome completely with `Command-Q`, then return to the terminal and press Enter. The program copies that profile into its dedicated automation profile; your normal Chrome data is not modified. Comet remains available for normal browsing while the automation runs.
 
