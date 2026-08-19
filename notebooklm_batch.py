@@ -4,7 +4,6 @@
 from __future__ import annotations
 
 import json
-from hashlib import sha256
 import re
 import shutil
 import subprocess
@@ -12,14 +11,10 @@ import sys
 import time
 from collections import Counter
 from pathlib import Path
-from tempfile import TemporaryDirectory
-
-from pypdf import PdfReader, PdfWriter
 
 
 ROOT = Path(__file__).parent
 DOWNLOADS = ROOT / "downloads" / "class-09"
-PDF_OUTPUT = ROOT / "output" / "pdf"
 PROFILE = ROOT / ".notebooklm-chrome-profile"
 NOTEBOOKLM = "https://notebook.google.com/"
 CHROME = Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome")
@@ -247,9 +242,7 @@ def english_assessment_prompt(paper: str, chapter_count: int) -> str:
     reading = marks // 4
     writing_grammar = marks // 4
     literature = marks // 2
-    common = f"""Create one polished downloadable PDF containing a CBSE Class 9 English Language and Literature assessment.
-
-Use only the selected Kaveri sources, except for one newly written age-appropriate unseen passage.
+    common = f"""Use only the selected sources to create a CBSE Class 9 English Language and Literature assessment, except for one newly written age-appropriate unseen passage.
 
 Duration: {duration} minutes
 Maximum marks: {marks}
@@ -278,7 +271,7 @@ PART B — ANSWER KEY AND MARKING SCHEME
 - Give Literature value points while accepting interpretations supported by evidence
 - Use an analytic Writing rubric covering content, organisation, format, tone, expression, and accuracy
 
-Before creating the PDF, verify section totals, unit coverage, numbering, and the correspondence between every question and marking point."""
+Before finalizing the output, verify section totals, unit coverage, numbering, and the correspondence between every question and marking point."""
     if paper == "diagnostic":
         requirements = """Use the internal document heading PAPER 1 — ENGLISH SKILL DIAGNOSTIC.
 
@@ -303,12 +296,12 @@ def english_jobs(chapter_count: int) -> tuple[tuple[str, str, str], ...]:
 
 def combined_assessment_prompt(subject: str, chapter_count: int) -> str:
     duration, marks = assessment_scheme(chapter_count)
-    return f"""Create one polished downloadable PDF containing a periodic assessment for CBSE Class 9 {subject}, using only the selected sources. Do not return the assessment as chat text.
+    return f"""Use only the selected sources to create a periodic assessment for CBSE Class 9 {subject}.
 
 Duration: {duration} minutes
 Maximum marks: {marks}
 
-Produce one internally consistent PDF with exactly two parts. Balance coverage and marks as evenly as practical across all selected chapters. Use recall, understanding, application, competency, and higher-order questions with approximately 30% easy, 50% moderate, and 20% challenging marks.
+Produce exactly two internally consistent parts. Balance coverage and marks as evenly as practical across all selected chapters. Use recall, understanding, application, competency, and higher-order questions with approximately 30% easy, 50% moderate, and 20% challenging marks.
 
 PART A — QUESTION PAPER
 
@@ -326,7 +319,7 @@ PART B — ANSWER KEY AND MARKING SCHEME
 - Give stepwise marking, acceptable alternatives, required concepts or keywords, and marks awarded at each step
 - Do not introduce, omit, reorder, or rewrite questions
 
-Before creating the PDF, silently verify chapter coverage, calculations, units, numbering, and mark totals. Do not print this verification ledger in Part A."""
+Before finalizing the output, silently verify chapter coverage, calculations, units, numbering, and mark totals. Do not print this verification ledger in Part A."""
 
 
 def assessment_scheme(chapter_count: int) -> tuple[int, int]:
@@ -348,7 +341,7 @@ def mathematics_assessment_prompt(paper: str, chapter_count: int) -> str:
     )
     remembering, applying, higher_order = cognitive_marks
     question_count = sum(count for _, _, count, _ in sections)
-    common = f"""Create one polished downloadable PDF containing a CBSE Class 9 Mathematics assessment, using only the selected sources.
+    common = f"""Use only the selected sources to create a CBSE Class 9 Mathematics assessment.
 
 Duration: {duration} minutes
 Maximum marks: {marks}
@@ -375,7 +368,7 @@ PART B — ANSWER KEY AND MARKING SCHEME
 - Give verified working and mark allocation
 - Accept alternative valid methods and award reasoning marks where appropriate
 
-Before creating the PDF, verify the question count, section totals, cognitive totals, calculations, and correspondence between the paper and marking scheme."""
+Before finalizing the output, verify the question count, section totals, cognitive totals, calculations, and correspondence between the paper and marking scheme."""
     if paper == "diagnostic":
         requirements = """Use the internal document heading QUESTION PAPER 1 — CHAPTER-WISE DIAGNOSTIC.
 
@@ -515,159 +508,103 @@ def artifact_card(page, title: str):
     return titles.nth(matches[0]).locator("xpath=ancestor::artifact-library-item")
 
 
-def download_artifact(page, title: str, destination: Path) -> None:
-    card = artifact_card(page, title)
-    card.get_by_role("button", name="More", exact=True).click()
-    with page.expect_download(timeout=60_000) as download_info:
-        page.get_by_role("menuitem", name=re.compile(r"^Download", re.IGNORECASE)).click()
-    destination.parent.mkdir(parents=True, exist_ok=True)
-    download_info.value.save_as(str(destination))
-    if not destination.is_file() or not destination.stat().st_size:
-        raise RuntimeError(f"downloaded Studio artifact is empty: {title!r}")
-
-
-def answer_key_start(reader: PdfReader) -> int:
-    heading = "ANSWER KEY AND MARKING SCHEME"
-    matches = []
-    for index, page in enumerate(reader.pages):
-        lines = {
-            re.sub(r"[^A-Z0-9]+", " ", line.upper()).strip()
-            for line in (page.extract_text() or "").splitlines()
-        }
-        if heading in lines or f"PART B {heading}" in lines:
-            matches.append(index)
-    if len(matches) != 1:
-        raise ValueError(f"expected the answer-key heading on exactly one PDF page, found {len(matches)}")
-    if matches[0] == 0:
-        raise ValueError("the assessment PDF has no question-paper pages before the answer key")
-    return matches[0]
-
-
-def assessment_output_paths(master_title: str) -> tuple[Path, Path]:
+def assessment_output_titles(master_title: str) -> tuple[str, str]:
     if not master_title.endswith("-Master.pdf"):
         raise ValueError(f"assessment master title must end with '-Master.pdf': {master_title!r}")
     stem = master_title.removesuffix("-Master.pdf")
-    return PDF_OUTPUT / f"{stem}-QP.pdf", PDF_OUTPUT / f"{stem}-Key.pdf"
+    return f"{stem}-QP.pdf", f"{stem}-Key.pdf"
 
 
-def split_assessment_pdf(master: Path, question_paper: Path, answer_key: Path) -> None:
-    reader = PdfReader(master)
-    split_at = answer_key_start(reader)
-    question_writer = PdfWriter()
-    answer_writer = PdfWriter()
-    for page in reader.pages[:split_at]:
-        question_writer.add_page(page)
-    for page in reader.pages[split_at:]:
-        answer_writer.add_page(page)
-
-    question_paper.parent.mkdir(parents=True, exist_ok=True)
-    temporary_question = question_paper.with_suffix(".pdf.tmp")
-    temporary_answer = answer_key.with_suffix(".pdf.tmp")
-    try:
-        with temporary_question.open("wb") as output:
-            question_writer.write(output)
-        with temporary_answer.open("wb") as output:
-            answer_writer.write(output)
-        if len(PdfReader(temporary_question).pages) != split_at:
-            raise RuntimeError("question-paper PDF failed page-count verification")
-        if len(PdfReader(temporary_answer).pages) != len(reader.pages) - split_at:
-            raise RuntimeError("answer-key PDF failed page-count verification")
-        temporary_question.replace(question_paper)
-        temporary_answer.replace(answer_key)
-    finally:
-        temporary_question.unlink(missing_ok=True)
-        temporary_answer.unlink(missing_ok=True)
+def assessment_master_prompt(prompt: str, title: str) -> str:
+    if not title.endswith("-Master.pdf"):
+        raise ValueError(f"assessment master title must end with '-Master.pdf': {title!r}")
+    return (
+        "Generate a comprehensive Assessment PDF Document and save the PDF in Studio. "
+        f'Title the document exactly "{title.removesuffix(".pdf")}".\n\n{prompt}'
+    )
 
 
-def download_and_split_assessments(page, masters: list[str]) -> set[Path]:
-    temporary_root = ROOT / "tmp" / "pdfs"
-    temporary_root.mkdir(parents=True, exist_ok=True)
-    outputs = set()
-    with TemporaryDirectory(prefix="notebooklm-", dir=temporary_root) as directory:
-        for title in masters:
-            master = Path(directory) / title
-            download_artifact(page, title, master)
-            question_paper, answer_key = assessment_output_paths(title)
-            split_assessment_pdf(master, question_paper, answer_key)
-            outputs.update((question_paper, answer_key))
-            print(f"Saved {question_paper.name} and {answer_key.name}")
-    return outputs
+def studio_split_prompt(master: str) -> tuple[str, set[str]]:
+    question_paper, answer_key = assessment_output_titles(master)
+    prompt = f"""Using the completed Assessment Document "{master}" in Studio, create these two PDF files and save them in Studio:
+
+- "{question_paper}" containing only PART A — QUESTION PAPER
+- "{answer_key}" containing only PART B — ANSWER KEY AND MARKING SCHEME
+
+Preserve the existing content, mathematical notation, diagrams, numbering, marks, and layout."""
+    return prompt, {question_paper, answer_key}
 
 
-def studio_split_prompt(masters: list[str]) -> tuple[str, set[str]]:
-    instructions = []
-    outputs = set()
-    for master in masters:
-        question_paper, answer_key = assessment_output_paths(master)
-        outputs.update((question_paper.name, answer_key.name))
-        instructions.append(
-            f'- Split "{master}" into "{question_paper.name}" containing every page before '
-            f'the ANSWER KEY AND MARKING SCHEME heading and "{answer_key.name}" starting with that page.'
-        )
-    prompt = """Create exactly the PDF artifacts listed below in Studio from the completed master PDFs. Copy the existing pages verbatim; do not regenerate, summarise, correct, reorder, or reformat them. Do not create any other artifact.
+def delete_artifact(page, title: str) -> None:
+    card = artifact_card(page, title)
+    card.get_by_role("button", name="More", exact=True).click()
+    page.get_by_role("menuitem", name="Delete", exact=True).click()
 
-""" + "\n".join(instructions) + f"\n\n{STUDIO_EXECUTE_NOW}"
-    return prompt, outputs
+    dialog = page.get_by_role("dialog")
+    for _ in range(30):
+        if dialog.count() and dialog.is_visible():
+            page.evaluate("""() => [...document.querySelectorAll('[role="dialog"] button')]
+                .find(button => button.textContent.trim() === 'Delete')?.click()""")
+            break
+        if artifact_title_counts(page)[title] == 0:
+            break
+        page.wait_for_timeout(100)
+
+    for _ in range(300):
+        if artifact_title_counts(page)[title] == 0:
+            break
+        page.wait_for_timeout(100)
+    else:
+        raise TimeoutError(f"{title}: Studio artifact was not deleted")
+
+    page.reload(wait_until="domcontentloaded")
+    page.locator("artifact-library-item").first.wait_for(timeout=30_000)
+    if artifact_title_counts(page)[title]:
+        raise RuntimeError(f"{title}: Studio artifact reappeared after reload")
 
 
-def pdf_signature(path: Path) -> list[tuple[float, float, str, str]]:
-    reader = PdfReader(path)
-    return [
-        (
-            round(float(page.mediabox.width), 2),
-            round(float(page.mediabox.height), 2),
-            re.sub(r"\s+", " ", page.extract_text() or "").strip(),
-            sha256(contents.get_data() if (contents := page.get_contents()) is not None else b"").hexdigest(),
-        )
-        for page in reader.pages
-    ]
-
-
-def try_studio_split_assessments(
-    page, masters: list[str], local_outputs: set[Path]
-) -> bool:
-    prompt, expected = studio_split_prompt(masters)
+def split_assessment(page, master: str, artifacts: set[str]) -> set[str]:
+    prompt, expected = studio_split_prompt(master)
     before = artifact_title_counts(page)
-    local_by_name = {path.name: path for path in local_outputs}
-    try:
-        existing = sorted(expected & before.keys())
-        if existing:
-            raise RuntimeError(f"Studio split outputs already exist: {existing}")
-        send_chat_instruction(page, prompt, "Experimental Studio assessment split")
-        wait_for_artifacts(page, sum(before.values()) + len(expected))
-        created = artifact_title_counts(page) - before
-        if created != Counter(expected):
-            raise RuntimeError(f"Studio created {dict(created)} instead of {sorted(expected)}")
+    if before[master] != 1:
+        raise RuntimeError(f"expected one master named {master!r}, found {before[master]}")
+    existing = sorted(expected & before.keys())
+    if existing:
+        raise RuntimeError(f"Studio split outputs already exist: {existing}")
 
-        temporary_root = ROOT / "tmp" / "pdfs"
-        temporary_root.mkdir(parents=True, exist_ok=True)
-        with TemporaryDirectory(prefix="studio-split-", dir=temporary_root) as directory:
-            for title in sorted(expected):
-                downloaded = Path(directory) / title
-                download_artifact(page, title, downloaded)
-                if pdf_signature(downloaded) != pdf_signature(local_by_name[title]):
-                    raise RuntimeError(f"{title} differs from the local lossless split")
-    except Exception as error:
-        print(f"Studio split trial failed; keeping local PDFs: {error}")
-        return False
-    print("Studio split trial passed: all four PDFs match the local splits")
-    return True
+    send_chat_instruction(page, prompt, f"Split {master}")
+    completed = wait_for_artifacts(page, sum(before.values()) + len(expected))
+    created = artifact_title_counts(page) - before
+    if created != Counter(expected):
+        raise RuntimeError(f"{master}: Studio created {dict(created)} instead of {sorted(expected)}")
+
+    delete_artifact(page, master)
+    return (completed - {master}) | expected
 
 
 def send_chat_instruction(page, prompt: str, label: str) -> None:
     print(f"Requesting {label}...")
+    deadline = time.monotonic() + 1_800
     responding = page.get_by_role("button", name="Stop generating")
-    responding.wait_for(state="hidden", timeout=1_800_000)
+    responding.wait_for(state="hidden", timeout=max(1, int((deadline - time.monotonic()) * 1_000)))
     query = page.get_by_role("textbox", name="Query box")
-    deadline = time.monotonic() + 300
     while not query.is_editable():
         if time.monotonic() >= deadline:
             raise TimeoutError(f"{label}: query box did not become editable")
         page.wait_for_timeout(1_000)
+    messages = page.locator(".chat-message-pair")
+    message_count = messages.count()
     query.fill(prompt)
     page.get_by_role("button", name="Submit").last.click()
-    responding.wait_for(state="visible", timeout=30_000)
-    responding.wait_for(state="hidden", timeout=1_800_000)
+    responding.wait_for(state="visible", timeout=min(30_000, max(1, int((deadline - time.monotonic()) * 1_000))))
+    responding.wait_for(state="hidden", timeout=max(1, int((deadline - time.monotonic()) * 1_000)))
+    while not query.is_editable():
+        if time.monotonic() >= deadline:
+            raise TimeoutError(f"{label}: query box did not become editable after generation")
+        page.wait_for_timeout(1_000)
+    replies = "\n".join(messages.nth(index).inner_text() for index in range(message_count, messages.count()))
+    if "Gemini Notebook can’t answer this question." in replies or "Gemini Notebook can't answer this question." in replies:
+        raise RuntimeError(f"{label}: NotebookLM refused the request")
     print(f"{label} request accepted")
 
 
@@ -701,7 +638,7 @@ def create_assessment_master(
     before = artifact_title_counts(page)
     if before[title]:
         raise RuntimeError(f"refusing to recreate existing master {title!r}")
-    send_chat_instruction(page, studio_prompt("pdf", prompt, title), title)
+    send_chat_instruction(page, assessment_master_prompt(prompt, title), title)
     completed = wait_for_artifacts(page, len(artifacts) + 1)
     created = artifact_title_counts(page) - before
     if created != Counter({title: 1}):
@@ -819,9 +756,8 @@ def run_browser(stream: str, paths: list[Path], try_studio_split: bool = False) 
             ]
             for (_, prompt, _), master in zip(jobs[3:], masters):
                 artifacts = create_assessment_master(page, prompt, master, artifacts)
-            local_outputs = download_and_split_assessments(page, masters)
-            if try_studio_split:
-                try_studio_split_assessments(page, masters, local_outputs)
+                if try_studio_split:
+                    artifacts = split_assessment(page, master, artifacts)
         elif stream_code == "ENG":
             for path in paths:
                 select_sources(page, [path.name], filenames)
@@ -846,9 +782,8 @@ def run_browser(stream: str, paths: list[Path], try_studio_split: bool = False) 
             ]
             for (_, prompt, _), master in zip(jobs[2:], masters):
                 artifacts = create_assessment_master(page, prompt, master, artifacts)
-            local_outputs = download_and_split_assessments(page, masters)
-            if try_studio_split:
-                try_studio_split_assessments(page, masters, local_outputs)
+                if try_studio_split:
+                    artifacts = split_assessment(page, master, artifacts)
         else:
             presentation_prompt = PRESENTATION.format(subject=display_name)
             for path in paths:
@@ -882,7 +817,8 @@ def run_browser(stream: str, paths: list[Path], try_studio_split: bool = False) 
                 master,
                 artifacts,
             )
-            download_and_split_assessments(page, [master])
+            if try_studio_split:
+                artifacts = split_assessment(page, master, artifacts)
 
         url = page.url
         print(f"Notebook ready: {url}")
@@ -914,8 +850,6 @@ def main() -> int:
         numbers = parse_chapters(input("Chapters (for example 4,6-7): "))
         stream_code, _, display_name = stream_details(stream)
         paths = resolve_chapters(stream_code, numbers)
-        if try_studio_split and stream_code not in {"MATH", "ENG"}:
-            raise ValueError("--split is supported only for MATH and ENG")
     except (TypeError, ValueError) as error:
         print(f"Error: {error}", file=sys.stderr)
         return 2

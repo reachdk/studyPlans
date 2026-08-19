@@ -6,7 +6,6 @@ from tempfile import TemporaryDirectory
 import json
 
 import notebooklm_batch as app
-from pypdf.generic import DecodedStreamObject
 
 
 class Checkbox:
@@ -124,7 +123,7 @@ class NotebookLMBatchTests(unittest.TestCase):
         for subject in ("Science", "Social Science"):
             with self.subTest(subject=subject):
                 prompt = app.combined_assessment_prompt(subject, 2)
-                self.assertIn("one internally consistent PDF with exactly two parts", prompt)
+                self.assertIn("exactly two internally consistent parts", prompt)
                 self.assertIn("Balance coverage and marks", prompt)
                 self.assertIn("Duration: 45 minutes", prompt)
                 self.assertIn("Maximum marks: 20", prompt)
@@ -180,104 +179,80 @@ class NotebookLMBatchTests(unittest.TestCase):
         self.assertIn("exactly 60 cards", prompt)
         self.assertIn("8 or 9 cards", prompt)
 
-    def test_answer_key_boundary_requires_one_heading_after_the_question_paper(self):
-        pages = [
-            mock.Mock(extract_text=mock.Mock(return_value="QUESTION PAPER\nQ1")),
-            mock.Mock(extract_text=mock.Mock(return_value="PART B — ANSWER KEY AND MARKING SCHEME\nQ1")),
-            mock.Mock(extract_text=mock.Mock(return_value="continued answers")),
-        ]
-        self.assertEqual(app.answer_key_start(mock.Mock(pages=pages)), 1)
-        pages.append(mock.Mock(extract_text=mock.Mock(return_value="ANSWER KEY AND MARKING SCHEME")))
-        with self.assertRaisesRegex(ValueError, "exactly one"):
-            app.answer_key_start(mock.Mock(pages=pages))
+    def test_assessment_master_uses_the_working_note_prompt(self):
+        prompt = app.assessment_master_prompt(
+            "Assessment instructions", "G9-MATH-C06-Diag-Master.pdf"
+        )
+        self.assertTrue(prompt.startswith("Generate a comprehensive Assessment PDF Document"))
+        self.assertIn('Title the document exactly "G9-MATH-C06-Diag-Master"', prompt)
+        self.assertNotIn("Create one PDF", prompt)
+        self.assertNotIn(app.STUDIO_EXECUTE_NOW, prompt)
 
-    def test_assessment_pdf_is_split_by_copying_whole_pages(self):
-        with TemporaryDirectory() as directory:
-            root = Path(directory)
-            master = root / "Master.pdf"
-            questions = root / "QP.pdf"
-            answers = root / "Key.pdf"
-            writer = app.PdfWriter()
-            for _ in range(3):
-                writer.add_blank_page(width=612, height=792)
-            with master.open("wb") as output:
-                writer.write(output)
-
-            with mock.patch.object(app, "answer_key_start", return_value=2):
-                app.split_assessment_pdf(master, questions, answers)
-
-            self.assertEqual(len(app.PdfReader(questions).pages), 2)
-            self.assertEqual(len(app.PdfReader(answers).pages), 1)
-
-    def test_assessment_output_names_are_local_not_studio_artifacts(self):
-        with TemporaryDirectory() as directory, mock.patch.object(app, "PDF_OUTPUT", Path(directory)):
-            questions, answers = app.assessment_output_paths("G9-MATH-C01_C02-Diag-Master.pdf")
-            self.assertEqual(questions.name, "G9-MATH-C01_C02-Diag-QP.pdf")
-            self.assertEqual(answers.name, "G9-MATH-C01_C02-Diag-Key.pdf")
-
-    def test_experimental_split_names_both_outputs_for_both_masters(self):
-        prompt, outputs = app.studio_split_prompt([
-            "G9-MATH-C01_C02-Diag-Master.pdf",
-            "G9-MATH-C01_C02-Exam-Master.pdf",
-        ])
+    def test_studio_split_names_one_master_pair(self):
+        prompt, outputs = app.studio_split_prompt("G9-MATH-C01_C02-Diag-Master.pdf")
         self.assertEqual(outputs, {
             "G9-MATH-C01_C02-Diag-QP.pdf",
             "G9-MATH-C01_C02-Diag-Key.pdf",
-            "G9-MATH-C01_C02-Exam-QP.pdf",
-            "G9-MATH-C01_C02-Exam-Key.pdf",
         })
-        self.assertIn("Copy the existing pages verbatim", prompt)
+        self.assertIn("create these two PDF files and save them in Studio", prompt)
 
-    def test_pdf_signature_includes_page_drawing_commands(self):
-        with TemporaryDirectory() as directory:
-            paths = [Path(directory) / name for name in ("one.pdf", "two.pdf")]
-            for path, drawing in zip(paths, (b"0 0 m 1 1 l S", b"0 1 m 1 0 l S")):
-                writer = app.PdfWriter()
-                writer.add_blank_page(width=612, height=792)
-                page = writer.pages[-1]
-                stream = DecodedStreamObject()
-                stream.set_data(drawing)
-                stream.indirect_reference = writer._add_object(stream)
-                page.replace_contents(stream)
-                with path.open("wb") as output:
-                    writer.write(output)
-
-            self.assertNotEqual(app.pdf_signature(paths[0]), app.pdf_signature(paths[1]))
-
-    def test_failed_studio_split_keeps_the_local_fallback(self):
-        masters = [
-            "G9-MATH-C01_C02-Diag-Master.pdf",
-            "G9-MATH-C01_C02-Exam-Master.pdf",
-        ]
-        local_outputs = {
-            Path("G9-MATH-C01_C02-Diag-QP.pdf"),
-            Path("G9-MATH-C01_C02-Diag-Key.pdf"),
-            Path("G9-MATH-C01_C02-Exam-QP.pdf"),
-            Path("G9-MATH-C01_C02-Exam-Key.pdf"),
+    def test_split_verifies_outputs_before_deleting_master(self):
+        master = "G9-MATH-C01_C02-Diag-Master.pdf"
+        expected = {
+            "G9-MATH-C01_C02-Diag-QP.pdf",
+            "G9-MATH-C01_C02-Diag-Key.pdf",
         }
         with (
-            mock.patch.object(app, "artifact_title_counts", return_value=Counter(masters)),
-            mock.patch.object(app, "send_chat_instruction", side_effect=TimeoutError("no split")),
+            mock.patch.object(
+                app,
+                "artifact_title_counts",
+                side_effect=[Counter({master: 1}), Counter({master: 1, **{title: 1 for title in expected}})],
+            ),
+            mock.patch.object(app, "send_chat_instruction"),
+            mock.patch.object(app, "wait_for_artifacts", return_value={master} | expected),
+            mock.patch.object(app, "delete_artifact") as delete,
         ):
-            self.assertFalse(app.try_studio_split_assessments(mock.Mock(), masters, local_outputs))
+            self.assertEqual(app.split_assessment(mock.Mock(), master, {master}), expected)
+        delete.assert_called_once_with(mock.ANY, master)
 
-    def test_completed_master_is_downloaded_from_its_studio_menu(self):
+    def test_failed_split_keeps_master(self):
+        master = "G9-MATH-C01_C02-Diag-Master.pdf"
+        with (
+            mock.patch.object(
+                app,
+                "artifact_title_counts",
+                side_effect=[Counter({master: 1}), Counter({master: 1, "Random": 1})],
+            ),
+            mock.patch.object(app, "send_chat_instruction"),
+            mock.patch.object(app, "wait_for_artifacts", return_value={master, "Random"}),
+            mock.patch.object(app, "delete_artifact") as delete,
+        ):
+            with self.assertRaisesRegex(RuntimeError, "Studio created"):
+                app.split_assessment(mock.Mock(), master, {master})
+        delete.assert_not_called()
+
+    def test_master_deletion_confirms_dialog_and_survives_reload(self):
         page = mock.Mock()
         card = mock.Mock()
-        download = mock.Mock()
-        download.save_as.side_effect = lambda path: Path(path).write_bytes(b"%PDF-1.7\n")
-        download_info = mock.MagicMock()
-        download_info.__enter__.return_value.value = download
-        page.expect_download.return_value = download_info
-        menu_item = page.get_by_role.return_value
-
-        with TemporaryDirectory() as directory, mock.patch.object(app, "artifact_card", return_value=card):
-            destination = Path(directory) / "Master.pdf"
-            app.download_artifact(page, "Master.pdf", destination)
+        menu_item = mock.Mock()
+        dialog = mock.Mock()
+        dialog.count.return_value = 1
+        dialog.is_visible.return_value = True
+        page.get_by_role.side_effect = [menu_item, dialog]
+        with (
+            mock.patch.object(app, "artifact_card", return_value=card),
+            mock.patch.object(
+                app,
+                "artifact_title_counts",
+                side_effect=[Counter(), Counter()],
+            ),
+        ):
+            app.delete_artifact(page, "Master.pdf")
 
         card.get_by_role.assert_called_once_with("button", name="More", exact=True)
         menu_item.click.assert_called_once_with()
-        download.save_as.assert_called_once()
+        page.evaluate.assert_called_once()
+        page.reload.assert_called_once_with(wait_until="domcontentloaded")
 
     def test_named_artifact_wait_rejects_random_titles(self):
         with (
@@ -307,16 +282,30 @@ class NotebookLMBatchTests(unittest.TestCase):
         query.is_editable.return_value = True
         responding = mock.Mock()
         page.get_by_role.side_effect = [responding, query, mock.Mock()]
+        page.locator.return_value.count.return_value = 0
 
         app.send_chat_instruction(page, "prompt", "PDF")
 
-        query.is_editable.assert_called_once()
+        self.assertEqual(query.is_editable.call_count, 2)
         query.fill.assert_called_once_with("prompt")
         responding.wait_for.assert_has_calls([
-            mock.call(state="hidden", timeout=1_800_000),
-            mock.call(state="visible", timeout=30_000),
-            mock.call(state="hidden", timeout=1_800_000),
+            mock.call(state="hidden", timeout=mock.ANY),
+            mock.call(state="visible", timeout=mock.ANY),
+            mock.call(state="hidden", timeout=mock.ANY),
         ])
+
+    def test_chat_instruction_fails_fast_on_notebooklm_refusal(self):
+        page = mock.Mock()
+        query = mock.Mock()
+        query.is_editable.return_value = True
+        responding = mock.Mock()
+        page.get_by_role.side_effect = [responding, query, mock.Mock()]
+        messages = page.locator.return_value
+        messages.count.side_effect = [0, 1]
+        messages.nth.return_value.inner_text.return_value = "Gemini Notebook can’t answer this question."
+
+        with self.assertRaisesRegex(RuntimeError, "refused"):
+            app.send_chat_instruction(page, "prompt", "Assessment")
 
     def test_artifact_wait_requires_studio_to_have_no_generating_cards(self):
         page = mock.Mock()

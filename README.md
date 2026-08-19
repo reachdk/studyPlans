@@ -9,23 +9,23 @@ For Science and Social Science the notebook contains:
 - One combined Mind Map
 - One assessment master PDF
 
-The program downloads the master and copies its pages into separate question-paper and answer-key PDFs under `output/pdf/`. The master remains in Studio; the local split does not ask NotebookLM to regenerate or reformat it.
+With `--split`, NotebookLM creates separate Question Paper and Answer Key PDFs in Studio. The master is deleted only after both exact output names are verified.
 
-For `N` selected English Kaveri units it generates `N + 4` Studio artifacts and four local assessment PDFs:
+For `N` selected English Kaveri units it generates `N + 4` Studio artifacts by default:
 
 - `N` source-specific Chapter Pack PDFs
 - One combined Flashcard deck
 - One combined Quiz
 - Two timed assessment master PDFs in Studio
-- Two local Question Paper PDFs and two matching Answer Key PDFs
+- With `--split`, two Question Paper PDFs and two matching Answer Key PDFs replace the masters in Studio
 
-For Mathematics it generates five Studio artifacts and four local assessment PDFs:
+For Mathematics it generates five Studio artifacts by default:
 
 - One combined chapter Revision Guide PDF
 - One combined Flashcard deck
 - One combined Mind Map
 - One Diagnostic master PDF and one Cumulative master PDF in Studio
-- Local Question Paper and Answer Key PDFs for both assessments
+- With `--split`, Question Paper and Answer Key PDFs replace both masters in Studio
 
 The program asks for a stream code and chapter numbers, resolves the matching PDFs under `downloads/class-09`, uploads them through an isolated Google Chrome instance, and asks NotebookLM chat to create the configured artifacts with its Studio tools. Supported stream codes are `PHY`, `CHEM`, `BIO`, `HIST`, `GEO`, `ECO`, `POL`, `MATH`, and `ENG`.
 
@@ -56,13 +56,13 @@ Download the current local chapter catalogue if it is not already present:
 .venv/bin/python notebooklm_batch.py
 ```
 
-To run the optional one-shot Studio split comparison for Mathematics or English, use:
+To split every assessment master into Question Paper and Answer Key PDFs in Studio, use:
 
 ```bash
 .venv/bin/python notebooklm_batch.py --split
 ```
 
-The normal local splits are created first. A failed or mismatched Studio trial is reported without replacing them.
+Each master is split and verified before the next assessment starts. If generation fails or the titles do not match, the master is preserved and the run stops.
 
 Example input:
 
