@@ -93,6 +93,10 @@ When moving the program to another computer, replace `Ghar` with the profile nam
 
 See [USER_GUIDE.md](USER_GUIDE.md) for supported inputs, the complete workflow, and troubleshooting.
 
+## Google Classroom source sync
+
+For teacher-posted materials in selected classes, see [CLASSROOM_SYNC.md](CLASSROOM_SYNC.md). `classroom_sync.py` uses Google's OAuth sign-in and Classroom/Drive APIs to download attachments into `downloads/classroom/` for use as NotebookLM sources. It does not change the NCERT chapter workflow above.
+
 ## Check the installation
 
 ```bash

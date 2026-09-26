@@ -1,0 +1,4 @@
+interface:
+  display_name: "Design Reviewer"
+  short_description: "Review interfaces and brief developers on focused fixes"
+  default_prompt: "Use $design-reviewer to review this interface in one pass and give me a concise developer handoff."
