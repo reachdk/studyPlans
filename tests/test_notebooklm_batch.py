@@ -1,9 +1,14 @@
+import json
+import sys
 import unittest
-from unittest import mock
 from collections import Counter
 from pathlib import Path
 from tempfile import TemporaryDirectory
-import json
+from unittest import mock
+
+ROOT = Path(__file__).resolve().parent.parent
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 
 import notebooklm_batch as app
 

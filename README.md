@@ -91,11 +91,30 @@ CHROME_PROFILE = "Ghar"
 
 When moving the program to another computer, replace `Ghar` with the profile name shown in Chrome's profile menu. Open NotebookLM in that profile once and confirm it is signed in before running the program. The code resolves the display name to Chrome's internal directory automatically; do not replace it with a directory name such as `Profile 1`.
 
-See [USER_GUIDE.md](USER_GUIDE.md) for supported inputs, the complete workflow, and troubleshooting.
+See [USER_GUIDE.md](docs/USER_GUIDE.md) for supported inputs, the complete workflow, and troubleshooting.
 
 ## Google Classroom source sync
 
-For teacher-posted materials in selected classes, see [CLASSROOM_SYNC.md](CLASSROOM_SYNC.md). `classroom_sync.py` uses Google's OAuth sign-in and Classroom/Drive APIs to download attachments into `downloads/classroom/` for use as NotebookLM sources. It does not change the NCERT chapter workflow above.
+For teacher-posted materials in selected classes, see [CLASSROOM_SYNC.md](docs/CLASSROOM_SYNC.md). `classroom_sync.py` uses Google's OAuth sign-in and Classroom/Drive APIs to download attachments into `downloads/classroom/` for use as NotebookLM sources. It does not change the NCERT chapter workflow above.
+
+## Interactive Study Portals (Offline HTML5)
+
+The repository provides offline-first, zero-dependency interactive study dashboards for students:
+
+- **Universal Launcher**: [`index.html`](index.html) (Launch either Science or Mathematics)
+- **Science Study Hub**: [`study_science_dashboard.html`](study_science_dashboard.html) (Physics, Chemistry, Biology)
+- **Mathematics Study Hub**: [`study_math_dashboard.html`](study_math_dashboard.html) (Ganita Manjari Ch 1, 2, 3, 4, 6)
+- **Study Portal Engine**: [`portal_engine/`](portal_engine/) (Template, compiler `builder.py`, CBSE validator `validator.py`, and packager `packager.py`)
+
+For dashboard architecture and offline usage details, see [DASHBOARD_GUIDE.md](docs/DASHBOARD_GUIDE.md).
+
+## Running Tests
+
+Unit tests are located in `tests/`:
+
+```bash
+python3 -m unittest discover tests
+```
 
 ## Check the installation
 
