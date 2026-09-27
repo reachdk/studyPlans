@@ -108,7 +108,36 @@ def generate_refresher():
       box-sizing: border-box;
       margin: 0;
       padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }}
+
+    body, button, input, select, textarea {{
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }}
+
+    /* Preserve KaTeX font inheritance and prevent system font override */
+    .katex {{
+      font-family: KaTeX_Main, "Times New Roman", serif;
+    }}
+    .katex * {{
+      font-family: inherit;
+    }}
+    .katex .mathnormal {{
+      font-family: KaTeX_Math !important;
+      font-style: italic !important;
+    }}
+    .katex .mathbf {{
+      font-family: KaTeX_Main !important;
+      font-weight: 700 !important;
+    }}
+    .katex .amsrm {{
+      font-family: KaTeX_AMS !important;
+    }}
+    .katex .mrel {{
+      font-family: KaTeX_Main !important;
+    }}
+    .katex .mord {{
+      font-family: KaTeX_Main !important;
     }}
 
     body {{
@@ -414,6 +443,9 @@ def generate_refresher():
       gap: 10px;
       transition: all 0.2s;
       position: relative;
+      min-width: 0;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }}
 
     .term-card:hover {{
@@ -433,6 +465,8 @@ def generate_refresher():
       font-size: 1.05rem;
       font-weight: 800;
       color: var(--primary);
+      overflow-wrap: break-word;
+      word-break: break-word;
     }}
 
     .term-cat-badge {{
@@ -444,6 +478,7 @@ def generate_refresher():
       border: 1px solid var(--border);
       color: var(--text-muted);
       white-space: nowrap;
+      flex-shrink: 0;
     }}
 
     .btn-star {{
@@ -453,6 +488,7 @@ def generate_refresher():
       font-size: 1.1rem;
       opacity: 0.4;
       transition: opacity 0.15s, transform 0.15s;
+      flex-shrink: 0;
     }}
 
     .btn-star:hover {{
@@ -467,6 +503,8 @@ def generate_refresher():
     .term-def {{
       font-size: 0.9rem;
       line-height: 1.5;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }}
 
     .term-formula-box {{
@@ -475,6 +513,31 @@ def generate_refresher():
       padding: 8px 12px;
       border-radius: 0 6px 6px 0;
       font-size: 0.88rem;
+      min-width: 0;
+      max-width: 100%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+    }}
+
+    .term-formula-box .katex {{
+      white-space: normal !important;
+      word-wrap: break-word !important;
+      overflow-wrap: anywhere !important;
+    }}
+
+    .term-formula-box .katex-html {{
+      white-space: normal !important;
+    }}
+
+    .term-formula-box .base {{
+      white-space: normal !important;
+      display: inline !important;
+    }}
+
+    .term-formula-box .mtable {{
+      white-space: nowrap;
     }}
 
     .term-example-box {{
@@ -485,6 +548,8 @@ def generate_refresher():
       display: flex;
       align-items: baseline;
       gap: 6px;
+      overflow-wrap: break-word;
+      word-break: break-word;
     }}
 
     /* BIOLOGY DIAGRAM CARD */
@@ -1533,7 +1598,7 @@ def generate_refresher():
               <div class="diagram-title">${{d.title}}</div>
               <div style="font-size:0.8rem; color:var(--text-muted); margin-top:2px;">${{d.chapter}}: ${{d.chTitle}}</div>
             </div>
-            <a href="${{d.pdfPath}}" target="_blank" class="btn-nav" style="font-size:0.75rem; padding:4px 10px;" title="Open original NCERT page in PDF">
+            <a href="${{d.pdfPath}}" target="_blank" rel="noopener noreferrer" class="btn-nav" style="font-size:0.75rem; padding:4px 10px;" title="Open original NCERT page in PDF">
               📄 NCERT PDF
             </a>
           </div>
@@ -2104,7 +2169,10 @@ def generate_refresher():
     if (ROOT / "images").exists():
         import shutil
         shutil.copytree(ROOT / "images", public_dir / "images", dirs_exist_ok=True)
-    print("📁 Synced static portal distribution to public/")
+    if (ROOT / "downloads" / "class-09").exists():
+        import shutil
+        shutil.copytree(ROOT / "downloads" / "class-09", public_dir / "downloads" / "class-09", dirs_exist_ok=True)
+    print("📁 Synced static portal distribution and NCERT PDFs to public/")
 
 if __name__ == "__main__":
     generate_refresher()

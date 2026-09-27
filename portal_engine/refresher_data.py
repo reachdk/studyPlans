@@ -1382,7 +1382,7 @@ KEY_TERMS_DATA = [
         "term": "Sperm vs Ovum (Gamete Comparison)",
         "category": "Comparative Cytology",
         "definition": "Human gametes differ sharply: Sperm is microscopic, motile with a flagellar tail, produced in millions, containing minimal cytoplasm; Ovum is non-motile, much larger (spherical), produced singly per month, rich in cytoplasm and stored food.",
-        "formula": "\\text{Sperm (Motile, } n) \\quad \\text{vs} \\quad \\text{Ovum (Non-motile, cytoplasmic, } n)",
+        "formula": "\\begin{aligned}\\text{Sperm: } & \\text{Motile, flagellated } (n) \\\\ \\text{Ovum: } & \\text{Non-motile, nutrient-rich } (n)\\end{aligned}",
         "unit": "",
         "example": "Sperm head carries paternal genetic material (haploid 23 chromosomes) capped by digestive acrosome."
     },
@@ -1394,7 +1394,7 @@ KEY_TERMS_DATA = [
         "term": "Implantation & Cleavage",
         "category": "Developmental Process",
         "definition": "Following fertilisation in the fallopian tube, the zygote undergoes rapid mitotic divisions (cleavage) forming a hollow cellular ball (blastocyst) that embeds securely into the thickened uterine endometrium within 7–9 days.",
-        "formula": "\\text{Zygote} \\xrightarrow{\\text{Cleavage}} \\text{Morula} \\xrightarrow{} \\text{Blastocyst} \\xrightarrow{\\text{Implantation}} \\text{Uterine Wall}",
+        "formula": "\\text{Zygote} \\to \\text{Morula} \\to \\text{Blastocyst} \\xrightarrow{\\text{Implantation}} \\text{Endometrium}",
         "unit": "",
         "example": "Successful implantation marks the clinical onset of pregnancy."
     },
@@ -1466,7 +1466,7 @@ KEY_TERMS_DATA = [
         "term": "Surgical Methods (Vasectomy & Tubectomy)",
         "category": "Contraception",
         "definition": "Permanent surgical sterilisation techniques: Vasectomy involves cutting and ligating a small portion of the vas deferens in males; Tubectomy involves cutting and ligating the fallopian tubes in females to block gamete transit.",
-        "formula": "\\text{Vasectomy: Blocks sperm duct} \\quad | \\quad \\text{Tubectomy: Blocks oviduct}",
+        "formula": "\\begin{aligned}\\text{Vasectomy: } & \\text{Ligate vas deferens (male)} \\\\ \\text{Tubectomy: } & \\text{Ligate fallopian tubes (female)}\\end{aligned}",
         "unit": "",
         "example": "Surgical methods do not alter hormone production or secondary sexual drives, only blocking gamete transport."
     },
@@ -1478,7 +1478,7 @@ KEY_TERMS_DATA = [
         "term": "Sexually Transmitted Infections (STIs)",
         "category": "Pathology",
         "definition": "Infections transmitted through sexual contact with an infected partner. Divided into Bacterial STIs (e.g. Gonorrhoea, Syphilis; curable with antibiotics) and Viral STIs (e.g. Genital Warts / HPV, HIV/AIDS; incurable, managed with antivirals).",
-        "formula": "\\text{Bacterial (Syphilis, Gonorrhoea)} \\quad \\text{vs} \\quad \\text{Viral (Warts, HIV/AIDS)}",
+        "formula": "\\begin{aligned}\\text{Bacterial STIs: } & \\text{Syphilis, Gonorrhoea (Curable)} \\\\ \\text{Viral STIs: } & \\text{Genital Warts, HIV/AIDS (Incurable)}\\end{aligned}",
         "unit": "",
         "example": "Barrier methods (condoms) effectively reduce transmission of both bacterial and viral STIs."
     },
@@ -1502,7 +1502,7 @@ KEY_TERMS_DATA = [
         "term": "Internal vs External Fertilisation",
         "category": "Comparative Zoology",
         "definition": "External fertilisation occurs outside the female body in an aquatic medium where both gametes are shed simultaneously (high risk of predation, requires huge gamete numbers); Internal fertilisation occurs inside the female reproductive tract (higher survival rate, fewer eggs needed).",
-        "formula": "\\text{External (Frogs, Fish)} \\quad \\text{vs} \\quad \\text{Internal (Reptiles, Birds, Mammals)}",
+        "formula": "\\begin{aligned}\\text{External: } & \\text{Water medium (Frogs, Fish)} \\\\ \\text{Internal: } & \\text{Maternal tract (Birds, Mammals)}\\end{aligned}",
         "unit": "",
         "example": "Frogs lay hundreds of eggs in water for external fertilisation; humans have internal fertilisation producing 1 zygote."
     }
