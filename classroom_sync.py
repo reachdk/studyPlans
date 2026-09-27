@@ -40,6 +40,27 @@ def slug(value):
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")[:70] or "untitled"
 
 
+def clean_subject(course_name):
+    c = (course_name or "").lower()
+    if "chem" in c:
+        return "chemistry"
+    if "bio" in c:
+        return "biology"
+    if "physic" in c:
+        return "physics"
+    if "math" in c:
+        return "mathematics"
+    if "social" in c:
+        return "social-science"
+    if "english" in c:
+        return "english"
+    if "it" in c or "402" in c:
+        return "information-technology"
+    if "german" in c:
+        return "german"
+    return slug(course_name)
+
+
 def is_9a_only(label):
     return bool(re.search(r"\b(?:g(?:rade)?[- ]*)?9a\b", label, re.I)
                 and not re.search(r"\b(?:g(?:rade)?[- ]*)?9b\b|\b9a\s*(?:&|and|\+)\s*9b\b|\ba\s*(?:&|and|\+)\s*b\b", label, re.I))
@@ -98,7 +119,7 @@ def posts(classroom, course_id):
 def attachment_rows(classroom, courses):
     for course in courses:
         course_id = course["id"]
-        folder = f"{slug(course.get('name', 'class'))}--{course_id}"
+        folder = clean_subject(course.get("name", "class"))
         for kind, post in posts(classroom, course_id):
             for material in post.get("materials", []):
                 drive_file = material.get("driveFile", {}).get("driveFile", {})
@@ -154,7 +175,7 @@ def write_source_indexes(output, payload):
     csv_path = output / "sources.csv"
     with csv_path.open("w", newline="", encoding="utf-8") as stream:
         writer = csv.DictWriter(stream, fieldnames=[
-            "course", "post_title", "post_type", "post_created", "post_updated", "attachment_name",
+            "course", "subject", "post_title", "post_type", "post_created", "post_updated", "attachment_name",
             "local_path", "mime_type", "drive_file_id", "version",
         ])
         writer.writeheader()
@@ -163,6 +184,7 @@ def write_source_indexes(output, payload):
             for post in posts:
                 writer.writerow({
                     "course": post.get("course", ""),
+                    "subject": Path(info.get("path", "")).parent.name,
                     "post_title": post.get("post_title", ""),
                     "post_type": post.get("post_type", ""),
                     "post_created": post.get("post_created", ""),
@@ -175,10 +197,11 @@ def write_source_indexes(output, payload):
                 })
 
     md_path = output / "SOURCES.md"
+    generated_ts = payload.get("generated_at") or datetime.now(timezone.utc).isoformat()
     lines = [
         "# Google Classroom source index",
         "",
-        f"Generated: {payload.get('generated_at', '')}",
+        f"Generated: {generated_ts}",
         f"Files: {len(payload['files'])}",
         f"External/non-Drive attachments: {len(links)}",
         f"Errors: {len(payload['errors'])}",
@@ -186,13 +209,15 @@ def write_source_indexes(output, payload):
         "Use `sources.csv` for structured filtering. Upload only the needed files listed below to NotebookLM; do not upload `manifest.json` unless you intentionally want post metadata included.",
         "",
     ]
-    current_course = None
+    current_subject = None
     for file_id, info in sorted(by_file.items(), key=lambda item: item[1].get("path", "")):
         posts = info["posts"] or [{}]
+        subject = Path(info.get("path", "")).parent.name
         course = posts[0].get("course", "Unknown class")
-        if course != current_course:
-            current_course = course
-            lines += [f"## {course}", ""]
+        header = f"{subject.replace('-', ' ').title()} ({course})" if subject else course
+        if header != current_subject:
+            current_subject = header
+            lines += [f"## {header}", ""]
         post_titles = sorted({p.get("post_title", "") for p in posts if p.get("post_title")})
         lines.append(f"- `{info.get('path', '')}`")
         lines.append(f"  - Name: {info.get('name', '')}")
@@ -221,6 +246,7 @@ def sync(drive, rows, output):
     old = json.loads(manifest_path.read_text()) if manifest_path.exists() else {}
     previous = old.get("files", {})
     files, entries, errors = {}, [], []
+    used_relatives = set()
     for row in rows:
         if row["type"] != "drive":
             entries.append(row)
@@ -239,11 +265,36 @@ def sync(drive, rows, output):
             name = meta.get("name", row.get("attachment_name") or "file")
             if not extension:
                 extension = Path(name).suffix.lower()
-            relative = str(Path(row["folder"]) / f"{slug(Path(name).stem)}--{file_id}{extension}")
+
+            folder = row.get("folder") or clean_subject(row.get("course", "general"))
+            post_date = (row.get("post_created") or row.get("post_updated") or "")[:10]
+            date_prefix = f"{post_date}_" if post_date and re.match(r"^\d{4}-\d{2}-\d{2}$", post_date) else ""
+            stem = slug(Path(name).stem)
+
+            prev_path = previous.get(file_id, {}).get("path")
+            if prev_path and (output / prev_path).is_file():
+                relative = prev_path
+            else:
+                candidate = f"{date_prefix}{stem}{extension}"
+                candidate_rel = str(Path(folder) / candidate)
+                if candidate_rel in used_relatives or ((output / candidate_rel).exists() and previous.get(file_id, {}).get("path") != candidate_rel):
+                    candidate = f"{date_prefix}{stem}_{file_id[:6]}{extension}"
+                    candidate_rel = str(Path(folder) / candidate)
+                relative = candidate_rel
+
+            used_relatives.add(relative)
             target = output / relative
             version = meta.get("modifiedTime", "") + ":" + meta.get("size", "")
             if previous.get(file_id, {}).get("version") != version or not target.is_file():
                 download(drive, file_id, target, export_mime)
+                ts_str = row.get("post_created") or row.get("post_updated")
+                if ts_str:
+                    try:
+                        dt = datetime.fromisoformat(ts_str.replace("Z", "+00:00"))
+                        epoch = dt.timestamp()
+                        os.utime(target, (epoch, epoch))
+                    except Exception:
+                        pass
                 print(f"Downloaded: {relative}")
             files[file_id] = {"path": relative, "version": version, "name": name, "mimeType": mime}
         except Exception as exc:

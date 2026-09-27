@@ -76,7 +76,49 @@ class ClassroomSyncTests(unittest.TestCase):
             self.assertTrue(cs.sync(Drive(), rows, Path(temp)))
             self.assertEqual(download.call_count, 1)
             manifest = json.loads((Path(temp) / "manifest.json").read_text())
-            self.assertEqual(len(manifest["files"]), 1)
+    def test_clean_subject(self):
+        self.assertEqual(cs.clean_subject("CHEM G9B (2026-27)"), "chemistry")
+        self.assertEqual(cs.clean_subject("English Grade 9 (2026-2027)"), "english")
+        self.assertEqual(cs.clean_subject("G 9B -IT(402)/26-27"), "information-technology")
+        self.assertEqual(cs.clean_subject("G-9 Bio"), "biology")
+        self.assertEqual(cs.clean_subject("German  Grade IX"), "german")
+        self.assertEqual(cs.clean_subject("Mathematics - 9A & 9B -(2026-2027)"), "mathematics")
+        self.assertEqual(cs.clean_subject("Physics Grade IX (2026-27)"), "physics")
+        self.assertEqual(cs.clean_subject("Social Science 9A & 9B (2026-27)"), "social-science")
+
+    def test_date_prefixed_naming_and_collision(self):
+        class Get:
+            def __init__(self, name):
+                self.name = name
+            def execute(self):
+                return {"name": self.name, "mimeType": "application/pdf", "modifiedTime": "v1", "size": "100"}
+        class Files:
+            def get(self, fileId, **kwargs):
+                return Get("Chapter Notes.pdf")
+        class Drive:
+            def files(self):
+                return Files()
+
+        with tempfile.TemporaryDirectory() as temp, patch.object(cs, "download") as download:
+            def create_file(drive, file_id, target, export_mime):
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(b"%PDF-test")
+            download.side_effect = create_file
+
+            rows = [
+                {"type": "drive", "file_id": "file1_abc123", "course": "Physics Grade IX",
+                 "post_created": "2026-08-15T10:00:00.000Z", "folder": "physics"},
+                {"type": "drive", "file_id": "file2_xyz789", "course": "Physics Grade IX",
+                 "post_created": "2026-08-15T10:00:00.000Z", "folder": "physics"}
+            ]
+            self.assertTrue(cs.sync(Drive(), rows, Path(temp)))
+            manifest = json.loads((Path(temp) / "manifest.json").read_text())
+            path1 = manifest["files"]["file1_abc123"]["path"]
+            path2 = manifest["files"]["file2_xyz789"]["path"]
+            self.assertEqual(path1, "physics/2026-08-15_chapter-notes.pdf")
+            self.assertEqual(path2, "physics/2026-08-15_chapter-notes_file2_.pdf")
+            self.assertTrue((Path(temp) / path1).is_file())
+            self.assertTrue((Path(temp) / path2).is_file())
 
 
 if __name__ == "__main__":
