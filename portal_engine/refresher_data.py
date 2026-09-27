@@ -1289,6 +1289,222 @@ KEY_TERMS_DATA = [
         "formula": "\\text{Cycle duration } \\approx 28\\text{ days}",
         "unit": "",
         "example": "Occurs when fertilisation does not take place following ovulation."
+    },
+    {
+        "id": "bio_ch11_09",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Puberty & Secondary Sexual Characteristics",
+        "category": "Developmental Stage",
+        "definition": "The developmental period of sexual maturation during adolescence when reproductive organs become functionally active and gamete production begins, accompanied by physical changes triggered by sex hormones.",
+        "formula": "",
+        "unit": "",
+        "example": "Facial hair and deepening voice in males (testosterone); breast development and onset of menstruation (menarche) in females (estrogen)."
+    },
+    {
+        "id": "bio_ch11_10",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Testes & Scrotum (Thermoregulation)",
+        "category": "Reproductive Anatomy",
+        "definition": "Paired male primary reproductive organs housed outside the abdominal cavity in a pouch of skin (scrotum) to maintain a temperature 2–2.5°C lower than internal core body temperature, required for viable sperm formation (spermatogenesis).",
+        "formula": "T_{\\text{scrotum}} = T_{\\text{body}} - (2\\text{ to }2.5^\\circ\\text{C})",
+        "unit": "°C",
+        "example": "Undescended testes result in male sterility due to thermal inhibition of spermatogenesis."
+    },
+    {
+        "id": "bio_ch11_11",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Vas Deferens & Accessory Glands",
+        "category": "Reproductive Anatomy",
+        "definition": "Muscular duct conducting sperm from testes toward urethra, joined along its path by seminal vesicles and prostate gland whose alkaline secretions provide motility, nutrients (fructose), and neutralise vaginal acidity to constitute semen.",
+        "formula": "\\text{Semen} = \\text{Sperm cells} + \\text{Accessory gland secretions}",
+        "unit": "",
+        "example": "Prostate gland secretions prevent sperm coagulation and activate flagellar motility."
+    },
+    {
+        "id": "bio_ch11_12",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Testosterone",
+        "category": "Endocrine Hormone",
+        "definition": "Primary male steroid sex hormone synthesized by interstitial (Leydig) cells of the testes; regulates spermatogenesis and expression of male secondary sexual characteristics.",
+        "formula": "",
+        "unit": "",
+        "example": "Stimulates growth of larynx (Adam's apple) and skeletal muscle mass during puberty."
+    },
+    {
+        "id": "bio_ch11_13",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Ovary & Female Sex Hormones",
+        "category": "Reproductive Anatomy & Endocrinology",
+        "definition": "Paired primary female gonads in lower pelvic cavity producing mature female gametes (ova) and steroid hormones: Estrogen (regulates female secondary characteristics & uterine rebuild) and Progesterone (maintains vascular pregnancy endometrium).",
+        "formula": "",
+        "unit": "",
+        "example": "One mature ovum is released alternately by one of the ovaries approximately every 28 days."
+    },
+    {
+        "id": "bio_ch11_14",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Fallopian Tube (Oviduct)",
+        "category": "Reproductive Anatomy",
+        "definition": "Paired ciliated muscular tubes extending from near each ovary to the uterus; cilia sweep released ovum inward; the site where sperm meets and fertilises the egg (syngamy).",
+        "formula": "",
+        "unit": "",
+        "example": "Site of fertilisation in humans; blockage leads to tubal infertility."
+    },
+    {
+        "id": "bio_ch11_15",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Uterus & Endometrium",
+        "category": "Reproductive Anatomy",
+        "definition": "Hollow, inverted pear-shaped muscular pelvic organ lined by a specialized glandular mucous membrane (endometrium) that thickens monthly to nourish an embryo and contracts powerfully during parturition.",
+        "formula": "",
+        "unit": "",
+        "example": "Endometrium sloughs off as menstrual flow if fertilisation fails; thickens into placenta bed if blastocyst implants."
+    },
+    {
+        "id": "bio_ch11_16",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Sperm vs Ovum (Gamete Comparison)",
+        "category": "Comparative Cytology",
+        "definition": "Human gametes differ sharply: Sperm is microscopic, motile with a flagellar tail, produced in millions, containing minimal cytoplasm; Ovum is non-motile, much larger (spherical), produced singly per month, rich in cytoplasm and stored food.",
+        "formula": "\\text{Sperm (Motile, } n) \\quad \\text{vs} \\quad \\text{Ovum (Non-motile, cytoplasmic, } n)",
+        "unit": "",
+        "example": "Sperm head carries paternal genetic material (haploid 23 chromosomes) capped by digestive acrosome."
+    },
+    {
+        "id": "bio_ch11_17",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Implantation & Cleavage",
+        "category": "Developmental Process",
+        "definition": "Following fertilisation in the fallopian tube, the zygote undergoes rapid mitotic divisions (cleavage) forming a hollow cellular ball (blastocyst) that embeds securely into the thickened uterine endometrium within 7–9 days.",
+        "formula": "\\text{Zygote} \\xrightarrow{\\text{Cleavage}} \\text{Morula} \\xrightarrow{} \\text{Blastocyst} \\xrightarrow{\\text{Implantation}} \\text{Uterine Wall}",
+        "unit": "",
+        "example": "Successful implantation marks the clinical onset of pregnancy."
+    },
+    {
+        "id": "bio_ch11_18",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Umbilical Cord",
+        "category": "Reproductive Structure",
+        "definition": "Flexible vascular conduit containing two umbilical arteries and one umbilical vein connecting the abdomen of the developing foetus to the maternal-foetal placenta.",
+        "formula": "",
+        "unit": "",
+        "example": "Transports oxygenated and nutrient-rich blood from placenta to foetus and returns metabolic wastes."
+    },
+    {
+        "id": "bio_ch11_19",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Gestation Period & Parturition",
+        "category": "Physiological Process",
+        "definition": "Gestation is the duration of foetal development inside the uterus (approx. 280 days / 9 months in humans). Parturition is the process of giving birth through rhythmic, coordinated contractions of the uterine myometrium.",
+        "formula": "\\text{Gestation} \\approx 40\\text{ weeks} = 280\\text{ days}",
+        "unit": "days",
+        "example": "Oxytocin stimulates vigorous uterine muscular contractions culminating in birth."
+    },
+    {
+        "id": "bio_ch11_20",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Contraception",
+        "category": "Preventive Medicine",
+        "definition": "The deliberate prevention of conception and pregnancy through barrier, chemical/hormonal, mechanical/intrauterine, or surgical methods.",
+        "formula": "",
+        "unit": "",
+        "example": "Crucial for family planning, maternal health, and population stabilisation."
+    },
+    {
+        "id": "bio_ch11_21",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Barrier Methods of Contraception",
+        "category": "Contraception",
+        "definition": "Physical devices (such as condoms for males, diaphragms/cervical caps for females) that physically prevent sperm from reaching and entering the female cervical canal, also providing vital protection against STIs.",
+        "formula": "",
+        "unit": "",
+        "example": "Condoms are the only contraceptive method conferring dual protection: preventing pregnancy and transmission of STIs like HIV/AIDS."
+    },
+    {
+        "id": "bio_ch11_22",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Intrauterine Devices (IUD / Copper-T)",
+        "category": "Contraception",
+        "definition": "A small T-shaped device inserted into the uterine cavity by a trained medical professional; releases copper ions that suppress sperm motility and fertilising capacity, or hormones preventing endometrial implantation.",
+        "formula": "",
+        "unit": "",
+        "example": "Copper-T inserted into the uterus prevents blastocyst implantation."
+    },
+    {
+        "id": "bio_ch11_23",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Surgical Methods (Vasectomy & Tubectomy)",
+        "category": "Contraception",
+        "definition": "Permanent surgical sterilisation techniques: Vasectomy involves cutting and ligating a small portion of the vas deferens in males; Tubectomy involves cutting and ligating the fallopian tubes in females to block gamete transit.",
+        "formula": "\\text{Vasectomy: Blocks sperm duct} \\quad | \\quad \\text{Tubectomy: Blocks oviduct}",
+        "unit": "",
+        "example": "Surgical methods do not alter hormone production or secondary sexual drives, only blocking gamete transport."
+    },
+    {
+        "id": "bio_ch11_24",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Sexually Transmitted Infections (STIs)",
+        "category": "Pathology",
+        "definition": "Infections transmitted through sexual contact with an infected partner. Divided into Bacterial STIs (e.g. Gonorrhoea, Syphilis; curable with antibiotics) and Viral STIs (e.g. Genital Warts / HPV, HIV/AIDS; incurable, managed with antivirals).",
+        "formula": "\\text{Bacterial (Syphilis, Gonorrhoea)} \\quad \\text{vs} \\quad \\text{Viral (Warts, HIV/AIDS)}",
+        "unit": "",
+        "example": "Barrier methods (condoms) effectively reduce transmission of both bacterial and viral STIs."
+    },
+    {
+        "id": "bio_ch11_25",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Unisexual vs Bisexual Flowers",
+        "category": "Botanical Morphology",
+        "definition": "Flowers classified by reproductive organs: Unisexual flowers contain either only stamens (staminate/male) or only carpels (pistillate/female); Bisexual flowers contain both stamens and carpels in the same bloom.",
+        "formula": "",
+        "unit": "",
+        "example": "Papaya and Watermelon bear unisexual flowers; Hibiscus and Mustard bear bisexual flowers."
+    },
+    {
+        "id": "bio_ch11_26",
+        "sub": "bio",
+        "chCode": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "term": "Internal vs External Fertilisation",
+        "category": "Comparative Zoology",
+        "definition": "External fertilisation occurs outside the female body in an aquatic medium where both gametes are shed simultaneously (high risk of predation, requires huge gamete numbers); Internal fertilisation occurs inside the female reproductive tract (higher survival rate, fewer eggs needed).",
+        "formula": "\\text{External (Frogs, Fish)} \\quad \\text{vs} \\quad \\text{Internal (Reptiles, Birds, Mammals)}",
+        "unit": "",
+        "example": "Frogs lay hundreds of eggs in water for external fertilisation; humans have internal fertilisation producing 1 zygote."
     }
 ]
 
@@ -1692,6 +1908,79 @@ BIOLOGY_DIAGRAMS_DATA = [
         ],
         "examinerTip": "High-frequency 5-mark question! Always specify that fertilisation takes place in the fallopian tube (oviduct), while implantation takes place in the uterus lining.",
         "svgType": "female_reproductive"
+    },
+    {
+        "id": "diag_18",
+        "figCode": "Fig. 11.18",
+        "chapter": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "title": "Human Male Reproductive System",
+        "sub": "bio",
+        "ncertPage": 11,
+        "pdfPath": "downloads/class-09/science/exploration/iesc111--reproduction-how-life-continues.pdf#page=11",
+        "labels": [
+            {"part": "Testes (in Scrotum)", "desc": "Paired male primary sex organs housed in external pouch maintain 2–2.5°C lower temperature for spermatogenesis; produce testosterone."},
+            {"part": "Vas Deferens (Sperm Duct)", "desc": "Muscular tube conducting sperm upwards from testis and looping over urinary bladder to meet urethra."},
+            {"part": "Seminal Vesicles & Prostate Gland", "desc": "Accessory glands secreting alkaline, nutrient-rich fluid providing mobility and nourishment to sperm."},
+            {"part": "Urethra", "desc": "Common passage/conduit for both urine from urinary bladder and semen from reproductive tract."},
+            {"part": "Penis", "desc": "External copulatory muscular organ delivering semen into female reproductive tract."}
+        ],
+        "mustDraw": [
+            "Testis enclosed within external scrotal sac",
+            "Ascending vas deferens looping over urinary bladder",
+            "Accessory glands (seminal vesicle, prostate gland) opening into urethra",
+            "Shared urethral exit through penis"
+        ],
+        "examinerTip": "Crucial exam question! Explain why testes are located outside abdominal cavity (thermoregulation for sperm formation). Note urethra is a common duct for urine and sperm in males.",
+        "svgType": "male_reproductive"
+    },
+    {
+        "id": "diag_19",
+        "figCode": "Fig. 11.21",
+        "chapter": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "title": "Key Stages of the Menstrual Cycle (28-day timeline)",
+        "sub": "bio",
+        "ncertPage": 13,
+        "pdfPath": "downloads/class-09/science/exploration/iesc111--reproduction-how-life-continues.pdf#page=13",
+        "labels": [
+            {"part": "Days 1–5: Menstruation Phase", "desc": "Breakdown and discharge of unfertilised ovum along with blood and ruptured uterine endometrial lining."},
+            {"part": "Days 6–13: Follicular / Proliferative Phase", "desc": "New ovarian follicle matures; rising estrogen stimulates repair and rebuilding of uterine wall."},
+            {"part": "Day 14: Ovulation", "desc": "Rupture of mature Graafian follicle and release of the egg/ovum into fallopian tube triggered by LH surge."},
+            {"part": "Days 15–28: Luteal / Secretory Phase", "desc": "Corpus luteum secretes progesterone; uterine lining becomes thick, vascularized, and spongy to prepare for implantation."}
+        ],
+        "mustDraw": [
+            "28-day chronological cyclic dial or horizontal timeline divided into 4 key phases",
+            "Day 1–5 menstruation shedding",
+            "Day 14 distinct ovulation peak marking egg release",
+            "Days 15–28 luteal thickening followed by cycle restart if unfertilised"
+        ],
+        "examinerTip": "CBSE frequently asks: What happens if the ovum is not fertilised? Answer: The uterine lining is not needed; it breaks down and sloughs off with blood as menstruation (days 1–5).",
+        "svgType": "menstrual_cycle"
+    },
+    {
+        "id": "diag_20",
+        "figCode": "Fig. 11.22",
+        "chapter": "Ch 11",
+        "chTitle": "Reproduction: How Life Continues",
+        "title": "Stages of Pregnancy: Developing Embryo, Placenta & Umbilical Cord",
+        "sub": "bio",
+        "ncertPage": 14,
+        "pdfPath": "downloads/class-09/science/exploration/iesc111--reproduction-how-life-continues.pdf#page=14",
+        "labels": [
+            {"part": "Placenta (Maternal & Embryonic Interface)", "desc": "Disc-like vascular organ embedded in uterine wall with finger-like chorionic villi for nutrient and gas exchange."},
+            {"part": "Umbilical Cord", "desc": "Conduit containing umbilical blood vessels connecting developing embryo/foetus to the placenta."},
+            {"part": "Amniotic Fluid / Sac", "desc": "Fluid-filled protective sac surrounding the embryo acting as a shock absorber."},
+            {"part": "Uterine Muscular Wall (Myometrium)", "desc": "Thick muscular outer layer expanding during pregnancy and contracting powerfully during childbirth (parturition)."},
+            {"part": "Foetus (Trimester Stages)", "desc": "Embryo progressing from 1st trimester organogenesis to fully formed foetus across standard 9-month (38-40 week) human gestation."}
+        ],
+        "mustDraw": [
+            "Embryo/foetus enclosed within the uterine cavity",
+            "Disc-shaped placenta firmly anchored to the uterine wall",
+            "Umbilical cord directly connecting foetus abdomen to placenta"
+        ],
+        "examinerTip": "Placenta function is a standard 3-mark question: (1) Diffusion of glucose and oxygen from maternal blood to embryo via villi, (2) Removal of carbon dioxide and nitrogenous wastes from embryo to maternal blood.",
+        "svgType": "pregnancy_placenta"
     }
 ]
 

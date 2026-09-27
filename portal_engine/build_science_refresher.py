@@ -28,12 +28,10 @@ def load_vendor_assets():
 def load_diagram_images():
     images = {}
     img_dir = ROOT / "images" / "ncert_diagrams"
-    for i in range(1, 18):
-        diag_id = f"diag_{i:02d}"
-        img_file = img_dir / f"{diag_id}.png"
-        if img_file.exists():
-            b64 = base64.b64encode(img_file.read_bytes()).decode("utf-8")
-            images[diag_id] = f"data:image/png;base64,{b64}"
+    for img_file in sorted(img_dir.glob("diag_*.png")):
+        diag_id = img_file.stem
+        b64 = base64.b64encode(img_file.read_bytes()).decode("utf-8")
+        images[diag_id] = f"data:image/png;base64,{b64}"
     return images
 
 def generate_refresher():
