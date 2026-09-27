@@ -45,6 +45,12 @@ def generate_refresher():
     chemistry_table_json = json.dumps(CHEMISTRY_TABLE_9_1_DATA, ensure_ascii=False)
     diagram_images_json = json.dumps(diagram_images, ensure_ascii=False)
 
+    total_terms = len(KEY_TERMS_DATA)
+    total_diags = len(BIOLOGY_DIAGRAMS_DATA)
+    ch3_diags = len([d for d in BIOLOGY_DIAGRAMS_DATA if d.get("chapter") == "Ch 3"])
+    ch2_diags = len([d for d in BIOLOGY_DIAGRAMS_DATA if d.get("chapter") == "Ch 2"])
+    ch11_diags = len([d for d in BIOLOGY_DIAGRAMS_DATA if d.get("chapter") == "Ch 11"])
+
     html_template = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1079,7 +1085,7 @@ def generate_refresher():
         <span>📖</span> Key Terms & Formulae Glossary (<span id="mod-terms-count">0</span>)
       </button>
       <button class="module-tab-btn" data-mod="diagrams">
-        <span>🔬</span> Biology Exam Diagrams Atlas (17)
+        <span>🔬</span> Biology Exam Diagrams Atlas (<span id="mod-diagrams-count">{total_diags}</span>)
       </button>
       <button class="module-tab-btn" data-mod="chemistry">
         <span>⚗️</span> Chemistry Ch 9: Ion Valency & Formula Builder
@@ -1142,10 +1148,10 @@ def generate_refresher():
         </div>
 
         <div class="filter-pills">
-          <button class="pill-btn active" data-filter-diag="all">All 17 Diagrams</button>
-          <button class="pill-btn" data-filter-diag="Ch 3">🌿 Tissues (3)</button>
-          <button class="pill-btn" data-filter-diag="Ch 2">🧬 Cell (9)</button>
-          <button class="pill-btn" data-filter-diag="Ch 11">🌸 Reproduction (5)</button>
+          <button class="pill-btn active" data-filter-diag="all">All <span id="diag-count-all">{total_diags}</span> Diagrams</button>
+          <button class="pill-btn" data-filter-diag="Ch 3">🌿 Tissues (<span id="diag-count-ch3">{ch3_diags}</span>)</button>
+          <button class="pill-btn" data-filter-diag="Ch 2">🧬 Cell (<span id="diag-count-ch2">{ch2_diags}</span>)</button>
+          <button class="pill-btn" data-filter-diag="Ch 11">🌸 Reproduction (<span id="diag-count-ch11">{ch11_diags}</span>)</button>
           <button id="btn-toggle-all-recall" class="pill-btn" style="border-color: var(--warning); color: var(--warning); font-weight: 700;">
             🧠 Test Recall Mode (Hide Labels)
           </button>
@@ -2044,6 +2050,21 @@ def generate_refresher():
 
       // Initial stats
       document.getElementById("mod-terms-count").textContent = KEY_TERMS_DATA.length;
+      if (document.getElementById("mod-diagrams-count")) {{
+        document.getElementById("mod-diagrams-count").textContent = BIOLOGY_DIAGRAMS_DATA.length;
+      }}
+      if (document.getElementById("diag-count-all")) {{
+        document.getElementById("diag-count-all").textContent = BIOLOGY_DIAGRAMS_DATA.length;
+      }}
+      if (document.getElementById("diag-count-ch3")) {{
+        document.getElementById("diag-count-ch3").textContent = BIOLOGY_DIAGRAMS_DATA.filter(d => d.chapter === "Ch 3").length;
+      }}
+      if (document.getElementById("diag-count-ch2")) {{
+        document.getElementById("diag-count-ch2").textContent = BIOLOGY_DIAGRAMS_DATA.filter(d => d.chapter === "Ch 2").length;
+      }}
+      if (document.getElementById("diag-count-ch11")) {{
+        document.getElementById("diag-count-ch11").textContent = BIOLOGY_DIAGRAMS_DATA.filter(d => d.chapter === "Ch 11").length;
+      }}
       updateStarredCount();
 
       renderGlossary();
