@@ -2074,5 +2074,18 @@ def generate_refresher():
     OUTPUT_HTML.write_text(html_template, encoding="utf-8")
     print(f"🎉 Generated {OUTPUT_HTML.name} ({len(html_template) / 1024:.1f} KB)")
 
+    # Sync to public/ directory for Cloudflare deployment
+    public_dir = ROOT / "public"
+    public_dir.mkdir(exist_ok=True)
+    (public_dir / OUTPUT_HTML.name).write_text(html_template, encoding="utf-8")
+    for src_name in ["index.html", "study_science_dashboard.html", "study_math_dashboard.html"]:
+        src_path = ROOT / src_name
+        if src_path.exists():
+            (public_dir / src_name).write_text(src_path.read_text(encoding="utf-8"), encoding="utf-8")
+    if (ROOT / "images").exists():
+        import shutil
+        shutil.copytree(ROOT / "images", public_dir / "images", dirs_exist_ok=True)
+    print("📁 Synced static portal distribution to public/")
+
 if __name__ == "__main__":
     generate_refresher()

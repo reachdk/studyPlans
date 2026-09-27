@@ -1,0 +1,7 @@
+.git/
+downloads/
+subjects/
+portal_engine/
+*.py
+*.md
+requirements.txt
