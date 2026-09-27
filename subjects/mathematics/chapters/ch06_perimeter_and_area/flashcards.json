@@ -1,44 +1,128 @@
 [
   {
-    "id": "iemh106_fc1",
-    "tag": "Formula",
-    "front": "State <strong>Heron's Formula</strong> for the area of a triangle with sides <span class=\"math\">a, b, c</span>.",
-    "back": "<strong><span class=\"math\">Area = &radic;[s(s - a)(s - b)(s - c)]</span></strong><br>where <span class=\"math\">s = (a + b + c) / 2</span> is the semi-perimeter.",
-    "note": "Derived by Hero of Alexandria (~60 CE). Applicable to any arbitrary triangle."
+    "id": "fc_ch6_01",
+    "tag": "DEFINITIONS",
+    "front": "State <strong>Heron's Formula</strong> for the area of a triangle having side lengths $a, b, c$.",
+    "back": "$$\\mathbf{\\text{Area} = \\sqrt{s(s - a)(s - b)(s - c)}}$$<br>where $s$ is the <strong>semi-perimeter</strong>:<br>$$s = \\frac{a + b + c}{2}$$",
+    "note": "Fundamental Area Formula"
   },
   {
-    "id": "iemh106_fc2",
-    "tag": "Equilateral Triangle",
-    "front": "What is the formula for the area of an <strong>equilateral triangle</strong> of side length <span class=\"math\">a</span>?",
-    "back": "<strong><span class=\"math\">Area = (&radic;3 / 4) a<sup>2</sup></span></strong>",
-    "note": "Can be derived directly from Heron's formula by setting a = b = c."
+    "id": "fc_ch6_02",
+    "tag": "DEFINITIONS",
+    "front": "What does the <strong>semi-perimeter ($s$)</strong> represent geometrically, and why must $s > a, b, c$?",
+    "back": "$s$ is half of the triangle's perimeter ($s = \\frac{P}{2}$).<br><br>• By the <strong>Triangle Inequality Theorem</strong> ($a+b > c$), the sum of two sides exceeds the third, ensuring that $(s - a)$, $(s - b)$, and $(s - c)$ are strictly <strong>positive numbers</strong>.",
+    "note": "Geometric Existence Condition"
   },
   {
-    "id": "iemh106_fc3",
-    "tag": "Calculation Shortcut",
-    "front": "What is the smartest way to calculate <span class=\"math\">&radic;[s(s - a)(s - b)(s - c)]</span> without getting bogged down by huge numbers?",
-    "back": "<strong>Do NOT multiply the numbers inside the radical!</strong><br>Break s, (s-a), (s-b), and (s-c) into their <em>prime factors</em>, group like factors in pairs, and take one factor out for each pair.",
-    "note": "Prevents arithmetic errors on multi-digit square roots."
+    "id": "fc_ch6_03",
+    "tag": "EQUILATERAL TRIANGLES",
+    "front": "What is the formula for the <strong>area of an equilateral triangle</strong> with side $a$ derived from Heron's Formula?",
+    "back": "$$\\mathbf{\\text{Area} = \\frac{\\sqrt{3}}{4} a^2}$$<br>• Derived from Heron's formula by setting $a = b = c$ and $s = \\frac{3a}{2}$.",
+    "note": "Equilateral Area Shortcut"
   },
   {
-    "id": "iemh106_fc4",
-    "tag": "Flyover Problem",
-    "front": "What is the area of a triangle with sides <span class=\"math\">13 m, 14 m, 15 m</span>?",
-    "back": "1. s = (13 + 14 + 15)/2 = 21 m.<br>2. Factors: s = 21, (s-a) = 8, (s-b) = 7, (s-c) = 6.<br>3. Area = &radic;(21 &times; 8 &times; 7 &times; 6) = &radic;(7 &times; 3 &times; 2<sup>3</sup> &times; 7 &times; 2 &times; 3)<br>= 7 &times; 3 &times; 2<sup>2</sup> = <strong>84 m<sup>2</sup></strong>.",
-    "note": "From School Exam PA-2 Section C (Question 27)."
+    "id": "fc_ch6_04",
+    "tag": "EQUILATERAL TRIANGLES",
+    "front": "What is the formula for the <strong>altitude (height)</strong> of an equilateral triangle with side $a$?",
+    "back": "$$\\mathbf{h = \\frac{\\sqrt{3}}{2} a}$$<br>• Since $\\frac{1}{2} \\times a \\times h = \\frac{\\sqrt{3}}{4} a^2 \\implies h = \\frac{\\sqrt{3}}{2} a$.",
+    "note": "Equilateral Altitude Formula"
   },
   {
-    "id": "iemh106_fc5",
-    "tag": "Ratio Problem",
-    "front": "The perimeter of a triangular park is <span class=\"math\">540 m</span> and its sides are in the ratio <span class=\"math\">25 : 17 : 12</span>. Find its area.",
-    "back": "Let sides be 25x, 17x, 12x.<br>25x + 17x + 12x = 54x = 540 &rArr; x = 10.<br>Sides are: a = 250 m, b = 170 m, c = 120 m; s = 270 m.<br>Area = &radic;(270 &times; 20 &times; 100 &times; 150) = <strong>9000 m<sup>2</sup></strong>.",
-    "note": "Classic CBSE NCERT benchmark problem."
+    "id": "fc_ch6_05",
+    "tag": "CALCULATION DRILLS",
+    "front": "A traffic signal board is an equilateral triangle with perimeter $180\\text{ cm}$. What is its area?",
+    "back": "• Side $a = \\frac{180}{3} = 60\\text{ cm}$.<br>• $\\text{Area} = \\frac{\\sqrt{3}}{4} (60)^2 = \\frac{\\sqrt{3}}{4} (3600) = \\mathbf{900\\sqrt{3}\\text{ cm}^2}$.",
+    "note": "NCERT Ganita Manjari Classic"
   },
   {
-    "id": "iemh106_fc6",
-    "tag": "Quadrilateral Strategy",
-    "front": "How do you find the area of a general quadrilateral <span class=\"math\">ABCD</span> when given all 4 sides and one diagonal <span class=\"math\">AC</span>?",
-    "back": "Divide ABCD along diagonal AC into two triangles: <strong>&Delta;ABC</strong> and <strong>&Delta;ACD</strong>.<br>Compute Area(&Delta;ABC) and Area(&Delta;ACD) separately using Heron's formula, then add them: <br><strong>Area(ABCD) = Area(&Delta;ABC) + Area(&Delta;ACD)</strong>.",
-    "note": "Used in land surveying and town-planning case studies."
+    "id": "fc_ch6_06",
+    "tag": "CALCULATION DRILLS",
+    "front": "Find the area of a triangle with sides $a = 13\\text{ cm}$, $b = 14\\text{ cm}$, and $c = 15\\text{ cm}$.",
+    "back": "• $s = \\frac{13+14+15}{2} = 21\\text{ cm}$.<br>• Differences: $(21-13)=8, (21-14)=7, (21-15)=6$.<br>• $\\text{Area} = \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{(3 \\times 7) \\times (2^3) \\times 7 \\times (2 \\times 3)} = \\sqrt{7^2 \\times 3^2 \\times 4^2} = 7 \\times 3 \\times 4 = \\mathbf{84\\text{ cm}^2}$.",
+    "note": "Famous Pythagorean Triangle"
+  },
+  {
+    "id": "fc_ch6_07",
+    "tag": "PRIME FACTORIZATION TRICK",
+    "front": "What is the best technique to simplify terms under Heron's radical $\\sqrt{s(s-a)(s-b)(s-c)}$ without huge multiplications?",
+    "back": "<strong>Prime Factorization!</strong><br><br>• Break $s, (s-a), (s-b), (s-c)$ into prime factors.<br>• Pair identical prime factors and pull one factor out of the radical for each pair ($p^2 \\to p$).<br>• Never multiply into huge 5-digit numbers!",
+    "note": "Calculation Efficiency Rule"
+  },
+  {
+    "id": "fc_ch6_08",
+    "tag": "RATIO OF SIDES",
+    "front": "The sides of a triangle are in the ratio $12 : 17 : 25$ and its perimeter is $540\\text{ cm}$. Find its sides and semi-perimeter.",
+    "back": "• Let sides be $12x, 17x, 25x$.<br>• $12x + 17x + 25x = 54x = 540 \\implies x = 10$.<br>• Sides are: $a = 120\\text{ cm}$, $b = 170\\text{ cm}$, $c = 250\\text{ cm}$.<br>• $s = \\frac{540}{2} = \\mathbf{270\\text{ cm}}$.",
+    "note": "Ratio-Based Setup"
+  },
+  {
+    "id": "fc_ch6_09",
+    "tag": "ISOSCELES TRIANGLES",
+    "front": "An isosceles triangle has perimeter $30\\text{ cm}$ and each of its equal sides is $12\\text{ cm}$. What is the third side and its area?",
+    "back": "• Equal sides $a = b = 12\\text{ cm}$. Third side $c = 30 - 24 = 6\\text{ cm}$.<br>• $s = \\frac{30}{2} = 15\\text{ cm}$.<br>• Differences: $(15-12)=3, (15-12)=3, (15-6)=9$.<br>• $\\text{Area} = \\sqrt{15 \\times 3 \\times 3 \\times 9} = 3 \\times 3 \\sqrt{15} = \\mathbf{9\\sqrt{15}\\text{ cm}^2}$.",
+    "note": "Isosceles Triangle CBSE Question"
+  },
+  {
+    "id": "fc_ch6_10",
+    "tag": "QUADRILATERAL APPLICATIONS",
+    "front": "How is Heron's Formula applied to find the area of a general <strong>quadrilateral</strong>?",
+    "back": "Draw one diagonal to split the quadrilateral into <strong>two distinct triangles</strong>.<br><br>1. Calculate the area of Triangle 1 using Heron's formula.<br>2. Calculate the area of Triangle 2.<br>3. $\\text{Total Area} = \\text{Area}_1 + \\text{Area}_2$.",
+    "note": "Decomposition Method"
+  },
+  {
+    "id": "fc_ch6_11",
+    "tag": "EXAM TRAPS",
+    "front": "What happens if three side lengths $a, b, c$ violate the triangle inequality (e.g. $a = 2, b = 3, c = 6$)?",
+    "back": "<strong>No triangle can exist!</strong><br><br>• $2 + 3 = 5 < 6$.<br>• Under Heron's formula, semi-perimeter $s = \\frac{11}{2} = 5.5$, and $(s - c) = (5.5 - 6) = -0.5$ (a negative number under the radical!).<br>• A negative radicand yields an imaginary number.",
+    "note": "Triangle Inequality Constraint"
+  },
+  {
+    "id": "fc_ch6_12",
+    "tag": "EXAM TRAPS",
+    "front": "If the side of an equilateral triangle is <strong>doubled</strong>, by what factor does its area increase?",
+    "back": "The area increases by a factor of <strong>4</strong> ($400\\%$ of original, or $300\\%$ increase).<br><br>• Since $\\text{Area} \\propto a^2$, $(2a)^2 = 4a^2$.",
+    "note": "Scaling Law Problem"
+  },
+  {
+    "id": "fc_ch6_13",
+    "tag": "RIGHT TRIANGLE SHORTCUT",
+    "front": "When a triangle has sides $6\\text{ cm}, 8\\text{ cm}, 10\\text{ cm}$, is it necessary to use Heron's Formula?",
+    "back": "<strong>NO!</strong> Check for Pythagorean triplet:<br>$$6^2 + 8^2 = 36 + 64 = 100 = 10^2$$<br>• It is a right-angled triangle! Use standard formula:<br>$$\\text{Area} = \\frac{1}{2} \\times 6 \\times 8 = \\mathbf{24\\text{ cm}^2}$$<br>• Saves 3 minutes in examinations!",
+    "note": "Pythagorean Triplet Recognition"
+  },
+  {
+    "id": "fc_ch6_14",
+    "tag": "HEIGHT CALCULATION",
+    "front": "How do you find the <strong>altitude corresponding to the longest side</strong> after computing area via Heron's Formula?",
+    "back": "Equate the computed area to $\\frac{1}{2} \\times \\text{longest side} \\times h$:<br>$$\\text{Area} = \\frac{1}{2} \\times c_{\\text{max}} \\times h \\implies \\mathbf{h = \\frac{2 \\times \\text{Area}}{c_{\\text{max}}}}}$$",
+    "note": "Altitude from Area Protocol"
+  },
+  {
+    "id": "fc_ch6_15",
+    "tag": "FENCING & COSTING",
+    "front": "A triangular park has sides $120\\text{ m}, 80\\text{ m}, 50\\text{ m}$. A space of $3\\text{ m}$ is left for a gate. What is the length of wire needed for fencing?",
+    "back": "• Perimeter $= 120 + 80 + 50 = 250\\text{ m}$.<br>• Fencing wire length $= \\text{Perimeter} - \\text{Gate width} = 250 - 3 = \\mathbf{247\\text{ m}}$.",
+    "note": "NCERT Example 3 Context"
+  },
+  {
+    "id": "fc_ch6_16",
+    "tag": "RHOMBUS APPLICATION",
+    "front": "A rhombus field has perimeter $400\\text{ m}$ and one diagonal $160\\text{ m}$. What is the area of the rhombus?",
+    "back": "• Side $a = \\frac{400}{4} = 100\\text{ m}$.<br>• The diagonal splits the rhombus into 2 identical triangles with sides $100\\text{ m}, 100\\text{ m}, 160\\text{ m}$.<br>• Area of each triangle $= 4800\\text{ m}^2$.<br>• Total area $= 2 \\times 4800 = \\mathbf{9600\\text{ m}^2}$.",
+    "note": "Rhombus Grazing Field Problem"
+  },
+  {
+    "id": "fc_ch6_17",
+    "tag": "UNITS HYGIENE",
+    "front": "If side lengths are given in <strong>meters</strong> and fencing cost is given in <strong>Rs per meter</strong>, what are the units of area vs fencing cost?",
+    "back": "• Perimeter & Fencing length: linear meters ($\\text{m}$).<br>• Area: square meters ($\\mathbf{\\text{m}^2}$).<br>• Fencing Cost: $\\text{Rate} \\times \\text{Perimeter}$ (in ₹).<br>• Turf/Paving Cost: $\\text{Rate} \\times \\text{Area}$ (in ₹).",
+    "note": "Examination Units Distinction"
+  },
+  {
+    "id": "fc_ch6_18",
+    "tag": "EXAM TRAPS",
+    "front": "What is the common arithmetic mistake students make with $s$ in Heron's Formula?",
+    "back": "1. Writing $s = a + b + c$ without dividing by 2.<br>2. Subtracting $(a - s)$ instead of $(s - a)$, producing negative numbers.<br>3. Multiplying $s(s-a)(s-b)(s-c)$ into a giant number and making errors finding square roots.",
+    "note": "Top 3 Examination Pitfalls"
   }
 ]

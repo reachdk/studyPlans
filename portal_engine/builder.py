@@ -16,13 +16,22 @@ ROOT = Path(__file__).resolve().parent.parent
 TEMPLATE_PATH = ROOT / "portal_engine" / "template.html"
 
 def markdown_to_html(md_text: str) -> str:
-    """Converts guide markdown into styled HTML with tables and callout boxes."""
+    """Converts guide markdown into styled HTML with progressive disclosure accordions, tables and callout boxes."""
     lines = md_text.strip().split("\n")
     html_lines = []
     in_table = False
     table_header_done = False
     in_quote = False
     quote_lines = []
+    in_accordion = False
+    accordion_count = 0
+
+    def close_accordion():
+        nonlocal in_accordion
+        if in_accordion:
+            html_lines.append('  </div>') # close .accordion-body
+            html_lines.append('</div>')     # close .concept-accordion
+            in_accordion = False
 
     def flush_quote():
         nonlocal in_quote, quote_lines
@@ -37,14 +46,20 @@ def markdown_to_html(md_text: str) -> str:
             quote_lines = []
             in_quote = False
 
+    has_sections = any(l.strip().startswith("### ") or l.strip().startswith("## ") for l in lines)
+    toolbar_added = False
+
     for line in lines:
         stripped = line.strip()
+
+        # If it is a divider line, ignore
+        if stripped in ("---", "***", "___"):
+            continue
 
         # Handle blockquotes
         if stripped.startswith(">"):
             in_quote = True
             quote_content = stripped.lstrip("> ").strip()
-            # replace markdown alerts
             quote_content = re.sub(r'\[!(?:TIP|NOTE)\]', '💡 <strong>Key Takeaway:</strong>', quote_content, flags=re.I)
             quote_content = re.sub(r'\[!WARNING\]', '⚠️ <strong>Exam Trap:</strong>', quote_content, flags=re.I)
             quote_lines.append(quote_content)
@@ -55,7 +70,6 @@ def markdown_to_html(md_text: str) -> str:
         # Handle Tables
         if stripped.startswith("|") and stripped.endswith("|"):
             cells = [c.strip() for c in stripped.strip("|").split("|")]
-            # Check if separator row
             if all(re.match(r'^:?-+:?$', c) for c in cells):
                 table_header_done = True
                 continue
@@ -77,13 +91,37 @@ def markdown_to_html(md_text: str) -> str:
         if not stripped:
             continue
 
+        # Pass through raw HTML directly (for interactive widgets, custom divs, buttons)
+        if stripped.startswith("<div") or stripped.startswith("<table") or stripped.startswith("</") or stripped.startswith("<button") or stripped.startswith("<span") or stripped.startswith("<strong"):
+            html_lines.append(stripped)
+            continue
+
         # Headers
-        if stripped.startswith("#### "):
+        if stripped.startswith("### ") or stripped.startswith("## "):
+            sec_title = stripped[4:] if stripped.startswith("### ") else stripped[3:]
+            close_accordion()
+
+            if has_sections and not toolbar_added:
+                html_lines.append('<div class="notes-toolbar">')
+                html_lines.append('  <button class="btn-notes-toggle" onclick="toggleAllAccordions(true)">📖 Expand All</button>')
+                html_lines.append('  <button class="btn-notes-toggle" onclick="toggleAllAccordions(false)">📁 Collapse All</button>')
+                html_lines.append('</div>')
+                toolbar_added = True
+
+            accordion_count += 1
+            is_first = (accordion_count == 1)
+            open_class = " open" if is_first else ""
+            arrow = "▾" if is_first else "▸"
+
+            html_lines.append('<div class="concept-accordion">')
+            html_lines.append('  <div class="accordion-header" onclick="toggleAccordion(this)">')
+            html_lines.append(f'    <span>{sec_title}</span><span class="accordion-arrow">{arrow}</span>')
+            html_lines.append('  </div>')
+            html_lines.append(f'  <div class="accordion-body{open_class}">')
+            in_accordion = True
+            continue
+        elif stripped.startswith("#### "):
             html_lines.append(f"<h4>{stripped[5:]}</h4>")
-        elif stripped.startswith("### "):
-            html_lines.append(f"<h3>{stripped[4:]}</h3>")
-        elif stripped.startswith("## "):
-            html_lines.append(f"<h3>{stripped[3:]}</h3>")
         elif stripped.startswith("# "):
             html_lines.append(f"<h2>{stripped[2:]}</h2>")
         # List items
@@ -97,6 +135,7 @@ def markdown_to_html(md_text: str) -> str:
         flush_quote()
     if in_table:
         html_lines.append('</table>')
+    close_accordion()
 
     result = "\n".join(html_lines)
 
@@ -116,6 +155,16 @@ def build_portal(subject_id: str, output_path: Path = None) -> Path:
     with open(manifest_path, "r", encoding="utf-8") as f:
         manifest = json.load(f)
 
+    # Load KaTeX assets
+    vendor_katex = ROOT / "portal_engine" / "vendor" / "katex"
+    katex_css_file = vendor_katex / "katex.embedded.css"
+    katex_js_file = vendor_katex / "katex.min.js"
+    katex_autorender_file = vendor_katex / "auto-render.min.js"
+
+    katex_css = katex_css_file.read_text(encoding="utf-8") if katex_css_file.exists() else ""
+    katex_js = katex_js_file.read_text(encoding="utf-8") if katex_js_file.exists() else ""
+    katex_autorender = katex_autorender_file.read_text(encoding="utf-8") if katex_autorender_file.exists() else ""
+
     # 1. Compile Chapters
     chapters_dir = subject_dir / "chapters"
     compiled_chapters = []
@@ -125,9 +174,15 @@ def build_portal(subject_id: str, output_path: Path = None) -> Path:
         with open(ch_folder / "meta.json", "r", encoding="utf-8") as f:
             ch_data = json.load(f)
 
-        guide_file = ch_folder / "guide.md"
-        guide_md = guide_file.read_text(encoding="utf-8") if guide_file.exists() else ""
-        ch_data["guideHtml"] = markdown_to_html(guide_md)
+        guide_html_file = ch_folder / "guide.html"
+        guide_md_file = ch_folder / "guide.md"
+
+        if guide_html_file.exists():
+            ch_data["guideHtml"] = guide_html_file.read_text(encoding="utf-8")
+        elif guide_md_file.exists():
+            ch_data["guideHtml"] = markdown_to_html(guide_md_file.read_text(encoding="utf-8"))
+        else:
+            ch_data["guideHtml"] = "<p>Notes under development.</p>"
 
         cards_file = ch_folder / "flashcards.json"
         ch_data["flashcards"] = json.loads(cards_file.read_text(encoding="utf-8")) if cards_file.exists() else []
@@ -183,6 +238,10 @@ def build_portal(subject_id: str, output_path: Path = None) -> Path:
         "{{THEME_VARS}}": "\n      ".join(theme_vars),
         "{{THEME_VARS_DARK}}": "\n      ".join(theme_vars_dark),
         "{{DEFAULT_ACTIVE_SCOPE}}": json.dumps(manifest.get("defaultActiveScope", [])),
+        "{{CATEGORIES_DATA_JSON}}": json.dumps(manifest.get("categories", []), indent=2, ensure_ascii=False),
+        "{{KATEX_CSS}}": katex_css,
+        "{{KATEX_JS}}": katex_js,
+        "{{KATEX_AUTORENDER_JS}}": katex_autorender,
         "{{CHAPTERS_DATA_JSON}}": json.dumps(compiled_chapters, indent=2, ensure_ascii=False),
         "{{PRACTICE_PAPERS_DATA_JSON}}": json.dumps(compiled_papers, indent=2, ensure_ascii=False),
     }

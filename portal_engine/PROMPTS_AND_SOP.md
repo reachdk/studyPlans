@@ -58,22 +58,29 @@ For each chapter, provide the NCERT PDF or text to the LLM/subagent using this p
 ### System Prompt / Extraction Instruction:
 ```text
 You are an expert CBSE Class 9 curriculum specialist and question paper setter.
-Ingest the provided NCERT chapter and produce 4 files:
+Ingest the provided NCERT chapter and produce 4 files adhering to the Gold Standard:
 1. meta.json: id, code, title, sub (category id), theme, lg (learning goal), desc, pdf relative path.
-2. guide.md: High-yield revision summary with:
-   - Teacher's Overview (> 👨‍🏫 **Teacher's Overview:**)
-   - Core concepts, definitions, and theorems
-   - Key formulas with clean math notation (x^2, \sqrt{...}, (x, y))
-   - Comparison tables (| Property | Concept A | Concept B |)
-   - Common Exam Traps (> ⚠️ **Exam Trap:**)
-3. flashcards.json: Array of 8-10 cards with id, tag, front (prompt/concept), back (detailed explanation/derivation), note.
-4. questions.json: 8-10 authentic CBSE questions categorized by type:
-   - MCQs (1m) with options
-   - Assertion-Reasoning (1m) with options
-   - Short Answer (2m & 3m)
-   - Long Answer (5m)
-   - Case-Based Studies (4m)
-   *Every question MUST have: prompt, marks, answer, markingScheme (step-by-step mark breakdown), and examinerTip.*
+2. guide.md: Comprehensive 200–250 line revision guide using 5 progressive disclosure accordions:
+   - Section 1: Teacher's Masterclass Overview & Definitional Foundations
+   - Section 2: Core Taxonomy & Multi-Case Boundary Condition Tables (8+ test cases)
+   - Section 3: Algorithmic Step-by-Step "How-to-Solve" Protocols & Sign Hygiene
+   - Section 4: Deep Theorems, Formula Derivations, and Geometric/Real-World Intuition
+   - Section 5: Examiner's Pitfall Matrix & 4-Tiered Solved Practice (Foundational -> HOTS)
+   - Embedded Interactive Parameter Explorer Widget
+3. flashcards.json: Exactly 18–20 high-yield cards across 5 recall categories:
+   - Category 1: Definitions & Constraints (4 cards)
+   - Category 2: Degree, Classification & Key Theorems (4 cards)
+   - Category 3: Rapid Mental Math & Calculation Drills (4 cards)
+   - Category 4: Exam Traps & True/False Nuances (4 cards)
+   - Category 5: Geometric Intuition & Visual Connections (2-3 cards)
+4. questions.json: 8–10 authentic CBSE questions covering the Section A–E blueprint:
+   - 2x MCQs (1m) with 4 options and distractor analysis
+   - 1x Assertion-Reasoning (1m) with authentic 4 CBSE standard choices
+   - 2x Very Short Answer (2m) with explicit [1m + 1m] marking scheme
+   - 2x Short Answer (3m) with explicit [1m + 1m + 1m] marking scheme
+   - 1x Long Answer / HOTS (5m) with multi-part synthesis [1m + 2m + 2m]
+   - 1x Case-Based Integrated Study (4m) with authentic real-world stem and 3 sub-questions [1m + 1m + 2m] with internal choice
+   *Every question MUST have: id, title, type, marks, prompt, options (if MCQ/AR), solution, markingScheme (array of fractional point breakdowns), and examinerTip.*
 ```
 
 ---

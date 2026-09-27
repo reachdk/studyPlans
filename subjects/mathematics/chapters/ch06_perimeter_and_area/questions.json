@@ -1,68 +1,142 @@
 [
   {
+    "id": "q_ch6_01",
+    "title": "Q1 • Equilateral Triangle Area Scaling",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The perimeter of an equilateral triangle is 60 cm. Its area is equal to:",
+    "prompt": "If the side of an equilateral triangle is tripled ($3a$), then its area increases by what factor?<br><br><strong>(A)</strong> 3 times<br><strong>(B)</strong> 6 times<br><strong>(C)</strong> 9 times<br><strong>(D)</strong> 27 times",
     "options": [
-      "(a) 10&radic;3 cm<sup>2</sup>",
-      "(b) 100&radic;3 cm<sup>2</sup>",
-      "(c) 15&radic;3 cm<sup>2</sup>",
-      "(d) 20&radic;3 cm<sup>2</sup>"
+      "(A) 3 times",
+      "(B) 6 times",
+      "(C) 9 times",
+      "(D) 27 times"
     ],
-    "answer": "<strong>(b) 100&radic;3 cm<sup>2</sup></strong>",
-    "markingScheme": "• Side a = Perimeter / 3 = 60 / 3 = 20 cm [0.5 mark]<br>• Area = (&radic;3 / 4) a<sup>2</sup> = (&radic;3 / 4) &times; 400 = 100&radic;3 cm<sup>2</sup> [0.5 mark]",
-    "examinerTip": "Do not confuse perimeter with side length."
+    "solution": "<strong>Correct Answer: (C) 9 times</strong><br><br>• Original area: $A_1 = \\frac{\\sqrt{3}}{4} a^2$.<br>• New side: $a' = 3a$.<br>• New area: $A_2 = \\frac{\\sqrt{3}}{4} (3a)^2 = \\frac{\\sqrt{3}}{4} (9a^2) = 9 \\times \\left(\\frac{\\sqrt{3}}{4} a^2\\right) = \\mathbf{9 A_1}$.<br>• Hence, the area increases by a factor of <strong>9</strong>.",
+    "markingScheme": [
+      "1.0 mark: Correct option (C) selected with mathematical ratio A₂ / A₁ = (3a)² / a² = 9."
+    ],
+    "examinerTip": "🚨 CBSE MCQ Tip: Area is a 2-dimensional metric, so linear scaling by factor k scales area by k²."
   },
   {
+    "id": "q_ch6_02",
+    "title": "Q2 • Semi-Perimeter & Existence Condition Trap",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The sides of a triangle are 13 m, 14 m, and 15 m. Its semi-perimeter s is:",
+    "prompt": "For a triangle with side lengths $a = 18\\text{ cm}$, $b = 10\\text{ cm}$, and perimeter $42\\text{ cm}$, the value of the side difference $(s - c)$ under Heron's radical is:<br><br><strong>(A)</strong> 7 cm<br><strong>(B)</strong> 14 cm<br><strong>(C)</strong> 21 cm<br><strong>(D)</strong> 3 cm",
     "options": [
-      "(a) 42 m",
-      "(b) 21 m",
-      "(c) 84 m",
-      "(d) 28 m"
+      "(A) 7 cm",
+      "(B) 14 cm",
+      "(C) 21 cm",
+      "(D) 3 cm"
     ],
-    "answer": "<strong>(b) 21 m</strong>",
-    "markingScheme": "• s = (a + b + c) / 2 = (13 + 14 + 15) / 2 = 42 / 2 = 21 m [1 mark]",
-    "examinerTip": "Direct question from PA-2 School Exam Section A."
+    "solution": "<strong>Correct Answer: (A) 7 cm</strong><br><br>1. Semi-perimeter $s = \\frac{\\text{Perimeter}}{2} = \\frac{42}{2} = 21\\text{ cm}$.<br>2. Third side $c = \\text{Perimeter} - (a + b) = 42 - (18 + 10) = 42 - 28 = 14\\text{ cm}$.<br>3. Therefore, $(s - c) = 21 - 14 = \\mathbf{7\\text{ cm}}$.",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) selected with calculation c = 14 cm, s - c = 21 - 14 = 7 cm."
+    ],
+    "examinerTip": "🚨 Notice: Do not confuse the side length c (14 cm) with the difference (s - c) (7 cm)."
   },
   {
-    "type": "Assertion-Reason",
+    "id": "q_ch6_03",
+    "title": "Q3 • Assertion-Reasoning (Triangle Inequality & Radicand)",
+    "type": "A-R",
     "marks": 1,
-    "prompt": "<strong>Assertion (A):</strong> The area of a triangle having sides 5 cm, 12 cm, and 13 cm is 30 cm<sup>2</sup>.<br><strong>Reason (R):</strong> Since 5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169 = 13<sup>2</sup>, the triangle is right-angled and its area is (1/2) &times; 5 &times; 12 = 30 cm<sup>2</sup>.",
+    "prompt": "<strong>Direction:</strong> In the question below, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br><br><strong>Assertion (A):</strong> No real triangle can have sides of lengths $4\\text{ cm}$, $5\\text{ cm}$, and $10\\text{ cm}$.<br><strong>Reason (R):</strong> In any valid geometric triangle, the sum of any two side lengths must strictly exceed the third side length ($a + b > c$).",
     "options": [
-      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
-      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
-      "(c) (A) is true but (R) is false.",
-      "(d) (A) is false but (R) is true."
+      "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+      "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+      "(C) Assertion (A) is true but Reason (R) is false.",
+      "(D) Assertion (A) is false but Reason (R) is true."
     ],
-    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-    "markingScheme": "• Verifying Pythagorean triplet (5, 12, 13) and area = 30 cm<sup>2</sup> [1 mark]",
-    "examinerTip": "Whenever given Pythagorean triplets (3,4,5), (5,12,13), (7,24,25), (8,15,17), you can check using (1/2)bh as well as Heron's formula."
+    "solution": "<strong>Correct Answer: (A)</strong><br><br>• <strong>Assertion (A) is true:</strong> Here $4 + 5 = 9 < 10$. The two shorter sides cannot meet to close a triangle.<br>• <strong>Reason (R) is true:</strong> The Triangle Inequality Theorem dictates that $a + b > c$. Since $4 + 5 < 10$, this condition is violated.<br>• Reason (R) directly explains Assertion (A).",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) identified with validation of Triangle Inequality Theorem."
+    ],
+    "examinerTip": "🚨 Heron's Connection: If you plugged these numbers into Heron's formula, s = 9.5 and (s - c) = (9.5 - 10) = -0.5, giving a negative number under the square root!"
   },
   {
-    "type": "Short Answer (2m)",
+    "id": "q_ch6_04",
+    "title": "Q4 • Isosceles Triangle Area Calculation",
+    "type": "VSA",
     "marks": 2,
-    "prompt": "Find the area of a triangle two sides of which are 8 cm and 11 cm and the perimeter is 32 cm.",
-    "answer": "1. Let third side be c.<br>Perimeter = a + b + c = 8 + 11 + c = 32<br>19 + c = 32 &rArr; <strong>c = 13 cm</strong>.<br><br>2. Semi-perimeter s = 32 / 2 = <strong>16 cm</strong>.<br>s - a = 16 - 8 = 8 cm<br>s - b = 16 - 11 = 5 cm<br>s - c = 16 - 13 = 3 cm.<br><br>3. Area = &radic;[16 &times; 8 &times; 5 &times; 3] = &radic;[(4<sup>2</sup>) &times; (4 &times; 2) &times; 15] = 4 &times; 2 &radic;30 = <strong>8&radic;30 cm<sup>2</sup></strong> (approx 43.82 cm<sup>2</sup>).",
-    "markingScheme": "• Finding third side c = 13 cm and s = 16 cm: 1 mark<br>• Applying Heron's formula to get 8&radic;30 cm<sup>2</sup>: 1 mark",
-    "examinerTip": "Leave surds in simplified radical form (8&radic;30) unless specifically asked for decimals."
+    "prompt": "Find the area of an isosceles triangle whose perimeter is $32\\text{ cm}$ and whose base is $12\\text{ cm}$.",
+    "solution": "1. Let the two equal sides be $a$.<br>$$\\text{Perimeter} = a + a + 12 = 32 \\implies 2a = 20 \\implies a = 10\\text{ cm}$$<br>So sides are $a = 10\\text{ cm}, b = 10\\text{ cm}, c = 12\\text{ cm}$. [0.5 mark]<br><br>2. Semi-perimeter $s = \\frac{32}{2} = 16\\text{ cm}$. [0.5 mark]<br><br>3. Differences:<br>• $s - a = 16 - 10 = 6$<br>• $s - b = 16 - 10 = 6$<br>• $s - c = 16 - 12 = 4$<br><br>4. Apply Heron's formula:<br>$$\\text{Area} = \\sqrt{s(s-a)(s-b)(s-c)} = \\sqrt{16 \\times 6 \\times 6 \\times 4}$$<br>$$= \\sqrt{4^2 \\times 6^2 \\times 2^2} = 4 \\times 6 \\times 2 = \\mathbf{48\\text{ cm}^2}$$ [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark: Finding equal sides a = 10 cm.",
+      "0.5 mark: Calculating semi-perimeter s = 16 cm.",
+      "1.0 mark: Applying Heron's formula to yield Area = 48 cm²."
+    ],
+    "examinerTip": "🚨 Prime Pairing: Notice 16 = 4², 6 × 6 = 6², 4 = 2². Extracting √(4² × 6² × 2²) = 4 × 6 × 2 = 48 avoids large multiplications."
   },
   {
-    "type": "Short Answer (3m)",
+    "id": "q_ch6_05",
+    "title": "Q5 • Altitude from Longest Side",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "The sides of a triangle are $25\\text{ cm}, 17\\text{ cm},$ and $12\\text{ cm}$. Calculate its area, and find the length of the altitude corresponding to the longest side.",
+    "solution": "1. Semi-perimeter: $s = \\frac{25 + 17 + 12}{2} = \\frac{54}{2} = 27\\text{ cm}$.<br>Differences: $(27-25)=2, (27-17)=10, (27-12)=15$.<br><br>2. Area via Heron's formula:<br>$$\\text{Area} = \\sqrt{27 \\times 2 \\times 10 \\times 15} = \\sqrt{(3^3) \\times 2 \\times (2 \\times 5) \\times (3 \\times 5)}$$<br>$$= \\sqrt{3^4 \\times 2^2 \\times 5^2} = 3^2 \\times 2 \\times 5 = 9 \\times 10 = \\mathbf{90\\text{ cm}^2}$$ [1.0 mark]<br><br>3. Altitude to longest side ($25\\text{ cm}$):<br>$$\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times h \\implies 90 = \\frac{1}{2} \\times 25 \\times h$$<br>$$h = \\frac{180}{25} = \\mathbf{7.2\\text{ cm}}$$ [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Correct calculation of Area = 90 cm² via Heron's formula.",
+      "1.0 mark: Equating Area = 1/2 × 25 × h to obtain altitude h = 7.2 cm."
+    ],
+    "examinerTip": "🚨 CBSE Question Standard: Longest side has base = 25 cm, which gives the shortest altitude!"
+  },
+  {
+    "id": "q_ch6_06",
+    "title": "Q6 • Ratio of Sides & Fencing Budget",
+    "type": "SA",
     "marks": 3,
-    "prompt": "The triangular side walls of a flyover have been used for advertisements. The sides of the walls are 13 m, 14 m, and 15 m. The advertisements yield an earning of ₹ 5000 per m<sup>2</sup> per year. A company hired one of its walls for 3 months. How much rent did it pay?",
-    "answer": "1. Sides are a = 13 m, b = 14 m, c = 15 m.<br>s = (13 + 14 + 15) / 2 = 42 / 2 = 21 m.<br><br>2. Area of triangular wall = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; (21 - 13) &times; (21 - 14) &times; (21 - 15)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (2<sup>3</sup>) &times; 7 &times; (2 &times; 3)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>4</sup>] = 7 &times; 3 &times; 4 = <strong>84 m<sup>2</sup></strong>.<br><br>3. Annual earning = ₹ 5000 / m<sup>2</sup> / year.<br>Rent for 3 months (3/12 year = 1/4 year):<br>Rent = 84 &times; 5000 &times; (3 / 12) = 84 &times; 5000 &times; (1 / 4) = 21 &times; 5000 = <strong>₹ 1,05,000</strong>.",
-    "markingScheme": "• Calculating semi-perimeter s = 21 m: 0.5 mark<br>• Calculating Area = 84 m<sup>2</sup> via Heron's formula: 1.5 marks<br>• Calculating 3 months rent = ₹ 1,05,000: 1 mark",
-    "examinerTip": "From School Exam PA-2 Section C (Question 27). Remember that rent is for 3 months (3/12 of annual rate)."
+    "prompt": "The sides of a triangular field are in the ratio $12 : 17 : 25$ and its perimeter is $540\\text{ m}$.<br>(a) Find the area of the triangular field. [2 Marks]<br>(b) Find the cost of fencing the field with barbed wire at the rate of ₹25 per meter, leaving a 4-meter wide entrance for a gate. [1 Mark]",
+    "solution": "<strong>(a) Area Calculation:</strong><br>1. Let sides be $12x, 17x, 25x$:<br>$$12x + 17x + 25x = 540 \\implies 54x = 540 \\implies x = 10$$<br>Sides are: $a = 120\\text{ m}, b = 170\\text{ m}, c = 250\\text{ m}$. [0.5 mark]<br>Semi-perimeter: $s = \\frac{540}{2} = 270\\text{ m}$.<br><br>2. Differences: $(270-120)=150, (270-170)=100, (270-250)=20$.<br>$$\\text{Area} = \\sqrt{270 \\times 150 \\times 100 \\times 20}$$<br>$$= \\sqrt{(27 \\times 10) \\times (15 \\times 10) \\times 100 \\times (2 \\times 10)}$$<br>$$= \\sqrt{(3^3) \\times (3 \\times 5) \\times 2 \\times 10^4 \\times 10} = \\sqrt{3^4 \\times 10^4 \\times (5 \\times 2 \\times 10)}$$<br>$$= \\sqrt{3^4 \\times 10^6} = 3^2 \\times 10^3 = \\mathbf{9000\\text{ m}^2}$$ [1.5 marks]<br><br><strong>(b) Fencing Cost:</strong><br>• Effective fencing length $= \\text{Perimeter} - \\text{Gate width} = 540 - 4 = 536\\text{ m}$.<br>• $\\text{Cost} = 536\\text{ m} \\times ₹25/\\text{m} = \\mathbf{₹13,400}$. [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark: Determining sides 120 m, 170 m, 250 m.",
+      "1.5 marks: Correctly simplifying Heron's radical to Area = 9000 m².",
+      "1.0 mark: Subtracting 4 m gate to get 536 m and multiplying by 25 to get ₹13,400."
+    ],
+    "examinerTip": "🚨 Gate Width Trap: Never multiply the raw perimeter by the fencing rate when a gate space is specified!"
   },
   {
-    "type": "Long Answer (5m)",
+    "id": "q_ch6_07",
+    "title": "Q7 • Rhombus Decomposition via Diagonal",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "A rhombus-shaped grazing field has green grass for 18 cows to graze. If each side of the rhombus is $100\\text{ m}$ and its longer diagonal is $160\\text{ m}$:<br>(a) Find the total area of the rhombus field. [2 Marks]<br>(b) How much area of grass field will each cow get? [1 Mark]",
+    "solution": "<strong>(a) Total Area of Rhombus:</strong><br>1. A diagonal divides the rhombus into two congruent triangles with sides $a = 100\\text{ m}, b = 100\\text{ m}, c = 160\\text{ m}$. [0.5 mark]<br><br>2. For one triangle: $s = \\frac{100 + 100 + 160}{2} = \\frac{360}{2} = 180\\text{ m}$.<br>Differences: $(180 - 100) = 80, (180 - 100) = 80, (180 - 160) = 20$.<br><br>3. $\\text{Area of 1 triangle} = \\sqrt{180 \\times 80 \\times 80 \\times 20}$<br>$$= \\sqrt{(9 \\times 20) \\times 80^2 \\times 20} = \\sqrt{3^2 \\times 20^2 \\times 80^2} = 3 \\times 20 \\times 80 = \\mathbf{4800\\text{ m}^2}$$ [1.0 mark]<br><br>4. $\\text{Total Rhombus Area} = 2 \\times 4800 = \\mathbf{9600\\text{ m}^2}$. [0.5 mark]<br><br><strong>(b) Grass Area per Cow:</strong><br>$$\\text{Area per cow} = \\frac{\\text{Total Area}}{18} = \\frac{9600}{18} = \\frac{1600}{3} = \\mathbf{533.33\\text{ m}^2} \\quad \\left(\\text{or } 533\\frac{1}{3}\\text{ m}^2\\right)$$ [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark: Stating rhombus is divided into two congruent triangles.",
+      "1.0 mark: Calculating area of one triangle = 4800 m² via Heron's formula.",
+      "0.5 mark: Total area = 2 × 4800 = 9600 m².",
+      "1.0 mark: Dividing total area by 18 to obtain 533.33 m²."
+    ],
+    "examinerTip": "🚨 NCERT Exercise Problem: Notice the prime pairing √((9×20) × 80² × 20) = √(3² × 20² × 80²) = 3 × 20 × 80 = 4800. Fast and error-free!"
+  },
+  {
+    "id": "q_ch6_08",
+    "title": "Q8 • Long Answer HOTS: Quadrilateral Area with Right Triangle",
+    "type": "LA",
     "marks": 5,
-    "prompt": "Students of a school staged a cleanliness rally. They walked through lanes in two groups. One group walked through lanes PQ, QR, and RP, while the other walked through PR, RS, and SP. They cleaned the area enclosed within their respective paths.<br>Given: PQ = 7 m, QR = 24 m, RS = 15 m, SP = 20 m, and &ang;Q = 90&deg;.<br>(i) Find the length of diagonal lane PR. (1m)<br>(ii) Which group cleaned more area and by how much? (3m)<br>(iii) Find the total area cleaned by all students. (1m)",
-    "answer": "(i) In right &Delta;PQR, &ang;Q = 90&deg;:<br>By Pythagoras theorem: PR<sup>2</sup> = PQ<sup>2</sup> + QR<sup>2</sup> = 7<sup>2</sup> + 24<sup>2</sup> = 49 + 576 = 625<br>&rArr; <strong>PR = &radic;625 = 25 m</strong>.<br><br>(ii) Area cleaned by Group 1 (&Delta;PQR):<br>Area(&Delta;PQR) = (1/2) &times; Base &times; Altitude = (1/2) &times; 7 &times; 24 = <strong>84 m<sup>2</sup></strong>.<br><br>Area cleaned by Group 2 (&Delta;PRS):<br>Sides are PR = 25 m, RS = 15 m, SP = 20 m.<br>Notice: 15<sup>2</sup> + 20<sup>2</sup> = 225 + 400 = 625 = 25<sup>2</sup> (or use Heron's formula with s = (25+15+20)/2 = 30 m):<br>Heron's: Area = &radic;[30 &times; (30-25) &times; (30-15) &times; (30-20)] = &radic;[30 &times; 5 &times; 15 &times; 10] = &radic;[(15 &times; 2) &times; 5 &times; 15 &times; (5 &times; 2)] = &radic;[15<sup>2</sup> &times; 5<sup>2</sup> &times; 2<sup>2</sup>] = 15 &times; 5 &times; 2 = <strong>150 m<sup>2</sup></strong>.<br><br>Comparing areas:<br>Group 2 cleaned more area.<br>Difference = 150 - 84 = <strong>66 m<sup>2</sup> more</strong>.<br><br>(iii) Total area cleaned = Area(&Delta;PQR) + Area(&Delta;PRS) = 84 + 150 = <strong>234 m<sup>2</sup></strong>.",
-    "markingScheme": "• (i) Pythagoras calculation for PR = 25 m: 1 mark<br>• (ii) Area(&Delta;PQR) = 84 m<sup>2</sup> (1 mark); Area(&Delta;PRS) = 150 m<sup>2</sup> (1.5 marks); Difference = 66 m<sup>2</sup> (0.5 mark): 3 marks<br>• (iii) Total area = 234 m<sup>2</sup>: 1 mark",
-    "examinerTip": "Direct question from School Exam PA-2 Section D (Question 34). Always clearly state which group cleaned more."
+    "prompt": "A park is in the shape of a quadrilateral $ABCD$, where $\\angle C = 90^\\circ$, $AB = 9\\text{ m}$, $BC = 12\\text{ m}$, $CD = 5\\text{ m}$, and $AD = 8\\text{ m}$.<br><br><strong>Part (a):</strong> Draw a neat rough sketch, calculate the length of diagonal $BD$ using the Pythagorean Theorem, and find the area of right-angled $\\Delta BCD$. [2.5 Marks]<br><br><strong>Part (b):</strong> Find the area of $\\Delta ABD$ using Heron's formula (taking $\\sqrt{35} \\approx 5.916$), and calculate the total park area. [2.5 Marks]",
+    "solution": "<strong>Part (a) Solution:</strong><br>1. In right-angled $\\Delta BCD$ with $\\angle C = 90^\\circ$:<br>By Pythagoras theorem:<br>$$BD = \\sqrt{BC^2 + CD^2} = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = \\mathbf{13\\text{ m}}$$ [1.5 marks]<br><br>2. Area of right $\\Delta BCD$:<br>$$\\text{Area}(\\Delta BCD) = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 12 \\times 5 = \\mathbf{30\\text{ m}^2}$$ [1.0 mark]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. For $\\Delta ABD$, the sides are $a = 9\\text{ m}, b = 8\\text{ m}, c = 13\\text{ m}$:<br>$$s = \\frac{9 + 8 + 13}{2} = \\frac{30}{2} = 15\\text{ m}$$<br>Differences: $(15-9)=6, (15-8)=7, (15-13)=2$. [0.5 mark]<br><br>2. $\\text{Area}(\\Delta ABD) = \\sqrt{15 \\times 6 \\times 7 \\times 2} = \\sqrt{(3 \\times 5) \\times (3 \\times 2) \\times 7 \\times 2}$<br>$$= \\sqrt{3^2 \\times 2^2 \\times 35} = 3 \\times 2 \\sqrt{35} = 6\\sqrt{35}\\text{ m}^2$$ [1.0 mark]<br><br>3. Numerical evaluation:<br>$$6\\sqrt{35} \\approx 6 \\times 5.916 = \\mathbf{35.5\\text{ m}^2}$$ [0.5 mark]<br><br>4. $\\text{Total Park Area} = \\text{Area}(\\Delta BCD) + \\text{Area}(\\Delta ABD) = 30 + 35.5 = \\mathbf{65.5\\text{ m}^2}$ (approx). [0.5 mark]",
+    "markingScheme": [
+      "1.5 marks: Applying Pythagoras theorem in right triangle BCD to find BD = 13 m.",
+      "1.0 mark: Calculating Area(BCD) = 1/2 × 12 × 5 = 30 m².",
+      "1.0 mark: Applying Heron's formula to get Area(ABD) = 6√35 m².",
+      "0.5 mark: Evaluating 6√35 ≈ 35.5 m².",
+      "0.5 mark: Summing areas: 30 + 35.5 = 65.5 m²."
+    ],
+    "examinerTip": "🚨 Strategy Tip: Whenever one angle of a quadrilateral is 90°, always join the diagonal opposing that right angle to form a simple right triangle!"
+  },
+  {
+    "id": "q_ch6_09",
+    "title": "Q9 • Section E: Case-Based Integrated Study",
+    "type": "CBQ",
+    "marks": 4,
+    "prompt": "<strong>CASE STUDY: Eco-Resort Landscaping & Triangular Garden Plots</strong><br><br>An environmental architecture team in Wayanad, Kerala, is developing an eco-friendly resort. The master layout features ornamental triangular garden beds with perimeter stone borders and organic turf grass.<br><br>• Garden Plot Alpha has side lengths $a = 15\\text{ m}, b = 11\\text{ m}, c = 6\\text{ m}$.<br>• Garden Plot Beta is an equilateral triangle with a boundary perimeter of $72\\text{ m}$.<br><br>Based on these project specifications, answer the following:<br><br><strong>(i)</strong> Calculate the semi-perimeter $s$ of Garden Plot Alpha and verify that it satisfies the triangle inequality condition. [1 Mark]<br><br><strong>(ii)</strong> Calculate the exact area of Garden Plot Alpha using Heron's formula in simplest radical form. [1 Mark]<br><br><strong>(iii)</strong> For Garden Plot Beta (Equilateral, perimeter $72\\text{ m}$), calculate its exact area in square meters using the equilateral area formula. If turf grass installation costs ₹50 per square meter, calculate the total turfing cost (take $\\sqrt{3} \\approx 1.732$).<br><strong>[OR]</strong><br>If Garden Plot Alpha is fenced with a decorative wooden rail costing ₹120 per meter leaving a 2-meter gap for entry, calculate the total fencing expenditure for Plot Alpha. [2 Marks]",
+    "solution": "<strong>(i) Semi-Perimeter & Existence of Plot Alpha:</strong><br>$$s = \\frac{15 + 11 + 6}{2} = \\frac{32}{2} = \\mathbf{16\\text{ m}}$$<br>• Verification: $s > a$ ($16 > 15$), $s > b$ ($16 > 11$), $s > c$ ($16 > 6$). Sum of any two sides exceeds the third ($11 + 6 = 17 > 15$). Triangle inequality holds. [1.0 mark]<br><br><strong>(ii) Area of Plot Alpha:</strong><br>Differences: $(16 - 15) = 1, (16 - 11) = 5, (16 - 6) = 10$.<br>$$\\text{Area} = \\sqrt{16 \\times 1 \\times 5 \\times 10} = \\sqrt{16 \\times 50} = \\sqrt{16 \\times 25 \\times 2}$$<br>$$= 4 \\times 5 \\sqrt{2} = \\mathbf{20\\sqrt{2}\\text{ m}^2}$$ [1.0 mark]<br><br><strong>(iii) Primary Option (Plot Beta Area & Cost):</strong><br>• Side of equilateral plot $a = \\frac{72}{3} = 24\\text{ m}$. [0.5 mark]<br>• $\\text{Area} = \\frac{\\sqrt{3}}{4} a^2 = \\frac{\\sqrt{3}}{4} (24)^2 = \\frac{\\sqrt{3}}{4} (576) = \\mathbf{144\\sqrt{3}\\text{ m}^2}$. [0.5 mark]<br>• Numerical Area $\\approx 144 \\times 1.732 = 249.408\\text{ m}^2$.<br>• $\\text{Cost} = 249.408\\text{ m}^2 \\times ₹50/\\text{m}^2 = \\mathbf{₹12,470.40}$. [1.0 mark]<br><br><strong>[OR] Internal Choice Option:</strong><br>• Perimeter of Plot Alpha $= 15 + 11 + 6 = 32\\text{ m}$.<br>• Fencing length $= 32 - 2\\text{ m (gate)} = 30\\text{ m}$. [1.0 mark]<br>• $\\text{Expenditure} = 30\\text{ m} \\times ₹120/\\text{m} = \\mathbf{₹3,600}$. [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Calculating s = 16 m and validating triangle inequality.",
+      "1.0 mark: Correctly computing Area = 20√2 m² via Heron's formula.",
+      "2.0 marks: [Main Option] Finding side = 24 m, Area = 144√3 m² [1m] and Total Turfing Cost = ₹12,470.40 [1m]. OR [Choice Option] Fencing length = 30 m [1m] and Total Cost = ₹3,600 [1m]."
+    ],
+    "examinerTip": "🚨 CBSE Case Study Distinction: Fencing uses linear perimeter (m), whereas turfing uses surface area (m²). Never mix the two rates!"
   }
 ]

@@ -1,44 +1,128 @@
 [
   {
-    "id": "iemh102_fc1",
-    "tag": "Definition",
-    "front": "What is the critical condition for an algebraic expression to be called a <strong>polynomial</strong>?",
-    "back": "The exponents of all variables appearing in the terms must strictly be <strong>non-negative integers (whole numbers: 0, 1, 2, 3...)</strong>.<br>Expressions with fractional powers (like &radic;x) or negative powers (like 1/x = x<sup>-1</sup>) are NOT polynomials.",
-    "note": "Coefficients can be irrational (e.g. &radic;2 x<sup>2</sup> is a valid polynomial)."
+    "id": "fc_ch2_01",
+    "tag": "DEFINITIONS",
+    "front": "What is the <strong>fundamental condition</strong> for an algebraic expression to be classified as a polynomial in one variable?",
+    "back": "The exponents of all variables in every term must strictly be <strong>non-negative integers (whole numbers $\\mathbb{W} = \\{0, 1, 2, \\dots\\}$)</strong>.<br><br>• Expressions with negative powers ($x^{-1}$ or $\\frac{1}{x}$) or fractional powers ($x^{1/2}$ or $\\sqrt{x}$) are <strong>NOT</strong> polynomials.",
+    "note": "Golden Rule of Class 9 Algebra"
   },
   {
-    "id": "iemh102_fc2",
-    "tag": "Degrees",
-    "front": "What is the degree of a non-zero <strong>constant polynomial</strong>, and what is the degree of the <strong>zero polynomial</strong>?",
-    "back": "• <strong>Non-zero constant polynomial</strong> (e.g. p(x) = 5 = 5x<sup>0</sup>): Degree is <strong>0</strong>.<br>• <strong>Zero polynomial</strong> (p(x) = 0): Degree is <strong>not defined</strong>.",
-    "note": "A very frequent 1-mark CBSE question!"
+    "id": "fc_ch2_02",
+    "tag": "DEFINITIONS",
+    "front": "Can the <strong>coefficients</strong> in a polynomial be negative, fractional, or irrational (e.g. $\\sqrt{5}$)?",
+    "back": "<strong>YES!</strong> Coefficients can be any real numbers (positive, negative, fractions like $\\frac{2}{3}$, or irrational like $\\sqrt{7}$ or $\\pi$).<br><br>• <em>Example:</em> $\\sqrt{3}x^2 - \\frac{1}{2}x + \\pi$ <strong>is</strong> a polynomial because only the powers of $x$ (2, 1, 0) must be whole numbers.",
+    "note": "Common Student Misconception"
   },
   {
-    "id": "iemh102_fc3",
-    "tag": "Zero of a Polynomial",
-    "front": "What is a <strong>zero of a polynomial P(x)</strong>, and how many zeroes does a linear polynomial <span class=\"math\">ax + b</span> (a &ne; 0) have?",
-    "back": "A real number <em>k</em> is a zero if <span class=\"math\">P(k) = 0</span>.<br>A linear polynomial <span class=\"math\">ax + b</span> has <strong>exactly one zero</strong>: <br><span class=\"math\">x = -b / a</span>.",
-    "note": "Geometrically, it is the x-intercept of the line y = ax + b."
+    "id": "fc_ch2_03",
+    "tag": "DEFINITIONS",
+    "front": "How is the <strong>degree</strong> of a non-zero polynomial defined?",
+    "back": "The degree is the <strong>highest power of the variable</strong> appearing in any term with a <strong>non-zero coefficient</strong>.<br><br>• <em>Example:</em> In $P(x) = 7 - 3x^2 + 5x^4$, the highest power of $x$ is $4$, so the degree is <strong>4</strong>.",
+    "note": "Key Terminology"
   },
   {
-    "id": "iemh102_fc4",
-    "tag": "Calculation",
-    "front": "Evaluate the polynomial <span class=\"math\">P(x) = x<sup>3</sup> - 10x<sup>2</sup> + 3x - 4</span> at <span class=\"math\">x = -1</span>.",
-    "back": "P(-1) = (-1)<sup>3</sup> - 10(-1)<sup>2</sup> + 3(-1) - 4<br>= -1 - 10(1) - 3 - 4<br>= -1 - 10 - 3 - 4 = <strong>-18</strong>.",
-    "note": "From PA-2 School Examination Question 4."
+    "id": "fc_ch2_04",
+    "tag": "DEFINITIONS",
+    "front": "What is the difference between classifying a polynomial <strong>by terms</strong> vs <strong>by degree</strong>?",
+    "back": "• <strong>By Terms:</strong> Monomial (1 term), Binomial (2 terms), Trinomial (3 terms).<br>• <strong>By Degree:</strong> Constant (degree 0), Linear (degree 1), Quadratic (degree 2), Cubic (degree 3).<br><br><em>Example:</em> $x^2 - 4$ is a <strong>binomial</strong> by terms and <strong>quadratic</strong> by degree.",
+    "note": "Dual-Axis Classification"
   },
   {
-    "id": "iemh102_fc5",
-    "tag": "Simplification",
-    "front": "Find the zero of the polynomial: <span class=\"math\">p(x) = (x - 2)<sup>2</sup> - (x + 2)<sup>2</sup></span>.",
-    "back": "Expand both squares:<br>p(x) = [x<sup>2</sup> - 4x + 4] - [x<sup>2</sup> + 4x + 4]<br>p(x) = x<sup>2</sup> - 4x + 4 - x<sup>2</sup> - 4x - 4 = -8x.<br>Set -8x = 0 &rArr; <strong>x = 0</strong>.",
-    "note": "From PA-2 School Exam Section C (Question 31)."
+    "id": "fc_ch2_05",
+    "tag": "DEGREE & FORMS",
+    "front": "What is the degree of a non-zero <strong>constant polynomial</strong> (e.g. $P(x) = -8$)?",
+    "back": "The degree is <strong>0</strong>.<br><br>• Any non-zero constant $c$ can be written as $c \\cdot x^0$. Since $x^0 = 1$ and the exponent is $0$, its degree is strictly <strong>0</strong>.",
+    "note": "CBSE Standard 1-Mark Fact"
   },
   {
-    "id": "iemh102_fc6",
-    "tag": "Concept Check",
-    "front": "Can a polynomial have zeroes that are not 0, and can 0 be a zero of a polynomial?",
-    "back": "<strong>Yes to both!</strong><br>• Zeroes can be any real number (e.g. p(x) = 2x - 6 has zero x = 3).<br>• The number 0 can be a zero (e.g. p(x) = 5x has zero x = 0 since p(0) = 0).",
-    "note": "Don't confuse the number 0 with the zeroes (roots) of the polynomial."
+    "id": "fc_ch2_06",
+    "tag": "DEGREE & FORMS",
+    "front": "What is the degree of the <strong>zero polynomial</strong> $P(x) = 0$?",
+    "back": "The degree of the zero polynomial is <strong>UNDEFINED (not defined)</strong>.<br><br>• <em>Why?</em> Because $0$ can be written as $0 \\cdot x^0 = 0 \\cdot x^1 = 0 \\cdot x^5 = 0 \\cdot x^{100}$. Since no unique highest exponent exists, mathematicians define it as undefined.",
+    "note": "Frequent Board Exam Trap"
+  },
+  {
+    "id": "fc_ch2_07",
+    "tag": "DEGREE & FORMS",
+    "front": "What is the standard form of a <strong>linear polynomial</strong> in one variable, and what condition must $a$ satisfy?",
+    "back": "Standard form: $\\mathbf{P(x) = ax + b}$<br><br>• Critical condition: $\\mathbf{a \\neq 0}$ (if $a = 0$, it becomes the constant polynomial $P(x) = b$, which is not linear).<br>• $a$ and $b$ are real numbers.",
+    "note": "Standard Form Requirement"
+  },
+  {
+    "id": "fc_ch2_08",
+    "tag": "DEGREE & FORMS",
+    "front": "What is the maximum number of zeroes a polynomial of <strong>degree $n$</strong> can possess?",
+    "back": "A polynomial of degree $n$ can have <strong>at most $n$ real zeroes</strong>.<br><br>• Linear polynomial ($n=1$): exactly $1$ zero.<br>• Quadratic polynomial ($n=2$): at most $2$ zeroes.<br>• Cubic polynomial ($n=3$): at most $3$ zeroes.",
+    "note": "Fundamental Theorem Property"
+  },
+  {
+    "id": "fc_ch2_09",
+    "tag": "MENTAL MATH",
+    "front": "What is the algebraic formula for finding the zero of any linear polynomial $\\mathbf{P(x) = ax + b}$ ($a \\neq 0$)?",
+    "back": "Set $P(x) = 0$:<br>$$ax + b = 0 \\implies ax = -b \\implies \\mathbf{x = -\\frac{b}{a}}$$<br><br>• <em>Rapid Drill:</em> The zero of $P(x) = 4x - 12$ is $x = -\\frac{-12}{4} = \\mathbf{3}$.",
+    "note": "Direct Root Formula"
+  },
+  {
+    "id": "fc_ch2_10",
+    "tag": "MENTAL MATH",
+    "front": "Find the zero of the general polynomial: $\\mathbf{P(x) = cx + d}$, where $c \\neq 0$.",
+    "back": "Set $P(x) = 0$:<br>$$cx + d = 0 \\implies cx = -d \\implies \\mathbf{x = -\\frac{d}{c}}$$",
+    "note": "NCERT Ganita Manjari Exercise Question"
+  },
+  {
+    "id": "fc_ch2_11",
+    "tag": "MENTAL MATH",
+    "front": "If $x = 2$ is a zero of $P(x) = kx^2 - 3x + k$, what is the value of $\\mathbf{k}$?",
+    "back": "Since $x = 2$ is a zero, $P(2) = 0$:<br>$$k(2)^2 - 3(2) + k = 0$$<br>$$4k - 6 + k = 0 \\implies 5k = 6 \\implies \\mathbf{k = \\frac{6}{5}}$$",
+    "note": "Authentic Exam 2-Mark Problem"
+  },
+  {
+    "id": "fc_ch2_12",
+    "tag": "MENTAL MATH",
+    "front": "Evaluate the polynomial $P(x) = 5x - 4x^2 + 3$ at $\\mathbf{x = -1}$.",
+    "back": "Substitute with parentheses:<br>$$P(-1) = 5(-1) - 4(-1)^2 + 3$$<br>$$P(-1) = -5 - 4(1) + 3 = -5 - 4 + 3 = \\mathbf{-6}$$",
+    "note": "Watch Out: (-1)^2 = +1"
+  },
+  {
+    "id": "fc_ch2_13",
+    "tag": "EXAM TRAPS",
+    "front": "Can the number $\\mathbf{0}$ be a zero of a polynomial, and must a zero of a polynomial be $\\mathbf{0}$?",
+    "back": "<strong>1. Yes, 0 CAN be a zero.</strong> (e.g. for $P(x) = x^2 - 3x$, $P(0) = 0$).<br><br><strong>2. NO, a zero does NOT have to be 0.</strong> A zero can be any real number (e.g. for $P(x) = 2x - 8$, the zero is $x = 4$).",
+    "note": "Crucial Distinction in Exams"
+  },
+  {
+    "id": "fc_ch2_14",
+    "tag": "EXAM TRAPS",
+    "front": "True or False: A <strong>binomial</strong> can have a degree of <strong>100</strong>.",
+    "back": "<strong>TRUE!</strong><br><br>• The word 'binomial' only means it has <strong>exactly two terms</strong>. Degree can be anything!<br>• <em>Example:</em> $x^{100} - 1$ or $5y^{100} + 3y$ is a binomial of degree $100$.",
+    "note": "NCERT Exemplar Question"
+  },
+  {
+    "id": "fc_ch2_15",
+    "tag": "EXAM TRAPS",
+    "front": "What is the coefficient of $x^2$ in the linear polynomial $\\mathbf{P(x) = \\sqrt{2}x - 1}$?",
+    "back": "The coefficient of $x^2$ is $\\mathbf{0}$.<br><br>• We can rewrite the expression displaying all missing powers as: $P(x) = \\mathbf{0}x^2 + \\sqrt{2}x - 1$.<br>• Whenever a requested power is missing, its coefficient is $0$.",
+    "note": "Common 1-Mark MCQ Trap"
+  },
+  {
+    "id": "fc_ch2_16",
+    "tag": "EXAM TRAPS",
+    "front": "Is $\\mathbf{\\frac{x^2 - 9}{x - 3}}$ a polynomial? Explain the subtle algebraic reason.",
+    "back": "<strong>NO</strong>, as initially written it is a rational function, NOT a polynomial.<br><br>• At $x = 3$, the denominator is $3 - 3 = 0$, making it undefined.<br>• While it simplifies to $x + 3$ for all $x \\neq 3$, polynomials must be defined for all real numbers $\\mathbb{R}$.",
+    "note": "HOTS / Higher Secondary Prep"
+  },
+  {
+    "id": "fc_ch2_17",
+    "tag": "GEOMETRY",
+    "front": "What does the zero of a polynomial $P(x)$ represent <strong>geometrically</strong> on a Cartesian coordinate plane?",
+    "back": "The zeroes of $P(x)$ are the <strong>$x$-coordinates of the points where the graph of $y = P(x)$ intersects or touches the $x$-axis</strong>.<br><br>• At the $x$-axis, $y = 0 \\implies P(x) = 0$.",
+    "note": "Visual & Coordinate Connection"
+  },
+  {
+    "id": "fc_ch2_18",
+    "tag": "GEOMETRY",
+    "front": "How many times can the graph of a linear polynomial $\\mathbf{y = ax + b}$ ($a \\neq 0$) intersect the $x$-axis?",
+    "back": "<strong>Exactly once!</strong><br><br>• The graph of a linear polynomial is a straight, non-horizontal line. It intersects the $x$-axis at exactly one point: $\\mathbf{\\left(-\\frac{b}{a}, 0\\right)}$.",
+    "note": "Straight Line Geometry"
   }
 ]

@@ -1,44 +1,128 @@
 [
   {
-    "id": "iemh101_fc1",
-    "tag": "Definition",
-    "front": "What is the difference between the <strong>abscissa</strong> and the <strong>ordinate</strong> of a point <span class=\"math-coord\">(x, y)</span>?",
-    "back": "• <strong>Abscissa (x):</strong> Perpendicular distance of the point from the y-axis (measured along the x-axis).<br>• <strong>Ordinate (y):</strong> Perpendicular distance of the point from the x-axis (measured along the y-axis).",
-    "note": "Exam tip: Remember alphabetical order: (Abscissa, Ordinate) corresponds to (x, y)."
+    "id": "fc_ch1_01",
+    "tag": "DEFINITIONS",
+    "front": "What is the <strong>abscissa</strong> of a point in the Cartesian plane, and how is it measured?",
+    "back": "The abscissa is the <strong>$x$-coordinate</strong> of the point.<br><br>• It represents the <strong>perpendicular distance from the $y$-axis</strong> measured horizontally along the $x$-axis.",
+    "note": "Fundamental Definition"
   },
   {
-    "id": "iemh101_fc2",
-    "tag": "Axes Properties",
-    "front": "What are the coordinates of the <strong>Origin</strong>, and what are the general forms of points on the x-axis and y-axis?",
-    "back": "• <strong>Origin:</strong> <span class=\"math-coord\">O(0, 0)</span>.<br>• <strong>Point on x-axis:</strong> <span class=\"math-coord\">(x, 0)</span> (ordinate is always 0).<br>• <strong>Point on y-axis:</strong> <span class=\"math-coord\">(0, y)</span> (abscissa is always 0).",
-    "note": "Points lying directly on the coordinate axes do NOT belong to any quadrant!"
+    "id": "fc_ch1_02",
+    "tag": "DEFINITIONS",
+    "front": "What is the <strong>ordinate</strong> of a point in the Cartesian plane, and how is it measured?",
+    "back": "The ordinate is the <strong>$y$-coordinate</strong> of the point.<br><br>• It represents the <strong>perpendicular distance from the $x$-axis</strong> measured vertically along the $y$-axis.",
+    "note": "Fundamental Definition"
   },
   {
-    "id": "iemh101_fc3",
-    "tag": "Quadrant Signs",
-    "front": "State the sign signs <span class=\"math-coord\">(x, y)</span> for points in Quadrants I, II, III, and IV.",
-    "back": "• <strong>Quadrant I:</strong> <span class=\"math-coord\">(+, +)</span><br>• <strong>Quadrant II:</strong> <span class=\"math-coord\">(-, +)</span><br>• <strong>Quadrant III:</strong> <span class=\"math-coord\">(-, -)</span><br>• <strong>Quadrant IV:</strong> <span class=\"math-coord\">(+, -)</span>",
-    "note": "Numbered counter-clockwise starting from the top-right quadrant."
+    "id": "fc_ch1_03",
+    "tag": "DEFINITIONS",
+    "front": "What are the algebraic equations of the <strong>$x$-axis</strong> and the <strong>$y$-axis</strong>?",
+    "back": "• Equation of the $x$-axis: $\\mathbf{y = 0}$ (every point has ordinate 0).<br>• Equation of the $y$-axis: $\\mathbf{x = 0}$ (every point has abscissa 0).",
+    "note": "Standard Exam Fact"
   },
   {
-    "id": "iemh101_fc4",
-    "tag": "Distance from Axes",
-    "front": "What is the perpendicular distance of the point <span class=\"math-coord\">P(-5, 7)</span> from: <br>(i) the x-axis, and (ii) the y-axis?",
-    "back": "• Distance from <strong>x-axis</strong> = |y| = |7| = <strong>7 units</strong>.<br>• Distance from <strong>y-axis</strong> = |x| = |-5| = <strong>5 units</strong>.",
-    "note": "Distance is always a non-negative scalar quantity!"
+    "id": "fc_ch1_04",
+    "tag": "DEFINITIONS",
+    "front": "What is the <strong>Origin</strong>, and what are its coordinates?",
+    "back": "The Origin is the point of intersection of the two mutually perpendicular coordinate axes.<br><br>• Its coordinates are strictly $\\mathbf{O(0, 0)}$.",
+    "note": "Reference Frame Origin"
   },
   {
-    "id": "iemh101_fc5",
-    "tag": "Projections",
-    "front": "If perpendiculars are drawn from <span class=\"math-coord\">P(3, 2)</span> and <span class=\"math-coord\">Q(7, 7)</span> to the x-axis meeting at L and M, what are their coordinates and the length LM?",
-    "back": "• <strong>L:</strong> <span class=\"math-coord\">(3, 0)</span><br>• <strong>M:</strong> <span class=\"math-coord\">(7, 0)</span><br>• <strong>Length LM:</strong> |7 - 3| = <strong>4 units</strong>.",
-    "note": "Direct question from Class 9 PA-2 Periodic Assessment Exam."
+    "id": "fc_ch1_05",
+    "tag": "QUADRANTS",
+    "front": "In which quadrant does a point with <strong>negative abscissa</strong> and <strong>positive ordinate</strong> lie?",
+    "back": "It lies in <strong>Quadrant II (-, +)</strong>.<br><br>• <em>Example:</em> $P(-4, 5)$ lies in the top-left region.",
+    "note": "Quadrant Sign Convention"
   },
   {
-    "id": "iemh101_fc6",
-    "tag": "Concept Check",
-    "front": "Can the points <span class=\"math-coord\">(3, -4)</span> and <span class=\"math-coord\">(-4, 3)</span> represent the same point on a Cartesian plane?",
-    "back": "<strong>No!</strong> An ordered pair depends strictly on order. (3, -4) lies in <strong>Quadrant IV</strong>, whereas (-4, 3) lies in <strong>Quadrant II</strong>.",
-    "note": "(a, b) = (b, a) if and only if a = b."
+    "id": "fc_ch1_06",
+    "tag": "QUADRANTS",
+    "front": "In which quadrant does a point with <strong>positive abscissa</strong> and <strong>negative ordinate</strong> lie?",
+    "back": "It lies in <strong>Quadrant IV (+, -)</strong>.<br><br>• <em>Example:</em> $P(3, -6)$ lies in the bottom-right region.",
+    "note": "Quadrant Sign Convention"
+  },
+  {
+    "id": "fc_ch1_07",
+    "tag": "QUADRANTS",
+    "front": "Do points lying directly on the coordinate axes (like $(0, 4)$ or $(-5, 0)$) belong to any quadrant?",
+    "back": "<strong>NO!</strong> Points on the axes do <strong>not belong to any quadrant</strong>.<br><br>• They lie strictly on the respective axis (e.g. $(0, 4)$ lies on the positive $y$-axis, $(-5, 0)$ lies on the negative $x$-axis).",
+    "note": "Frequent 1-Mark True/False Trap"
+  },
+  {
+    "id": "fc_ch1_08",
+    "tag": "QUADRANTS",
+    "front": "In which quadrants can points lie if both their coordinates have the <strong>same algebraic sign</strong>?",
+    "back": "• <strong>Quadrant I:</strong> Both are positive $(+, +)$.<br>• <strong>Quadrant III:</strong> Both are negative $(-, -)$.<br><br>In both I and III, the product $xy > 0$.",
+    "note": "Sign Relationship Rule"
+  },
+  {
+    "id": "fc_ch1_09",
+    "tag": "DISTANCES",
+    "front": "What is the perpendicular distance of the point $\\mathbf{P(-6, 8)}$ from the <strong>$y$-axis</strong>?",
+    "back": "Distance to the $y$-axis is $|x| = |-6| = \\mathbf{6\\text{ units}}$.<br><br>• <em>Exam Trap:</em> Distance is always positive! Never write $-6$.",
+    "note": "Absolute Value Distance Trap"
+  },
+  {
+    "id": "fc_ch1_10",
+    "tag": "DISTANCES",
+    "front": "What is the perpendicular distance of the point $\\mathbf{P(5, -7)}$ from the <strong>$x$-axis</strong>?",
+    "back": "Distance to the $x$-axis is $|y| = |-7| = \\mathbf{7\\text{ units}}$.",
+    "note": "Distance from X-Axis"
+  },
+  {
+    "id": "fc_ch1_11",
+    "tag": "REFLECTIONS",
+    "front": "What are the coordinates of the reflection of point $\\mathbf{P(x, y)}$ across the <strong>$x$-axis</strong>?",
+    "back": "The reflection across the $x$-axis is $\\mathbf{P'(x, -y)}$.<br><br>• The abscissa remains unchanged; the ordinate flips sign.<br>• <em>Example:</em> $(-3, 5) \\to (-3, -5)$.",
+    "note": "Reflection Rule Across X-Axis"
+  },
+  {
+    "id": "fc_ch1_12",
+    "tag": "REFLECTIONS",
+    "front": "What are the coordinates of the reflection of point $\\mathbf{P(x, y)}$ across the <strong>$y$-axis</strong>?",
+    "back": "The reflection across the $y$-axis is $\\mathbf{P'(-x, y)}$.<br><br>• The ordinate remains unchanged; the abscissa flips sign.<br>• <em>Example:</em> $(-3, 5) \\to (3, 5)$.",
+    "note": "Reflection Rule Across Y-Axis"
+  },
+  {
+    "id": "fc_ch1_13",
+    "tag": "REFLECTIONS",
+    "front": "What are the coordinates of the reflection of point $\\mathbf{P(x, y)}$ through the <strong>Origin $(0, 0)$</strong>?",
+    "back": "The reflection through the origin is $\\mathbf{P'(-x, -y)}$.<br><br>• Both coordinates flip signs.<br>• <em>Example:</em> $(4, -2) \\to (-4, 2)$.",
+    "note": "Point Reflection Through Origin"
+  },
+  {
+    "id": "fc_ch1_14",
+    "tag": "EXAM TRAPS",
+    "front": "Under what condition is the ordered pair $\\mathbf{(a, b) = (b, a)}$?",
+    "back": "Only when $\\mathbf{a = b}$!<br><br>• If $a \\neq b$, $(a, b) \\neq (b, a)$ because order matters.<br>• Points with $a = b$ lie on the line $y = x$ (e.g. $(3, 3), (-2, -2)$).",
+    "note": "Equality of Ordered Pairs"
+  },
+  {
+    "id": "fc_ch1_15",
+    "tag": "EXAM TRAPS",
+    "front": "If the ordinate of a point is $0$, where does the point lie?",
+    "back": "It lies strictly on the <strong>$x$-axis</strong>.<br><br>• Form: $(x, 0)$.<br>• Conversely, if the abscissa is $0$, it lies strictly on the $y$-axis: $(0, y)$.",
+    "note": "Zero Coordinate Property"
+  },
+  {
+    "id": "fc_ch1_16",
+    "tag": "EXAM TRAPS",
+    "front": "If $x > 0$ and $y < 0$, in which quadrant does the point $\\mathbf{(-x, -y)}$ lie?",
+    "back": "It lies in <strong>Quadrant II</strong>.<br><br>• Since $x > 0 \\implies -x < 0$ (negative).<br>• Since $y < 0 \\implies -y > 0$ (positive).<br>• A point with coordinate $(-, +)$ is in <strong>Quadrant II</strong>.",
+    "note": "Algebraic Sign Inversion Trap"
+  },
+  {
+    "id": "fc_ch1_17",
+    "tag": "GEOMETRY",
+    "front": "What is the shape and area of the figure formed by plotting the points $O(0, 0)$, $A(4, 0)$, $B(4, 3)$, and $C(0, 3)$?",
+    "back": "It forms a <strong>Rectangle</strong>.<br><br>• Base $OA = 4$ units, Height $OC = 3$ units.<br>• $\\text{Area} = \\text{Base} \\times \\text{Height} = 4 \\times 3 = \\mathbf{12\\text{ sq units}}$.",
+    "note": "Coordinate Geometry Figure"
+  },
+  {
+    "id": "fc_ch1_18",
+    "tag": "GEOMETRY",
+    "front": "Points $A(2, 0)$, $B(6, 0)$, and $C(4, 4)$ form a triangle. What type of triangle is it, and what is its area?",
+    "back": "It is an <strong>Isosceles Triangle</strong>.<br><br>• Base along $x$-axis: $AB = |6 - 2| = 4$ units.<br>• Height from $C$ to base: $4$ units.<br>• $\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 4 = \\mathbf{8\\text{ sq units}}$.",
+    "note": "Triangle Area on Grid"
   }
 ]

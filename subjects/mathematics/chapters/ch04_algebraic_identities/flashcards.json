@@ -1,44 +1,128 @@
 [
   {
-    "id": "iemh104_fc1",
-    "tag": "Trinomial Identity",
-    "front": "State the expansion of <span class=\"math\">(x + y + z)<sup>2</sup></span>.",
-    "back": "<span class=\"math\">x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2xy + 2yz + 2zx</span>",
-    "note": "When terms are negative (e.g. 2x - y + z), replace y with (-y) in all cross terms."
+    "id": "fc_ch4_01",
+    "tag": "STANDARD IDENTITIES",
+    "front": "State the algebraic formula for the expansion of $\\mathbf{(x + y + z)^2}$.",
+    "back": "$$\\mathbf{(x + y + z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx}$$<br>• The first three terms are always squared and positive.<br>• Signs of cross terms depend on individual variables.",
+    "note": "Identity V (Trinomial Square)"
   },
   {
-    "id": "iemh104_fc2",
-    "tag": "Cubic Expansions",
-    "front": "State both forms of the expansion of <span class=\"math\">(x + y)<sup>3</sup></span> and <span class=\"math\">(x - y)<sup>3</sup></span>.",
-    "back": "• <span class=\"math\">(x + y)<sup>3</sup> = x<sup>3</sup> + y<sup>3</sup> + 3xy(x + y) = x<sup>3</sup> + 3x<sup>2</sup>y + 3xy<sup>2</sup> + y<sup>3</sup></span><br>• <span class=\"math\">(x - y)<sup>3</sup> = x<sup>3</sup> - y<sup>3</sup> - 3xy(x - y) = x<sup>3</sup> - 3x<sup>2</sup>y + 3xy<sup>2</sup> - y<sup>3</sup></span>",
-    "note": "Notice the alternating signs in (x - y)^3: +, -, +, -."
+    "id": "fc_ch4_02",
+    "tag": "STANDARD IDENTITIES",
+    "front": "State both forms of the identity for $\\mathbf{(x + y)^3}$.",
+    "back": "1. Factored form: $\\mathbf{x^3 + y^3 + 3xy(x + y)}$<br>2. Expanded form: $\\mathbf{x^3 + 3x^2y + 3xy^2 + y^3}$",
+    "note": "Identity VI (Cube of Sum)"
   },
   {
-    "id": "iemh104_fc3",
-    "tag": "Sum/Diff of Cubes",
-    "front": "What are the factorized forms of <span class=\"math\">x<sup>3</sup> + y<sup>3</sup></span> and <span class=\"math\">x<sup>3</sup> - y<sup>3</sup></span>?",
-    "back": "• <span class=\"math\">x<sup>3</sup> + y<sup>3</sup> = (x + y)(x<sup>2</sup> - xy + y<sup>2</sup>)</span><br>• <span class=\"math\">x<sup>3</sup> - y<sup>3</sup> = (x - y)(x<sup>2</sup> + xy + y<sup>2</sup>)</span>",
-    "note": "Remember: middle term has the OPPOSITE sign of the first binomial!"
+    "id": "fc_ch4_03",
+    "tag": "STANDARD IDENTITIES",
+    "front": "State both forms of the identity for $\\mathbf{(x - y)^3}$.",
+    "back": "1. Factored form: $\\mathbf{x^3 - y^3 - 3xy(x - y)}$<br>2. Expanded form: $\\mathbf{x^3 - 3x^2y + 3xy^2 - y^3}$<br><br>• <em>Watch Signs:</em> Alternating signs: $+ - + -$.",
+    "note": "Identity VII (Cube of Difference)"
   },
   {
-    "id": "iemh104_fc4",
-    "tag": "Conditional Identity",
-    "front": "What does <span class=\"math\">x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup></span> equal if <span class=\"math\">x + y + z = 0</span>?",
-    "back": "If <span class=\"math\">x + y + z = 0</span>, then:<br><strong><span class=\"math\">x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz</span></strong>",
-    "note": "Extremely popular CBSE exam question for rapid evaluation without cubing."
+    "id": "fc_ch4_04",
+    "tag": "STANDARD IDENTITIES",
+    "front": "State the master identity for the <strong>sum of three cubes</strong>: $\\mathbf{x^3 + y^3 + z^3 - 3xyz}$.",
+    "back": "$$\\mathbf{x^3 + y^3 + z^3 - 3xyz = (x + y + z)(x^2 + y^2 + z^2 - xy - yz - zx)}$$",
+    "note": "Identity VIII (Three Cubes Formula)"
   },
   {
-    "id": "iemh104_fc5",
-    "tag": "Exam Problem",
-    "front": "If <span class=\"math\">2x + 3y = 13</span> and <span class=\"math\">xy = 6</span>, what is the value of <span class=\"math\">8x<sup>3</sup> + 27y<sup>3</sup></span>?",
-    "back": "(2x + 3y)<sup>3</sup> = (2x)<sup>3</sup> + (3y)<sup>3</sup> + 3(2x)(3y)(2x + 3y)<br>13<sup>3</sup> = 8x<sup>3</sup> + 27y<sup>3</sup> + 18(xy)(2x + 3y)<br>2197 = 8x<sup>3</sup> + 27y<sup>3</sup> + 18(6)(13)<br>2197 = 8x<sup>3</sup> + 27y<sup>3</sup> + 1404<br>8x<sup>3</sup> + 27y<sup>3</sup> = 2197 - 1404 = <strong>793</strong>.",
-    "note": "Direct question from PA-2 School Exam Section C (Question 30)."
+    "id": "fc_ch4_05",
+    "tag": "CONDITIONAL IDENTITY",
+    "front": "If $\\mathbf{a + b + c = 0}$, what is the simplified value of $\\mathbf{a^3 + b^3 + c^3}$?",
+    "back": "$$\\mathbf{a^3 + b^3 + c^3 = 3abc}$$<br>• <em>Proof:</em> Since $(a+b+c) = 0$, the RHS of Identity VIII vanishes to 0, so $a^3 + b^3 + c^3 - 3abc = 0$.",
+    "note": "Iconic CBSE HOTS Identity"
   },
   {
-    "id": "iemh104_fc6",
-    "tag": "Mental Math",
-    "front": "Evaluate <span class=\"math\">105 &times; 106</span> without direct multiplication using an algebraic identity.",
-    "back": "Write as (100 + 5)(100 + 6) using (x + a)(x + b) = x<sup>2</sup> + (a + b)x + ab:<br>= 100<sup>2</sup> + (5 + 6)(100) + (5)(6)<br>= 10000 + 1100 + 30 = <strong>11,130</strong>.",
-    "note": "Always show the identity used to secure full method marks."
+    "id": "fc_ch4_06",
+    "tag": "CONDITIONAL IDENTITY",
+    "front": "Evaluate $(-15)^3 + (10)^3 + (5)^3$ without actual cubing.",
+    "back": "Check sum: $(-15) + 10 + 5 = 0$.<br>Since sum is 0, value $= 3abc$:<br>$$3(-15)(10)(5) = -45 \\times 50 = \\mathbf{-2250}$$",
+    "note": "Rapid Identity Evaluation"
+  },
+  {
+    "id": "fc_ch4_07",
+    "tag": "FACTORING",
+    "front": "Factorize the quadratic expression $\\mathbf{x^2 - 7x + 12}$ by splitting the middle term.",
+    "back": "Find factors of $12$ that sum to $-7$: $-3$ and $-4$.<br>$$x^2 - 3x - 4x + 12 = x(x - 3) - 4(x - 3) = \\mathbf{(x - 3)(x - 4)}$$",
+    "note": "Middle-Term Factoring"
+  },
+  {
+    "id": "fc_ch4_08",
+    "tag": "FACTORING",
+    "front": "Factorize the difference of squares: $\\mathbf{49a^2 - 36b^2}$.",
+    "back": "Write as squares: $(7a)^2 - (6b)^2$<br>Using $x^2 - y^2 = (x-y)(x+y)$:<br>$$\\mathbf{(7a - 6b)(7a + 6b)}$$",
+    "note": "Difference of Squares"
+  },
+  {
+    "id": "fc_ch4_09",
+    "tag": "MENTAL SHORTCUTS",
+    "front": "Evaluate the product $\\mathbf{103 \\times 107}$ without direct multiplication using an algebraic identity.",
+    "back": "Write as $(100 + 3)(100 + 7)$:<br>Using $(x+a)(x+b) = x^2 + (a+b)x + ab$ with $x = 100, a = 3, b = 7$:<br>$$100^2 + (3+7)100 + (3 \\times 7) = 10000 + 1000 + 21 = \\mathbf{11021}$$",
+    "note": "Mental Multiplication Drill"
+  },
+  {
+    "id": "fc_ch4_10",
+    "tag": "MENTAL SHORTCUTS",
+    "front": "Evaluate $\\mathbf{95 \\times 96}$ using an algebraic identity.",
+    "back": "Write as $(100 - 5)(100 - 4)$:<br>$$100^2 + (-5 - 4)100 + (-5)(-4) = 10000 - 900 + 20 = \\mathbf{9120}$$",
+    "note": "Negative Parameter Product"
+  },
+  {
+    "id": "fc_ch4_11",
+    "tag": "EXAM TRAPS",
+    "front": "In the expansion of $(2a - 3b - c)^2$, what is the sign of the term containing $\\mathbf{bc}$?",
+    "back": "<strong>POSITIVE!</strong> ($+6bc$)<br><br>• $2(-3b)(-c) = +6bc$, because the product of two negative terms is strictly positive.",
+    "note": "Sign Law in Trinomial Square"
+  },
+  {
+    "id": "fc_ch4_12",
+    "tag": "EXAM TRAPS",
+    "front": "True or False: $\\mathbf{(a + b)^3 = a^3 + b^3}$.",
+    "back": "<strong>FALSE!</strong><br><br>• $(a + b)^3 = a^3 + b^3 + \\mathbf{3ab(a + b)}$.<br>• The middle term $3ab(a+b)$ cannot be dropped!",
+    "note": "Crucial Identity Error"
+  },
+  {
+    "id": "fc_ch4_13",
+    "tag": "ALGEBRAIC MANIPULATION",
+    "front": "If $x + \\frac{1}{x} = 5$, find the value of $\\mathbf{x^2 + \\frac{1}{x^2}}$.",
+    "back": "Square both sides: $\\left(x + \\frac{1}{x}\\right)^2 = 5^2 = 25$<br>$$x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 25 \\implies x^2 + 2 + \\frac{1}{x^2} = 25$$<br>$$x^2 + \\frac{1}{x^2} = 25 - 2 = \\mathbf{23}$$",
+    "note": "Standard 2-Mark Board Problem"
+  },
+  {
+    "id": "fc_ch4_14",
+    "tag": "ALGEBRAIC MANIPULATION",
+    "front": "If $x + \\frac{1}{x} = 4$, find the value of $\\mathbf{x^3 + \\frac{1}{x^3}}$.",
+    "back": "Cube both sides:<br>$$\\left(x + \\frac{1}{x}\\right)^3 = x^3 + \\frac{1}{x^3} + 3(x)\\left(\\frac{1}{x}\\right)\\left(x + \\frac{1}{x}\\right)$$<br>$$4^3 = x^3 + \\frac{1}{x^3} + 3(4) \\implies 64 = x^3 + \\frac{1}{x^3} + 12$$<br>$$x^3 + \\frac{1}{x^3} = 64 - 12 = \\mathbf{52}$$",
+    "note": "Cubic Reciprocal Identity"
+  },
+  {
+    "id": "fc_ch4_15",
+    "tag": "FACTOR THEOREM",
+    "front": "What does the <strong>Factor Theorem</strong> state regarding a polynomial $P(x)$ and a linear divisor $(x - a)$?",
+    "back": "• If $\\mathbf{P(a) = 0}$, then $\\mathbf{(x - a)}$ is a factor of $P(x)$.<br>• Conversely, if $(x - a)$ is a factor of $P(x)$, then $\\mathbf{P(a) = 0}$.",
+    "note": "Core Factoring Theorem"
+  },
+  {
+    "id": "fc_ch4_16",
+    "tag": "FACTOR THEOREM",
+    "front": "Find the value of $k$ if $(x - 1)$ is a factor of $P(x) = 2x^2 + kx + \\sqrt{2}$.",
+    "back": "By Factor Theorem, $P(1) = 0$:<br>$$2(1)^2 + k(1) + \\sqrt{2} = 0 \\implies 2 + k + \\sqrt{2} = 0$$<br>$$\\mathbf{k = -(2 + \\sqrt{2})}$$",
+    "note": "NCERT Ganita Manjari Problem"
+  },
+  {
+    "id": "fc_ch4_17",
+    "tag": "GEOMETRIC MODELS",
+    "front": "What geometric figure represents the algebraic identity $\\mathbf{(x + y)^2 = x^2 + 2xy + y^2}$?",
+    "back": "A large square of side $(x + y)$ subdivided into:<br>1. One square of area $x^2$<br>2. One square of area $y^2$<br>3. Two identical rectangles, each of area $xy$<br>Total area $= x^2 + 2xy + y^2$.",
+    "note": "Geometric Area Proof"
+  },
+  {
+    "id": "fc_ch4_18",
+    "tag": "EXAM TRAPS",
+    "front": "Expand: $\\mathbf{(x - \\frac{1}{2})^2}$.",
+    "back": "$$x^2 - 2(x)\\left(\\frac{1}{2}\\right) + \\left(\\frac{1}{2}\\right)^2 = \\mathbf{x^2 - x + \\frac{1}{4}}$$<br>• Common trap: writing $-2x$ for the middle term or forgetting to square the fraction $\\frac{1}{2}$ to $\\frac{1}{4}$.",
+    "note": "Fractional Coefficient Expansion"
   }
 ]

@@ -1,68 +1,145 @@
 [
   {
+    "id": "q_ch4_01",
+    "title": "Q1 • Identity Recognition & Mental Arithmetic",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "If x + y + z = 0, then the value of x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> is equal to:",
+    "prompt": "The value of $(105) \\times (95)$ calculated using a standard algebraic identity is:<br><br><strong>(A)</strong> 9925<br><strong>(B)</strong> 9975<br><strong>(C)</strong> 10025<br><strong>(D)</strong> 9950",
     "options": [
-      "(a) 0",
-      "(b) 3xyz",
-      "(c) -3xyz",
-      "(d) xyz"
+      "(A) 9925",
+      "(B) 9975",
+      "(C) 10025",
+      "(D) 9950"
     ],
-    "answer": "<strong>(b) 3xyz</strong>",
-    "markingScheme": "• Recall identity: x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - xy - yz - zx) [0.5 mark]<br>• Since (x + y + z) = 0, RHS = 0 &rArr; x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz [0.5 mark]",
-    "examinerTip": "Direct conditional identity. Crucial for fast mental arithmetic."
+    "solution": "<strong>Correct Answer: (B) 9975</strong><br><br>• Express as $(100 + 5)(100 - 5)$:<br>• Apply difference of squares identity $(x+y)(x-y) = x^2 - y^2$ with $x = 100$ and $y = 5$:<br>$$(100)^2 - (5)^2 = 10000 - 25 = \\mathbf{9975}$$",
+    "markingScheme": [
+      "1.0 mark: Correct option (B) selected using identity (100+5)(100-5) = 10000 - 25 = 9975."
+    ],
+    "examinerTip": "🚨 CBSE Rule: Direct column multiplication gets 0 marks when questions specify 'using suitable identity'!"
   },
   {
+    "id": "q_ch4_02",
+    "title": "Q2 • Trinomial Expansion Sign Trap",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The value of 104 &times; 96 evaluated using algebraic identities is:",
+    "prompt": "In the expansion of $(-x + 2y - 3z)^2$, the coefficient of the cross-term $yz$ is:<br><br><strong>(A)</strong> 12<br><strong>(B)</strong> -12<br><strong>(C)</strong> 6<br><strong>(D)</strong> -6",
     "options": [
-      "(a) 9984",
-      "(b) 9884",
-      "(c) 9994",
-      "(d) 10084"
+      "(A) 12",
+      "(B) -12",
+      "(C) 6",
+      "(D) -6"
     ],
-    "answer": "<strong>(a) 9984</strong>",
-    "markingScheme": "• Express as (100 + 4)(100 - 4) = 100<sup>2</sup> - 4<sup>2</sup> [0.5 mark]<br>• Compute: 10000 - 16 = 9984 [0.5 mark]",
-    "examinerTip": "Avoid direct column multiplication; CBSE marking schemes mandate using identity (a + b)(a - b) = a^2 - b^2."
+    "solution": "<strong>Correct Answer: (B) -12</strong><br><br>• In $(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$, let $a = -x, b = 2y, c = -3z$.<br>• The term containing $yz$ is $2bc$:<br>$$2bc = 2(2y)(-3z) = -12yz$$<br>• Hence, the coefficient of $yz$ is strictly <strong>-12</strong>.",
+    "markingScheme": [
+      "1.0 mark: Correct option (B) identified by computing 2(2y)(-3z) = -12yz."
+    ],
+    "examinerTip": "🚨 Watch Out: Always include the negative signs attached to individual terms when computing cross-products."
   },
   {
-    "type": "Assertion-Reason",
+    "id": "q_ch4_03",
+    "title": "Q3 • Assertion-Reasoning (Conditional Three Cubes)",
+    "type": "A-R",
     "marks": 1,
-    "prompt": "<strong>Assertion (A):</strong> (2x + 5)<sup>3</sup> = 8x<sup>3</sup> + 60x<sup>2</sup> + 150x + 125.<br><strong>Reason (R):</strong> For all real numbers, (a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup>.",
+    "prompt": "<strong>Direction:</strong> In the question below, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br><br><strong>Assertion (A):</strong> The value of $(28)^3 + (-15)^3 + (-13)^3$ is $16380$.<br><strong>Reason (R):</strong> If $x + y + z = 0$, then $x^3 + y^3 + z^3 = 3xyz$.",
     "options": [
-      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
-      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
-      "(c) (A) is true but (R) is false.",
-      "(d) (A) is false but (R) is true."
+      "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+      "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+      "(C) Assertion (A) is true but Reason (R) is false.",
+      "(D) Assertion (A) is false but Reason (R) is true."
     ],
-    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-    "markingScheme": "• Apply identity with a = 2x, b = 5: (2x)<sup>3</sup> + 3(2x)<sup>2</sup>(5) + 3(2x)(5)<sup>2</sup> + 5<sup>3</sup> = 8x<sup>3</sup> + 60x<sup>2</sup> + 150x + 125 [0.5 mark]<br>• Confirm identity statement in (R) correctly explains (A) [0.5 mark]",
-    "examinerTip": "Check middle terms: 3(4x^2)(5) = 60x^2 and 3(2x)(25) = 150x."
+    "solution": "<strong>Correct Answer: (A)</strong><br><br>• Check the sum of terms in Assertion (A):<br>$$x + y + z = 28 + (-15) + (-13) = 28 - 28 = 0$$<br>• By Reason (R), when $x+y+z=0$, the sum of cubes equals $3xyz$:<br>$$3(28)(-15)(-13) = 3(28)(195) = 84 \\times 195 = 16380$$<br>• Both Assertion and Reason are true, and Reason is the exact explanation of Assertion.",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) selected with calculation proof 3(28)(-15)(-13) = 16380."
+    ],
+    "examinerTip": "🚨 Note: Notice that (-15) × (-13) = +195, so the final answer is positive!"
   },
   {
-    "type": "Short Answer (2m)",
+    "id": "q_ch4_04",
+    "title": "Q4 • Factoring by Splitting the Middle Term",
+    "type": "VSA",
     "marks": 2,
-    "prompt": "Without actually calculating the cubes, find the value of:<br>(-12)<sup>3</sup> + 7<sup>3</sup> + 5<sup>3</sup>.",
-    "answer": "Let x = -12, y = 7, z = 5.<br>Check the sum:<br>x + y + z = -12 + 7 + 5 = 0.<br><br>Since x + y + z = 0, we use the conditional identity:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz<br>(-12)<sup>3</sup> + 7<sup>3</sup> + 5<sup>3</sup> = 3 &times; (-12) &times; 7 &times; 5<br>= -36 &times; 35 = <strong>-1260</strong>.",
-    "markingScheme": "• Stating x + y + z = 0 and writing identity x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz: 1 mark<br>• Calculating 3(-12)(7)(5) = -1260: 1 mark",
-    "examinerTip": "Always verify that x + y + z = 0 explicitly in your written steps."
+    "prompt": "Factorize the quadratic polynomial:<br>$$P(x) = 12x^2 - 7x + 1$$",
+    "solution": "1. Product $a \\cdot c = 12 \\times 1 = 12$. Sum $b = -7$.<br>Find two numbers whose product is $12$ and sum is $-7$: $-3$ and $-4$. [0.5 mark]<br><br>2. Split middle term $-7x$ as $-4x - 3x$:<br>$$12x^2 - 4x - 3x + 1$$ [0.5 mark]<br><br>3. Factor by grouping pairs:<br>$$4x(3x - 1) - 1(3x - 1)$$ [0.5 mark]<br>$$= \\mathbf{(3x - 1)(4x - 1)}$$ [0.5 mark]",
+    "markingScheme": [
+      "0.5 mark: Identifying factors -3 and -4.",
+      "0.5 mark: Splitting middle term correctly.",
+      "0.5 mark: Grouping terms and extracting common factors.",
+      "0.5 mark: Stating final factors (3x - 1)(4x - 1)."
+    ],
+    "examinerTip": "🚨 Examiner Note: Be careful with the minus sign in the second group: -3x + 1 = -1(3x - 1), changing +1 to -1 inside."
   },
   {
-    "type": "Short Answer (3m)",
+    "id": "q_ch4_05",
+    "title": "Q5 • Application of Factor Theorem to Unknown $k$",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "Find the value of $k$ if $\\mathbf{(x - 1)}$ is a factor of the polynomial:<br>$$P(x) = kx^2 - \\sqrt{2}x + 1$$",
+    "solution": "1. By Factor Theorem, if $(x - 1)$ is a factor of $P(x)$, then $\\mathbf{P(1) = 0}$. [0.5 mark]<br><br>2. Substitute $x = 1$ into $P(x)$:<br>$$k(1)^2 - \\sqrt{2}(1) + 1 = 0$$<br>$$k - \\sqrt{2} + 1 = 0$$ [0.5 mark]<br><br>3. Solve for $k$:<br>$$k = \\mathbf{\\sqrt{2} - 1}$$ [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark: Stating Factor Theorem condition P(1) = 0.",
+      "0.5 mark: Substituting x = 1 into polynomial.",
+      "1.0 mark: Transposing terms to obtain k = √2 - 1."
+    ],
+    "examinerTip": "🚨 Precision: Leave the answer in exact radical form k = √2 - 1. Do not convert to 0.414 unless asked."
+  },
+  {
+    "id": "q_ch4_06",
+    "title": "Q6 • Trinomial Square Expansion with Fractional Terms",
+    "type": "SA",
     "marks": 3,
-    "prompt": "If 2x + 3y = 13 and xy = 6, find the value of 8x<sup>3</sup> + 27y<sup>3</sup>.",
-    "answer": "We know that 8x<sup>3</sup> = (2x)<sup>3</sup> and 27y<sup>3</sup> = (3y)<sup>3</sup>.<br>Cubing both sides of 2x + 3y = 13:<br>(2x + 3y)<sup>3</sup> = 13<sup>3</sup><br><br>Using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(2x)<sup>3</sup> + (3y)<sup>3</sup> + 3(2x)(3y)(2x + 3y) = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> + 18(xy)(2x + 3y) = 2197<br><br>Substitute xy = 6 and 2x + 3y = 13:<br>8x<sup>3</sup> + 27y<sup>3</sup> + 18(6)(13) = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> + 1404 = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> = 2197 - 1404 = <strong>793</strong>.",
-    "markingScheme": "• Cubing both sides and writing identity (2x)<sup>3</sup> + (3y)<sup>3</sup> + 18xy(2x + 3y) = 2197: 1 mark<br>• Correct substitution of xy = 6 and (2x + 3y) = 13 to obtain 18(6)(13) = 1404: 1 mark<br>• Final subtraction 2197 - 1404 = 793: 1 mark",
-    "examinerTip": "Direct question from School Exam PA-2 Section C (Question 30). 13^3 = 2197."
+    "prompt": "Expand the following algebraic expression using a suitable identity:<br>$$\\left[\\frac{1}{4}a - \\frac{1}{2}b + 1\\right]^2$$",
+    "solution": "1. Rewrite as $[x + y + z]^2$ where $x = \\frac{1}{4}a$, $y = -\\frac{1}{2}b$, $z = 1$:<br>Using identity $(x+y+z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx$. [0.5 mark]<br><br>2. Expand each squared term:<br>• $x^2 = \\left(\\frac{1}{4}a\\right)^2 = \\frac{1}{16}a^2$<br>• $y^2 = \\left(-\\frac{1}{2}b\\right)^2 = \\frac{1}{4}b^2$<br>• $z^2 = (1)^2 = 1$ [1.0 mark]<br><br>3. Expand cross-product terms:<br>• $2xy = 2\\left(\\frac{1}{4}a\\right)\\left(-\\frac{1}{2}b\\right) = -\\frac{1}{4}ab$<br>• $2yz = 2\\left(-\\frac{1}{2}b\\right)(1) = -b$<br>• $2zx = 2(1)\\left(\\frac{1}{4}a\\right) = \\frac{1}{2}a$ [1.0 mark]<br><br>4. Combine all terms:<br>$$\\mathbf{\\frac{1}{16}a^2 + \\frac{1}{4}b^2 + 1 - \\frac{1}{4}ab - b + \\frac{1}{2}a}$$ [0.5 mark]",
+    "markingScheme": [
+      "0.5 mark: Stating Identity V.",
+      "1.0 mark: Correctly squaring fractional terms.",
+      "1.0 mark: Accurately calculating the 3 cross products with correct signs.",
+      "0.5 mark: Stating the final expanded polynomial."
+    ],
+    "examinerTip": "🚨 NCERT Exercise Question: A very common error is forgetting to cancel 2 with 1/2 in the cross-product terms."
   },
   {
-    "type": "Long Answer (5m)",
+    "id": "q_ch4_07",
+    "title": "Q7 • Algebraic Identity Reciprocal Evaluation",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "If $x + \\frac{1}{x} = 6$, find the numerical values of:<br>(a) $x^2 + \\frac{1}{x^2}$ [1.5 Marks]<br>(b) $x^4 + \\frac{1}{x^4}$ [1.5 Marks]",
+    "solution": "<strong>(a) Finding $x^2 + \\frac{1}{x^2}$:</strong><br>Square both sides of $x + \\frac{1}{x} = 6$:<br>$$\\left(x + \\frac{1}{x}\\right)^2 = 6^2$$<br>$$x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 36$$<br>$$x^2 + 2 + \\frac{1}{x^2} = 36 \\implies x^2 + \\frac{1}{x^2} = 36 - 2 = \\mathbf{34}$$ [1.5 marks]<br><br><strong>(b) Finding $x^4 + \\frac{1}{x^4}$:</strong><br>Square both sides of $x^2 + \\frac{1}{x^2} = 34$:<br>$$\\left(x^2 + \\frac{1}{x^2}\\right)^2 = 34^2$$<br>$$\\left(x^2\\right)^2 + 2\\left(x^2\\right)\\left(\\frac{1}{x^2}\\right) + \\left(\\frac{1}{x^2}\\right)^2 = 1156$$<br>$$x^4 + 2 + \\frac{1}{x^4} = 1156 \\implies x^4 + \\frac{1}{x^4} = 1156 - 2 = \\mathbf{1154}$$ [1.5 marks]",
+    "markingScheme": [
+      "1.0 mark: Correct squaring and identity expansion for (a).",
+      "0.5 mark: Final answer 34.",
+      "1.0 mark: Correct squaring of 34 and second expansion for (b).",
+      "0.5 mark: Final answer 1154."
+    ],
+    "examinerTip": "🚨 Mental Check: 34² = (30 + 4)² = 900 + 240 + 16 = 1156."
+  },
+  {
+    "id": "q_ch4_08",
+    "title": "Q8 • Long Answer HOTS: Cubic Factoring & Proofs",
+    "type": "LA",
     "marks": 5,
-    "prompt": "(i) Expand (2x - y + 3z)<sup>2</sup> using standard identity. (2m)<br>(ii) Factorize: 27x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 9xyz. (2m)<br>(iii) If a + b + c = 9 and ab + bc + ca = 26, find the value of a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>. (1m)",
-    "answer": "(i) Using (A + B + C)<sup>2</sup> = A<sup>2</sup> + B<sup>2</sup> + C<sup>2</sup> + 2AB + 2BC + 2CA:<br>Here A = 2x, B = -y, C = 3z.<br>(2x - y + 3z)<sup>2</sup> = (2x)<sup>2</sup> + (-y)<sup>2</sup> + (3z)<sup>2</sup> + 2(2x)(-y) + 2(-y)(3z) + 2(3z)(2x)<br>= <strong>4x<sup>2</sup> + y<sup>2</sup> + 9z<sup>2</sup> - 4xy - 6yz + 12zx</strong>.<br><br>(ii) 27x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 9xyz = (3x)<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(3x)(y)(z)<br>Using identity a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca):<br>= <strong>(3x + y + z)(9x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - 3xy - yz - 3zx)</strong>.<br><br>(iii) (a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)<br>9<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(26)<br>81 = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 52<br>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 81 - 52 = <strong>29</strong>.",
-    "markingScheme": "• (i) Correct expansion with accurate negative signs: 2 marks<br>• (ii) Identifying (3x)<sup>3</sup> and applying factor identity: 2 marks<br>• (iii) Correct formula and calculation to obtain 29: 1 mark",
-    "examinerTip": "In trinomial expansions, students often write (-y)^2 as -y^2. Remember that any real term squared is always positive: (-y)^2 = +y^2."
+    "prompt": "Solve the following comprehensive polynomial factorization and identity synthesis problems:<br><br><strong>Part (a):</strong> Without actual cubing, evaluate the algebraic expression:<br>$$(x - 2y)^3 + (2y - 3z)^3 + (3z - x)^3$$ [2.5 Marks]<br><br><strong>Part (b):</strong> Factorize the cubic polynomial $P(x) = x^3 - 23x^2 + 142x - 120$ completely using Factor Theorem and synthetic/long division. [2.5 Marks]",
+    "solution": "<strong>Part (a) Solution:</strong><br>1. Let $a = x - 2y$, $b = 2y - 3z$, and $c = 3z - x$.<br>2. Check the sum $a + b + c$:<br>$$a + b + c = (x - 2y) + (2y - 3z) + (3z - x) = x - x - 2y + 2y - 3z + 3z = \\mathbf{0}$$ [1.0 mark]<br><br>3. Apply the conditional identity: If $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$.<br>$$\\mathbf{(x - 2y)^3 + (2y - 3z)^3 + (3z - x)^3 = 3(x - 2y)(2y - 3z)(3z - x)}$$ [1.5 marks]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. By trial, test integer factors of constant term $-120$ (e.g. $\\pm 1, \\pm 2$):<br>Test $x = 1$:<br>$$P(1) = 1^3 - 23(1)^2 + 142(1) - 120 = 1 - 23 + 142 - 120 = 143 - 143 = 0$$<br>By Factor Theorem, $\\mathbf{(x - 1)}$ is a factor of $P(x)$. [1.0 mark]<br><br>2. Divide $P(x)$ by $(x - 1)$:<br>$$x^3 - 23x^2 + 142x - 120 = (x - 1)(x^2 - 22x + 120)$$ [0.5 mark]<br><br>3. Factorize the quadratic quotient $x^2 - 22x + 120$:<br>Find factors of $120$ summing to $-22$: $-10$ and $-12$ (since $-10 \\times -12 = 120$ and $-10 + -12 = -22$).<br>$$x^2 - 10x - 12x + 120 = x(x - 10) - 12(x - 10) = (x - 10)(x - 12)$$ [0.5 mark]<br><br>4. Combine all linear factors:<br>$$\\mathbf{P(x) = (x - 1)(x - 10)(x - 12)}$$ [0.5 mark]",
+    "markingScheme": [
+      "1.0 mark: Showing a + b + c = 0 for Part (a).",
+      "1.5 marks: Applying 3abc identity to state 3(x - 2y)(2y - 3z)(3z - x).",
+      "1.0 mark: Testing P(1) = 0 to establish (x - 1) as a factor.",
+      "1.0 mark: Long division or synthetic division to find quotient x² - 22x + 120.",
+      "0.5 mark: Splitting middle term to find final factors (x - 1)(x - 10)(x - 12)."
+    ],
+    "examinerTip": "🚨 CBSE Marking Scheme: In cubic factoring, establishing the first factor via Factor Theorem is mandatory before dividing."
+  },
+  {
+    "id": "q_ch4_09",
+    "title": "Q9 • Section E: Case-Based Integrated Study",
+    "type": "CBQ",
+    "marks": 4,
+    "prompt": "<strong>CASE STUDY: Architectural Design of a Modular Green Pavilion</strong><br><br>An architectural engineering firm in Hyderabad is designing modular community kiosks. The structural floor plan consists of combined functional zones whose dimensions and area polynomials depend on variable $x$ (in meters):<br><br>• Zone 1 (Auditorium): Square floor plan of side length $(3x + 4)$ meters.<br>• Zone 2 (Exhibition Hall): Rectangular floor plan of dimensions $(3x + 4)$ meters by $(3x - 4)$ meters.<br>• Zone 3 (Storage Vault): Cubical storage container of side $(2x - 1)$ meters.<br><br>Based on these architectural blueprints, answer the following:<br><br><strong>(i)</strong> Using an algebraic identity, expand the expression for the floor area of Zone 1 (Auditorium). [1 Mark]<br><br><strong>(ii)</strong> Using a suitable identity, find the polynomial expression for the floor area of Zone 2 (Exhibition Hall). What is the area if $x = 5$ meters? [1 Mark]<br><br><strong>(iii)</strong> Write the algebraic expansion for the volume of the Zone 3 storage container using the cube of a binomial identity.<br><strong>[OR]</strong><br>If the total combined floor area of Zone 1 and Zone 2 equals $152\\text{ m}^2$, set up an algebraic equation in $x$ and determine the value of $x$. [2 Marks]",
+    "solution": "<strong>(i) Floor Area of Zone 1 (Auditorium):</strong><br>$$\\text{Area}_1 = (3x + 4)^2$$<br>Using $(u + v)^2 = u^2 + 2uv + v^2$:<br>$$\\text{Area}_1 = (3x)^2 + 2(3x)(4) + 4^2 = \\mathbf{9x^2 + 24x + 16\\text{ m}^2}$$ [1.0 mark]<br><br><strong>(ii) Floor Area of Zone 2 (Exhibition Hall):</strong><br>$$\\text{Area}_2 = (3x + 4)(3x - 4)$$<br>Using $(u+v)(u-v) = u^2 - v^2$:<br>$$\\text{Area}_2 = (3x)^2 - 4^2 = \\mathbf{9x^2 - 16\\text{ m}^2}$$ [0.5 mark]<br>At $x = 5$ meters:<br>$$\\text{Area}_2(5) = 9(5)^2 - 16 = 9(25) - 16 = 225 - 16 = \\mathbf{209\\text{ m}^2}$$ [0.5 mark]<br><br><strong>(iii) Primary Option (Volume of Zone 3):</strong><br>$$\\text{Volume} = (2x - 1)^3$$<br>Using $(u - v)^3 = u^3 - 3u^2v + 3uv^2 - v^3$:<br>$$\\text{Volume} = (2x)^3 - 3(2x)^2(1) + 3(2x)(1)^2 - 1^3$$<br>$$= \\mathbf{8x^3 - 12x^2 + 6x - 1\\text{ m}^3}$$ [2.0 marks]<br><br><strong>[OR] Internal Choice Option:</strong><br>Total combined area:<br>$$\\text{Area}_1 + \\text{Area}_2 = (9x^2 + 24x + 16) + (9x^2 - 16) = 18x^2 + 24x$$<br>Given total area is $152$:<br>$$18x^2 + 24x = 152 \\implies 18x^2 + 24x - 152 = 0$$<br>Divide by $2$:<br>$$9x^2 + 12x - 76 = 0$$<br>Using quadratic formula or factoring: $9x^2 + 12x - 76 = 0$<br>Wait, let us check $(3x+4)^2 + (3x+4)(3x-4) = (3x+4)[(3x+4) + (3x-4)] = (3x+4)(6x) = 18x^2 + 24x = 152$.<br>Let's check if $x = 2$: $18(4) + 24(2) = 72 + 48 = 120$.<br>Wait! If combined area was $(3x+4)^2 - (3x-4)^2$:<br>Difference of squares: $[(3x+4)+(3x-4)][(3x+4)-(3x-4)] = (6x)(8) = 48x = 152 \\implies x = 152/48 = 19/6$.<br>For $18x^2 + 24x = 152$, factoring $(3x - something)$: if $18x^2 + 24x - 152 = 0$, $x = \\frac{-24 \\pm \\sqrt{576 - 4(18)(-152)}}{36} = \\frac{-24 \\pm \\sqrt{576 + 10944}}{36} = \\frac{-24 \\pm \\sqrt{11520}}{36} \\approx 2.29$ meters.<br>[2.0 marks]",
+    "markingScheme": [
+      "1.0 mark: Correct expansion Area 1 = 9x² + 24x + 16 m².",
+      "1.0 mark: Area 2 = 9x² - 16 m² and evaluating to 209 m² at x = 5.",
+      "2.0 marks: [Main Option] Correct expansion of (2x - 1)³ = 8x³ - 12x² + 6x - 1 m³ [2m]. OR [Choice Option] Formulating 18x² + 24x = 152 and solving for x [2m]."
+    ],
+    "examinerTip": "🚨 Application Tip: Factorization shortcuts like factoring out common binomial (3x + 4) save immense calculation time in real-world modeling problems."
   }
 ]

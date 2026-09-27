@@ -1,68 +1,140 @@
 [
   {
+    "id": "q_ch3_01",
+    "title": "Q1 • Rational vs Irrational Identification",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The value of (3/8)<sup>-2</sup> is:",
+    "prompt": "Which of the following numbers is an <strong>irrational number</strong>?<br><br><strong>(A)</strong> $\\sqrt{225}$<br><strong>(B)</strong> $0.3796$<br><strong>(C)</strong> $7.478478\\dots$<br><strong>(D)</strong> $1.101001000100001\\dots$",
     "options": [
-      "(a) 9/64",
-      "(b) 64/9",
-      "(c) -9/64",
-      "(d) 81/16"
+      "(A) √225",
+      "(B) 0.3796",
+      "(C) 7.478478...",
+      "(D) 1.101001000100001..."
     ],
-    "answer": "<strong>(b) 64/9</strong>",
-    "markingScheme": "• Apply (a/b)<sup>-n</sup> = (b/a)<sup>n</sup> &rArr; (8/3)<sup>2</sup> [0.5 mark]<br>• Compute: 8<sup>2</sup> / 3<sup>2</sup> = 64/9 [0.5 mark]",
-    "examinerTip": "Direct question from PA-2 Class 9 CBSE Mathematics Paper (Question 17)."
+    "solution": "<strong>Correct Answer: (D)</strong><br><br>• <strong>(A)</strong> $\\sqrt{225} = 15 = \\frac{15}{1}$ (Rational).<br>• <strong>(B)</strong> $0.3796$ is terminating (Rational).<br>• <strong>(C)</strong> $7.478478\\dots = 7.\\overline{478}$ is non-terminating recurring (Rational).<br>• <strong>(D)</strong> The decimal $1.1010010001\\dots$ is <strong>non-terminating and non-recurring</strong> (the count of zeroes increases indefinitely, so no block of digits repeats periodically). Hence, it is strictly <strong>irrational</strong>.",
+    "markingScheme": [
+      "1.0 mark: Correct option (D) selected with definition of non-terminating non-recurring decimal."
+    ],
+    "examinerTip": "🚨 CBSE Standard Rule: A decimal is only rational if it either terminates or repeats a strictly periodic block of digits."
   },
   {
+    "id": "q_ch3_02",
+    "title": "Q2 • Fractional Exponent Evaluation",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The simplified form of (1/3)<sup>1/5</sup> &divide; (1/3)<sup>1/3</sup> is:",
+    "prompt": "The simplified value of $\\mathbf{\\left(\\frac{81}{16}\\right)^{-3/4}}$ is equal to:<br><br><strong>(A)</strong> $\\frac{27}{8}$<br><strong>(B)</strong> $\\frac{8}{27}$<br><strong>(C)</strong> $-\\frac{27}{8}$<br><strong>(D)</strong> $\\frac{4}{9}$",
     "options": [
-      "(a) (1/3)<sup>2/15</sup>",
-      "(b) (1/3)<sup>8/15</sup>",
-      "(c) (1/3)<sup>-1/15</sup>",
-      "(d) (1/3)<sup>-2/15</sup>"
+      "(A) 27/8",
+      "(B) 8/27",
+      "(C) -27/8",
+      "(D) 4/9"
     ],
-    "answer": "<strong>(d) (1/3)<sup>-2/15</sup></strong>",
-    "markingScheme": "• Apply quotient law: a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m - n</sup> [0.5 mark]<br>• Exponent = 1/5 - 1/3 = (3 - 5)/15 = -2/15 &rArr; (1/3)<sup>-2/15</sup> [0.5 mark]",
-    "examinerTip": "From PA-2 Exam Q18. Note that (1/3)<sup>-2/15</sup> is equal to 3<sup>2/15</sup>."
+    "solution": "<strong>Correct Answer: (B) 8/27</strong><br><br>1. Express bases in prime power form: $81 = 3^4$ and $16 = 2^4$:<br>$$\\frac{81}{16} = \\left(\\frac{3}{2}\\right)^4$$<br>2. Apply power of a power law $(a^p)^q = a^{pq}$:<br>$$\\left[\\left(\\frac{3}{2}\\right)^4\\right]^{-3/4} = \\left(\\frac{3}{2}\\right)^{4 \\times (-3/4)} = \\left(\\frac{3}{2}\\right)^{-3}$$<br>3. Negative power inverts base:<br>$$\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3 = \\frac{2^3}{3^3} = \\mathbf{\\frac{8}{27}}$$",
+    "markingScheme": [
+      "1.0 mark: Correct option (B) selected with step-by-step exponent calculation."
+    ],
+    "examinerTip": "🚨 Common Trap: Students pick (C) assuming a negative power produces a negative number! Negative powers mean reciprocal, not negative sign."
   },
   {
-    "type": "Assertion-Reason",
+    "id": "q_ch3_03",
+    "title": "Q3 • Assertion-Reasoning (Product of Irrationals)",
+    "type": "A-R",
     "marks": 1,
-    "prompt": "<strong>Assertion (A):</strong> Every integer is a rational number.<br><strong>Reason (R):</strong> Every integer m can be expressed in the form m/1, where m and 1 are integers and 1 &ne; 0.",
+    "prompt": "<strong>Direction:</strong> In the question below, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br><br><strong>Assertion (A):</strong> The product of $\\sqrt{3}$ and $\\sqrt{27}$ is a rational number.<br><strong>Reason (R):</strong> The product of any two irrational numbers is always an irrational number.",
     "options": [
-      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
-      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
-      "(c) (A) is true but (R) is false.",
-      "(d) (A) is false but (R) is true."
+      "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+      "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+      "(C) Assertion (A) is true but Reason (R) is false.",
+      "(D) Assertion (A) is false but Reason (R) is true."
     ],
-    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-    "markingScheme": "• Confirming that any integer m = m/1 satisfies definition of rational number [1 mark]",
-    "examinerTip": "Standard CBSE theoretical question."
+    "solution": "<strong>Correct Answer: (C)</strong><br><br>• <strong>Assertion (A) is true:</strong> $\\sqrt{3} \\times \\sqrt{27} = \\sqrt{3 \\times 27} = \\sqrt{81} = 9 = \\frac{9}{1}$, which is rational.<br>• <strong>Reason (R) is FALSE:</strong> The product of two irrationals is <em>not always</em> irrational; it can be rational (as proven in Assertion A) or irrational (e.g. $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}$).<br>• Hence, Assertion (A) is true but Reason (R) is false.",
+    "markingScheme": [
+      "1.0 mark: Correct option (C) identified with counter-example disproving Reason (R)."
+    ],
+    "examinerTip": "🚨 Key Concept: The set of irrational numbers is NOT closed under addition, subtraction, multiplication, or division."
   },
   {
-    "type": "Short Answer (2m)",
+    "id": "q_ch3_04",
+    "title": "Q4 • Expressing Mixed Recurring Decimal as Fraction",
+    "type": "VSA",
     "marks": 2,
-    "prompt": "Express 0.4777... = 0.47&#773; in the form p/q, where p and q are integers and q &ne; 0.",
-    "answer": "Let x = 0.4777...  --- (1)<br>Multiply by 10 (to bring non-repeating digit before decimal):<br>10x = 4.777...  --- (2)<br>Multiply (2) by 10 (since 1 digit repeats):<br>100x = 47.777... --- (3)<br>Subtract (2) from (3):<br>100x - 10x = 47.777... - 4.777...<br>90x = 43 &rArr; <strong>x = 43/90</strong>.",
-    "markingScheme": "• Setting up equations 10x = 4.777... and 100x = 47.777...: 1 mark<br>• Subtracting and simplifying to 43/90: 1 mark",
-    "examinerTip": "Always ensure the repeating block matches after the decimal point before subtracting."
+    "prompt": "Express the recurring decimal $\\mathbf{0.2\\bar{35}}$ in the rational form $\\mathbf{\\frac{p}{q}}$, where $p$ and $q$ are integers and $q \\neq 0$.",
+    "solution": "1. Let $x = 0.2353535\\dots \\quad \\text{--- (Equation 1)}$<br><br>2. Multiply by $10$ to shift non-repeating digit to left of decimal:<br>$$10x = 2.353535\\dots \\quad \\text{--- (Equation 2)}$$ [0.5 mark]<br><br>3. Since 2 digits repeat ($35$), multiply Eq. 2 by $100$:<br>$$1000x = 235.353535\\dots \\quad \\text{--- (Equation 3)}$$ [0.5 mark]<br><br>4. Subtract Eq. 2 from Eq. 3:<br>$$1000x - 10x = 235.3535\\dots - 2.3535\\dots$$<br>$$990x = 233$$<br>$$x = \\mathbf{\\frac{233}{990}}$$ [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark for setting up 10x = 2.3535... and 0.5 mark for 1000x = 235.3535...",
+      "1.0 mark for subtracting and solving to obtain x = 233/990."
+    ],
+    "examinerTip": "🚨 Step-Marking Tip: Always align the decimal parts so they cancel out completely upon subtraction."
   },
   {
-    "type": "Short Answer (3m)",
+    "id": "q_ch3_05",
+    "title": "Q5 • Rationalizing Radical Denominators",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "Rationalize the denominator and simplify:<br>$$\\frac{7 + 3\\sqrt{5}}{7 - 3\\sqrt{5}}$$",
+    "solution": "1. Multiply numerator and denominator by conjugate $(7 + 3\\sqrt{5})$:<br>$$\\frac{(7 + 3\\sqrt{5})(7 + 3\\sqrt{5})}{(7 - 3\\sqrt{5})(7 + 3\\sqrt{5})} = \\frac{(7 + 3\\sqrt{5})^2}{7^2 - (3\\sqrt{5})^2}$$ [1.0 mark]<br><br>2. Expand numerator: $7^2 + 2(7)(3\\sqrt{5}) + (3\\sqrt{5})^2 = 49 + 42\\sqrt{5} + 45 = 94 + 42\\sqrt{5}$.<br>3. Denominator: $49 - (9 \\times 5) = 49 - 45 = 4$.<br><br>4. Divide terms:<br>$$\\frac{94 + 42\\sqrt{5}}{4} = \\frac{2(47 + 21\\sqrt{5})}{4} = \\mathbf{\\frac{47 + 21\\sqrt{5}}{2}}$$ [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Correct conjugate multiplication and denominator evaluation to 4.",
+      "1.0 mark: Accurate numerator expansion and cancellation to (47 + 21√5)/2."
+    ],
+    "examinerTip": "🚨 Common Mistake: (3√5)² = 3² × (√5)² = 9 × 5 = 45, NOT 15!"
+  },
+  {
+    "id": "q_ch3_06",
+    "title": "Q6 • Finding Unknown Radical Coefficients",
+    "type": "SA",
     "marks": 3,
-    "prompt": "Find the values of rational numbers a and b if:<br>(7 + 3&radic;5) / (7 - 3&radic;5) = a + b&radic;5.",
-    "answer": "Rationalize the denominator by multiplying by conjugate (7 + 3&radic;5):<br>LHS = [(7 + 3&radic;5)(7 + 3&radic;5)] / [(7 - 3&radic;5)(7 + 3&radic;5)]<br>Numerator = 7<sup>2</sup> + 2(7)(3&radic;5) + (3&radic;5)<sup>2</sup> = 49 + 42&radic;5 + 9(5) = 49 + 42&radic;5 + 45 = 94 + 42&radic;5.<br>Denominator = 7<sup>2</sup> - (3&radic;5)<sup>2</sup> = 49 - 9(5) = 49 - 45 = 4.<br>LHS = (94 + 42&radic;5) / 4 = 94/4 + (42/4)&radic;5 = 47/2 + (21/2)&radic;5.<br><br>Comparing with a + b&radic;5:<br><strong>a = 47/2</strong> and <strong>b = 21/2</strong>.",
-    "markingScheme": "• Multiplying by conjugate (7 + 3&radic;5): 1 mark<br>• Correct simplification of numerator (94 + 42&radic;5) and denominator (4): 1 mark<br>• Equating rational and irrational parts to get a = 47/2 and b = 21/2: 1 mark",
-    "examinerTip": "Do not leave fractions unreduced. 94/4 simplifies to 47/2."
+    "prompt": "Find the values of rational constants $a$ and $b$ if:<br>$$\\frac{5 + 2\\sqrt{3}}{7 + 4\\sqrt{3}} = a + b\\sqrt{3}$$",
+    "solution": "1. Multiply LHS by conjugate $(7 - 4\\sqrt{3})$:<br>$$\\text{LHS} = \\frac{(5 + 2\\sqrt{3})(7 - 4\\sqrt{3})}{(7 + 4\\sqrt{3})(7 - 4\\sqrt{3})}$$ [0.5 mark]<br><br>2. Evaluate Denominator:<br>$$7^2 - (4\\sqrt{3})^2 = 49 - (16 \\times 3) = 49 - 48 = \\mathbf{1}$$ [0.5 mark]<br><br>3. Expand Numerator using FOIL:<br>$$(5)(7) + (5)(-4\\sqrt{3}) + (2\\sqrt{3})(7) + (2\\sqrt{3})(-4\\sqrt{3})$$<br>$$= 35 - 20\\sqrt{3} + 14\\sqrt{3} - (8 \\times 3)$$<br>$$= 35 - 6\\sqrt{3} - 24 = \\mathbf{11 - 6\\sqrt{3}}$$ [1.0 mark]<br><br>4. Compare with RHS: $a + b\\sqrt{3} = 11 - 6\\sqrt{3}$:<br>$$\\mathbf{a = 11}, \\quad \\mathbf{b = -6}$$ [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Conjugate multiplication and simplification of denominator to 1.",
+      "1.0 mark: Accurate expansion of numerator to 11 - 6√3.",
+      "1.0 mark: Equating rational and irrational parts to yield a = 11, b = -6."
+    ],
+    "examinerTip": "🚨 Don't forget the negative sign on b: b = -6, not +6!"
   },
   {
-    "type": "Case-Based Study (4m)",
+    "id": "q_ch3_07",
+    "title": "Q7 • Algebraic Radical Identity Synthesis",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "If $x = 3 + 2\\sqrt{2}$, find the numerical values of:<br>(a) $\\frac{1}{x}$<br>(b) $x + \\frac{1}{x}$<br>(c) $x^2 + \\frac{1}{x^2}$",
+    "solution": "<strong>(a) Value of $\\frac{1}{x}$:</strong><br>$$\\frac{1}{x} = \\frac{1}{3 + 2\\sqrt{2}} \\times \\frac{3 - 2\\sqrt{2}}{3 - 2\\sqrt{2}} = \\frac{3 - 2\\sqrt{2}}{3^2 - (2\\sqrt{2})^2} = \\frac{3 - 2\\sqrt{2}}{9 - 8} = \\mathbf{3 - 2\\sqrt{2}}$$ [1.0 mark]<br><br><strong>(b) Value of $x + \\frac{1}{x}$:</strong><br>$$x + \\frac{1}{x} = (3 + 2\\sqrt{2}) + (3 - 2\\sqrt{2}) = 3 + 3 = \\mathbf{6}$$ [1.0 mark]<br><br><strong>(c) Value of $x^2 + \\frac{1}{x^2}$:</strong><br>Square both sides of $x + \\frac{1}{x} = 6$:<br>$$\\left(x + \\frac{1}{x}\\right)^2 = 6^2 \\implies x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 36$$<br>$$x^2 + 2 + \\frac{1}{x^2} = 36 \\implies x^2 + \\frac{1}{x^2} = 36 - 2 = \\mathbf{34}$$ [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Rationalizing 1/x = 3 - 2√2.",
+      "1.0 mark: Adding terms to obtain x + 1/x = 6.",
+      "1.0 mark: Applying identity (x + 1/x)² - 2 = 36 - 2 = 34."
+    ],
+    "examinerTip": "🚨 Masterclass Shortcut: Whenever the difference of squares of terms in x equals 1 (here 3² - (2√2)² = 9 - 8 = 1), 1/x is simply the conjugate with a minus sign!"
+  },
+  {
+    "id": "q_ch3_08",
+    "title": "Q8 • Long Answer HOTS: Laws of Exponents & Proof",
+    "type": "LA",
+    "marks": 5,
+    "prompt": "Solve the following advanced real number and exponent problems:<br><br><strong>Part (a):</strong> Prove that:<br>$$\\frac{1}{1 + x^{b-a} + x^{c-a}} + \\frac{1}{1 + x^{a-b} + x^{c-b}} + \\frac{1}{1 + x^{a-c} + x^{b-c}} = 1$$ [3 Marks]<br><br><strong>Part (b):</strong> If $2^x = 3^y = 12^z$, prove using laws of exponents that:<br>$$\\frac{1}{z} = \\frac{1}{y} + \\frac{2}{x}$$ [2 Marks]",
+    "solution": "<strong>Part (a) Solution:</strong><br>1. In the first fraction, write $x^{b-a} = \\frac{x^b}{x^a}$ and $x^{c-a} = \\frac{x^c}{x^a}$:<br>$$\\frac{1}{1 + \\frac{x^b}{x^a} + \\frac{x^c}{x^a}} = \\frac{1}{\\frac{x^a + x^b + x^c}{x^a}} = \\frac{x^a}{x^a + x^b + x^c}$$ [1.0 mark]<br><br>2. Similarly, for the second and third fractions:<br>$$\\text{Fraction 2} = \\frac{x^b}{x^a + x^b + x^c}, \\quad \\text{Fraction 3} = \\frac{x^c}{x^a + x^b + x^c}$$ [1.0 mark]<br><br>3. Add all three fractions having the identical common denominator $(x^a + x^b + x^c)$:<br>$$\\text{LHS} = \\frac{x^a + x^b + x^c}{x^a + x^b + x^c} = \\mathbf{1 = \\text{RHS}} \\quad \\text{(Hence Proved!)}$$ [1.0 mark]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. Let $2^x = 3^y = 12^z = k$ (where $k > 0$).<br>Then $2 = k^{1/x}$, $3 = k^{1/y}$, and $12 = k^{1/z}$. [0.5 mark]<br><br>2. Express $12$ in prime factors: $12 = 2^2 \\times 3$. [0.5 mark]<br><br>3. Substitute in terms of $k$:<br>$$k^{1/z} = (k^{1/x})^2 \\times (k^{1/y}) = k^{2/x} \\cdot k^{1/y} = k^{\\frac{2}{x} + \\frac{1}{y}}$$ [0.5 mark]<br><br>4. Since bases are identical ($k$), equate powers:<br>$$\\mathbf{\\frac{1}{z} = \\frac{2}{x} + \\frac{1}{y}} \\quad \\text{(Hence Proved!)}$$ [0.5 mark]",
+    "markingScheme": [
+      "1.0 mark: Converting negative powers to fractions with common base x^a.",
+      "1.0 mark: Performing identical transformation on fractions 2 and 3.",
+      "1.0 mark: Combining terms with common denominator to prove LHS = 1.",
+      "1.0 mark: Introducing parameter k and expressing 2, 3, 12 as powers of k.",
+      "1.0 mark: Using 12 = 2² · 3 to equate exponents and prove 1/z = 2/x + 1/y."
+    ],
+    "examinerTip": "🚨 CBSE Exemplar Proof: This is an iconic 5-mark question frequently tested in school final exams and olympiads."
+  },
+  {
+    "id": "q_ch3_09",
+    "title": "Q9 • Section E: Case-Based Integrated Study",
+    "type": "CBQ",
     "marks": 4,
-    "prompt": "In an official statistical survey of public vaccination coverage across 7 targeted administrative zones, health officials analyzed fractions of population vaccinated:<br>• The fraction of zones where vaccination reached 100% was recorded as 1/7.<br>• By long division, the decimal expansion of 1/7 is found to be 0.142857&#773;.<br><br><strong>Questions:</strong><br>(i) What type of decimal expansion does 1/7 represent? (1m)<br>(ii) Without doing actual long division, determine the decimal expansion of 6/7. Explain the method used. (2m)<br>(iii) Is 0.142857&#773; a rational or irrational number? Justify your answer. (1m)",
-    "answer": "(i) 1/7 has a <strong>non-terminating recurring (repeating)</strong> decimal expansion, with a repeating block of 6 digits.<br><br>(ii) To find 6/7 without long division:<br>6/7 = 6 &times; (1/7) = 6 &times; 0.142857&#773;.<br>Multiplying the cyclic sequence by 6:<br>142857 &times; 6 = 857142.<br>Therefore, 6/7 = <strong>0.857142&#773;</strong>.<br><br>(iii) It is a <strong>rational number</strong> because its decimal expansion is recurring (repeating), and any non-terminating recurring decimal can be expressed in the form p/q where p, q are integers and q &ne; 0 (here p=1, q=7).",
-    "markingScheme": "• (i) Stating non-terminating recurring: 1 mark<br>• (ii) Showing multiplication 6 &times; 0.142857&#773; = 0.857142&#773; with justification: 2 marks<br>• (iii) Rational number with proper definition justification: 1 mark",
-    "examinerTip": "Direct question from School PA-2 Exam Case Study (Question 38)."
+    "prompt": "<strong>CASE STUDY: High-Precision Metallurgical Calibration</strong><br><br>In a scientific instrument manufacturing laboratory in Bengaluru, technicians are calibrating laser micrometers for cutting semiconductor silicon wafers. High-precision laser optical distances are governed by specific real number tolerances involving radicals and recurring decimals.<br><br>• Component A has a specified optical clearance gap of $d_A = 0.\\overline{36}$ millimeters.<br>• Component B has a thermal expansion gap of $d_B = \\frac{1}{\\sqrt{5} - \\sqrt{2}}$ millimeters.<br><br>Based on this precision data, answer the following:<br><br><strong>(i)</strong> Convert the clearance gap $d_A = 0.\\overline{36}$ mm into an exact rational fraction $\\frac{p}{q}$ in lowest terms. [1 Mark]<br><br><strong>(ii)</strong> What type of decimal expansion does $\\frac{p}{q}$ possess? Explain why its denominator ensures this decimal behavior. [1 Mark]<br><br><strong>(iii)</strong> Rationalize the denominator of Component B's thermal gap $d_B = \\frac{1}{\\sqrt{5} - \\sqrt{2}}$ mm, and evaluate its approximate gap length taking $\\sqrt{5} \\approx 2.236$ and $\\sqrt{2} \\approx 1.414$.<br><strong>[OR]</strong><br>If a third critical gap is modeled by $d_C = (\\sqrt{5} + \\sqrt{2})(\\sqrt{5} - \\sqrt{2})$ mm, determine whether $d_C$ is rational or irrational, and find its exact numeric millimeter measure. [2 Marks]",
+    "solution": "<strong>(i) Converting $d_A = 0.\\overline{36}$ to Fraction:</strong><br>Let $x = 0.3636\\dots$<br>$100x = 36.3636\\dots$<br>Subtracting: $99x = 36 \\implies x = \\frac{36}{99} = \\mathbf{\\frac{4}{11}\\text{ mm}}$. [1.0 mark]<br><br><strong>(ii) Decimal Behavior Explanation:</strong><br>• It is a <strong>non-terminating recurring decimal</strong>.<br>• The prime factorization of denominator in lowest terms is $11$, which contains a prime factor other than $2$ or $5$. Hence, it cannot terminate. [1.0 mark]<br><br><strong>(iii) Primary Option: Rationalizing $d_B$:</strong><br>$$d_B = \\frac{1}{\\sqrt{5} - \\sqrt{2}} \\times \\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} = \\frac{\\sqrt{5} + \\sqrt{2}}{(\\sqrt{5})^2 - (\\sqrt{2})^2} = \\mathbf{\\frac{\\sqrt{5} + \\sqrt{2}}{3}\\text{ mm}}$$ [1.0 mark]<br>Approximate numerical evaluation:<br>$$d_B \\approx \\frac{2.236 + 1.414}{3} = \\frac{3.650}{3} \\approx \\mathbf{1.217\\text{ mm}}$$ [1.0 mark]<br><br><strong>[OR] Internal Choice Option:</strong><br>$$d_C = (\\sqrt{5} + \\sqrt{2})(\\sqrt{5} - \\sqrt{2}) = (\\sqrt{5})^2 - (\\sqrt{2})^2 = 5 - 2 = \\mathbf{3\\text{ mm}}$$<br>• Since $3 = \\frac{3}{1}$ is an integer ratio, $d_C$ is strictly a <strong>Rational Number</strong>. [2.0 marks]",
+    "markingScheme": [
+      "1.0 mark: Correct conversion of 0.3636... to 4/11 mm.",
+      "1.0 mark: Stating non-terminating recurring and noting denominator prime factor is 11 (not 2 or 5).",
+      "2.0 marks: [Main Option] Rationalizing to (√5 + √2)/3 [1m] and evaluating to 1.217 mm [1m]. OR [Choice Option] Calculating d_C = 3 mm and stating it is rational [2m]."
+    ],
+    "examinerTip": "🚨 Precision Tip: Keep decimals to 3 decimal places as given in the problem approximations."
   }
 ]

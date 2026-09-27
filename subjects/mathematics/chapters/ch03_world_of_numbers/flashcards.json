@@ -1,44 +1,128 @@
 [
   {
-    "id": "iemh103_fc1",
-    "tag": "Definition",
-    "front": "What distinguishes the <strong>decimal expansion</strong> of a rational number from an irrational number?",
-    "back": "• <strong>Rational Number:</strong> Either <em>terminating</em> (e.g. 0.75) OR <em>non-terminating recurring</em> (e.g. 0.333...).<br>• <strong>Irrational Number:</strong> Strictly <em>non-terminating non-recurring</em> (e.g. &radic;2 = 1.4142135...).",
-    "note": "A rational number p/q terminates if prime factors of q are only 2 and 5."
+    "id": "fc_ch3_01",
+    "tag": "DEFINITIONS",
+    "front": "What is the defining condition for a number to be called a <strong>Rational Number</strong>?",
+    "back": "A number that can be expressed in the form $\\mathbf{\\frac{p}{q}}$, where $p$ and $q$ are integers and $\\mathbf{q \\neq 0}$.<br><br>• Its decimal representation is always either <strong>terminating</strong> or <strong>non-terminating recurring</strong>.",
+    "note": "Fundamental Number Set Definition"
   },
   {
-    "id": "iemh103_fc2",
-    "tag": "Number Theory",
-    "front": "Is <span class=\"math\">&pi;</span> rational or irrational, and why is <span class=\"math\">22/7</span> rational?",
-    "back": "• <strong>&pi; is Irrational:</strong> Its exact decimal value is non-terminating and non-repeating.<br>• <strong>22/7 is Rational:</strong> It is a quotient of two integers (p/q form) used as an approximation for &pi;.",
-    "note": "Examiner favorite: 22/7 &ne; &pi; exactly."
+    "id": "fc_ch3_02",
+    "tag": "DEFINITIONS",
+    "front": "What characterizes the decimal expansion of an <strong>Irrational Number</strong>?",
+    "back": "Its decimal expansion is strictly <strong>non-terminating and non-recurring</strong> (it never ends and never repeats a periodic sequence).<br><br>• <em>Examples:</em> $\\sqrt{2} = 1.4142135\\dots$, $\\pi = 3.1415926\\dots$, $0.1010010001\\dots$",
+    "note": "Irrational Decimal Property"
   },
   {
-    "id": "iemh103_fc3",
-    "tag": "Technique",
-    "front": "How do you <strong>rationalize the denominator</strong> of <span class=\"math\">1 / (&radic;a + &radic;b)</span>?",
-    "back": "Multiply both numerator and denominator by the conjugate <strong>(&radic;a - &radic;b)</strong>:<br><span class=\"math\">[1 / (&radic;a + &radic;b)] &times; [(&radic;a - &radic;b) / (&radic;a - &radic;b)] = (&radic;a - &radic;b) / (a - b)</span>.",
-    "note": "Uses the difference of squares identity: (x + y)(x - y) = x^2 - y^2."
+    "id": "fc_ch3_03",
+    "tag": "DEFINITIONS",
+    "front": "Is $\\mathbf{\\pi}$ rational or irrational, and why is $\\frac{22}{7}$ not proof that $\\pi$ is rational?",
+    "back": "$\\mathbf{\\pi}$ is strictly <strong>IRRATIONAL</strong>.<br><br>• $\\frac{22}{7}$ is merely an approximate rational fraction used for arithmetic convenience.<br>• True $\\pi$ cannot be written as a fraction of integers.",
+    "note": "High-Frequency Board Exam Trap"
   },
   {
-    "id": "iemh103_fc4",
-    "tag": "Laws of Exponents",
-    "front": "Simplify: <span class=\"math\">(1/3)<sup>1/5</sup> &divide; (1/3)<sup>1/3</sup></span>.",
-    "back": "Using law a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m - n</sup>:<br>(1/3)<sup>1/5 - 1/3</sup> = (1/3)<sup>(3 - 5)/15</sup> = (1/3)<sup>-2/15</sup> = <strong>3<sup>2/15</sup></strong>.",
-    "note": "Direct question from PA-2 School Exam (Question 18)."
+    "id": "fc_ch3_04",
+    "tag": "DEFINITIONS",
+    "front": "What condition on the prime factorization of denominator $q$ guarantees that $\\frac{p}{q}$ is a <strong>terminating decimal</strong>?",
+    "back": "In simplest form (where $\\gcd(p, q) = 1$), the prime factorization of $q$ must contain <strong>ONLY powers of 2 and/or 5</strong>:<br>$$\\mathbf{q = 2^m \\cdot 5^n}$$<br>where $m, n$ are whole numbers.",
+    "note": "Terminating Decimal Condition"
   },
   {
-    "id": "iemh103_fc5",
-    "tag": "Negative Exponents",
-    "front": "Evaluate: <span class=\"math\">(3/8)<sup>-2</sup></span>.",
-    "back": "Using (a/b)<sup>-n</sup> = (b/a)<sup>n</sup>:<br>(3/8)<sup>-2</sup> = (8/3)<sup>2</sup> = 8<sup>2</sup> / 3<sup>2</sup> = <strong>64 / 9</strong>.",
-    "note": "Direct question from PA-2 School Exam (Question 17)."
+    "id": "fc_ch3_05",
+    "tag": "DECIMAL CONVERSIONS",
+    "front": "Convert the pure recurring decimal $\\mathbf{0.\\bar{6}}$ into an authentic fraction $\\frac{p}{q}$ in lowest terms.",
+    "back": "Let $x = 0.666\\dots$<br>$10x = 6.666\\dots$<br>Subtracting: $9x = 6 \\implies x = \\frac{6}{9} = \\mathbf{\\frac{2}{3}}$.",
+    "note": "1-Digit Recurring Conversion"
   },
   {
-    "id": "iemh103_fc6",
-    "tag": "Cyclic Decimals",
-    "front": "Given that <span class=\"math\">1/7 = 0.142857...</span> with bar on 142857, how can you predict <span class=\"math\">6/7</span> without long division?",
-    "back": "Multiply the repeating block by 6:<br>6 &times; 0.142857... = <strong>0.857142...</strong> (repeating).<br>Notice that all fractions k/7 cycle through the identical 6 digits: 1, 4, 2, 8, 5, 7.",
-    "note": "Featured in School Exam PA-2 Case Study (Question 38)."
+    "id": "fc_ch3_06",
+    "tag": "DECIMAL CONVERSIONS",
+    "front": "What is the fractional representation of $\\mathbf{0.\\overline{47}}$ in $\\frac{p}{q}$ form?",
+    "back": "Let $x = 0.4747\\dots$<br>$100x = 47.4747\\dots$<br>Subtracting: $99x = 47 \\implies \\mathbf{x = \\frac{47}{99}}$.",
+    "note": "2-Digit Recurring Conversion"
+  },
+  {
+    "id": "fc_ch3_07",
+    "tag": "DECIMAL CONVERSIONS",
+    "front": "Convert the mixed recurring decimal $\\mathbf{0.2\\bar{3}}$ to $\\frac{p}{q}$ form.",
+    "back": "Let $x = 0.2333\\dots$<br>$10x = 2.333\\dots$<br>$100x = 23.333\\dots$<br>Subtracting: $90x = 21 \\implies x = \\frac{21}{90} = \\mathbf{\\frac{7}{30}}$.",
+    "note": "Mixed Recurring Protocol"
+  },
+  {
+    "id": "fc_ch3_08",
+    "tag": "OPERATIONS",
+    "front": "Is the sum of a <strong>rational number</strong> and an <strong>irrational number</strong> rational or irrational?",
+    "back": "Always <strong>IRRATIONAL</strong>!<br><br>• <em>Example:</em> $3 + \\sqrt{2}$ is irrational.<br>• Similarly, non-zero rational $\\times$ irrational is always irrational (e.g. $5\\sqrt{3}$).",
+    "note": "Closure Property"
+  },
+  {
+    "id": "fc_ch3_09",
+    "tag": "OPERATIONS",
+    "front": "Can the product of two <strong>irrational numbers</strong> ever be <strong>rational</strong>?",
+    "back": "<strong>YES!</strong><br><br>• <em>Example 1:</em> $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = \\mathbf{4}$ (Rational).<br>• <em>Example 2:</em> $(\\sqrt{5} - 1)(\\sqrt{5} + 1) = 5 - 1 = \\mathbf{4}$ (Rational).",
+    "note": "Irrational Product Nuance"
+  },
+  {
+    "id": "fc_ch3_10",
+    "tag": "RATIONALIZATION",
+    "front": "What is the <strong>conjugate</strong> of the radical expression $(\\sqrt{5} - \\sqrt{3})$, and why do we multiply by it?",
+    "back": "The conjugate is $\\mathbf{(\\sqrt{5} + \\sqrt{3})}$.<br><br>• We multiply by it because $(a-b)(a+b) = a^2 - b^2$, which squares out all radicals:<br>$(\\sqrt{5}-\\sqrt{3})(\\sqrt{5}+\\sqrt{3}) = 5 - 3 = \\mathbf{2}$.",
+    "note": "Conjugate Definition"
+  },
+  {
+    "id": "fc_ch3_11",
+    "tag": "RATIONALIZATION",
+    "front": "Rationalize the denominator of: $\\mathbf{\\frac{1}{\\sqrt{7} - 2}}$.",
+    "back": "Multiply numerator and denominator by conjugate $(\\sqrt{7} + 2)$:<br>$$\\frac{1(\\sqrt{7} + 2)}{(\\sqrt{7})^2 - 2^2} = \\frac{\\sqrt{7} + 2}{7 - 4} = \\mathbf{\\frac{\\sqrt{7} + 2}{3}}$$",
+    "note": "Standard Rationalization Drill"
+  },
+  {
+    "id": "fc_ch3_12",
+    "tag": "RATIONALIZATION",
+    "front": "Find the value of $a$ and $b$ if $\\frac{\\sqrt{3}-1}{\\sqrt{3}+1} = a + b\\sqrt{3}$.",
+    "back": "Rationalize LHS:<br>$$\\frac{(\\sqrt{3}-1)^2}{3 - 1} = \\frac{3 - 2\\sqrt{3} + 1}{2} = \\frac{4 - 2\\sqrt{3}}{2} = 2 - \\sqrt{3}$$<br>Comparing with $a + b\\sqrt{3} \\implies \\mathbf{a = 2}, \\mathbf{b = -1}$.",
+    "note": "Authentic Exam Question"
+  },
+  {
+    "id": "fc_ch3_13",
+    "tag": "LAWS OF EXPONENTS",
+    "front": "Evaluate: $\\mathbf{64^{1/2}}$ and $\\mathbf{64^{-1/3}}$.",
+    "back": "• $64^{1/2} = \\sqrt{64} = \\mathbf{8}$.<br>• $64^{-1/3} = \\frac{1}{64^{1/3}} = \\frac{1}{\\sqrt[3]{64}} = \\frac{1}{4} = \\mathbf{0.25}$.",
+    "note": "Fractional Exponent Calculation"
+  },
+  {
+    "id": "fc_ch3_14",
+    "tag": "LAWS OF EXPONENTS",
+    "front": "Simplify: $\\mathbf{\\left(\\frac{1}{3^3}\\right)^7}$.",
+    "back": "Using law $(a^p)^q = a^{pq}$ and $\\frac{1}{a^p} = a^{-p}$:<br>$$\\left(3^{-3}\\right)^7 = 3^{-3 \\times 7} = \\mathbf{3^{-21}} \\quad \\left(\\text{or } \\frac{1}{3^{21}}\\right)$$",
+    "note": "NCERT Ganita Manjari Drill"
+  },
+  {
+    "id": "fc_ch3_15",
+    "tag": "NUMBER LINE",
+    "front": "Which mathematical theorem is used to locate $\\mathbf{\\sqrt{2}}$ geometrically on the number line?",
+    "back": "The <strong>Pythagoras Theorem</strong> in a right-angled triangle with legs of length 1 unit:<br>$$\\text{Hypotenuse} = \\sqrt{1^2 + 1^2} = \\sqrt{2}$$<br>Transferring this hypotenuse onto the number line using a compass marks $\\sqrt{2}$.",
+    "note": "Geometric Root Construction"
+  },
+  {
+    "id": "fc_ch3_16",
+    "tag": "NUMBER LINE",
+    "front": "How can $\\mathbf{\\sqrt{5}}$ be constructed on the number line in a <strong>single right triangle</strong>?",
+    "back": "Construct a right triangle with base = $\\mathbf{2\\text{ units}}$ and altitude = $\\mathbf{1\\text{ unit}}$:<br>$$\\text{Hypotenuse} = \\sqrt{2^2 + 1^2} = \\sqrt{4 + 1} = \\mathbf{\\sqrt{5}}$$",
+    "note": "Single-Step Root Construction"
+  },
+  {
+    "id": "fc_ch3_17",
+    "tag": "EXAM TRAPS",
+    "front": "True or False: Between any two distinct rational numbers, there are <strong>infinitely many rational and irrational numbers</strong>.",
+    "back": "<strong>TRUE!</strong><br><br>• This property is called the <strong>density property</strong> of the real number system.<br>• For any $a < b$, infinitely many numbers lie between them.",
+    "note": "Real Number Density Property"
+  },
+  {
+    "id": "fc_ch3_18",
+    "tag": "EXAM TRAPS",
+    "front": "Is $\\mathbf{\\sqrt{225}}$ rational or irrational?",
+    "back": "<strong>RATIONAL!</strong><br><br>• $225 = 15^2$, so $\\sqrt{225} = 15 = \\frac{15}{1}$.<br>• Square roots of perfect squares are always whole numbers / integers, hence rational.",
+    "note": "Radical Simplification Trap"
   }
 ]

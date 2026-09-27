@@ -64,7 +64,7 @@ def validate_subject(subject_dir: Path) -> bool:
 
         # Check Guide Markdown
         guide_file = ch_path / "guide.md"
-        if not guide_file.exists() or guide_file.stat().st_size < 200:
+        if not guide_file.exists() or guide_file.stat().st_size < 500:
             print(f"❌ Error: Chapter {ch_id} guide.md missing or too short in {ch_path}")
             return False
 
@@ -75,8 +75,8 @@ def validate_subject(subject_dir: Path) -> bool:
             return False
         with open(cards_file, "r", encoding="utf-8") as f:
             cards = json.load(f)
-        if len(cards) < 5:
-            print(f"⚠️ Warning: Chapter {ch_id} has fewer than 5 flashcards ({len(cards)})")
+        if len(cards) < 15:
+            print(f"⚠️ Warning: Chapter {ch_id} has fewer than 15 flashcards ({len(cards)})")
         total_flashcards += len(cards)
 
         # Check Questions
@@ -86,8 +86,11 @@ def validate_subject(subject_dir: Path) -> bool:
             return False
         with open(q_file, "r", encoding="utf-8") as f:
             qs = json.load(f)
-        if len(qs) < 5:
-            print(f"⚠️ Warning: Chapter {ch_id} has fewer than 5 practice questions ({len(qs)})")
+        if len(qs) < 8:
+            print(f"⚠️ Warning: Chapter {ch_id} has fewer than 8 practice questions ({len(qs)})")
+        for q in qs:
+            if not q.get("markingScheme") or not q.get("examinerTip"):
+                print(f"⚠️ Warning: Chapter {ch_id} question '{q.get('id')}' missing markingScheme or examinerTip")
         total_questions += len(qs)
 
         print(f"  • [{ch_id}] {meta.get('code')}: {meta.get('title')} ({len(cards)} cards, {len(qs)} questions) - OK")

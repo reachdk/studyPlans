@@ -1,68 +1,140 @@
 [
   {
+    "id": "q_ch2_01",
+    "title": "Q1 • Polynomial Identification Trap",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "Which of the following options gives the correct value of the polynomial p(x) = x<sup>3</sup> - 10x<sup>2</sup> + 3x - 4 at x = -1?",
+    "prompt": "Which of the following algebraic expressions is a <strong>polynomial in one variable</strong>?<br><br><strong>(A)</strong> $\\sqrt{x} + 2x - 1$<br><strong>(B)</strong> $x^2 + \\frac{3}{x} + 5$<br><strong>(C)</strong> $\\sqrt{7}x^2 - \\frac{2}{3}x + \\pi$<br><strong>(D)</strong> $y^2 + 2\\sqrt{y} + 7$",
     "options": [
-      "(a) -18",
-      "(b) 10",
-      "(c) 4",
-      "(d) 2"
+      "(A) √x + 2x - 1",
+      "(B) x² + 3/x + 5",
+      "(C) √7x² - (2/3)x + π",
+      "(D) y² + 2√y + 7"
     ],
-    "answer": "<strong>(a) -18</strong>",
-    "markingScheme": "• Substitute x = -1: (-1)<sup>3</sup> - 10(-1)<sup>2</sup> + 3(-1) - 4 [0.5 mark]<br>• Compute: -1 - 10(1) - 3 - 4 = -18 [0.5 mark]",
-    "examinerTip": "Direct question from PA-2 Class 9 CBSE Mathematics Paper (Question 4)."
+    "solution": "<strong>Correct Answer: (C)</strong><br><br>• In <strong>(A)</strong>, $\\sqrt{x} = x^{1/2}$; the power $\\frac{1}{2}$ is not an integer.<br>• In <strong>(B)</strong>, $\\frac{3}{x} = 3x^{-1}$; the power $-1$ is a negative integer.<br>• In <strong>(D)</strong>, $\\sqrt{y} = y^{1/2}$; the power is fractional.<br>• In <strong>(C)</strong>, the exponents of $x$ are $2, 1, 0$ (all non-negative integers $\\mathbb{W}$). The coefficients $\\sqrt{7}, -\\frac{2}{3}, \\pi$ are real numbers, which is completely valid.",
+    "markingScheme": [
+      "1.0 mark: Correct option (C) selected with mathematical justification that exponents are whole numbers and coefficients are real."
+    ],
+    "examinerTip": "🚨 Common Error: Students often reject option (C) because of √7 and π, wrongly believing coefficients must be integers. Remember: ONLY exponents must be whole numbers!"
   },
   {
+    "id": "q_ch2_02",
+    "title": "Q2 • Degree Determination Upon Expansion",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "Which of the following algebraic expressions is a polynomial?",
+    "prompt": "The <strong>degree</strong> of the polynomial $P(x) = (x^2 + 3)(2x - x^4 + 5)$ is equal to:<br><br><strong>(A)</strong> 2<br><strong>(B)</strong> 4<br><strong>(C)</strong> 6<br><strong>(D)</strong> 8",
     "options": [
-      "(a) x<sup>2</sup> - 2/x + 1",
-      "(b) &radic;3 x<sup>2</sup> - 5x + &radic;2",
-      "(c) x<sup>3/2</sup> + 4x - 7",
-      "(d) 3&radic;x + 2"
+      "(A) 2",
+      "(B) 4",
+      "(C) 6",
+      "(D) 8"
     ],
-    "answer": "<strong>(b) &radic;3 x<sup>2</sup> - 5x + &radic;2</strong>",
-    "markingScheme": "• Option (a) has x<sup>-1</sup> (negative power) [incorrect]<br>• Option (c) has x<sup>3/2</sup> (fractional power) [incorrect]<br>• Option (d) has &radic;x = x<sup>1/2</sup> [incorrect]<br>• Option (b) has variable exponents 2, 1, 0 (all whole numbers), so it is a polynomial [1 mark]",
-    "examinerTip": "Real coefficients can be roots (&radic;3, &radic;2), only variable powers must be whole numbers."
+    "solution": "<strong>Correct Answer: (C)</strong><br><br>• The highest power of $x$ is formed by the product of the highest power term in the first factor ($x^2$) and the highest power term in the second factor ($-x^4$):<br>$$x^2 \\times (-x^4) = -x^{2+4} = -x^6$$<br>• Since the coefficient of $x^6$ is $-1 \\neq 0$, the degree of the polynomial is strictly <strong>6</strong>.",
+    "markingScheme": [
+      "1.0 mark: Correct option (C) selected by multiplying highest power terms: x² · (-x⁴) = -x⁶."
+    ],
+    "examinerTip": "🚨 Common Error: Students pick option (B) because 4 is the largest visible power inside the brackets, forgetting that the factors must be multiplied to determine total degree."
   },
   {
-    "type": "Assertion-Reason",
+    "id": "q_ch2_03",
+    "title": "Q3 • Assertion-Reasoning (Constant Polynomial)",
+    "type": "A-R",
     "marks": 1,
-    "prompt": "<strong>Assertion (A):</strong> The degree of the polynomial p(x) = 5 is 0.<br><strong>Reason (R):</strong> The degree of a non-zero constant polynomial is always zero, because it can be written as c &middot; x<sup>0</sup>.",
+    "prompt": "<strong>Direction:</strong> In the question below, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br><br><strong>Assertion (A):</strong> The degree of the non-zero constant polynomial $P(x) = -9$ is $0$.<br><strong>Reason (R):</strong> Any non-zero real number $c$ can be written in the form $c \\cdot x^0$, where the exponent of the variable $x$ is the whole number $0$.",
     "options": [
-      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
-      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
-      "(c) (A) is true but (R) is false.",
-      "(d) (A) is false but (R) is true."
+      "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+      "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+      "(C) Assertion (A) is true but Reason (R) is false.",
+      "(D) Assertion (A) is false but Reason (R) is true."
     ],
-    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-    "markingScheme": "• Identifying that constant 5 = 5x<sup>0</sup> [0.5 mark]<br>• Recognizing that degree is the power of variable which is 0 [0.5 mark]",
-    "examinerTip": "Note: For the zero polynomial p(x) = 0, the degree is NOT defined."
+    "solution": "<strong>Correct Answer: (A)</strong><br><br>• <strong>Assertion (A) is true:</strong> The degree of any non-zero constant polynomial is defined to be $0$.<br>• <strong>Reason (R) is true:</strong> By exponent law, $x^0 = 1$ for any non-zero $x$. Thus, $-9 = -9x^0$. Since the exponent is $0$, it directly explains why the degree is $0$.<br>• Reason (R) correctly and directly explains Assertion (A).",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) identified with validation of both A and R."
+    ],
+    "examinerTip": "🚨 Note for Exams: If the polynomial had been 0 (the zero polynomial), the assertion would be FALSE, as the degree of 0 is undefined!"
   },
   {
-    "type": "Short Answer (2m)",
+    "id": "q_ch2_04",
+    "title": "Q4 • Value Evaluation with Sign Rigor",
+    "type": "VSA",
     "marks": 2,
-    "prompt": "Find the zero of each of the following linear polynomials:<br>(i) p(x) = 3x - 5<br>(ii) q(x) = ax + b, where a &ne; 0 and a, b are real constants.",
-    "answer": "(i) For p(x) = 0: 3x - 5 = 0 &rArr; 3x = 5 &rArr; <strong>x = 5/3</strong>.<br>(ii) For q(x) = 0: ax + b = 0 &rArr; ax = -b &rArr; <strong>x = -b/a</strong>.",
-    "markingScheme": "• Correct solution for (i): 1 mark<br>• Correct solution for (ii): 1 mark",
-    "examinerTip": "Always state the zero explicitly as x = -b/a."
+    "prompt": "Find the numerical value of the polynomial:<br>$$P(x) = 3x^3 - 4x^2 + 7x - 5$$<br>at $\\mathbf{x = -2}$.",
+    "solution": "Substitute $x = -2$ into $P(x)$ using parentheses for all signs:<br>$$P(-2) = 3(-2)^3 - 4(-2)^2 + 7(-2) - 5$$<br><br>Evaluate each power step-by-step:<br>• $(-2)^3 = -8$<br>• $(-2)^2 = +4$<br><br>$$P(-2) = 3(-8) - 4(4) - 14 - 5$$<br>$$P(-2) = -24 - 16 - 14 - 5$$<br>$$P(-2) = \\mathbf{-59}$$",
+    "markingScheme": [
+      "1.0 mark: Correct substitution and evaluation of powers: 3(-8) - 4(4) - 14 - 5.",
+      "1.0 mark: Correct algebraic simplification leading to final answer: P(-2) = -59."
+    ],
+    "examinerTip": "🚨 Watch Out: A very frequent error is writing -4(-2)² = -4(-4) = +16. Squaring a negative number yields positive: (-2)² = +4, so -4(+4) = -16."
   },
   {
-    "type": "Short Answer (3m)",
+    "id": "q_ch2_05",
+    "title": "Q5 • Solving for Unknown Constant Parameter",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "If $\\mathbf{x = -\\frac{1}{2}}$ is a zero of the polynomial $P(x) = 8x^3 - ax^2 - x + 2$, find the value of the constant $\\mathbf{a}$.",
+    "solution": "By definition of a zero of a polynomial, if $x = -\\frac{1}{2}$ is a zero, then $\\mathbf{P\\left(-\\frac{1}{2}\\right) = 0}$.<br><br>Substitute $x = -\\frac{1}{2}$ into $P(x)$:<br>$$8\\left(-\\frac{1}{2}\\right)^3 - a\\left(-\\frac{1}{2}\\right)^2 - \\left(-\\frac{1}{2}\\right) + 2 = 0$$<br><br>Evaluate each term:<br>$$8\\left(-\\frac{1}{8}\\right) - a\\left(\\frac{1}{4}\\right) + \\frac{1}{2} + 2 = 0$$<br>$$-1 - \\frac{a}{4} + \\frac{5}{2} = 0$$<br>$$\\frac{3}{2} - \\frac{a}{4} = 0 \\implies \\frac{a}{4} = \\frac{3}{2}$$<br>$$a = \\frac{3}{2} \\times 4 = \\mathbf{6}$$",
+    "markingScheme": [
+      "1.0 mark: Enforcing the root condition P(-1/2) = 0 and writing the substitution equation correctly.",
+      "1.0 mark: Correct arithmetic simplification and transposition yielding a = 6."
+    ],
+    "examinerTip": "🚨 Examiner Note: Always write the condition statement 'Since x = -1/2 is a zero, P(-1/2) = 0' to secure the first method mark!"
+  },
+  {
+    "id": "q_ch2_06",
+    "title": "Q6 • Verification of Zeroes & Geometric Representation",
+    "type": "SA",
     "marks": 3,
-    "prompt": "Find the zero of the polynomial:<br>p(x) = (x - 2)<sup>2</sup> - (x + 2)<sup>2</sup>.",
-    "answer": "We simplify p(x) using the algebraic identity a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b) [or by direct expansion]:<br>Method 1 (Expansion):<br>(x - 2)<sup>2</sup> = x<sup>2</sup> - 4x + 4<br>(x + 2)<sup>2</sup> = x<sup>2</sup> + 4x + 4<br>p(x) = (x<sup>2</sup> - 4x + 4) - (x<sup>2</sup> + 4x + 4)<br>p(x) = x<sup>2</sup> - 4x + 4 - x<sup>2</sup> - 4x - 4<br>p(x) = -8x.<br><br>To find the zero, set p(x) = 0:<br>-8x = 0 &rArr; <strong>x = 0</strong>.<br>Thus, 0 is the only zero of p(x).",
-    "markingScheme": "• Correct expansion of (x - 2)<sup>2</sup> and (x + 2)<sup>2</sup>: 1 mark<br>• Correct simplification to -8x: 1 mark<br>• Setting -8x = 0 and obtaining x = 0: 1 mark",
-    "examinerTip": "From School Exam PA-2 Q31. Make sure to distribute the negative sign carefully."
+    "prompt": "Consider the polynomial $P(x) = 3x^2 - 1$.<br>(a) Verify whether $\\mathbf{x = -\\frac{1}{\\sqrt{3}}}$ and $\\mathbf{x = \\frac{2}{\\sqrt{3}}}$ are zeroes of $P(x)$. [2 Marks]<br>(b) State what the zero of a polynomial represents geometrically on a Cartesian coordinate plane. [1 Mark]",
+    "solution": "<strong>(a) Verification of Zeroes:</strong><br>• For $x = -\\frac{1}{\\sqrt{3}}$:<br>$$P\\left(-\\frac{1}{\\sqrt{3}}\\right) = 3\\left(-\\frac{1}{\\sqrt{3}}\\right)^2 - 1 = 3\\left(\\frac{1}{3}\\right) - 1 = 1 - 1 = \\mathbf{0}$$<br>Since $P\\left(-\\frac{1}{\\sqrt{3}}\\right) = 0$, $\\mathbf{x = -\\frac{1}{\\sqrt{3}}}$ <strong>is a zero</strong> of $P(x)$. [1 mark]<br><br>• For $x = \\frac{2}{\\sqrt{3}}$:<br>$$P\\left(\\frac{2}{\\sqrt{3}}\\right) = 3\\left(\\frac{2}{\\sqrt{3}}\\right)^2 - 1 = 3\\left(\\frac{4}{3}\\right) - 1 = 4 - 1 = \\mathbf{3} \\neq 0$$<br>Since $P\\left(\\frac{2}{\\sqrt{3}}\\right) \\neq 0$, $\\mathbf{x = \\frac{2}{\\sqrt{3}}}$ <strong>is NOT a zero</strong> of $P(x)$. [1 mark]<br><br><strong>(b) Geometrical Representation:</strong><br>Geometrically, the zeroes of a polynomial $P(x)$ are the <strong>$x$-coordinates of the points where the graph $y = P(x)$ intersects the $x$-axis</strong> (i.e. points where $y = 0$). [1 mark]",
+    "markingScheme": [
+      "1.0 mark: Correct calculation showing P(-1/√3) = 0 with explicit conclusion statement.",
+      "1.0 mark: Correct calculation showing P(2/√3) = 3 ≠ 0 with explicit conclusion statement.",
+      "1.0 mark: Clear geometric explanation stating that zeroes represent x-intercepts on the Cartesian plane."
+    ],
+    "examinerTip": "🚨 CBSE Marking Rubric: Simply computing the numbers without writing 'Hence, it is a zero' or 'is not a zero' will lose half a mark under CBSE presentation criteria."
   },
   {
-    "type": "Long Answer (5m)",
+    "id": "q_ch2_07",
+    "title": "Q7 • HOTS: Expansion, Classification & Zero Analysis",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "Simplify the algebraic expression:<br>$$P(x) = (2x - 1)^2 - (2x + 1)^2 + 8x$$<br>(a) Find its simplified standard form. [1 Mark]<br>(b) State its degree, leading coefficient, and classify it. [1 Mark]<br>(c) Find all its zeroes. [1 Mark]",
+    "solution": "<strong>(a) Algebraic Simplification:</strong><br>Expand each squared binomial using identities $(a-b)^2 = a^2 - 2ab + b^2$ and $(a+b)^2 = a^2 + 2ab + b^2$:<br>• $(2x - 1)^2 = 4x^2 - 4x + 1$<br>• $(2x + 1)^2 = 4x^2 + 4x + 1$<br><br>Subtract inside brackets:<br>$$P(x) = [4x^2 - 4x + 1] - [4x^2 + 4x + 1] + 8x$$<br>$$P(x) = 4x^2 - 4x + 1 - 4x^2 - 4x - 1 + 8x$$<br>$$P(x) = (4x^2 - 4x^2) + (-4x - 4x + 8x) + (1 - 1) = \\mathbf{0}$$<br>[1 mark]<br><br><strong>(b) Classification & Degree:</strong><br>Since $P(x) = 0$, it is the <strong>zero polynomial</strong>.<br>• <strong>Degree:</strong> Strictly <strong>undefined</strong> (not 0!).<br>• <strong>Leading Coefficient:</strong> Does not exist. [1 mark]<br><br><strong>(c) Zeroes:</strong><br>Since $P(k) = 0$ for <em>every</em> real number $k$, <strong>every real number is a zero</strong> of $P(x)$ (infinitely many zeroes). [1 mark]",
+    "markingScheme": [
+      "1.0 mark: Correct expansion and complete cancellation yielding P(x) = 0.",
+      "1.0 mark: Correctly naming it the zero polynomial and identifying degree as undefined.",
+      "1.0 mark: Stating that every real number is a zero (infinitely many zeroes)."
+    ],
+    "examinerTip": "🚨 Masterclass Concept: A textbook trap! Students who do not simplify assume it is quadratic because of the squares, or state degree is 0 instead of undefined."
+  },
+  {
+    "id": "q_ch2_08",
+    "title": "Q8 • Long Answer HOTS: Linear & Quadratic Systems",
+    "type": "LA",
     "marks": 5,
-    "prompt": "Let p(x) = 2x<sup>3</sup> - kx<sup>2</sup> + 3x - 6.<br>(i) If x = 2 is a zero of the polynomial p(x), find the value of the constant k. (2m)<br>(ii) After substituting the value of k, evaluate p(-2) and p(1/2). (2m)<br>(iii) Determine the degree and the coefficient of x<sup>2</sup> in the resulting polynomial. (1m)",
-    "answer": "(i) Since x = 2 is a zero of p(x), p(2) = 0:<br>p(2) = 2(2)<sup>3</sup> - k(2)<sup>2</sup> + 3(2) - 6 = 0<br>2(8) - 4k + 6 - 6 = 0<br>16 - 4k = 0 &rArr; 4k = 16 &rArr; <strong>k = 4</strong>.<br><br>(ii) The polynomial is p(x) = 2x<sup>3</sup> - 4x<sup>2</sup> + 3x - 6.<br>• p(-2) = 2(-2)<sup>3</sup> - 4(-2)<sup>2</sup> + 3(-2) - 6<br>= 2(-8) - 4(4) - 6 - 6 = -16 - 16 - 6 - 6 = <strong>-44</strong>.<br>• p(1/2) = 2(1/2)<sup>3</sup> - 4(1/2)<sup>2</sup> + 3(1/2) - 6<br>= 2(1/8) - 4(1/4) + 3/2 - 6<br>= 1/4 - 1 + 3/2 - 6 = 1/4 + 6/4 - 4/4 - 24/4 = (1 + 6 - 4 - 24)/4 = <strong>-21/4 = -5.25</strong>.<br><br>(iii) Degree = <strong>3</strong> (highest power of x is 3).<br>Coefficient of x<sup>2</sup> = <strong>-4</strong>.",
-    "markingScheme": "• (i) Setting p(2) = 0 and solving for k = 4: 2 marks<br>• (ii) Calculating p(-2) = -44 (1 mark) and p(1/2) = -21/4 (1 mark): 2 marks<br>• (iii) Degree = 3 (0.5 mark) and coefficient of x<sup>2</sup> = -4 (0.5 mark): 1 mark",
-    "examinerTip": "When asked for the coefficient of a term, always include its sign (i.e. -4, not just 4)."
+    "prompt": "Solve the following multi-part polynomial synthesis problem:<br><br><strong>Part (a):</strong> Let $P(x) = ax + b$ be a linear polynomial in one variable. Given that $P(1) = 3$ and $P(3) = 7$:<br>(i) Find the values of $a$ and $b$, and write down the polynomial $P(x)$.<br>(ii) Find the zero of $P(x)$ and determine the coordinate where its straight line graph intersects the $x$-axis. [2.5 Marks]<br><br><strong>Part (b):</strong> Let $Q(x) = cx^2 + dx + e$ be a quadratic polynomial. Given that $x = 2$ and $x = -3$ are both zeroes of $Q(x)$, and the constant term $Q(0) = -12$:<br>(i) Form equations in $c, d, e$ and determine the exact values of the coefficients.<br>(ii) State the degree and leading coefficient of $Q(x)$. [2.5 Marks]",
+    "solution": "<strong>Part (a) Solution:</strong><br>1. From $P(1) = 3$:<br>$$a(1) + b = 3 \\implies a + b = 3 \\quad \\text{--- (Equation 1)}$$<br>2. From $P(3) = 7$:<br>$$a(3) + b = 7 \\implies 3a + b = 7 \\quad \\text{--- (Equation 2)}$$<br>3. Subtract Eq. 1 from Eq. 2:<br>$$(3a + b) - (a + b) = 7 - 3 \\implies 2a = 4 \\implies \\mathbf{a = 2}$$<br>Substitute $a = 2$ into Eq. 1: $2 + b = 3 \\implies \\mathbf{b = 1}$.<br>Hence, the linear polynomial is $\\mathbf{P(x) = 2x + 1}$. [1.5 marks]<br><br>4. Finding Zero: Set $P(x) = 0 \\implies 2x + 1 = 0 \\implies x = -\\frac{1}{2}$.<br>The graph intersects the $x$-axis at $\\mathbf{\\left(-\\frac{1}{2}, 0\\right)}$. [1.0 mark]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. From $Q(0) = -12$:<br>$$c(0)^2 + d(0) + e = -12 \\implies \\mathbf{e = -12}$$ [0.5 mark]<br><br>2. Since $x = 2$ is a zero, $Q(2) = 0$:<br>$$c(2)^2 + d(2) - 12 = 0 \\implies 4c + 2d = 12 \\implies 2c + d = 6 \\quad \\text{--- (Eq. 3)}$$<br><br>3. Since $x = -3$ is a zero, $Q(-3) = 0$:<br>$$c(-3)^2 + d(-3) - 12 = 0 \\implies 9c - 3d = 12 \\implies 3c - d = 4 \\quad \\text{--- (Eq. 4)}$$<br><br>4. Add Eq. 3 and Eq. 4:<br>$$(2c + d) + (3c - d) = 6 + 4 \\implies 5c = 10 \\implies \\mathbf{c = 2}$$<br>Substitute $c = 2$ into Eq. 3: $2(2) + d = 6 \\implies 4 + d = 6 \\implies \\mathbf{d = 2}$.<br>Hence, $\\mathbf{Q(x) = 2x^2 + 2x - 12}$. [1.5 marks]<br><br>5. <strong>Degree:</strong> $2$ (Quadratic polynomial).<br>• <strong>Leading Coefficient:</strong> $c = \\mathbf{2}$. [0.5 mark]",
+    "markingScheme": [
+      "1.0 mark: Setting up simultaneous linear equations for a and b and solving to find a = 2, b = 1.",
+      "1.0 mark: Finding zero x = -1/2 and stating x-intercept coordinate (-1/2, 0).",
+      "0.5 mark: Evaluating Q(0) = -12 to find e = -12.",
+      "1.5 marks: Setting up equations from zeroes x = 2, x = -3 and solving simultaneous system to find c = 2, d = 2.",
+      "1.0 mark: Writing final polynomial Q(x) = 2x² + 2x - 12, stating degree = 2 and leading coefficient = 2."
+    ],
+    "examinerTip": "🚨 CBSE Step Marking: In 5-mark LA questions, write every simultaneous equation clearly numbered. Even if arithmetic error occurs in the last line, 4 out of 5 marks are preserved for correct algebraic methodology."
+  },
+  {
+    "id": "q_ch2_09",
+    "title": "Q9 • Section E: Case-Based Integrated Study",
+    "type": "CBQ",
+    "marks": 4,
+    "prompt": "<strong>CASE STUDY: Municipal Water Drainage Channel</strong><br><br>The Department of Public Works is constructing an open rectangular drainage canal alongside a newly widened highway in Delhi. The vertical depth $y$ (in meters, where downward is measured negatively) of the sloped concrete inlet ramp relative to the pavement surface is modeled as a linear function of horizontal distance $x$ (in meters from the road edge) by the polynomial:<br><br>$$P(x) = 0.5x - 2 \\quad \\text{for } 0 \\le x \\le 8$$<br><br><img style='display:none;' alt='ramp'><br>Based on this engineering model, answer the following questions:<br><br><strong>(i)</strong> What is the depth of the channel ramp right at the pavement edge ($x = 0$)? What does the negative sign signify physically? [1 Mark]<br><br><strong>(ii)</strong> At what horizontal distance $x$ does the ramp reach the reference ground level ($y = 0$)? Which mathematical concept does this point represent? [1 Mark]<br><br><strong>(iii)</strong> An alternative secondary ramp is designed with profile $R(x) = ax + b$. If it starts at road surface level ($y = 0$) at $x = 6$ meters and has a gradient/slope of $a = 0.75$, determine the polynomial $R(x)$ and calculate its vertical position at $x = 10$ meters.<br><strong>[OR]</strong><br>If an emergency spillway profile is given by $S(x) = kx - 6$, find the value of the constant parameter $k$ such that the spillway crosses the ground level ($y = 0$) at exactly $x = 4$ meters. [2 Marks]",
+    "solution": "<strong>(i) Depth at Pavement Edge ($x = 0$):</strong><br>Substitute $x = 0$ into $P(x)$:<br>$$P(0) = 0.5(0) - 2 = \\mathbf{-2\\text{ meters}}$$<br>• <strong>Physical meaning:</strong> The negative sign indicates that the channel bed lies <strong>$2$ meters below</strong> the road pavement reference level. [1 mark]<br><br><strong>(ii) Horizontal Distance for Ground Level ($y = 0$):</strong><br>Set $P(x) = 0$:<br>$$0.5x - 2 = 0 \\implies 0.5x = 2 \\implies x = \\frac{2}{0.5} = \\mathbf{4\\text{ meters}}$$<br>• <strong>Mathematical concept:</strong> $x = 4$ is the <strong>zero of the linear polynomial $P(x)$</strong> (and geometrically represents the $x$-intercept $(4, 0)$). [1 mark]<br><br><strong>(iii) Primary Option: Secondary Ramp $R(x)$</strong><br>Given slope $a = 0.75$, so $R(x) = 0.75x + b$.<br>Since it hits ground level ($y=0$) at $x = 6$, $x = 6$ is a zero: $R(6) = 0$.<br>$$0.75(6) + b = 0 \\implies 4.5 + b = 0 \\implies \\mathbf{b = -4.5}$$<br>Hence, $\\mathbf{R(x) = 0.75x - 4.5}$.<br>At $x = 10$ meters:<br>$$R(10) = 0.75(10) - 4.5 = 7.5 - 4.5 = \\mathbf{+3\\text{ meters}}$$<br>[2 marks]<br><br><strong>[OR] Internal Choice Option:</strong><br>Spillway polynomial: $S(x) = kx - 6$.<br>Given that it crosses ground level ($S(x) = 0$) at $x = 4$, $x = 4$ is a zero of $S(x)$:<br>$$S(4) = 0 \\implies k(4) - 6 = 0$$<br>$$4k = 6 \\implies k = \\frac{6}{4} = \\mathbf{1.5} \\quad \\left(\\text{or } \\frac{3}{2}\\right)$$<br>[2 marks]",
+    "markingScheme": [
+      "1.0 mark: Correct computation P(0) = -2m and explaining physical meaning as depth below road level.",
+      "1.0 mark: Solving 0.5x - 2 = 0 to get x = 4m and identifying it as the zero/x-intercept of the polynomial.",
+      "2.0 marks: [Main Option] Finding b = -4.5, stating R(x) = 0.75x - 4.5, and calculating R(10) = 3m. OR [Choice Option] Setting S(4) = 0, solving 4k = 6, and obtaining k = 1.5."
+    ],
+    "examinerTip": "🚨 CBSE Case Study Guidance: Case-Based Questions (Section E) are compulsory 4-mark questions testing real-world mathematical modeling. Show algebraic steps for sub-part (iii) to earn full credit."
   }
 ]

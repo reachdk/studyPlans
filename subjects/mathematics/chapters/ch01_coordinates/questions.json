@@ -1,68 +1,138 @@
 [
   {
+    "id": "q_ch1_01",
+    "title": "Q1 • Distance from Axis Examination Trap",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "The point whose ordinate is 4 and which lies on the y-axis is:",
+    "prompt": "The perpendicular distance of the point $P(-4, -7)$ from the <strong>$y$-axis</strong> is:<br><br><strong>(A)</strong> 4 units<br><strong>(B)</strong> -4 units<br><strong>(C)</strong> 7 units<br><strong>(D)</strong> -7 units",
     "options": [
-      "(a) (4, 0)",
-      "(b) (0, 4)",
-      "(c) (1, 4)",
-      "(d) (4, 2)"
+      "(A) 4 units",
+      "(B) -4 units",
+      "(C) 7 units",
+      "(D) -7 units"
     ],
-    "answer": "<strong>(b) (0, 4)</strong>",
-    "markingScheme": "• Point lies on the y-axis &rArr; abscissa x = 0 [0.5 mark]<br>• Ordinate y = 4 &rArr; coordinates are (0, 4) [0.5 mark]",
-    "examinerTip": "Common trap: Don't confuse (4, 0) which is on the x-axis with (0, 4) which is on the y-axis."
+    "solution": "<strong>Correct Answer: (A) 4 units</strong><br><br>• The perpendicular distance of any point $(x, y)$ from the $y$-axis is given by the absolute value of its abscissa: $|x|$.<br>• Here, abscissa $x = -4$, so the perpendicular distance is $|-4| = \\mathbf{4\\text{ units}}$.<br>• Distance is a physical geometric measure and cannot be negative.",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) identified with reasoning that distance to y-axis is |x| = |-4| = 4 units."
+    ],
+    "examinerTip": "🚨 Classic Trap: Over 40% of students write -4 or 7. Distance from y-axis is horizontal (|x|), and distance can never be negative."
   },
   {
+    "id": "q_ch1_02",
+    "title": "Q2 • Quadrant Sign Inversion Problem",
     "type": "MCQ",
     "marks": 1,
-    "prompt": "If the coordinates of two points are P(-2, 3) and Q(-3, 5), then (abscissa of P) - (abscissa of Q) is:",
+    "prompt": "If $a < 0$ and $b > 0$, then the point $Q(-a, -b)$ lies in:<br><br><strong>(A)</strong> Quadrant I<br><strong>(B)</strong> Quadrant II<br><strong>(C)</strong> Quadrant III<br><strong>(D)</strong> Quadrant IV",
     "options": [
-      "(a) -5",
-      "(b) 1",
-      "(c) -1",
-      "(d) -2"
+      "(A) Quadrant I",
+      "(B) Quadrant II",
+      "(C) Quadrant III",
+      "(D) Quadrant IV"
     ],
-    "answer": "<strong>(b) 1</strong>",
-    "markingScheme": "• Abscissa of P = -2 [0.5 mark]<br>• Abscissa of Q = -3 &rArr; (-2) - (-3) = -2 + 3 = 1 [0.5 mark]",
-    "examinerTip": "Be extremely vigilant with negative signs: (-2) - (-3) = +1."
+    "solution": "<strong>Correct Answer: (D) Quadrant IV</strong><br><br>• Given $a < 0$ (negative), so the $x$-coordinate is $-a = -(\\text{negative}) > 0$ (positive).<br>• Given $b > 0$ (positive), so the $y$-coordinate is $-b = -(\\text{positive}) < 0$ (negative).<br>• A point with coordinates $(+, -)$ lies in <strong>Quadrant IV</strong>.",
+    "markingScheme": [
+      "1.0 mark: Correct option (D) selected after analyzing signs of -a (> 0) and -b (< 0)."
+    ],
+    "examinerTip": "🚨 Tip: Don't see a minus sign and jump to 'negative'. If a is already negative, -a is positive!"
   },
   {
-    "type": "Assertion-Reason",
+    "id": "q_ch1_03",
+    "title": "Q3 • Assertion-Reasoning (Points on Coordinate Axes)",
+    "type": "A-R",
     "marks": 1,
-    "prompt": "<strong>Assertion (A):</strong> The point (-a, 0) lies on the x-axis, and (0, b) lies on the y-axis.<br><strong>Reason (R):</strong> Every point on the x-axis has a perpendicular distance of 0 from the x-axis, and every point on the y-axis has a perpendicular distance of 0 from the y-axis.",
+    "prompt": "<strong>Direction:</strong> In the question below, a statement of Assertion (A) is followed by a statement of Reason (R). Choose the correct option.<br><br><strong>Assertion (A):</strong> The point $M(0, -5)$ does not lie in any quadrant.<br><strong>Reason (R):</strong> Any point whose abscissa is zero lies strictly on the $y$-axis, and the coordinate axes do not belong to any quadrant.",
     "options": [
-      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
-      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
-      "(c) (A) is true but (R) is false.",
-      "(d) (A) is false but (R) is true."
+      "(A) Both Assertion (A) and Reason (R) are true and Reason (R) is the correct explanation of Assertion (A).",
+      "(B) Both Assertion (A) and Reason (R) are true but Reason (R) is NOT the correct explanation of Assertion (A).",
+      "(C) Assertion (A) is true but Reason (R) is false.",
+      "(D) Assertion (A) is false but Reason (R) is true."
     ],
-    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-    "markingScheme": "• Identifying that ordinate is 0 on x-axis and abscissa is 0 on y-axis [0.5 mark]<br>• Recognizing that distance from an axis equals the respective coordinate, so distance 0 implies lying on that axis [0.5 mark]",
-    "examinerTip": "Direct question from PA-2 Class 9 CBSE examination paper."
+    "solution": "<strong>Correct Answer: (A)</strong><br><br>• <strong>Assertion (A) is true:</strong> Since the $x$-coordinate is $0$, point $M(0, -5)$ lies on the negative $y$-axis, not in any quadrant.<br>• <strong>Reason (R) is true:</strong> By definition, points on the axes separate the quadrants and do not belong to Quadrants I, II, III, or IV.<br>• Reason (R) correctly explains Assertion (A).",
+    "markingScheme": [
+      "1.0 mark: Correct option (A) identified with valid conceptual reasoning."
+    ],
+    "examinerTip": "🚨 CBSE Rule: Quadrants are open geometric sets bounded by the axes. The axes themselves are boundary lines, not part of any quadrant."
   },
   {
-    "type": "Short Answer (2m)",
+    "id": "q_ch1_04",
+    "title": "Q4 • Identification of Coordinates and Quadrants",
+    "type": "VSA",
     "marks": 2,
-    "prompt": "Write the quadrant or axis on which each of the following points lie: <br>(i) A(-3, 5) <br>(ii) B(4, -1) <br>(iii) C(0, -6) <br>(iv) D(-2, -7)",
-    "answer": "• A(-3, 5): <strong>Quadrant II</strong> (x < 0, y > 0)<br>• B(4, -1): <strong>Quadrant IV</strong> (x > 0, y < 0)<br>• C(0, -6): <strong>Negative y-axis</strong> (lies on axis, not in any quadrant)<br>• D(-2, -7): <strong>Quadrant III</strong> (x < 0, y < 0)",
-    "markingScheme": "• 0.5 mark for each correct identification.<br>• Specifying negative y-axis for C(0, -6): 0.5 mark.",
-    "examinerTip": "Never write that (0, -6) lies in Quadrant III or IV. It lies strictly ON the y-axis."
+    "prompt": "Write the quadrant or axis on which each of the following points lies:<br>(i) $A(-3, 5)$<br>(ii) $B(4, -2)$<br>(iii) $C(-6, 0)$<br>(iv) $D(0, 7)$",
+    "solution": "• <strong>(i) Point $A(-3, 5)$:</strong> $x < 0, y > 0 \\implies$ <strong>Quadrant II</strong>. [0.5 mark]<br>• <strong>(ii) Point $B(4, -2)$:</strong> $x > 0, y < 0 \\implies$ <strong>Quadrant IV</strong>. [0.5 mark]<br>• <strong>(iii) Point $C(-6, 0)$:</strong> Since $y = 0$ and $x < 0 \\implies$ <strong>Negative $x$-axis</strong>. [0.5 mark]<br>• <strong>(iv) Point $D(0, 7)$:</strong> Since $x = 0$ and $y > 0 \\implies$ <strong>Positive $y$-axis</strong>. [0.5 mark]",
+    "markingScheme": [
+      "0.5 mark for each correct location precisely specified."
+    ],
+    "examinerTip": "🚨 Note: For (iii) and (iv), simply writing 'x-axis' or 'y-axis' is acceptable, but specifying 'negative x-axis' demonstrates top-tier precision."
   },
   {
-    "type": "Short Answer (3m)",
+    "id": "q_ch1_05",
+    "title": "Q5 • Perpendicular Projections & Coordinate Calculation",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "From a point $P(-3, 4)$, perpendiculars $PM$ and $PN$ are drawn to the $x$-axis and $y$-axis respectively.<br>(a) State the coordinates of points $M$ and $N$. [1 Mark]<br>(b) Find the area of the rectangle $OMPN$, where $O$ is the origin. [1 Mark]",
+    "solution": "<strong>(a) Coordinates of $M$ and $N$:</strong><br>• Foot of perpendicular on $x$-axis has $y = 0$, so $\\mathbf{M(-3, 0)}$.<br>• Foot of perpendicular on $y$-axis has $x = 0$, so $\\mathbf{N(0, 4)}$. [1.0 mark]<br><br><strong>(b) Area of Rectangle $OMPN$:</strong><br>• Length along $x$-axis: $OM = |-3| = 3$ units.<br>• Breadth along $y$-axis: $ON = |4| = 4$ units.<br>• $\\text{Area} = OM \\times ON = 3 \\times 4 = \\mathbf{12\\text{ sq units}}$. [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark for M(-3, 0) and 0.5 mark for N(0, 4).",
+      "1.0 mark for correctly calculating area = 3 × 4 = 12 sq units."
+    ],
+    "examinerTip": "🚨 Reminder: Units must be written as 'sq units' for coordinate area questions."
+  },
+  {
+    "id": "q_ch1_06",
+    "title": "Q6 • Mirror Reflections Across Axes & Origin",
+    "type": "SA",
     "marks": 3,
-    "prompt": "P(3, 2) and Q(7, 7) are two points in a Cartesian plane. Perpendiculars are drawn from P and Q to the x-axis meeting at L and M respectively.<br>(i) Find the coordinates of L and M.<br>(ii) Find the length of the segment LM.<br>(iii) What are the perpendicular distances of P and Q from the y-axis?",
-    "answer": "(i) Perpendicular from P(3, 2) to x-axis meets at <strong>L(3, 0)</strong>. Perpendicular from Q(7, 7) to x-axis meets at <strong>M(7, 0)</strong>.<br>(ii) Length of segment LM = |x_2 - x_1| = |7 - 3| = <strong>4 units</strong>.<br>(iii) Perpendicular distance of P from y-axis = |3| = <strong>3 units</strong>; for Q = |7| = <strong>7 units</strong>.",
-    "markingScheme": "• Coordinates of L(3, 0) and M(7, 0): 1 mark (0.5 mark each)<br>• Calculation of length LM = 7 - 3 = 4 units: 1 mark<br>• Perpendicular distances from y-axis (3 and 7 units): 1 mark (0.5 mark each)",
-    "examinerTip": "From school exam PA-2 Q29. Always state units for lengths and distances."
+    "prompt": "Let point $A$ have coordinates $(-4, 3)$.<br>(a) Write the coordinates of point $B$, which is the reflection of $A$ in the $x$-axis. [1 Mark]<br>(b) Write the coordinates of point $C$, which is the reflection of $A$ in the $y$-axis. [1 Mark]<br>(c) Write the coordinates of point $D$, which is the reflection of $A$ in the Origin $(0, 0)$. Also state the shape formed by joining $A, B, C, D$. [1 Mark]",
+    "solution": "<strong>(a) Reflection in $x$-axis ($B$):</strong><br>In $x$-axis reflection, $x$ remains the same and $y$ flips sign:<br>$$\\mathbf{B(-4, -3)}$$ [1.0 mark]<br><br><strong>(b) Reflection in $y$-axis ($C$):</strong><br>In $y$-axis reflection, $y$ remains the same and $x$ flips sign:<br>$$\\mathbf{C(4, 3)}$$ [1.0 mark]<br><br><strong>(c) Reflection in Origin ($D$) & Shape:</strong><br>In Origin reflection, both coordinates flip sign:<br>$$\\mathbf{D(4, -3)}$$<br>• <strong>Shape:</strong> Connecting $A(-4, 3)$, $C(4, 3)$, $D(4, -3)$, $B(-4, -3)$ forms a <strong>Rectangle</strong> (horizontal sides length 8 units, vertical sides length 6 units). [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark for B(-4, -3).",
+      "1.0 mark for C(4, 3).",
+      "0.5 mark for D(4, -3) and 0.5 mark for naming the shape Rectangle."
+    ],
+    "examinerTip": "🚨 Quick Check: Reflection in origin of A(-4, 3) is D(4, -3), which is diametrically opposite through (0, 0)."
   },
   {
-    "type": "Case-Based Study (4m)",
+    "id": "q_ch1_07",
+    "title": "Q7 • Geometric Figure Synthesis on Coordinate Grid",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "Three vertices of a parallelogram $PQRS$ are $P(-2, 2)$, $Q(3, 2)$, and $R(1, -2)$.<br>(a) Plot or calculate the coordinates of the fourth vertex $S$. [1.5 Marks]<br>(b) Calculate the area of the parallelogram $PQRS$. [1.5 Marks]",
+    "solution": "<strong>(a) Finding Coordinates of Vertex $S$:</strong><br>• Side $PQ$ is horizontal because $y_P = y_Q = 2$.<br>Length $PQ = 3 - (-2) = 5$ units.<br>• Opposite side $SR$ must also be horizontal, parallel to $PQ$, and of length $5$ units.<br>Since $R$ is at $(1, -2)$, its ordinate is $-2$, so $y_S = -2$.<br>To match the orientation ($P$ is 5 units left of $Q$), $S$ must be 5 units left of $R$:<br>$$x_S = x_R - 5 = 1 - 5 = -4$$<br>Hence, $\\mathbf{S(-4, -2)}$. [1.5 marks]<br><br><strong>(b) Area of Parallelogram:</strong><br>$$\\text{Area} = \\text{Base} \\times \\text{Height}$$<br>• $\\text{Base} = PQ = 5$ units.<br>• $\\text{Height} = \\text{Vertical distance between } y=2 \\text{ and } y=-2$:<br>$$\\text{Height} = 2 - (-2) = 4\\text{ units}$$<br>$$\\text{Area} = 5 \\times 4 = \\mathbf{20\\text{ sq units}}$$ [1.5 marks]",
+    "markingScheme": [
+      "1.5 marks: Stating horizontal side length PQ = 5 and determining S(-4, -2).",
+      "1.5 marks: Calculating vertical height = 4 units and area = 5 × 4 = 20 sq units."
+    ],
+    "examinerTip": "🚨 Concept Tip: Parallelogram area is NOT base × slant side! It is strictly base × perpendicular height."
+  },
+  {
+    "id": "q_ch1_08",
+    "title": "Q8 • Long Answer HOTS: Triangle Area & Collinearity",
+    "type": "LA",
+    "marks": 5,
+    "prompt": "Consider points on a Cartesian coordinate grid:<br><br><strong>Part (a):</strong> Points $A(1, 2)$, $B(5, 2)$, and $C(3, 6)$ are plotted on graph paper.<br>(i) Plot/describe the positions of the points and prove that $\\Delta ABC$ is an isosceles triangle.<br>(ii) Calculate the exact area of $\\Delta ABC$. [3 Marks]<br><br><strong>Part (b):</strong> Determine whether the points $K(-1, -1)$, $L(2, 3)$, and $M(5, 7)$ are collinear using coordinate geometry distance/slope reasoning. [2 Marks]",
+    "solution": "<strong>Part (a) Solution:</strong><br>1. Side $AB$ lies on the horizontal line $y = 2$.<br>Length $AB = |5 - 1| = 4$ units. [0.5 mark]<br>2. The midpoint of base $AB$ is $D\\left(\\frac{1+5}{2}, 2\\right) = D(3, 2)$.<br>3. Vertex $C(3, 6)$ has $x$-coordinate $3$, which lies directly on the perpendicular bisector $x = 3$ of $AB$.<br>• Distance $AD = |3 - 1| = 2$, Height $CD = |6 - 2| = 4$.<br>• By Pythagoras theorem in $\\Delta ADC$: $AC = \\sqrt{AD^2 + CD^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20}$.<br>• In $\\Delta BDC$: $BC = \\sqrt{BD^2 + CD^2} = \\sqrt{2^2 + 4^2} = \\sqrt{20}$.<br>Since $AC = BC = \\sqrt{20}$, $\\mathbf{\\Delta ABC\\text{ is an isosceles triangle}}$. [1.5 marks]<br><br>4. <strong>Area of $\\Delta ABC$:</strong><br>$$\\text{Area} = \\frac{1}{2} \\times \\text{Base} \\times \\text{Height} = \\frac{1}{2} \\times 4 \\times 4 = \\mathbf{8\\text{ sq units}}$$ [1.0 mark]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>Points are collinear if the slope between consecutive pairs is identical:<br>• Slope of $KL = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{3 - (-1)}{2 - (-1)} = \\frac{4}{3}$. [0.5 mark]<br>• Slope of $LM = \\frac{7 - 3}{5 - 2} = \\frac{4}{3}$. [0.5 mark]<br>Since $\\text{Slope}(KL) = \\text{Slope}(LM)$ and point $L$ is common to both segments, points $K, L, M$ lie on the same straight line.<br>Hence, $\\mathbf{K, L, M\\text{ are collinear}}$. [1.0 mark]",
+    "markingScheme": [
+      "1.0 mark: Finding base length AB = 4 units.",
+      "1.0 mark: Proving AC = BC = √20 using Pythagoras theorem to confirm isosceles triangle.",
+      "1.0 mark: Calculating area = 1/2 × 4 × 4 = 8 sq units.",
+      "1.0 mark: Finding slope of KL = 4/3 and slope of LM = 4/3.",
+      "1.0 mark: Stating conclusive collinearity proof due to common point L."
+    ],
+    "examinerTip": "🚨 CBSE Presentation: In Class 9, proving collinearity using slopes or segment distance comparisons is awarded full 2 marks."
+  },
+  {
+    "id": "q_ch1_09",
+    "title": "Q9 • Section E: Case-Based Integrated Study",
+    "type": "CBQ",
     "marks": 4,
-    "prompt": "A city planning department uses a Cartesian coordinate grid to map local public utilities, taking City Hall as the origin O(0, 0). 1 unit on the grid represents 500 meters.<br>• The Central Hospital is located at H(4, 3).<br>• The Fire Station is at F(-2, 3).<br>• The Police Station is at P(-2, -5).<br>• The Metro Hub is at M(4, -5).<br><br><strong>Questions:</strong><br>(i) In which quadrants do Central Hospital and Police Station lie? (1m)<br>(ii) What is the shape of quadrilateral HFPM formed by joining the four utilities in order? (1m)<br>(iii) Calculate the perimeter of quadrilateral HFPM on the grid and find the actual physical distance in kilometers. (2m)",
-    "answer": "(i) Central Hospital H(4, 3) lies in <strong>Quadrant I</strong> (+, +). Police Station P(-2, -5) lies in <strong>Quadrant III</strong> (-, -).<br><br>(ii) Line HF is horizontal: length = 4 - (-2) = 6 units.<br>Line FM is vertical: F(-2, 3) to P(-2, -5) has length = 3 - (-5) = 8 units.<br>Line PM is horizontal: length = 4 - (-2) = 6 units.<br>Line MH is vertical: length = 3 - (-5) = 8 units.<br>Opposite sides are equal and adjacent sides are perpendicular &rArr; HFPM is a <strong>Rectangle</strong>.<br><br>(iii) Perimeter on grid = 2 &times; (Length + Breadth) = 2 &times; (6 + 8) = <strong>28 units</strong>.<br>Actual distance = 28 &times; 500 m = 14,000 m = <strong>14 km</strong>.",
-    "markingScheme": "• (i) 0.5 mark for Quadrant I + 0.5 mark for Quadrant III = 1 mark<br>• (ii) Proving opposite sides equal and perpendicular angles &rArr; Rectangle: 1 mark<br>• (iii) Grid perimeter = 28 units: 1 mark; Conversion to km (14 km): 1 mark",
-    "examinerTip": "In case-based coordinate geometry questions, always check if horizontal and vertical segments allow direct distance subtraction (|x_2 - x_1| or |y_2 - y_1|)."
+    "prompt": "<strong>CASE STUDY: Smart City Logistics & Drone Navigation</strong><br><br>A smart logistics center in Chandigarh uses an automated delivery drone network. The municipal delivery hub is situated at the reference Origin $O(0, 0)$. Two main perpendicular avenues represent the $x$-axis (East-West Highway) and $y$-axis (North-South Boulevard). All coordinates are specified in kilometers from the central hub.<br><br>• Distribution Center 1 is located at $P(3, 4)$ (3 km East, 4 km North).<br>• Distribution Center 2 is located at $Q(-3, 4)$ (3 km West, 4 km North).<br>• Residential Depot is located at $R(-3, -2)$ (3 km West, 2 km South).<br><br>Based on this coordinate framework, answer the following:<br><br><strong>(i)</strong> Name the quadrants in which Distribution Center 1 and Residential Depot $R$ are situated. [1 Mark]<br><br><strong>(ii)</strong> What is the geometric relationship between the positions of Distribution Center 1 ($P$) and Distribution Center 2 ($Q$)? [1 Mark]<br><br><strong>(iii)</strong> To build a closed delivery perimeter, a fourth station $S$ is planned such that $PQRS$ forms a perfect rectangle. Determine the coordinates of Station $S$ and find the total area enclosed within the flight perimeter $PQRS$.<br><strong>[OR]</strong><br>If a drone flies straight from Distribution Center 1 ($P(3, 4)$) to the East-West Highway ($x$-axis) along the shortest perpendicular path, state the coordinates of its landing point on the highway and the distance flown. [2 Marks]",
+    "solution": "<strong>(i) Quadrants of $P$ and $R$:</strong><br>• $P(3, 4)$: $x > 0, y > 0 \\implies$ <strong>Quadrant I</strong>. [0.5 mark]<br>• $R(-3, -2)$: $x < 0, y < 0 \\implies$ <strong>Quadrant III</strong>. [0.5 mark]<br><br><strong>(ii) Geometric Relationship between $P(3, 4)$ and $Q(-3, 4)$:</strong><br>• Points $P(3, 4)$ and $Q(-3, 4)$ are <strong>reflections of each other across the $y$-axis</strong> (North-South Boulevard).<br>• They lie along the horizontal line $y = 4$ and are symmetric with respect to the vertical axis. [1.0 mark]<br><br><strong>(iii) Primary Option (Station $S$ & Area):</strong><br>• Length $PQ = 3 - (-3) = 6$ km along $y = 4$.<br>• Vertical breadth $QR = 4 - (-2) = 6$ km along $x = -3$.<br>• To complete the rectangle (which is actually a square since length = breadth = 6 km), station $S$ must have:<br>$$x_S = x_P = 3, \\quad y_S = y_R = -2 \\implies \\mathbf{S(3, -2)}$$ [1.0 mark]<br>• $\\text{Flight Perimeter Area} = 6\\text{ km} \\times 6\\text{ km} = \\mathbf{36\\text{ sq km}}$. [1.0 mark]<br><br><strong>[OR] Internal Choice Option:</strong><br>• Shortest path from $P(3, 4)$ to $x$-axis is the perpendicular dropped to $y = 0$.<br>• Landing point coordinates: $\\mathbf{(3, 0)}$. [1.0 mark]<br>• Distance flown $= |y| = |4| = \\mathbf{4\\text{ km}}$. [1.0 mark]",
+    "markingScheme": [
+      "0.5 mark for Quadrant I and 0.5 mark for Quadrant III.",
+      "1.0 mark for stating reflection across the y-axis (or line y = 4 with y-axis symmetry).",
+      "2.0 marks: [Main Option] Finding S(3, -2) [1m] and Area = 36 sq km [1m]. OR [Choice Option] Finding landing point (3, 0) [1m] and distance = 4 km [1m]."
+    ],
+    "examinerTip": "🚨 CBSE Case Study Tip: Always include units (km, sq km) in real-world case study problems to avoid losing fractional presentation marks."
   }
 ]

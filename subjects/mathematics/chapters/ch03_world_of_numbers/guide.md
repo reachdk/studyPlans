@@ -1,88 +1,156 @@
 # Chapter 3: The World of Numbers
 
-> 👨‍🏫 **Teacher's Overview:** The real number system is the foundation of all mathematics. In Class 9 CBSE, we explore the boundary between rational and irrational numbers through their decimal expansions, learn the indispensable technique of **rationalizing the denominator**, and master the **laws of exponents** with fractional powers.
+> 👨‍🏫 **Teacher's Masterclass Overview:** Numbers form the grammar of mathematics! In earlier classes, we worked with natural numbers $\mathbb{N}$, whole numbers $\mathbb{W}$, and integers $\mathbb{Z}$. In Class 9 CBSE, we expand our mathematical universe to the complete continuum of **Real Numbers ($\mathbb{R}$)** by uniting the rational numbers ($\mathbb{Q}$) with the boundless world of irrational numbers ($\mathbb{Q}'$ or $\mathbb{I}$). In this chapter, we master decimal classification, recurring-to-fraction conversions, square root spiral constructions, rationalizing the denominator, and the generalized laws of exponents.
 
 ---
 
-### 1. Classification of Real Numbers ($\mathbb{R}$)
+### 1. The Real Number System Hierarchy & Decimal Taxonomy
 
-The collection of all Real Numbers consists of **Rational Numbers ($\mathbb{Q}$)** and **Irrational Numbers**:
+The set of **Real Numbers ($\mathbb{R}$)** represents every single point on the continuous number line. Every real number is either **rational** or **irrational**, with zero overlap ($\mathbb{Q} \cap \mathbb{Q}' = \emptyset$).
 
-```
-                       Real Numbers (R)
-                       /              \
-             Rational (Q)           Irrational
-             /          \           (√2, √3, π, e)
-       Integers (Z)    Fractions (3/4, -2/5)
-       /          \
-Whole (W: 0,1,2..) Negative Integers (-1, -2..)
-    |
-Natural (N: 1,2,3..)
-```
+$$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 
-- **Rational Numbers ($\mathbb{Q}$):** Can be expressed as $\frac{p}{q}$, where $p, q \in \mathbb{Z}, q \neq 0$, and $\gcd(p, q) = 1$.
-- **Irrational Numbers:** Cannot be written in the form $\frac{p}{q}$.
+#### Fundamental Decimal Taxonomy of Real Numbers
 
----
+Every real number can be written as a decimal. Its decimal behavior completely determines its algebraic nature:
 
-### 2. Decimal Expansions: The Definitive Test
+| Decimal Type | Defining Characteristics | Set Category | Standard Examples |
+| :--- | :--- | :--- | :--- |
+| **Terminating Decimal** | Digits terminate after a finite count of places. Prime factors of denominator in simplest form are strictly of form $2^m \cdot 5^n$. | **Rational ($\mathbb{Q}$)** | $\frac{3}{8} = 0.375$, $\frac{7}{25} = 0.28$, $\frac{13}{20} = 0.65$ |
+| **Non-Terminating Recurring (Repeating)** | Digits never terminate, but a finite block of digits repeats infinitely with period $p$. | **Rational ($\mathbb{Q}$)** | $\frac{1}{3} = 0.\bar{3}$, $\frac{47}{99} = 0.\overline{47}$, $\frac{7}{12} = 0.58\bar{3}$ |
+| **Non-Terminating Non-Recurring** | Digits continue infinitely without any periodic or repeating pattern whatsoever. | **Irrational ($\mathbb{Q}'$)** | $\sqrt{2} = 1.4142135\dots$, $\pi = 3.1415926\dots$, $0.1010010001\dots$ |
 
-| Type of Number | Nature of Decimal Expansion | Examples |
-| :--- | :--- | :--- |
-| **Rational Number** | **Terminating** | $\frac{1}{2} = 0.5$, $\frac{7}{8} = 0.875$ (Denominator has prime factors $2^m 5^n$) |
-| **Rational Number** | **Non-terminating Recurring (Repeating)** | $\frac{1}{3} = 0.\overline{3}$, $\frac{1}{7} = 0.\overline{142857}$ |
-| **Irrational Number** | **Non-terminating Non-recurring** | $\sqrt{2} = 1.41421356\dots$, $\pi = 3.14159265\dots$, $0.1010010001\dots$ |
-
-> ⚠️ **Exam Trap:** $\pi$ is **irrational**! The fraction $\frac{22}{7}$ and decimal $3.14$ are only convenient rational approximations used for calculations, but the true value of $\pi$ has a non-terminating, non-recurring decimal expansion.
+> ⚠️ **The 22/7 Examination Trap:** Students often claim "$\pi = \frac{22}{7}$, so $\pi$ is rational!"
+> This is **incorrect**! $\frac{22}{7} = 3.\overline{142857}$ is a rational approximation used for school calculation. True $\pi$ is the ratio of circle circumference to diameter and is strictly **irrational** with a non-terminating, non-repeating decimal expansion.
 
 ---
 
-### 3. Converting Recurring Decimals to $p/q$ Form
+### 2. Algorithmic Protocol: Expressing Recurring Decimals as $\frac{p}{q}$
 
-**Standard Method:**
-To express $x = 0.\overline{6} = 0.6666\dots$ in $p/q$ form:
-1. Let $x = 0.6666\dots$  --- (1)
-2. Multiply by $10$ (since 1 digit repeats):
-   $$10x = 6.6666\dots$$ --- (2)
-3. Subtract (1) from (2):
-   $$10x - x = 6.6666\dots - 0.6666\dots \implies 9x = 6 \implies x = \frac{6}{9} = \mathbf{\frac{2}{3}}$$
+Every non-terminating recurring decimal represents a rational number and can be converted into the quotient of integers $\frac{p}{q}$ ($q \neq 0$).
 
-**Predicting Multiples (from School PA-2 Q38):**
-Given $\frac{1}{7} = 0.\overline{142857}$, find $\frac{6}{7}$:
-$$\frac{6}{7} = 6 \times \frac{1}{7} = 6 \times 0.\overline{142857} = \mathbf{0.\overline{857142}}$$
-*(Notice the cyclical permutation of the digits: 1-4-2-8-5-7).*
+#### Protocol A: Pure Recurring Decimal (All digits after decimal repeat)
+* **Step 1:** Let $x$ equal the recurring decimal: $x = 0.\overline{a_1 a_2 \dots a_n}$.
+* **Step 2:** Let $n$ be the number of repeating digits (periodicity). Multiply both sides by $10^n$.
+* **Step 3:** Subtract the original equation from the multiplied equation. The infinite repeating tails cancel out perfectly!
+* **Step 4:** Solve for $x = \frac{p}{q}$ and reduce to simplest form.
 
----
+#### Worked Example 1 (Express $0.\overline{47}$ in $\frac{p}{q}$ form):
+1. Let $x = 0.474747\dots \quad \text{--- (Equation 1)}$
+2. Since 2 digits repeat, multiply by $10^2 = 100$:
+   $$100x = 47.474747\dots \quad \text{--- (Equation 2)}$$
+3. Subtract Eq. 1 from Eq. 2:
+   $$100x - x = (47.474747\dots) - (0.474747\dots)$$
+   $$99x = 47 \implies \mathbf{x = \frac{47}{99}}$$
 
-### 4. Operations on Real Numbers & Rationalizing the Denominator
-
-- **Sum/Difference:** Rational $\pm$ Irrational = **Irrational** (e.g., $3 + \sqrt{2}$ is irrational).
-- **Product/Quotient:** Non-zero Rational $\times$ Irrational = **Irrational** (e.g., $2\sqrt{3}$ is irrational).
-- **Product of two irrationals:** Can be rational or irrational ($\sqrt{2} \times \sqrt{2} = 2$ [rational], but $\sqrt{2} \times \sqrt{3} = \sqrt{6}$ [irrational]).
-
-#### Rationalizing the Denominator:
-When an expression has an irrational radical in the denominator, multiply numerator and denominator by its **rationalizing factor (conjugate)**:
-$$\frac{1}{\sqrt{a} + \sqrt{b}} \times \frac{\sqrt{a} - \sqrt{b}}{\sqrt{a} - \sqrt{b}} = \frac{\sqrt{a} - \sqrt{b}}{a - b}$$
-
-**Example:** Rationalize $\frac{1}{3 + \sqrt{2}}$:
-$$\frac{1}{3 + \sqrt{2}} \times \frac{3 - \sqrt{2}}{3 - \sqrt{2}} = \frac{3 - \sqrt{2}}{3^2 - (\sqrt{2})^2} = \frac{3 - \sqrt{2}}{9 - 2} = \mathbf{\frac{3 - \sqrt{2}}{7}}$$
+#### Protocol B: Mixed Recurring Decimal (Some digits before recurring block)
+* **Step 1:** Let $x = 0.2\bar{3} = 0.2333\dots \quad \text{--- (Eq. 1)}$.
+* **Step 2:** Multiply by $10$ to move non-repeating digits left of decimal:
+   $$10x = 2.333\dots \quad \text{--- (Eq. 2)}$$
+* **Step 3:** Multiply by another $10$ to shift one full repeating period:
+   $$100x = 23.333\dots \quad \text{--- (Eq. 3)}$$
+* **Step 4:** Subtract Eq. 2 from Eq. 3:
+   $$100x - 10x = 23.333\dots - 2.333\dots \implies 90x = 21$$
+   $$x = \frac{21}{90} = \mathbf{\frac{7}{30}}$$
 
 ---
 
-### 5. Laws of Exponents for Real Numbers
+### 3. Representation of Irrationals on the Number Line
 
-Let $a > 0$ be a real number and $p, q$ be rational numbers:
+By the **Dedekind-Cantor Axiom**, every real number corresponds to a unique point on the number line, and every point represents a real number.
 
-1. $a^p \cdot a^q = a^{p+q}$
-2. $(a^p)^q = a^{pq}$
-3. $\frac{a^p}{a^q} = a^{p-q}$
-4. $a^p \cdot b^p = (ab)^p$
-5. $a^0 = 1 \quad (a \neq 0)$
-6. $a^{-p} = \frac{1}{a^p} \implies \left(\frac{a}{b}\right)^{-n} = \left(\frac{b}{a}\right)^n$
-7. $a^{1/n} = \sqrt[n]{a}$ and $a^{m/n} = (\sqrt[n]{a})^m = \sqrt[n]{a^m}$
+#### The Square Root Spiral (Pythagorean Construction)
+We locate square roots of non-square natural numbers ($\sqrt{2}, \sqrt{3}, \sqrt{5}$) using the **Pythagorean Theorem** on a coordinate line:
+1. **Locating $\sqrt{2}$:**
+   - Mark origin $O(0)$ and point $A(1)$ such that $OA = 1$ unit.
+   - Construct perpendicular $AB \perp OA$ of length $1$ unit.
+   - In right-angled $\Delta OAB$: $OB = \sqrt{OA^2 + AB^2} = \sqrt{1^2 + 1^2} = \sqrt{2}$.
+   - With center $O$ and radius $OB$, draw an arc cutting the number line at $P$. Point $P$ represents $\mathbf{\sqrt{2}} \approx 1.414$.
+2. **Locating $\sqrt{3}$:**
+   - From point $B$, construct perpendicular $BC \perp OB$ of length $1$ unit.
+   - In right $\Delta OBC$: $OC = \sqrt{OB^2 + BC^2} = \sqrt{(\sqrt{2})^2 + 1^2} = \sqrt{3}$.
+   - Swing an arc from $O$ with radius $OC$ to mark $\mathbf{\sqrt{3}} \approx 1.732$.
+3. **Locating $\sqrt{5}$ in a Single Step:**
+   - Draw base $OA = 2$ units along number line.
+   - Draw perpendicular $AB = 1$ unit.
+   - Hypotenuse $OB = \sqrt{2^2 + 1^2} = \sqrt{4 + 1} = \mathbf{\sqrt{5}}$. Swing arc to mark $\sqrt{5} \approx 2.236$.
 
-**Examples from PA-2 Exam:**
-- Simplify $\left(\frac{3}{8}\right)^{-2}$:
-  $$\left(\frac{3}{8}\right)^{-2} = \left(\frac{8}{3}\right)^2 = \mathbf{\frac{64}{9}}$$
-- Simplify $\left(\frac{1}{3}\right)^{1/5} \div \left(\frac{1}{3}\right)^{1/3}$:
-  $$\left(\frac{1}{3}\right)^{\frac{1}{5} - \frac{1}{3}} = \left(\frac{1}{3}\right)^{\frac{3 - 5}{15}} = \left(\frac{1}{3}\right)^{-\frac{2}{15}} = \mathbf{3^{2/15} \text{ or } \left(\frac{1}{3}\right)^{-2/15}}$$
+---
+
+### 4. Operations on Real Numbers & Rationalization
+
+#### Properties of Combined Operations
+1. The sum, difference, product, and quotient of two **rational numbers** is always **rational** (closed under $\mathbb{Q}$).
+2. The sum or difference of a **rational** and an **irrational** is always **irrational**:
+   $$2 + \sqrt{3} \in \mathbb{Q}', \quad 5 - \sqrt{2} \in \mathbb{Q}'$$
+3. The non-zero product or quotient of a **rational** and an **irrational** is **irrational**:
+   $$3\sqrt{5} \in \mathbb{Q}', \quad \frac{\sqrt{7}}{2} \in \mathbb{Q}'$$
+4. The sum, difference, product, or quotient of two **irrational numbers** may be **rational OR irrational**:
+   - $(\sqrt{3}) + (-\sqrt{3}) = 0$ (Rational!)
+   - $(\sqrt{2}) \times (\sqrt{8}) = \sqrt{16} = 4$ (Rational!)
+   - $\sqrt{2} \times \sqrt{3} = \sqrt{6}$ (Irrational!)
+
+#### Rationalizing the Denominator (Conjugate Multiplication)
+When the denominator contains a radical term $\sqrt{a} \pm \sqrt{b}$, we multiply both numerator and denominator by its **conjugate**:
+* Conjugate of $(\sqrt{a} + \sqrt{b})$ is $(\sqrt{a} - \sqrt{b})$.
+* Using algebraic identity $(x+y)(x-y) = x^2 - y^2$:
+  $$(\sqrt{a} + \sqrt{b})(\sqrt{a} - \sqrt{b}) = (\sqrt{a})^2 - (\sqrt{b})^2 = a - b \quad (\text{Free of radicals!})$$
+
+#### Worked Example 3:
+Rationalize the denominator of $\frac{5}{\sqrt{7} - \sqrt{2}}$:
+$$\frac{5}{\sqrt{7} - \sqrt{2}} \times \frac{\sqrt{7} + \sqrt{2}}{\sqrt{7} + \sqrt{2}} = \frac{5(\sqrt{7} + \sqrt{2})}{(\sqrt{7})^2 - (\sqrt{2})^2} = \frac{5(\sqrt{7} + \sqrt{2})}{7 - 2} = \frac{5(\sqrt{7} + \sqrt{2})}{5} = \mathbf{\sqrt{7} + \sqrt{2}}$$
+
+---
+
+### 5. Laws of Exponents & Examiner Pitfall Matrix
+
+Let $a, b > 0$ be real bases and $p, q$ be rational exponents:
+1. **Product Rule:** $a^p \cdot a^q = a^{p+q}$
+2. **Quotient Rule:** $\frac{a^p}{a^q} = a^{p-q}$
+3. **Power of Power:** $(a^p)^q = a^{p \cdot q}$
+4. **Power of Product:** $a^p \cdot b^p = (ab)^p$
+5. **Negative Exponent:** $a^{-p} = \frac{1}{a^p}$
+6. **Fractional Exponents & Radicals:** $a^{m/n} = (\sqrt[n]{a})^m = \sqrt[n]{a^m}$, and $a^0 = 1$.
+
+| Common Exam Trap | What the Student Wrote | Why it Loses Marks | Correct CBSE Method |
+| :--- | :--- | :--- | :--- |
+| **Trap 1: Distributing Square Roots** | $\sqrt{a+b} = \sqrt{a} + \sqrt{b}$. | $\sqrt{9+16} = \sqrt{25} = 5$, but $\sqrt{9}+\sqrt{16} = 3+4 = 7 \neq 5$! | Radicals do NOT distribute over addition or subtraction. |
+| **Trap 2: Exponent Addition on Bases** | $2^3 \cdot 3^3 = 6^6$. | Powers only add when bases are identical: $a^p \cdot a^q = a^{p+q}$. | Same powers multiply bases: $(2 \cdot 3)^3 = \mathbf{6^3}$. |
+| **Trap 3: Rationalizing Signs** | Multiplied $\frac{1}{3 - \sqrt{2}}$ by $\frac{3 - \sqrt{2}}{3 - \sqrt{2}}$. | Must multiply by the conjugate with opposite sign: $(3 + \sqrt{2})$. | $(3-\sqrt{2})(3+\sqrt{2}) = 9 - 2 = 7$. |
+
+#### Graded HOTS Worked Example (3 Marks):
+Find the value of $a$ and $b$ if:
+$$\frac{3 + \sqrt{7}}{3 - \sqrt{7}} = a + b\sqrt{7}$$
+* **Solution:**
+  1. Rationalize LHS by multiplying by conjugate $(3 + \sqrt{7})$:
+     $$\text{LHS} = \frac{(3 + \sqrt{7})(3 + \sqrt{7})}{(3 - \sqrt{7})(3 + \sqrt{7})} = \frac{(3 + \sqrt{7})^2}{3^2 - (\sqrt{7})^2}$$
+  2. Expand numerator using $(x+y)^2 = x^2 + 2xy + y^2$:
+     $$(3 + \sqrt{7})^2 = 3^2 + 2(3)(\sqrt{7}) + (\sqrt{7})^2 = 9 + 6\sqrt{7} + 7 = 16 + 6\sqrt{7}$$
+  3. Simplify denominator: $9 - 7 = 2$.
+  4. Divide:
+     $$\text{LHS} = \frac{16 + 6\sqrt{7}}{2} = \frac{16}{2} + \frac{6\sqrt{7}}{2} = \mathbf{8 + 3\sqrt{7}}$$
+  5. Equate with $a + b\sqrt{7}$:
+     $$a + b\sqrt{7} = 8 + 3\sqrt{7} \implies \mathbf{a = 8}, \quad \mathbf{b = 3}$$
+
+---
+
+<div class="interactive-widget">
+  <div class="widget-title">⚡ Interactive Recurring Decimal to Fraction Converter</div>
+  <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:12px;">Convert pure recurring decimals into authentic $\frac{p}{q}$ fractions with full algebraic step proof:</p>
+  <div class="widget-inputs">
+    <label>Type: 
+      <select id="dec_type" style="padding:6px 10px; border-radius:6px; border:1px solid var(--border); background:var(--bg); color:var(--text);" onchange="convertRecurringDecimal()">
+        <option value="pure1">1-digit repeating ($0.\bar{d}$)</option>
+        <option value="pure2">2-digit repeating ($0.\overline{dd}$)</option>
+      </select>
+    </label>
+    <label>Number: <input type="number" id="dec_num" value="3" min="1" max="99" style="width:75px; padding:6px 10px; border-radius:6px; border:1px solid var(--border); background:var(--bg); color:var(--text);" oninput="convertRecurringDecimal()"></label>
+    <button class="btn-notes-toggle" onclick="convertRecurringDecimal()" style="padding:6px 14px; font-weight:700;">Convert to Fraction</button>
+  </div>
+  <div id="dec-output" style="background:var(--card-bg); padding:14px 18px; border-radius:8px; border:1px solid var(--border); font-size:0.92rem; line-height:1.6; margin-top:10px;">
+    <div style="font-weight:700; color:var(--primary); margin-bottom:6px;">Step-by-Step Conversion: $x = 0.\bar{3}$</div>
+    <div>• Let $x = 0.333\dots$ &nbsp;<strong>--- (Equation 1)</strong></div>
+    <div>• Multiply by $10$: $10x = 3.333\dots$ &nbsp;<strong>--- (Equation 2)</strong></div>
+    <div>• Subtract (2) - (1): $9x = 3 \implies \mathbf{x = \frac{3}{9} = \frac{1}{3}}$</div>
+  </div>
+</div>
