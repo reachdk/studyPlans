@@ -1,0 +1,68 @@
+[
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "Which of the following options gives the correct value of the polynomial p(x) = x<sup>3</sup> - 10x<sup>2</sup> + 3x - 4 at x = -1?",
+    "options": [
+      "(a) -18",
+      "(b) 10",
+      "(c) 4",
+      "(d) 2"
+    ],
+    "answer": "<strong>(a) -18</strong>",
+    "markingScheme": "• Substitute x = -1: (-1)<sup>3</sup> - 10(-1)<sup>2</sup> + 3(-1) - 4 [0.5 mark]<br>• Compute: -1 - 10(1) - 3 - 4 = -18 [0.5 mark]",
+    "examinerTip": "Direct question from PA-2 Class 9 CBSE Mathematics Paper (Question 4)."
+  },
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "Which of the following algebraic expressions is a polynomial?",
+    "options": [
+      "(a) x<sup>2</sup> - 2/x + 1",
+      "(b) &radic;3 x<sup>2</sup> - 5x + &radic;2",
+      "(c) x<sup>3/2</sup> + 4x - 7",
+      "(d) 3&radic;x + 2"
+    ],
+    "answer": "<strong>(b) &radic;3 x<sup>2</sup> - 5x + &radic;2</strong>",
+    "markingScheme": "• Option (a) has x<sup>-1</sup> (negative power) [incorrect]<br>• Option (c) has x<sup>3/2</sup> (fractional power) [incorrect]<br>• Option (d) has &radic;x = x<sup>1/2</sup> [incorrect]<br>• Option (b) has variable exponents 2, 1, 0 (all whole numbers), so it is a polynomial [1 mark]",
+    "examinerTip": "Real coefficients can be roots (&radic;3, &radic;2), only variable powers must be whole numbers."
+  },
+  {
+    "type": "Assertion-Reason",
+    "marks": 1,
+    "prompt": "<strong>Assertion (A):</strong> The degree of the polynomial p(x) = 5 is 0.<br><strong>Reason (R):</strong> The degree of a non-zero constant polynomial is always zero, because it can be written as c &middot; x<sup>0</sup>.",
+    "options": [
+      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+      "(c) (A) is true but (R) is false.",
+      "(d) (A) is false but (R) is true."
+    ],
+    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+    "markingScheme": "• Identifying that constant 5 = 5x<sup>0</sup> [0.5 mark]<br>• Recognizing that degree is the power of variable which is 0 [0.5 mark]",
+    "examinerTip": "Note: For the zero polynomial p(x) = 0, the degree is NOT defined."
+  },
+  {
+    "type": "Short Answer (2m)",
+    "marks": 2,
+    "prompt": "Find the zero of each of the following linear polynomials:<br>(i) p(x) = 3x - 5<br>(ii) q(x) = ax + b, where a &ne; 0 and a, b are real constants.",
+    "answer": "(i) For p(x) = 0: 3x - 5 = 0 &rArr; 3x = 5 &rArr; <strong>x = 5/3</strong>.<br>(ii) For q(x) = 0: ax + b = 0 &rArr; ax = -b &rArr; <strong>x = -b/a</strong>.",
+    "markingScheme": "• Correct solution for (i): 1 mark<br>• Correct solution for (ii): 1 mark",
+    "examinerTip": "Always state the zero explicitly as x = -b/a."
+  },
+  {
+    "type": "Short Answer (3m)",
+    "marks": 3,
+    "prompt": "Find the zero of the polynomial:<br>p(x) = (x - 2)<sup>2</sup> - (x + 2)<sup>2</sup>.",
+    "answer": "We simplify p(x) using the algebraic identity a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b) [or by direct expansion]:<br>Method 1 (Expansion):<br>(x - 2)<sup>2</sup> = x<sup>2</sup> - 4x + 4<br>(x + 2)<sup>2</sup> = x<sup>2</sup> + 4x + 4<br>p(x) = (x<sup>2</sup> - 4x + 4) - (x<sup>2</sup> + 4x + 4)<br>p(x) = x<sup>2</sup> - 4x + 4 - x<sup>2</sup> - 4x - 4<br>p(x) = -8x.<br><br>To find the zero, set p(x) = 0:<br>-8x = 0 &rArr; <strong>x = 0</strong>.<br>Thus, 0 is the only zero of p(x).",
+    "markingScheme": "• Correct expansion of (x - 2)<sup>2</sup> and (x + 2)<sup>2</sup>: 1 mark<br>• Correct simplification to -8x: 1 mark<br>• Setting -8x = 0 and obtaining x = 0: 1 mark",
+    "examinerTip": "From School Exam PA-2 Q31. Make sure to distribute the negative sign carefully."
+  },
+  {
+    "type": "Long Answer (5m)",
+    "marks": 5,
+    "prompt": "Let p(x) = 2x<sup>3</sup> - kx<sup>2</sup> + 3x - 6.<br>(i) If x = 2 is a zero of the polynomial p(x), find the value of the constant k. (2m)<br>(ii) After substituting the value of k, evaluate p(-2) and p(1/2). (2m)<br>(iii) Determine the degree and the coefficient of x<sup>2</sup> in the resulting polynomial. (1m)",
+    "answer": "(i) Since x = 2 is a zero of p(x), p(2) = 0:<br>p(2) = 2(2)<sup>3</sup> - k(2)<sup>2</sup> + 3(2) - 6 = 0<br>2(8) - 4k + 6 - 6 = 0<br>16 - 4k = 0 &rArr; 4k = 16 &rArr; <strong>k = 4</strong>.<br><br>(ii) The polynomial is p(x) = 2x<sup>3</sup> - 4x<sup>2</sup> + 3x - 6.<br>• p(-2) = 2(-2)<sup>3</sup> - 4(-2)<sup>2</sup> + 3(-2) - 6<br>= 2(-8) - 4(4) - 6 - 6 = -16 - 16 - 6 - 6 = <strong>-44</strong>.<br>• p(1/2) = 2(1/2)<sup>3</sup> - 4(1/2)<sup>2</sup> + 3(1/2) - 6<br>= 2(1/8) - 4(1/4) + 3/2 - 6<br>= 1/4 - 1 + 3/2 - 6 = 1/4 + 6/4 - 4/4 - 24/4 = (1 + 6 - 4 - 24)/4 = <strong>-21/4 = -5.25</strong>.<br><br>(iii) Degree = <strong>3</strong> (highest power of x is 3).<br>Coefficient of x<sup>2</sup> = <strong>-4</strong>.",
+    "markingScheme": "• (i) Setting p(2) = 0 and solving for k = 4: 2 marks<br>• (ii) Calculating p(-2) = -44 (1 mark) and p(1/2) = -21/4 (1 mark): 2 marks<br>• (iii) Degree = 3 (0.5 mark) and coefficient of x<sup>2</sup> = -4 (0.5 mark): 1 mark",
+    "examinerTip": "When asked for the coefficient of a term, always include its sign (i.e. -4, not just 4)."
+  }
+]

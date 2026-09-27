@@ -1,0 +1,44 @@
+[
+  {
+    "id": "iemh102_fc1",
+    "tag": "Definition",
+    "front": "What is the critical condition for an algebraic expression to be called a <strong>polynomial</strong>?",
+    "back": "The exponents of all variables appearing in the terms must strictly be <strong>non-negative integers (whole numbers: 0, 1, 2, 3...)</strong>.<br>Expressions with fractional powers (like &radic;x) or negative powers (like 1/x = x<sup>-1</sup>) are NOT polynomials.",
+    "note": "Coefficients can be irrational (e.g. &radic;2 x<sup>2</sup> is a valid polynomial)."
+  },
+  {
+    "id": "iemh102_fc2",
+    "tag": "Degrees",
+    "front": "What is the degree of a non-zero <strong>constant polynomial</strong>, and what is the degree of the <strong>zero polynomial</strong>?",
+    "back": "• <strong>Non-zero constant polynomial</strong> (e.g. p(x) = 5 = 5x<sup>0</sup>): Degree is <strong>0</strong>.<br>• <strong>Zero polynomial</strong> (p(x) = 0): Degree is <strong>not defined</strong>.",
+    "note": "A very frequent 1-mark CBSE question!"
+  },
+  {
+    "id": "iemh102_fc3",
+    "tag": "Zero of a Polynomial",
+    "front": "What is a <strong>zero of a polynomial P(x)</strong>, and how many zeroes does a linear polynomial <span class=\"math\">ax + b</span> (a &ne; 0) have?",
+    "back": "A real number <em>k</em> is a zero if <span class=\"math\">P(k) = 0</span>.<br>A linear polynomial <span class=\"math\">ax + b</span> has <strong>exactly one zero</strong>: <br><span class=\"math\">x = -b / a</span>.",
+    "note": "Geometrically, it is the x-intercept of the line y = ax + b."
+  },
+  {
+    "id": "iemh102_fc4",
+    "tag": "Calculation",
+    "front": "Evaluate the polynomial <span class=\"math\">P(x) = x<sup>3</sup> - 10x<sup>2</sup> + 3x - 4</span> at <span class=\"math\">x = -1</span>.",
+    "back": "P(-1) = (-1)<sup>3</sup> - 10(-1)<sup>2</sup> + 3(-1) - 4<br>= -1 - 10(1) - 3 - 4<br>= -1 - 10 - 3 - 4 = <strong>-18</strong>.",
+    "note": "From PA-2 School Examination Question 4."
+  },
+  {
+    "id": "iemh102_fc5",
+    "tag": "Simplification",
+    "front": "Find the zero of the polynomial: <span class=\"math\">p(x) = (x - 2)<sup>2</sup> - (x + 2)<sup>2</sup></span>.",
+    "back": "Expand both squares:<br>p(x) = [x<sup>2</sup> - 4x + 4] - [x<sup>2</sup> + 4x + 4]<br>p(x) = x<sup>2</sup> - 4x + 4 - x<sup>2</sup> - 4x - 4 = -8x.<br>Set -8x = 0 &rArr; <strong>x = 0</strong>.",
+    "note": "From PA-2 School Exam Section C (Question 31)."
+  },
+  {
+    "id": "iemh102_fc6",
+    "tag": "Concept Check",
+    "front": "Can a polynomial have zeroes that are not 0, and can 0 be a zero of a polynomial?",
+    "back": "<strong>Yes to both!</strong><br>• Zeroes can be any real number (e.g. p(x) = 2x - 6 has zero x = 3).<br>• The number 0 can be a zero (e.g. p(x) = 5x has zero x = 0 since p(0) = 0).",
+    "note": "Don't confuse the number 0 with the zeroes (roots) of the polynomial."
+  }
+]

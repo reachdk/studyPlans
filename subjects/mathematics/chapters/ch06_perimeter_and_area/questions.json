@@ -1,0 +1,68 @@
+[
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The perimeter of an equilateral triangle is 60 cm. Its area is equal to:",
+    "options": [
+      "(a) 10&radic;3 cm<sup>2</sup>",
+      "(b) 100&radic;3 cm<sup>2</sup>",
+      "(c) 15&radic;3 cm<sup>2</sup>",
+      "(d) 20&radic;3 cm<sup>2</sup>"
+    ],
+    "answer": "<strong>(b) 100&radic;3 cm<sup>2</sup></strong>",
+    "markingScheme": "• Side a = Perimeter / 3 = 60 / 3 = 20 cm [0.5 mark]<br>• Area = (&radic;3 / 4) a<sup>2</sup> = (&radic;3 / 4) &times; 400 = 100&radic;3 cm<sup>2</sup> [0.5 mark]",
+    "examinerTip": "Do not confuse perimeter with side length."
+  },
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The sides of a triangle are 13 m, 14 m, and 15 m. Its semi-perimeter s is:",
+    "options": [
+      "(a) 42 m",
+      "(b) 21 m",
+      "(c) 84 m",
+      "(d) 28 m"
+    ],
+    "answer": "<strong>(b) 21 m</strong>",
+    "markingScheme": "• s = (a + b + c) / 2 = (13 + 14 + 15) / 2 = 42 / 2 = 21 m [1 mark]",
+    "examinerTip": "Direct question from PA-2 School Exam Section A."
+  },
+  {
+    "type": "Assertion-Reason",
+    "marks": 1,
+    "prompt": "<strong>Assertion (A):</strong> The area of a triangle having sides 5 cm, 12 cm, and 13 cm is 30 cm<sup>2</sup>.<br><strong>Reason (R):</strong> Since 5<sup>2</sup> + 12<sup>2</sup> = 25 + 144 = 169 = 13<sup>2</sup>, the triangle is right-angled and its area is (1/2) &times; 5 &times; 12 = 30 cm<sup>2</sup>.",
+    "options": [
+      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+      "(c) (A) is true but (R) is false.",
+      "(d) (A) is false but (R) is true."
+    ],
+    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+    "markingScheme": "• Verifying Pythagorean triplet (5, 12, 13) and area = 30 cm<sup>2</sup> [1 mark]",
+    "examinerTip": "Whenever given Pythagorean triplets (3,4,5), (5,12,13), (7,24,25), (8,15,17), you can check using (1/2)bh as well as Heron's formula."
+  },
+  {
+    "type": "Short Answer (2m)",
+    "marks": 2,
+    "prompt": "Find the area of a triangle two sides of which are 8 cm and 11 cm and the perimeter is 32 cm.",
+    "answer": "1. Let third side be c.<br>Perimeter = a + b + c = 8 + 11 + c = 32<br>19 + c = 32 &rArr; <strong>c = 13 cm</strong>.<br><br>2. Semi-perimeter s = 32 / 2 = <strong>16 cm</strong>.<br>s - a = 16 - 8 = 8 cm<br>s - b = 16 - 11 = 5 cm<br>s - c = 16 - 13 = 3 cm.<br><br>3. Area = &radic;[16 &times; 8 &times; 5 &times; 3] = &radic;[(4<sup>2</sup>) &times; (4 &times; 2) &times; 15] = 4 &times; 2 &radic;30 = <strong>8&radic;30 cm<sup>2</sup></strong> (approx 43.82 cm<sup>2</sup>).",
+    "markingScheme": "• Finding third side c = 13 cm and s = 16 cm: 1 mark<br>• Applying Heron's formula to get 8&radic;30 cm<sup>2</sup>: 1 mark",
+    "examinerTip": "Leave surds in simplified radical form (8&radic;30) unless specifically asked for decimals."
+  },
+  {
+    "type": "Short Answer (3m)",
+    "marks": 3,
+    "prompt": "The triangular side walls of a flyover have been used for advertisements. The sides of the walls are 13 m, 14 m, and 15 m. The advertisements yield an earning of ₹ 5000 per m<sup>2</sup> per year. A company hired one of its walls for 3 months. How much rent did it pay?",
+    "answer": "1. Sides are a = 13 m, b = 14 m, c = 15 m.<br>s = (13 + 14 + 15) / 2 = 42 / 2 = 21 m.<br><br>2. Area of triangular wall = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; (21 - 13) &times; (21 - 14) &times; (21 - 15)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (2<sup>3</sup>) &times; 7 &times; (2 &times; 3)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>4</sup>] = 7 &times; 3 &times; 4 = <strong>84 m<sup>2</sup></strong>.<br><br>3. Annual earning = ₹ 5000 / m<sup>2</sup> / year.<br>Rent for 3 months (3/12 year = 1/4 year):<br>Rent = 84 &times; 5000 &times; (3 / 12) = 84 &times; 5000 &times; (1 / 4) = 21 &times; 5000 = <strong>₹ 1,05,000</strong>.",
+    "markingScheme": "• Calculating semi-perimeter s = 21 m: 0.5 mark<br>• Calculating Area = 84 m<sup>2</sup> via Heron's formula: 1.5 marks<br>• Calculating 3 months rent = ₹ 1,05,000: 1 mark",
+    "examinerTip": "From School Exam PA-2 Section C (Question 27). Remember that rent is for 3 months (3/12 of annual rate)."
+  },
+  {
+    "type": "Long Answer (5m)",
+    "marks": 5,
+    "prompt": "Students of a school staged a cleanliness rally. They walked through lanes in two groups. One group walked through lanes PQ, QR, and RP, while the other walked through PR, RS, and SP. They cleaned the area enclosed within their respective paths.<br>Given: PQ = 7 m, QR = 24 m, RS = 15 m, SP = 20 m, and &ang;Q = 90&deg;.<br>(i) Find the length of diagonal lane PR. (1m)<br>(ii) Which group cleaned more area and by how much? (3m)<br>(iii) Find the total area cleaned by all students. (1m)",
+    "answer": "(i) In right &Delta;PQR, &ang;Q = 90&deg;:<br>By Pythagoras theorem: PR<sup>2</sup> = PQ<sup>2</sup> + QR<sup>2</sup> = 7<sup>2</sup> + 24<sup>2</sup> = 49 + 576 = 625<br>&rArr; <strong>PR = &radic;625 = 25 m</strong>.<br><br>(ii) Area cleaned by Group 1 (&Delta;PQR):<br>Area(&Delta;PQR) = (1/2) &times; Base &times; Altitude = (1/2) &times; 7 &times; 24 = <strong>84 m<sup>2</sup></strong>.<br><br>Area cleaned by Group 2 (&Delta;PRS):<br>Sides are PR = 25 m, RS = 15 m, SP = 20 m.<br>Notice: 15<sup>2</sup> + 20<sup>2</sup> = 225 + 400 = 625 = 25<sup>2</sup> (or use Heron's formula with s = (25+15+20)/2 = 30 m):<br>Heron's: Area = &radic;[30 &times; (30-25) &times; (30-15) &times; (30-20)] = &radic;[30 &times; 5 &times; 15 &times; 10] = &radic;[(15 &times; 2) &times; 5 &times; 15 &times; (5 &times; 2)] = &radic;[15<sup>2</sup> &times; 5<sup>2</sup> &times; 2<sup>2</sup>] = 15 &times; 5 &times; 2 = <strong>150 m<sup>2</sup></strong>.<br><br>Comparing areas:<br>Group 2 cleaned more area.<br>Difference = 150 - 84 = <strong>66 m<sup>2</sup> more</strong>.<br><br>(iii) Total area cleaned = Area(&Delta;PQR) + Area(&Delta;PRS) = 84 + 150 = <strong>234 m<sup>2</sup></strong>.",
+    "markingScheme": "• (i) Pythagoras calculation for PR = 25 m: 1 mark<br>• (ii) Area(&Delta;PQR) = 84 m<sup>2</sup> (1 mark); Area(&Delta;PRS) = 150 m<sup>2</sup> (1.5 marks); Difference = 66 m<sup>2</sup> (0.5 mark): 3 marks<br>• (iii) Total area = 234 m<sup>2</sup>: 1 mark",
+    "examinerTip": "Direct question from School Exam PA-2 Section D (Question 34). Always clearly state which group cleaned more."
+  }
+]

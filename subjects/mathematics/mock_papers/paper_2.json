@@ -1,0 +1,434 @@
+{
+  "id": "math_paper_2",
+  "title": "CBSE Class 9 Mathematics Mock Paper 2 (Application & Problem-Solving)",
+  "timing": "3 Hours",
+  "totalMarks": 80,
+  "description": "Authentic full-length Class 9 CBSE Mathematics examination emphasizing geometric applications, algebraic factorizations, and radical arithmetic.",
+  "questions": [
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 1,
+      "type": "MCQ",
+      "prompt": "If the coordinates of a point are (-5, 0), then it lies on:",
+      "options": ["(a) Positive x-axis", "(b) Negative x-axis", "(c) Positive y-axis", "(d) Negative y-axis"],
+      "answer": "<strong>(b) Negative x-axis</strong>",
+      "markingScheme": "• Ordinate is 0 and abscissa is negative (-5) &rArr; lies on negative x-axis [1 mark]",
+      "examinerTip": "Any point with y=0 lies on the x-axis."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 2,
+      "type": "MCQ",
+      "prompt": "Which of the following is equal to x<sup>3</sup>?",
+      "options": [
+        "(a) x<sup>6</sup> - x<sup>3</sup>",
+        "(b) x<sup>6</sup> &middot; x<sup>3</sup>",
+        "(c) (x<sup>6</sup>)<sup>1/2</sup>",
+        "(d) (x<sup>6</sup>)<sup>2/3</sup>"
+      ],
+      "answer": "<strong>(c) (x<sup>6</sup>)<sup>1/2</sup></strong>",
+      "markingScheme": "• (x<sup>6</sup>)<sup>1/2</sup> = x<sup>6 &times; 1/2</sup> = x<sup>3</sup> [1 mark]",
+      "examinerTip": "Law of exponents: (a^m)^n = a^(mn)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 3,
+      "type": "MCQ",
+      "prompt": "The coefficient of x in the expansion of (x + 3)<sup>3</sup> is:",
+      "options": ["(a) 1", "(b) 9", "(c) 18", "(d) 27"],
+      "answer": "<strong>(d) 27</strong>",
+      "markingScheme": "• (x + 3)<sup>3</sup> = x<sup>3</sup> + 3(x)<sup>2</sup>(3) + 3(x)(3)<sup>2</sup> + 27 = x<sup>3</sup> + 9x<sup>2</sup> + 27x + 27 &rArr; coefficient of x is 27 [1 mark]",
+      "examinerTip": "3 &times; x &times; 3^2 = 27x."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 4,
+      "type": "MCQ",
+      "prompt": "In &Delta;ABC, AB = 6 cm, BC = 8 cm, and AC = 10 cm. The area of the triangle is:",
+      "options": ["(a) 48 cm<sup>2</sup>", "(b) 24 cm<sup>2</sup>", "(c) 30 cm<sup>2</sup>", "(d) 40 cm<sup>2</sup>"],
+      "answer": "<strong>(b) 24 cm<sup>2</sup></strong>",
+      "markingScheme": "• 6<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100 = 10<sup>2</sup> &rArr; Right triangle &rArr; Area = (1/2) &times; 6 &times; 8 = 24 cm<sup>2</sup> [1 mark]",
+      "examinerTip": "Check for Pythagorean triplet (6, 8, 10)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 5,
+      "type": "MCQ",
+      "prompt": "The value of the polynomial 5x - 4x<sup>2</sup> + 3 at x = -1 is:",
+      "options": ["(a) -6", "(b) 4", "(c) 2", "(d) -2"],
+      "answer": "<strong>(a) -6</strong>",
+      "markingScheme": "• 5(-1) - 4(-1)<sup>2</sup> + 3 = -5 - 4(1) + 3 = -5 - 4 + 3 = -6 [1 mark]",
+      "examinerTip": "Order of operations: (-1)^2 = 1, so -4(1) = -4."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 6,
+      "type": "MCQ",
+      "prompt": "Can a triangle have sides of lengths 4 cm, 5 cm, and 10 cm?",
+      "options": [
+        "(a) Yes, always",
+        "(b) No, because 4 + 5 < 10",
+        "(c) Yes, it is scalene",
+        "(d) Cannot be determined"
+      ],
+      "answer": "<strong>(b) No, because 4 + 5 < 10</strong>",
+      "markingScheme": "• In any triangle, the sum of any two sides must be strictly greater than the third side [1 mark]",
+      "examinerTip": "Triangle inequality theorem check."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 7,
+      "type": "MCQ",
+      "prompt": "The rationalizing factor of &radic;5 + &radic;3 is:",
+      "options": ["(a) &radic;5 + &radic;3", "(b) 5 - 3", "(c) &radic;5 - &radic;3", "(d) &radic;15"],
+      "answer": "<strong>(c) &radic;5 - &radic;3</strong>",
+      "markingScheme": "• Conjugate of (&radic;a + &radic;b) is (&radic;a - &radic;b) [1 mark]",
+      "examinerTip": "Product yields rational difference of squares: 5 - 3 = 2."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 8,
+      "type": "MCQ",
+      "prompt": "If (x + 2) is a factor of x<sup>2</sup> + mx + 14, then the value of m is:",
+      "options": ["(a) 7", "(b) 2", "(c) 9", "(d) 14"],
+      "answer": "<strong>(c) 9</strong>",
+      "markingScheme": "• p(-2) = (-2)<sup>2</sup> + m(-2) + 14 = 0 &rArr; 4 - 2m + 14 = 0 &rArr; 2m = 18 &rArr; m = 9 [1 mark]",
+      "examinerTip": "Factor theorem: substitute x = -2."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 9,
+      "type": "MCQ",
+      "prompt": "The ordinate of any point lying on the x-axis is always:",
+      "options": ["(a) 1", "(b) -1", "(c) 0", "(d) Any real number"],
+      "answer": "<strong>(c) 0</strong>",
+      "markingScheme": "• By definition, ordinate (y-coordinate) is 0 on the x-axis [1 mark]",
+      "examinerTip": "Coordinates on x-axis are (x, 0)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 10,
+      "type": "MCQ",
+      "prompt": "If the semi-perimeter of an equilateral triangle is 15 cm, then its side length is:",
+      "options": ["(a) 5 cm", "(b) 10 cm", "(c) 15 cm", "(d) 30 cm"],
+      "answer": "<strong>(b) 10 cm</strong>",
+      "markingScheme": "• Perimeter 2s = 30 cm &rArr; side a = 30 / 3 = 10 cm [1 mark]",
+      "examinerTip": "s = 3a/2 &rArr; a = 2s/3 = 2(15)/3 = 10 cm."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 11,
+      "type": "MCQ",
+      "prompt": "The value of 7<sup>1/2</sup> &times; 8<sup>1/2</sup> is equal to:",
+      "options": ["(a) 56", "(b) 56<sup>1/2</sup>", "(c) 15<sup>1/2</sup>", "(d) 56<sup>1/4</sup>"],
+      "answer": "<strong>(b) 56<sup>1/2</sup></strong>",
+      "markingScheme": "• a<sup>p</sup> &middot; b<sup>p</sup> = (ab)<sup>p</sup> &rArr; (7 &times; 8)<sup>1/2</sup> = 56<sup>1/2</sup> = &radic;56 [1 mark]",
+      "examinerTip": "Power distributes over product."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 12,
+      "type": "MCQ",
+      "prompt": "If x<sup>2</sup> - 1 is a factor of ax<sup>4</sup> + bx<sup>3</sup> + cx<sup>2</sup> + dx + e, then:",
+      "options": [
+        "(a) a + c + e = b + d",
+        "(b) a + b + c + d + e = 0",
+        "(c) a + b + e = c + d",
+        "(d) None of these"
+      ],
+      "answer": "<strong>(a) a + c + e = b + d</strong>",
+      "markingScheme": "• x<sup>2</sup> - 1 = (x-1)(x+1) &rArr; p(1)=0 and p(-1)=0.<br>p(1) = a+b+c+d+e = 0 and p(-1) = a-b+c-d+e = 0 &rArr; a+c+e = b+d [1 mark]",
+      "examinerTip": "Standard CBSE algebraic property."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 13,
+      "type": "MCQ",
+      "prompt": "Signs of abscissa and ordinate in Quadrant II are respectively:",
+      "options": ["(a) (+, +)", "(b) (-, +)", "(c) (-, -)", "(d) (+, -)"],
+      "answer": "<strong>(b) (-, +)</strong>",
+      "markingScheme": "• In Quadrant II, x is negative and y is positive [1 mark]",
+      "examinerTip": "Left of y-axis (negative), above x-axis (positive)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 14,
+      "type": "MCQ",
+      "prompt": "The perimeter of a triangular board is 24 cm and two of its sides are 8 cm and 6 cm. Its area is:",
+      "options": ["(a) 24 cm<sup>2</sup>", "(b) 48 cm<sup>2</sup>", "(c) 12 cm<sup>2</sup>", "(d) 36 cm<sup>2</sup>"],
+      "answer": "<strong>(a) 24 cm<sup>2</sup></strong>",
+      "markingScheme": "• Third side = 24 - (8 + 6) = 10 cm. Sides 6, 8, 10 form a right triangle &rArr; Area = (1/2)(6)(8) = 24 cm<sup>2</sup> [1 mark]",
+      "examinerTip": "Pythagorean triplet 6-8-10."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 15,
+      "type": "MCQ",
+      "prompt": "Which of the following numbers has a terminating decimal expansion?",
+      "options": ["(a) 1/3", "(b) 3/7", "(c) 7/8", "(d) 2/11"],
+      "answer": "<strong>(c) 7/8</strong>",
+      "markingScheme": "• Denominator 8 = 2<sup>3</sup> (only factors of 2) &rArr; terminates as 0.875 [1 mark]",
+      "examinerTip": "Denominator must be of form 2^m &times; 5^n."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 16,
+      "type": "MCQ",
+      "prompt": "If x - 2 is a factor of 2x<sup>3</sup> - 6x<sup>2</sup> + 5x + k, then k is:",
+      "options": ["(a) -2", "(b) 2", "(c) -6", "(d) 6"],
+      "answer": "<strong>(a) -2</strong>",
+      "markingScheme": "• p(2) = 2(8) - 6(4) + 5(2) + k = 16 - 24 + 10 + k = 2 + k = 0 &rArr; k = -2 [1 mark]",
+      "examinerTip": "Substitute x = 2."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 17,
+      "type": "MCQ",
+      "prompt": "If 64<sup>x</sup> = 2&radic;2, then x is equal to:",
+      "options": ["(a) 1/4", "(b) 1/2", "(c) 3/4", "(d) 1/8"],
+      "answer": "<strong>(a) 1/4</strong>",
+      "markingScheme": "• 64<sup>x</sup> = (2<sup>6</sup>)<sup>x</sup> = 2<sup>6x</sup>. And 2&radic;2 = 2<sup>1</sup> &times; 2<sup>1/2</sup> = 2<sup>3/2</sup>.<br>6x = 3/2 &rArr; x = 3/12 = 1/4 [1 mark]",
+      "examinerTip": "Express both sides with base 2: 2^(6x) = 2^(3/2)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 18,
+      "type": "MCQ",
+      "prompt": "The distance of the point (4, 3) from the origin (0, 0) is:",
+      "options": ["(a) 7 units", "(b) 1 unit", "(c) 5 units", "(d) 25 units"],
+      "answer": "<strong>(c) 5 units</strong>",
+      "markingScheme": "• Distance from origin = &radic;(x<sup>2</sup> + y<sup>2</sup>) = &radic;(4<sup>2</sup> + 3<sup>2</sup>) = &radic;25 = 5 units [1 mark]",
+      "examinerTip": "Pythagoras distance from origin: &radic;(x^2 + y^2)."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 19,
+      "type": "Assertion-Reason",
+      "prompt": "<strong>Assertion (A):</strong> The polynomial p(x) = (x - 1)(x + 2) has zeroes 1 and -2.<br><strong>Reason (R):</strong> A real number k is a zero of polynomial p(x) if and only if p(k) = 0.",
+      "options": [
+        "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+        "(c) (A) is true but (R) is false.",
+        "(d) (A) is false but (R) is true."
+      ],
+      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+      "markingScheme": "• p(1)=0 and p(-2)=0, correctly matching definition in (R) [1 mark]",
+      "examinerTip": "Definition of polynomial roots."
+    },
+    {
+      "section": "A",
+      "marks": 1,
+      "qNo": 20,
+      "type": "Assertion-Reason",
+      "prompt": "<strong>Assertion (A):</strong> If the three sides of a triangle are doubled, its area becomes four times.<br><strong>Reason (R):</strong> In Heron's formula, each linear factor s, (s-a), (s-b), and (s-c) gets multiplied by 2, pulling out 2 &times; 2 = 4.",
+      "options": [
+        "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+        "(c) (A) is true but (R) is false.",
+        "(d) (A) is false but (R) is true."
+      ],
+      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+      "markingScheme": "• &radic;[2s &times; 2(s-a) &times; 2(s-b) &times; 2(s-c)] = &radic;[16 &times; s(s-a)(s-b)(s-c)] = 4 &times; Area [1 mark]",
+      "examinerTip": "Very famous CBSE question."
+    },
+    {
+      "section": "B",
+      "marks": 2,
+      "qNo": 21,
+      "type": "VSA",
+      "prompt": "Find two rational numbers and two irrational numbers between 0.2 and 0.3.",
+      "answer": "• <strong>Two Rational Numbers:</strong> 0.21 = 21/100 and 0.25 = 1/4 (both terminating decimals).<br>• <strong>Two Irrational Numbers:</strong><br>0.21010010001... and 0.23030030003... (both non-terminating and non-recurring).",
+      "markingScheme": "• Correct rational numbers: 1 mark<br>• Correct irrational numbers with non-terminating non-repeating pattern: 1 mark",
+      "examinerTip": "Creating an increasing zero pattern (0.21010010001...) guarantees an irrational number."
+    },
+    {
+      "section": "B",
+      "marks": 2,
+      "qNo": 22,
+      "type": "VSA",
+      "prompt": "Without plotting the points on a graph, identify the quadrant or axis for: <br>(i) P(0, 5) <br>(ii) Q(-4, -3) <br>(iii) R(6, -2) <br>(iv) S(-7, 0).",
+      "answer": "• (i) P(0, 5): <strong>Positive y-axis</strong> (lies on axis)<br>• (ii) Q(-4, -3): <strong>Quadrant III</strong> (x < 0, y < 0)<br>• (iii) R(6, -2): <strong>Quadrant IV</strong> (x > 0, y < 0)<br>• (iv) S(-7, 0): <strong>Negative x-axis</strong> (lies on axis)",
+      "markingScheme": "• 0.5 mark for each correct identification",
+      "examinerTip": "Remember that points with one zero coordinate lie strictly ON coordinate axes."
+    },
+    {
+      "section": "B",
+      "marks": 2,
+      "qNo": 23,
+      "type": "VSA",
+      "prompt": "Find the remainder when x<sup>4</sup> + x<sup>3</sup> - 2x<sup>2</sup> + x + 1 is divided by (x - 1).",
+      "answer": "By Remainder Theorem, remainder is p(1):<br>p(1) = (1)<sup>4</sup> + (1)<sup>3</sup> - 2(1)<sup>2</sup> + (1) + 1<br>= 1 + 1 - 2 + 1 + 1 = <strong>2</strong>.",
+      "markingScheme": "• Stating Remainder Theorem and evaluating p(1): 1 mark<br>• Final remainder = 2: 1 mark",
+      "examinerTip": "No long division needed."
+    },
+    {
+      "section": "B",
+      "marks": 2,
+      "qNo": 24,
+      "type": "VSA",
+      "prompt": "Evaluate using identity: 95 &times; 96.",
+      "answer": "Write as (100 - 5)(100 - 4):<br>Using (x + a)(x + b) = x<sup>2</sup> + (a + b)x + ab with x = 100, a = -5, b = -4:<br>= 100<sup>2</sup> + (-5 - 4)(100) + (-5)(-4)<br>= 10,000 - 900 + 20 = <strong>9,120</strong>.",
+      "markingScheme": "• Writing identity: 1 mark<br>• Correct evaluation 9120: 1 mark",
+      "examinerTip": "Show explicit algebraic substitution."
+    },
+    {
+      "section": "B",
+      "marks": 2,
+      "qNo": 25,
+      "type": "VSA",
+      "prompt": "The base of a right-angled triangle is 15 cm and its hypotenuse is 25 cm. Find its area.",
+      "answer": "1. Find altitude h by Pythagoras theorem:<br>h = &radic;(25<sup>2</sup> - 15<sup>2</sup>) = &radic;(625 - 225) = &radic;400 = 20 cm.<br><br>2. Area = (1/2) &times; base &times; height = (1/2) &times; 15 &times; 20 = <strong>150 cm<sup>2</sup></strong>.",
+      "markingScheme": "• Altitude h = 20 cm: 1 mark<br>• Area = 150 cm<sup>2</sup>: 1 mark",
+      "examinerTip": "Pythagoras triplet (15, 20, 25)."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 26,
+      "type": "SA",
+      "prompt": "If 2<sup>x</sup> = 3<sup>y</sup> = 6<sup>-z</sup>, prove that: 1/x + 1/y + 1/z = 0.",
+      "answer": "Let 2<sup>x</sup> = 3<sup>y</sup> = 6<sup>-z</sup> = k.<br>Then: 2 = k<sup>1/x</sup>, 3 = k<sup>1/y</sup>, and 6 = k<sup>-1/z</sup>.<br><br>We know that: 2 &times; 3 = 6.<br>Substitute the values of 2, 3, and 6 in terms of k:<br>k<sup>1/x</sup> &times; k<sup>1/y</sup> = k<sup>-1/z</sup><br>k<sup>(1/x + 1/y)</sup> = k<sup>-1/z</sup>.<br><br>Equating exponents:<br>1/x + 1/y = -1/z<br>&rArr; <strong>1/x + 1/y + 1/z = 0</strong>. (Hence Proved).",
+      "markingScheme": "• Setting terms equal to k and expressing 2, 3, 6 in powers of k: 1 mark<br>• Using 2 &times; 3 = 6: 1 mark<br>• Equating exponents to conclude proof: 1 mark",
+      "examinerTip": "Classic high-order thinking skills (HOTS) exponent problem."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 27,
+      "type": "SA",
+      "prompt": "Factorize: x<sup>3</sup> + 13x<sup>2</sup> + 32x + 20.",
+      "answer": "Let p(x) = x<sup>3</sup> + 13x<sup>2</sup> + 32x + 20.<br>Factors of 20: &plusmn;1, &plusmn;2, &plusmn;4, &plusmn;5, &plusmn;10.<br>Test x = -1: p(-1) = (-1)<sup>3</sup> + 13(-1)<sup>2</sup> + 32(-1) + 20 = -1 + 13 - 32 + 20 = 0.<br>&rArr; (x + 1) is a factor.<br><br>Divide p(x) by (x + 1):<br>x<sup>3</sup> + 13x<sup>2</sup> + 32x + 20 = (x + 1)(x<sup>2</sup> + 12x + 20).<br><br>Split middle term for quadratic: 12 = 10 + 2 and (10)(2) = 20.<br>x<sup>2</sup> + 12x + 20 = (x + 10)(x + 2).<br>Therefore: <strong>(x + 1)(x + 2)(x + 10)</strong>.",
+      "markingScheme": "• Finding factor (x + 1): 1 mark<br>• Quadratic quotient x<sup>2</sup> + 12x + 20: 1 mark<br>• Final factors (x + 1)(x + 2)(x + 10): 1 mark",
+      "examinerTip": "Since all coefficients are positive, trial zeroes must be negative."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 28,
+      "type": "SA",
+      "prompt": "Find the area of a triangle whose sides are 9 cm, 12 cm, and 15 cm. Also find the height corresponding to the longest side.",
+      "answer": "1. 9<sup>2</sup> + 12<sup>2</sup> = 81 + 144 = 225 = 15<sup>2</sup> &rArr; Right-angled triangle.<br>Area = (1/2) &times; base &times; height = (1/2) &times; 9 &times; 12 = <strong>54 cm<sup>2</sup></strong>.<br>(Or using Heron's formula: s = 36/2 = 18; &radic;[18(9)(6)(3)] = 54 cm<sup>2</sup>).<br><br>2. Longest side = 15 cm. Let corresponding altitude be h.<br>Area = (1/2) &times; base &times; h<br>54 = (1/2) &times; 15 &times; h<br>15h = 108 &rArr; h = 108 / 15 = <strong>7.2 cm</strong>.",
+      "markingScheme": "• Calculating Area = 54 cm<sup>2</sup>: 1.5 marks<br>• Setting (1/2) &times; 15 &times; h = 54 and solving h = 7.2 cm: 1.5 marks",
+      "examinerTip": "Remember that altitude to hypotenuse is (a &times; b) / c."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 29,
+      "type": "SA",
+      "prompt": "Prove that: (a + b + c)<sup>3</sup> - a<sup>3</sup> - b<sup>3</sup> - c<sup>3</sup> = 3(a + b)(b + c)(c + a).",
+      "answer": "Group terms: (a + b + c) = [(a + b) + c].<br>LHS = [(a + b) + c]<sup>3</sup> - a<sup>3</sup> - b<sup>3</sup> - c<sup>3</sup><br>= (a + b)<sup>3</sup> + c<sup>3</sup> + 3(a + b)c[(a + b) + c] - a<sup>3</sup> - b<sup>3</sup> - c<sup>3</sup><br>= [a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b)] + c<sup>3</sup> + 3(a + b)c(a + b + c) - a<sup>3</sup> - b<sup>3</sup> - c<sup>3</sup><br>= 3ab(a + b) + 3(a + b)c(a + b + c)<br>= 3(a + b) [ ab + c(a + b + c) ]<br>= 3(a + b) [ ab + ca + bc + c<sup>2</sup> ]<br>= 3(a + b) [ a(b + c) + c(b + c) ]<br>= <strong>3(a + b)(b + c)(c + a)</strong> = RHS. (Hence Proved).",
+      "markingScheme": "• Expanding [(a+b) + c]<sup>3</sup>: 1.5 marks<br>• Factoring out 3(a+b): 1 mark<br>• Completing factorization to 3(a+b)(b+c)(c+a): 0.5 mark",
+      "examinerTip": "Master algebraic identity proof."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 30,
+      "type": "SA",
+      "prompt": "Find the coordinates of the foot of the perpendicular from point P(-4, 6) on the x-axis and y-axis. Also find the area of the rectangle formed by drawing perpendiculars from P to the axes and the origin.",
+      "answer": "1. Foot of perpendicular on x-axis: <strong>L(-4, 0)</strong>.<br>2. Foot of perpendicular on y-axis: <strong>M(0, 6)</strong>.<br>3. The vertices of the rectangle are O(0, 0), L(-4, 0), P(-4, 6), and M(0, 6).<br>Length along x-axis = |-4| = 4 units.<br>Breadth along y-axis = |6| = 6 units.<br>Area of rectangle OLPM = 4 &times; 6 = <strong>24 sq. units</strong>.",
+      "markingScheme": "• L(-4, 0) and M(0, 6): 1 mark (0.5 each)<br>• Length 4 and Breadth 6: 1 mark<br>• Area = 24 sq. units: 1 mark",
+      "examinerTip": "Area is always positive."
+    },
+    {
+      "section": "C",
+      "marks": 3,
+      "qNo": 31,
+      "type": "SA",
+      "prompt": "Simplify: ( &radic;5 - 2 ) / ( &radic;5 + 2 ) - ( &radic;5 + 2 ) / ( &radic;5 - 2 ).",
+      "answer": "Combine using common denominator [(&radic;5 + 2)(&radic;5 - 2)]:<br>Denominator = (&radic;5)<sup>2</sup> - 2<sup>2</sup> = 5 - 4 = 1.<br><br>Numerator = (&radic;5 - 2)<sup>2</sup> - (&radic;5 + 2)<sup>2</sup><br>= [5 - 4&radic;5 + 4] - [5 + 4&radic;5 + 4]<br>= (9 - 4&radic;5) - (9 + 4&radic;5)<br>= 9 - 4&radic;5 - 9 - 4&radic;5 = <strong>-8&radic;5</strong>.<br><br>Fraction = -8&radic;5 / 1 = <strong>-8&radic;5</strong>.",
+      "markingScheme": "• Common denominator (5 - 4 = 1): 1 mark<br>• Expanding both squares in numerator: 1 mark<br>• Simplifying to -8&radic;5: 1 mark",
+      "examinerTip": "Notice identity (a - b)^2 - (a + b)^2 = -4ab &rArr; -4(&radic;5)(2) = -8&radic;5."
+    },
+    {
+      "section": "D",
+      "marks": 5,
+      "qNo": 32,
+      "type": "LA",
+      "prompt": "If x = 9 - 4&radic;5, find the values of:<br>(i) 1/x (1m)<br>(ii) x + 1/x (1m)<br>(iii) x<sup>2</sup> + 1/x<sup>2</sup> (1.5m)<br>(iv) x<sup>3</sup> + 1/x<sup>3</sup> (1.5m)",
+      "answer": "(i) 1/x = 1 / (9 - 4&radic;5) = (9 + 4&radic;5) / [9<sup>2</sup> - (4&radic;5)<sup>2</sup>] = (9 + 4&radic;5) / [81 - 80] = <strong>9 + 4&radic;5</strong>.<br><br>(ii) x + 1/x = (9 - 4&radic;5) + (9 + 4&radic;5) = <strong>18</strong>.<br><br>(iii) x<sup>2</sup> + 1/x<sup>2</sup> = (x + 1/x)<sup>2</sup> - 2 = 18<sup>2</sup> - 2 = 324 - 2 = <strong>322</strong>.<br><br>(iv) x<sup>3</sup> + 1/x<sup>3</sup> = (x + 1/x)<sup>3</sup> - 3(x + 1/x) = 18<sup>3</sup> - 3(18) = 5832 - 54 = <strong>5778</strong>.",
+      "markingScheme": "• (i) 1/x = 9 + 4&radic;5: 1 mark<br>• (ii) x + 1/x = 18: 1 mark<br>• (iii) x<sup>2</sup> + 1/x<sup>2</sup> = 322: 1.5 marks<br>• (iv) x<sup>3</sup> + 1/x<sup>3</sup> = 5778: 1.5 marks",
+      "examinerTip": "Essential Class 9 standard 5-mark question."
+    },
+    {
+      "section": "D",
+      "marks": 5,
+      "qNo": 33,
+      "type": "LA",
+      "prompt": "The perimeter of a right triangle is 60 cm and its hypotenuse is 25 cm. Find the area of the triangle and the other two side lengths using algebraic identities and Heron's formula.",
+      "answer": "Let the two legs be a and b, and hypotenuse c = 25 cm.<br><br>1. Perimeter = a + b + c = 60 &rArr; a + b + 25 = 60 &rArr; a + b = 35 cm.<br>2. By Pythagoras theorem: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> = 25<sup>2</sup> = 625.<br><br>3. Use identity (a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab:<br>35<sup>2</sup> = 625 + 2ab<br>1225 = 625 + 2ab &rArr; 2ab = 1225 - 625 = 600 &rArr; ab = 300.<br><br>4. Area of right triangle = (1/2)ab = (1/2)(300) = <strong>150 cm<sup>2</sup></strong>.<br><br>5. Find sides a and b:<br>(a - b)<sup>2</sup> = (a + b)<sup>2</sup> - 4ab = 35<sup>2</sup> - 4(300) = 1225 - 1200 = 25.<br>a - b = &radic;25 = 5 cm.<br>Adding (a + b = 35) and (a - b = 5): 2a = 40 &rArr; <strong>a = 20 cm</strong> and <strong>b = 15 cm</strong>.<br>The sides are <strong>15 cm, 20 cm, and 25 cm</strong>, and Area = <strong>150 cm<sup>2</sup></strong>.",
+      "markingScheme": "• a + b = 35 and a<sup>2</sup> + b<sup>2</sup> = 625: 1.5 marks<br>• Using identity to get 2ab = 600 &rArr; Area = 150 cm<sup>2</sup>: 1.5 marks<br>• Finding (a - b) = 5 and solving sides 15 cm and 20 cm: 2 marks",
+      "examinerTip": "Connecting geometry with algebraic identities is a favorite CBSE question pattern."
+    },
+    {
+      "section": "D",
+      "marks": 5,
+      "qNo": 34,
+      "type": "LA",
+      "prompt": "Find the area of a quadrilateral ABCD in which AB = 3 cm, BC = 4 cm, CD = 4 cm, DA = 5 cm, and AC = 5 cm.",
+      "answer": "Divide quadrilateral ABCD into two triangles along diagonal AC: &Delta;ABC and &Delta;ACD.<br><br>1. In &Delta;ABC: Sides are AB = 3 cm, BC = 4 cm, AC = 5 cm.<br>Notice: 3<sup>2</sup> + 4<sup>2</sup> = 9 + 16 = 25 = 5<sup>2</sup> &rArr; &Delta;ABC is a right triangle at B.<br>Area(&Delta;ABC) = (1/2) &times; base &times; height = (1/2) &times; 3 &times; 4 = <strong>6 cm<sup>2</sup></strong>.<br><br>2. In &Delta;ACD: Sides are AC = 5 cm, CD = 4 cm, DA = 5 cm.<br>Semi-perimeter s = (5 + 4 + 5)/2 = 14/2 = 7 cm.<br>Area(&Delta;ACD) = &radic;[s(s - a)(s - b)(s - c)] = &radic;[7(7 - 5)(7 - 4)(7 - 5)]<br>= &radic;[7 &times; 2 &times; 3 &times; 2] = &radic;[4 &times; 21] = 2&radic;21 cm<sup>2</sup>.<br>Since &radic;21 &asymp; 4.583, Area(&Delta;ACD) &asymp; 2 &times; 4.583 &asymp; <strong>9.17 cm<sup>2</sup></strong>.<br><br>3. Total Area of quadrilateral ABCD = Area(&Delta;ABC) + Area(&Delta;ACD)<br>= 6 + 2&radic;21 &asymp; 6 + 9.17 = <strong>15.17 cm<sup>2</sup></strong>.",
+      "markingScheme": "• Proving &Delta;ABC is right-angled and finding Area = 6 cm<sup>2</sup>: 2 marks<br>• Finding Area(&Delta;ACD) = 2&radic;21 cm<sup>2</sup> (&asymp; 9.17 cm<sup>2</sup>) via Heron's: 2 marks<br>• Adding areas to obtain 6 + 2&radic;21 cm<sup>2</sup> (approx 15.17 cm<sup>2</sup>): 1 mark",
+      "examinerTip": "Direct NCERT textbook core problem."
+    },
+    {
+      "section": "D",
+      "marks": 5,
+      "qNo": 35,
+      "type": "LA",
+      "prompt": "If both (x - 2) and (x - 1/2) are factors of px<sup>2</sup> + 5x + r, prove that p = r. Also find the values of p and r.",
+      "answer": "Let f(x) = px<sup>2</sup> + 5x + r.<br><br>1. Since (x - 2) is a factor, f(2) = 0:<br>p(2)<sup>2</sup> + 5(2) + r = 0<br>4p + 10 + r = 0 &rArr; <strong>4p + r = -10</strong>  --- (1)<br><br>2. Since (x - 1/2) is a factor, f(1/2) = 0:<br>p(1/2)<sup>2</sup> + 5(1/2) + r = 0<br>p/4 + 5/2 + r = 0<br>Multiply by 4:<br>p + 10 + 4r = 0 &rArr; <strong>p + 4r = -10</strong>  --- (2)<br><br>3. Equating (1) and (2):<br>4p + r = p + 4r<br>4p - p = 4r - r<br>3p = 3r &rArr; <strong>p = r</strong>. (Hence Proved).<br><br>4. Substitute p = r into (1):<br>4p + p = -10 &rArr; 5p = -10 &rArr; <strong>p = -2</strong>.<br>Since p = r, <strong>r = -2</strong>.",
+      "markingScheme": "• Setting up f(2) = 0 &rArr; 4p + r = -10: 1.5 marks<br>• Setting up f(1/2) = 0 &rArr; p + 4r = -10: 1.5 marks<br>• Equating to prove p = r: 1 mark<br>• Solving p = -2, r = -2: 1 mark",
+      "examinerTip": "High-frequency CBSE board exam question."
+    },
+    {
+      "section": "E",
+      "marks": 4,
+      "qNo": 36,
+      "type": "Case-Based",
+      "prompt": "A highway authority constructed an overpass with triangular side support panels. The dimensions of one triangular concrete wall are 13 m, 14 m, and 15 m. A commercial advertising agency rented the wall surface at ₹ 5,000 per m<sup>2</sup> per annum.<br><br><strong>Questions:</strong><br>(i) What is the semi-perimeter of the triangular wall? (1m)<br>(ii) Find the surface area of the wall using Heron's formula. (2m)<br>(iii) Calculate the rental revenue generated if the agency rents the wall for 6 months. (1m)",
+      "answer": "(i) s = (13 + 14 + 15)/2 = 42/2 = <strong>21 m</strong>.<br><br>(ii) Area = &radic;[21(21 - 13)(21 - 14)(21 - 15)] = &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (2<sup>3</sup>) &times; 7 &times; (2 &times; 3)] = &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>4</sup>] = 7 &times; 3 &times; 4 = <strong>84 m<sup>2</sup></strong>.<br><br>(iii) Annual rent = 84 &times; ₹ 5,000 = ₹ 4,20,000.<br>Rent for 6 months = ₹ 4,20,000 &times; (6/12) = <strong>₹ 2,10,000</strong>.",
+      "markingScheme": "• (i) s = 21 m: 1 mark<br>• (ii) Area = 84 m<sup>2</sup> via Heron's: 2 marks<br>• (iii) Revenue for 6 months = ₹ 2,10,000: 1 mark",
+      "examinerTip": "Directly adapted from School Exam PA-2 Q27."
+    },
+    {
+      "section": "E",
+      "marks": 4,
+      "qNo": 37,
+      "type": "Case-Based",
+      "prompt": "During a geometry lab activity, students plotted three points representing landmark trees on an aerial survey grid: P(2, 3), Q(-2, 3), and R(0, -1).<br><br><strong>Questions:</strong><br>(i) Name the quadrants in which points P and Q lie. (1m)<br>(ii) On which axis does point R lie? (1m)<br>(iii) Calculate the length of segment PQ and find the area of &Delta;PQR. (2m)",
+      "answer": "(i) P(2, 3) lies in <strong>Quadrant I</strong> (+, +). Q(-2, 3) lies in <strong>Quadrant II</strong> (-, +).<br><br>(ii) Point R(0, -1) has abscissa x = 0, so it lies on the <strong>negative y-axis</strong>.<br><br>(iii) Line segment PQ is horizontal along y = 3.<br>Length PQ = |2 - (-2)| = 2 + 2 = <strong>4 units</strong>.<br>The altitude of &Delta;PQR is the vertical distance from horizontal line y = 3 down to point R(0, -1):<br>Height h = 3 - (-1) = 4 units.<br>Area(&Delta;PQR) = (1/2) &times; base &times; height = (1/2) &times; 4 &times; 4 = <strong>8 sq. units</strong>.",
+      "markingScheme": "• (i) Quadrants I and II: 1 mark<br>• (ii) Negative y-axis: 1 mark<br>• (iii) PQ = 4 units (1 mark) and Area = 8 sq. units (1 mark): 2 marks",
+      "examinerTip": "Notice that base PQ is horizontal, making height direct vertical subtraction."
+    },
+    {
+      "section": "E",
+      "marks": 4,
+      "qNo": 38,
+      "type": "Case-Based",
+      "prompt": "A science student measures the decay rates of radioactive isotopes in an experiment where decay fractions follow geometric exponent rules:<br>• The initial mass ratio is modeled as M = (1/2)<sup>-3</sup> &times; (1/4)<sup>2</sup>.<br><br><strong>Questions:</strong><br>(i) Express (1/2)<sup>-3</sup> as a simple integer. (1m)<br>(ii) Evaluate the mass ratio M in fractional form. (1m)<br>(iii) If the ratio after time t is given by R(t) = (8)<sup>t/3</sup> &times; (16)<sup>-t/4</sup>, simplify R(t) into a single power of 2 and find its value when t = 2. (2m)",
+      "answer": "(i) (1/2)<sup>-3</sup> = 2<sup>3</sup> = <strong>8</strong>.<br><br>(ii) M = 8 &times; (1/4)<sup>2</sup> = 8 &times; (1/16) = 8/16 = <strong>1/2</strong>.<br><br>(iii) Write 8 and 16 as powers of 2:<br>8 = 2<sup>3</sup> &rArr; (8)<sup>t/3</sup> = (2<sup>3</sup>)<sup>t/3</sup> = 2<sup>t</sup>.<br>16 = 2<sup>4</sup> &rArr; (16)<sup>-t/4</sup> = (2<sup>4</sup>)<sup>-t/4</sup> = 2<sup>-t</sup>.<br>R(t) = 2<sup>t</sup> &times; 2<sup>-t</sup> = 2<sup>t - t</sup> = 2<sup>0</sup> = <strong>1</strong>.<br>For any t (including t = 2), <strong>R(2) = 1</strong>.",
+      "markingScheme": "• (i) 8: 1 mark<br>• (ii) M = 1/2: 1 mark<br>• (iii) Simplifying to 2<sup>0</sup> = 1: 2 marks",
+      "examinerTip": "Laws of exponents: 2^t &times; 2^(-t) = 2^0 = 1 for all t."
+    }
+  ]
+}

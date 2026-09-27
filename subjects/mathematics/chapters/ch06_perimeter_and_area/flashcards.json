@@ -1,0 +1,44 @@
+[
+  {
+    "id": "iemh106_fc1",
+    "tag": "Formula",
+    "front": "State <strong>Heron's Formula</strong> for the area of a triangle with sides <span class=\"math\">a, b, c</span>.",
+    "back": "<strong><span class=\"math\">Area = &radic;[s(s - a)(s - b)(s - c)]</span></strong><br>where <span class=\"math\">s = (a + b + c) / 2</span> is the semi-perimeter.",
+    "note": "Derived by Hero of Alexandria (~60 CE). Applicable to any arbitrary triangle."
+  },
+  {
+    "id": "iemh106_fc2",
+    "tag": "Equilateral Triangle",
+    "front": "What is the formula for the area of an <strong>equilateral triangle</strong> of side length <span class=\"math\">a</span>?",
+    "back": "<strong><span class=\"math\">Area = (&radic;3 / 4) a<sup>2</sup></span></strong>",
+    "note": "Can be derived directly from Heron's formula by setting a = b = c."
+  },
+  {
+    "id": "iemh106_fc3",
+    "tag": "Calculation Shortcut",
+    "front": "What is the smartest way to calculate <span class=\"math\">&radic;[s(s - a)(s - b)(s - c)]</span> without getting bogged down by huge numbers?",
+    "back": "<strong>Do NOT multiply the numbers inside the radical!</strong><br>Break s, (s-a), (s-b), and (s-c) into their <em>prime factors</em>, group like factors in pairs, and take one factor out for each pair.",
+    "note": "Prevents arithmetic errors on multi-digit square roots."
+  },
+  {
+    "id": "iemh106_fc4",
+    "tag": "Flyover Problem",
+    "front": "What is the area of a triangle with sides <span class=\"math\">13 m, 14 m, 15 m</span>?",
+    "back": "1. s = (13 + 14 + 15)/2 = 21 m.<br>2. Factors: s = 21, (s-a) = 8, (s-b) = 7, (s-c) = 6.<br>3. Area = &radic;(21 &times; 8 &times; 7 &times; 6) = &radic;(7 &times; 3 &times; 2<sup>3</sup> &times; 7 &times; 2 &times; 3)<br>= 7 &times; 3 &times; 2<sup>2</sup> = <strong>84 m<sup>2</sup></strong>.",
+    "note": "From School Exam PA-2 Section C (Question 27)."
+  },
+  {
+    "id": "iemh106_fc5",
+    "tag": "Ratio Problem",
+    "front": "The perimeter of a triangular park is <span class=\"math\">540 m</span> and its sides are in the ratio <span class=\"math\">25 : 17 : 12</span>. Find its area.",
+    "back": "Let sides be 25x, 17x, 12x.<br>25x + 17x + 12x = 54x = 540 &rArr; x = 10.<br>Sides are: a = 250 m, b = 170 m, c = 120 m; s = 270 m.<br>Area = &radic;(270 &times; 20 &times; 100 &times; 150) = <strong>9000 m<sup>2</sup></strong>.",
+    "note": "Classic CBSE NCERT benchmark problem."
+  },
+  {
+    "id": "iemh106_fc6",
+    "tag": "Quadrilateral Strategy",
+    "front": "How do you find the area of a general quadrilateral <span class=\"math\">ABCD</span> when given all 4 sides and one diagonal <span class=\"math\">AC</span>?",
+    "back": "Divide ABCD along diagonal AC into two triangles: <strong>&Delta;ABC</strong> and <strong>&Delta;ACD</strong>.<br>Compute Area(&Delta;ABC) and Area(&Delta;ACD) separately using Heron's formula, then add them: <br><strong>Area(ABCD) = Area(&Delta;ABC) + Area(&Delta;ACD)</strong>.",
+    "note": "Used in land surveying and town-planning case studies."
+  }
+]

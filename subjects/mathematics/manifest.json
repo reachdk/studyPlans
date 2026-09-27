@@ -1,0 +1,48 @@
+{
+  "id": "math",
+  "title": "Class 9 Mathematics — Interactive Study Portal",
+  "subjectName": "Mathematics",
+  "grade": "Class 9",
+  "badge": "CLASS 9 MATH",
+  "subtitle": "NCERT Ganita Manjari • CBSE Exam Preparation",
+  "categories": [
+    {
+      "id": "num",
+      "name": "Number Systems",
+      "color": "#0284c7",
+      "light": "#f0f9ff",
+      "colorDark": "#38bdf8",
+      "lightDark": "#0c4a6e"
+    },
+    {
+      "id": "alg",
+      "name": "Algebra",
+      "color": "#7c3aed",
+      "light": "#f5f3ff",
+      "colorDark": "#a78bfa",
+      "lightDark": "#3b0764"
+    },
+    {
+      "id": "geom",
+      "name": "Geometry & Mensuration",
+      "color": "#16a34a",
+      "light": "#f0fdf4",
+      "colorDark": "#4ade80",
+      "lightDark": "#052e16"
+    }
+  ],
+  "defaultActiveScope": [
+    "iemh101",
+    "iemh102",
+    "iemh103",
+    "iemh104",
+    "iemh106"
+  ],
+  "chapters": [
+    { "folder": "ch01_coordinates" },
+    { "folder": "ch02_linear_polynomials" },
+    { "folder": "ch03_world_of_numbers" },
+    { "folder": "ch04_algebraic_identities" },
+    { "folder": "ch06_perimeter_and_area" }
+  ]
+}

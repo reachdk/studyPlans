@@ -1,0 +1,68 @@
+[
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The point whose ordinate is 4 and which lies on the y-axis is:",
+    "options": [
+      "(a) (4, 0)",
+      "(b) (0, 4)",
+      "(c) (1, 4)",
+      "(d) (4, 2)"
+    ],
+    "answer": "<strong>(b) (0, 4)</strong>",
+    "markingScheme": "• Point lies on the y-axis &rArr; abscissa x = 0 [0.5 mark]<br>• Ordinate y = 4 &rArr; coordinates are (0, 4) [0.5 mark]",
+    "examinerTip": "Common trap: Don't confuse (4, 0) which is on the x-axis with (0, 4) which is on the y-axis."
+  },
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "If the coordinates of two points are P(-2, 3) and Q(-3, 5), then (abscissa of P) - (abscissa of Q) is:",
+    "options": [
+      "(a) -5",
+      "(b) 1",
+      "(c) -1",
+      "(d) -2"
+    ],
+    "answer": "<strong>(b) 1</strong>",
+    "markingScheme": "• Abscissa of P = -2 [0.5 mark]<br>• Abscissa of Q = -3 &rArr; (-2) - (-3) = -2 + 3 = 1 [0.5 mark]",
+    "examinerTip": "Be extremely vigilant with negative signs: (-2) - (-3) = +1."
+  },
+  {
+    "type": "Assertion-Reason",
+    "marks": 1,
+    "prompt": "<strong>Assertion (A):</strong> The point (-a, 0) lies on the x-axis, and (0, b) lies on the y-axis.<br><strong>Reason (R):</strong> Every point on the x-axis has a perpendicular distance of 0 from the x-axis, and every point on the y-axis has a perpendicular distance of 0 from the y-axis.",
+    "options": [
+      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+      "(c) (A) is true but (R) is false.",
+      "(d) (A) is false but (R) is true."
+    ],
+    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+    "markingScheme": "• Identifying that ordinate is 0 on x-axis and abscissa is 0 on y-axis [0.5 mark]<br>• Recognizing that distance from an axis equals the respective coordinate, so distance 0 implies lying on that axis [0.5 mark]",
+    "examinerTip": "Direct question from PA-2 Class 9 CBSE examination paper."
+  },
+  {
+    "type": "Short Answer (2m)",
+    "marks": 2,
+    "prompt": "Write the quadrant or axis on which each of the following points lie: <br>(i) A(-3, 5) <br>(ii) B(4, -1) <br>(iii) C(0, -6) <br>(iv) D(-2, -7)",
+    "answer": "• A(-3, 5): <strong>Quadrant II</strong> (x < 0, y > 0)<br>• B(4, -1): <strong>Quadrant IV</strong> (x > 0, y < 0)<br>• C(0, -6): <strong>Negative y-axis</strong> (lies on axis, not in any quadrant)<br>• D(-2, -7): <strong>Quadrant III</strong> (x < 0, y < 0)",
+    "markingScheme": "• 0.5 mark for each correct identification.<br>• Specifying negative y-axis for C(0, -6): 0.5 mark.",
+    "examinerTip": "Never write that (0, -6) lies in Quadrant III or IV. It lies strictly ON the y-axis."
+  },
+  {
+    "type": "Short Answer (3m)",
+    "marks": 3,
+    "prompt": "P(3, 2) and Q(7, 7) are two points in a Cartesian plane. Perpendiculars are drawn from P and Q to the x-axis meeting at L and M respectively.<br>(i) Find the coordinates of L and M.<br>(ii) Find the length of the segment LM.<br>(iii) What are the perpendicular distances of P and Q from the y-axis?",
+    "answer": "(i) Perpendicular from P(3, 2) to x-axis meets at <strong>L(3, 0)</strong>. Perpendicular from Q(7, 7) to x-axis meets at <strong>M(7, 0)</strong>.<br>(ii) Length of segment LM = |x_2 - x_1| = |7 - 3| = <strong>4 units</strong>.<br>(iii) Perpendicular distance of P from y-axis = |3| = <strong>3 units</strong>; for Q = |7| = <strong>7 units</strong>.",
+    "markingScheme": "• Coordinates of L(3, 0) and M(7, 0): 1 mark (0.5 mark each)<br>• Calculation of length LM = 7 - 3 = 4 units: 1 mark<br>• Perpendicular distances from y-axis (3 and 7 units): 1 mark (0.5 mark each)",
+    "examinerTip": "From school exam PA-2 Q29. Always state units for lengths and distances."
+  },
+  {
+    "type": "Case-Based Study (4m)",
+    "marks": 4,
+    "prompt": "A city planning department uses a Cartesian coordinate grid to map local public utilities, taking City Hall as the origin O(0, 0). 1 unit on the grid represents 500 meters.<br>• The Central Hospital is located at H(4, 3).<br>• The Fire Station is at F(-2, 3).<br>• The Police Station is at P(-2, -5).<br>• The Metro Hub is at M(4, -5).<br><br><strong>Questions:</strong><br>(i) In which quadrants do Central Hospital and Police Station lie? (1m)<br>(ii) What is the shape of quadrilateral HFPM formed by joining the four utilities in order? (1m)<br>(iii) Calculate the perimeter of quadrilateral HFPM on the grid and find the actual physical distance in kilometers. (2m)",
+    "answer": "(i) Central Hospital H(4, 3) lies in <strong>Quadrant I</strong> (+, +). Police Station P(-2, -5) lies in <strong>Quadrant III</strong> (-, -).<br><br>(ii) Line HF is horizontal: length = 4 - (-2) = 6 units.<br>Line FM is vertical: F(-2, 3) to P(-2, -5) has length = 3 - (-5) = 8 units.<br>Line PM is horizontal: length = 4 - (-2) = 6 units.<br>Line MH is vertical: length = 3 - (-5) = 8 units.<br>Opposite sides are equal and adjacent sides are perpendicular &rArr; HFPM is a <strong>Rectangle</strong>.<br><br>(iii) Perimeter on grid = 2 &times; (Length + Breadth) = 2 &times; (6 + 8) = <strong>28 units</strong>.<br>Actual distance = 28 &times; 500 m = 14,000 m = <strong>14 km</strong>.",
+    "markingScheme": "• (i) 0.5 mark for Quadrant I + 0.5 mark for Quadrant III = 1 mark<br>• (ii) Proving opposite sides equal and perpendicular angles &rArr; Rectangle: 1 mark<br>• (iii) Grid perimeter = 28 units: 1 mark; Conversion to km (14 km): 1 mark",
+    "examinerTip": "In case-based coordinate geometry questions, always check if horizontal and vertical segments allow direct distance subtraction (|x_2 - x_1| or |y_2 - y_1|)."
+  }
+]

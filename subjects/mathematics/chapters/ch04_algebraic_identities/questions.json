@@ -1,0 +1,68 @@
+[
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "If x + y + z = 0, then the value of x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> is equal to:",
+    "options": [
+      "(a) 0",
+      "(b) 3xyz",
+      "(c) -3xyz",
+      "(d) xyz"
+    ],
+    "answer": "<strong>(b) 3xyz</strong>",
+    "markingScheme": "• Recall identity: x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - xy - yz - zx) [0.5 mark]<br>• Since (x + y + z) = 0, RHS = 0 &rArr; x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz [0.5 mark]",
+    "examinerTip": "Direct conditional identity. Crucial for fast mental arithmetic."
+  },
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The value of 104 &times; 96 evaluated using algebraic identities is:",
+    "options": [
+      "(a) 9984",
+      "(b) 9884",
+      "(c) 9994",
+      "(d) 10084"
+    ],
+    "answer": "<strong>(a) 9984</strong>",
+    "markingScheme": "• Express as (100 + 4)(100 - 4) = 100<sup>2</sup> - 4<sup>2</sup> [0.5 mark]<br>• Compute: 10000 - 16 = 9984 [0.5 mark]",
+    "examinerTip": "Avoid direct column multiplication; CBSE marking schemes mandate using identity (a + b)(a - b) = a^2 - b^2."
+  },
+  {
+    "type": "Assertion-Reason",
+    "marks": 1,
+    "prompt": "<strong>Assertion (A):</strong> (2x + 5)<sup>3</sup> = 8x<sup>3</sup> + 60x<sup>2</sup> + 150x + 125.<br><strong>Reason (R):</strong> For all real numbers, (a + b)<sup>3</sup> = a<sup>3</sup> + 3a<sup>2</sup>b + 3ab<sup>2</sup> + b<sup>3</sup>.",
+    "options": [
+      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+      "(c) (A) is true but (R) is false.",
+      "(d) (A) is false but (R) is true."
+    ],
+    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+    "markingScheme": "• Apply identity with a = 2x, b = 5: (2x)<sup>3</sup> + 3(2x)<sup>2</sup>(5) + 3(2x)(5)<sup>2</sup> + 5<sup>3</sup> = 8x<sup>3</sup> + 60x<sup>2</sup> + 150x + 125 [0.5 mark]<br>• Confirm identity statement in (R) correctly explains (A) [0.5 mark]",
+    "examinerTip": "Check middle terms: 3(4x^2)(5) = 60x^2 and 3(2x)(25) = 150x."
+  },
+  {
+    "type": "Short Answer (2m)",
+    "marks": 2,
+    "prompt": "Without actually calculating the cubes, find the value of:<br>(-12)<sup>3</sup> + 7<sup>3</sup> + 5<sup>3</sup>.",
+    "answer": "Let x = -12, y = 7, z = 5.<br>Check the sum:<br>x + y + z = -12 + 7 + 5 = 0.<br><br>Since x + y + z = 0, we use the conditional identity:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz<br>(-12)<sup>3</sup> + 7<sup>3</sup> + 5<sup>3</sup> = 3 &times; (-12) &times; 7 &times; 5<br>= -36 &times; 35 = <strong>-1260</strong>.",
+    "markingScheme": "• Stating x + y + z = 0 and writing identity x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz: 1 mark<br>• Calculating 3(-12)(7)(5) = -1260: 1 mark",
+    "examinerTip": "Always verify that x + y + z = 0 explicitly in your written steps."
+  },
+  {
+    "type": "Short Answer (3m)",
+    "marks": 3,
+    "prompt": "If 2x + 3y = 13 and xy = 6, find the value of 8x<sup>3</sup> + 27y<sup>3</sup>.",
+    "answer": "We know that 8x<sup>3</sup> = (2x)<sup>3</sup> and 27y<sup>3</sup> = (3y)<sup>3</sup>.<br>Cubing both sides of 2x + 3y = 13:<br>(2x + 3y)<sup>3</sup> = 13<sup>3</sup><br><br>Using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(2x)<sup>3</sup> + (3y)<sup>3</sup> + 3(2x)(3y)(2x + 3y) = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> + 18(xy)(2x + 3y) = 2197<br><br>Substitute xy = 6 and 2x + 3y = 13:<br>8x<sup>3</sup> + 27y<sup>3</sup> + 18(6)(13) = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> + 1404 = 2197<br>8x<sup>3</sup> + 27y<sup>3</sup> = 2197 - 1404 = <strong>793</strong>.",
+    "markingScheme": "• Cubing both sides and writing identity (2x)<sup>3</sup> + (3y)<sup>3</sup> + 18xy(2x + 3y) = 2197: 1 mark<br>• Correct substitution of xy = 6 and (2x + 3y) = 13 to obtain 18(6)(13) = 1404: 1 mark<br>• Final subtraction 2197 - 1404 = 793: 1 mark",
+    "examinerTip": "Direct question from School Exam PA-2 Section C (Question 30). 13^3 = 2197."
+  },
+  {
+    "type": "Long Answer (5m)",
+    "marks": 5,
+    "prompt": "(i) Expand (2x - y + 3z)<sup>2</sup> using standard identity. (2m)<br>(ii) Factorize: 27x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 9xyz. (2m)<br>(iii) If a + b + c = 9 and ab + bc + ca = 26, find the value of a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>. (1m)",
+    "answer": "(i) Using (A + B + C)<sup>2</sup> = A<sup>2</sup> + B<sup>2</sup> + C<sup>2</sup> + 2AB + 2BC + 2CA:<br>Here A = 2x, B = -y, C = 3z.<br>(2x - y + 3z)<sup>2</sup> = (2x)<sup>2</sup> + (-y)<sup>2</sup> + (3z)<sup>2</sup> + 2(2x)(-y) + 2(-y)(3z) + 2(3z)(2x)<br>= <strong>4x<sup>2</sup> + y<sup>2</sup> + 9z<sup>2</sup> - 4xy - 6yz + 12zx</strong>.<br><br>(ii) 27x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 9xyz = (3x)<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(3x)(y)(z)<br>Using identity a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca):<br>= <strong>(3x + y + z)(9x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - 3xy - yz - 3zx)</strong>.<br><br>(iii) (a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)<br>9<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(26)<br>81 = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 52<br>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 81 - 52 = <strong>29</strong>.",
+    "markingScheme": "• (i) Correct expansion with accurate negative signs: 2 marks<br>• (ii) Identifying (3x)<sup>3</sup> and applying factor identity: 2 marks<br>• (iii) Correct formula and calculation to obtain 29: 1 mark",
+    "examinerTip": "In trinomial expansions, students often write (-y)^2 as -y^2. Remember that any real term squared is always positive: (-y)^2 = +y^2."
+  }
+]

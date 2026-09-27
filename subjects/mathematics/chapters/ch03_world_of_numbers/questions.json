@@ -1,0 +1,68 @@
+[
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The value of (3/8)<sup>-2</sup> is:",
+    "options": [
+      "(a) 9/64",
+      "(b) 64/9",
+      "(c) -9/64",
+      "(d) 81/16"
+    ],
+    "answer": "<strong>(b) 64/9</strong>",
+    "markingScheme": "• Apply (a/b)<sup>-n</sup> = (b/a)<sup>n</sup> &rArr; (8/3)<sup>2</sup> [0.5 mark]<br>• Compute: 8<sup>2</sup> / 3<sup>2</sup> = 64/9 [0.5 mark]",
+    "examinerTip": "Direct question from PA-2 Class 9 CBSE Mathematics Paper (Question 17)."
+  },
+  {
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "The simplified form of (1/3)<sup>1/5</sup> &divide; (1/3)<sup>1/3</sup> is:",
+    "options": [
+      "(a) (1/3)<sup>2/15</sup>",
+      "(b) (1/3)<sup>8/15</sup>",
+      "(c) (1/3)<sup>-1/15</sup>",
+      "(d) (1/3)<sup>-2/15</sup>"
+    ],
+    "answer": "<strong>(d) (1/3)<sup>-2/15</sup></strong>",
+    "markingScheme": "• Apply quotient law: a<sup>m</sup> &divide; a<sup>n</sup> = a<sup>m - n</sup> [0.5 mark]<br>• Exponent = 1/5 - 1/3 = (3 - 5)/15 = -2/15 &rArr; (1/3)<sup>-2/15</sup> [0.5 mark]",
+    "examinerTip": "From PA-2 Exam Q18. Note that (1/3)<sup>-2/15</sup> is equal to 3<sup>2/15</sup>."
+  },
+  {
+    "type": "Assertion-Reason",
+    "marks": 1,
+    "prompt": "<strong>Assertion (A):</strong> Every integer is a rational number.<br><strong>Reason (R):</strong> Every integer m can be expressed in the form m/1, where m and 1 are integers and 1 &ne; 0.",
+    "options": [
+      "(a) Both (A) and (R) are true and (R) is the correct explanation of (A).",
+      "(b) Both (A) and (R) are true but (R) is NOT the correct explanation of (A).",
+      "(c) (A) is true but (R) is false.",
+      "(d) (A) is false but (R) is true."
+    ],
+    "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
+    "markingScheme": "• Confirming that any integer m = m/1 satisfies definition of rational number [1 mark]",
+    "examinerTip": "Standard CBSE theoretical question."
+  },
+  {
+    "type": "Short Answer (2m)",
+    "marks": 2,
+    "prompt": "Express 0.4777... = 0.47&#773; in the form p/q, where p and q are integers and q &ne; 0.",
+    "answer": "Let x = 0.4777...  --- (1)<br>Multiply by 10 (to bring non-repeating digit before decimal):<br>10x = 4.777...  --- (2)<br>Multiply (2) by 10 (since 1 digit repeats):<br>100x = 47.777... --- (3)<br>Subtract (2) from (3):<br>100x - 10x = 47.777... - 4.777...<br>90x = 43 &rArr; <strong>x = 43/90</strong>.",
+    "markingScheme": "• Setting up equations 10x = 4.777... and 100x = 47.777...: 1 mark<br>• Subtracting and simplifying to 43/90: 1 mark",
+    "examinerTip": "Always ensure the repeating block matches after the decimal point before subtracting."
+  },
+  {
+    "type": "Short Answer (3m)",
+    "marks": 3,
+    "prompt": "Find the values of rational numbers a and b if:<br>(7 + 3&radic;5) / (7 - 3&radic;5) = a + b&radic;5.",
+    "answer": "Rationalize the denominator by multiplying by conjugate (7 + 3&radic;5):<br>LHS = [(7 + 3&radic;5)(7 + 3&radic;5)] / [(7 - 3&radic;5)(7 + 3&radic;5)]<br>Numerator = 7<sup>2</sup> + 2(7)(3&radic;5) + (3&radic;5)<sup>2</sup> = 49 + 42&radic;5 + 9(5) = 49 + 42&radic;5 + 45 = 94 + 42&radic;5.<br>Denominator = 7<sup>2</sup> - (3&radic;5)<sup>2</sup> = 49 - 9(5) = 49 - 45 = 4.<br>LHS = (94 + 42&radic;5) / 4 = 94/4 + (42/4)&radic;5 = 47/2 + (21/2)&radic;5.<br><br>Comparing with a + b&radic;5:<br><strong>a = 47/2</strong> and <strong>b = 21/2</strong>.",
+    "markingScheme": "• Multiplying by conjugate (7 + 3&radic;5): 1 mark<br>• Correct simplification of numerator (94 + 42&radic;5) and denominator (4): 1 mark<br>• Equating rational and irrational parts to get a = 47/2 and b = 21/2: 1 mark",
+    "examinerTip": "Do not leave fractions unreduced. 94/4 simplifies to 47/2."
+  },
+  {
+    "type": "Case-Based Study (4m)",
+    "marks": 4,
+    "prompt": "In an official statistical survey of public vaccination coverage across 7 targeted administrative zones, health officials analyzed fractions of population vaccinated:<br>• The fraction of zones where vaccination reached 100% was recorded as 1/7.<br>• By long division, the decimal expansion of 1/7 is found to be 0.142857&#773;.<br><br><strong>Questions:</strong><br>(i) What type of decimal expansion does 1/7 represent? (1m)<br>(ii) Without doing actual long division, determine the decimal expansion of 6/7. Explain the method used. (2m)<br>(iii) Is 0.142857&#773; a rational or irrational number? Justify your answer. (1m)",
+    "answer": "(i) 1/7 has a <strong>non-terminating recurring (repeating)</strong> decimal expansion, with a repeating block of 6 digits.<br><br>(ii) To find 6/7 without long division:<br>6/7 = 6 &times; (1/7) = 6 &times; 0.142857&#773;.<br>Multiplying the cyclic sequence by 6:<br>142857 &times; 6 = 857142.<br>Therefore, 6/7 = <strong>0.857142&#773;</strong>.<br><br>(iii) It is a <strong>rational number</strong> because its decimal expansion is recurring (repeating), and any non-terminating recurring decimal can be expressed in the form p/q where p, q are integers and q &ne; 0 (here p=1, q=7).",
+    "markingScheme": "• (i) Stating non-terminating recurring: 1 mark<br>• (ii) Showing multiplication 6 &times; 0.142857&#773; = 0.857142&#773; with justification: 2 marks<br>• (iii) Rational number with proper definition justification: 1 mark",
+    "examinerTip": "Direct question from School PA-2 Exam Case Study (Question 38)."
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "iemh101_fc1",
+    "tag": "Definition",
+    "front": "What is the difference between the <strong>abscissa</strong> and the <strong>ordinate</strong> of a point <span class=\"math-coord\">(x, y)</span>?",
+    "back": "• <strong>Abscissa (x):</strong> Perpendicular distance of the point from the y-axis (measured along the x-axis).<br>• <strong>Ordinate (y):</strong> Perpendicular distance of the point from the x-axis (measured along the y-axis).",
+    "note": "Exam tip: Remember alphabetical order: (Abscissa, Ordinate) corresponds to (x, y)."
+  },
+  {
+    "id": "iemh101_fc2",
+    "tag": "Axes Properties",
+    "front": "What are the coordinates of the <strong>Origin</strong>, and what are the general forms of points on the x-axis and y-axis?",
+    "back": "• <strong>Origin:</strong> <span class=\"math-coord\">O(0, 0)</span>.<br>• <strong>Point on x-axis:</strong> <span class=\"math-coord\">(x, 0)</span> (ordinate is always 0).<br>• <strong>Point on y-axis:</strong> <span class=\"math-coord\">(0, y)</span> (abscissa is always 0).",
+    "note": "Points lying directly on the coordinate axes do NOT belong to any quadrant!"
+  },
+  {
+    "id": "iemh101_fc3",
+    "tag": "Quadrant Signs",
+    "front": "State the sign signs <span class=\"math-coord\">(x, y)</span> for points in Quadrants I, II, III, and IV.",
+    "back": "• <strong>Quadrant I:</strong> <span class=\"math-coord\">(+, +)</span><br>• <strong>Quadrant II:</strong> <span class=\"math-coord\">(-, +)</span><br>• <strong>Quadrant III:</strong> <span class=\"math-coord\">(-, -)</span><br>• <strong>Quadrant IV:</strong> <span class=\"math-coord\">(+, -)</span>",
+    "note": "Numbered counter-clockwise starting from the top-right quadrant."
+  },
+  {
+    "id": "iemh101_fc4",
+    "tag": "Distance from Axes",
+    "front": "What is the perpendicular distance of the point <span class=\"math-coord\">P(-5, 7)</span> from: <br>(i) the x-axis, and (ii) the y-axis?",
+    "back": "• Distance from <strong>x-axis</strong> = |y| = |7| = <strong>7 units</strong>.<br>• Distance from <strong>y-axis</strong> = |x| = |-5| = <strong>5 units</strong>.",
+    "note": "Distance is always a non-negative scalar quantity!"
+  },
+  {
+    "id": "iemh101_fc5",
+    "tag": "Projections",
+    "front": "If perpendiculars are drawn from <span class=\"math-coord\">P(3, 2)</span> and <span class=\"math-coord\">Q(7, 7)</span> to the x-axis meeting at L and M, what are their coordinates and the length LM?",
+    "back": "• <strong>L:</strong> <span class=\"math-coord\">(3, 0)</span><br>• <strong>M:</strong> <span class=\"math-coord\">(7, 0)</span><br>• <strong>Length LM:</strong> |7 - 3| = <strong>4 units</strong>.",
+    "note": "Direct question from Class 9 PA-2 Periodic Assessment Exam."
+  },
+  {
+    "id": "iemh101_fc6",
+    "tag": "Concept Check",
+    "front": "Can the points <span class=\"math-coord\">(3, -4)</span> and <span class=\"math-coord\">(-4, 3)</span> represent the same point on a Cartesian plane?",
+    "back": "<strong>No!</strong> An ordered pair depends strictly on order. (3, -4) lies in <strong>Quadrant IV</strong>, whereas (-4, 3) lies in <strong>Quadrant II</strong>.",
+    "note": "(a, b) = (b, a) if and only if a = b."
+  }
+]
