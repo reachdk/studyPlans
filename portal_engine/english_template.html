@@ -155,6 +155,12 @@
       color: white;
     }
 
+    .btn-sm {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+      border-radius: 6px;
+    }
+
     .theme-toggle {
       background: none;
       border: 1px solid var(--border);
@@ -250,27 +256,149 @@
 
     .scope-chips {
       display: flex;
-      gap: 8px;
+      gap: 10px;
       flex-wrap: wrap;
+      align-items: center;
     }
 
     .chip {
       display: inline-flex;
       align-items: center;
-      gap: 5px;
-      padding: 5px 12px;
-      border-radius: 16px;
-      font-size: 0.8rem;
+      gap: 6px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.82rem;
       font-weight: 600;
+      font-family: inherit;
       background: var(--card-bg);
       border: 1px solid var(--border);
       color: var(--text);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+      user-select: none;
+      outline: none;
+    }
+
+    .chip .chip-arrow {
+      font-size: 0.85rem;
+      opacity: 0.6;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .chip:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--card-bg);
+    }
+
+    .chip:hover .chip-arrow {
+      opacity: 1;
+      transform: translateX(2px);
+    }
+
+    .chip:active {
+      transform: translateY(0);
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    }
+
+    .chip:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
     }
 
     .chip.highlight {
       background: var(--primary-light);
       color: var(--primary);
       border-color: var(--primary);
+      font-weight: 700;
+    }
+
+    .chip.highlight:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    .chip.highlight:hover .chip-arrow {
+      color: #ffffff;
+      opacity: 1;
+    }
+
+    /* Blueprint Modal Styles */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(4px);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      padding: 16px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 860px;
+      max-height: 90vh;
+      overflow-y: auto;
+      animation: modalSlideUp 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @keyframes modalSlideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .modal-header {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      background: var(--card-bg);
+      z-index: 2;
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-muted);
+      line-height: 1;
+      padding: 4px 8px;
+      border-radius: 6px;
+      transition: all 0.15s;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--bg);
+      color: var(--text);
     }
 
     /* Unit Selector Grid */
@@ -859,6 +987,9 @@
         <a href="index.html" class="btn" title="Back to Study Portals Home">
           <span>🏠 All Portals</span>
         </a>
+        <button type="button" class="btn" onclick="openBlueprintModal()" title="View 80-Mark Summative Blueprint">
+          <span>🎯 80M Blueprint</span>
+        </button>
         <a href="downloads/class-09/english/kaveri/iebe101--how-i-taught-my-grandmother-to-read.pdf" target="_blank" class="btn btn-primary" id="openPdfBtn" title="Open current unit NCERT Kaveri PDF">
           <span>📄 NCERT Kaveri PDF</span>
         </a>
@@ -895,11 +1026,26 @@
             prescribed writing layout blueprints, contextual editing drills, and authentic Reference to Context (RTC) exam questions.
           </p>
           <div class="scope-chips">
-            <span class="chip highlight">🎯 80-Mark Summative Blueprint</span>
-            <span class="chip">📖 Literature Companion (30M)</span>
-            <span class="chip">✍️ Writing Studio (20M)</span>
-            <span class="chip">⚖️ Editing & Grammar (10M)</span>
-            <span class="chip">🔍 Reading Skills (20M)</span>
+            <button type="button" class="chip highlight" onclick="openBlueprintModal()" title="Inspect 80-Mark Summative Blueprint & Section Weights">
+              <span>🎯 80-Mark Summative Blueprint</span>
+              <span class="chip-arrow">&rarr;</span>
+            </button>
+            <button type="button" class="chip" onclick="navigateToLiterature()" title="Jump to Unit Literature Companion (30 Marks)">
+              <span>📖 Literature Companion (30M)</span>
+              <span class="chip-arrow">&rarr;</span>
+            </button>
+            <button type="button" class="chip" onclick="switchMainView('writing')" title="Open Master Writing Skills Studio (20 Marks)">
+              <span>✍️ Writing Studio (20M)</span>
+              <span class="chip-arrow">&rarr;</span>
+            </button>
+            <button type="button" class="chip" onclick="switchMainView('grammar')" title="Open Applied Grammar Lab (10 Marks)">
+              <span>⚖️ Editing & Grammar (10M)</span>
+              <span class="chip-arrow">&rarr;</span>
+            </button>
+            <button type="button" class="chip" onclick="navigateToReading()" title="Jump to Mock Papers Section A: Reading Comprehension (20 Marks)">
+              <span>🔍 Reading Skills (20M)</span>
+              <span class="chip-arrow">&rarr;</span>
+            </button>
           </div>
         </div>
       </div>
@@ -1194,6 +1340,117 @@
 
   </div>
 
+  <!-- ========================================== -->
+  <!-- MODAL: 80-MARK SUMMATIVE BLUEPRINT (R1) -->
+  <!-- ========================================== -->
+  <div id="blueprintModal" class="modal-overlay" onclick="handleModalOverlayClick(event)">
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="blueprintModalTitle">
+      <div class="modal-header">
+        <div>
+          <div style="font-size: 0.75rem; font-weight: 700; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px;">CBSE Track R1 (Code 184)</div>
+          <h2 id="blueprintModalTitle" style="font-size: 1.35rem; font-weight: 800; margin: 2px 0 0 0;">🎯 80-Mark Summative Examination Blueprint</h2>
+        </div>
+        <button type="button" class="modal-close-btn" onclick="closeBlueprintModal()" aria-label="Close Blueprint Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
+          Prescribed in the official curriculum for Class 9 English Language & Literature (Track R1). 
+          The 80-mark annual summative assessment is divided into three core sections over a 3-hour duration:
+        </p>
+
+        <!-- Sectional Summary Grid -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin-bottom: 24px;">
+          <div style="background: var(--bg); border: 1px solid var(--border); border-left: 4px solid #0284c7; padding: 14px; border-radius: 8px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #0284c7; text-transform: uppercase;">Section A</div>
+            <div style="font-size: 1.15rem; font-weight: 800; margin: 4px 0;">Reading Skills</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">20 Marks (Q1 & Q2)</div>
+          </div>
+          <div style="background: var(--bg); border: 1px solid var(--border); border-left: 4px solid #d97706; padding: 14px; border-radius: 8px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #d97706; text-transform: uppercase;">Section B</div>
+            <div style="font-size: 1.15rem; font-weight: 800; margin: 4px 0;">Writing & Grammar</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">30 Marks (Grammar 10M + Writing 20M)</div>
+          </div>
+          <div style="background: var(--bg); border: 1px solid var(--border); border-left: 4px solid #16a34a; padding: 14px; border-radius: 8px;">
+            <div style="font-size: 0.75rem; font-weight: 700; color: #16a34a; text-transform: uppercase;">Section C</div>
+            <div style="font-size: 1.15rem; font-weight: 800; margin: 4px 0;">Language & Literature</div>
+            <div style="font-size: 0.85rem; color: var(--text-muted);">30 Marks (Q10 to Q13)</div>
+          </div>
+        </div>
+
+        <!-- Detailed Breakdown Table -->
+        <h3 style="font-size: 1.05rem; margin-bottom: 12px;">📋 Question-by-Question Sectional Architecture</h3>
+        <table class="custom-table" style="margin-bottom: 24px;">
+          <thead>
+            <tr>
+              <th>Section</th>
+              <th>Marks</th>
+              <th>Question Typology & Prescribed Scope</th>
+              <th>Quick Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Sec A: Reading</strong></td>
+              <td><span class="badge-r1">20 Marks</span></td>
+              <td>
+                • <strong>Q1:</strong> Discursive Passage (400–450 words) — 10M<br>
+                • <strong>Q2:</strong> Case-based Factual Passage (200–250 words with visual data) — 10M
+              </td>
+              <td>
+                <button type="button" class="btn btn-sm btn-primary" onclick="closeBlueprintModal(); navigateToReading();">Practice Reading &rarr;</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Sec B: Grammar</strong></td>
+              <td><span class="badge-r1">10 Marks</span></td>
+              <td>
+                • <strong>Q3:</strong> Editing / Omitting (4M MCQs)<br>
+                • <strong>Q4:</strong> Sentence Rearrangement / Reordering (3M)<br>
+                • <strong>Q5:</strong> Sentence Transformation (Voice, Reported Speech, Clauses) — 3M
+              </td>
+              <td>
+                <button type="button" class="btn btn-sm" onclick="closeBlueprintModal(); switchMainView('grammar');">Grammar Lab &rarr;</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Sec B: Writing</strong></td>
+              <td><span class="badge-r1">20 Marks</span></td>
+              <td>
+                • <strong>Q6:</strong> Notice / Dialogue Completion (50 words) — 4M<br>
+                • <strong>Q7:</strong> Diary Entry / Biographical Sketch (100–120 words) — 6M<br>
+                • <strong>Q8:</strong> Story Writing / Article (100–120 words) — 5M<br>
+                • <strong>Q9:</strong> Formal Letter / Speech (100–120 words) — 5M
+              </td>
+              <td>
+                <button type="button" class="btn btn-sm" onclick="closeBlueprintModal(); switchMainView('writing');">Writing Studio &rarr;</button>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Sec C: Literature</strong></td>
+              <td><span class="badge-r1">30 Marks</span></td>
+              <td>
+                • <strong>Q10:</strong> Prose Extract RTC (5M MCQs + SAQ)<br>
+                • <strong>Q11:</strong> Poetry Extract RTC (5M MCQs + SAQ)<br>
+                • <strong>Q12:</strong> 5 Short Answer Questions (40–50 words each) — 10M<br>
+                • <strong>Q13:</strong> 2 Long Answer Questions (120–150 words each) — 10M
+              </td>
+              <td>
+                <button type="button" class="btn btn-sm" onclick="closeBlueprintModal(); navigateToLiterature();">Literature Companion &rarr;</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Modal Footer Actions -->
+        <div style="display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; align-items: center; border-top: 1px solid var(--border); padding-top: 16px;">
+          <button type="button" class="btn" onclick="closeBlueprintModal(); switchMainView('internal');">📋 Internal Assessment Guide (20M)</button>
+          <button type="button" class="btn btn-primary" onclick="closeBlueprintModal(); switchMainView('mock');">📝 Launch Full 80M Mock Papers & Timer &rarr;</button>
+          <button type="button" class="btn" onclick="closeBlueprintModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Embedded Structured Data & Interactive JavaScript Engine -->
   <script>
     // Embedded Data from python builder
@@ -1224,7 +1481,7 @@
     });
 
     // Main View Switcher (Units, Writing, Grammar, Mock, Internal)
-    function switchMainView(viewName) {
+    function switchMainView(viewName, shouldScrollTop = true) {
       document.querySelectorAll(".main-view-section").forEach(el => el.style.display = "none");
       document.querySelectorAll(".nav-pill").forEach(el => el.classList.remove("active"));
 
@@ -1242,7 +1499,61 @@
         }
       });
 
-      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (shouldScrollTop) {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+
+    // Modal Helpers
+    function openBlueprintModal() {
+      const modal = document.getElementById("blueprintModal");
+      if (modal) {
+        modal.classList.add("open");
+        document.body.style.overflow = "hidden";
+      }
+    }
+
+    function closeBlueprintModal() {
+      const modal = document.getElementById("blueprintModal");
+      if (modal) {
+        modal.classList.remove("open");
+        document.body.style.overflow = "";
+      }
+    }
+
+    function handleModalOverlayClick(e) {
+      if (e.target.id === "blueprintModal") {
+        closeBlueprintModal();
+      }
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") {
+        closeBlueprintModal();
+      }
+    });
+
+    // Quick Jump Navigators from Scope Chips
+    function navigateToLiterature() {
+      switchMainView("units", false);
+      switchPillar("literature");
+      setTimeout(() => {
+        const target = document.getElementById("unitWorkspace");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
+    }
+
+    function navigateToReading() {
+      switchMainView("mock", false);
+      switchMockSection("A");
+      setTimeout(() => {
+        const target = document.getElementById("mockPaperContent");
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 50);
     }
 
     // Render Unit Selector Cards
