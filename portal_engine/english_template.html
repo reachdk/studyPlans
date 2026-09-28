@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Class 9 CBSE English — Track R1 Revision Dashboard (Kaveri Units 1–4)</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --text: #0f172a;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --primary: #d97706;
+      --primary-hover: #b45309;
+      --primary-light: #fef3c7;
+      --primary-dark: #78350f;
+      --u1-color: #d97706;
+      --u1-light: #fef3c7;
+      --u2-color: #0284c7;
+      --u2-light: #e0f2fe;
+      --u3-color: #16a34a;
+      --u3-light: #dcfce7;
+      --u4-color: #8b5cf6;
+      --u4-light: #f3e8ff;
+      --warning: #f59e0b;
+      --success: #10b981;
+      --danger: #ef4444;
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
+      --radius: 14px;
+    }
+
+    [data-theme="dark"] {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+      --border: #1e293b;
+      --primary: #f59e0b;
+      --primary-hover: #fbbf24;
+      --primary-light: #292524;
+      --primary-dark: #fef3c7;
+      --u1-color: #f59e0b;
+      --u1-light: #2d2008;
+      --u2-color: #38bdf8;
+      --u2-light: #082f49;
+      --u3-color: #4ade80;
+      --u3-light: #052e16;
+      --u4-color: #a78bfa;
+      --u4-light: #2e1065;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      overflow-wrap: anywhere;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 70px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+
+    /* Top Sticky Header */
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .top-bar {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .badge-r1 {
+      background: var(--primary);
+      color: white;
+      font-weight: 700;
+      font-size: 0.78rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .logo-text {
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text);
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      color: white;
+    }
+
+    .theme-toggle {
+      background: none;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 1.1rem;
+      padding: 7px 11px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Global Navigation Pills */
+    .nav-bar {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      overflow-x: auto;
+      white-space: nowrap;
+      scrollbar-width: none;
+    }
+
+    .nav-bar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 8px 20px;
+      display: flex;
+      gap: 8px;
+    }
+
+    .nav-pill {
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background: transparent;
+      color: var(--text-muted);
+      transition: all 0.15s;
+    }
+
+    .nav-pill:hover {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .nav-pill.active {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 1240px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    /* Hero Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.12), rgba(217, 119, 6, 0.03));
+      border: 1px solid rgba(217, 119, 6, 0.25);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .hero-content h1 {
+      font-size: 1.85rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .hero-content p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 820px;
+      margin-bottom: 16px;
+    }
+
+    .scope-chips {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 5px 12px;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+    }
+
+    .chip.highlight {
+      background: var(--primary-light);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Unit Selector Grid */
+    .unit-selector-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-bottom: 28px;
+    }
+
+    .unit-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 18px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+      border-top: 4px solid var(--unit-accent, var(--primary));
+    }
+
+    .unit-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+      border-color: var(--unit-accent, var(--primary));
+    }
+
+    .unit-card.active {
+      border-color: var(--unit-accent, var(--primary));
+      background: linear-gradient(to bottom, var(--card-bg), var(--bg));
+      box-shadow: var(--shadow);
+    }
+
+    .unit-step {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--unit-accent, var(--primary));
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .unit-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .unit-theme {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .unit-meta-tags {
+      display: flex;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .tag-sm {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text-muted);
+      border: 1px solid var(--border);
+    }
+
+    /* The 4-Pillar Tabs Navigation */
+    .pillar-nav {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 10px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    .pillar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid transparent;
+      background: var(--card-bg);
+      color: var(--text-muted);
+      transition: all 0.15s ease;
+    }
+
+    .pillar-btn:hover {
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .pillar-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Pillar Workspaces */
+    .pillar-workspace {
+      display: none;
+    }
+
+    .pillar-workspace.active {
+      display: block;
+      animation: fadeIn 0.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Panels */
+    .panel {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 18px;
+      flex-wrap: wrap;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .panel-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .literature-text {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    /* Timeline / Narrative Arc */
+    .timeline {
+      position: relative;
+      padding-left: 28px;
+      margin: 18px 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--border);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -28px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--primary);
+      border: 3px solid var(--card-bg);
+      box-shadow: 0 0 0 2px var(--primary);
+    }
+
+    .timeline-title {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .timeline-desc {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    /* Character Dossiers */
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    .character-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px;
+    }
+
+    .character-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+
+    .character-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .character-traits {
+      list-style-type: disc;
+      padding-left: 18px;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+    }
+
+    .quote-box {
+      background: var(--card-bg);
+      border-left: 3px solid var(--primary);
+      padding: 10px 14px;
+      font-style: italic;
+      font-size: 0.88rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    /* Stanza Paraphrase Box */
+    .stanza-block {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .stanza-header {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+    }
+
+    .stanza-original {
+      font-family: Georgia, serif;
+      font-style: italic;
+      white-space: pre-line;
+      margin-bottom: 12px;
+      color: var(--text);
+      line-height: 1.6;
+      padding-left: 12px;
+      border-left: 2px solid var(--primary);
+    }
+
+    .stanza-meaning {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* Table Styles */
+    .custom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+
+    .custom-table th, .custom-table td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    .custom-table th {
+      background: var(--bg);
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    /* Writing Skills Blueprint Box */
+    .blueprint-card {
+      background: var(--bg);
+      border: 2px dashed var(--primary);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 18px 0;
+    }
+
+    .blueprint-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .blueprint-title {
+      font-weight: 800;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .blueprint-steps {
+      list-style-type: decimal;
+      padding-left: 22px;
+      margin: 12px 0;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .model-answer-box {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 16px;
+      white-space: pre-wrap;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+
+    .rubric-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 8px 12px;
+      text-align: center;
+    }
+
+    .rubric-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .rubric-val {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    /* Grammar Interactive Widgets */
+    .drill-box {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      margin: 16px 0;
+    }
+
+    .drill-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .drill-title {
+      font-weight: 700;
+      font-size: 1.05rem;
+    }
+
+    .drill-item {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+    }
+
+    .drill-options {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .drill-opt {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .drill-opt:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .drill-opt.selected-correct {
+      background: #dcfce7;
+      color: #15803d;
+      border-color: #15803d;
+    }
+
+    .drill-opt.selected-wrong {
+      background: #fee2e2;
+      color: #b91c1c;
+      border-color: #b91c1c;
+    }
+
+    .feedback-note {
+      font-size: 0.85rem;
+      margin-top: 6px;
+      display: none;
+    }
+
+    /* Questions & RTC */
+    .qa-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .qa-question {
+      font-weight: 700;
+      font-size: 0.96rem;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
+    .qa-ans-toggle {
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      margin-top: 4px;
+    }
+
+    .qa-answer {
+      background: var(--card-bg);
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      margin-top: 10px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .qa-answer.open {
+      display: block;
+    }
+
+    /* Mock Exam Simulator */
+    .mock-header {
+      background: linear-gradient(135deg, rgba(217, 119, 6, 0.15), rgba(2, 132, 199, 0.1));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .timer-display {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      background: var(--card-bg);
+      padding: 8px 18px;
+      border-radius: 10px;
+      border: 2px solid var(--border);
+    }
+
+    .mock-section-nav {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 10px;
+      overflow-x: auto;
+    }
+
+    .mock-sec-btn {
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 0.88rem;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      background: var(--card-bg);
+      color: var(--text-muted);
+    }
+
+    .mock-sec-btn.active {
+      background: var(--primary);
+      color: white;
+      border-color: var(--primary);
+    }
+
+    /* Print mode */
+    @media print {
+      header, .nav-bar, .pillar-nav, .btn, .theme-toggle, .timer-controls {
+        display: none !important;
+      }
+      body {
+        background: white !important;
+        color: black !important;
+      }
+      .panel, .unit-card, .blueprint-card {
+        border: 1px solid #ccc !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+      }
+      .qa-answer {
+        display: block !important;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 1.45rem;
+      }
+      .top-bar {
+        padding: 10px 14px;
+      }
+      .container {
+        padding: 0 14px;
+      }
+      .panel {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header>
+    <div class="top-bar">
+      <a href="index.html" class="logo-area">
+        <span class="badge-r1">Track R1 (Code 184)</span>
+        <span class="logo-text">📖 Class 9 English Revision Hub</span>
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn" title="Back to Study Portals Home">
+          <span>🏠 All Portals</span>
+        </a>
+        <a href="downloads/class-09/english/kaveri/iebe101--how-i-taught-my-grandmother-to-read.pdf" target="_blank" class="btn btn-primary" id="openPdfBtn" title="Open current unit NCERT Kaveri PDF">
+          <span>📄 NCERT Kaveri PDF</span>
+        </a>
+        <button class="theme-toggle" id="themeToggle" title="Toggle Light/Dark Theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Global Subject Nav Bar -->
+  <div class="nav-bar">
+    <div class="nav-container">
+      <button class="nav-pill active" onclick="switchMainView('units')">📚 Kaveri Units (1–4)</button>
+      <button class="nav-pill" onclick="switchMainView('writing')">✍️ Writing Skills Studio (Q6–Q9)</button>
+      <button class="nav-pill" onclick="switchMainView('grammar')">⚖️ Grammar Lab (Q3–Q5)</button>
+      <button class="nav-pill" onclick="switchMainView('mock')">📝 3 Full 80M Mock Papers</button>
+      <button class="nav-pill" onclick="switchMainView('internal')">📋 Internal Assessment (20M)</button>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ========================================== -->
+    <!-- VIEW 1: UNITS EXPLORER (DEFAULT) -->
+    <!-- ========================================== -->
+    <div id="view_units" class="main-view-section">
+      
+      <!-- Curriculum Expectation Banner -->
+      <div class="hero-banner">
+        <div class="hero-content">
+          <h1>NCERT Kaveri Units 1 to 4 Mastery Portal</h1>
+          <p>
+            Structured specifically for CBSE Class 9 English Language & Literature (Track R1 / 2026–27). 
+            Replacing static flashcards with a <strong>4-Pillar Pedagogical Engine</strong>: deep literary subtext & character synthesis, 
+            prescribed writing layout blueprints, contextual editing drills, and authentic Reference to Context (RTC) exam questions.
+          </p>
+          <div class="scope-chips">
+            <span class="chip highlight">🎯 80-Mark Summative Blueprint</span>
+            <span class="chip">📖 Literature Companion (30M)</span>
+            <span class="chip">✍️ Writing Studio (20M)</span>
+            <span class="chip">⚖️ Editing & Grammar (10M)</span>
+            <span class="chip">🔍 Reading Skills (20M)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unit Cards Quick-Selector -->
+      <div class="unit-selector-grid" id="unitCardsContainer">
+        <!-- Rendered via JS -->
+      </div>
+
+      <!-- Active Unit Workspace: The 4 Pillars -->
+      <div id="unitWorkspace">
+        
+        <!-- Pillar Selector Tabs -->
+        <div class="pillar-nav">
+          <button class="pillar-btn active" onclick="switchPillar('literature')">
+            <span>📖 1. Literature Deep-Dive Companion</span>
+          </button>
+          <button class="pillar-btn" onclick="switchPillar('writing')">
+            <span>✍️ 2. Writing Skills Studio</span>
+          </button>
+          <button class="pillar-btn" onclick="switchPillar('grammar')">
+            <span>⚖️ 3. Grammar Lab & Editing</span>
+          </button>
+          <button class="pillar-btn" onclick="switchPillar('exam')">
+            <span>🎯 4. CBSE RTC & Question Bank</span>
+          </button>
+        </div>
+
+        <!-- Pillar 1: Literature Companion -->
+        <div id="pillar_literature" class="pillar-workspace active">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Pillar 2: Writing Studio -->
+        <div id="pillar_writing" class="pillar-workspace">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Pillar 3: Grammar Lab -->
+        <div id="pillar_grammar" class="pillar-workspace">
+          <!-- Rendered via JS -->
+        </div>
+
+        <!-- Pillar 4: RTC & Exam Bank -->
+        <div id="pillar_exam" class="pillar-workspace">
+          <!-- Rendered via JS -->
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 2: MASTER WRITING SKILLS STUDIO -->
+    <!-- ========================================== -->
+    <div id="view_writing" class="main-view-section" style="display: none;">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">✍️ Master Writing Skills Studio (All 8 Prescribed R1 Formats)</div>
+          <span class="badge-r1">Section B (20 Marks)</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+          The R1 Question Paper evaluates Section B Writing across questions 6 to 9 with strict word limits and formal rubrics. 
+          Select any prescribed genre below to inspect its visual layout blueprint, CBSE marking rubric, common penalty deduction warnings, and high-scoring model answers.
+        </p>
+        
+        <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px;" id="masterWritingTabs">
+          <!-- Rendered via JS -->
+        </div>
+
+        <div id="masterWritingContent">
+          <!-- Rendered via JS -->
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 3: MASTER GRAMMAR LAB -->
+    <!-- ========================================== -->
+    <div id="view_grammar" class="main-view-section" style="display: none;">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">⚖️ Applied Grammar Lab & Transformation Engine</div>
+          <span class="badge-r1">Section B Grammar (10 Marks: Q3, Q4, Q5)</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+          Aligned strictly with the R1 question typologies: <strong>Q3 Editing / Omitting (4M MCQs)</strong>, 
+          <strong>Q4 Sentence Rearrangement (3M)</strong>, and <strong>Q5 Sentence Transformation (3M)</strong>.
+        </p>
+
+        <!-- Golden Rules Matrix Accordion -->
+        <h3 style="margin-bottom: 12px;">📚 Golden Grammar Rules & Syntax Matrix</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; margin-bottom: 28px;">
+          
+          <div class="character-card">
+            <div class="character-name">1. Sequence of Tenses & Stative Verbs</div>
+            <div class="character-role">Continuous & Perfect Aspects</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • Present/Past/Future Continuous forms describe ongoing actions at a point of time.<br>
+              • <strong>Stative Verb Trap:</strong> Verbs of feeling, perception, and possession (<em>know, understand, believe, love, own</em>) cannot be continuous.<br>
+              • <em>Incorrect:</em> 'She was knowing the alphabet.'<br>
+              • <em>Correct:</em> 'She knew the alphabet.'
+            </p>
+          </div>
+
+          <div class="character-card">
+            <div class="character-name">2. Reported Speech Backshift Rules</div>
+            <div class="character-role">Direct to Indirect Speech</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • Simple Present &rarr; Simple Past (<em>is &rarr; was</em>)<br>
+              • Present Perfect &rarr; Past Perfect (<em>has worked &rarr; had worked</em>)<br>
+              • Simple Past &rarr; Past Perfect (<em>saw &rarr; had seen</em>)<br>
+              • Modal shifts: <em>will &rarr; would, can &rarr; could, may &rarr; might</em><br>
+              • In polar questions, introduce <em>if / whether</em>; remove question word order!
+            </p>
+          </div>
+
+          <div class="character-card">
+            <div class="character-name">3. Conditional Clauses (Type 1)</div>
+            <div class="character-role">Real & Possible Future Conditions</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • Structure: <code>If + Simple Present, will/can/may + Base Verb (V1)</code><br>
+              • <em>Trap:</em> Never use 'will' in the if-clause!<br>
+              • <em>Incorrect:</em> 'If it will rain, the crops will revive.'<br>
+              • <em>Correct:</em> 'If it rains, the crops will revive.'<br>
+              • <em>Unless</em> = <em>If not</em> ('Unless we dig trenches...').
+            </p>
+          </div>
+
+          <div class="character-card">
+            <div class="character-name">4. Clauses: Noun & Relative Clauses</div>
+            <div class="character-role">Complex Sentence Synthesis</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • <strong>Relative Clause:</strong> Acts as adjective. Use <em>who</em> for people, <em>which</em> for things, <em>that</em> for defining essential attributes.<br>
+              • <strong>Noun Clause:</strong> Functions as subject, object, or complement of a verb. (e.g. '<em>What she accomplished</em> amazed everyone.')
+            </p>
+          </div>
+
+          <div class="character-card">
+            <div class="character-name">5. Subject–Verb Concord Traps</div>
+            <div class="character-role">Plural vs Singular Agreement</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • Indefinite pronouns like <em>each, every, neither, either</em> take singular verbs ('Each of the boys was present').<br>
+              • Intervening prepositional phrases do not change subject number: 'The quality of the earthen pots <strong>was</strong> exceptional' (not 'were').
+            </p>
+          </div>
+
+          <div class="character-card">
+            <div class="character-name">6. Determiners & Quantifiers</div>
+            <div class="character-role">Subtle Distinctions</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+              • <em>Few / Little:</em> Negative connotation (almost none).<br>
+              • <em>A few / A little:</em> Positive connotation (some).<br>
+              • <em>Much:</em> Uncountable nouns ('much water').<br>
+              • <em>Many:</em> Countable plural nouns ('many artisans').
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Master Interactive Editing Trainer -->
+        <h3 style="margin-bottom: 12px;">🎯 Master Interactive Q3 Editing Trainer (Error Identification)</h3>
+        <div id="masterEditingDrillsContainer">
+          <!-- Rendered via JS -->
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 4: 3 FULL 80-MARK MOCK EXAMINATION PAPERS -->
+    <!-- ========================================== -->
+    <div id="view_mock" class="main-view-section" style="display: none;">
+      
+      <!-- Mock Exam Selector & Timer Header -->
+      <div class="mock-header">
+        <div>
+          <div style="font-size: 0.85rem; font-weight: 700; color: var(--primary); text-transform: uppercase;">
+            Summative Examination Simulator
+          </div>
+          <h2 style="font-size: 1.5rem; font-weight: 800;" id="mockPaperTitle">Mock Paper 1 (CBSE Official R1 Blueprint)</h2>
+          <div style="font-size: 0.9rem; color: var(--text-muted);" id="mockPaperMeta">
+            Time: 3 Hours • Max Marks: 80 • 100% Authentic R1 Sectional Weights
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Time Remaining</div>
+            <div class="timer-display" id="timerDisplay">03:00:00</div>
+          </div>
+          <div class="timer-controls" style="display: flex; gap: 6px;">
+            <button class="btn btn-primary" id="timerStartBtn" onclick="toggleTimer()">Start Timer</button>
+            <button class="btn" onclick="resetTimer()">Reset</button>
+            <button class="btn" onclick="window.print()">🖨️ Print Paper</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper Selector Tabs -->
+      <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+        <button class="btn btn-primary" id="btnPaper1" onclick="loadMockPaper(0)">Paper 1 (CBSE Official R1)</button>
+        <button class="btn" id="btnPaper2" onclick="loadMockPaper(1)">Paper 2 (School Mid-Term Simulator)</button>
+        <button class="btn" id="btnPaper3" onclick="loadMockPaper(2)">Paper 3 (HOTS & Extrapolation)</button>
+      </div>
+
+      <!-- Active Paper Workspace -->
+      <div class="panel">
+        
+        <!-- Section Navigation Tabs -->
+        <div class="mock-section-nav">
+          <button class="mock-sec-btn active" onclick="switchMockSection('A')">Section A: Reading (20M)</button>
+          <button class="mock-sec-btn" onclick="switchMockSection('B')">Section B: Writing & Grammar (30M)</button>
+          <button class="mock-sec-btn" onclick="switchMockSection('C')">Section C: Literature (30M)</button>
+          <button class="btn" style="margin-left: auto;" onclick="toggleAllMockAnswers()">👁️ Toggle All Answers</button>
+        </div>
+
+        <div id="mockPaperContent">
+          <!-- Rendered via JS -->
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ========================================== -->
+    <!-- VIEW 5: INTERNAL ASSESSMENT GUIDE (20M) -->
+    <!-- ========================================== -->
+    <div id="view_internal" class="main-view-section" style="display: none;">
+      <div class="panel">
+        <div class="panel-header">
+          <div class="panel-title">📋 CBSE Grade 9 Internal Assessment Portfolio Guide</div>
+          <span class="badge-r1">20 Marks Total</span>
+        </div>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">
+          In accordance with pages 12 to 14 of the official curriculum, 20 marks are allocated to continuous internal assessment. 
+          Use this interactive portfolio checklist to ensure complete readiness across all four components.
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+          
+          <div class="character-card" style="border-top: 4px solid #0284c7;">
+            <div class="character-name">1. Periodic Pen-and-Paper Tests</div>
+            <div class="character-role">Weightage: 5 Marks</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+              Best two out of three periodic tests (PA1, PA2, Mid-Term) scaled down to 5 marks. 
+              Tests cover Reading passages, Grammar editing, Writing formats, and Literature short questions.
+            </p>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600;">
+              <input type="checkbox"> Reviewed PA1 & PA2 Question Papers
+            </label>
+          </div>
+
+          <div class="character-card" style="border-top: 4px solid #16a34a;">
+            <div class="character-name">2. Multiple Assessment</div>
+            <div class="character-role">Weightage: 5 Marks</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+              Quizzes, oral group discussions, poetry recitation, debates, role-play dialogue, and impromptu speaking tasks in classroom settings.
+            </p>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600;">
+              <input type="checkbox"> Completed oral dialogue & poetry recitation
+            </label>
+          </div>
+
+          <div class="character-card" style="border-top: 4px solid #d97706;">
+            <div class="character-name">3. Student Portfolio</div>
+            <div class="character-role">Weightage: 5 Marks</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+              Purposeful collection of student work over the term: writing samples, worksheets, self-reflections, teacher feedback logs, and creative assignments.
+            </p>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600;">
+              <input type="checkbox"> Assembled writing samples & corrected drafts
+            </label>
+          </div>
+
+          <div class="character-card" style="border-top: 4px solid #8b5cf6;">
+            <div class="character-name">4. Subject Enrichment (ALS)</div>
+            <div class="character-role">Weightage: 5 Marks</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 12px;">
+              Assessment of Listening and Speaking Skills (ALS), Art-Integrated projects, IKS (Indian Knowledge Systems) research, or technology-assisted script writing.
+            </p>
+            <label style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600;">
+              <input type="checkbox"> Completed listening comprehension & speaking test
+            </label>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Embedded Structured Data & Interactive JavaScript Engine -->
+  <script>
+    // Embedded Data from python builder
+    const UNITS_DATA = __UNITS_JSON__;
+    const MASTER_WRITING = __WRITING_JSON__;
+    const MOCK_PAPERS = __MOCK_PAPERS_JSON__;
+    const META = __META_JSON__;
+
+    // State Variables
+    let currentUnitIndex = 0;
+    let currentPillar = "literature";
+    let currentMockPaperIndex = 0;
+    let currentMockSection = "A";
+    let timerInterval = null;
+    let timerSeconds = 3 * 3600; // 3 Hours
+    let isTimerRunning = false;
+
+    // Theme Toggle Logic
+    const themeToggleBtn = document.getElementById("themeToggle");
+    const savedTheme = localStorage.getItem("english_portal_theme") || "light";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+
+    themeToggleBtn.addEventListener("click", () => {
+      const current = document.documentElement.getAttribute("data-theme");
+      const next = current === "dark" ? "light" : "dark";
+      document.documentElement.setAttribute("data-theme", next);
+      localStorage.setItem("english_portal_theme", next);
+    });
+
+    // Main View Switcher (Units, Writing, Grammar, Mock, Internal)
+    function switchMainView(viewName) {
+      document.querySelectorAll(".main-view-section").forEach(el => el.style.display = "none");
+      document.querySelectorAll(".nav-pill").forEach(el => el.classList.remove("active"));
+
+      const targetView = document.getElementById("view_" + viewName);
+      if (targetView) {
+        targetView.style.display = "block";
+      }
+
+      // Highlight active nav pill
+      const pills = document.querySelectorAll(".nav-pill");
+      pills.forEach(pill => {
+        const attr = pill.getAttribute("onclick") || "";
+        if (attr.includes("'" + viewName + "'")) {
+          pill.classList.add("active");
+        }
+      });
+
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    // Render Unit Selector Cards
+    function renderUnitCards() {
+      const container = document.getElementById("unitCardsContainer");
+      if (!container) return;
+      container.innerHTML = "";
+
+      UNITS_DATA.forEach((unit, idx) => {
+        const card = document.createElement("div");
+        card.className = "unit-card" + (idx === currentUnitIndex ? " active" : "");
+        card.style.setProperty("--unit-accent", unit.color);
+        card.onclick = () => selectUnit(idx);
+
+        card.innerHTML = `
+          <div class="unit-step">${unit.step}</div>
+          <div class="unit-title">${unit.prose.title} & ${unit.poetry.title}</div>
+          <div class="unit-theme">${unit.theme}</div>
+          <div class="unit-meta-tags">
+            <span class="tag-sm">📖 Literature</span>
+            <span class="tag-sm">✍️ Writing</span>
+            <span class="tag-sm">⚖️ Grammar</span>
+            <span class="tag-sm">🎯 RTCs</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // Select Unit
+    function selectUnit(index) {
+      currentUnitIndex = index;
+      renderUnitCards();
+      renderUnitWorkspace();
+
+      // Update Top PDF Link
+      const pdfBtn = document.getElementById("openPdfBtn");
+      if (pdfBtn && UNITS_DATA[index]) {
+        pdfBtn.href = UNITS_DATA[index].pdf_path;
+        pdfBtn.title = "Open " + UNITS_DATA[index].pdf_label;
+      }
+    }
+
+    // Switch Pillar Tabs
+    function switchPillar(pillarName) {
+      currentPillar = pillarName;
+      document.querySelectorAll(".pillar-btn").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll(".pillar-workspace").forEach(ws => ws.classList.remove("active"));
+
+      const activeBtn = document.querySelector(`.pillar-btn[onclick*="'${pillarName}'"]`);
+      const activeWs = document.getElementById("pillar_" + pillarName);
+
+      if (activeBtn) activeBtn.classList.add("active");
+      if (activeWs) activeWs.classList.add("active");
+    }
+
+    // Render Active Unit Workspace
+    function renderUnitWorkspace() {
+      const unit = UNITS_DATA[currentUnitIndex];
+      if (!unit) return;
+
+      // 1. Pillar 1: Literature Companion
+      const litContainer = document.getElementById("pillar_literature");
+      let timelineHtml = unit.prose.narrative_arc.map(stage => `
+        <div class="timeline-item">
+          <div class="timeline-dot" style="background: ${unit.color};"></div>
+          <div class="timeline-title">${stage.stage}</div>
+          <div class="timeline-desc">${stage.detail}</div>
+        </div>
+      `).join("");
+
+      let charHtml = unit.prose.character_dossiers.map(c => `
+        <div class="character-card">
+          <div class="character-name" style="color: ${unit.color};">${c.name}</div>
+          <div class="character-role">${c.role}</div>
+          <ul class="character-traits">
+            ${c.traits.map(t => `<li>${t}</li>`).join("")}
+          </ul>
+          <div class="quote-box" style="border-left-color: ${unit.color};">${c.textual_evidence}</div>
+        </div>
+      `).join("");
+
+      let stanzasHtml = unit.poetry.stanza_paraphrase.map(s => `
+        <div class="stanza-block">
+          <div class="stanza-header" style="color: ${unit.color};">${s.stanza}</div>
+          <div class="stanza-original" style="border-left-color: ${unit.color};">${s.lines}</div>
+          <div class="stanza-meaning"><strong>Contemporary Paraphrase & Subtext:</strong> ${s.meaning}</div>
+        </div>
+      `).join("");
+
+      let devicesHtml = unit.poetry.literary_devices.map(d => `
+        <tr>
+          <td><strong>${d.device}</strong></td>
+          <td><em>${d.example}</em></td>
+          <td>${d.effect}</td>
+        </tr>
+      `).join("");
+
+      litContainer.innerHTML = `
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>📖 Prose: ${unit.prose.title}</span>
+            </div>
+            <a href="${unit.pdf_path}" target="_blank" class="btn btn-primary" style="background: ${unit.color}; border-color: ${unit.color};">
+              📄 View in NCERT Kaveri (${unit.pdf_filename})
+            </a>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 16px;">
+            <strong>Author:</strong> ${unit.prose.author} • <strong>Genre:</strong> ${unit.prose.genre}
+          </p>
+          <div style="background: var(--bg); border-left: 3px solid ${unit.color}; padding: 14px; border-radius: 0 8px 8px 0; margin-bottom: 20px;">
+            <strong>Chapter Synopsis:</strong> ${unit.prose.overview}
+          </div>
+          <div style="margin-bottom: 20px;">
+            <strong>Cultural & Historical Context:</strong> ${unit.prose.cultural_context}
+          </div>
+
+          <h3 style="margin-bottom: 12px;">🗺️ Scene-by-Scene Narrative Arc</h3>
+          <div class="timeline">${timelineHtml}</div>
+
+          <h3 style="margin-top: 24px; margin-bottom: 12px;">🎭 Character Dossiers & Motivation Analysis</h3>
+          <div class="character-grid">${charHtml}</div>
+
+          <h3 style="margin-top: 24px; margin-bottom: 10px;">💡 Core Themes</h3>
+          <ul style="padding-left: 20px; line-height: 1.7; font-size: 0.92rem;">
+            ${unit.prose.key_themes.map(th => `<li>${th}</li>`).join("")}
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">
+              <span>🪶 Poetry: ${unit.poetry.title}</span>
+            </div>
+            <span class="tag-sm">${unit.poetry.genre}</span>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 16px;">
+            <strong>Poet:</strong> ${unit.poetry.poet}
+          </p>
+          <div style="background: var(--bg); border-left: 3px solid ${unit.color}; padding: 14px; border-radius: 0 8px 8px 0; margin-bottom: 20px;">
+            <strong>Poem Overview:</strong> ${unit.poetry.overview}
+          </div>
+
+          <h3 style="margin-bottom: 12px;">📜 Stanza-by-Stanza Paraphrase & Mood</h3>
+          ${stanzasHtml}
+
+          <h3 style="margin-top: 24px; margin-bottom: 12px;">✨ Literary Devices & Poetic Mechanics</h3>
+          <table class="custom-table">
+            <thead>
+              <tr>
+                <th>Literary Device</th>
+                <th>Text Citation</th>
+                <th>Aesthetic & Emotional Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${devicesHtml}
+            </tbody>
+          </table>
+        </div>
+      `;
+
+      // 2. Pillar 2: Writing Studio
+      const writingContainer = document.getElementById("pillar_writing");
+      let writingCardsHtml = unit.writing_skills.map((ws) => `
+        <div class="blueprint-card" style="border-color: ${unit.color};">
+          <div class="blueprint-header">
+            <div class="blueprint-title" style="color: ${unit.color};">
+              ${ws.cbse_question_no}: ${ws.format_name} (${ws.marks} Marks)
+            </div>
+            <span class="badge-r1" style="background: ${unit.color};">Word Limit: ${ws.word_limit}</span>
+          </div>
+          <div style="background: var(--card-bg); border: 1px solid var(--border); padding: 12px 16px; border-radius: 8px; margin-bottom: 14px;">
+            <strong>CBSE Examination Prompt:</strong> ${ws.prompt}
+          </div>
+
+          <h4 style="margin-bottom: 8px;">📐 Visual Layout Blueprint:</h4>
+          <ol class="blueprint-steps">
+            ${ws.blueprint.map(step => `<li>${step}</li>`).join("")}
+          </ol>
+
+          <h4 style="margin-top: 14px; margin-bottom: 8px;">📊 CBSE Official Marking Rubric:</h4>
+          <div class="rubric-grid">
+            ${Object.entries(ws.cbse_rubric).map(([k, v]) => `
+              <div class="rubric-item">
+                <div class="rubric-label">${k}</div>
+                <div class="rubric-val" style="color: ${unit.color};">${v}</div>
+              </div>
+            `).join("")}
+          </div>
+
+          <h4 style="margin-top: 16px; margin-bottom: 8px;">🌟 High-Scoring Model Answer:</h4>
+          <div class="model-answer-box">${ws.model_answer}</div>
+        </div>
+      `).join("");
+
+      writingContainer.innerHTML = `
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">✍️ Prescribed Writing Skills for ${unit.step}</div>
+            <span class="tag-sm">CBSE Section B Formats</span>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 18px;">
+            Every format is structured with exact box margin boundaries, CBSE marking scheme rubrics, and high-scoring exemplars.
+          </p>
+          ${writingCardsHtml}
+        </div>
+      `;
+
+      // 3. Pillar 3: Grammar Lab
+      const grammarContainer = document.getElementById("pillar_grammar");
+      let grammarTopicsHtml = unit.grammar.topics.map(gt => `
+        <div class="stanza-block">
+          <div class="stanza-header" style="color: ${unit.color};">${gt.concept}</div>
+          <p style="font-size: 0.92rem; margin-bottom: 10px;">${gt.rule}</p>
+          ${gt.examples ? `
+            <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 0.88rem;">
+              <strong>Key Exemplars:</strong>
+              <ul style="padding-left: 18px; margin-top: 4px;">
+                ${gt.examples.map(ex => `<li><strong>${ex.context || ex.term || ex.type || ex.pair || ''}:</strong> ${ex.sentence || ex.usage || ex.note || ''}</li>`).join("")}
+              </ul>
+            </div>
+          ` : ''}
+          ${gt.stative_warning ? `
+            <div style="background: #fef2f2; border-left: 3px solid #ef4444; color: #991b1b; padding: 8px 12px; border-radius: 0 6px 6px 0; margin-top: 10px; font-size: 0.85rem;">
+              ⚠️ ${gt.stative_warning}
+            </div>
+          ` : ''}
+        </div>
+      `).join("");
+
+      let drillsHtml = unit.grammar.drills.map((d, dIdx) => {
+        if (d.type === "editing") {
+          return `
+            <div class="drill-box">
+              <div class="drill-header">
+                <div class="drill-title" style="color: ${unit.color};">${d.title}</div>
+                <span class="tag-sm">Select correct option per line</span>
+              </div>
+              ${d.passage.map((lineObj, lIdx) => {
+                const correctStr = lineObj.error + " -> " + lineObj.correction;
+                return `
+                <div class="drill-item">
+                  <div style="font-size: 0.92rem; margin-bottom: 6px;">
+                    <strong>Line ${lIdx + 1}:</strong> ${lineObj.line}
+                  </div>
+                  <div class="drill-options">
+                    ${lineObj.options.map(opt => `
+                      <button class="drill-opt" onclick="checkEditingDrill(this, '${opt === correctStr ? "correct" : "wrong"}', '${correctStr}')">
+                        ${opt}
+                      </button>
+                    `).join("")}
+                  </div>
+                  <div class="feedback-note"></div>
+                </div>
+              `;
+              }).join("")}
+            </div>
+          `;
+        } else if (d.type === "rearrangement") {
+          return `
+            <div class="drill-box">
+              <div class="drill-header">
+                <div class="drill-title" style="color: ${unit.color};">${d.title}</div>
+                <span class="tag-sm">Syntax Structure</span>
+              </div>
+              ${d.items.map((item) => `
+                <div class="drill-item">
+                  <div style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 4px;">
+                    <strong>Jumbled:</strong> ${item.jumbled}
+                  </div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+                    👁️ Reveal Grammatical Sentence &rarr;
+                  </div>
+                  <div class="qa-answer" style="border-left-color: ${unit.color};">
+                    <strong>Correct Sentence:</strong> ${item.correct}
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          `;
+        } else if (d.type === "transformation") {
+          return `
+            <div class="drill-box">
+              <div class="drill-header">
+                <div class="drill-title" style="color: ${unit.color};">${d.title}</div>
+                <span class="tag-sm">Direct to Indirect / Syntax Shifts</span>
+              </div>
+              ${d.items.map((tItem) => `
+                <div class="drill-item">
+                  <div style="font-size: 0.92rem; margin-bottom: 4px;">
+                    <strong>Original:</strong> ${tItem.original}
+                  </div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+                    👁️ Reveal Transformed Syntax & Rule &rarr;
+                  </div>
+                  <div class="qa-answer" style="border-left-color: ${unit.color};">
+                    <div style="margin-bottom: 4px;"><strong>Transformed:</strong> ${tItem.transformed}</div>
+                    <div style="font-size: 0.85rem; color: var(--text-muted);"><strong>Rule:</strong> ${tItem.rule}</div>
+                  </div>
+                </div>
+              `).join("")}
+            </div>
+          `;
+        }
+        return '';
+      }).join("");
+
+      grammarContainer.innerHTML = `
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">⚖️ ${unit.grammar.title}</div>
+            <span class="badge-r1" style="background: ${unit.color};">Applied Grammar Core</span>
+          </div>
+          ${grammarTopicsHtml}
+          <h3 style="margin-top: 24px; margin-bottom: 12px;">🏋️ Interactive Unit Practice Drills</h3>
+          ${drillsHtml}
+        </div>
+      `;
+
+      // 4. Pillar 4: RTC & Exam Bank
+      const examContainer = document.getElementById("pillar_exam");
+      let extractsHtml = unit.exam_bank.extracts.map((ext, eIdx) => `
+        <div class="panel" style="border-left: 4px solid ${unit.color};">
+          <div class="panel-header">
+            <div class="panel-title" style="font-size: 1.1rem; color: ${unit.color};">
+              Extract ${eIdx + 1}: ${ext.source} (5 Marks)
+            </div>
+            <span class="tag-sm">Reference to Context</span>
+          </div>
+          <div style="background: var(--bg); font-family: Georgia, serif; font-style: italic; padding: 14px 18px; border-radius: 8px; margin-bottom: 16px; line-height: 1.65;">
+            ${ext.text}
+          </div>
+          ${ext.questions.map((subQ, sIdx) => `
+            <div class="qa-card">
+              <div class="qa-question">
+                <span>(${String.fromCharCode(97 + sIdx)})</span>
+                <span>${subQ.q}</span>
+              </div>
+              <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+                👁️ View CBSE Marking Key &rarr;
+              </div>
+              <div class="qa-answer" style="border-left-color: ${unit.color};">
+                <strong>Model Answer:</strong> ${subQ.a}
+              </div>
+            </div>
+          `).join("")}
+        </div>
+      `).join("");
+
+      let saqsHtml = unit.exam_bank.saqs.map((saq, sIdx) => `
+        <div class="qa-card">
+          <div class="qa-question">
+            <span style="color: ${unit.color};">Q${sIdx + 1}.</span>
+            <span>${saq.q}</span>
+          </div>
+          <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+            👁️ View 2-Point Answer Rubric (40–50 words) &rarr;
+          </div>
+          <div class="qa-answer" style="border-left-color: ${unit.color};">
+            ${saq.a}
+          </div>
+        </div>
+      `).join("");
+
+      let laqsHtml = unit.exam_bank.laqs.map((laq) => `
+        <div class="panel" style="border-top: 3px solid ${unit.color};">
+          <div style="font-size: 0.8rem; font-weight: 700; color: ${unit.color}; text-transform: uppercase;">
+            ${laq.type}
+          </div>
+          <h4 style="margin: 6px 0 12px 0;">${laq.q}</h4>
+          <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+            👁️ Reveal 3-Tier Long Answer Model (120–150 words) &rarr;
+          </div>
+          <div class="qa-answer open" style="margin-top: 14px; border-left-color: ${unit.color}; white-space: pre-wrap; font-family: -apple-system, sans-serif;">
+${laq.a}
+          </div>
+        </div>
+      `).join("");
+
+      examContainer.innerHTML = `
+        <div style="margin-bottom: 24px;">
+          <h2 style="margin-bottom: 6px;">🎯 Reference to Context (RTC) Extracts (5 Marks Each)</h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+            Extract-based questions assess tone inference, literary device identification, and subtextual understanding.
+          </p>
+          ${extractsHtml}
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <div class="panel-title">📝 Short Answer Questions (CBSE Q12: 40–50 words | 2 Marks Each)</div>
+            <span class="tag-sm">Constructed Responses</span>
+          </div>
+          ${saqsHtml}
+        </div>
+
+        <div style="margin-top: 24px;">
+          <h2 style="margin-bottom: 6px;">🚀 Extrapolative & Thematic Long Questions (120–150 words | 5 Marks)</h2>
+          <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 16px;">
+            Evaluating real-world connections, cross-textual synthesis, and character evolution.
+          </p>
+          ${laqsHtml}
+        </div>
+      `;
+    }
+
+    // Check Interactive Editing Drill
+    function checkEditingDrill(btn, status, correctPair) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll(".drill-opt").forEach(b => {
+        b.classList.remove("selected-correct", "selected-wrong");
+      });
+
+      const fb = parent.nextElementSibling;
+      if (status === "correct") {
+        btn.classList.add("selected-correct");
+        if (fb) {
+          fb.style.display = "block";
+          fb.style.color = "#15803d";
+          fb.innerHTML = `✅ <strong>Correct!</strong> ${correctPair} adheres to grammatical syntax.`;
+        }
+      } else {
+        btn.classList.add("selected-wrong");
+        if (fb) {
+          fb.style.display = "block";
+          fb.style.color = "#b91c1c";
+          fb.innerHTML = `❌ <strong>Incorrect.</strong> The correct correction is: <strong>${correctPair}</strong>.`;
+        }
+      }
+    }
+
+    // Render Master Writing Studio
+    function renderMasterWriting() {
+      const tabsContainer = document.getElementById("masterWritingTabs");
+      const contentContainer = document.getElementById("masterWritingContent");
+      if (!tabsContainer || !contentContainer) return;
+
+      tabsContainer.innerHTML = "";
+      MASTER_WRITING.forEach((genre, idx) => {
+        const btn = document.createElement("button");
+        btn.className = "btn" + (idx === 0 ? " btn-primary" : "");
+        btn.textContent = genre.name + " (" + genre.question_no + ")";
+        btn.onclick = () => selectMasterWritingGenre(idx);
+        tabsContainer.appendChild(btn);
+      });
+
+      selectMasterWritingGenre(0);
+    }
+
+    function selectMasterWritingGenre(index) {
+      const genre = MASTER_WRITING[index];
+      const tabs = document.querySelectorAll("#masterWritingTabs .btn");
+      tabs.forEach((tab, idx) => {
+        if (idx === index) {
+          tab.classList.add("btn-primary");
+        } else {
+          tab.classList.remove("btn-primary");
+        }
+      });
+
+      const container = document.getElementById("masterWritingContent");
+      container.innerHTML = `
+        <div class="blueprint-card" style="border-color: var(--primary);">
+          <div class="blueprint-header">
+            <div class="blueprint-title">${genre.question_no}: ${genre.name} (${genre.marks} Marks)</div>
+            <span class="badge-r1">Word Limit: ${genre.word_limit}</span>
+          </div>
+          <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 14px;">${genre.theme}</p>
+
+          <h4 style="margin-bottom: 8px;">📐 Key Layout & Composition Rules:</h4>
+          <ul class="blueprint-steps">
+            ${genre.key_rules.map(r => `<li>${r}</li>`).join("")}
+          </ul>
+
+          <h4 style="margin-top: 14px; margin-bottom: 8px;">📊 CBSE Official Marking Rubric:</h4>
+          <div class="rubric-grid">
+            ${Object.entries(genre.rubric).map(([k, v]) => `
+              <div class="rubric-item">
+                <div class="rubric-label">${k}</div>
+                <div class="rubric-val">${v}</div>
+              </div>
+            `).join("")}
+          </div>
+
+          <h4 style="margin-top: 14px; margin-bottom: 8px; color: #dc2626;">⚠️ Common Deductions & Traps to Avoid:</h4>
+          <ul style="padding-left: 20px; font-size: 0.88rem; color: #991b1b; line-height: 1.6;">
+            ${genre.deductions.map(d => `<li>${d}</li>`).join("")}
+          </ul>
+        </div>
+      `;
+    }
+
+    // Render Master Grammar Editing Drills
+    function renderMasterGrammarDrills() {
+      const container = document.getElementById("masterEditingDrillsContainer");
+      if (!container) return;
+
+      container.innerHTML = `
+        <div class="drill-box">
+          <div class="drill-header">
+            <div class="drill-title">Editing Exercise: The Power of Community Action</div>
+            <span class="tag-sm">CBSE 4 Marks</span>
+          </div>
+          <div class="drill-item">
+            <div style="font-size: 0.92rem; margin-bottom: 6px;">
+              <strong>Line 1:</strong> Forests plays a crucial role in maintaining ecological balance.
+            </div>
+            <div class="drill-options">
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'correct', 'plays -> play')">plays -> play</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'plays -> play')">crucial -> crucially</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'plays -> play')">in -> on</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'plays -> play')">maintaining -> maintain</button>
+            </div>
+            <div class="feedback-note"></div>
+          </div>
+          <div class="drill-item">
+            <div style="font-size: 0.92rem; margin-bottom: 6px;">
+              <strong>Line 2:</strong> They absorbs carbon dioxide and release fresh oxygen.
+            </div>
+            <div class="drill-options">
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'absorbs -> absorb')">release -> releases</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'correct', 'absorbs -> absorb')">absorbs -> absorb</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'absorbs -> absorb')">carbon -> carbons</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'absorbs -> absorb')">fresh -> freshly</button>
+            </div>
+            <div class="feedback-note"></div>
+          </div>
+          <div class="drill-item">
+            <div style="font-size: 0.92rem; margin-bottom: 6px;">
+              <strong>Line 3:</strong> Without healthy trees, there will be little hope for biodiversity.
+            </div>
+            <div class="drill-options">
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'no error')">trees -> tree</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'no error')">little -> few</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'correct', 'no error')">Line is Correct (No Error)</button>
+              <button class="drill-opt" onclick="checkEditingDrill(this, 'wrong', 'no error')">for -> of</button>
+            </div>
+            <div class="feedback-note"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    // Render Mock Papers Simulator
+    function loadMockPaper(paperIndex) {
+      currentMockPaperIndex = paperIndex;
+      const paper = MOCK_PAPERS[paperIndex];
+      if (!paper) return;
+
+      document.getElementById("mockPaperTitle").textContent = paper.title;
+      document.getElementById("mockPaperMeta").textContent = `Code: ${paper.paper_code} • Duration: ${paper.duration} • Max Marks: ${paper.max_marks}`;
+
+      // Update paper buttons
+      document.querySelectorAll("[id^='btnPaper']").forEach((btn, idx) => {
+        if (idx === paperIndex) {
+          btn.classList.add("btn-primary");
+        } else {
+          btn.classList.remove("btn-primary");
+        }
+      });
+
+      renderMockSection();
+    }
+
+    function switchMockSection(sectionKey) {
+      currentMockSection = sectionKey;
+      document.querySelectorAll(".mock-sec-btn").forEach(btn => {
+        if (btn.textContent.includes(`Section ${sectionKey}`)) {
+          btn.classList.add("active");
+        } else {
+          btn.classList.remove("active");
+        }
+      });
+      renderMockSection();
+    }
+
+    function renderMockSection() {
+      const paper = MOCK_PAPERS[currentMockPaperIndex];
+      const container = document.getElementById("mockPaperContent");
+      if (!paper || !container) return;
+
+      const sec = paper.sections[currentMockSection];
+      if (!sec) return;
+
+      let html = `<h3 style="margin-bottom: 16px; color: var(--primary);">${sec.name}</h3>`;
+
+      if (currentMockSection === "A") {
+        // Reading Passages
+        sec.passages.forEach(p => {
+          html += `
+            <div class="panel" style="margin-bottom: 24px;">
+              <div class="panel-header">
+                <div class="panel-title">${p.number}: ${p.title}</div>
+                <span class="tag-sm">${p.type} (${p.word_count})</span>
+              </div>
+              <div class="literature-text" style="background: var(--bg); padding: 18px; border-radius: 8px; margin-bottom: 20px; white-space: pre-line;">
+                ${p.text}
+              </div>
+              <h4>Questions (Selected & Constructed Responses):</h4>
+              <div style="margin-top: 12px;">
+                ${p.questions.map((q, idx) => `
+                  <div class="qa-card">
+                    <div class="qa-question">
+                      <span style="color: var(--primary);">${idx + 1}.</span>
+                      <span>${q.q} <em>(${q.marks} Mark${q.marks > 1 ? 's' : ''})</em></span>
+                    </div>
+                    ${q.options ? `
+                      <div style="margin: 8px 0; font-size: 0.9rem; padding-left: 20px;">
+                        ${q.options.map(opt => `<div>${opt}</div>`).join("")}
+                      </div>
+                    ` : ''}
+                    <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">
+                      👁️ Reveal Model Answer & Scheme &rarr;
+                    </div>
+                    <div class="qa-answer">
+                      <strong>Answer:</strong> ${q.answer}
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            </div>
+          `;
+        });
+      } else if (currentMockSection === "B") {
+        // Writing & Grammar
+        html += `
+          <div style="margin-bottom: 20px;">
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+              Section B contains Grammar (Q3 to Q5: 10 Marks) and Writing Skills (Q6 to Q9: 20 Marks).
+            </p>
+        `;
+        sec.items.forEach(item => {
+          html += `
+            <div class="panel" style="margin-bottom: 20px;">
+              <div class="panel-header">
+                <div class="panel-title">${item.number}: ${item.type}</div>
+              </div>
+          `;
+          if (item.lines) {
+            // Editing
+            html += `
+              <p style="font-size: 0.92rem; margin-bottom: 12px;">${item.instructions}</p>
+              ${item.lines.map((l, lIdx) => `
+                <div class="drill-item">
+                  <div style="font-size: 0.92rem; margin-bottom: 6px;"><strong>Line ${lIdx + 1}:</strong> ${l.line}</div>
+                  <div style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 6px;">Options: ${l.options.join(" | ")}</div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">👁️ Reveal Answer &rarr;</div>
+                  <div class="qa-answer"><strong>Correct:</strong> ${l.correct}</div>
+                </div>
+              `).join("")}
+            `;
+          } else if (item.items) {
+            // Rearrangement or transformation
+            html += `
+              <p style="font-size: 0.92rem; margin-bottom: 12px;">${item.instructions}</p>
+              ${item.items.map((sub, sIdx) => `
+                <div class="drill-item">
+                  <div style="font-size: 0.92rem; margin-bottom: 6px;">
+                    <strong>(${sIdx + 1})</strong> ${sub.jumbled || sub.q}
+                  </div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">👁️ Reveal Answer &rarr;</div>
+                  <div class="qa-answer"><strong>Model Answer:</strong> ${sub.answer}</div>
+                </div>
+              `).join("")}
+            `;
+          } else if (item.options) {
+            // Writing choices
+            html += `
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px;">
+                ${item.options.map(opt => `
+                  <div class="character-card">
+                    <div class="character-name">${opt.label}</div>
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin-top: 8px;">${opt.prompt}</p>
+                  </div>
+                `).join("")}
+              </div>
+            `;
+          }
+          html += `</div>`;
+        });
+        html += `</div>`;
+      } else if (currentMockSection === "C") {
+        // Literature
+        html += `
+          <div style="margin-bottom: 20px;">
+            <p style="color: var(--text-muted); margin-bottom: 16px;">
+              Section C contains 2 Extracts (10M), 5 Short Answer Questions (10M), and 2 Long Answer Questions (10M).
+            </p>
+        `;
+        sec.items.forEach(item => {
+          html += `
+            <div class="panel" style="margin-bottom: 24px;">
+              <div class="panel-header">
+                <div class="panel-title">${item.number}: ${item.type}</div>
+              </div>
+          `;
+          if (item.text) {
+            // Extract
+            html += `
+              <div class="literature-text" style="background: var(--bg); padding: 16px; border-radius: 8px; margin-bottom: 16px; white-space: pre-line;">
+                ${item.text}
+              </div>
+              ${item.questions.map(q => `
+                <div class="qa-card">
+                  <div class="qa-question">
+                    <span>${q.id.split('_')[1] || '•'}.</span>
+                    <span>${q.q} (${q.marks} Mark)</span>
+                  </div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">👁️ Reveal Answer &rarr;</div>
+                  <div class="qa-answer"><strong>Model Answer:</strong> ${q.answer}</div>
+                </div>
+              `).join("")}
+            `;
+          } else if (item.questions) {
+            // SAQs
+            html += `
+              ${item.questions.map(saq => `
+                <div class="qa-card">
+                  <div class="qa-question">
+                    <span style="color: var(--primary);">${saq.number}:</span>
+                    <span>${saq.q} (2 Marks | 40–50 words)</span>
+                  </div>
+                  <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">👁️ Reveal 2-Point Answer Key &rarr;</div>
+                  <div class="qa-answer">${saq.answer}</div>
+                </div>
+              `).join("")}
+            `;
+          } else if (item.options) {
+            // LAQs
+            html += `
+              <div style="display: grid; grid-template-columns: 1fr; gap: 16px;">
+                ${item.options.map(laq => `
+                  <div class="blueprint-card" style="border-color: var(--primary);">
+                    <div style="font-weight: 700; color: var(--primary); margin-bottom: 6px;">${laq.label}</div>
+                    <p style="font-size: 0.95rem; font-weight: 600; margin-bottom: 12px;">${laq.prompt}</p>
+                    <div class="qa-ans-toggle" onclick="this.nextElementSibling.classList.toggle('open')">👁️ Reveal Complete Model Essay (120–150 words) &rarr;</div>
+                    <div class="qa-answer open" style="margin-top: 12px; white-space: pre-line; font-family: -apple-system, sans-serif;">
+${laq.answer}
+                    </div>
+                  </div>
+                `).join("")}
+              </div>
+            `;
+          }
+          html += `</div>`;
+        });
+        html += `</div>`;
+      }
+
+      container.innerHTML = html;
+    }
+
+    function toggleAllMockAnswers() {
+      const answers = document.querySelectorAll("#mockPaperContent .qa-answer");
+      const anyOpen = Array.from(answers).some(a => a.classList.contains("open"));
+      answers.forEach(a => {
+        if (anyOpen) {
+          a.classList.remove("open");
+        } else {
+          a.classList.add("open");
+        }
+      });
+    }
+
+    // Mock Exam Countdown Timer
+    function toggleTimer() {
+      const btn = document.getElementById("timerStartBtn");
+      if (isTimerRunning) {
+        clearInterval(timerInterval);
+        isTimerRunning = false;
+        btn.textContent = "Resume Timer";
+        btn.classList.remove("btn-primary");
+      } else {
+        isTimerRunning = true;
+        btn.textContent = "Pause Timer";
+        btn.classList.add("btn-primary");
+        timerInterval = setInterval(() => {
+          if (timerSeconds <= 0) {
+            clearInterval(timerInterval);
+            isTimerRunning = false;
+            alert("⏰ Time is up! 3 hours completed. Please submit or review your answers.");
+            return;
+          }
+          timerSeconds--;
+          updateTimerDisplay();
+        }, 1000);
+      }
+    }
+
+    function resetTimer() {
+      clearInterval(timerInterval);
+      isTimerRunning = false;
+      timerSeconds = 3 * 3600;
+      updateTimerDisplay();
+      const btn = document.getElementById("timerStartBtn");
+      if (btn) {
+        btn.textContent = "Start Timer";
+        btn.classList.add("btn-primary");
+      }
+    }
+
+    function updateTimerDisplay() {
+      const h = Math.floor(timerSeconds / 3600);
+      const m = Math.floor((timerSeconds % 3600) / 60);
+      const s = timerSeconds % 60;
+      const str = `${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+      const el = document.getElementById("timerDisplay");
+      if (el) el.textContent = str;
+    }
+
+    // Initialize on Page Load
+    window.addEventListener("DOMContentLoaded", () => {
+      renderUnitCards();
+      renderUnitWorkspace();
+      renderMasterWriting();
+      renderMasterGrammarDrills();
+      loadMockPaper(0);
+      updateTimerDisplay();
+    });
+  </script>
+</body>
+</html>

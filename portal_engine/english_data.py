@@ -1,0 +1,1947 @@
+# -*- coding: utf-8 -*-
+"""
+Class 9 CBSE English Language & Literature (Code 184 / 2026-27 Syllabus) - Track R1
+Comprehensive Data Module:
+- NCERT Kaveri Units 1 to 4 (Prose, Poetry, Character Dossiers, Literary Devices, Vocabulary)
+- Master Writing Skills Studio (All 8 Prescribed R1 Formats with Blueprints & Rubrics)
+- Grammar Lab (Tenses, Modals, Reported Speech, Conditionals Type 1, Concord, Determiners, Clauses)
+- Authentic R1 Question Bank (RTCs, 40-50w SAQs, 120-150w LAQs)
+- 3 Full-Length 80-Mark Mock Examination Papers
+"""
+
+CURRICULUM_META = {
+    "title": "Class 9 CBSE English Language & Literature",
+    "track": "Track R1 (Language R1 / Code 184)",
+    "session": "2026–27",
+    "textbook": "NCERT Kaveri (Units 1, 2, 3, and 4)",
+    "description": "Comprehensive revision portal aligned with NCF-SE competency framework, training critical reading beyond literal recall, functional writing mastery, applied grammar editing, and the 80-mark R1 examination blueprint.",
+    "section_split": {
+        "A": {"name": "Reading Skills", "marks": 20, "desc": "10M Discursive Passage (400-450w) + 10M Case-Based Passage with statistical/visual data (200-250w)"},
+        "B": {"name": "Writing Skills & Grammar", "marks": 30, "desc": "10M Grammar (Editing 4M, Rearrangement 3M, Transformation 3M) + 20M Writing (Notice/Invitation 3M, Letter/E-mail 5M, Description/Article 5M, Essay 7M)"},
+        "C": {"name": "Language through Literature", "marks": 30, "desc": "10M Extracts (Prose/Drama 5M + Poetry 5M) + 10M SAQs (5 of 6, 40-50w) + 5M Extrapolation LAQ + 5M Theme/Character LAQ"},
+        "D": {"name": "Internal Assessment", "marks": 20, "desc": "Periodic Pen-Paper Tests (5M) + Multiple Assessment (5M) + Portfolio (5M) + Subject Enrichment ALS/Projects (5M)"}
+    }
+}
+
+UNITS_DATA = [
+    {
+        "id": "unit_1",
+        "step": "Step 1 (Unit 1)",
+        "unit_number": 1,
+        "theme": "Self-Reliance, Literacy & National Heritage",
+        "color": "#d97706",
+        "color_light": "#fef3c7",
+        "pdf_filename": "iebe101--how-i-taught-my-grandmother-to-read.pdf",
+        "pdf_path": "downloads/class-09/english/kaveri/iebe101--how-i-taught-my-grandmother-to-read.pdf",
+        "pdf_label": "NCERT Kaveri Unit 1 PDF",
+        
+        # PROSE
+        "prose": {
+            "title": "How I Taught My Grandmother to Read",
+            "author": "Sudha Murty",
+            "genre": "Memoir / Autobiographical Narrative",
+            "overview": "Set in a remote North Karnataka village, this heartwarming memoir recounts how twelve-year-old Sudha teaches her sixty-two-year-old grandmother, Krishtakka, to read Kannada so that she is no longer dependent on others to follow her favourite serialized novel, 'Kashi Yatre'.",
+            "cultural_context": "Reflects rural India in the mid-20th century where female education was neglected. The Kannada weekly 'Karmaveera' was the primary cultural window for villagers, carrying Triveni's serialized novel about an elderly woman's yearning to visit Kashi (Varanasi).",
+            "narrative_arc": [
+                {
+                    "stage": "1. The Weekly Reading Ritual",
+                    "detail": "Every Wednesday, the weekly magazine 'Karmaveera' arrived. Krishtakka, who could not read, would eagerly listen to her young granddaughter read Triveni's novel 'Kashi Yatre' aloud, becoming deeply invested in the protagonist's spiritual journey."
+                },
+                {
+                    "stage": "2. The Wedding & Helplessness",
+                    "detail": "Sudha leaves for a cousin's wedding in a neighbouring village for a week. Meanwhile, the latest 'Karmaveera' arrives. Krishtakka holds the magazine, opens the pages, touches the pictures and letters, but cannot decipher a single syllable, feeling utter helplessness."
+                },
+                {
+                    "stage": "3. The Tearful Confession & Resolve",
+                    "detail": "Upon Sudha's return, Krishtakka breaks down in tears. She confesses her childhood deprivation of schooling due to early marriage and loss of her mother. She firmly declares her resolve to learn the Kannada alphabet before Saraswati Puja (Vijayadashami), setting a firm deadline."
+                },
+                {
+                    "stage": "4. The Determination & Saraswati Puja Milestone",
+                    "detail": "Despite her age, household chores, and arthritic hands, Krishtakka practises reading, repeating, writing, and reciting diligently. On Vijayadashami day, she proudly reads the title 'Kashi Yatre' from the gifted novel by herself and touches Sudha's feet in reverence to her guru."
+                }
+            ],
+            "character_dossiers": [
+                {
+                    "name": "Krishtakka (Avva)",
+                    "role": "Sixty-two-year-old Grandmother & Learner",
+                    "traits": [
+                        "Deeply spiritual and empathetic, identifying with the protagonist of 'Kashi Yatre'.",
+                        "Steely determination and unyielding perseverance: 'For learning there is no age bar.'",
+                        "Humility and traditional grace: respects knowledge so profoundly that she sets aside age hierarchy to touch the feet of her young teacher."
+                    ],
+                    "textual_evidence": "'I am touching the feet of a teacher, not my granddaughter; a teacher who taught me so well that I can read any novel today with confidence.'"
+                },
+                {
+                    "name": "Sudha (Narrator)",
+                    "role": "Twelve-year-old Granddaughter & Teacher",
+                    "traits": [
+                        "Playful, innocent child who initially scoffs affectionately at grandmother's dream.",
+                        "Empathetic and patient mentor who recognizes her grandmother's earnest despair.",
+                        "Affectionate and respectful of traditional familial virtues."
+                    ],
+                    "textual_evidence": "'At first, I made fun of her... but when I saw her tears, I realized how much it meant to her, and I took up the duty earnestly.'"
+                }
+            ],
+            "key_themes": [
+                "**Literacy as Liberation:** Reading transforms Krishtakka from dependent passivity to dignified self-reliance.",
+                "**No Age Bar for Learning:** Genuine thirst for knowledge transcends chronological age and physical hurdles.",
+                "**Guru-Shishya Tradition Reimagined:** The teacher-student bond rises above age and generational hierarchies."
+            ]
+        },
+
+        # POETRY
+        "poetry": {
+            "title": "Bharat, Our Land",
+            "poet": "Subramania Bharati (Translated by Prema Nandakumar)",
+            "genre": "Patriotic Ode / Lyric Poem",
+            "overview": "A stirring patriotic ode celebrating the physical majesty, spiritual heritage, intellectual genius, and moral valor of India ('Bharat'), invoking collective pride and awakening the spirit of freedom.",
+            "stanza_paraphrase": [
+                {
+                    "stanza": "Stanza 1: Physical Grandeur & Sacred Waters",
+                    "lines": "The peerless Himalayas are our own;\nThere is no equal to them anywhere on earth.\nThe generous Ganga is our own river;\nWhich other stream can match its grace?",
+                    "meaning": "The poet asserts proud ownership of the matchless Himalayan range, whose heights symbolize unyielding dignity, and the fertile, bountiful Ganga whose waters nourish both body and soul across northern plains."
+                },
+                {
+                    "stanza": "Stanza 2: Wisdom, Literature & Heroism",
+                    "lines": "The sunny Upanishads are our own,\nWhat other scripture can match their glory?\nThis golden land is our own land,\nShe is peerless, let us praise her!",
+                    "meaning": "India is the birthplace of luminous philosophical treatises (the Upanishads) that dispel moral darkness, and home to legendary poets like Kalidasa and righteous seers. It is truly a golden soil deserving of global veneration."
+                },
+                {
+                    "stanza": "Stanza 3: Warrior Valor & Bountiful Unity",
+                    "lines": "Gallant warriors have lived here;\nSages have meditated on this sacred soil;\nBuddha taught his boundless compassions here;\nShe is peerless, let us praise her!",
+                    "meaning": "From selfless spiritual teachers like Gautama Buddha who preached universal ahimsa (compassion) to valorous freedom fighters and chaste heroines, India's heritage balances immense strength with tender ethical righteousness."
+                }
+            ],
+            "literary_devices": [
+                {"device": "Refrain", "example": "'She is peerless, let us praise her!'", "effect": "Reiterates absolute uniqueness and evokes cumulative rhythmic fervor."},
+                {"device": "Allusion", "example": "Himalayas, Ganga, Upanishads, Buddha, Kalidasa", "effect": "Anchors patriotic pride in historical, philosophical, and geographic reality."},
+                {"device": "Hyperbole / Exaltation", "example": "'There is no equal to them anywhere on earth'", "effect": "Heightens emotional intensity and national self-respect."},
+                {"device": "Sensory Imagery", "example": "'generous Ganga', 'sunny Upanishads', 'golden land'", "effect": "Appeals to sight and warmth, associating the homeland with abundance and enlightenment."}
+            ]
+        },
+
+        # WRITING SKILLS
+        "writing_skills": [
+            {
+                "format_name": "Letter to the Editor",
+                "cbse_question_no": "Q7",
+                "marks": 5,
+                "word_limit": "120–150 words",
+                "prompt": "You recently read about adult literacy initiatives in rural districts. Writing as Ananya/Aarav of 42 Mall Road, Shimla, write a letter to the Editor of 'The National Tribune', highlighting the urgency of community adult education centers inspired by stories like Krishtakka's.",
+                "blueprint": [
+                    "Sender's Address (2–3 lines, no comma at end)",
+                    "Date (Format: 28 September 2026)",
+                    "The Editor, Name of Newspaper, City",
+                    "Subject: [Urgent Need to Establish Community Adult Literacy Centers] (Keep brief, underlined)",
+                    "Salutation: Sir / Madam",
+                    "Body Paragraph 1: Purpose of writing ('Through the esteemed columns of your newspaper...')",
+                    "Body Paragraph 2: Core issue, real-world examples, impact of illiteracy on rural elders",
+                    "Body Paragraph 3: Actionable suggestions (evening schools, student volunteer schemes, government grants)",
+                    "Complimentary Close: Yours sincerely / Yours faithfully",
+                    "Name & Designation"
+                ],
+                "cbse_rubric": {"format": "1 Mark", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+                "model_answer": "42 Mall Road\nShimla - 171001\n\n28 September 2026\n\nThe Editor\nThe National Tribune\nThe Mall, Shimla\n\nSubject: Need to Establish Community Adult Literacy Centers in Rural Areas\n\nSir,\n\nThrough the esteemed columns of your widely circulated newspaper, I wish to draw the attention of the education authorities and civil society towards the pressing necessity of establishing community adult literacy centers in our rural and semi-urban pockets.\n\nWhile primary schooling has witnessed commendable expansion under recent national initiatives, a substantial portion of our elderly and middle-aged rural populace remains deprived of basic functional literacy. Like the inspiring story of Krishtakka in Sudha Murty's memoir, millions of seniors harbor a silent, ardent yearning to read everyday bus signboards, devotional literature, bank passbooks, and letters from their children without suffering the humiliation of dependence.\n\nTo bridge this generational gap, local Panchayats and non-governmental organizations should collaborate to set up evening literacy circles in village community halls. High school and college students can be mobilized as literacy volunteers under social service internships. Equipping these centers with illustrated primers and audio-visual modules will foster a joyful learning environment.\n\nEmpowering our elders with literacy is an act of restoration of human dignity. I earnestly hope the concerned authorities will initiate prompt measures in this direction.\n\nYours sincerely,\nAarav Sharma"
+            },
+            {
+                "format_name": "Informal Invitation",
+                "cbse_question_no": "Q6",
+                "marks": 3,
+                "word_limit": "Up to 50 words",
+                "prompt": "You are Sudha. Your grandmother Krishtakka has accomplished her dream of learning to read on Vijayadashami. Write an informal invitation to your close cousin, inviting them to a family celebration and book presentation.",
+                "blueprint": [
+                    "Sender's Address & Date (informal letter style)",
+                    "Warm Salutation (Dear Rohini,)",
+                    "Occasion, Date, Time & Venue",
+                    "Call to attend & warm closing",
+                    "Sign-off"
+                ],
+                "cbse_rubric": {"format": "1 Mark", "content": "1 Mark", "expression": "1 Mark"},
+                "model_answer": "14 Saraswati Nilaya, Dharwad\n28 September 2026\n\nDear Rohini,\n\nYou will be thrilled to know that our beloved Avva has successfully learned to read the Kannada alphabet! To celebrate this proud milestone, we have organized a special Vijayadashami gathering and book gifting ceremony at our home on Sunday, 5th October 2026, at 5:00 PM. \n\nPlease join us to celebrate Avva's triumph!\n\nYours affectionately,\nSudha"
+            },
+            {
+                "format_name": "Descriptive Essay",
+                "cbse_question_no": "Q9",
+                "marks": 7,
+                "word_limit": "200–250 words",
+                "prompt": "Write a descriptive essay on 'The Living Wisdom of Grandparents: Anchors in a Rushing World'.",
+                "blueprint": [
+                    "Title: Catchy, reflective",
+                    "Introduction (30–40 words): Sensory setting, introducing the grandparent figure",
+                    "Body Paragraph 1 (70–80 words): Physical description, voice, gestures, daily routine",
+                    "Body Paragraph 2 (70–80 words): Moral presence, life lessons, resilience during hardship",
+                    "Conclusion (30–40 words): Emotional resonance and lasting impact on youth"
+                ],
+                "cbse_rubric": {"format": "1 Mark", "content": "3 Marks", "organization": "2 Marks", "accuracy": "1 Mark"},
+                "model_answer": "The Living Wisdom of Grandparents: Anchors in a Rushing World\n\nIn an age propelled by flickering smartphone screens and ceaseless digital clamour, my grandmother's veranda remains an untouched sanctuary of serenity. Wrapped in a simple handloom cotton saree, she sits each afternoon beside a brass lamp, her silver hair catching the gentle slant of daylight, her wrinkled hands moving with patient rhythm across whatever task she undertakes.\n\nEvery line etched upon her weathered forehead tells a story—not of defeat, but of resilience weathered through uncounted monsoons. Unlike the frantic modern generation that mistakes information for understanding, her wisdom is organic, distilled from decades of observing human nature and seasonal cycles. When she speaks, her voice carries the warmth of sun-baked earth after the first shower. She listens without checking a watch, offering counsel that never wounds but gently restores clarity.\n\nHer life exemplifies quiet fortitude. Deprived of formal schooling in her childhood, she never allowed bitterness to take root. Instead, she approaches every new dawn with childlike curiosity, eager to learn, adapt, and comprehend the fast-evolving world around her. When she reads haltingly from her morning prayer book, her eyes illuminate with the unblemished triumph of an explorer reaching a new summit.\n\nGrandparents are living historical libraries and the moral conscience of our households. In their patient gaze, we discover who we truly are beneath our hurried pursuits. To sit at their feet is to be anchored in an ocean of unconditional grace."
+            }
+        ],
+
+        # GRAMMAR LAB
+        "grammar": {
+            "title": "Tenses: Continuous Aspect & Vocabulary in Context",
+            "topics": [
+                {
+                    "concept": "Present, Past & Future Continuous Forms",
+                    "rule": "Expresses ongoing, uncompleted actions at a specific reference time. Form: Subject + is/am/are/was/were/will be + Verb-ing.",
+                    "examples": [
+                        {"context": "Present Continuous", "sentence": "Krishtakka is diligently reciting her Kannada alphabet right now."},
+                        {"context": "Past Continuous", "sentence": "Sudha was reading the serial aloud when the postman arrived."},
+                        {"context": "Future Continuous", "sentence": "This time tomorrow, the villagers will be celebrating the festival."}
+                    ],
+                    "stative_warning": "Stative verbs of perception, emotion, and possession (know, believe, understand, love, belong) DO NOT take continuous forms. Incorrect: 'She was knowing the story.' Correct: 'She knew the story.'"
+                },
+                {
+                    "concept": "Binomials & Prefixes",
+                    "rule": "Binomials are fixed pairs of words linked by a conjunction. Prefixes alter word class or create opposites (un-, ir-, in-, dis-).",
+                    "examples": [
+                        {"term": "sink or swim", "usage": "Left without assistance, the villagers had to sink or swim."},
+                        {"term": "part and parcel", "usage": "Struggle is part and parcel of mastering any new skill."},
+                        {"term": "literate → illiterate", "usage": "The prefix 'il-' turns literate into its opposite."},
+                        {"term": "resolute → irresolute", "usage": "The prefix 'ir-' indicates lack of determination."}
+                    ]
+                }
+            ],
+            "drills": [
+                {
+                    "type": "editing",
+                    "title": "Q3 Editing Drill (CBSE 4 Marks)",
+                    "passage": [
+                        {"line": "Sudha Murty is known for her warm narratives. Last week she", "error": "is", "correction": "was", "options": ["is -> was", "for -> to", "her -> their", "Last -> Next"]},
+                        {"line": "was visiting an rural school where children were reading", "error": "an", "correction": "a", "options": ["an -> a", "where -> which", "were -> was", "reading -> read"]},
+                        {"line": "proudly from their books. The teacher are explaining the", "error": "are", "correction": "was", "options": ["are -> was", "from -> off", "proudly -> proud", "their -> its"]},
+                        {"line": "lesson while students listened with deep attention.", "error": "listened", "correction": "were listening", "options": ["listened -> were listening", "with -> in", "deep -> deeply", "lesson -> lessons"]}
+                    ]
+                },
+                {
+                    "type": "rearrangement",
+                    "title": "Q4 Sentence Rearrangement (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "jumbled": "age / for / learning / is / no / bar / there",
+                            "correct": "There is no age bar for learning."
+                        },
+                        {
+                            "jumbled": "tears / eyes / grandmother's / the / welled / in / up",
+                            "correct": "Tears welled up in the grandmother's eyes."
+                        },
+                        {
+                            "jumbled": "proudly / her / read / she / novel / title / of / the",
+                            "correct": "She proudly read the title of her novel."
+                        }
+                    ]
+                },
+                {
+                    "type": "transformation",
+                    "title": "Q5 Sentence Transformation (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "original": "Krishtakka said to Sudha, 'Will you teach me the Kannada alphabet?'",
+                            "transformed": "Krishtakka asked Sudha if she would teach her the Kannada alphabet.",
+                            "rule": "Reporting verb 'said to' becomes 'asked'. Yes/No question introduces 'if/whether'. Present modal 'will' backshifts to 'would'."
+                        },
+                        {
+                            "original": "Sudha was reading the magazine. Her grandmother listened attentively. (Join using 'while')",
+                            "transformed": "While Sudha was reading the magazine, her grandmother listened attentively.",
+                            "rule": "Subordinating temporal clause 'while' connects simultaneous progressive action with background listening."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        # RTC & EXAM BANK
+        "exam_bank": {
+            "extracts": [
+                {
+                    "source": "How I Taught My Grandmother to Read (Prose)",
+                    "text": "“I looked at her face. It was full of determination. 'For learning there is no age bar,' she said. 'Tomorrow onwards we will start with our work. Ten o'clock in the morning, after all the household chores are over.' I realized the depth of her earnestness.”",
+                    "questions": [
+                        {"q": "Whose face was full of determination and why?", "a": "Krishtakka's (the grandmother's) face, because she had firmly resolved to overcome her illiteracy and learn the Kannada alphabet by Saraswati Puja."},
+                        {"q": "What does the expression 'no age bar' signify in the context?", "a": "It signifies that age is never an insurmountable obstacle when one possesses sincere dedication and willpower to acquire knowledge."},
+                        {"q": "Identify the tone of the speaker in the extract.", "a": "Resolute, determined, and earnest."},
+                        {"q": "Which word in the extract means 'sincerity and seriousness'?", "a": "'Earnestness'."},
+                        {"q": "Why did she choose 'ten o'clock in the morning' to begin?", "a": "Because by ten o'clock, she would have completed all her morning household responsibilities, allowing uninterrupted focus on learning."}
+                    ]
+                },
+                {
+                    "source": "Bharat, Our Land (Poetry)",
+                    "text": "“The sunny Upanishads are our own,\nWhat other scripture can match their glory?\nThis golden land is our own land,\nShe is peerless, let us praise her!”",
+                    "questions": [
+                        {"q": "Why are the Upanishads described as 'sunny'?", "a": "The Upanishads are described as 'sunny' because they radiate spiritual illumination, dispelling ignorance and moral darkness like sunlight."},
+                        {"q": "Identify the poetic device used in the last line of the stanza.", "a": "Refrain (and personification of the nation as 'She')."},
+                        {"q": "What rhetorical purpose does the question in line 2 serve?", "a": "It serves as a rhetorical assertion emphasizing that no other spiritual scripture can equal the profundity and sublime wisdom of the Indian Upanishads."},
+                        {"q": "What does 'golden land' imply about Bharat?", "a": "It implies both material prosperity and the priceless spiritual/cultural legacy of India."},
+                        {"q": "Name the poet and translator of these lines.", "a": "Poet: Subramania Bharati; Translator: Prema Nandakumar."}
+                    ]
+                }
+            ],
+            "saqs": [
+                {
+                    "q": "Why did Krishtakka identify so deeply with the protagonist of Triveni's novel 'Kashi Yatre'? (40–50 words)",
+                    "a": "Like the novel's elderly protagonist, Krishtakka had never visited Kashi and harboured an intense desire to see Lord Vishweshwara. Both women embodied deep religious devotion, selfless sacrifice for others, and the poignant pain of unfulfilled life aspirations."
+                },
+                {
+                    "q": "How did Sudha react when her grandmother initially expressed her desire to learn reading? (40–50 words)",
+                    "a": "Initially, twelve-year-old Sudha made fun of her grandmother, citing her wrinkled skin, grey hair, spectacles, and heavy kitchen workload as impractical obstacles. However, seeing her grandmother's genuine tears of helplessness, Sudha instantly felt remorse and embraced her role as teacher."
+                },
+                {
+                    "q": "Describe the traditional significance of Vijayadashami in Krishtakka's literacy journey. (40–50 words)",
+                    "a": "Vijayadashami (Dussehra) is celebrated as Saraswati Puja, the auspicious festival honoring the Goddess of Learning and the initiation of education (Vidya Arambha). Krishtakka chose this sacred day as her target deadline to formally read her first independent printed book."
+                },
+                {
+                    "q": "What justification did Krishtakka offer for touching the feet of her twelve-year-old granddaughter? (40–50 words)",
+                    "a": "Krishtakka explained that according to sacred scriptures, one must show reverence to one's Guru irrespective of age or gender. She was touching the feet of her teacher who had illuminated her world with literacy, not merely those of her young granddaughter."
+                }
+            ],
+            "laqs": [
+                {
+                    "type": "Extrapolative Question (CBSE Q13 - 120–150 words)",
+                    "q": "In an era dominated by instant digital gratification, the story of Krishtakka reminds us of the profound sanctity of education. Discuss how true literacy extends beyond deciphering letters to building self-respect and empowerment.",
+                    "a": "In Sudha Murty's memoir, literacy is portrayed not as a mere mechanical skill of recognizing alphabets, but as an indispensable instrument of human dignity and self-determination. For sixty-two years, Krishtakka lived a comfortable life managing a prosperous household, yet her inability to read left her feeling crippled whenever she held a printed page without a mediator.\n\nHer tears were not born of vanity, but of an acute awareness of dependence. By mastering the Kannada script, she reclaimed her autonomy. In modern society, where digital interfaces and complex information govern daily survival, functional literacy is even more critical. Education empowers marginalized individuals to access legal rights, economic independence, and intellectual freedom. Krishtakka's arduous triumph proves that learning is an intrinsic spiritual need that restores human agency, reminding us that knowledge is the ultimate equalizer across generations."
+                },
+                {
+                    "type": "Theme & Character Synthesis (CBSE Q14 - 120–150 words)",
+                    "q": "Subramania Bharati's 'Bharat, Our Land' presents an inspiring blend of geographic grandeur, intellectual richness, and moral fortitude. Evaluate how the poet uses allusions to create a composite vision of Indian pride.",
+                    "a": "In 'Bharat, Our Land', Subramania Bharati constructs an evocative tapestry of patriotic consciousness by intertwining geographical landmarks with spiritual and cultural milestones. Rather than relying on abstract jingoism, the poet grounds India's greatness in tangible monuments of nature and intellect.\n\nGeographically, the 'peerless Himalayas' represent towering moral unshakeability, while the 'generous Ganga' symbolizes perennial benevolence and physical sustenance. Culturally, the poet invokes the 'sunny Upanishads' to highlight India's eternal intellectual contributions that dispel darkness across civilizations. By further alluding to Gautama Buddha's boundless compassion, Kalidasa's poetic brilliance, and valiant warriors, Bharati demonstrates that India's true sovereignty lies in harmonizing unyielding valor with profound ethical righteousness. Through the rhythmic refrain 'She is peerless, let us praise her!', the poet inspires citizens to transcend sectarian divisions and recognize the sacred unity of their shared heritage."
+                }
+            ]
+        }
+    },
+
+    # UNIT 2
+    {
+        "id": "unit_2",
+        "step": "Step 2 (Unit 2)",
+        "unit_number": 2,
+        "theme": "Craftsmanship, Dignity of Labour & Human Vocations",
+        "color": "#0284c7",
+        "color_light": "#e0f2fe",
+        "pdf_filename": "iebe102--the-pot-maker.pdf",
+        "pdf_path": "downloads/class-09/english/kaveri/iebe102--the-pot-maker.pdf",
+        "pdf_label": "NCERT Kaveri Unit 2 PDF",
+        
+        "prose": {
+            "title": "The Pot Maker",
+            "author": "Contemporary Indian Folk & Artisanal Narrative",
+            "genre": "Short Story / Social Realism",
+            "overview": "Explores the generational tension and quiet poetry of traditional pottery. An artisan father trains his restless son, teaching him that shaping clay is not merely commercial output, but a patient communion between human breath, spinning earth, water, and cooling fire.",
+            "cultural_context": "Rooted in India's millennia-old artisanal traditions where pottery is an essential cultural, ritual, and ecological craft, now challenged by plastic commodification and urbanization.",
+            "narrative_arc": [
+                {
+                    "stage": "1. The Rhythm of the Spinning Wheel",
+                    "detail": "The story opens with the steady humming of the wooden potter's wheel in a village courtyard. The father's experienced thumbs mould lump clay into graceful vessels with instinctive ease."
+                },
+                {
+                    "stage": "2. The Son's Impatience",
+                    "detail": "The son, eager to finish quickly and earn money, handles the spinning clay too aggressively. The walls collapse into a misshapen sludge, frustrating him."
+                },
+                {
+                    "stage": "3. The Father's Counsel on Clay and Soul",
+                    "detail": "The father gently stops the wheel. He explains that clay cannot be bullied; it responds only to patient pressure from within and gentle guidance from without."
+                },
+                {
+                    "stage": "4. The Crucible of the Kiln",
+                    "detail": "Together, they fire the pots in the community kiln. The son observes how unyielding patience through trial by fire transforms fragile mud into ringing terracotta, awakening deep respect for his ancestral vocation."
+                }
+            ],
+            "character_dossiers": [
+                {
+                    "name": "The Master Potter (Father)",
+                    "role": "Traditional Craftsman & Mentor",
+                    "traits": [
+                        "Meditative patience, revering the clay as a living partner.",
+                        "Gentle pedagogical wisdom: corrects mistakes through demonstration rather than anger.",
+                        "Deep spiritual pride in honest manual vocation."
+                    ],
+                    "textual_evidence": "'The clay knows your heartbeat before your hands do. If your mind is in a hurry, the pot will wobble and fall.'"
+                },
+                {
+                    "name": "The Apprentice (Son)",
+                    "role": "Restless Youth in Transition",
+                    "traits": [
+                        "Ambitious, anxious about speed and financial returns.",
+                        "Vulnerable to frustration when confronted with technical subtleties.",
+                        "Receptive to deeper philosophical awakening when guided with patience."
+                    ],
+                    "textual_evidence": "'At first I thought it was just mud and muscle. Today I felt the pot breathing under my palms.'"
+                }
+            ],
+            "key_themes": [
+                "**Dignity of Manual Craft:** Honest labor with hands and earth is sacred artistry, not inferior drudgery.",
+                "**Patience as a Life Skill:** True mastery requires subduing the ego and accepting natural rhythms of growth.",
+                "**Preservation of Folk Heritage:** Honoring artisanal lineages against the tide of ephemeral mass-production."
+            ]
+        },
+
+        "poetry": {
+            "title": "Gifts of Grace: Honouring Our Vocation",
+            "poet": "Celebration of Vocations",
+            "genre": "Lyrical Verse / Hymn of Work",
+            "overview": "A resonant tribute to weavers, potters, blacksmiths, carpenters, and farmers whose quiet, anonymous labour sustains the fabric of civilization, presenting work as a supreme form of worship.",
+            "stanza_paraphrase": [
+                {
+                    "stanza": "Stanza 1: The Weaver and the Loom",
+                    "lines": "Shuttle flying through the warp,\nThreads of sunrise, noon, and dark;\nWeaving warmth for child and king,\nWhile the wooden pedals sing.",
+                    "meaning": "The weaver's rhythmic motion binds disparate threads into shielding garments, treating ordinary textile creation as an act of universal benevolence."
+                },
+                {
+                    "stanza": "Stanza 2: The Smithy and Glowing Ore",
+                    "lines": "Sparks that shower in the night,\nAnvil ringing with delight;\nBeating iron into ploughs,\nSweat upon the furrowed brows.",
+                    "meaning": "The blacksmith transforms fierce, destructive fire and rigid iron into life-giving agricultural implements, demonstrating power harnessed for peace."
+                },
+                {
+                    "stanza": "Stanza 3: Sacred Sweat as Prayer",
+                    "lines": "Every craft an altar stone,\nEvery hammer-stroke well known;\nBlessed be the calloused hand,\nThat preserves and feeds the land.",
+                    "meaning": "The poet concludes that true spirituality is discovered not in abstract withdrawal, but in the faithful, honest execution of daily labor that shelters humanity."
+                }
+            ],
+            "literary_devices": [
+                {"device": "Metaphor", "example": "'Every craft an altar stone'", "effect": "Elevates physical workshops to divine sanctuaries."},
+                {"device": "Onomatopoeia & Auditory Imagery", "example": "'Anvil ringing', 'pedals sing', 'sparks shower'", "effect": "Recreates the vibrant acoustic landscape of productive manual work."},
+                {"device": "Alliteration", "example": "'Shuttle singing', 'calloused hand... feeds the land'", "effect": "Creates rhythmic musicality mirroring mechanical repetition."},
+                {"device": "Symbolism", "example": "Plough, Loom, Anvil", "effect": "Archetypal symbols of sustenance, protection, and endurance."}
+            ]
+        },
+
+        "writing_skills": [
+            {
+                "format_name": "Notice Writing",
+                "cbse_question_no": "Q6",
+                "marks": 3,
+                "word_limit": "Up to 50 words",
+                "prompt": "You are Rajesh/Rani, Secretary of the Cultural Club of Kendriya Vidyalaya, Varanasi. Draft a notice in not more than 50 words informing students of Grades 9–10 about an upcoming 'Traditional Clay & Pottery Workshop' conducted by master artisans.",
+                "blueprint": [
+                    "Must be enclosed in a clear Box",
+                    "Name of Issuing Institution (Centered, Capitalized)",
+                    "The word 'NOTICE' (Centered, Bold/Underlined)",
+                    "Date of Issuing (Left-aligned: 28 September 2026)",
+                    "Catchy Heading / Subject (Centered)",
+                    "Body (Date, Time, Venue, Target Audience, Registration details)",
+                    "Authorized Signatory (Name & Designation)"
+                ],
+                "cbse_rubric": {"format": "1 Mark (Box, Header, Date, Signatory)", "content": "1 Mark (5 Ws)", "expression": "1 Mark (Accuracy, Word limit)"},
+                "model_answer": "┌────────────────────────────────────────────────────────┐\n│            KENDRIYA VIDYALAYA, VARANASI               │\n│                       NOTICE                           │\n│                                                        │\n│ 28 September 2026                                      │\n│             WORKSHOP ON TRADITIONAL POTTERY            │\n│                                                        │\n│ The Cultural Club is organizing a hands-on pottery     │\n│ workshop for students of Grades IX and X. Master      │\n│ artisans from Nizamabad will demonstrate live wheel    │\n│ shaping and terracotta designing.                      │\n│                                                        │\n│ • Date: 10 October 2026                                │\n│ • Time: 10:00 AM – 1:00 PM                             │\n│ • Venue: School Art Quadrangle                         │\n│                                                        │\n│ Interested students must submit names to the           │\n│ undersigned by 5 October 2026. Materials provided.     │\n│                                                        │\n│ Rajesh Verma                                           │\n│ Secretary, Cultural Club                               │\n└────────────────────────────────────────────────────────┘"
+            },
+            {
+                "format_name": "Narrative Essay",
+                "cbse_question_no": "Q9",
+                "marks": 7,
+                "word_limit": "200–250 words",
+                "prompt": "Write a narrative essay on 'An Afternoon with a Master Potter: Learning the Geometry of Patience'.",
+                "blueprint": [
+                    "Title: Narrative, evocative",
+                    "Orientation: Inciting incident, arriving at the potter's shed",
+                    "Rising Action: Attempting to handle the clay, failure, father's intervention",
+                    "Climax: The breakthrough moment of stillness and balance on the wheel",
+                    "Falling Action & Resolution: Inspecting the shaped diya, reflecting on life's lessons"
+                ],
+                "cbse_rubric": {"format": "1 Mark", "content": "3 Marks", "organization": "2 Marks", "accuracy": "1 Mark"},
+                "model_answer": "An Afternoon with a Master Potter: Learning the Geometry of Patience\n\nThe air inside Master Ramu’s humble workshop on the outskirts of Kumhartoli smelled of damp earth and woodsmoke. Piles of gray alluvial clay lay neatly covered in moist jute bags, while shelves held rows of drying terracotta goblets. As an urban teenager accustomed to tapping smartphone screens for instant results, I had come with a casual assumption that spinning a pot required little more than brisk physical force.\n\nMaster Ramu welcomed me with a crinkled smile and nudged a lump of damp clay onto the flat stone wheel. He kicked the wooden beam, and the stone began to whirl into a hypnotic blur. 'Place your palms here,' he commanded softly. I plunged my thumbs boldly into the center. Within seconds, the spinning clay shuddered violently, wobbled off-axis, and collapsed into a grotesque splatter across my forearms. Frustration surged through me.\n\n'You are fighting the earth,' Ramu Uncle chuckled, resting his warm, clay-caked hands over mine. 'You must first quiet your breath. The wheel does not obey urgency. It responds only to stillness.' \n\nHe placed a fresh mound. This time, I closed my eyes for a second, released the tension in my wrists, and allowed my fingers to support rather than force the shape. Miraculously, the clay rose like a blooming lotus between my palms—smooth, symmetrical, and serene. As the silk thread sliced the finished diya cleanly from the wheel, a thrill of humility coursed through me. In that single afternoon, I had learned more about discipline, patience, and the dignity of creation than a dozen textbooks could ever teach."
+            }
+        ],
+
+        "grammar": {
+            "title": "Clauses (Main, Subordinate, Relative) & Determiners",
+            "topics": [
+                {
+                    "concept": "Clauses Breakdown",
+                    "rule": "A Main Clause can stand alone as a complete sentence. A Subordinate Clause depends on a main clause. Relative Clauses (adjective clauses) begin with relative pronouns (who, whom, whose, which, that).",
+                    "examples": [
+                        {"type": "Defining Relative Clause", "sentence": "The potter who guided the young apprentice possessed infinite patience. (Identifies which potter)"},
+                        {"type": "Non-Defining Relative Clause", "sentence": "Terracotta pottery, which has been practised for millennia, is an eco-friendly art form. (Adds extra information)"}
+                    ]
+                },
+                {
+                    "concept": "Determiners: Quantifiers and Articles",
+                    "rule": "'Few / Little' carry negative meaning (hardly any). 'A few / A little' carry positive meaning (some). 'Each' focuses on individual members; 'Every' focuses on the group as a whole.",
+                    "examples": [
+                        {"pair": "Few vs A few", "note": "He had few friends (almost none). He had a few friends (some)."},
+                        {"pair": "Little vs A little", "note": "There is little hope (almost no hope). There is a little hope (some hope)."}
+                    ]
+                }
+            ],
+            "drills": [
+                {
+                    "type": "editing",
+                    "title": "Q3 Editing Drill (CBSE 4 Marks)",
+                    "passage": [
+                        {"line": "Pottery is one of the more ancient arts known to mankind.", "error": "more", "correction": "most", "options": ["more -> most", "of -> in", "arts -> art", "known -> knowing"]},
+                        {"line": "An skilled craftsman can shape mud into beautiful vessels.", "error": "An", "correction": "A", "options": ["An -> A", "into -> onto", "beautiful -> beauty", "vessels -> vessel"]},
+                        {"line": "However, there are little young people willing to learn", "error": "little", "correction": "few", "options": ["little -> few", "are -> is", "young -> younger", "learn -> learning"]},
+                        {"line": "the craft because it demand immense patience and time.", "error": "demand", "correction": "demands", "options": ["demand -> demands", "because -> although", "the -> a", "patience -> patient"]}
+                    ]
+                },
+                {
+                    "type": "rearrangement",
+                    "title": "Q4 Sentence Rearrangement (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "jumbled": "craft / honesty / manual / of / sacred / is / a / form",
+                            "correct": "Manual craft is a sacred form of honesty."
+                        },
+                        {
+                            "jumbled": "demands / clay / gentle / the / touch / from / artisan / an",
+                            "correct": "The clay demands a gentle touch from an artisan."
+                        },
+                        {
+                            "jumbled": "traditions / preserve / our / ancient / we / must / handicrafts / of",
+                            "correct": "We must preserve our ancient traditions of handicrafts."
+                        }
+                    ]
+                },
+                {
+                    "type": "transformation",
+                    "title": "Q5 Sentence Transformation (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "original": "The master spoke to the boy. He was shaping an earthen pot. (Combine using Relative Pronoun 'who')",
+                            "transformed": "The master spoke to the boy who was shaping an earthen pot.",
+                            "rule": "Relative pronoun 'who' replaces 'he' to create an adjective clause qualifying 'the boy'."
+                        },
+                        {
+                            "original": "The father said, 'Do not hurry the clay or it will collapse.'",
+                            "transformed": "The father warned him not to hurry the clay lest it should collapse.",
+                            "rule": "Imperative command with warning transforms into 'warned him not to...'."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "exam_bank": {
+            "extracts": [
+                {
+                    "source": "The Pot Maker (Prose)",
+                    "text": "“The wheel groaned as it slowed to a halt. The lump of gray mud on the wooden disc had lost its symmetry, slumping forward like a tired beast. 'Look closely,' the older man said, his voice softer than the settling dust. 'You treated the earth like an enemy to be conquered. The clay does not yield to violence; it opens only to understanding.'”",
+                    "questions": [
+                        {"q": "Why had the lump of clay slumped forward?", "a": "Because the young apprentice applied aggressive, uneven force instead of gentle, balanced pressure, causing the structural walls to collapse."},
+                        {"q": "What figure of speech is present in 'slumping forward like a tired beast'?", "a": "Simile."},
+                        {"q": "What philosophical truth does the older man communicate in the last line?", "a": "He teaches that nature and creative crafts cannot be coerced through brute force or impatience; they respond only to empathy, sensitivity, and patience."},
+                        {"q": "Which word in the extract means 'the quality of having balanced proportions'?", "a": "'Symmetry'."},
+                        {"q": "What tone does the older man adopt while advising his apprentice?", "a": "Compassionate, patient, and philosophical."}
+                    ]
+                },
+                {
+                    "source": "Gifts of Grace (Poetry)",
+                    "text": "“Every craft an altar stone,\nEvery hammer-stroke well known;\nBlessed be the calloused hand,\nThat preserves and feeds the land.”",
+                    "questions": [
+                        {"q": "Why does the poet call every craft an 'altar stone'?", "a": "To emphasize that honest work and artisanal creation are equivalent to sacred spiritual worship."},
+                        {"q": "What does the expression 'calloused hand' symbolize?", "a": "It symbolizes the enduring hardship, relentless dedication, and selfless manual labor of daily wage earners and artisans."},
+                        {"q": "Explain the significance of the rhyme scheme in these four lines.", "a": "The AABB rhyme scheme ('stone/known', 'hand/land') creates a rhythmic, musical cadence echoing the steady beat of industrial and agricultural labor."},
+                        {"q": "How does the artisan's work 'preserve and feed the land'?", "a": "By fashioning tools, ploughs, garments, and storage vessels that sustain agriculture, shelter families, and maintain societal life."},
+                        {"q": "Identify the overall mood evoked by this stanza.", "a": "Reverence, gratitude, and dignity."}
+                    ]
+                }
+            ],
+            "saqs": [
+                {
+                    "q": "Why is patience considered the supreme virtue in the art of pottery? (40–50 words)",
+                    "a": "Pottery cannot be hurried. From preparing moisture in clay, centering on the spinning wheel, shaping thin walls without rupture, to gradual sun-drying and controlled kiln firing, any impatience causes the pot to crack or slump. Patience harmonizes human intent with natural elements."
+                },
+                {
+                    "q": "How does 'Gifts of Grace' redefine the concept of worship? (40–50 words)",
+                    "a": "The poem rejects the notion that spirituality belongs only to secluded shrines. Instead, it sanctifies the carpenter's lathe, the blacksmith's anvil, and the weaver's loom, asserting that selfless manual work performed with dedication is the highest form of prayer."
+                },
+                {
+                    "q": "Contrast the apprentice's initial attitude towards work with that of his master in 'The Pot Maker'. (40–50 words)",
+                    "a": "The apprentice initially viewed pottery as a mechanical chore to be rushed for financial gain, treating clay aggressively. The master viewed it as a sacred, meditative partnership, listening to the clay's texture and submitting to natural rhythms with humility."
+                },
+                {
+                    "q": "What message does the text convey regarding the survival of traditional Indian handicrafts? (40–50 words)",
+                    "a": "The text warns against mindless commercialization and plastic substitution. It advocates valuing the organic beauty, ecological sustainability, and cultural soul preserved within traditional handicrafts, urging society to sustain artisanal livelihoods."
+                }
+            ],
+            "laqs": [
+                {
+                    "type": "Extrapolative Question (CBSE Q13 - 120–150 words)",
+                    "q": "In an automated world dominated by assembly lines and artificial intelligence, what enduring life lessons can modern students draw from traditional vocations depicted in Unit 2?",
+                    "a": "The modern world is increasingly defined by push-button convenience, automated algorithms, and instant gratification. While technological progress brings efficiency, it frequently detaches human beings from the visceral tactile joy of creation. The artisanal narratives in Unit 2 serve as an urgent cultural corrective.\n\nFrom the master potter, students learn that resilience cannot be downloaded; it must be patiently forged. When an apprentice's clay collapses, the master does not despair or discard the material; he kneads the mud again with renewed mindfulness. This teaches students emotional regulation, perseverance through failure, and respect for process over hasty outcome. Furthermore, 'Gifts of Grace' instils deep empathy for the dignity of manual labor, dismantling social elitism. By learning that true satisfaction resides in focused craftsmanship, students discover how to cultivate mindfulness, groundedness, and human warmth in an increasingly mechanized society."
+                },
+                {
+                    "type": "Theme & Character Synthesis (CBSE Q14 - 120–150 words)",
+                    "q": "Analyze the symbolic role of the potter's wheel in 'The Pot Maker'. How does it reflect the broader philosophy of life and human relationships?",
+                    "a": "In 'The Pot Maker', the wooden wheel transcends its physical identity as a craft tool to become a powerful philosophical symbol of life's perpetual motion and equilibrium. The wheel rotates unceasingly, mirroring the cyclical nature of time, seasons, and human generations.\n\nHowever, a pot can only take shape when the lump of clay is precisely positioned at the mathematical 'still center' of the spinning wheel. If the clay drifts off-center, the centrifugal force tears it apart. Symbolically, this illustrates the human condition: amid the dizzying vortex of external circumstances and worldly desires, an individual must remain anchored in internal balance and moral integrity. The father’s gentle guidance represents the indispensable role of tradition and mentorship in keeping youthful ambition centered. Just as water cools the friction and fire hardens the shape, life's trials temper raw human character into enduring wisdom."
+                }
+            ]
+        }
+    },
+
+    # UNIT 3
+    {
+        "id": "unit_3",
+        "step": "Step 3 (Unit 3)",
+        "unit_number": 3,
+        "theme": "Ecological Harmony, Soil & Sustainable Renewal",
+        "color": "#16a34a",
+        "color_light": "#dcfce7",
+        "pdf_filename": "iebe103--winds-of-change.pdf",
+        "pdf_path": "downloads/class-09/english/kaveri/iebe103--winds-of-change.pdf",
+        "pdf_label": "NCERT Kaveri Unit 3 PDF",
+        
+        "prose": {
+            "title": "Winds of Change",
+            "author": "Environmental Chronicles of Rural India",
+            "genre": "Inspiring Factual Narrative / Case Study",
+            "overview": "Documents the remarkable transformation of a drought-prone village in western India. Faced with depleted groundwater and agricultural distress, a progressive village council unites youth and elders to harness solar energy, construct check dams, and plant native forests, proving that ecological restoration begins with community determination.",
+            "cultural_context": "Reflects India's contemporary grassroots environmental revolution (such as Ralegan Siddhi and Hiware Bazar), addressing climate vulnerability through indigenous knowledge integrated with clean technology.",
+            "narrative_arc": [
+                {
+                    "stage": "1. The Parched Landscape",
+                    "detail": "The village of Chandrapur faces acute water scarcity. Wells have run dry, youth are migrating to crowded urban slums, and cracked fields lie barren under the scorching summer sun."
+                },
+                {
+                    "stage": "2. The Gram Sabha Awakening",
+                    "detail": "A newly appointed young female Sarpanch convenes an extraordinary Gram Sabha. She presents a holistic watershed map, urging villagers to stop depending on external relief and take charge of their hydrological destiny."
+                },
+                {
+                    "stage": "3. The Shramdaan Movement",
+                    "detail": "Every family contributes volunteer labour (shramdaan). They dig contour trenches along hillsides, build low-cost earthen check dams, and ban destructive borewells in favour of community recharge pits."
+                },
+                {
+                    "stage": "4. The Green Renaissance",
+                    "detail": "The subsequent monsoons replenish underground aquifers. Dried tube-wells flow again, organic farming flourishes, rooftop solar panels power village schools, and migrating families return to their thriving homeland."
+                }
+            ],
+            "character_dossiers": [
+                {
+                    "name": "Kavita Bai (Sarpanch)",
+                    "role": "Visionary Village Leader",
+                    "traits": [
+                        "Pragmatic, scientifically minded, and deeply rooted in community values.",
+                        "Consensus-builder who bridges the gap between cynical elders and energetic youth.",
+                        "Courageous advocate of sustainable ecological practices over quick-fix politics."
+                    ],
+                    "textual_evidence": "'Water is not a commodity we buy; it is a sacred inheritance we must guard for our children.'"
+                },
+                {
+                    "name": "The Elder Farmers",
+                    "role": "Traditional Agrarian Custodians",
+                    "traits": [
+                        "Initially skeptical of modern watershed engineering.",
+                        "Possess immense experiential memory of historical rain patterns and native flora.",
+                        "Reinvigorated with renewed pride as collective efforts bear fruit."
+                    ],
+                    "textual_evidence": "'We thought the land was dead, but it was only waiting for us to work together.'"
+                }
+            ],
+            "key_themes": [
+                "**Community Stewardship (Shramdaan):** Collective action at the grassroots level overcomes complex ecological crises.",
+                "**Synthesis of Traditional & Modern:** Blending ancient check-dam techniques with solar and digital monitoring.",
+                "**Reversing Rural Distress:** Ecological stability revitalizes rural economies and stops forced migration."
+            ]
+        },
+
+        "poetry": {
+            "title": "Canvas of Soil",
+            "poet": "Ode to Mother Earth",
+            "genre": "Nature Lyric / Ecological Verse",
+            "overview": "Celebrates the living soil as a vast, sacred painter's canvas upon which monsoons, seeds, sunbeams, and human labor paint the eternal masterpiece of life, food, and renewal.",
+            "stanza_paraphrase": [
+                {
+                    "stanza": "Stanza 1: The Parched Canvas Awaiting Rain",
+                    "lines": "Cracked and thirsty under summer heat,\nWaiting for the drum of cloud-borne feet;\nThe brown expanse of furrowed earth,\nA silent cradle awaiting birth.",
+                    "meaning": "The dry, cracked summer soil is not barren death, but a patient womb yearning for rainstorms to awaken dormant life."
+                },
+                {
+                    "stanza": "Stanza 2: The Scent of Renewal (Petrichor)",
+                    "lines": "First drop falls, a sacred sigh,\nPerfume rises to the sky;\nPetrichor richer than royal wine,\nBlessing the seed with touch divine.",
+                    "meaning": "The first raindrops liberate the intoxicating scent of damp earth (petrichor), anointing seeds with life-giving moisture that no artificial wealth can rival."
+                },
+                {
+                    "stanza": "Stanza 3: The Green Masterpiece",
+                    "lines": "Shoots of jade and gold unfold,\nMore precious far than miner's gold;\nFeed the tiller, praise the loam,\nEarth our canvas, earth our home.",
+                    "meaning": "Green emerald sprouts and golden grain manifest the earth's miraculous bounty, sustaining all living beings and urging humanity to protect its fragile soil."
+                }
+            ],
+            "literary_devices": [
+                {"device": "Personification", "example": "'silent cradle awaiting birth', 'sacred sigh'", "effect": "Treats the earth as a living, breathing mother."},
+                {"device": "Sensory Imagery (Olfactory & Visual)", "example": "'Perfume rises to the sky', 'shoots of jade and gold'", "effect": "Evokes vivid smells of petrichor and rich colors of harvest."},
+                {"device": "Metaphor", "example": "'Earth our canvas', 'shoots of jade'", "effect": "Compares agricultural fields to artistic masterpieces."},
+                {"device": "Alliteration", "example": "'cloud-borne feet', 'drum of cloud'", "effect": "Recreates the rhythmic rumble of approaching monsoon thunderstorms."}
+            ]
+        },
+
+        "writing_skills": [
+            {
+                "format_name": "Factual Description",
+                "cbse_question_no": "Q8",
+                "marks": 5,
+                "word_limit": "120–150 words",
+                "prompt": "Write a factual description of 'A Village Community Rainwater Harvesting & Recharging Unit' based on your environmental science project visit.",
+                "blueprint": [
+                    "Title: Clear, objective, factual (e.g. 'Community Rainwater Harvesting Unit')",
+                    "Component 1 (Physical Layout): Location, catchment area, rooftop drainage pipes",
+                    "Component 2 (Filtration Mechanism): Gravel, sand, charcoal chamber, desilting pit",
+                    "Component 3 (Storage & Recharge): Underground sump, overflow conduit to recharge well",
+                    "Component 4 (Operational Impact): Water quality, daily capacity, groundwater recharge rate"
+                ],
+                "cbse_rubric": {"format": "1 Mark", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+                "model_answer": "Community Rainwater Harvesting & Recharging Unit\n\nThe community rainwater harvesting facility situated at Chandrapur village is an exemplary low-cost decentralized water management model. Spanning a rooftop catchment area of 800 square meters across the village school and Panchayat bhawan, the system intercepts monsoon runoff via heavy-duty UV-stabilized PVC conduit pipes.\n\nThe collected rainwater first enters a two-stage masonry filtration chamber consisting of graded layers of coarse gravel, fine river sand, and activated charcoal to arrest suspended silt, organic debris, and microbiological impurities. The clarified water is channeled into a 50,000-litre reinforced cement concrete (RCC) underground storage sump equipped with a solar-powered submersible pump for potable distribution.\n\nCrucially, excess overflow during peak cloudbursts is directed into a deep percolation bore capped with a perforated casing and gravel pack, directly replenishing the local unconfined aquifer. Commissioned in June 2025, this unit has elevated the village water table by 2.4 meters and guarantees round-the-year drinking water security."
+            },
+            {
+                "format_name": "Formal E-mail",
+                "cbse_question_no": "Q7",
+                "marks": 5,
+                "word_limit": "120–150 words",
+                "prompt": "You are Sneha Verma, Eco-Club Coordinator of Modern Public School, Pune. Draft a formal e-mail to the Municipal Commissioner, Pune Municipal Corporation, requesting permission and technical assistance to establish a native sapling mini-forest (Miyawaki project) on unused municipal land adjoining your campus.",
+                "blueprint": [
+                    "To: commissioner@punecorporation.org",
+                    "CC: (Optional, e.g. ecoclub@school.edu)",
+                    "Subject: Request for Permission and Technical Assistance for Urban Mini-Forest Project",
+                    "Salutation: Respected Sir / Madam,",
+                    "Opening: Statement of purpose and identity",
+                    "Body: Explanation of project (Miyawaki method, native species, student involvement)",
+                    "Call to Action: Seeking site inspection and permission",
+                    "Formal Sign-off: With warm regards, Name, Designation, Contact"
+                ],
+                "cbse_rubric": {"format": "1 Mark (Email headers, Subject, Sign-off)", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+                "model_answer": "To: commissioner@pmc.gov.in\nCc: principal@modernschoolpune.edu.in\nSubject: Request for Permission and Technical Guidance for Urban Mini-Forest Project\n\nRespected Sir,\n\nI am writing on behalf of the Eco-Club of Modern Public School, Pune, to submit a proposal for developing an urban mini-forest using the Miyawaki afforestation methodology on the vacant municipal plot adjacent to our school boundary wall (Plot 14-B, Kothrud).\n\nUnder this initiative, our student volunteers, guided by botanists, plan to plant over 600 native indigenous saplings—including neem, peepal, jamun, and banyan—to restore local biodiversity, enhance groundwater absorption, and curb urban particulate pollution. We intend to maintain and nurture this green patch through student volunteer rosters.\n\nWe request your esteemed office to grant formal permission for site usage and provide guidance from the Municipal Horticulture Department regarding soil enrichment and sapling supply. We would be grateful for an opportunity to present our project blueprint in person at your convenience.\n\nThank you for your leadership in keeping Pune green and sustainable.\n\nYours faithfully,\nSneha Verma\nEco-Club Coordinator\nModern Public School, Pune\nContact: +91 98230 XXXXX"
+            }
+        ],
+
+        "grammar": {
+            "title": "Tenses (Simple & Perfect) and Conditionals (Type 1)",
+            "topics": [
+                {
+                    "concept": "Simple vs Perfect Tenses",
+                    "rule": "Simple Past describes finished events at a definite past time. Present Perfect connects past action to present relevance (with since, for, already, yet). Past Perfect describes the earlier of two past actions.",
+                    "examples": [
+                        {"context": "Simple Past", "sentence": "The villagers built the check dam last winter."},
+                        {"context": "Present Perfect", "sentence": "The water level has risen by two meters since the rains began."},
+                        {"context": "Past Perfect", "sentence": "The crops had withered before the first canal was completed."}
+                    ]
+                },
+                {
+                    "concept": "Conditionals: Type 1 (Real & Possible)",
+                    "rule": "Structure: If + Simple Present, will / can / may + base verb (V1). Expresses real conditions and probable future consequences.",
+                    "examples": [
+                        {"correct": "If we harvest rainwater systematically, we will prevent summer droughts."},
+                        {"trap": "Incorrect: 'If it will rain, the crops will grow.' -> Correct: 'If it rains, the crops will grow.'"}
+                    ]
+                }
+            ],
+            "drills": [
+                {
+                    "type": "editing",
+                    "title": "Q3 Editing Drill (CBSE 4 Marks)",
+                    "passage": [
+                        {"line": "Climate change have become the most urgent crisis of our time.", "error": "have", "correction": "has", "options": ["have -> has", "most -> more", "of -> for", "time -> times"]},
+                        {"line": "If communities unites, they can revive degraded ecosystems.", "error": "unites", "correction": "unite", "options": ["unites -> unite", "can -> could", "they -> we", "revive -> reviving"]},
+                        {"line": "Last year, our village plant over two thousand native saplings.", "error": "plant", "correction": "planted", "options": ["plant -> planted", "over -> under", "two -> second", "Last -> Next"]},
+                        {"line": "Since then, groundwater levels had shown remarkable recovery.", "error": "had", "correction": "have", "options": ["had -> have", "then -> than", "levels -> level", "shown -> show"]}
+                    ]
+                },
+                {
+                    "type": "rearrangement",
+                    "title": "Q4 Sentence Rearrangement (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "jumbled": "conserve / must / drop / we / water / of / every / rain",
+                            "correct": "We must conserve every drop of rain water."
+                        },
+                        {
+                            "jumbled": "ecosystem / healthy / healthy / a / soil / ensures / a",
+                            "correct": "A healthy soil ensures a healthy ecosystem."
+                        },
+                        {
+                            "jumbled": "greener / our / action / collective / tomorrow / makes / a",
+                            "correct": "Collective action makes our tomorrow a greener."
+                        }
+                    ]
+                },
+                {
+                    "type": "transformation",
+                    "title": "Q5 Sentence Transformation (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "original": "Unless we dig recharge trenches, the monsoon runoff will go to waste. (Rewrite using 'If')",
+                            "transformed": "If we do not dig recharge trenches, the monsoon runoff will go to waste.",
+                            "rule": "'Unless' is equivalent to 'If... not'. Maintain Simple Present in the conditional clause."
+                        },
+                        {
+                            "original": "The Sarpanch said, 'The monsoons have brought immense relief to our farmers.'",
+                            "transformed": "The Sarpanch stated that the monsoons had brought immense relief to their farmers.",
+                            "rule": "Present Perfect 'have brought' backshifts to Past Perfect 'had brought'; 'our' becomes 'their'."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "exam_bank": {
+            "extracts": [
+                {
+                    "source": "Winds of Change (Prose)",
+                    "text": "“For decades, the village had accepted drought as fate. When wells dried up, families loaded their cattle on trucks and left. But the young Sarpanch stood by the dry riverbed and pointed to the barren hills. 'The clouds come every year,' she declared. 'We simply let the water run away because we did not prepare our land to receive it. If we build trenches together, the rain will stay.'”",
+                    "questions": [
+                        {"q": "What fatalistic belief had the villagers held for decades?", "a": "They had believed that recurring drought was an unalterable fate rather than an ecological challenge that could be managed."},
+                        {"q": "What core insight did the young Sarpanch share regarding monsoon rain?", "a": "She pointed out that rain clouds arrived every year, but the water was lost as surface runoff because the barren landscape lacked structures to trap and recharge it."},
+                        {"q": "Identify the grammatical conditional type used in the Sarpanch's final sentence.", "a": "Conditional Clause Type 1 ('If we build... the rain will stay')."},
+                        {"q": "Which word in the extract means 'arid, devoid of vegetation'?", "a": "'Barren'."},
+                        {"q": "How does this extract exemplify active community leadership?", "a": "It shifts the community mindset from despair and passive migration to collective responsibility and scientific ecological action."}
+                    ]
+                },
+                {
+                    "source": "Canvas of Soil (Poetry)",
+                    "text": "“First drop falls, a sacred sigh,\nPerfume rises to the sky;\nPetrichor richer than royal wine,\nBlessing the seed with touch divine.”",
+                    "questions": [
+                        {"q": "What phenomenon is referred to as 'petrichor'?", "a": "The distinctive, pleasant earthy aroma produced when the first raindrops fall on dry, warm soil."},
+                        {"q": "Explain the comparison between petrichor and 'royal wine'.", "a": "The poet uses hyperbole/metaphor to assert that the wholesome natural scent of life-giving earth is far nobler and more intoxicating than luxury artificial beverages."},
+                        {"q": "Identify the poetic device in 'sacred sigh'.", "a": "Alliteration (repetition of 's' sound) and Personification of the earth breathing."},
+                        {"q": "Why is the touch of rain described as 'divine'?", "a": "Because rain possesses the miraculous power to awaken dormant seeds, spark green life, and sustain all living creation on earth."},
+                        {"q": "What is the rhyme scheme of this stanza?", "a": "AABB ('sigh/sky', 'wine/divine')."}
+                    ]
+                }
+            ],
+            "saqs": [
+                {
+                    "q": "How does community volunteer labor (shramdaan) transform social cohesion in 'Winds of Change'? (40–50 words)",
+                    "a": "Shramdaan erased caste, age, and economic divides as all families dug trenches and constructed check dams together. Collective physical exertion for a shared survival goal replaced suspicion with solidarity, creating deep community ownership over water resources."
+                },
+                {
+                    "q": "What is the metaphorical significance of describing soil as a 'canvas'? (40–50 words)",
+                    "a": "The metaphor emphasizes that soil is not dead dirt, but a dynamic medium where nature and farmers act as artists. Every season paints fresh emerald shoots, golden wheat, and vibrant flowers upon it, creating the living masterpiece of food and sustenance."
+                },
+                {
+                    "q": "Why did previous government welfare schemes fail to solve the water crisis in Chandrapur? (40–50 words)",
+                    "a": "External government schemes failed because they treated drought with temporary water tankers and top-down contractor borewells that rapidly depleted deep aquifers. They lacked community involvement, local hydrological planning, and long-term conservation mechanisms."
+                },
+                {
+                    "q": "Explain how petrichor acts as an emotional and agricultural catalyst for rural folk. (40–50 words)",
+                    "a": "Petrichor signals the arrival of the life-saving monsoon after brutal summer months. For rural folk, its fragrance brings immense psychological relief, banishing dread of famine and triggering immediate joyful preparation of ploughs, bullocks, and seed trays."
+                }
+            ],
+            "laqs": [
+                {
+                    "type": "Extrapolative Question (CBSE Q13 - 120–150 words)",
+                    "q": "Climate change is intensifying global water scarcity and unpredictable weather. How does the community model in 'Winds of Change' demonstrate that environmental solutions must combine local indigenous wisdom with citizen action?",
+                    "a": "The inspiring narrative in 'Winds of Change' provides a universal blueprint for climate resilience in the twenty-first century. As global warming triggers erratic precipitation and prolonged heatwaves, centralized bureaucracies often prove inadequate in addressing localized ecological distress. The triumph of Chandrapur demonstrates that sustainable salvation lies in decentralized community stewardship.\n\nBy mobilizing local residents through shramdaan, the village tapped into indigenous understanding of natural contours and traditional runoff channels. Rather than drilling deeper, ecologically ruinous borewells, they invested in contour bunds and recharge pits that captured every drop where it fell. This bottom-up citizen ownership ensured zero corruption, meticulous maintenance, and equitable water distribution. For modern youth facing climate anxiety, this story delivers an empowering truth: environmental protection is not merely the duty of international summits, but an urgent civic discipline that begins in one's own neighborhood through collective will and sustainable wisdom."
+                },
+                {
+                    "type": "Theme & Character Synthesis (CBSE Q14 - 120–150 words)",
+                    "q": "Examine how 'Canvas of Soil' fosters reverence for environmental ethics. How does the poet use sensory imagery to connect human survival with soil health?",
+                    "a": "In 'Canvas of Soil', the poet crafts a poignant environmental hymn that restores humanity's forgotten kinship with the earth. Modern industrialization frequently reduces soil to inert property to be exploited through chemical overload. The poem directly counters this utilitarian hubris by employing rich sensory imagery that portrays soil as a sacred, living mother.\n\nThrough tactile imagery of 'cracked and thirsty' summer earth and auditory imagery of the 'drum of cloud-borne feet', the poet immerses the reader in the earth's longing. The olfactory ecstasy of petrichor—'richer than royal wine'—evokes deep visceral gratitude, while visual tapestries of 'shoots of jade and gold' celebrate the miraculous alchemy of agriculture. By concluding that earth is our sole common home, the poet elevates soil conservation from an agronomic necessity to a sacred moral duty. The poem compels readers to recognize that human blood, breath, and bread are inextricably bound to the vitality of the humble loam beneath our feet."
+                }
+            ]
+        }
+    },
+
+    # UNIT 4
+    {
+        "id": "unit_4",
+        "step": "Step 4 (Unit 4)",
+        "unit_number": 4,
+        "theme": "Family Bonds, Maternal Memory & Financial Mindfulness",
+        "color": "#8b5cf6",
+        "color_light": "#f3e8ff",
+        "pdf_filename": "iebe104--vitamin-m.pdf",
+        "pdf_path": "downloads/class-09/english/kaveri/iebe104--vitamin-m.pdf",
+        "pdf_label": "NCERT Kaveri Unit 4 PDF",
+        
+        "prose": {
+            "title": "Vitamin-M",
+            "author": "Satirical & Reflective Social Commentary",
+            "genre": "Humorous Narrative / Moral Reflection",
+            "overview": "A witty yet insightful narrative exploring teenage materialism, peer pressure, and financial literacy. A schoolboy becomes obsessed with 'Vitamin-M' (Money) to purchase fancy branded shoes and gadgets, only to learn profound lessons about hard-earned value, budgeting, and authentic self-worth.",
+            "cultural_context": "Reflects modern Indian consumerist culture where advertising and digital wallets tempt adolescents into equating happiness and peer status with material luxury.",
+            "narrative_arc": [
+                {
+                    "stage": "1. The Seduction of 'Vitamin-M'",
+                    "detail": "Rohan is captivated by classmates flaunting expensive imported sneakers and smartwatches. Convinced that money is the ultimate 'vitamin' required for social status, he nags his parents for an inflated allowance."
+                },
+                {
+                    "stage": "2. The Challenge of Earning",
+                    "detail": "His father offers a deal: instead of handing over cash, Rohan can earn money during summer break by helping his grandfather manage the small neighborhood bookstore inventory and accounts."
+                },
+                {
+                    "stage": "3. The Reality of Labour",
+                    "detail": "Rohan spends ten grueling days lifting heavy book cartons, logging ledger entries, and negotiating with customers. His back aches, his palms turn dusty, and he realizes how many sweat-soaked hours are needed to earn even five hundred rupees."
+                },
+                {
+                    "stage": "4. The Shift in Perspective",
+                    "detail": "When he finally holds his hard-earned savings, he walks into the sneaker store. Looking at the exorbitant price tag, he hesitates. He realizes the shoes represent fifty hours of honest grandfatherly toil, and walks away with a proud, matured mindset."
+                }
+            ],
+            "character_dossiers": [
+                {
+                    "name": "Rohan (The Protagonist)",
+                    "role": "Grade 9 Student in Moral Evolution",
+                    "traits": [
+                        "Impressionable, susceptible to brand obsession and peer validation.",
+                        "Honest and gritty enough to accept his father's manual work challenge.",
+                        "Gains emotional maturity, realizing that self-esteem is independent of branded possessions."
+                    ],
+                    "textual_evidence": "'When I earned that money myself, I couldn't bear to waste it on something that would tear in six months.'"
+                },
+                {
+                    "name": "Grandfather (Dadaji)",
+                    "role": "Bookstore Owner & Moral Mentor",
+                    "traits": [
+                        "Frugal, disciplined, and content with simple living.",
+                        "Teaches financial acumen through real accounting responsibilities rather than harsh scolding.",
+                        "Believes that books and character yield richer interest than monetary hoardings."
+                    ],
+                    "textual_evidence": "'Money is like salt in food, Rohan. Too little leaves you hungry, too much spoils the taste. But character is the grain itself.'"
+                }
+            ],
+            "key_themes": [
+                "**Value vs Price:** Understanding that the true cost of an item is measured in the human life-hours spent earning it.",
+                "**Consumerist Trap:** True identity and social respect stem from integrity and knowledge, not commercial logos.",
+                "**Mindful Financial Literacy:** Distinguishing between urgent 'needs' and vanity 'wants' early in life."
+            ]
+        },
+
+        "poetry": {
+            "title": "I Cannot Remember my Mother",
+            "poet": "Rabindranath Tagore",
+            "genre": "Elegiac Lyric / Sensory Memory Verse",
+            "overview": "A tender, deeply moving poem where the speaker, having lost his mother in infancy, cannot recall her physical face, but experiences her persistent spiritual presence through delicate sensory memories of play, autumnal scent, and the silent blue sky.",
+            "stanza_paraphrase": [
+                {
+                    "stanza": "Stanza 1: The Lullaby in the Playthings",
+                    "lines": "I cannot remember my mother,\nonly sometime in the midst of my play\na tune seems to hover over my playthings,\nthe tune of some song that she used to hum\nwhile rocking my cradle.",
+                    "meaning": "The child possesses no photographic mental image of his mother's features, yet while engaged in play, an ethereal musical melody hovers over his toys—the ghost of a forgotten lullaby hummed beside his cradle."
+                },
+                {
+                    "stanza": "Stanza 2: The Scent of Shiuli Blossoms",
+                    "lines": "I cannot remember my mother,\nbut when in the early autumn morning\nthe smell of the shiuli flowers floats in the air,\nthe scent of the morning service in the temple\ncomes to me as the scent of my mother.",
+                    "meaning": "During early autumn mornings, the sweet fragrance of newly fallen white-and-orange shiuli (night jasmine) used for temple offerings evokes his mother's pure, sacred maternal scent."
+                },
+                {
+                    "stanza": "Stanza 3: The Silent Gaze in the Open Sky",
+                    "lines": "I cannot remember my mother,\nonly when from my bedroom window I send my\neyes into the blue of the distant sky,\nI feel that the stillness of my mother's gaze on my face\nhas spread all over the sky.",
+                    "meaning": "Looking out into the vast, tranquil blue sky, the child feels enveloped by his mother's loving, protective maternal gaze, realizing she has become one with universal cosmic peace."
+                }
+            ],
+            "literary_devices": [
+                {"device": "Sensory Imagery (Auditory, Olfactory, Visual)", "example": "Humming cradle tune (ear), Shiuli temple scent (nose), Blue distant sky (eye)", "effect": "Builds a three-dimensional spiritual portrait of mother without physical description."},
+                {"device": "Refrain", "example": "'I cannot remember my mother'", "effect": "Reiterates poignant childhood loss while highlighting the triumph of love over oblivion."},
+                {"device": "Metaphor / Transference", "example": "Mother's gaze spreading across the stillness of the blue sky", "effect": "Elevates maternal love to an omnipresent, cosmic shelter."},
+                {"device": "Free Verse & Gentle Cadence", "example": "Unrhymed conversational lines", "effect": "Mirrors the tender, unforced flow of authentic emotional nostalgia."}
+            ]
+        },
+
+        "writing_skills": [
+            {
+                "format_name": "Magazine Article",
+                "cbse_question_no": "Q8",
+                "marks": 5,
+                "word_limit": "120–150 words",
+                "prompt": "Write an article for your school magazine on 'Navigating Teen Consumerism: The Need for Financial Mindfulness in the Digital Age'. You are Tanvi/Tanishq.",
+                "blueprint": [
+                    "Catchy Title (Bold, Centered)",
+                    "Byline (By Tanvi, Class IX-A)",
+                    "Introduction (30–40 words): Hooking reader with modern digital wallet / gadget frenzy",
+                    "Body Paragraph (60–70 words): Peer pressure, easy online shopping, distinction between wants and needs",
+                    "Conclusion (30–40 words): Actionable advice (budgeting, earning before spending, finding worth within)"
+                ],
+                "cbse_rubric": {"format": "1 Mark (Title, Byline)", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+                "model_answer": "Beyond the Shopping Cart: Cultivating Financial Mindfulness in Teens\nBy Tanishq Mehra, Class IX-A\n\nGlance around any school corridor, and the conversation inevitably drifts toward the latest smartphone releases, designer sneakers, and digital gaming subscriptions. In this age of one-tap digital payments and relentless targeted social media advertising, adolescents are constantly seduced by the illusion of 'Vitamin-M'—the myth that popularity and happiness are purchased through consumer brands.\n\nHowever, mindless spending exacts a heavy toll. When teenagers demand expensive gadgets simply to blend in with peer groups, they cultivate fragile self-worth rooted entirely in material showmanship. More dangerously, because digital transactions make money invisible, youngsters fail to comprehend the sweat, sacrifice, and long working hours their parents endure to earn that currency.\n\nFinancial literacy must become an essential habit rather than an afterthought. Schools and families should encourage students to maintain simple personal expense journals, set monthly savings goals, and differentiate rigorously between survival 'needs' and fleeting 'wants'. True distinction is forged through intellectual curiosity, kindness, and character—treasures that no shopping cart can ever deliver."
+            }
+        ],
+
+        "grammar": {
+            "title": "Reported Speech & Noun Clauses",
+            "topics": [
+                {
+                    "concept": "Reported Speech (Direct to Indirect)",
+                    "rule": "Reporting statements, questions, and commands. Rules: Backshift tenses (Present -> Past; Past Simple -> Past Perfect); shift pronouns; change time/place adverbs (now -> then; today -> that day; here -> there).",
+                    "examples": [
+                        {"type": "Statement", "direct": "'I have earned five hundred rupees,' said Rohan.", "indirect": "Rohan said that he had earned five hundred rupees."},
+                        {"type": "Wh-Question", "direct": "'Why are you wasting your money?' asked Dadaji.", "indirect": "Dadaji inquired why he was wasting his money."},
+                        {"type": "Yes/No Question", "direct": "'Will you buy those shoes?' asked his friend.", "indirect": "His friend asked whether he would buy those shoes."},
+                        {"type": "Command/Advice", "direct": "'Do not spend impulsively,' advised his father.", "indirect": "His father advised him not to spend impulsively."}
+                    ]
+                },
+                {
+                    "concept": "Noun Clauses",
+                    "rule": "A subordinate clause that does the work of a noun. It can function as: 1. Subject of verb ('What she said inspired everyone'), 2. Object of transitive verb ('I know that he is honest'), 3. Object of preposition ('Listen to what your parents advise').",
+                    "examples": [
+                        {"function": "Subject", "clause": "That she achieved literacy at sixty-two astonished the villagers."},
+                        {"function": "Object", "clause": "Tagore felt that his mother was gazing from the sky."}
+                    ]
+                }
+            ],
+            "drills": [
+                {
+                    "type": "editing",
+                    "title": "Q3 Editing Drill (CBSE 4 Marks)",
+                    "passage": [
+                        {"line": "Consumerism have captured the imagination of modern youth.", "error": "have", "correction": "has", "options": ["have -> has", "the -> an", "of -> for", "youth -> youths"]},
+                        {"line": "Adolescents often spends money without understanding its value.", "error": "spends", "correction": "spend", "options": ["spends -> spend", "often -> rare", "without -> with", "its -> their"]},
+                        {"line": "My grandfather told to me that saving is a noble habit.", "error": "told to me", "correction": "told me", "options": ["told to me -> told me", "is -> was", "that -> what", "noble -> nobler"]},
+                        {"line": "True happiness lie in contentment rather than luxury.", "error": "lie", "correction": "lies", "options": ["lie -> lies", "in -> on", "rather -> other", "luxury -> luxurious"]}
+                    ]
+                },
+                {
+                    "type": "rearrangement",
+                    "title": "Q4 Sentence Rearrangement (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "jumbled": "money / cannot / peace / mind / buy / of / alone",
+                            "correct": "Money alone cannot buy peace of mind."
+                        },
+                        {
+                            "jumbled": "mother's / child / the / tender / gaze / felt / his",
+                            "correct": "The child felt his mother's tender gaze."
+                        },
+                        {
+                            "jumbled": "budget / spending / plan / your / before / you",
+                            "correct": "Plan your budget before you spend."
+                        }
+                    ]
+                },
+                {
+                    "type": "transformation",
+                    "title": "Q5 Sentence Transformation (CBSE 3 Marks)",
+                    "items": [
+                        {
+                            "original": "Rohan said, 'I worked at the bookstore all week.'",
+                            "transformed": "Rohan stated that he had worked at the bookstore all week.",
+                            "rule": "Past Simple 'worked' backshifts to Past Perfect 'had worked'."
+                        },
+                        {
+                            "original": "The poet wondered where his mother had gone. (Identify the noun clause)",
+                            "transformed": "Noun clause: 'where his mother had gone' (functioning as Object of the transitive verb 'wondered').",
+                            "rule": "Dependent wh-clause acting as direct object."
+                        }
+                    ]
+                }
+            ]
+        },
+
+        "exam_bank": {
+            "extracts": [
+                {
+                    "source": "Vitamin-M (Prose)",
+                    "text": "“Rohan stood in front of the mirrored shoe display, holding the crisp currency notes in his pocket. For ten days, he had carried heavy cartons until his muscles throbbed. Now, looking at the gleaming imported sneakers, he did not see leather and laces; he saw his grandfather's tired hands counting coins at the cash drawer. He slowly withdrew his hand from his pocket and stepped out into the evening breeze.”",
+                    "questions": [
+                        {"q": "What realization prevented Rohan from buying the expensive sneakers?", "a": "Rohan realized that the shoes represented ten days of arduous physical labor and his grandfather's sweat-soaked earnings, making the vanity purchase feel deeply wasteful."},
+                        {"q": "What had Rohan done during the previous ten days?", "a": "He had worked in his grandfather's bookstore, carrying heavy cartons and organizing books until his muscles throbbed."},
+                        {"q": "What do the shoes symbolize to Rohan initially versus at the end of the extract?", "a": "Initially, they symbolized social status and peer prestige; at the end, they symbolized hollow commercial exploitation and wasted human toil."},
+                        {"q": "Which word in the extract means 'vibrant, shining with reflected light'?", "a": "'Gleaming'."},
+                        {"q": "Explain the significance of Rohan stepping out 'into the evening breeze'.", "a": "The evening breeze symbolizes a breath of moral liberation and newfound maturity, having conquered impulsive peer pressure."}
+                    ]
+                },
+                {
+                    "source": "I Cannot Remember my Mother (Poetry)",
+                    "text": "“I cannot remember my mother,\nonly when from my bedroom window I send my\neyes into the blue of the distant sky,\nI feel that the stillness of my mother's gaze on my face\nhas spread all over the sky.”",
+                    "questions": [
+                        {"q": "Where does the speaker look from his bedroom window?", "a": "Into the distant, serene blue sky."},
+                        {"q": "What sensation does the speaker experience while looking into the sky?", "a": "He feels that the calm, loving, and silent gaze of his deceased mother has expanded across the entire expanse of the sky, sheltering him."},
+                        {"q": "Why does the poet repeat the opening line 'I cannot remember my mother' across all stanzas?", "a": "To underscore the pathos of losing his mother in infancy while emphasizing that spiritual, sensory love endures despite the lack of physical memory."},
+                        {"q": "What quality of the mother's gaze is highlighted in the text?", "a": "'Stillness'—representing peaceful, uninterrupted, and eternal maternal watchfulness."},
+                        {"q": "Identify the primary emotion conveyed in this stanza.", "a": "Sublime peace, transcendent nostalgia, and comforting emotional security."}
+                    ]
+                }
+            ],
+            "saqs": [
+                {
+                    "q": "How does Tagore recreate his mother's presence through the sense of hearing? (40–50 words)",
+                    "a": "Tagore explains that while playing with his toys, an ethereal humming melody hovers over him. Although he cannot remember her face, he recognizes this tune as the soothing lullaby his mother used to hum while rocking his infant cradle."
+                },
+                {
+                    "q": "What is the connection between the shiuli flowers and the speaker's mother? (40–50 words)",
+                    "a": "In early autumn, the delicate fragrance of fallen shiuli blossoms coincides with morning temple prayers. The poet's mother used to gather these flowers for worship, making their fresh, sacred scent inseparable from his maternal memory."
+                },
+                {
+                    "q": "Why did Rohan's father insist on him earning money rather than giving him an advance? (40–50 words)",
+                    "a": "Rohan's father knew that lecturing on thrift rarely convinces adolescents. By making Rohan experience the physical fatigue and patience needed to earn currency, he enabled his son to organically understand the true relationship between labor and value."
+                },
+                {
+                    "q": "In 'Vitamin-M', how does the author criticize modern consumer culture? (40–50 words)",
+                    "a": "The author satirizes how advertising manipulates teenagers into believing that imported brand labels confer superiority. He exposes how consumerism creates artificial cravings ('Vitamin-M'), blinding youth to simple contentment, authentic relationships, and intellectual growth."
+                }
+            ],
+            "laqs": [
+                {
+                    "type": "Extrapolative Question (CBSE Q13 - 120–150 words)",
+                    "q": "Memories of parental love serve as an emotional compass throughout life. Compare how Krishtakka's yearning for education in Unit 1 and the poet's sensory recollection of his mother in Unit 4 reflect the sacred bond between parent and child.",
+                    "a": "Across Units 1 and 4, the curriculum presents profound explorations of generational intimacy and maternal devotion. In 'How I Taught My Grandmother to Read', the memory of Krishtakka's deceased mother emerges as a poignant catalyst for her education. Having lost her mother in childhood, Krishtakka had no guardian to advocate for her schooling, an absence that haunted her for six decades and ultimately ignited her fierce determination to master literacy.\n\nConversely, in Rabindranath Tagore's 'I Cannot Remember my Mother', parental love transcends death through subtle, sensory channels. Denied the physical memory of his mother's face, the poet discovers her lingering presence in cradle lullabies, temple shiuli blossoms, and the expansive serenity of the open sky. In both works, the maternal bond is depicted not as an ephemeral earthly connection, but as an eternal moral and emotional foundation that nourishes the human spirit through life's deepest trials."
+                },
+                {
+                    "type": "Theme & Character Synthesis (CBSE Q14 - 120–150 words)",
+                    "q": "Analyze the journey of Rohan in 'Vitamin-M'. How does his character demonstrate the transition from superficial vanity to mature self-respect?",
+                    "a": "In 'Vitamin-M', Rohan’s psychological trajectory captures the quintessential adolescent struggle between peer conformity and authentic maturity. At the outset, Rohan is seduced by commercial dazzle, measuring his self-worth against his peers' branded sneakers and gadgetry. He views money through an entitled lens, demanding funds as though currency generated automatically from parental wallets.\n\nHis turning point occurs in the dusty aisles of his grandfather's bookstore. By hauling freight, balancing ledger entries, and negotiating with penny-pinching buyers, Rohan directly encounters the human cost of capital. Physical exhaustion demystifies money: five hundred rupees ceases to be an abstract number and transforms into ten days of aching muscles and grandfatherly sweat. When he finally refrains from purchasing the sneakers, it is not an act of forced deprivation, but a triumph of conscious discernment. Rohan discovers that authentic dignity cannot be bought off a showroom shelf; it is forged through self-respect, hard work, and gratitude."
+                }
+            ]
+        }
+    }
+]
+
+# MASTER WRITING SKILLS STUDIO (ALL 8 R1 PRESCRIBED FORMATS)
+MASTER_WRITING_STUDIO = [
+    {
+        "id": "w1_notice",
+        "name": "Notice Writing",
+        "question_no": "Q6",
+        "marks": 3,
+        "word_limit": "Up to 50 words",
+        "theme": "Formal announcements for school/institution notice boards",
+        "key_rules": [
+            "Must ALWAYS be placed within a neat bounding box.",
+            "Name of Issuing Organization at the very top (Centered).",
+            "The word 'NOTICE' in capital letters.",
+            "Date on the left (Format: 28 September 2026).",
+            "Concise, relevant title centered.",
+            "Body answering the 5 W's: What, When, Where, Who, Whom to contact.",
+            "Signatory with Name and Designation."
+        ],
+        "rubric": {"format": "1 Mark (Box, headers, date, signatory)", "content": "1 Mark (All event details)", "accuracy": "1 Mark (Language, word limit)"},
+        "deductions": ["-0.5M for missing box", "-0.5M for missing date or designation", "-0.5M if exceeding 60 words"]
+    },
+    {
+        "id": "w2_invitation",
+        "name": "Informal Invitation",
+        "question_no": "Q6",
+        "marks": 3,
+        "word_limit": "Up to 50 words",
+        "theme": "Personal invitations for family milestones, festivals, and personal occasions",
+        "key_rules": [
+            "Written in informal, warm first-person register (I / We).",
+            "Includes Sender's Address and Date at the top.",
+            "Warm salutation (Dear Rohan, My dear Aarav).",
+            "Clearly states the occasion, date, time, and venue.",
+            "Mentions looking forward to their presence.",
+            "Warm informal sign-off (Yours affectionately, Warmly)."
+        ],
+        "rubric": {"format": "1 Mark", "content": "1 Mark", "expression": "1 Mark"},
+        "deductions": ["-0.5M for formal register", "-0.5M for omitting time/venue"]
+    },
+    {
+        "id": "w3_letter_editor",
+        "name": "Letter to the Editor",
+        "question_no": "Q7",
+        "marks": 5,
+        "word_limit": "120–150 words",
+        "theme": "Highlighting social, environmental, and civic problems to public authorities",
+        "key_rules": [
+            "Sender's Address (2-3 lines, left-aligned, no comma).",
+            "Date (e.g. 28 September 2026).",
+            "Receiver's Designation & Address (The Editor, Newspaper Name, City).",
+            "Subject: Brief, underlined, stating core issue in 5-8 words.",
+            "Salutation: Sir / Madam.",
+            "3-Paragraph Body: 1. Reference & issue introduction; 2. Detailed causes, facts, and impact; 3. Constructive suggestions & appeal.",
+            "Complimentary Close: Yours sincerely / Yours faithfully (NEVER 'Your's')."
+        ],
+        "rubric": {"format": "1 Mark", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+        "deductions": ["-0.5M for spelling 'Yours' as 'Your's'", "-0.5M for missing subject", "-1M for incoherent paragraphing"]
+    },
+    {
+        "id": "w4_formal_email",
+        "name": "Formal E-mail",
+        "question_no": "Q7",
+        "marks": 5,
+        "word_limit": "120–150 words",
+        "theme": "Official digital correspondence to principals, civic officials, or event organizers",
+        "key_rules": [
+            "Header fields: 'To:', 'Cc:' (if applicable), 'Subject:'.",
+            "Professional, meaningful Subject line.",
+            "Formal Salutation: Respected Sir / Dear Mr. Commissioner.",
+            "Crisp opening stating affiliation and purpose.",
+            "Structured bullet points or short paragraphs for clarity.",
+            "Polite closing request with anticipated action.",
+            "Sign-off: Yours faithfully / With warm regards, Full Name, Designation, Contact."
+        ],
+        "rubric": {"format": "1 Mark", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+        "deductions": ["-0.5M for informal chat abbreviations (u, ur, thx)", "-0.5M for blank subject line"]
+    },
+    {
+        "id": "w5_factual_desc",
+        "name": "Factual Description",
+        "question_no": "Q8",
+        "marks": 5,
+        "word_limit": "120–150 words",
+        "theme": "Objective, sensory-rich profiles of people, places, mechanisms, or inventions",
+        "key_rules": [
+            "Catchy and accurate Title.",
+            "Strictly factual and objective tone (minimize personal bias/first-person pronouns).",
+            "Logical sequence (Spatial layout -> Technical parts -> Operational function -> Impact).",
+            "Use of precise technical nouns, active verbs, and quantitative metrics.",
+            "Coherent transitions between structural components."
+        ],
+        "rubric": {"format": "1 Mark (Title)", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+        "deductions": ["-1M for emotional personal storytelling rather than factual description", "-0.5M for disorganized sequence"]
+    },
+    {
+        "id": "w6_magazine_article",
+        "name": "Magazine Article",
+        "question_no": "Q8",
+        "marks": 5,
+        "word_limit": "120–150 words",
+        "theme": "Analytical and engaging journalism on social trends, science, youth, and culture",
+        "key_rules": [
+            "Engaging, eye-catching Title / Headline.",
+            "Byline immediately below the title (e.g. By Aarav Sharma, Class IX).",
+            "Introductory Hook: Shocking statistic, rhetorical question, or scenario.",
+            "Analytical Body: Causes, societal implications, balanced arguments.",
+            "Visionary Conclusion: Pragmatic solutions and a memorable final thought."
+        ],
+        "rubric": {"format": "1 Mark (Title & Byline)", "content": "2 Marks", "organization": "1 Mark", "accuracy": "1 Mark"},
+        "deductions": ["-0.5M for missing byline", "-0.5M for lack of title"]
+    },
+    {
+        "id": "w7_descriptive_essay",
+        "name": "Descriptive Essay",
+        "question_no": "Q9",
+        "marks": 7,
+        "word_limit": "200–250 words",
+        "theme": "Painting vivid portraits of people, landscapes, monuments, or atmospheric scenes",
+        "key_rules": [
+            "Evocative Title.",
+            "Extensive use of sensory imagery (Visual, Auditory, Olfactory, Tactile).",
+            "Figurative language: Similes, metaphors, personification.",
+            "Spatial or chronological organization (e.g. dawn to dusk, foreground to horizon).",
+            "Rich vocabulary avoiding repetitive adjectives (e.g. 'verdant', 'weathered', 'resplendent')."
+        ],
+        "rubric": {"format": "1 Mark (Title & Structure)", "content": "3 Marks", "organization": "2 Marks", "accuracy": "1 Mark"},
+        "deductions": ["-1M for slipping into narrative action instead of description", "-1M for falling short of 180 words"]
+    },
+    {
+        "id": "w8_narrative_essay",
+        "name": "Narrative Essay",
+        "question_no": "Q9",
+        "marks": 7,
+        "word_limit": "200–250 words",
+        "theme": "Engaging storytelling featuring conflict, rising tension, climax, and emotional resolution",
+        "key_rules": [
+            "Captivating Title.",
+            "Classical dramatic plot arc: Exposition -> Inciting incident -> Rising action -> Climax -> Resolution.",
+            "Effective character development through dialogue, actions, and inner thoughts.",
+            "Temporal transitional markers (Meanwhile, suddenly, before long, at last).",
+            "A clear underlying theme, lesson, or psychological insight."
+        ],
+        "rubric": {"format": "1 Mark", "content": "3 Marks", "organization": "2 Marks", "accuracy": "1 Mark"},
+        "deductions": ["-1M for abrupt ending without resolution", "-1M for grammatical inconsistency in narrative tenses"]
+    }
+]
+
+# THREE FULL-LENGTH 80-MARK AUTHENTIC R1 MOCK EXAM PAPERS
+MOCK_PAPERS = [
+    {
+        "id": "mock_paper_1",
+        "paper_code": "ENG-R1-01",
+        "title": "Mock Examination Paper 1 (CBSE Official R1 Blueprint)",
+        "duration": "3 Hours",
+        "max_marks": 80,
+        "instructions": [
+            "15-minute prior reading time allotted for reading the question paper.",
+            "The Question Paper contains THREE sections: Section A (Reading 20M), Section B (Writing & Grammar 30M), Section C (Literature 30M).",
+            "Attempt all questions section-wise in the prescribed serial order.",
+            "Word limits must be strictly adhered to; marks will be deducted for exceeding or undercutting limits."
+        ],
+        "sections": {
+            "A": {
+                "name": "SECTION A: READING SKILLS (20 Marks)",
+                "passages": [
+                    {
+                        "number": "Q1",
+                        "type": "Discursive Passage (10 Marks)",
+                        "word_count": "420 words",
+                        "title": "The Art of Slow Reading in an Accelerated World",
+                        "text": "1. In an era dominated by rapid notifications, infinite social media scrolls, and sixty-second video clips, the human attention span is under unprecedented strain. The modern habit of skimming digital text has fostered what cognitive neuroscientists term 'hyper-reading'—a superficial scanning pattern where the eye darts across screens searching for keywords, hyperlinked summaries, and instant conclusions. While this mode is undoubtedly efficient for triage in corporate communication, it leaves little room for deep cognitive immersion, critical skepticism, or emotional empathy.\n\n2. Historically, reading was approached as a contemplative dialogue between author and reader. When we read a literary work slowly, the brain does not merely decode linguistic symbols; it constructs elaborate mental simulations of sensory experiences, infers hidden motivations, and grapples with complex moral ambiguities. Studies conducted using functional magnetic resonance imaging (fMRI) reveal that when individuals engage in deep literary reading, neural pathways associated with real-life physical perception and emotional empathy illuminate in patterns virtually indistinguishable from actual lived experiences.\n\n3. Furthermore, slow reading acts as a profound psychological anchor. By choosing to sustain attention on a single narrative arc for forty-five uninterrupted minutes, an individual re-trains their neuro-circuitry against the dopamine addiction of algorithmic feeds. Slow reading is not a reactionary rejection of digital technology; rather, it is a conscious reclamation of mental sovereignty. Just as the slow food movement emerged to challenge nutrient-deficient fast food, slow reading is an intellectual necessity to safeguard our capacity for nuanced thinking.",
+                        "questions": [
+                            {"id": "q1_1", "type": "MCQ", "marks": 1, "q": "According to the passage, 'hyper-reading' is characterized by:", "options": ["A. Deep contemplative analysis of literary themes", "B. Superficial scanning for keywords and instant summaries", "C. Memorizing entire passages through repeated recitation", "D. Critical evaluation of an author's philosophical premise"], "answer": "B. Superficial scanning for keywords and instant summaries"},
+                            {"id": "q1_2", "type": "VSAQ", "marks": 1, "q": "What significant finding did fMRI brain studies reveal regarding deep literary reading?", "answer": "fMRI scans revealed that deep literary reading illuminates neural pathways associated with physical perception and emotional empathy in patterns nearly identical to real lived experiences."},
+                            {"id": "q1_3", "type": "Vocabulary", "marks": 1, "q": "Find a word in paragraph 1 that means 'unmatched or never known before'.", "answer": "'Unprecedented'."},
+                            {"id": "q1_4", "type": "Inference", "marks": 2, "q": "Explain why the author compares slow reading to the 'slow food movement'. (30–40 words)", "answer": "Just as the slow food movement arose to counter nutrient-deficient, rushed fast food, slow reading counters intellectually shallow, rapid digital skimming, preserving the brain's nourishment through nuanced, deep contemplation."},
+                            {"id": "q1_5", "type": "MCQ", "marks": 1, "q": "The author's tone in the final paragraph can best be described as:", "options": ["A. Cynical and nostalgic", "B. Persuasive and analytical", "C. Aggressive and dismissive", "D. Ambivalent and indifferent"], "answer": "B. Persuasive and analytical"},
+                            {"id": "q1_6", "type": "VSAQ", "marks": 1, "q": "How does sustained slow reading help neuro-circuitry against digital addiction?", "answer": "It re-trains the brain's pathways to sustain uninterrupted focus on a single narrative, breaking the dopamine dependency triggered by rapid algorithmic feeds."},
+                            {"id": "q1_7", "type": "VSAQ", "marks": 1, "q": "State whether the following statement is TRUE or FALSE:\n'The author believes that reading in the digital age should completely abandon all forms of rapid skimming.'", "answer": "FALSE (Paragraph 1 acknowledges that rapid skimming is efficient for corporate triage; the author advocates balance)."},
+                            {"id": "q1_8", "type": "Vocabulary", "marks": 1, "q": "Which word in paragraph 3 means 'supreme independence or autonomy'?", "answer": "'Sovereignty'."},
+                            {"id": "q1_9", "type": "Inference", "marks": 1, "q": "Complete the sentence: While hyper-reading serves corporate triage, it fails to cultivate ________ and ________.", "answer": "deep cognitive immersion / critical skepticism / emotional empathy."}
+                        ]
+                    },
+                    {
+                        "number": "Q2",
+                        "type": "Case-Based Factual Passage with Visual Data (10 Marks)",
+                        "word_count": "240 words",
+                        "title": "Study Patterns & Academic Stress Among Secondary Students",
+                        "text": "A comprehensive survey was conducted across 1,200 Grade 9 and 10 students across eight Indian metropolitan cities to analyze daily time allocation and self-reported stress indicators.\n\n[SURVEY DATA TABLE SUMMARY]\n• Daily Smartphone & Social Media Use: 3.8 hours (32% of waking leisure)\n• Daily Self-Study & Academic Reading: 1.9 hours (16%)\n• Daily Sleep Duration: 6.1 hours (Recommended: 8–9 hours)\n• Primary Causes of Exam Anxiety:\n  1. Fear of peer comparison & parental expectations: 44%\n  2. Inability to manage vast syllabus in last 30 days: 31%\n  3. Poor retention of formulaic and text details: 15%\n  4. Lack of structured mock examination practice: 10%\n\nThe report highlighted that students who dedicated even 20 minutes to daily handwritten revision summaries and active-recall testing reported a 38% decrease in panic levels before periodic assessments compared to peers relying exclusively on passive PDF scrolling.",
+                        "questions": [
+                            {"id": "q2_1", "type": "MCQ", "marks": 1, "q": "What is the single largest contributing factor to secondary school exam anxiety according to the survey data?", "options": ["A. Lack of structured mock paper practice", "B. Inability to finish syllabus in the final month", "C. Fear of peer comparison and parental expectations", "D. Poor retention of formulaic details"], "answer": "C. Fear of peer comparison and parental expectations (44%)"},
+                            {"id": "q2_2", "type": "VSAQ", "marks": 1, "q": "What is the shortfall between the actual average sleep duration of surveyed students and the recommended medical standard?", "answer": "Students average 6.1 hours, reflecting a deficit of 1.9 to 2.9 hours below the recommended 8 to 9 hours."},
+                            {"id": "q2_3", "type": "Inference", "marks": 2, "q": "Contrast the psychological outcomes of students using daily handwritten summaries versus those relying solely on passive PDF reading.", "answer": "Students writing daily handwritten summaries reported a 38% reduction in exam panic and superior retention, whereas passive PDF scrollers suffered acute retention failures and elevated pre-exam anxiety."},
+                            {"id": "q2_4", "type": "MCQ", "marks": 1, "q": "The ratio of daily smartphone screen time to dedicated self-study time among surveyed students is approximately:", "options": ["A. 1 : 1", "B. 2 : 1", "C. 1 : 3", "D. 3 : 1"], "answer": "B. 2 : 1 (3.8 hours smartphone vs 1.9 hours self-study)"},
+                            {"id": "q2_5", "type": "VSAQ", "marks": 1, "q": "What percentage of students cited lack of structured mock examination practice as their chief concern?", "answer": "10%."},
+                            {"id": "q2_6", "type": "Inference", "marks": 2, "q": "How does chronic sleep deprivation impact academic performance according to neurological principles?", "answer": "Sleep deprivation impairs memory consolidation in the hippocampus, reduces daytime concentration span, increases irritability, and triggers testing anxiety."},
+                            {"id": "q2_7", "type": "Vocabulary", "marks": 1, "q": "Find a word from the passage that signifies 'a situation involving two things being examined side by side to see differences'.", "answer": "'Comparison'."},
+                            {"id": "q2_8", "type": "VSAQ", "marks": 1, "q": "Suggest one actionable time-management intervention based directly on the survey findings.", "answer": "Redirecting 1 hour of daily recreational smartphone usage towards sleep and active handwritten revision testing."}
+                        ]
+                    }
+                ]
+            },
+            "B": {
+                "name": "SECTION B: WRITING SKILLS & GRAMMAR (30 Marks)",
+                "grammar_marks": 10,
+                "writing_marks": 20,
+                "items": [
+                    {
+                        "number": "Q3",
+                        "type": "Editing / Omitting (MCQ - 4 Marks)",
+                        "instructions": "In the following passage, one word has been omitted or used incorrectly in each line. Identify the error and select the correct option.",
+                        "lines": [
+                            {"line": "Sudha Murty is inspiring author whose stories reflects", "options": ["A. is -> was", "B. author -> authors", "C. reflects -> reflect", "D. whose -> which"], "correct": "C. reflects -> reflect (Subject 'stories' is plural)"},
+                            {"line": "the simplicity of rural India. She believe that", "options": ["A. believe -> believes", "B. the -> a", "C. that -> this", "D. rural -> rurally"], "correct": "A. believe -> believes (Subject 'She' is singular)"},
+                            {"line": "education must reach to every elderly citizen in", "options": ["A. to -> omit 'to'", "B. must -> can", "C. every -> each", "D. in -> on"], "correct": "A. to -> omit 'to' (Transitive verb 'reach' takes direct object)"},
+                            {"line": "the remote corners of our country.", "options": ["A. remote -> remotely", "B. our -> their", "C. corners -> corner", "D. no error"], "correct": "D. no error (Or 'the -> a')"}
+                        ]
+                    },
+                    {
+                        "number": "Q4",
+                        "type": "Sentence Rearrangement (3 Marks)",
+                        "instructions": "Rearrange the following jumbled words and phrases to form meaningful grammatical sentences:",
+                        "items": [
+                            {"jumbled": "determination / overcome / can / any / obstacle / sincere", "answer": "Sincere determination can overcome any obstacle."},
+                            {"jumbled": "village / the / weekly / waited / eagerly / for / magazine / the", "answer": "The village eagerly waited for the weekly magazine."},
+                            {"jumbled": "soil / the / sacred / is / life / a / cradle / of", "answer": "The soil is a sacred cradle of life."}
+                        ]
+                    },
+                    {
+                        "number": "Q5",
+                        "type": "Sentence Transformation (3 Marks)",
+                        "instructions": "Transform the following sentences as instructed:",
+                        "items": [
+                            {
+                                "q": "Krishtakka said to Sudha, 'I will touch your feet on Vijayadashami day.' (Change to Reported Speech)",
+                                "answer": "Krishtakka told Sudha that she would touch her feet on Vijayadashami day."
+                            },
+                            {
+                                "q": "Unless we harvest rainwater, our underground wells will remain dry. (Rewrite using 'If')",
+                                "answer": "If we do not harvest rainwater, our underground wells will remain dry."
+                            },
+                            {
+                                "q": "The craftsman shaped the lump of clay. It turned into an elegant urn. (Combine using a Relative Clause)",
+                                "answer": "The craftsman shaped the lump of clay, which turned into an elegant urn."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q6",
+                        "type": "Writing: Notice OR Informal Invitation (3 Marks | Up to 50 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Notice)",
+                                "prompt": "You are Aarav/Ananya, Cultural Secretary of Ryan International School, Delhi. Draft a notice informing students of Grades 9–10 about an upcoming 'Inter-House Creative Writing Competition' on the theme 'Heritage and Resilience'. Include all necessary details within 50 words."
+                            },
+                            {
+                                "label": "Option B (Informal Invitation)",
+                                "prompt": "Your grandmother has successfully completed a community adult literacy course. Draft an informal invitation inviting your cousin to a celebratory tea party at your residence on Sunday at 4 PM. Keep word limit up to 50 words."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q7",
+                        "type": "Writing: Letter to Editor OR Formal E-mail (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Letter to Editor)",
+                                "prompt": "Write a letter to the Editor of 'The Indian Express' highlighting the alarming decline of traditional Indian handicrafts and folk art due to cheap industrial mass-production. Suggest actionable policies to support artisan guilds and protect rural livelihood."
+                            },
+                            {
+                                "label": "Option B (Formal E-mail)",
+                                "prompt": "Draft a formal e-mail to the Director of the State Literacy Mission proposing a student-led 'Each One Teach One' weekend literacy drive in adjacent peri-urban clusters. Detail the methodology, student volunteers, and required primer materials."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q8",
+                        "type": "Writing: Factual Description OR Magazine Article (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Factual Description)",
+                                "prompt": "Write a factual description of an eco-friendly 'Solar-Powered Automated Drip Irrigation System' installed in an agricultural demonstration farm."
+                            },
+                            {
+                                "label": "Option B (Magazine Article)",
+                                "prompt": "Write an article for your school magazine on 'The Psychology of Money: Cultivating Financial Prudence in Adolescents'."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q9",
+                        "type": "Writing: Descriptive Essay OR Narrative Essay (7 Marks | 200–250 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Descriptive Essay)",
+                                "prompt": "Write a descriptive essay on 'The Splendour of the Indian Monsoon: From Parched Earth to Emerald Rebirth'. Focus on sensory imagery, transformation of landscape, and agrarian celebration."
+                            },
+                            {
+                                "label": "Option B (Narrative Essay)",
+                                "prompt": "Write a narrative essay about an unexpected life lesson learned while attempting a difficult traditional manual craft under the guidance of an elder."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "C": {
+                "name": "SECTION C: LANGUAGE THROUGH LITERATURE (30 Marks)",
+                "extracts_marks": 10,
+                "constructed_marks": 20,
+                "items": [
+                    {
+                        "number": "Q10",
+                        "type": "Extract from Prose (5 Marks)",
+                        "text": "“I opened the magazine. There was the picture of Triveni and the title of the novel 'Kashi Yatre'. I could not read a single letter. I felt so dependent and helpless. We are well-off, but what use is money when I cannot be independent? For a long time, I sat in the darkness, crying.”",
+                        "questions": [
+                            {"id": "q10_1", "marks": 1, "q": "Why was the speaker unable to read the novel?", "answer": "Because she was illiterate, having been deprived of schooling in her childhood."},
+                            {"id": "q10_2", "marks": 1, "q": "What fundamental truth about wealth does the speaker articulate?", "answer": "She articulates that material affluence is meaningless if one lacks intellectual independence and personal dignity."},
+                            {"id": "q10_3", "marks": 1, "q": "Identify the emotion experienced by the speaker in this excerpt.", "answer": "Profound helplessness, anguish, and vulnerability."},
+                            {"id": "q10_4", "marks": 1, "q": "What action of the speaker reveals the depth of her grief?", "answer": "Sitting alone in the darkness and weeping for a long time."},
+                            {"id": "q10_5", "marks": 1, "q": "Name the text and author of this extract.", "answer": "'How I Taught My Grandmother to Read' by Sudha Murty."}
+                        ]
+                    },
+                    {
+                        "number": "Q11",
+                        "type": "Extract from Poetry (5 Marks)",
+                        "text": "“The generous Ganga is our own river;\nWhich other stream can match its grace?\nThe sunny Upanishads are our own,\nWhat other scripture can match their glory?”",
+                        "questions": [
+                            {"id": "q11_1", "marks": 1, "q": "Why is the Ganga described as 'generous'?", "answer": "Because it unstintingly bestows fertile silt, fresh water, and life-giving sustenance to millions along its plains."},
+                            {"id": "q11_2", "marks": 1, "q": "Explain the significance of the epithet 'sunny' for the Upanishads.", "answer": "It signifies that the Upanishads radiate spiritual enlightenment, dispelling moral darkness and ignorance like sunlight."},
+                            {"id": "q11_3", "marks": 1, "q": "What poetic technique is used through the recurring questions in lines 2 and 4?", "answer": "Rhetorical questions asserting peerless cultural superiority."},
+                            {"id": "q11_4", "marks": 1, "q": "Name the poet of these lines.", "answer": "Subramania Bharati (Translated by Prema Nandakumar)."},
+                            {"id": "q11_5", "marks": 1, "q": "What overarching sentiment does the poet evoke in this stanza?", "answer": "Intense patriotic pride and cultural reverence."}
+                        ]
+                    },
+                    {
+                        "number": "Q12",
+                        "type": "Short Answer Questions (5 out of 6 | 5 x 2 = 10 Marks | 40–50 words each)",
+                        "questions": [
+                            {
+                                "number": "Q12 (i)",
+                                "q": "Why did Krishtakka insist on touching the feet of her twelve-year-old granddaughter on Vijayadashami?",
+                                "answer": "Krishtakka explained that according to ancient cultural tradition, one must pay homage to one's Guru who dispels ignorance, irrespective of age or gender. She was honoring Sudha as her revered teacher who gifted her the power of literacy."
+                            },
+                            {
+                                "number": "Q12 (ii)",
+                                "q": "How does 'The Pot Maker' portray the relationship between human breath and clay shaping?",
+                                "answer": "The master explains that clay is a sensitive, living medium that responds to human calm rather than violent force. Center the mind, quiet the breath, and the clay rises smoothly; if the artisan is agitated, the pot wobbles and collapses."
+                            },
+                            {
+                                "number": "Q12 (iii)",
+                                "q": "Describe how community shramdaan reversed ecological desolation in 'Winds of Change'.",
+                                "answer": "Villagers contributed voluntary labor to build contour trenches, earthen check dams, and tree groves along denuded hillsides. Capturing rainfall where it fell recharged dry wells, revitalized agriculture, and stopped forced economic migration."
+                            },
+                            {
+                                "number": "Q12 (iv)",
+                                "q": "In 'I Cannot Remember my Mother', what sensory connection does the poet establish with autumn temple flowers?",
+                                "answer": "In early autumn, the intoxicating scent of freshly fallen shiuli blossoms used during morning temple worship reminds the poet of his mother's divine, gentle fragrance, bridging the physical void of her death."
+                            },
+                            {
+                                "number": "Q12 (v)",
+                                "q": "Why did Rohan walk away from purchasing the coveted sneakers in 'Vitamin-M'?",
+                                "answer": "Having spent ten grueling days hauling book crates and earning every rupee through honest sweat, Rohan realized that the shoes represented fifty hours of exhausting grandfatherly toil, making the vanity purchase feel deeply wasteful."
+                            },
+                            {
+                                "number": "Q12 (vi)",
+                                "q": "What universal message about the dignity of manual work is conveyed in 'Gifts of Grace'?",
+                                "answer": "The poem sanctifies everyday vocations—weavers, blacksmiths, carpenters, and farmers—asserting that honest manual labor dedicated to feeding and sheltering humanity is sacred, transforming workshops into divine altar stones."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q13",
+                        "type": "Long Answer Extrapolative Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Extrapolation on Lifelong Learning)",
+                                "prompt": "'Determination dissolves all barriers of age, gender, and social circumstance.' Analyze how Krishtakka's journey in Unit 1 inspires adult literacy and lifelong empowerment in contemporary society.",
+                                "answer": "In 'How I Taught My Grandmother to Read', Sudha Murty illustrates that the thirst for self-reliance knows no chronological bounds. At sixty-two, burdened with domestic responsibilities, grandmother Krishtakka refused to surrender to illiteracy. Her tears over her inability to decipher 'Kashi Yatre' reflected the agony of human dependence in an information-rich world.\n\nHer resolute declaration—'For learning there is no age bar'—and her relentless discipline to master the Kannada alphabet before Vijayadashami dismantle the societal misconception that education belongs solely to childhood. In modern India, where digital interfaces govern governance, banking, and communication, millions of illiterate seniors remain vulnerable to exploitation. Krishtakka's triumph proves that when individuals are met with empathetic mentorship and unshakeable willpower, literacy restores personal sovereignty. Her story serves as a rallying call for community literacy circles, demonstrating that acquiring knowledge is an emancipatory right that endures throughout human life."
+                            },
+                            {
+                                "label": "Option B (Extrapolation on Ecological Stewardship)",
+                                "prompt": "'Nature does not negotiate; it responds only to balance and stewardship.' Synthesize the ecological insights from 'Winds of Change' and 'Canvas of Soil' into an appeal for youth climate action.",
+                                "answer": "Both 'Winds of Change' and 'Canvas of Soil' converge on an urgent ecological truth: humanity cannot treat the earth as an infinite commodity without triggering catastrophic collapse. In 'Winds of Change', the drought-stricken villagers learned that climate distress was worsened by collective neglect—allowing rainwater to rush away over barren slopes instead of recharging natural aquifers. Through organized shramdaan, they proved that ecological healing begins with localized, decentralized conservation.\n\nComplementing this pragmatic action, 'Canvas of Soil' elevates earth stewardship to a sacred aesthetic responsibility, celebrating the miraculous petrichor and emerald harvest that sustain life. For modern youth witnessing global warming, these texts provide an inspiring compass. Combating climate crisis demands moving beyond passive anxiety to active grassroots stewardship—harvesting rain, revitalizing soils, and planting native groves. When communities harmonize traditional wisdom with clean technologies, the parched earth invariably blossoms into green abundance."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q14",
+                        "type": "Long Answer Theme/Plot/Character Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Character & Thematic Analysis: Tagore's Elegiac Artistry)",
+                                "prompt": "Analyze how Rabindranath Tagore transforms the tragedy of maternal loss into a luminous spiritual celebration in 'I Cannot Remember my Mother'. Focus on his use of sensory imagery.",
+                                "answer": "In 'I Cannot Remember my Mother', Rabindranath Tagore undertakes an extraordinary poetic alchemy, transmuting the sorrow of infant bereavement into a transcendent meditation on maternal omnipresence. Having lost his mother before forming permanent visual memories of her countenance, the poet eschews conventional mourning. Instead, he constructs her immortal presence through three exquisite sensory gateways.\n\nAuditorily, her memory lingers as an unforgotten lullaby humming over his toys. Olfactorily, her purity breathes through the autumn fragrance of shiuli blossoms gathered for morning temple prayers. Visually, her loving gaze expands across the silent blue sky, enveloping the child in eternal celestial security. By liberating the mother's memory from physical boundaries, Tagore demonstrates that love is an indestructible spiritual energy. The repeated refrain 'I cannot remember my mother' ceases to be an admission of loss; it becomes a triumphant declaration that a mother's grace is interwoven with the very fabric of nature itself."
+                            },
+                            {
+                                "label": "Option B (Character Evolution: The Journey of Rohan in Vitamin-M)",
+                                "prompt": "Trace the psychological evolution of Rohan in 'Vitamin-M' from a brand-obsessed adolescent to a financially conscious individual. How does his father's strategy catalyze this transformation?",
+                                "answer": "Rohan’s character arc in 'Vitamin-M' embodies the crucial transition from commercial vanity to moral maturity. At the outset, Rohan is an impressionable adolescent ensnared by peer competition, convinced that wearing premium imported sneakers will elevate his social stature. He views money through an entitled lens, believing parental wallets exist to satisfy ephemeral cravings.\n\nHis father’s refusal to provide an unearned allowance—offering instead a hard-labor job at his grandfather’s bookstore—is a masterstroke of parental pedagogy. Experiencing ten grueling days of hauling dusty crates and logging sales demystifies currency for Rohan. He discovers that money represents finite human life-energy. When he ultimately refrains from buying the shoes, his decision reflects authentic pride and gratitude for his grandfather's toil. By conquering peer pressure, Rohan realizes that self-worth is an internal virtue built through character and discipline, not a logo stitched upon footwear."
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
+    # MOCK PAPER 2: SCHOOL MID-TERM / PERIODIC ASSESSMENT SIMULATOR
+    {
+        "id": "mock_paper_2",
+        "paper_code": "ENG-R1-02",
+        "title": "Mock Examination Paper 2 (Mid-Term & Periodic Assessment Simulator)",
+        "duration": "3 Hours",
+        "max_marks": 80,
+        "instructions": [
+            "Aligned with the vetted school examination patterns from Classroom archives.",
+            "Sections: A (Reading 20M), B (Writing & Grammar 30M), C (Literature 30M).",
+            "Follow strict time management: 45 min Section A, 65 min Section B, 70 min Section C."
+        ],
+        "sections": {
+            "A": {
+                "name": "SECTION A: READING SKILLS (20 Marks)",
+                "passages": [
+                    {
+                        "number": "Q1",
+                        "type": "Discursive Passage (10 Marks)",
+                        "word_count": "410 words",
+                        "title": "The Endangered Heritage of India's Traditional Weavers",
+                        "text": "1. Across the dusty alleyways of Varanasi, Chanderi, and Kanchipuram, the rhythmic clack-clack of the wooden handloom is steadily falling silent. For centuries, Indian handloom textiles were the gold standard of global trade, praised by Roman emperors and traded across ancient maritime routes. Today, this living heritage faces an existential crisis as mechanized power looms and synthetic polyester fabrics flood domestic bazaars with cheap, disposable imitations.\n\n2. The handloom craft is not merely a manufacturing sector; it is a repository of cultural geometry and ecological wisdom. A master weaver working on an intricate Jamdani or Banarasi brocade saree invests up to three months of meticulous labour, interlacing natural silk threads with zari using manual pedals and wooden shuttles. Unlike petrochemical-derived synthetic garments that shed microplastics and choke landfills for centuries, hand-spun cotton and natural dyes are biodegradable, low-carbon, and gentle on human skin.\n\n3. Yet, the younger generation of weaver families is abandoning the ancestral pit-looms. Squeezed by predatory middlemen who corner retail profits while paying artisans exploitative daily wages, youth see little economic dignity in continuing the craft. Unless consumers actively choose ethical artisanal garments over fast-fashion brands and cooperatives receive direct digital market linkages, India risks losing an invaluable artistic lineage within a single generation.",
+                        "questions": [
+                            {"id": "mp2_q1_1", "type": "MCQ", "marks": 1, "q": "What is the primary threat to traditional Indian handlooms mentioned in paragraph 1?", "options": ["A. Shortage of raw cotton and silk", "B. Flood of cheap synthetic machine-made imitations", "C. Total lack of international consumer interest", "D. Ban on handloom exports by the government"], "answer": "B. Flood of cheap synthetic machine-made imitations"},
+                            {"id": "mp2_q1_2", "type": "VSAQ", "marks": 1, "q": "Why are handloom textiles considered ecologically superior to synthetic polyester fabrics?", "answer": "Handloom textiles utilize biodegradable natural fibers and plant dyes with minimal carbon footprint, whereas synthetic polyesters shed harmful microplastics and persist in landfills."},
+                            {"id": "mp2_q1_3", "type": "Vocabulary", "marks": 1, "q": "Find a word in paragraph 2 that means 'a place where large amounts of something are stored or preserved'.", "answer": "'Repository'."},
+                            {"id": "mp2_q1_4", "type": "Inference", "marks": 2, "q": "Explain the economic dilemma forcing young weavers to abandon their ancestral vocation. (30–40 words)", "answer": "Predatory middlemen capture the bulk of retail profits while paying master weavers meager daily wages, leaving the younger generation unable to afford basic living standards despite immense skill."},
+                            {"id": "mp2_q1_5", "type": "MCQ", "marks": 1, "q": "The author's primary objective in writing this passage is to:", "options": ["A. Promote the mechanization of all Indian textile sectors", "B. Urge consumers and policymakers to protect traditional artisanal lineages", "C. Criticize the ancient Roman trade routes", "D. Discourage youth from pursuing industrial design"], "answer": "B. Urge consumers and policymakers to protect traditional artisanal lineages"},
+                            {"id": "mp2_q1_6", "type": "VSAQ", "marks": 1, "q": "What two interventions does the author propose to revitalize the handloom sector in paragraph 3?", "answer": "1. Conscious consumer shift towards ethical handloom products over fast fashion; 2. Direct digital market access for artisan cooperatives."},
+                            {"id": "mp2_q1_7", "type": "VSAQ", "marks": 1, "q": "State whether TRUE or FALSE:\n'A handwoven Banarasi saree requires machine algorithms to calculate intricate floral motifs.'", "answer": "FALSE (Paragraph 2 states master weavers execute intricate motifs through manual pedals and wooden shuttles)."},
+                            {"id": "mp2_q1_8", "type": "Vocabulary", "marks": 1, "q": "Which word in paragraph 3 means 'relating to or characteristic of ancestors'?", "answer": "'Ancestral'."},
+                            {"id": "mp2_q1_9", "type": "Inference", "marks": 1, "q": "Complete the statement: Handloom weaving represents a synthesis of ________ geometry and ________ wisdom.", "answer": "cultural / ecological."}
+                        ]
+                    },
+                    {
+                        "number": "Q2",
+                        "type": "Case-Based Passage (10 Marks)",
+                        "word_count": "230 words",
+                        "title": "Urban Air Quality & Green Commuting Patterns",
+                        "text": "The State Pollution Control Board conducted a 6-month comparative study across two suburban school districts in Pune to evaluate the impact of student commuting habits on respiratory health and localized Air Quality Index (AQI).\n\n[SURVEY DATA TABLE]\n• District A (Private Car & Fuel Van Drop-offs): Average peak morning AQI 242 (Poor); 28% of students reported chronic allergic cough.\n• District B (Dedicated Bicycle Lanes & Walking Bus initiative): Average peak morning AQI 118 (Moderate); 9% reported respiratory discomfort.\n• Commuter Distribution in District B: 52% Bicycles, 31% Public Bus, 12% Walking, 5% Private Vehicles.\n\nThe findings confirmed that designating a 500-meter vehicular drop-off exclusion perimeter around school zones reduced dangerous PM2.5 concentrations by 41% during peak entry and dispersal hours.",
+                        "questions": [
+                            {"id": "mp2_q2_1", "type": "MCQ", "marks": 1, "q": "The peak morning Air Quality Index (AQI) in District A was recorded as:", "options": ["A. 118 (Moderate)", "B. 242 (Poor)", "C. 50 (Good)", "D. 350 (Severe)"], "answer": "B. 242 (Poor)"},
+                            {"id": "mp2_q2_2", "type": "VSAQ", "marks": 1, "q": "What was the reduction in chronic allergic cough among students in District B compared to District A?", "answer": "Allergic cough dropped from 28% in District A to 9% in District B, representing a 19-percentage-point decrease."},
+                            {"id": "mp2_q2_3", "type": "Inference", "marks": 2, "q": "How does establishing a 500-meter vehicular exclusion perimeter safeguard children's respiratory health?", "answer": "It halts idling vehicle tailpipe emissions near school gates, preventing heavy PM2.5 particulate concentrations where children assemble and breathe heavily during morning hours."},
+                            {"id": "mp2_q2_4", "type": "MCQ", "marks": 1, "q": "The predominant mode of commute for students in District B is:", "options": ["A. Walking", "B. Public Bus", "C. Bicycles", "D. Private Cars"], "answer": "C. Bicycles (52%)"},
+                            {"id": "mp2_q2_5", "type": "VSAQ", "marks": 1, "q": "By what percentage did PM2.5 concentrations decrease during school entry and exit hours in the pedestrianized zones?", "answer": "41% reduction."},
+                            {"id": "mp2_q2_6", "type": "Inference", "marks": 2, "q": "What urban planning lesson can other educational institutions draw from District B's success?", "answer": "Schools must collaborate with civic municipal authorities to build segregated cycling lanes and promote collective walking initiatives to slash vehicular congestion and purify micro-climates."},
+                            {"id": "mp2_q2_7", "type": "Vocabulary", "marks": 1, "q": "Find a word from the passage meaning 'the outer boundary of a closed area'.", "answer": "'Perimeter'."},
+                            {"id": "mp2_q2_8", "type": "VSAQ", "marks": 1, "q": "What percentage of students in District B still relied on private motorized vehicles?", "answer": "Only 5%."}
+                        ]
+                    }
+                ]
+            },
+            "B": {
+                "name": "SECTION B: WRITING SKILLS & GRAMMAR (30 Marks)",
+                "grammar_marks": 10,
+                "writing_marks": 20,
+                "items": [
+                    {
+                        "number": "Q3",
+                        "type": "Editing / Omitting (MCQ - 4 Marks)",
+                        "instructions": "Identify the incorrect word in each line and select the correct option.",
+                        "lines": [
+                            {"line": "Traditional artisans forms the backbone of Indian culture.", "options": ["A. forms -> form", "B. of -> in", "C. the -> a", "D. culture -> cultures"], "correct": "A. forms -> form"},
+                            {"line": "They creates magnificent artefacts with extreme patience.", "options": ["A. creates -> create", "B. with -> by", "C. extreme -> extremely", "D. They -> He"], "correct": "A. creates -> create"},
+                            {"line": "Unless we supports them, their craft will vanish.", "options": ["A. supports -> support", "B. will -> would", "C. vanish -> vanished", "D. their -> its"], "correct": "A. supports -> support"},
+                            {"line": "Every citizen should bought at least one handmade item.", "options": ["A. bought -> buy", "B. should -> would", "C. at -> in", "D. handmade -> handmaking"], "correct": "A. bought -> buy"}
+                        ]
+                    },
+                    {
+                        "number": "Q4",
+                        "type": "Sentence Rearrangement (3 Marks)",
+                        "instructions": "Rearrange the fragments into coherent grammatical sentences:",
+                        "items": [
+                            {"jumbled": "generous / waters / river / the / Ganga / its / spreads", "answer": "The generous Ganga spreads its river waters."},
+                            {"jumbled": "memory / fragrance / brought / mother's / flower / the / of / his", "answer": "The fragrance of the flower brought memory of his mother."},
+                            {"jumbled": "mindful / teens / spending / practice / should / daily", "answer": "Teens should practice mindful spending daily."}
+                        ]
+                    },
+                    {
+                        "number": "Q5",
+                        "type": "Sentence Transformation (3 Marks)",
+                        "instructions": "Transform sentences according to CBSE instructions:",
+                        "items": [
+                            {
+                                "q": "The teacher said to the students, 'Have you completed the grammar worksheet?' (Change to Indirect Speech)",
+                                "answer": "The teacher asked the students if they had completed the grammar worksheet."
+                            },
+                            {
+                                "q": "The boy was very tired. He could not lift the heavy book carton. (Combine using 'too... to')",
+                                "answer": "The boy was too tired to lift the heavy book carton."
+                            },
+                            {
+                                "q": "If it does not rain, the saplings will perish. (Rewrite using 'Unless')",
+                                "answer": "Unless it rains, the saplings will perish."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q6",
+                        "type": "Notice OR Informal Invitation (3 Marks | Up to 50 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Notice)",
+                                "prompt": "You are the Head Boy/Girl of Army Public School, Pune. Draft a notice in not more than 50 words inviting students of Grades 8–10 to donate gently used storybooks for a mobile rural library."
+                            },
+                            {
+                                "label": "Option B (Informal Invitation)",
+                                "prompt": "You are hosting a poetry recitation evening at your home celebrating national poets like Subramania Bharati. Write an informal invitation to your friend inviting them for the gathering."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q7",
+                        "type": "Letter to Editor OR Formal E-mail (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Letter to Editor)",
+                                "prompt": "Write a letter to the Editor of 'The Times of India' drawing public attention towards reckless disposal of non-biodegradable plastic packaging and proposing community zero-waste markets."
+                            },
+                            {
+                                "label": "Option B (Formal E-mail)",
+                                "prompt": "Draft an official e-mail to the Principal of a neighboring school requesting their partnership in an inter-school student volunteer literacy mentoring initiative."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q8",
+                        "type": "Factual Description OR Magazine Article (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Factual Description)",
+                                "prompt": "Write a factual description of your school's 'Herbal & Native Botanical Garden', detailing its layout, species diversity, irrigation method, and medicinal utility."
+                            },
+                            {
+                                "label": "Option B (Magazine Article)",
+                                "prompt": "Write an article for your school magazine entitled 'The Lost Art of Deep Listening: Why Empathy Matters in the Digital Age'."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q9",
+                        "type": "Descriptive Essay OR Narrative Essay (7 Marks | 200–250 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Descriptive Essay)",
+                                "prompt": "Write a descriptive essay on 'The Village Potter's Courtyard: An Symphony of Earth, Water, and Fire'."
+                            },
+                            {
+                                "label": "Option B (Narrative Essay)",
+                                "prompt": "Write a narrative essay about a memorable weekend spent volunteering in an environmental afforestation project."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "C": {
+                "name": "SECTION C: LITERATURE (30 Marks)",
+                "extracts_marks": 10,
+                "constructed_marks": 20,
+                "items": [
+                    {
+                        "number": "Q10",
+                        "type": "Prose Extract (5 Marks)",
+                        "text": "“The father stopped the wheel. 'You are angry with the clay, my boy,' he said, wiping the sweat from his brow. 'When you force the mud, it resists. You must wait for the earth to soften, feel its pulse, and guide it gently. Skill without patience is like a river without banks; it only causes destruction.'”",
+                        "questions": [
+                            {"id": "mp2_q10_1", "marks": 1, "q": "Why did the father stop the spinning wheel?", "answer": "Because the apprentice son was handling the clay with impatient anger, causing the vessel to deform."},
+                            {"id": "mp2_q10_2", "marks": 1, "q": "Identify the figure of speech in 'Skill without patience is like a river without banks'.", "answer": "Simile."},
+                            {"id": "mp2_q10_3", "marks": 1, "q": "What core pedagogical lesson does the father impart here?", "answer": "He teaches that mastery requires gentleness, emotional calmness, and respect for the natural limits of the material."},
+                            {"id": "mp2_q10_4", "marks": 1, "q": "Which word in the text means 'offers opposition or refuses to comply'?", "answer": "'Resists'."},
+                            {"id": "mp2_q10_5", "marks": 1, "q": "Name the character delivering these lines.", "answer": "The master potter (father) in 'The Pot Maker'."}
+                        ]
+                    },
+                    {
+                        "number": "Q11",
+                        "type": "Poetry Extract (5 Marks)",
+                        "text": "“I cannot remember my mother,\nonly sometime in the midst of my play\na tune seems to hover over my playthings,\nthe tune of some song that she used to hum\nwhile rocking my cradle.”",
+                        "questions": [
+                            {"id": "mp2_q11_1", "marks": 1, "q": "What triggers the child's memory of his mother?", "answer": "An ethereal musical melody hovering over his playthings while he is playing."},
+                            {"id": "mp2_q11_2", "marks": 1, "q": "What song was this tune originally associated with?", "answer": "The cradle lullaby his mother used to hum while rocking him to sleep in infancy."},
+                            {"id": "mp2_q11_3", "marks": 1, "q": "Which sensory organ is engaged in this stanza?", "answer": "Auditory sense (hearing / musical humming)."},
+                            {"id": "mp2_q11_4", "marks": 1, "q": "Who is the poet of these poignant lines?", "answer": "Rabindranath Tagore."},
+                            {"id": "mp2_q11_5", "marks": 1, "q": "What does this extract suggest about the enduring nature of maternal love?", "answer": "It suggests that maternal love leaves an indelible emotional resonance that outlives physical absence and rational memory."}
+                        ]
+                    },
+                    {
+                        "number": "Q12",
+                        "type": "Short Answer Questions (5 out of 6 | 5 x 2 = 10 Marks | 40–50 words each)",
+                        "questions": [
+                            {"number": "Q12 (i)", "q": "What role did the weekly magazine 'Karmaveera' play in Krishtakka's village life?", "answer": "In a remote village lacking television and modern media, 'Karmaveera' was the villagers' solitary cultural window. It carried Triveni's serialized novel, providing moral entertainment, emotional kinship, and intellectual discussion every Wednesday."},
+                            {"number": "Q12 (ii)", "q": "How does Subramania Bharati celebrate the intellectual heritage of India in 'Bharat, Our Land'?", "answer": "He honors India as the sacred cradle of the 'sunny Upanishads', whose philosophical brilliance illuminates ethical duty, alongside legendary warrior queens, heroic seers, and Gautama Buddha's compassionate teachings."},
+                            {"number": "Q12 (iii)", "q": "What ecological principle did the Sarpanch emphasize in 'Winds of Change'?", "answer": "She stressed that rainwater is a sacred common property that must be intercepted and conserved where it falls through earthen contour trenches and check dams, rather than pumped out via unsustainable borewells."},
+                            {"number": "Q12 (iv)", "q": "How does petrichor evoke feelings of reverence in 'Canvas of Soil'?", "answer": "The intoxicating aroma of rain touching dry earth represents the miraculous resurrection of plant life. It signifies hope, relief from drought, and divine benevolence blessing the agrarian soil."},
+                            {"number": "Q12 (v)", "q": "What lesson about self-worth did Rohan learn from working in his grandfather's bookstore?", "answer": "Rohan realized that true respect and contentment stem from honest labor, integrity, and self-discipline, whereas flaunting unearned luxury brands is hollow and superficial."},
+                            {"number": "Q12 (vi)", "q": "Why does the poet describe craftsmen's work as taking place on an 'altar stone' in 'Gifts of Grace'?", "answer": "Because honest manual labor that clothes, tools, and feeds society is an authentic act of worship, elevating mundane workshops into sacred shrines of human service."}
+                        ]
+                    },
+                    {
+                        "number": "Q13",
+                        "type": "Long Answer Extrapolative Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Cross-Textual Synthesis on Generational Mentorship)",
+                                "prompt": "Mentorship across generations is a golden thread connecting Unit 1 and Unit 2. Compare how young Sudha mentors her grandmother and how the master potter mentors his son.",
+                                "answer": "Both 'How I Taught My Grandmother to Read' and 'The Pot Maker' offer profound insights into the sacred art of intergenerational mentorship, demonstrating that true teaching is rooted in deep empathy rather than authoritarian dominance. In Sudha Murty's memoir, the conventional hierarchy is inverted: a twelve-year-old granddaughter becomes the patient Guru to her sixty-two-year-old grandmother. Recognizing the vulnerability behind Krishtakka's tears, Sudha approaches the task with affectionate dedication, validating her student's dream and celebrating her triumph with reverent joy.\n\nIn 'The Pot Maker', the master craftsman mentors his impatient son through gentle demonstration. When the son's hurried aggressiveness causes the clay to collapse, the father does not scold; instead, he guides the apprentice's hands, explaining that the earth yields only to calm understanding. In both relationships, the mentor serves as a compassionate mirror, helping the learner overcome emotional hurdles and discover their intrinsic dignity."
+                            },
+                            {
+                                "label": "Option B (Extrapolation on Cultural Roots)",
+                                "prompt": "'A civilization that forgets its soil and stories loses its soul.' Discuss this idea in the light of the literature selections in Units 1 to 3.",
+                                "answer": "The literature of Units 1 to 3 constructs a compelling defense of cultural and ecological continuity in an era of rapid homogenization. In 'Bharat, Our Land', Bharati reminds us that national identity is rooted in ancient philosophical wisdom and sacred natural geography—the Upanishads and the Ganga. In 'The Pot Maker' and 'Gifts of Grace', the focus shifts to our artisanal roots, asserting that the patient shaping of terracotta and the clatter of the handloom embody timeless human values of mindfulness and craftsmanship.\n\nFinally, 'Canvas of Soil' and 'Winds of Change' demonstrate that when a community disconnects from its soil, it invites drought, poverty, and cultural despair. Restoring the land through collective shramdaan directly revived village solidarity. Together, these selections teach students that true progress does not mean discarding ancestral heritage; rather, it requires anchoring our modern aspirations in the fertile soil of cultural memory, respect for labor, and ecological harmony."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q14",
+                        "type": "Long Answer Theme/Plot/Character Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Character Sketch: Krishtakka as a Beacon of Dignity)",
+                                "prompt": "Draw a comprehensive character sketch of Krishtakka in 'How I Taught My Grandmother to Read', illustrating how she balances traditional domestic humility with progressive determination.",
+                                "answer": "Krishtakka emerges as one of the most endearing and dignified figures in contemporary Indian literature. Rooted in traditional North Karnataka village life, she represents generations of rural women whose personal aspirations were subordinated to early marriage, child-rearing, and unending domestic labor. Despite having never attended school, she possessed an instinctive aesthetic and intellectual appetite, weeping over the fictional tribulations of the protagonist in 'Kashi Yatre'.\n\nHer defining characteristic, however, is her steely, uncompromising resolve. When confronted with the shame of illiteracy during her granddaughter's absence, she did not wallow in self-pity; instead, she set a firm deadline—Vijayadashami—and applied herself with relentless discipline. Balancing arthritic fingers and kitchen duties, she recited alphabets until midnight. Most movingly, her profound humility shines when she touches the feet of her young granddaughter, declaring that knowledge transcends age hierarchies. Krishtakka remains an inspiring symbol of lifelong empowerment, demonstrating that intellectual hunger can conquer any obstacle."
+                            },
+                            {
+                                "label": "Option B (Thematic Analysis: The Subtle Elegance of Grief in Tagore's Poetry)",
+                                "prompt": "Explore how Rabindranath Tagore portrays the relationship between nature and memory in 'I Cannot Remember my Mother'.",
+                                "answer": "In 'I Cannot Remember my Mother', Rabindranath Tagore redefines elegiac poetry by anchoring elusive memories of maternal affection within the tangible phenomena of nature. Lacking conscious recollections of his mother’s voice or features, the speaker's emotional longing seeks refuge in organic, sensory encounters. Nature acts as an empathetic canvas that preserves what time has erased.\n\nThe fragrance of early autumn shiuli blossoms, floating from temple yards, becomes the living embodiment of his mother’s pure, sacred scent during morning prayer rituals. Similarly, the vast, tranquil blue of the distant sky mirrors the protective stillness of her loving gaze resting upon his face. By weaving maternal love into the fabric of sky, season, and scent, Tagore suggests that a mother’s spirit does not vanish with physical mortality; it dissolves into the cosmic sanctuary of nature, continuing to shelter, soothe, and guide the orphaned child throughout life."
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+
+    # MOCK PAPER 3: HIGH-ORDER COMPETENCY & EXTRAPOLATION PAPER
+    {
+        "id": "mock_paper_3",
+        "paper_code": "ENG-R1-03",
+        "title": "Mock Examination Paper 3 (High-Order Competency & Extrapolation)",
+        "duration": "3 Hours",
+        "max_marks": 80,
+        "instructions": [
+            "High-order thinking skills (HOTS), analytical extract synthesis, and rigorous grammar.",
+            "Sections: A (Reading 20M), B (Writing & Grammar 30M), C (Literature 30M).",
+            "Answers must be substantiated with textual evidence and clear conceptual reasoning."
+        ],
+        "sections": {
+            "A": {
+                "name": "SECTION A: READING SKILLS (20 Marks)",
+                "passages": [
+                    {
+                        "number": "Q1",
+                        "type": "Discursive Passage (10 Marks)",
+                        "word_count": "430 words",
+                        "title": "The Ecological Architecture of Traditional Indian Water Systems",
+                        "text": "1. Long before the advent of modern hydraulic engineering and electricity-guzzling turbine pumps, historic Indian communities developed ingenious decentralized systems to capture, conserve, and channel rainfall. From the subterranean stepwells (baolis) of Gujarat and Rajasthan to the inundation canals (ahars and pynes) of Bihar, traditional water architecture reflected an acute understanding of local geology, monsoon volatility, and ecological equilibrium.\n\n2. The architectural genius of the stepwell lay in its multi-functional design. Built deep into the earth to reach natural subterranean water tables, these stone structures featured descending flights of carved pavilions that provided a cool, subterranean sanctuary for weary caravan travellers during scorched summer months. More crucially, the stepwell functioned as a natural water purification and cooling system. Submerged stone pillars absorbed heat, while subterranean filtration through alluvial gravel ensured clear, uncontaminated drinking water for surrounding settlements throughout consecutive drought cycles.\n\n3. In contrast, modern centralized municipal management has largely abandoned these community-owned commons in favor of massive concrete dams and deep mechanized tubewells. While large infrastructure delivered rapid agricultural yields during the initial decades of the Green Revolution, it has precipitated an alarming depletion of ancient groundwater aquifers, widespread soil salinization, and drying of perennial river systems. Reviving historic stepwells and tank cascades is not mere romantic antiquarianism; it is an urgent ecological imperative to climate-proof Indian cities against future water vulnerability.",
+                        "questions": [
+                            {"id": "mp3_q1_1", "type": "MCQ", "marks": 1, "q": "Traditional Indian water structures like baolis were primarily designed to:", "options": ["A. Serve as military fortresses during foreign invasions", "B. Capture and store localized rainfall while reaching subterranean water tables", "C. Generate hydroelectricity for rural cottage industries", "D. Divert entire perennial rivers into industrial cities"], "answer": "B. Capture and store localized rainfall while reaching subterranean water tables"},
+                            {"id": "mp3_q1_2", "type": "VSAQ", "marks": 1, "q": "What dual purpose did the carved pavilions of stepwells serve for travelers in ancient India?", "answer": "They provided a cool subterranean resting sanctuary from scorching summer heat while offering safe, direct access to cool drinking water."},
+                            {"id": "mp3_q1_3", "type": "Vocabulary", "marks": 1, "q": "Find a word in paragraph 1 that means 'existing or occurring beneath the earth's surface'.", "answer": "'Subterranean'."},
+                            {"id": "mp3_q1_4", "type": "Inference", "marks": 2, "q": "Contrast the long-term ecological consequences of modern deep tubewells with traditional stepwell systems. (30–40 words)", "answer": "Modern tubewells aggressively drain fossil aquifers and cause soil salinization, whereas traditional stepwells passively harvest seasonal rainfall and recharge aquifers in harmony with natural cycles."},
+                            {"id": "mp3_q1_5", "type": "MCQ", "marks": 1, "q": "The author's reference to 'mere romantic antiquarianism' in paragraph 3 implies that:", "options": ["A. Reviving ancient water structures is an impractical, sentimental hobby", "B. Restoring stepwells is an urgent, scientifically sound necessity, not mere nostalgia", "C. Ancient history has no relevance to modern urban planning", "D. Only professional historians should manage city water systems"], "answer": "B. Restoring stepwells is an urgent, scientifically sound necessity, not mere nostalgia"},
+                            {"id": "mp3_q1_6", "type": "VSAQ", "marks": 1, "q": "How did subterranean gravel filtration benefit stepwell water quality?", "answer": "It naturally filtered out suspended sediment and organic impurities, ensuring clear, uncontaminated drinking water."},
+                            {"id": "mp3_q1_7", "type": "VSAQ", "marks": 1, "q": "State whether TRUE or FALSE:\n'Traditional water harvesting systems were centrally controlled by imperial monarchs without community participation.'", "answer": "FALSE (Paragraph 3 refers to them as 'community-owned commons')."},
+                            {"id": "mp3_q1_8", "type": "Vocabulary", "marks": 1, "q": "Which word in paragraph 3 means 'brought about abruptly or prematurely'?", "answer": "'Precipitated'."},
+                            {"id": "mp3_q1_9", "type": "Inference", "marks": 1, "q": "Complete the sentence: While modern dams provided initial agricultural yields, they caused ________ of ancient aquifers and ________ of rivers.", "answer": "alarming depletion / drying (desiccation)."}
+                        ]
+                    },
+                    {
+                        "number": "Q2",
+                        "type": "Case-Based Passage with Visual/Verbal Data (10 Marks)",
+                        "word_count": "235 words",
+                        "title": "Adolescent Screen Fatigue & Circadian Rhythm Disruption",
+                        "text": "A sleep physiology research laboratory evaluated 800 high school students (aged 14–16) across two academic terms to study the correlation between nocturnal blue-light exposure from mobile screens and cognitive performance during morning examinations.\n\n[RESEARCH LAB SUMMARY METRICS]\n• Group A (No Screen Use 60 min before sleep): Average sleep onset latency: 14 minutes; Deep NREM sleep percentage: 22%; Next-day reading comprehension recall: 84%.\n• Group B (Screen Use in bed up to sleep onset): Average sleep onset latency: 49 minutes; Deep NREM sleep percentage: 11%; Next-day reading comprehension recall: 58%.\n• Physiological Marker: Melatonin hormone secretion in Group B was suppressed by an average of 54% due to 450nm wavelength blue-light emission from phone displays.",
+                        "questions": [
+                            {"id": "mp3_q2_1", "type": "MCQ", "marks": 1, "q": "What was the average sleep onset latency for students in Group B?", "options": ["A. 14 minutes", "B. 22 minutes", "C. 49 minutes", "D. 60 minutes"], "answer": "C. 49 minutes"},
+                            {"id": "mp3_q2_2", "type": "VSAQ", "marks": 1, "q": "By what percentage was the crucial sleep-inducing hormone melatonin suppressed in Group B students?", "answer": "Suppressed by an average of 54%."},
+                            {"id": "mp3_q2_3", "type": "Inference", "marks": 2, "q": "Explain how nocturnal blue-light exposure directly degrades next-day academic recall in examinations.", "answer": "Blue light suppresses melatonin, doubling sleep onset time and halving deep NREM sleep, which prevents the brain from consolidating newly learned memories and causes cognitive fatigue."},
+                            {"id": "mp3_q2_4", "type": "MCQ", "marks": 1, "q": "The percentage of deep NREM sleep attained by Group A was:", "options": ["A. 11%", "B. 22%", "C. 54%", "D. 84%"], "answer": "B. 22% (double that of Group B)"},
+                            {"id": "mp3_q2_5", "type": "VSAQ", "marks": 1, "q": "What was the difference in next-day reading comprehension recall scores between Group A and Group B?", "answer": "A 26-percentage-point difference (84% recall in Group A vs 58% in Group B)."},
+                            {"id": "mp3_q2_6", "type": "Inference", "marks": 2, "q": "What simple habit change can secondary students adopt before exams based directly on this evidence?", "answer": "Powering down all mobile devices, tablets, and screens at least 60 minutes prior to bedtime to allow natural melatonin surge and restorative deep sleep."},
+                            {"id": "mp3_q2_7", "type": "Vocabulary", "marks": 1, "q": "Find a word from the text meaning 'the time that elapses between a stimulus and the beginning of a response'.", "answer": "'Latency'."},
+                            {"id": "mp3_q2_8", "type": "VSAQ", "marks": 1, "q": "What specific light wavelength emitted by phone displays triggers circadian rhythm disruption?", "answer": "450-nanometer (nm) blue-light wavelength."}
+                        ]
+                    }
+                ]
+            },
+            "B": {
+                "name": "SECTION B: WRITING & GRAMMAR (30 Marks)",
+                "grammar_marks": 10,
+                "writing_marks": 20,
+                "items": [
+                    {
+                        "number": "Q3",
+                        "type": "Editing / Omitting (MCQ - 4 Marks)",
+                        "instructions": "Identify the incorrect word in each line and select the correct replacement:",
+                        "lines": [
+                            {"line": "Rainwater harvesting are an ancient technique in India.", "options": ["A. are -> is", "B. an -> a", "C. in -> on", "D. ancient -> ancients"], "correct": "A. are -> is"},
+                            {"line": "Communities dug stepwells that reaches deep aquifers.", "options": ["A. reaches -> reached", "B. dug -> dig", "C. that -> what", "D. deep -> deeply"], "correct": "A. reaches -> reached"},
+                            {"line": "These structures provided clear water during dry months.", "options": ["A. provided -> provides", "B. during -> between", "C. clear -> clearly", "D. no error"], "correct": "D. no error"},
+                            {"line": "Today we must revived this sustainable indigenous science.", "options": ["A. revived -> revive", "B. Today -> Yesterday", "C. this -> these", "D. indigenous -> indigenously"], "correct": "A. revived -> revive"}
+                        ]
+                    },
+                    {
+                        "number": "Q4",
+                        "type": "Sentence Rearrangement (3 Marks)",
+                        "instructions": "Reorder the jumbled words into grammatical syntax:",
+                        "items": [
+                            {"jumbled": "sleep / consolidation / deep / memory / essential / is / for", "answer": "Deep sleep is essential for memory consolidation."},
+                            {"jumbled": "ancestral / respect / we / craftsmanship / must / our / of", "answer": "We must respect our craftsmanship of ancestral."},
+                            {"jumbled": "dignity / labor / honest / manual / brings / of", "answer": "Honest manual labor brings dignity of."}
+                        ]
+                    },
+                    {
+                        "number": "Q5",
+                        "type": "Sentence Transformation (3 Marks)",
+                        "instructions": "Transform sentences according to CBSE directives:",
+                        "items": [
+                            {
+                                "q": "Rohan said, 'I have realized the value of hard-earned money.' (Change to Reported Speech)",
+                                "answer": "Rohan stated that he had realized the value of hard-earned money."
+                            },
+                            {
+                                "q": "The village restored the catchment area. The water table rose by three meters. (Combine using 'When')",
+                                "answer": "When the village restored the catchment area, the water table rose by three meters."
+                            },
+                            {
+                                "q": "Unless you respect the clay, you cannot shape a perfect pot. (Rewrite using 'If')",
+                                "answer": "If you do not respect the clay, you cannot shape a perfect pot."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q6",
+                        "type": "Notice OR Informal Invitation (3 Marks | Up to 50 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Notice)",
+                                "prompt": "Draft a notice for your school board announcing an 'Inter-Class Digital Detox Week' challenge with book reading circles and outdoor sports."
+                            },
+                            {
+                                "label": "Option B (Informal Invitation)",
+                                "prompt": "Draft an informal invitation inviting your childhood friend to a harvest festival celebration at your ancestral farmhouse."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q7",
+                        "type": "Letter to Editor OR Formal E-mail (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Letter to Editor)",
+                                "prompt": "Write a letter to the Editor of 'The Hindu' emphasizing the urgent need to restore ancient stepwells, urban tanks, and lake cascades to climate-proof Indian metropolitan cities."
+                            },
+                            {
+                                "label": "Option B (Formal E-mail)",
+                                "prompt": "Draft an official e-mail to the District Education Officer proposing a 'Youth Financial Literacy & Entrepreneurship Workshop' across secondary schools."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q8",
+                        "type": "Factual Description OR Magazine Article (5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Factual Description)",
+                                "prompt": "Write a factual description of an ancient multi-storeyed stepwell (baoli), detailing its subterranean architecture, staircases, pavilions, and natural water filtration system."
+                            },
+                            {
+                                "label": "Option B (Magazine Article)",
+                                "prompt": "Write an article for your school magazine entitled 'The Blue Light Menace: Reclaiming Our Natural Sleep in a Hyper-Connected World'."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q9",
+                        "type": "Descriptive Essay OR Narrative Essay (7 Marks | 200–250 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Descriptive Essay)",
+                                "prompt": "Write a descriptive essay on 'The Magic of an Autumn Morning: Fragrance, Dew, and Awakening Chants'."
+                            },
+                            {
+                                "label": "Option B (Narrative Essay)",
+                                "prompt": "Write a narrative essay about a student who spent a week without internet or gadgets, discovering profound creativity and familial companionship."
+                            }
+                        ]
+                    }
+                ]
+            },
+            "C": {
+                "name": "SECTION C: LITERATURE (30 Marks)",
+                "extracts_marks": 10,
+                "constructed_marks": 20,
+                "items": [
+                    {
+                        "number": "Q10",
+                        "type": "Prose Extract (5 Marks)",
+                        "text": "“I realized then what money truly meant. It wasn't the numbers printed on paper; it was the hours of standing on tired feet, the lifting of heavy boxes, and the swallowing of pride when dealing with demanding customers. Looking at the five hundred rupees in my palm, I felt rich—not because of what I could buy, but because I had earned every single paisa myself.”",
+                        "questions": [
+                            {"id": "mp3_q10_1", "marks": 1, "q": "What new definition of money did the speaker discover?", "answer": "He discovered that money is not just printed paper, but a tangible representation of human labor, physical exhaustion, patience, and time."},
+                            {"id": "mp3_q10_2", "marks": 1, "q": "Why did the speaker feel rich despite holding only five hundred rupees?", "answer": "Because the currency was the product of his own honest sweat and hard work, endowing him with genuine self-esteem."},
+                            {"id": "mp3_q10_3", "marks": 1, "q": "What physical hardships had the speaker endured to earn this amount?", "answer": "Hours of standing on tired feet, carrying heavy cartons, and managing demanding bookstore customers."},
+                            {"id": "mp3_q10_4", "marks": 1, "q": "Name the story and author from which this extract is drawn.", "answer": "'Vitamin-M' (NCERT Kaveri Unit 4)."},
+                            {"id": "mp3_q10_5", "marks": 1, "q": "Identify the tone of the speaker in this excerpt.", "answer": "Reflective, humbled, and mature."}
+                        ]
+                    },
+                    {
+                        "number": "Q11",
+                        "type": "Poetry Extract (5 Marks)",
+                        "text": "“The peerless Himalayas are our own;\nThere is no equal to them anywhere on earth.\nThe generous Ganga is our own river;\nWhich other stream can match its grace?”",
+                        "questions": [
+                            {"id": "mp3_q11_1", "marks": 1, "q": "What does the word 'peerless' mean in the opening line?", "answer": "Matchless, having no equal or parallel in beauty and majesty."},
+                            {"id": "mp3_q11_2", "marks": 1, "q": "What role do the Himalayas play in shaping the poet's national vision?", "answer": "They serve as a towering physical and moral fortress, symbolizing India's unyielding dignity, spiritual heights, and timeless grandeur."},
+                            {"id": "mp3_q11_3", "marks": 1, "q": "Why is the Ganga characterized as having unmatched 'grace'?", "answer": "Because of its gentle, sacred flow that cleanses, enriches agriculture, and nurtures civilizations along its fertile banks."},
+                            {"id": "mp3_q11_4", "marks": 1, "q": "Identify the rhetorical device used in the fourth line.", "answer": "Rhetorical question emphasizing the unique status of the river."},
+                            {"id": "mp3_q11_5", "marks": 1, "q": "Name the poet who penned these patriotic verses.", "answer": "Subramania Bharati."}
+                        ]
+                    },
+                    {
+                        "number": "Q12",
+                        "type": "Short Answer Questions (5 out of 6 | 5 x 2 = 10 Marks | 40–50 words each)",
+                        "questions": [
+                            {"number": "Q12 (i)", "q": "Why was Krishtakka unable to ask other villagers to read the novel to her in Sudha's absence?", "answer": "Krishtakka was intensely self-respecting. She felt acutely ashamed to expose her illiteracy to neighbors, preferring to weep in solitude rather than solicit charity and pity from fellow villagers."},
+                            {"number": "Q12 (ii)", "q": "What does the symbol of the spinning potter's wheel teach about inner balance in 'The Pot Maker'?", "answer": "The wheel proves that creation requires centering. If the lump of clay deviates from the still center of rotation, it wobbles and collapses, proving that human actions must be anchored in emotional equilibrium."},
+                            {"number": "Q12 (iii)", "q": "How does 'Winds of Change' illustrate the concept of community self-reliance?", "answer": "Instead of waiting passively for government water tankers or bureaucratic aid, the villagers organized community shramdaan, constructing earthen check dams and planting forests to independently restore their hydrological stability."},
+                            {"number": "Q12 (iv)", "q": "Explain how Rabindranath Tagore experiences his mother's presence through visual stillness.", "answer": "Gazing out into the serene, cloudless blue sky, the poet feels that his deceased mother's silent, loving gaze has expanded across the cosmos, protecting and enveloping him in eternal calm."},
+                            {"number": "Q12 (v)", "q": "Why does Dadaji describe money as 'salt in food' in 'Vitamin-M'?", "answer": "Dadaji explains that like salt, an adequate amount of money is essential for survival, but excessive obsession with wealth ruins human relationships and moral character, which are the true grain of life."},
+                            {"number": "Q12 (vi)", "q": "In 'Gifts of Grace', why are the weaver's pedals described as 'singing'?", "answer": "The rhythmic mechanical movement of the loom creates an acoustic harmony that reflects the artisan's joy in honest craftsmanship, turning manual work into a song of service."}
+                        ]
+                    },
+                    {
+                        "number": "Q13",
+                        "type": "Long Answer Extrapolative Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Extrapolation on Authentic Values vs Materialism)",
+                                "prompt": "'In chasing the phantom of Vitamin-M, humanity often sacrifices the vitamins of empathy, gratitude, and patience.' Evaluate this assertion drawing evidence from Units 2 and 4.",
+                                "answer": "The modern commercial world incessantly conditions individuals to measure success by bank balances and brand logos—what the protagonist in Unit 4 humorously dubs 'Vitamin-M'. However, the literature in Units 2 and 4 delivers an incisive critique of this shallow materialism. In 'The Pot Maker', the master artisan demonstrates that the finest achievements of human civilization—such as transforming humble mud into ringing terracotta—cannot be bought or rushed with capital; they require patience, humility, and harmony with nature.\n\nSimilarly, in 'Vitamin-M', Rohan’s obsession with expensive sneakers exposes the psychological trap of peer validation. Only when he endures grueling bookstore shifts does he realize that money is merely a medium of exchange, whereas human relationships, family wisdom, and honest labor constitute real wealth. When society overemphasizes financial acquisition, it starves the soul of empathy and peace. Both narratives remind students that true self-worth is rooted in creative integrity, gratitude for simple blessings, and respect for the toil of others."
+                            },
+                            {
+                                "label": "Option B (Extrapolation on the Power of Female Literacy & Agency)",
+                                "prompt": "'When you educate an elderly woman, you liberate generations of cultural heritage.' Discuss this statement with reference to Sudha Murty's grandmother and modern Indian society.",
+                                "answer": "Sudha Murty’s 'How I Taught My Grandmother to Read' transcends personal memoir to become an enduring manifesto on the transformative power of female literacy. For decades, societal neglect of female education relegated intelligent, capable rural matriarchs like Krishtakka to passive domestic dependency. Despite managing household economies and preserving folklore, their illiteracy kept them in intellectual darkness whenever they held a printed page.\n\nKrishtakka’s passionate rebellion against this deprivation demonstrates that literacy is not merely a cognitive skill; it is an act of restoring human agency. When she touched her granddaughter's feet as a Guru, she shattered entrenched patriarchal hierarchies and proved that reverence belongs to knowledge. In modern India, empowering rural women and mothers with functional and digital literacy yields monumental societal dividends. Educated women ensure child immunization, improve household nutrition, champion schooling for daughters, and transmit cultural literature with pride. Krishtakka’s victory proves that educating a woman dismantles generational stagnation and elevates the dignity of the entire community."
+                            }
+                        ]
+                    },
+                    {
+                        "number": "Q14",
+                        "type": "Long Answer Theme/Plot/Character Question (1 out of 2 | 5 Marks | 120–150 words)",
+                        "options": [
+                            {
+                                "label": "Option A (Thematic Analysis: The Harmony of Labour and Nature in Indian Poetry)",
+                                "prompt": "Examine how 'Gifts of Grace' and 'Canvas of Soil' portray manual labor not as a curse of survival, but as a celebratory hymn of harmony with nature.",
+                                "answer": "In both 'Gifts of Grace' and 'Canvas of Soil', the poets dismantle the elitist prejudice that manual labor is menial drudgery, celebrating it instead as a profound spiritual communion with the natural cosmos. In 'Gifts of Grace', every humble workstation—the potter's wheel, the weaver's loom, and the blacksmith's anvil—is consecrated as an 'altar stone'. The physical exertion of the craftsman, marked by calloused hands and honest sweat, is portrayed as the bedrock that protects and nourishes human civilization.\n\nThis celebration reaches an ecological crescendo in 'Canvas of Soil', where the farmer's labor harmonizes with the rhythmic dance of the monsoon. The tiller is not an exploiter of the earth, but a reverent artist tending a living canvas. When the first drops touch the parched loam, liberating the sacred perfume of petrichor, human toil and nature's grace unite to paint emerald shoots and golden grain. By depicting work as sacred service, both poems restore profound dignity to agricultural and artisanal vocations, urging modern society to respect those whose hands sustain our world."
+                            },
+                            {
+                                "label": "Option B (Character Study: The Visionary Leadership of the Village Sarpanch in Unit 3)",
+                                "prompt": "Analyze the leadership qualities of Kavita Bai in 'Winds of Change'. How does her pragmatic idealism inspire community mobilization?",
+                                "answer": "In 'Winds of Change', Kavita Bai exemplifies the transformative potential of progressive, scientifically grounded grassroots leadership. When confronted with Chandrapur’s chronic drought and forced migration, she refused to succumb to the fatalistic despair that paralyzed the village elders. Instead of seeking temporary relief through exploitative private water tankers, she presented an ambitious, long-term watershed blueprint.\n\nHer genius lay in her ability to bridge traditional community solidarity with modern hydrological principles. She mobilized the entire populace under the banner of shramdaan, ensuring that every household contributed voluntary labor to dig contour trenches and construct check dams. By leading with transparency and shared toil, she dispelled cynicism and fostered deep community ownership. Furthermore, her foresight in integrating solar energy with groundwater recharge demonstrated a comprehensive understanding of sustainable development. Kavita Bai proves that authentic leadership does not rule from above; it awakens collective agency from within, transforming arid landscapes into flourishing beacons of self-reliance."
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]
