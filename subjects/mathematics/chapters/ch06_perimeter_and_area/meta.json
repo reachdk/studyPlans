@@ -3,8 +3,8 @@
   "sub": "geom",
   "code": "Ch 6",
   "title": "Measuring Space: Perimeter and Area",
-  "theme": "Theme 5: Mensuration & Heron's Formula",
-  "lg": "LG5: To calculate perimeters and compute triangle/quadrilateral areas using Heron's formula",
-  "desc": "Semi-perimeter s, Heron's formula for arbitrary triangles, area of equilateral and isosceles triangles, dividing quadrilaterals by diagonals, and practical field calculations.",
+  "theme": "Theme 5: Mensuration: Area & Perimeter",
+  "lg": "LG5: To calculate perimeters, circle arcs, sector areas, Heron's formula, and Brahmagupta's cyclic formula",
+  "desc": "Perimeter of plane figures, circle circumference & C/D ratio, arc length, sector area, Heron's formula, Brahmagupta's cyclic formula, and practical field calculations.",
   "pdf": "downloads/class-09/mathematics/ganita-manjari/iemh106--measuring-space-perimeter-and-area.pdf"
 }

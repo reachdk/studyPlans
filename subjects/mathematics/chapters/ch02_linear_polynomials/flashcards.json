@@ -38,91 +38,119 @@
     "id": "fc_ch2_06",
     "tag": "DEGREE & FORMS",
     "front": "What is the degree of the <strong>zero polynomial</strong> $P(x) = 0$?",
-    "back": "The degree of the zero polynomial is <strong>UNDEFINED (not defined)</strong>.<br><br>• <em>Why?</em> Because $0$ can be written as $0 \\cdot x^0 = 0 \\cdot x^1 = 0 \\cdot x^5 = 0 \\cdot x^{100}$. Since no unique highest exponent exists, mathematicians define it as undefined.",
-    "note": "Frequent Board Exam Trap"
+    "back": "The degree of the zero polynomial is <strong>NOT DEFINED</strong>.<br><br>• Since $0 = 0x^0 = 0x^1 = 0x^{10}$, no unique non-zero leading coefficient or highest power can be assigned.",
+    "note": "Frequent 1-Mark Examination Trap"
   },
   {
     "id": "fc_ch2_07",
     "tag": "DEGREE & FORMS",
-    "front": "What is the standard form of a <strong>linear polynomial</strong> in one variable, and what condition must $a$ satisfy?",
-    "back": "Standard form: $\\mathbf{P(x) = ax + b}$<br><br>• Critical condition: $\\mathbf{a \\neq 0}$ (if $a = 0$, it becomes the constant polynomial $P(x) = b$, which is not linear).<br>• $a$ and $b$ are real numbers.",
-    "note": "Standard Form Requirement"
+    "front": "What is the degree of the product $(x^2 + 1)(x^3 - 4)$?",
+    "back": "The degree is $\\mathbf{2 + 3 = 5}$.<br><br>• <em>General Theorem:</em> $\\text{deg}(P \\cdot Q) = \\text{deg}(P) + \\text{deg}(Q)$ for non-zero polynomials.",
+    "note": "Degree Product Rule"
   },
   {
     "id": "fc_ch2_08",
-    "tag": "DEGREE & FORMS",
-    "front": "What is the maximum number of zeroes a polynomial of <strong>degree $n$</strong> can possess?",
-    "back": "A polynomial of degree $n$ can have <strong>at most $n$ real zeroes</strong>.<br><br>• Linear polynomial ($n=1$): exactly $1$ zero.<br>• Quadratic polynomial ($n=2$): at most $2$ zeroes.<br>• Cubic polynomial ($n=3$): at most $3$ zeroes.",
-    "note": "Fundamental Theorem Property"
+    "tag": "MENTAL MATH",
+    "front": "If $P(x) = 5 - 2x^2 + 3x - 4x^3$, what is the <strong>leading coefficient</strong> and the <strong>constant term</strong>?",
+    "back": "• <strong>Leading coefficient:</strong> $\\mathbf{-4}$ (coefficient of highest power $x^3$).<br>• <strong>Constant term:</strong> $\\mathbf{5}$ (the independent term $5x^0$).",
+    "note": "Term Extraction Precision"
   },
   {
     "id": "fc_ch2_09",
     "tag": "MENTAL MATH",
-    "front": "What is the algebraic formula for finding the zero of any linear polynomial $\\mathbf{P(x) = ax + b}$ ($a \\neq 0$)?",
-    "back": "Set $P(x) = 0$:<br>$$ax + b = 0 \\implies ax = -b \\implies \\mathbf{x = -\\frac{b}{a}}$$<br><br>• <em>Rapid Drill:</em> The zero of $P(x) = 4x - 12$ is $x = -\\frac{-12}{4} = \\mathbf{3}$.",
-    "note": "Direct Root Formula"
+    "front": "Evaluate the polynomial $P(x) = 3x^2 - 5x + 2$ at $x = -2$.",
+    "back": "$$P(-2) = 3(-2)^2 - 5(-2) + 2 = 3(4) + 10 + 2 = 12 + 10 + 2 = \\mathbf{24}$$",
+    "note": "Sign Substitution Rule"
   },
   {
     "id": "fc_ch2_10",
     "tag": "MENTAL MATH",
-    "front": "Find the zero of the general polynomial: $\\mathbf{P(x) = cx + d}$, where $c \\neq 0$.",
-    "back": "Set $P(x) = 0$:<br>$$cx + d = 0 \\implies cx = -d \\implies \\mathbf{x = -\\frac{d}{c}}$$",
-    "note": "NCERT Ganita Manjari Exercise Question"
+    "front": "What is the unique zero of the linear polynomial $P(x) = 7x + 21$?",
+    "back": "Set $P(x) = 0$:<br>$$7x + 21 = 0 \\implies 7x = -21 \\implies x = \\mathbf{-3}$$",
+    "note": "Linear Zero Finding"
   },
   {
     "id": "fc_ch2_11",
     "tag": "MENTAL MATH",
-    "front": "If $x = 2$ is a zero of $P(x) = kx^2 - 3x + k$, what is the value of $\\mathbf{k}$?",
-    "back": "Since $x = 2$ is a zero, $P(2) = 0$:<br>$$k(2)^2 - 3(2) + k = 0$$<br>$$4k - 6 + k = 0 \\implies 5k = 6 \\implies \\mathbf{k = \\frac{6}{5}}$$",
-    "note": "Authentic Exam 2-Mark Problem"
+    "front": "If $x = 3$ is a zero of $P(x) = 2x^2 - kx + 6$, find the value of constant $k$.",
+    "back": "Enforce $P(3) = 0$:<br>$$2(3)^2 - k(3) + 6 = 0 \\implies 2(9) - 3k + 6 = 0$$<br>$$18 - 3k + 6 = 0 \\implies 24 = 3k \\implies \\mathbf{k = 8}$$",
+    "note": "Zero Parameter Extraction"
   },
   {
     "id": "fc_ch2_12",
-    "tag": "MENTAL MATH",
-    "front": "Evaluate the polynomial $P(x) = 5x - 4x^2 + 3$ at $\\mathbf{x = -1}$.",
-    "back": "Substitute with parentheses:<br>$$P(-1) = 5(-1) - 4(-1)^2 + 3$$<br>$$P(-1) = -5 - 4(1) + 3 = -5 - 4 + 3 = \\mathbf{-6}$$",
-    "note": "Watch Out: (-1)^2 = +1"
+    "tag": "GEOMETRY",
+    "front": "What is the <strong>geometric meaning</strong> of a zero of a polynomial $P(x)$ on a Cartesian graph?",
+    "back": "The zeroes of $P(x)$ are the <strong>$x$-coordinates of the points where the graph $y = P(x)$ intersects the $x$-axis</strong>.<br><br>• At these intersection points, $y = 0$.",
+    "note": "Algebraic-Geometric Link"
   },
   {
     "id": "fc_ch2_13",
-    "tag": "EXAM TRAPS",
-    "front": "Can the number $\\mathbf{0}$ be a zero of a polynomial, and must a zero of a polynomial be $\\mathbf{0}$?",
-    "back": "<strong>1. Yes, 0 CAN be a zero.</strong> (e.g. for $P(x) = x^2 - 3x$, $P(0) = 0$).<br><br><strong>2. NO, a zero does NOT have to be 0.</strong> A zero can be any real number (e.g. for $P(x) = 2x - 8$, the zero is $x = 4$).",
-    "note": "Crucial Distinction in Exams"
+    "tag": "GEOMETRY",
+    "front": "What geometric shape does the graph of any <strong>linear polynomial</strong> $y = ax + b$ form?",
+    "back": "It always forms a <strong>Straight Line</strong>.<br><br>• It crosses the $x$-axis at $\\left(-\\frac{b}{a}, 0\\right)$ (its zero) and the $y$-axis at $(0, b)$.",
+    "note": "Fundamental Straight Line Fact"
   },
   {
     "id": "fc_ch2_14",
     "tag": "EXAM TRAPS",
-    "front": "True or False: A <strong>binomial</strong> can have a degree of <strong>100</strong>.",
-    "back": "<strong>TRUE!</strong><br><br>• The word 'binomial' only means it has <strong>exactly two terms</strong>. Degree can be anything!<br>• <em>Example:</em> $x^{100} - 1$ or $5y^{100} + 3y$ is a binomial of degree $100$.",
-    "note": "NCERT Exemplar Question"
+    "front": "Is the number $0$ always a zero of every polynomial?",
+    "back": "<strong>NO!</strong> The number $0$ is a zero of $P(x)$ <strong>only if $P(0) = 0$</strong>.<br><br>• In $P(x) = x^2 - 3x$, $P(0) = 0$ (so 0 is a zero).<br>• In $Q(x) = 2x + 5$, $Q(0) = 5 \\neq 0$ (so 0 is NOT a zero).",
+    "note": "Zero vs The Number Zero"
   },
   {
     "id": "fc_ch2_15",
     "tag": "EXAM TRAPS",
-    "front": "What is the coefficient of $x^2$ in the linear polynomial $\\mathbf{P(x) = \\sqrt{2}x - 1}$?",
-    "back": "The coefficient of $x^2$ is $\\mathbf{0}$.<br><br>• We can rewrite the expression displaying all missing powers as: $P(x) = \\mathbf{0}x^2 + \\sqrt{2}x - 1$.<br>• Whenever a requested power is missing, its coefficient is $0$.",
-    "note": "Common 1-Mark MCQ Trap"
+    "front": "Can a non-zero constant polynomial (e.g. $P(x) = 5$) have any zeroes?",
+    "back": "<strong>NO, NEVER!</strong><br><br>• $P(x) = 5$ can never equal zero for any real value of $x$. Thus, it has <strong>no zeroes</strong>.",
+    "note": "Constant Polynomial Root Theorem"
   },
   {
     "id": "fc_ch2_16",
     "tag": "EXAM TRAPS",
-    "front": "Is $\\mathbf{\\frac{x^2 - 9}{x - 3}}$ a polynomial? Explain the subtle algebraic reason.",
-    "back": "<strong>NO</strong>, as initially written it is a rational function, NOT a polynomial.<br><br>• At $x = 3$, the denominator is $3 - 3 = 0$, making it undefined.<br>• While it simplifies to $x + 3$ for all $x \\neq 3$, polynomials must be defined for all real numbers $\\mathbb{R}$.",
-    "note": "HOTS / Higher Secondary Prep"
+    "front": "How many zeroes does the <strong>zero polynomial</strong> $P(x) = 0$ have?",
+    "back": "It has <strong>infinitely many zeroes</strong>.<br><br>• Every real number $k$ satisfies $P(k) = 0$.",
+    "note": "Zero Polynomial Root Property"
   },
   {
     "id": "fc_ch2_17",
-    "tag": "GEOMETRY",
-    "front": "What does the zero of a polynomial $P(x)$ represent <strong>geometrically</strong> on a Cartesian coordinate plane?",
-    "back": "The zeroes of $P(x)$ are the <strong>$x$-coordinates of the points where the graph of $y = P(x)$ intersects or touches the $x$-axis</strong>.<br><br>• At the $x$-axis, $y = 0 \\implies P(x) = 0$.",
-    "note": "Visual & Coordinate Connection"
+    "tag": "LINEAR PATTERNS",
+    "front": "What characterizes a <strong>linear pattern</strong> or relationship between two quantities?",
+    "back": "Equal changes in the independent variable produce <strong>constant differences</strong> in the dependent variable:<br><br>$$\\text{Rate of change } m = \\frac{\\Delta y}{\\Delta x} = \\text{constant}$$",
+    "note": "NCERT Ganita Manjari Sec 2.3"
   },
   {
     "id": "fc_ch2_18",
-    "tag": "GEOMETRY",
-    "front": "How many times can the graph of a linear polynomial $\\mathbf{y = ax + b}$ ($a \\neq 0$) intersect the $x$-axis?",
-    "back": "<strong>Exactly once!</strong><br><br>• The graph of a linear polynomial is a straight, non-horizontal line. It intersects the $x$-axis at exactly one point: $\\mathbf{\\left(-\\frac{b}{a}, 0\\right)}$.",
-    "note": "Straight Line Geometry"
+    "tag": "GROWTH & DECAY",
+    "front": "What is the mathematical difference between <strong>linear growth</strong> and <strong>linear decay</strong>?",
+    "back": "• <strong>Linear Growth ($m > 0$):</strong> Dependent variable increases at a constant rate (e.g. savings: $S = 150n + 500$).<br>• <strong>Linear Decay ($m < 0$):</strong> Dependent variable decreases at a constant rate (e.g. battery discharge: $B = -4t + 100$).",
+    "note": "NCERT Ganita Manjari Sec 2.4"
+  },
+  {
+    "id": "fc_ch2_19",
+    "tag": "GROWTH & DECAY",
+    "front": "A telecom plan charges a fixed monthly fee of ₹600 plus ₹1.50 per call minute. Formulate the linear cost function $C(m)$.",
+    "back": "$$\\mathbf{C(m) = 1.50m + 600}$$<br>• Initial cost ($y$-intercept): ₹600.<br>• Rate of change (slope): ₹1.50 per minute.",
+    "note": "NCERT Ganita Manjari Sec 2.4 Problem 4"
+  },
+  {
+    "id": "fc_ch2_20",
+    "tag": "SLOPE & INTERCEPTS",
+    "front": "How do you find the <strong>linear polynomial $P(x) = ax + b$</strong> whose graph passes through $(2, 3)$ and $(4, 7)$?",
+    "back": "1. Slope $a = \\frac{7 - 3}{4 - 2} = \\frac{4}{2} = \\mathbf{2}$.<br>2. Substitute $(2, 3)$: $3 = 2(2) + b \\implies b = 3 - 4 = \\mathbf{-1}$.<br>3. Result: $\\mathbf{P(x) = 2x - 1}$.",
+    "note": "NCERT Ganita Manjari Problem 10"
+  },
+  {
+    "id": "fc_ch2_21",
+    "tag": "REAL-WORLD MODELS",
+    "front": "What is the linear relationship converting temperature in Celsius ($C$) to Kelvin ($K$)?",
+    "back": "$$\\mathbf{K = C + 273.15}$$<br>• Slope $m = 1$ and $y$-intercept $= 273.15$.<br>• At absolute zero ($0\\text{ K}$), $C = -273.15^\\circ\\text{C}$.",
+    "note": "NCERT Ganita Manjari Problem 8"
+  },
+  {
+    "id": "fc_ch2_22",
+    "tag": "REAL-WORLD MODELS",
+    "front": "How is <strong>work done</strong> by a constant force of $5\\text{ N}$ modeled as a linear polynomial in displacement $s$?",
+    "back": "$$\\mathbf{W(s) = 5s}$$<br>• A linear polynomial with slope $m = 5$ and intercept $c = 0$, passing through the Origin.",
+    "note": "NCERT Ganita Manjari Problem 9"
   }
 ]

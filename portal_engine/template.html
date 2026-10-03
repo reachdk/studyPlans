@@ -1956,6 +1956,45 @@
       triggerMathRendering(out);
     };
 
+    window.calcDualPoints = function() {
+      const x1 = parseFloat(document.getElementById('pt_x1')?.value);
+      const y1 = parseFloat(document.getElementById('pt_y1')?.value);
+      const x2 = parseFloat(document.getElementById('pt_x2')?.value);
+      const y2 = parseFloat(document.getElementById('pt_y2')?.value);
+      const out = document.getElementById('dual-coord-output');
+      if (!out) return;
+      if (isNaN(x1) || isNaN(y1) || isNaN(x2) || isNaN(y2)) {
+        out.innerHTML = "<span style='color:var(--danger); font-weight:700;'>⚠️ Enter valid coordinates for both points.</span>";
+        return;
+      }
+      const getLoc = (x, y) => {
+        if (x === 0 && y === 0) return "Origin";
+        if (x === 0) return (y > 0 ? "Positive" : "Negative") + " y-axis";
+        if (y === 0) return (x > 0 ? "Positive" : "Negative") + " x-axis";
+        if (x > 0 && y > 0) return "Quadrant I (+, +)";
+        if (x < 0 && y > 0) return "Quadrant II (-, +)";
+        if (x < 0 && y < 0) return "Quadrant III (-, -)";
+        return "Quadrant IV (+, -)";
+      };
+      const mx = (x1 + x2) / 2;
+      const my = (y1 + y2) / 2;
+      const dx = Math.abs(x2 - x1);
+      const dy = Math.abs(y2 - y1);
+      const sumSq = dx * dx + dy * dy;
+      const dist = Math.sqrt(sumSq);
+      const distStr = Number.isInteger(dist) ? dist : (dist.toFixed(2) + ` (\\approx \\sqrt{${sumSq}})`);
+
+      out.innerHTML = `
+        <div style="font-weight:700; color:var(--primary); margin-bottom:6px;">Calculated Properties: Segment AB</div>
+        <div>• <strong>Point A:</strong> $(${x1}, ${y1})$ [${getLoc(x1, y1)}] &nbsp;|&nbsp; <strong>Point B:</strong> $(${x2}, ${y2})$ [${getLoc(x2, y2)}]</div>
+        <div>• <strong>Midpoint M:</strong> $\\left(\\frac{${x1} + ${x2}}{2}, \\frac{${y1} + ${y2}}{2}\\right) = \\mathbf{(${mx}, ${my})}$ [${getLoc(mx, my)}]</div>
+        <div>• <strong>Horizontal Shift $|x_2 - x_1|$:</strong> $|${x2} - (${x1})| = ${dx}$ units</div>
+        <div>• <strong>Vertical Shift $|y_2 - y_1|$:</strong> $|${y2} - (${y1})| = ${dy}$ units</div>
+        <div>• <strong>Distance $AB$ (Baudhāyana–Pythagoras):</strong> $\\sqrt{${dx}^2 + ${dy}^2} = \\mathbf{${distStr}\\text{ units}}$</div>
+      `;
+      triggerMathRendering(out);
+    };
+
     window.convertRecurringDecimal = function() {
       const type = document.getElementById('dec_type')?.value;
       const num = parseInt(document.getElementById('dec_num')?.value, 10);

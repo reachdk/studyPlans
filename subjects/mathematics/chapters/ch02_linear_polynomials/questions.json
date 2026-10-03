@@ -136,5 +136,33 @@
       "2.0 marks: [Main Option] Finding b = -4.5, stating R(x) = 0.75x - 4.5, and calculating R(10) = 3m. OR [Choice Option] Setting S(4) = 0, solving 4k = 6, and obtaining k = 1.5."
     ],
     "examinerTip": "🚨 CBSE Case Study Guidance: Case-Based Questions (Section E) are compulsory 4-mark questions testing real-world mathematical modeling. Show algebraic steps for sub-part (iii) to earn full credit."
+  },
+  {
+    "id": "q_ch2_10",
+    "title": "Q10 • Linear Polynomial Determination from Two Points (NCERT Problem 10)",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "The straight-line graph of a linear polynomial $P(x) = ax + b$ passes through the points $(2, 3)$ and $(4, 7)$.<br>(a) Find the values of $a$ and $b$, and write down the formula for $P(x)$. [2 Marks]<br>(b) Calculate the coordinates where the graph crosses the $x$-axis and the $y$-axis. [1 Mark]",
+    "solution": "<strong>(a) Determining $a$ and $b$:</strong><br>• The slope $a$ is the rate of change:<br>$$a = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{7 - 3}{4 - 2} = \\frac{4}{2} = \\mathbf{2}$$ [1.0 mark]<br>• Substitute $(2, 3)$ into $y = ax + b$:<br>$$3 = 2(2) + b \\implies 3 = 4 + b \\implies b = 3 - 4 = \\mathbf{-1}$$ [0.5 mark]<br>Hence, the linear polynomial is $\\mathbf{P(x) = 2x - 1}$. [0.5 mark]<br><br><strong>(b) Intercept Coordinates:</strong><br>• $y$-intercept (set $x = 0$): $P(0) = 2(0) - 1 = -1 \\implies \\mathbf{(0, -1)}$. [0.5 mark]<br>• $x$-intercept / zero (set $P(x) = 0$): $2x - 1 = 0 \\implies x = \\frac{1}{2} \\implies \\mathbf{\\left(\\frac{1}{2}, 0\\right)}$. [0.5 mark]",
+    "markingScheme": [
+      "1.0 mark for finding slope a = 2.",
+      "1.0 mark for finding b = -1 and writing P(x) = 2x - 1.",
+      "1.0 mark for finding y-intercept (0, -1) and x-intercept (1/2, 0)."
+    ],
+    "examinerTip": "🚨 NCERT Standard: The slope a represents the rate of growth (+2 units in y for every 1 unit in x)."
+  },
+  {
+    "id": "q_ch2_11",
+    "title": "Q11 • Real-World Linear Modeling: Temperature & Savings (NCERT Problem 8 & Sec 2.3)",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "The temperature of a substance can be measured in Kelvin ($K$) or in Celsius ($C$). The relationship between the two scales is given by the linear equation $K = C + 273.15$.<br>(a) Graphically, what is the slope and the $y$-intercept of this relationship when $K$ is plotted on the vertical axis against $C$ on the horizontal axis? [1 Mark]<br>(b) If a laboratory sample cools down to $233.15\\text{ K}$, what is its temperature in degrees Celsius? [1 Mark]<br>(c) A student starts with ₹500 in her savings account and deposits ₹150 every month. Formulate the linear polynomial $S(n)$ for her savings after $n$ months, and find the total savings after 8 months. [1 Mark]",
+    "solution": "<strong>(a) Slope and Intercept:</strong><br>Comparing $K = 1 \\cdot C + 273.15$ with standard form $y = mx + c$:<br>• <strong>Slope ($m$):</strong> $\\mathbf{1}$ (rate of 1 K per 1 °C change).<br>• <strong>Intercept ($c$):</strong> $\\mathbf{273.15}$ [Point $(0, 273.15)$]. [1.0 mark]<br><br><strong>(b) Converting $233.15\\text{ K}$ to Celsius:</strong><br>$$233.15 = C + 273.15 \\implies C = 233.15 - 273.15 = \\mathbf{-40^\\circ\\text{C}}$$ [1.0 mark]<br><br><strong>(c) Savings Linear Model:</strong><br>• Initial amount $c = 500$, monthly deposit $m = 150$.<br>• Polynomial: $\\mathbf{S(n) = 150n + 500}$ [0.5 mark]<br>• After $n = 8$ months: $S(8) = 150(8) + 500 = 1200 + 500 = \\mathbf{\\text{₹}1700}$. [0.5 mark]",
+    "markingScheme": [
+      "1.0 mark for slope = 1 and intercept = 273.15.",
+      "1.0 mark for C = -40°C.",
+      "1.0 mark for S(n) = 150n + 500 and S(8) = ₹1700."
+    ],
+    "examinerTip": "🚨 Real-World Application: Constant rate of growth directly translates to the coefficient of n in the linear polynomial."
   }
 ]

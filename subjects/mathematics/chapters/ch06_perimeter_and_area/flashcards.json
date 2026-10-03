@@ -38,91 +38,63 @@
     "id": "fc_ch6_06",
     "tag": "CALCULATION DRILLS",
     "front": "Find the area of a triangle with sides $a = 13\\text{ cm}$, $b = 14\\text{ cm}$, and $c = 15\\text{ cm}$.",
-    "back": "• $s = \\frac{13+14+15}{2} = 21\\text{ cm}$.<br>• Differences: $(21-13)=8, (21-14)=7, (21-15)=6$.<br>• $\\text{Area} = \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{(3 \\times 7) \\times (2^3) \\times 7 \\times (2 \\times 3)} = \\sqrt{7^2 \\times 3^2 \\times 4^2} = 7 \\times 3 \\times 4 = \\mathbf{84\\text{ cm}^2}$.",
-    "note": "Famous Pythagorean Triangle"
+    "back": "• $s = \\frac{13+14+15}{2} = 21\\text{ cm}$.<br>• $\\text{Area} = \\sqrt{21 \\times (21-13) \\times (21-14) \\times (21-15)}$<br>• $\\text{Area} = \\sqrt{21 \\times 8 \\times 7 \\times 6} = \\sqrt{7056} = \\mathbf{84\\text{ cm}^2}$.",
+    "note": "Standard 3-Mark Drill"
   },
   {
     "id": "fc_ch6_07",
-    "tag": "PRIME FACTORIZATION TRICK",
-    "front": "What is the best technique to simplify terms under Heron's radical $\\sqrt{s(s-a)(s-b)(s-c)}$ without huge multiplications?",
-    "back": "<strong>Prime Factorization!</strong><br><br>• Break $s, (s-a), (s-b), (s-c)$ into prime factors.<br>• Pair identical prime factors and pull one factor out of the radical for each pair ($p^2 \\to p$).<br>• Never multiply into huge 5-digit numbers!",
-    "note": "Calculation Efficiency Rule"
+    "tag": "ISOSCELES TRIANGLES",
+    "front": "An isosceles triangle has base $b$ and two equal sides $a$. What is its area formula derived from Heron's Formula?",
+    "back": "$$\\mathbf{\\text{Area} = \\frac{b}{4} \\sqrt{4a^2 - b^2}}$$<br>• Altitude from apex to base: $h = \\sqrt{a^2 - \\left(\\frac{b}{2}\\right)^2} = \\frac{\\sqrt{4a^2 - b^2}}{2}$.",
+    "note": "Isosceles Triangle Formula"
   },
   {
     "id": "fc_ch6_08",
-    "tag": "RATIO OF SIDES",
-    "front": "The sides of a triangle are in the ratio $12 : 17 : 25$ and its perimeter is $540\\text{ cm}$. Find its sides and semi-perimeter.",
-    "back": "• Let sides be $12x, 17x, 25x$.<br>• $12x + 17x + 25x = 54x = 540 \\implies x = 10$.<br>• Sides are: $a = 120\\text{ cm}$, $b = 170\\text{ cm}$, $c = 250\\text{ cm}$.<br>• $s = \\frac{540}{2} = \\mathbf{270\\text{ cm}}$.",
-    "note": "Ratio-Based Setup"
+    "tag": "CIRCLES",
+    "front": "What is the <strong>circumference-to-diameter ratio</strong> of a circle, and what is its value?",
+    "back": "$$\\frac{C}{D} = \\pi \\implies \\mathbf{C = 2\\pi r = \\pi D}$$<br>• $\\pi$ is an irrational number ($&asymp; 3.14159\\dots$). Archimedes used a 96-sided polygon to bound it, and Aryabhata approximated $\\pi \\approx \\frac{62832}{20000} = 3.1416$.",
+    "note": "NCERT Ganita Manjari Sec 6.2 & 6.3"
   },
   {
     "id": "fc_ch6_09",
-    "tag": "ISOSCELES TRIANGLES",
-    "front": "An isosceles triangle has perimeter $30\\text{ cm}$ and each of its equal sides is $12\\text{ cm}$. What is the third side and its area?",
-    "back": "• Equal sides $a = b = 12\\text{ cm}$. Third side $c = 30 - 24 = 6\\text{ cm}$.<br>• $s = \\frac{30}{2} = 15\\text{ cm}$.<br>• Differences: $(15-12)=3, (15-12)=3, (15-6)=9$.<br>• $\\text{Area} = \\sqrt{15 \\times 3 \\times 3 \\times 9} = 3 \\times 3 \\sqrt{15} = \\mathbf{9\\sqrt{15}\\text{ cm}^2}$.",
-    "note": "Isosceles Triangle CBSE Question"
+    "tag": "CIRCLES",
+    "front": "What is the formula for the <strong>length of an arc</strong> ($L$) subtending angle $\\theta$ at the center?",
+    "back": "$$\\mathbf{L = \\frac{\\theta}{360^\\circ} \\times 2\\pi r}$$<br>• <em>Example:</em> For $\\theta = 90^\\circ$ and $r = 7\\text{ cm}$, $L = \\frac{1}{4} \\times 44 = \\mathbf{11\\text{ cm}}$.",
+    "note": "NCERT Ganita Manjari Sec 6.4"
   },
   {
     "id": "fc_ch6_10",
-    "tag": "QUADRILATERAL APPLICATIONS",
-    "front": "How is Heron's Formula applied to find the area of a general <strong>quadrilateral</strong>?",
-    "back": "Draw one diagonal to split the quadrilateral into <strong>two distinct triangles</strong>.<br><br>1. Calculate the area of Triangle 1 using Heron's formula.<br>2. Calculate the area of Triangle 2.<br>3. $\\text{Total Area} = \\text{Area}_1 + \\text{Area}_2$.",
-    "note": "Decomposition Method"
+    "tag": "CIRCLES",
+    "front": "What is the <strong>perimeter</strong> and <strong>area</strong> of a sector of a circle with radius $r$ and angle $\\theta$?",
+    "back": "• <strong>Perimeter:</strong> $\\mathbf{P = \\text{Arc length} + 2r = \\frac{\\theta}{360^\\circ} 2\\pi r + 2r}$.<br>• <strong>Area:</strong> $\\mathbf{A = \\frac{\\theta}{360^\\circ} \\pi r^2 = \\frac{1}{2} L r}$.",
+    "note": "Sector Formulas"
   },
   {
     "id": "fc_ch6_11",
-    "tag": "EXAM TRAPS",
-    "front": "What happens if three side lengths $a, b, c$ violate the triangle inequality (e.g. $a = 2, b = 3, c = 6$)?",
-    "back": "<strong>No triangle can exist!</strong><br><br>• $2 + 3 = 5 < 6$.<br>• Under Heron's formula, semi-perimeter $s = \\frac{11}{2} = 5.5$, and $(s - c) = (5.5 - 6) = -0.5$ (a negative number under the radical!).<br>• A negative radicand yields an imaginary number.",
-    "note": "Triangle Inequality Constraint"
+    "tag": "BRAHMAGUPTA FORMULA",
+    "front": "What is <strong>Brahmagupta's Formula</strong> for the area of a cyclic quadrilateral with sides $a, b, c, d$?",
+    "back": "$$\\mathbf{\\text{Area} = \\sqrt{(s - a)(s - b)(s - c)(s - d)}}$$<br>where $s = \\frac{a + b + c + d}{2}$ is the semi-perimeter.",
+    "note": "NCERT Ganita Manjari Sec 6.8.2"
   },
   {
     "id": "fc_ch6_12",
-    "tag": "EXAM TRAPS",
-    "front": "If the side of an equilateral triangle is <strong>doubled</strong>, by what factor does its area increase?",
-    "back": "The area increases by a factor of <strong>4</strong> ($400\\%$ of original, or $300\\%$ increase).<br><br>• Since $\\text{Area} \\propto a^2$, $(2a)^2 = 4a^2$.",
-    "note": "Scaling Law Problem"
+    "tag": "BRAHMAGUPTA FORMULA",
+    "front": "Why is <strong>Heron's Formula</strong> considered a special case of Brahmagupta's Formula?",
+    "back": "When one side length of a cyclic quadrilateral shrinks to zero ($d = 0$), the figure collapses into a triangle, and Brahmagupta's formula becomes:<br>$$\\sqrt{(s - a)(s - b)(s - c)(s - 0)} = \\mathbf{\\sqrt{s(s - a)(s - b)(s - c)}}$$<br>which is exactly Heron's formula!",
+    "note": "NCERT Ganita Manjari Sec 6.8.2 Theorem"
   },
   {
     "id": "fc_ch6_13",
-    "tag": "RIGHT TRIANGLE SHORTCUT",
-    "front": "When a triangle has sides $6\\text{ cm}, 8\\text{ cm}, 10\\text{ cm}$, is it necessary to use Heron's Formula?",
-    "back": "<strong>NO!</strong> Check for Pythagorean triplet:<br>$$6^2 + 8^2 = 36 + 64 = 100 = 10^2$$<br>• It is a right-angled triangle! Use standard formula:<br>$$\\text{Area} = \\frac{1}{2} \\times 6 \\times 8 = \\mathbf{24\\text{ cm}^2}$$<br>• Saves 3 minutes in examinations!",
-    "note": "Pythagorean Triplet Recognition"
+    "tag": "EXAM TRAPS",
+    "front": "If the side lengths of a triangle are all doubled ($2a, 2b, 2c$), how does its <strong>area</strong> change?",
+    "back": "The area becomes <strong>$4$ times</strong> the original area ($2^2 = 4$).<br><br>• $s' = 2s$, so $\\text{Area}' = \\sqrt{(2s)(2s-2a)(2s-2b)(2s-2c)} = \\sqrt{16} \\text{Area} = \\mathbf{4 \\times \\text{Area}}$.",
+    "note": "Frequent 1-Mark MCQ Trap"
   },
   {
     "id": "fc_ch6_14",
-    "tag": "HEIGHT CALCULATION",
-    "front": "How do you find the <strong>altitude corresponding to the longest side</strong> after computing area via Heron's Formula?",
-    "back": "Equate the computed area to $\\frac{1}{2} \\times \\text{longest side} \\times h$:<br>$$\\text{Area} = \\frac{1}{2} \\times c_{\\text{max}} \\times h \\implies \\mathbf{h = \\frac{2 \\times \\text{Area}}{c_{\\text{max}}}}}$$",
-    "note": "Altitude from Area Protocol"
-  },
-  {
-    "id": "fc_ch6_15",
-    "tag": "FENCING & COSTING",
-    "front": "A triangular park has sides $120\\text{ m}, 80\\text{ m}, 50\\text{ m}$. A space of $3\\text{ m}$ is left for a gate. What is the length of wire needed for fencing?",
-    "back": "• Perimeter $= 120 + 80 + 50 = 250\\text{ m}$.<br>• Fencing wire length $= \\text{Perimeter} - \\text{Gate width} = 250 - 3 = \\mathbf{247\\text{ m}}$.",
-    "note": "NCERT Example 3 Context"
-  },
-  {
-    "id": "fc_ch6_16",
-    "tag": "RHOMBUS APPLICATION",
-    "front": "A rhombus field has perimeter $400\\text{ m}$ and one diagonal $160\\text{ m}$. What is the area of the rhombus?",
-    "back": "• Side $a = \\frac{400}{4} = 100\\text{ m}$.<br>• The diagonal splits the rhombus into 2 identical triangles with sides $100\\text{ m}, 100\\text{ m}, 160\\text{ m}$.<br>• Area of each triangle $= 4800\\text{ m}^2$.<br>• Total area $= 2 \\times 4800 = \\mathbf{9600\\text{ m}^2}$.",
-    "note": "Rhombus Grazing Field Problem"
-  },
-  {
-    "id": "fc_ch6_17",
-    "tag": "UNITS HYGIENE",
-    "front": "If side lengths are given in <strong>meters</strong> and fencing cost is given in <strong>Rs per meter</strong>, what are the units of area vs fencing cost?",
-    "back": "• Perimeter & Fencing length: linear meters ($\\text{m}$).<br>• Area: square meters ($\\mathbf{\\text{m}^2}$).<br>• Fencing Cost: $\\text{Rate} \\times \\text{Perimeter}$ (in ₹).<br>• Turf/Paving Cost: $\\text{Rate} \\times \\text{Area}$ (in ₹).",
-    "note": "Examination Units Distinction"
-  },
-  {
-    "id": "fc_ch6_18",
     "tag": "EXAM TRAPS",
-    "front": "What is the common arithmetic mistake students make with $s$ in Heron's Formula?",
-    "back": "1. Writing $s = a + b + c$ without dividing by 2.<br>2. Subtracting $(a - s)$ instead of $(s - a)$, producing negative numbers.<br>3. Multiplying $s(s-a)(s-b)(s-c)$ into a giant number and making errors finding square roots.",
-    "note": "Top 3 Examination Pitfalls"
+    "front": "In the flyover wall advertisement problem, rent is ₹5000 per $\\text{m}^2$ <strong>per year</strong>. How do you compute cost for 3 months?",
+    "back": "Convert months to years: $3\\text{ months} = \\frac{3}{12} = \\frac{1}{4}\\text{ year}$.<br><br>$$\\text{Cost} = \\text{Area} \\times 5000 \\times \\frac{1}{4}$$<br>• Do NOT multiply by 3 directly!",
+    "note": "Time Conversion Trap"
   }
 ]

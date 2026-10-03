@@ -124,5 +124,89 @@
     "front": "Points $A(2, 0)$, $B(6, 0)$, and $C(4, 4)$ form a triangle. What type of triangle is it, and what is its area?",
     "back": "It is an <strong>Isosceles Triangle</strong>.<br><br>• Base along $x$-axis: $AB = |6 - 2| = 4$ units.<br>• Height from $C$ to base: $4$ units.<br>• $\\text{Area} = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 4 = \\mathbf{8\\text{ sq units}}$.",
     "note": "Triangle Area on Grid"
+  },
+  {
+    "id": "fc_ch1_19",
+    "tag": "DISTANCE FORMULA",
+    "front": "What is the <strong>Baudhāyana–Pythagoras Distance Formula</strong> between two points $A(x_1, y_1)$ and $B(x_2, y_2)$?",
+    "back": "$$AB = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$<br>• Special case: Distance of $P(x, y)$ from origin $O(0, 0)$ is $\\mathbf{\\sqrt{x^2 + y^2}}$.",
+    "note": "NCERT Ganita Manjari Sec 1.4"
+  },
+  {
+    "id": "fc_ch1_20",
+    "tag": "DISTANCE FORMULA",
+    "front": "What is the straight-line distance between the points $\\mathbf{P(-3, 4)}$ and $\\mathbf{Q(5, -2)}$?",
+    "back": "$$PQ = \\sqrt{(5 - (-3))^2 + (-2 - 4)^2} = \\sqrt{8^2 + (-6)^2} = \\sqrt{64 + 36} = \\sqrt{100} = \\mathbf{10\\text{ units}}$$",
+    "note": "Standard 2-Mark Calculation"
+  },
+  {
+    "id": "fc_ch1_21",
+    "tag": "MIDPOINTS",
+    "front": "What is the <strong>Midpoint Formula</strong> for the segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$?",
+    "back": "$$M = \\left(\\frac{x_1 + x_2}{2}, \\quad \\frac{y_1 + y_2}{2}\\right)$$<br>• The midpoint coordinates are the arithmetic averages of the endpoint coordinates.",
+    "note": "NCERT Ganita Manjari Problem 9"
+  },
+  {
+    "id": "fc_ch1_22",
+    "tag": "MIDPOINTS",
+    "front": "If $M(-7, 1)$ is the midpoint of segment $AB$ and $A(3, -4)$, how do you find the coordinates of endpoint $B(x, y)$?",
+    "back": "Use the inverted midpoint formulas:<br>• $x = 2x_M - x_A = 2(-7) - 3 = -14 - 3 = \\mathbf{-17}$<br>• $y = 2y_M - y_A = 2(1) - (-4) = 2 + 4 = \\mathbf{6}$<br>Hence, $\\mathbf{B(-17, 6)}$.",
+    "note": "NCERT Ganita Manjari Problem 10"
+  },
+  {
+    "id": "fc_ch1_23",
+    "tag": "TRISECTION",
+    "front": "What are <strong>points of trisection</strong> of a segment $AB$, and what midpoint relation do they satisfy?",
+    "back": "They are points $P$ and $Q$ dividing $AB$ into 3 equal lengths ($AP = PQ = QB$).<br><br>• $P$ is the <strong>midpoint of segment $AQ$</strong>.<br>• $Q$ is the <strong>midpoint of segment $PB$</strong>.",
+    "note": "NCERT Ganita Manjari Problem 11"
+  },
+  {
+    "id": "fc_ch1_24",
+    "tag": "TRISECTION",
+    "front": "Find the points of trisection of segment $AB$ with $A(4, 7)$ and $B(16, -2)$.",
+    "back": "Total shift: $\\Delta x = 12, \\Delta y = -9$.<br>Step per segment: $\\delta x = 4, \\delta y = -3$.<br>• $\\mathbf{P(8, 4)}$ (one step from $A$)<br>• $\\mathbf{Q(12, 1)}$ (two steps from $A$)",
+    "note": "NCERT Ganita Manjari Problem 11 Solved"
+  },
+  {
+    "id": "fc_ch1_25",
+    "tag": "CIRCLES",
+    "front": "How do you test whether a point $Q(x, y)$ lies <strong>inside, on, or outside</strong> a circle with center $C(h, k)$ and radius $r$?",
+    "back": "Compute distance $d = \\text{Distance}(C, Q)$:<br>• If $\\mathbf{d < r} \\implies$ <strong>Inside</strong> the circle.<br>• If $\\mathbf{d = r} \\implies$ <strong>On</strong> the circle boundary.<br>• If $\\mathbf{d > r} \\implies$ <strong>Outside</strong> the circle.",
+    "note": "NCERT Ganita Manjari Problem 12"
+  },
+  {
+    "id": "fc_ch1_26",
+    "tag": "COLLINEARITY",
+    "front": "What are the two independent methods to check if three points $A, B, C$ are <strong>collinear</strong> without plotting?",
+    "back": "1. <strong>Distance Method:</strong> Sum of two segment lengths equals the third: $AB + BC = AC$.<br>2. <strong>Slope Method:</strong> Rates of rise-over-run are equal: $\\frac{y_2 - y_1}{x_2 - x_1} = \\frac{y_3 - y_2}{x_3 - x_2}$.",
+    "note": "NCERT Ganita Manjari Problems 6 & 7"
+  },
+  {
+    "id": "fc_ch1_27",
+    "tag": "ADVANCED SYNTHESIS",
+    "front": "If $D(x_1, y_1), E(x_2, y_2), F(x_3, y_3)$ are midpoints of sides $AB, BC, CA$ of $\\Delta ABC$, what is the shortcut formula for vertex $A$?",
+    "back": "$$\\mathbf{x_A = x_1 + x_3 - x_2} \\qquad \\text{and} \\qquad \\mathbf{y_A = y_1 + y_3 - y_2}$$<br>• Add the coordinates of the two adjacent midpoints ($D$ and $F$) and subtract the opposite midpoint ($E$)!",
+    "note": "NCERT Ganita Manjari Problem 13"
+  },
+  {
+    "id": "fc_ch1_28",
+    "tag": "ADVANCED SYNTHESIS",
+    "front": "How do you find the fourth vertex $D$ of a <strong>parallelogram $ABCD$</strong> given $A, B, C$?",
+    "back": "In a parallelogram, diagonals $AC$ and $BD$ bisect each other at a common midpoint:<br>$$\\mathbf{x_D = x_A + x_C - x_B} \\qquad \\text{and} \\qquad \\mathbf{y_D = y_A + y_C - y_B}$$",
+    "note": "CBSE Syllabus Outcome CG-9"
+  },
+  {
+    "id": "fc_ch1_29",
+    "tag": "EXAM TRAPS",
+    "front": "Does reflecting a line segment across the $x$-axis or $y$-axis change its <strong>length</strong>?",
+    "back": "<strong>NO!</strong> Reflection is a rigid transformation (isometry).<br><br>• Side lengths, perimeters, and areas are strictly <strong>invariant (preserved)</strong> under reflections.",
+    "note": "NCERT Ganita Manjari Fig 1.9"
+  },
+  {
+    "id": "fc_ch1_30",
+    "tag": "EXAM TRAPS",
+    "front": "What is the common mistake when computing the midpoint $M$ of $(x_1, y_1)$ and $(x_2, y_2)$?",
+    "back": "Students mistakenly write $\\frac{x_2 - x_1}{2}$ (subtraction).<br><br>• Subtraction yields half the horizontal distance, NOT the coordinate position.<br>• Always <strong>ADD</strong> coordinates: $\\mathbf{\\frac{x_1 + x_2}{2}}$.",
+    "note": "Frequent 1-Mark Slip"
   }
 ]

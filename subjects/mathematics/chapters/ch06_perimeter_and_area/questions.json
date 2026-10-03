@@ -138,5 +138,31 @@
       "2.0 marks: [Main Option] Finding side = 24 m, Area = 144√3 m² [1m] and Total Turfing Cost = ₹12,470.40 [1m]. OR [Choice Option] Fencing length = 30 m [1m] and Total Cost = ₹3,600 [1m]."
     ],
     "examinerTip": "🚨 CBSE Case Study Distinction: Fencing uses linear perimeter (m), whereas turfing uses surface area (m²). Never mix the two rates!"
+  },
+  {
+    "id": "q_ch6_10",
+    "title": "Q10 • Circle Arc Length & Perimeter of a Sector (NCERT Section 6.4)",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "A circular garden feature of radius $r = 14\\text{ m}$ has a floral sector with a central angle of $\\theta = 45^\\circ$. (Take $\\pi = \\frac{22}{7}$)<br>(a) Calculate the length of the curved outer arc of the sector. [1.5 Marks]<br>(b) Find the total perimeter of the floral sector, including its two radial stone borders. [1.5 Marks]",
+    "solution": "<strong>(a) Length of the Curved Arc ($L$):</strong><br>Using the arc length formula:<br>$$L = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$$<br>$$L = \\frac{45^\\circ}{360^\\circ} \\times 2 \\times \\frac{22}{7} \\times 14 = \\frac{1}{8} \\times (2 \\times 22 \\times 2) = \\frac{88}{8} = \\mathbf{11\\text{ m}}$$ [1.5 marks]<br><br><strong>(b) Total Perimeter of the Sector:</strong><br>The perimeter comprises the curved arc length plus the two straight radial edges:<br>$$P = L + 2r = 11 + 2(14) = 11 + 28 = \\mathbf{39\\text{ m}}$$ [1.5 marks]",
+    "markingScheme": [
+      "1.5 marks for calculating arc length L = 11 m with formula.",
+      "1.5 marks for adding two radii: P = 11 + 28 = 39 m."
+    ],
+    "examinerTip": "🚨 Exam Trap: Remember that sector perimeter is NOT just the arc! You must add the two radii: P = Arc + 2r."
+  },
+  {
+    "id": "q_ch6_11",
+    "title": "Q11 • Brahmagupta's Formula for Cyclic Quadrilaterals (NCERT Section 6.8.2)",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "A decorative park plaza is laid out as a cyclic quadrilateral $ABCD$ whose four corners lie on a circular fountain pool. The side lengths are $a = 10\\text{ m}$, $b = 7\\text{ m}$, $c = 4\\text{ m}$, and $d = 5\\text{ m}$.<br>(a) State Brahmagupta's formula for the area of a cyclic quadrilateral and compute the semi-perimeter $s$. [1.5 Marks]<br>(b) Calculate the exact area of the plaza using Brahmagupta's formula. [1.5 Marks]",
+    "solution": "<strong>(a) Formula & Semi-Perimeter:</strong><br>• Brahmagupta's Master Formula for cyclic quadrilaterals:<br>$$\\text{Area} = \\sqrt{(s - a)(s - b)(s - c)(s - d)}$$<br>• Semi-perimeter:<br>$$s = \\frac{a + b + c + d}{2} = \\frac{10 + 7 + 4 + 5}{2} = \\frac{26}{2} = \\mathbf{13\\text{ m}}$$ [1.5 marks]<br><br><strong>(b) Area Calculation:</strong><br>Compute the four differences:<br>• $s - a = 13 - 10 = 3\\text{ m}$<br>• $s - b = 13 - 7 = 6\\text{ m}$<br>• $s - c = 13 - 4 = 9\\text{ m}$<br>• $s - d = 13 - 5 = 8\\text{ m}$<br><br>Substitute into Brahmagupta's formula:<br>$$\\text{Area} = \\sqrt{3 \\times 6 \\times 9 \\times 8} = \\sqrt{3 \\times (2 \\times 3) \\times 3^2 \\times (2^3)}$$<br>$$= \\sqrt{3^4 \\times 2^4} = 3^2 \\times 2^2 = 9 \\times 4 = \\mathbf{36\\text{ m}^2}$$ [1.5 marks]",
+    "markingScheme": [
+      "1.5 marks for stating Brahmagupta's formula and finding s = 13 m.",
+      "1.5 marks for computing Area = √(3 × 6 × 9 × 8) = √1296 = 36 m²."
+    ],
+    "examinerTip": "🚨 Historical Note: Brahmagupta discovered this formula in 628 CE. When d = 0, it reduces directly to Heron's formula!"
   }
 ]

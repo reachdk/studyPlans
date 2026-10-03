@@ -134,6 +134,50 @@ $$\frac{3 + \sqrt{7}}{3 - \sqrt{7}} = a + b\sqrt{7}$$
 
 ---
 
+### 6. Historical Foundations, Brahmagupta's Laws & Proof of Irrationality of $\sqrt{2}$
+
+*(NCERT Ganita Manjari Sections 3.1, 3.2, 3.4 & CBSE Competencies)*
+
+#### 1. Brahmagupta's Laws of Debt and Fortune (Brahmasphutasiddhanta, 628 CE)
+In the 7th century, Indian mathematician Brahmagupta established the world's first comprehensive arithmetic rules for zero ($\text{Śhūnya}$) and negative numbers using the practical concepts of **Fortunes** (positive assets) and **Debts** (negative liabilities):
+1. **Addition:**
+   - A fortune plus a fortune is a fortune: $(+5) + (+4) = +9$.
+   - A debt plus a debt is a debt: $(-5) + (-4) = -9$.
+   - The sum of zero and a debt is a debt; of zero and a fortune is a fortune.
+2. **Multiplication:**
+   - The product of a debt and a fortune is a debt: $(-3) \times (+4) = -12$.
+   - The product of two debts is a fortune: $(-3) \times (-4) = \mathbf{+12}$.
+   *(Why? Removing a debt of ₹4 three times increases your net worth by ₹12!)*
+
+#### 2. The Density Property of Rational Numbers (NCERT Section 3.4)
+* **Theorem:** The set of rational numbers $\mathbb{Q}$ is **dense**. Between any two distinct rational numbers $r_1$ and $r_2$ (with $r_1 < r_2$), there exist **infinitely many rational numbers**.
+* **Constructive Proof:**
+  - Let $r_1 = \frac{a}{b}$ and $r_2 = \frac{c}{d}$ where $a, b, c, d \in \mathbb{Z}, b, d > 0$ and $r_1 < r_2$.
+  - Define the midpoint:
+    $$r_{\text{mid}} = \frac{r_1 + r_2}{2} = \frac{\frac{a}{b} + \frac{c}{d}}{2} = \frac{ad + bc}{2bd}$$
+  - Since $ad+bc \in \mathbb{Z}$ and $2bd \in \mathbb{Z}$ ($2bd \neq 0$), $r_{\text{mid}}$ is strictly a rational number.
+  - Adding $r_1$ to both sides of $r_1 < r_2$ yields $2r_1 < r_1 + r_2 \implies r_1 < \frac{r_1 + r_2}{2}$.
+  - Adding $r_2$ to both sides yields $r_1 + r_2 < 2r_2 \implies \frac{r_1 + r_2}{2} < r_2$.
+  - Therefore: $r_1 < r_{\text{mid}} < r_2$. Repeating this process infinitely between $r_1$ and $r_{\text{mid}}$ produces infinitely many rationals.
+
+#### 3. Formal Proof of Irrationality of $\sqrt{2}$ by Contradiction (CBSE Competency C-1.1)
+* **Statement:** Prove that $\sqrt{2}$ is an irrational number.
+* **Proof by Contradiction:**
+  1. Assume, to the contrary, that $\sqrt{2}$ is rational. Then it can be expressed in irreducible fractional form:
+     $$\sqrt{2} = \frac{p}{q}$$
+     where $p, q$ are positive co-prime integers ($\gcd(p, q) = 1$) and $q \neq 0$.
+  2. Squaring both sides:
+     $$2 = \frac{p^2}{q^2} \implies p^2 = 2q^2 \quad \text{--- (Equation 1)}$$
+  3. Since $2q^2$ is divisible by $2$, $p^2$ is an even integer. By the fundamental property of prime divisibility, if the square of an integer is even, the integer itself must be even:
+     $$p = 2k \quad (\text{for some integer } k)$$
+  4. Substitute $p = 2k$ into Equation 1:
+     $$(2k)^2 = 2q^2 \implies 4k^2 = 2q^2 \implies q^2 = 2k^2$$
+  5. This implies $q^2$ is also divisible by $2$, so $q$ must also be an even integer.
+  6. **The Contradiction:** Both $p$ and $q$ are even, meaning they share $2$ as a common factor. This directly contradicts our initial premise that $\gcd(p, q) = 1$ ($p$ and $q$ are co-prime).
+  7. **Conclusion:** Our assumption that $\sqrt{2}$ is rational is false. Hence, **$\sqrt{2}$ is strictly an irrational number**.
+
+---
+
 <div class="interactive-widget">
   <div class="widget-title">⚡ Interactive Recurring Decimal to Fraction Converter</div>
   <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:12px;">Convert pure recurring decimals into authentic $\frac{p}{q}$ fractions with full algebraic step proof:</p>

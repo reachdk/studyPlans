@@ -103,6 +103,53 @@ If $x + y = 12$ and $xy = 27$, find the numerical value of $x^3 + y^3$.
 
 ---
 
+### 6. Visualizing Factorization with Algebra Tiles
+
+*(NCERT Ganita Manjari Section 4.5)*
+
+Algebra tiles provide a powerful geometric bridge connecting physical area models to algebraic factoring:
+* **Large Square Tile:** Dimensions $x \times x \implies \text{Area} = \mathbf{x^2}$.
+* **Rectangle Tile:** Dimensions $x \times 1 \implies \text{Area} = \mathbf{x}$.
+* **Small Unit Square:** Dimensions $1 \times 1 \implies \text{Area} = \mathbf{1}$.
+
+#### Geometric Factoring Protocol:
+To factorize a quadratic expression such as $x^2 + 5x + 6$:
+1. Take $1$ large square tile ($x^2$), $5$ rectangle tiles ($5x$), and $6$ unit squares ($6$).
+2. Arrange all tiles into a **single solid rectangle**:
+   - Place the $x^2$ tile at the top-left corner.
+   - Place $3$ rectangle tiles horizontally along the top ($3x$) and $2$ rectangle tiles vertically along the side ($2x$).
+   - Fill the remaining bottom-right corner with the $6$ unit squares arranged in a $2 \times 3$ grid.
+3. **Read the Dimensions of the Rectangle:**
+   - Total width $= x + 3$.
+   - Total height $= x + 2$.
+4. **Conclusion:** Since $\text{Area} = \text{Height} \times \text{Width}$:
+   $$\mathbf{x^2 + 5x + 6 = (x + 2)(x + 3)}$$
+
+---
+
+### 7. Simplifying Rational Expressions
+
+*(NCERT Ganita Manjari Section 4.8)*
+
+A **rational expression** is an algebraic fraction of the form:
+$$\frac{P(x)}{Q(x)}$$
+where $P(x)$ and $Q(x)$ are polynomials and $Q(x) \neq 0$.
+
+#### 3-Step Simplification Protocol:
+1. **Factorize Numerator Completely:** Use common terms, standard identities, or middle-term splitting.
+2. **Factorize Denominator Completely:** Find all factors of $Q(x)$ and identify values where $Q(x) = 0$ (domain restrictions).
+3. **Cancel Common Factors:** Reduce to lowest terms.
+
+*Worked Example:*
+Simplify $\frac{x^2 - 9}{x^2 + 5x + 6}$ and state the domain restrictions:
+1. Factorize numerator: $x^2 - 9 = (x - 3)(x + 3)$ using $a^2 - b^2$.
+2. Factorize denominator: $x^2 + 5x + 6 = (x + 2)(x + 3)$.
+3. State restrictions: Denominator $\neq 0 \implies x \neq -2, \quad x \neq -3$.
+4. Cancel common factor $(x + 3)$:
+   $$\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \mathbf{\frac{x - 3}{x + 2}} \quad (\text{for } x \neq -2, -3)$$
+
+---
+
 <div class="interactive-widget">
   <div class="widget-title">⚡ Interactive Algebraic Identity Expander</div>
   <p style="font-size:0.88rem; color:var(--text-muted); margin-bottom:12px;">Select an algebraic identity type and enter coefficients to compute full step-by-step polynomial expansion:</p>

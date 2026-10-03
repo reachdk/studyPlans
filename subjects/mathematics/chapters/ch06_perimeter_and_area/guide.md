@@ -146,9 +146,61 @@ CBSE questions frequently couple geometric area with cost estimation:
     $12x + 17x + 25x = 540 \implies 54x = 540 \implies x = 10$.<br>
     Sides: $a = 120\text{ m}, b = 170\text{ m}, c = 250\text{ m}$.
   </div>
-</div>
+---
 
-### 7. Interactive Tool: ⚡ Live Heron's Triangle Area Solver
+### 7. Circles: Circumference, Arc Length & Sector Area
+
+*(NCERT Ganita Manjari Sections 6.2, 6.3 & 6.4)*
+
+#### 1. The Circumference-to-Diameter Ratio & $\pi$
+For any circle of radius $r$ and diameter $D = 2r$, the ratio of its circumference $C$ to its diameter $D$ is a universal mathematical constant:
+$$\frac{C}{D} = \pi \implies \mathbf{C = \pi D = 2\pi r}$$
+* **Irrationality of $\pi$:** $\pi$ is an irrational number (non-terminating, non-repeating decimal: $\pi \approx 3.14159265\dots$).
+* **Historical Approximations:**
+  - Archimedes bounded $\pi$ using 96-sided inscribed and circumscribed polygons: $3\frac{10}{71} < \pi < 3\frac{1}{7}$ ($3.1408 < \pi < 3.1428$).
+  - Aryabhata (499 CE) gave the famous accurate approximation $\pi \approx \frac{62832}{20000} = \mathbf{3.1416}$.
+  - Madhava of Sangamagrama discovered the first exact infinite series formula for $\pi$.
+
+#### 2. Length of an Arc of a Circle
+An arc subtending central angle $\theta$ (in degrees) represents a fraction $\frac{\theta}{360^\circ}$ of the entire circumference:
+$$\mathbf{L = \frac{\theta}{360^\circ} \times 2\pi r}$$
+
+#### 3. Perimeter and Area of a Sector of a Circle
+A sector is the region bounded by two radii and an arc:
+* **Perimeter of a Sector:** Includes the curved arc length plus the two straight radial edges:
+  $$\mathbf{P_{\text{sector}} = L + 2r = \frac{\theta}{360^\circ} \times 2\pi r + 2r}$$
+* **Area of a Sector:**
+  $$\mathbf{A_{\text{sector}} = \frac{\theta}{360^\circ} \times \pi r^2 = \frac{1}{2} L r}$$
+
+*Worked Example:*
+A sector of a circle of radius $7\text{ cm}$ subtends an angle of $90^\circ$ at the center:
+* Arc length: $L = \frac{90^\circ}{360^\circ} \times 2 \times \frac{22}{7} \times 7 = \frac{1}{4} \times 44 = \mathbf{11\text{ cm}}$.
+* Perimeter: $P = L + 2r = 11 + 2(7) = 11 + 14 = \mathbf{25\text{ cm}}$.
+* Sector Area: $A = \frac{90^\circ}{360^\circ} \times \frac{22}{7} \times 7^2 = \frac{1}{4} \times 154 = \mathbf{38.5\text{ cm}^2}$.
+
+---
+
+### 8. Brahmagupta's Formula for Cyclic Quadrilaterals
+
+*(NCERT Ganita Manjari Section 6.8.2 & CBSE Curriculum)*
+
+In the 7th century, Indian mathematician Brahmagupta discovered a magnificent formula for the area of a **cyclic quadrilateral** (a 4-sided figure whose four vertices all lie on a circle):
+
+Let $a, b, c, d$ be the four side lengths of a cyclic quadrilateral, and let $s$ be its semi-perimeter:
+$$s = \frac{a + b + c + d}{2}$$
+
+#### Brahmagupta's Master Formula:
+$$\mathbf{\text{Area} = \sqrt{(s - a)(s - b)(s - c)(s - d)}}$$
+
+#### Heron's Formula as a Special Case of Brahmagupta's Formula
+* If we let the length of one side shrink to zero ($d \to 0$), the fourth vertex merges with the third, collapsing the cyclic quadrilateral into a **triangle** with side lengths $a, b, c$ and semi-perimeter $s = \frac{a+b+c}{2}$.
+* Substituting $d = 0$ into Brahmagupta's formula:
+  $$\text{Area} = \sqrt{(s - a)(s - b)(s - c)(s - 0)} = \mathbf{\sqrt{s(s - a)(s - b)(s - c)}}$$
+* This proves that **Heron's formula is simply a special case of Brahmagupta's formula** when one side length is zero!
+
+---
+
+### 9. Interactive Tool: ⚡ Live Heron's Triangle Area Solver
 
 <div class="interactive-widget">
   <div class="widget-title">📐 Interactive Triangle Area & Semi-Perimeter Calculator</div>

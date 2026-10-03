@@ -4,7 +4,7 @@
   "code": "Ch 2",
   "title": "Introduction to Linear Polynomials",
   "theme": "Theme 2: Algebra & Equations",
-  "lg": "LG2: To analyze terms, degrees, and zeroes of linear and higher polynomials",
-  "desc": "Polynomial definitions, non-negative integer powers, classification by degree, evaluating polynomials at x = k, finding zeroes, and geometric representation.",
+  "lg": "LG2: To analyze degrees, zeroes, linear growth/decay models, and graphs of linear relationships",
+  "desc": "Polynomial definitions, whole-number powers, degree classification, evaluating at x = k, zeroes, linear growth/decay patterns, graphing y = ax + b, slope and intercepts, and two-variable applications.",
   "pdf": "downloads/class-09/mathematics/ganita-manjari/iemh102--introduction-to-linear-polynomials.pdf"
 }
