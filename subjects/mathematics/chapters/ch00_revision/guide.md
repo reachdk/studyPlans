@@ -4,9 +4,9 @@
 
 ---
 
-## 1. Number Systems & Exponent Laws (Chapter 3)
+### 1. Number Systems & Exponent Laws (Chapter 3)
 
-### Real Numbers Hierarchy
+#### Real Numbers Hierarchy
 $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R}$$
 * **Natural Numbers ($\mathbb{N}$):** $\{1, 2, 3, \dots\}$
 * **Whole Numbers ($\mathbb{W}$):** $\{0, 1, 2, 3, \dots\}$
@@ -16,7 +16,7 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 
 ---
 
-### Decimal Expansion & Rationality Criteria
+#### Decimal Expansion & Rationality Criteria
 
 | Decimal Type | Form / Example | Classification | Rationality Rule |
 | :--- | :--- | :--- | :--- |
@@ -24,7 +24,7 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 | **Non-Terminating Recurring** | $0.\bar{3} = \frac{1}{3}, 0.2\overline{35} = \frac{233}{990}$ | **Rational** ($\mathbb{Q}$) | Denominator in lowest terms contains prime factors **other than 2 or 5**. |
 | **Non-Terminating Non-Recurring** | $1.41421356\dots, 0.1010010001\dots$ | **Irrational** ($\mathbb{I}$) | Cannot be expressed as $\frac{p}{q}$. Square root of any prime $p$ ($\sqrt{p}$) is always irrational. |
 
-#### Fast Conversion: Recurring Decimal $\to \frac{p}{q}$
+##### Fast Conversion: Recurring Decimal $\to \frac{p}{q}$
 * **Pure Recurring:** $0.\overline{a} = \frac{a}{9}$, $\quad 0.\overline{ab} = \frac{ab}{99}$, $\quad 0.\overline{abc} = \frac{abc}{999}$.
 * **Mixed Recurring:** 
   $$0.a\bar{b} = \frac{ab - a}{90}, \quad 0.ab\bar{c} = \frac{abc - ab}{900}, \quad 0.a\overline{bc} = \frac{abc - a}{990}$$
@@ -32,7 +32,7 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 
 ---
 
-### Laws of Exponents & Radicals Master Table
+#### Laws of Exponents & Radicals Master Table
 *Let $a, b > 0$ and $m, n, p, q$ be rational numbers:*
 
 | Law | Formula | Exam Notes / Edge Cases |
@@ -48,7 +48,7 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 
 ---
 
-### Rationalization & Conjugate Pairs
+#### Rationalization & Conjugate Pairs
 * **Single Radical:** $\frac{1}{\sqrt{a}} \times \frac{\sqrt{a}}{\sqrt{a}} = \frac{\sqrt{a}}{a}$.
 * **Binomial Radical:** Conjugate of $(\sqrt{a} + \sqrt{b})$ is $(\sqrt{a} - \sqrt{b})$:
   $$\frac{1}{\sqrt{a} \pm \sqrt{b}} \times \frac{\sqrt{a} \mp \sqrt{b}}{\sqrt{a} \mp \sqrt{b}} = \frac{\sqrt{a} \mp \sqrt{b}}{a - b}$$
@@ -63,9 +63,9 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 
 ---
 
-## 2. Linear Polynomials & Growth/Decay (Chapter 2)
+### 2. Linear Polynomials & Growth/Decay (Chapter 2)
 
-### Polynomial Foundations
+#### Polynomial Foundations
 * **Definition:** An algebraic expression $p(x) = a_n x^n + a_{n-1} x^{n-1} + \dots + a_1 x + a_0$ where exponents $n$ are **non-negative integers** ($n \in \{0, 1, 2, \dots\}$).
 * **Degree:** The highest non-negative power of $x$ with a non-zero coefficient ($a_n \neq 0$).
 
@@ -79,10 +79,10 @@ $$\mathbb{N} \subset \mathbb{W} \subset \mathbb{Z} \subset \mathbb{Q} \subset \m
 
 ---
 
-### Linear Equations in Two Variables ($ax + by + c = 0$)
+#### Linear Equations in Two Variables ($ax + by + c = 0$)
 Every linear equation in two variables represents a **straight line** on the Cartesian plane with **infinitely many solutions**.
 
-#### Key Line Forms & Formulas
+##### Key Line Forms & Formulas
 * **General Form:** $Ax + By + C = 0 \implies \text{Slope } m = -\frac{A}{B}, \quad x\text{-intercept} = -\frac{C}{A}, \quad y\text{-intercept} = -\frac{C}{B}$.
 * **Slope-Intercept Form:** $y = mx + c$, where $m$ is the slope and $c$ is the $y$-intercept.
 * **Intercept Form:** $\frac{x}{a} + \frac{y}{b} = 1$, where $a$ is the $x$-intercept $(a, 0)$ and $b$ is the $y$-intercept $(0, b)$.
@@ -91,7 +91,7 @@ Every linear equation in two variables represents a **straight line** on the Car
 
 ---
 
-### Constant Rate of Change (Slope $m$)
+#### Constant Rate of Change (Slope $m$)
 $$\text{Slope } m = \frac{\text{Rise}}{\text{Run}} = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}$$
 * **Linear Growth ($m > 0$):** Line rises from left to right ($\Delta y > 0$). Physical models: Savings accumulation $S(n) = 150n + 500$, constant velocity $s = vt$.
 * **Linear Decay ($m < 0$):** Line falls from left to right ($\Delta y < 0$). Physical models: Battery drain $B(t) = 100 - 18t$, altitude descent.
@@ -100,9 +100,9 @@ $$\text{Slope } m = \frac{\text{Rise}}{\text{Run}} = \frac{\Delta y}{\Delta x} =
 
 ---
 
-## 3. Algebraic Identities & Factoring Master Table (Chapter 4)
+### 3. Algebraic Identities & Factoring Master Table (Chapter 4)
 
-### The 13 Core Identities
+#### The 13 Core Identities
 
 | ID # | Algebraic Identity | Primary Use / Application |
 | :---: | :--- | :--- |
@@ -122,7 +122,7 @@ $$\text{Slope } m = \frac{\text{Rise}}{\text{Run}} = \frac{\Delta y}{\Delta x} =
 
 ---
 
-### High-Yield Reciprocal Identities (Exam Classics)
+#### High-Yield Reciprocal Identities (Exam Classics)
 When given $x + \frac{1}{x} = k$ or $x - \frac{1}{x} = k$:
 * **Square Sum:**
   $$x^2 + \frac{1}{x^2} = \left(x + \frac{1}{x}\right)^2 - 2 = k^2 - 2$$
@@ -135,11 +135,11 @@ When given $x + \frac{1}{x} = k$ or $x - \frac{1}{x} = k$:
 
 ---
 
-### Remainder & Factor Theorems
+#### Remainder & Factor Theorems
 * **Remainder Theorem:** If a polynomial $p(x)$ is divided by $(x - a)$, the remainder is $R = p(a)$. If divided by $(ax + b)$, remainder is $R = p(-b/a)$.
 * **Factor Theorem:** A linear polynomial $(x - a)$ is a factor of $p(x)$ **if and only if** $p(a) = 0$.
 
-### Algebra Tiles Area Representation
+#### Algebra Tiles Area Representation
 * $x^2$ tile: Large square of side $x$.
 * $x$ tile: Rectangle of dimensions $x \times 1$.
 * $1$ tile: Small unit square of side $1$.
@@ -147,9 +147,9 @@ When given $x + \frac{1}{x} = k$ or $x - \frac{1}{x} = k$:
 
 ---
 
-## 4. Coordinate Geometry & Analytical Tools (Chapter 1)
+### 4. Coordinate Geometry & Analytical Tools (Chapter 1)
 
-### Cartesian Grid & Sign Conventions
+#### Cartesian Grid & Sign Conventions
 
 | Quadrant / Axis | Abscissa ($x$) | Ordinate ($y$) | Coordinate Form | Location on Plane |
 | :---: | :---: | :---: | :---: | :--- |
@@ -163,57 +163,57 @@ When given $x + \frac{1}{x} = k$ or $x - \frac{1}{x} = k$:
 
 ---
 
-### Essential Coordinate Formulas
+#### Essential Coordinate Formulas
 
-#### 1. Perpendicular Distance to Axes
+##### 1. Perpendicular Distance to Axes
 * Distance of point $P(x, y)$ from the **$x$-axis** $= |y|$ (absolute ordinate).
 * Distance of point $P(x, y)$ from the **$y$-axis** $= |x|$ (absolute abscissa).
 
-#### 2. Reflections Across Axes
+##### 2. Reflections Across Axes
 * **Reflection in $x$-axis:** $(x, y) \to (x, -y)$ (negate ordinate).
 * **Reflection in $y$-axis:** $(x, y) \to (-x, y)$ (negate abscissa).
 * **Reflection in Origin:** $(x, y) \to (-x, -y)$ (negate both).
 
-#### 3. Baudhāyana–Pythagoras Distance Formula
+##### 3. Baudhāyana–Pythagoras Distance Formula
 $$d(P, Q) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$
 * **Distance from Origin $O(0, 0)$:** $OP = \sqrt{x^2 + y^2}$.
 
-#### 4. Midpoint Formula & Missing Endpoints
+##### 4. Midpoint Formula & Missing Endpoints
 $$M(x_M, y_M) = \left(\frac{x_1 + x_2}{2}, \frac{y_1 + y_2}{2}\right)$$
 * **Finding Missing Endpoint $B(x_B, y_B)$ given $A$ and $M$:**
   $$x_B = 2x_M - x_A, \quad y_B = 2y_M - y_A$$
 
-#### 5. Points of Trisection ($P, Q$ dividing $AB$ into 3 equal parts)
+##### 5. Points of Trisection ($P, Q$ dividing $AB$ into 3 equal parts)
 $$\delta x = \frac{x_B - x_A}{3}, \quad \delta y = \frac{y_B - y_A}{3}$$
 $$P(x_A + \delta x, y_A + \delta y), \quad Q(x_A + 2\delta x, y_A + 2\delta y)$$
 
-#### 6. Triangle Reconstruction from Side Midpoints
+##### 6. Triangle Reconstruction from Side Midpoints
 *Let $D, E, F$ be the midpoints of sides $BC, CA, AB$ respectively:*
 $$x_A = x_E + x_F - x_D, \quad y_A = y_E + y_F - y_D$$
 $$x_B = x_D + x_F - x_E, \quad y_B = y_D + y_F - y_E$$
 $$x_C = x_D + x_E - x_F, \quad y_C = y_D + y_E - y_F$$
 *(Rule: Add the coordinates of the two adjacent midpoints and subtract the opposite midpoint).*
 
-#### 7. Circle Locus Boundary Test
+##### 7. Circle Locus Boundary Test
 *Center $C(h, k)$, radius $r$. For any point $P(x, y)$, calculate $d^2 = (x - h)^2 + (y - k)^2$:*
 * $d < r \implies P$ lies **strictly inside** the circle.
 * $d = r \implies P$ lies **exactly on the boundary** of the circle.
 * $d > r \implies P$ lies **strictly outside** the circle.
 
-#### 8. Collinearity Criteria
+##### 8. Collinearity Criteria
 Three points $A, B, C$ are collinear if and only if:
 1. **Distance Method:** $AB + BC = AC$ (longest segment equals sum of shorter segments).
 2. **Equal Slope Method:** $\frac{y_B - y_A}{x_B - x_A} = \frac{y_C - y_B}{x_C - x_B}$.
 
-#### 9. Area of Triangle Formed by a Line with Axes
+##### 9. Area of Triangle Formed by a Line with Axes
 For $Ax + By + C = 0$:
 $$\text{Area} = \frac{1}{2} \times |x\text{-intercept}| \times |y\text{-intercept}| = \frac{1}{2} \left|\frac{-C}{A}\right| \left|\frac{-C}{B}\right| = \frac{C^2}{2|AB|}$$
 
 ---
 
-## 5. Perimeter & Area: Mensuration Formulas (Chapter 6)
+### 5. Perimeter & Area: Mensuration Formulas (Chapter 6)
 
-### Heron's Master Formula for Triangles
+#### Heron's Master Formula for Triangles
 For any triangle with side lengths $a, b, c$:
 $$\text{Semi-Perimeter: } s = \frac{a + b + c}{2}$$
 $$\mathbf{\text{Area} = \sqrt{s(s - a)(s - b)(s - c)}}$$
@@ -221,7 +221,7 @@ $$\mathbf{\text{Area} = \sqrt{s(s - a)(s - b)(s - c)}}$$
 
 ---
 
-### Special Triangle Reference Card
+#### Special Triangle Reference Card
 
 | Triangle | Knowns | Area Formula | Altitude Formula |
 | :--- | :--- | :--- | :--- |
@@ -232,7 +232,7 @@ $$\mathbf{\text{Area} = \sqrt{s(s - a)(s - b)(s - c)}}$$
 
 ---
 
-### Quadrilateral Area Decomposition Techniques
+#### Quadrilateral Area Decomposition Techniques
 1. **Rhombus (Diagonals $d_1, d_2$):** $\text{Area} = \frac{1}{2} \times d_1 \times d_2$. Each side $a = \sqrt{(d_1/2)^2 + (d_2/2)^2}$.
 2. **Trapezium (Parallel sides $a$ and $b$, height $h$):**
    $$\text{Area} = \frac{1}{2}(a + b)h$$
@@ -241,7 +241,7 @@ $$\mathbf{\text{Area} = \sqrt{s(s - a)(s - b)(s - c)}}$$
 
 ---
 
-### Brahmagupta's Master Formula (Cyclic Quadrilaterals)
+#### Brahmagupta's Master Formula (Cyclic Quadrilaterals)
 For a quadrilateral whose four vertices lie on a circle (cyclic quadrilateral) with side lengths $a, b, c, d$:
 $$\text{Semi-Perimeter: } s = \frac{a + b + c + d}{2}$$
 $$\mathbf{\text{Area} = \sqrt{(s - a)(s - b)(s - c)(s - d)}}$$
@@ -253,7 +253,7 @@ $$\mathbf{\text{Area} = \sqrt{(s - a)(s - b)(s - c)(s - d)}}$$
 
 ---
 
-### Circle, Arc & Sector Formulas
+#### Circle, Arc & Sector Formulas
 
 | Circle Element | Formula | Notes |
 | :--- | :--- | :--- |
@@ -266,7 +266,7 @@ $$\mathbf{\text{Area} = \sqrt{(s - a)(s - b)(s - c)(s - d)}}$$
 
 ---
 
-### Area Scaling Principle
+#### Area Scaling Principle
 If all linear dimensions (sides) of a 2D geometric figure are multiplied by a scale factor $k$:
 $$\text{Perimeter Scales by } k \implies P' = k \cdot P$$
 $$\mathbf{\text{Area Scales by } k^2 \implies A' = k^2 \cdot A}$$
@@ -275,7 +275,7 @@ $$\mathbf{\text{Area Scales by } k^2 \implies A' = k^2 \cdot A}$$
 
 ---
 
-### 💡 Top 10 High-Stakes Exam Traps Checklist
+### 6. 💡 Top 10 High-Stakes Exam Traps Checklist
 
 1. **Negative Exponent Trap:** $a^{-n} = \frac{1}{a^n}$; it does *not* make the number negative (e.g., $2^{-3} = \frac{1}{8}$, NOT $-8$).
 2. **Perpendicular Distance from Axes:** Distance from $x$-axis is $|y|$; distance from $y$-axis is $|x|$.

@@ -904,6 +904,12 @@
       overflow: hidden;
       background: var(--card-bg);
       box-shadow: var(--shadow-sm);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .concept-accordion.open {
+      border-color: var(--primary);
+      box-shadow: var(--shadow-md);
     }
 
     .accordion-header {
@@ -917,17 +923,26 @@
       align-items: center;
       user-select: none;
       min-height: 48px;
-      transition: background 0.15s;
+      transition: background 0.15s, color 0.15s;
     }
 
     .accordion-header:hover {
       background: var(--primary-light);
     }
 
+    .accordion-header.open {
+      background: var(--primary-light);
+      color: var(--primary);
+    }
+
     .accordion-arrow {
       font-size: 1.1rem;
       color: var(--text-muted);
       transition: transform 0.2s ease;
+    }
+
+    .accordion-header.open .accordion-arrow {
+      color: var(--primary);
     }
 
     .accordion-body {
@@ -941,6 +956,31 @@
     .accordion-body.open {
       display: block;
       animation: fadeIn 0.2s ease-in;
+    }
+
+    .accordion-body h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 22px 0 10px 0;
+      padding-bottom: 4px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .accordion-body h5 {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 14px 0 6px 0;
+    }
+
+    .section-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin: 28px 0 16px 0;
+      padding-bottom: 6px;
+      border-bottom: 2px solid var(--primary);
     }
 
     .teacher-quote {
@@ -1847,11 +1887,14 @@
     }
 
     function toggleAccordion(header) {
+      const parent = header.closest('.concept-accordion');
       const body = header.nextElementSibling;
       const arrow = header.querySelector('.accordion-arrow');
       if (!body) return;
       const isOpen = body.classList.contains('open');
-      body.classList.toggle('open');
+      body.classList.toggle('open', !isOpen);
+      if (parent) parent.classList.toggle('open', !isOpen);
+      header.classList.toggle('open', !isOpen);
       if (arrow) arrow.textContent = isOpen ? '▸' : '▾';
       if (!isOpen) {
         triggerMathRendering(body);
@@ -1861,10 +1904,18 @@
     function toggleAllAccordions(expand) {
       document.querySelectorAll('.concept-accordion').forEach(acc => {
         const body = acc.querySelector('.accordion-body');
+        const header = acc.querySelector('.accordion-header');
         const arrow = acc.querySelector('.accordion-arrow');
         if (body) {
-          if (expand) body.classList.add('open');
-          else body.classList.remove('open');
+          if (expand) {
+            body.classList.add('open');
+            acc.classList.add('open');
+            if (header) header.classList.add('open');
+          } else {
+            body.classList.remove('open');
+            acc.classList.remove('open');
+            if (header) header.classList.remove('open');
+          }
         }
         if (arrow) arrow.textContent = expand ? '▾' : '▸';
       });

@@ -46,7 +46,7 @@ def markdown_to_html(md_text: str) -> str:
             quote_lines = []
             in_quote = False
 
-    has_sections = any(l.strip().startswith("### ") or l.strip().startswith("## ") for l in lines)
+    has_sections = any(l.strip().startswith("### ") for l in lines)
     toolbar_added = False
 
     for line in lines:
@@ -97,8 +97,8 @@ def markdown_to_html(md_text: str) -> str:
             continue
 
         # Headers
-        if stripped.startswith("### ") or stripped.startswith("## "):
-            sec_title = stripped[4:] if stripped.startswith("### ") else stripped[3:]
+        if stripped.startswith("### "):
+            sec_title = stripped[4:]
             close_accordion()
 
             if has_sections and not toolbar_added:
@@ -109,9 +109,9 @@ def markdown_to_html(md_text: str) -> str:
                 toolbar_added = True
 
             accordion_count += 1
-            is_first = (accordion_count == 1)
-            open_class = " open" if is_first else ""
-            arrow = "▾" if is_first else "▸"
+            # Accordions start cleanly collapsed for scannability and predictable progressive disclosure
+            open_class = ""
+            arrow = "▸"
 
             html_lines.append('<div class="concept-accordion">')
             html_lines.append('  <div class="accordion-header" onclick="toggleAccordion(this)">')
@@ -120,8 +120,12 @@ def markdown_to_html(md_text: str) -> str:
             html_lines.append(f'  <div class="accordion-body{open_class}">')
             in_accordion = True
             continue
+        elif stripped.startswith("##### "):
+            html_lines.append(f"<h5>{stripped[6:]}</h5>")
         elif stripped.startswith("#### "):
             html_lines.append(f"<h4>{stripped[5:]}</h4>")
+        elif stripped.startswith("## "):
+            html_lines.append(f'<h3 class="section-title">{stripped[3:]}</h3>')
         elif stripped.startswith("# "):
             html_lines.append(f"<h2>{stripped[2:]}</h2>")
         # List items
