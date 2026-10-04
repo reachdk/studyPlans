@@ -25,6 +25,8 @@
       --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.07), 0 2px 4px -2px rgb(0 0 0 / 0.07);
       --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.08), 0 4px 6px -4px rgb(0 0 0 / 0.08);
       --radius: 14px;
+      --rev-color: #d97706;
+      --rev-light: #fffbeb;
       --num-color: #0284c7;
       --num-light: #f0f9ff;
       --alg-color: #7c3aed;
@@ -42,6 +44,8 @@
       --primary: #3b82f6;
       --primary-hover: #60a5fa;
       --primary-light: #1e293b;
+      --rev-color: #f59e0b;
+      --rev-light: #451a03;
       --num-color: #38bdf8;
       --num-light: #0c4a6e;
       --alg-color: #a78bfa;
@@ -1831,8 +1835,16 @@
        CURRICULUM DATA INJECTION (Compiled by build_portal.py)
        ========================================================================== */
     const SUBJECT_ID = "math";
-    const DEFAULT_ACTIVE_SCOPE = ["iemh101", "iemh102", "iemh103", "iemh104", "iemh106"];
+    const DEFAULT_ACTIVE_SCOPE = ["math_rev", "iemh101", "iemh102", "iemh103", "iemh104", "iemh106"];
     const CATEGORIES_DATA = [
+  {
+    "id": "rev",
+    "name": "Master Revision",
+    "color": "#d97706",
+    "light": "#fffbeb",
+    "colorDark": "#f59e0b",
+    "lightDark": "#451a03"
+  },
   {
     "id": "num",
     "name": "Number Systems",
@@ -1859,6 +1871,278 @@
   }
 ];
     const CHAPTERS_DATA = [
+  {
+    "id": "math_rev",
+    "sub": "rev",
+    "code": "Revision",
+    "title": "Master Formula & Identity Revision Sheet",
+    "theme": "Curriculum-Wide Rapid Recall",
+    "lg": "Instant recall of all core mathematical formulas, algebraic identities, coordinate theorems, and geometric relations across Class 9 CBSE Mathematics",
+    "desc": "Deftly structured quick-review master sheet collating all key formulas, algebraic identities, coordinate geometry rules, exponent laws, and mensuration theorems across Chapters 1, 2, 3, 4, and 6.",
+    "pdf": "",
+    "guideHtml": "<h2>Master Revision Sheet: Formulas, Identities & Theorems</h2>\n<div class=\"callout-box tip\"><strong>NCERT Ganita Manjari • CBSE Class 9 Mathematics</strong> <em>A high-density, formula-centric reference collating all essential identities, analytical formulas, and geometric theorems across Chapters 1, 2, 3, 4, and 6.</em></div>\n<div class=\"notes-toolbar\">\n  <button class=\"btn-notes-toggle\" onclick=\"toggleAllAccordions(true)\">📖 Expand All</button>\n  <button class=\"btn-notes-toggle\" onclick=\"toggleAllAccordions(false)\">📁 Collapse All</button>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>1. Number Systems & Exponent Laws (Chapter 3)</span><span class=\"accordion-arrow\">▾</span>\n  </div>\n  <div class=\"accordion-body open\">\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Real Numbers Hierarchy</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>$$\\mathbb{N} \\subset \\mathbb{W} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}$$</p>\n<p>• <strong>Natural Numbers ($\\mathbb{N}$):</strong> $\\{1, 2, 3, \\dots\\}$</p>\n<p>• <strong>Whole Numbers ($\\mathbb{W}$):</strong> $\\{0, 1, 2, 3, \\dots\\}$</p>\n<p>• <strong>Integers ($\\mathbb{Z}$):</strong> $\\{\\dots, -2, -1, 0, 1, 2, \\dots\\}$</p>\n<p>• <strong>Rational Numbers ($\\mathbb{Q}$):</strong> Numbers expressible as $\\frac{p}{q}$, where $p, q \\in \\mathbb{Z}$ and $q \\neq 0$.</p>\n<p>• <strong>Irrational Numbers ($\\mathbb{I}$):</strong> Real numbers that <em>cannot</em> be expressed as $\\frac{p}{q}$ (e.g., $\\sqrt{2}, \\sqrt{3}, \\pi$).</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Decimal Expansion & Rationality Criteria</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<table class=\"diff-table\">\n  <tr><th>Decimal Type</th><th>Form / Example</th><th>Classification</th><th>Rationality Rule</th></tr>\n  <tr><td><strong>Terminating</strong></td><td>$0.375 = \\frac{3}{8}$</td><td><strong>Rational</strong> ($\\mathbb{Q}$)</td><td>Denominator in lowest terms has prime factors <strong>only of the form $2^m \\times 5^n$</strong>.</td></tr>\n  <tr><td><strong>Non-Terminating Recurring</strong></td><td>$0.\\bar{3} = \\frac{1}{3}, 0.2\\overline{35} = \\frac{233}{990}$</td><td><strong>Rational</strong> ($\\mathbb{Q}$)</td><td>Denominator in lowest terms contains prime factors <strong>other than 2 or 5</strong>.</td></tr>\n  <tr><td><strong>Non-Terminating Non-Recurring</strong></td><td>$1.41421356\\dots, 0.1010010001\\dots$</td><td><strong>Irrational</strong> ($\\mathbb{I}$)</td><td>Cannot be expressed as $\\frac{p}{q}$. Square root of any prime $p$ ($\\sqrt{p}$) is always irrational.</td></tr>\n</table>\n<h4>Fast Conversion: Recurring Decimal $\\to \\frac{p}{q}$</h4>\n<p>• <strong>Pure Recurring:</strong> $0.\\overline{a} = \\frac{a}{9}$, $\\quad 0.\\overline{ab} = \\frac{ab}{99}$, $\\quad 0.\\overline{abc} = \\frac{abc}{999}$.</p>\n<p>• <strong>Mixed Recurring:</strong></p>\n<p>$$0.a\\bar{b} = \\frac{ab - a}{90}, \\quad 0.ab\\bar{c} = \\frac{abc - ab}{900}, \\quad 0.a\\overline{bc} = \\frac{abc - a}{990}$$</p>\n<p><em>(Numerator: Full digits minus non-repeating digits. Denominator: As many 9s as repeating digits, followed by as many 0s as non-repeating digits).</em></p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Laws of Exponents & Radicals Master Table</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p><em>Let $a, b > 0$ and $m, n, p, q$ be rational numbers:</em></p>\n<table class=\"diff-table\">\n  <tr><th>Law</th><th>Formula</th><th>Exam Notes / Edge Cases</th></tr>\n  <tr><td><strong>Product of Powers</strong></td><td>$a^m \\cdot a^n = a^{m+n}$</td><td>Add exponents when bases are identical.</td></tr>\n  <tr><td><strong>Quotient of Powers</strong></td><td>$\\frac{a^m}{a^n} = a^{m-n}$</td><td>Subtract denominator exponent from numerator.</td></tr>\n  <tr><td><strong>Power of a Power</strong></td><td>$(a^m)^n = a^{mn}$</td><td>Multiply exponents: $((a^m)^n)^p = a^{mnp}$.</td></tr>\n  <tr><td><strong>Power of a Product</strong></td><td>$(ab)^n = a^n \\cdot b^n$</td><td>Distribute power across factors.</td></tr>\n  <tr><td><strong>Power of a Quotient</strong></td><td>$\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$</td><td>$b \\neq 0$.</td></tr>\n  <tr><td><strong>Zero Exponent</strong></td><td>$a^0 = 1$</td><td>Valid for any $a \\neq 0$. Note: $0^0$ is indeterminate.</td></tr>\n  <tr><td><strong>Negative Exponent</strong></td><td>$a^{-n} = \\frac{1}{a^n} \\iff \\frac{1}{a^{-n}} = a^n$</td><td>Reciprocal inverts the sign of the power.</td></tr>\n  <tr><td><strong>Fractional Exponents</strong></td><td>$a^{p/q} = \\sqrt[q]{a^p} = (\\sqrt[q]{a})^p$</td><td>In evaluations, compute the root first: $(64)^{2/3} = (4)^2 = 16$.</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Rationalization & Conjugate Pairs</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>• <strong>Single Radical:</strong> $\\frac{1}{\\sqrt{a}} \\times \\frac{\\sqrt{a}}{\\sqrt{a}} = \\frac{\\sqrt{a}}{a}$.</p>\n<p>• <strong>Binomial Radical:</strong> Conjugate of $(\\sqrt{a} + \\sqrt{b})$ is $(\\sqrt{a} - \\sqrt{b})$:</p>\n<p>$$\\frac{1}{\\sqrt{a} \\pm \\sqrt{b}} \\times \\frac{\\sqrt{a} \\mp \\sqrt{b}}{\\sqrt{a} \\mp \\sqrt{b}} = \\frac{\\sqrt{a} \\mp \\sqrt{b}}{a - b}$$</p>\n<p>• <strong>Mixed Surd:</strong> Conjugate of $(a + b\\sqrt{c})$ is $(a - b\\sqrt{c})$:</p>\n<p>$$\\frac{1}{a + b\\sqrt{c}} = \\frac{a - b\\sqrt{c}}{a^2 - b^2 c}$$</p>\n<div class=\"callout-box tip\">💡 <strong>Key Takeaway:</strong> <strong>Brahmagupta's Laws of Sign Arithmetic & Real Density:</strong> <em> Negative $\\times$ Negative = Positive; Positive $\\times$ Negative = Negative. </em> Division by zero is undefined ($\\frac{a}{0}$ has no mathematical meaning). * <strong>Density Property:</strong> Between any two distinct real numbers $a < b$, there exist <strong>infinitely many rational</strong> and <strong>infinitely many irrational</strong> numbers. Arithmetic mean $\\frac{a+b}{2}$ always gives a rational between two rationals.</div>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>2. Linear Polynomials & Growth/Decay (Chapter 2)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Polynomial Foundations</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>• <strong>Definition:</strong> An algebraic expression $p(x) = a_n x^n + a_{n-1} x^{n-1} + \\dots + a_1 x + a_0$ where exponents $n$ are <strong>non-negative integers</strong> ($n \\in \\{0, 1, 2, \\dots\\}$).</p>\n<p>• <strong>Degree:</strong> The highest non-negative power of $x$ with a non-zero coefficient ($a_n \\neq 0$).</p>\n<table class=\"diff-table\">\n  <tr><th>Polynomial Type</th><th>Standard Form</th><th>Degree</th><th>Number of Zeroes</th></tr>\n  <tr><td><strong>Zero Polynomial</strong></td><td>$p(x) = 0$</td><td><strong>Not defined</strong></td><td>Infinitely many (all real numbers)</td></tr>\n  <tr><td><strong>Non-Zero Constant</strong></td><td>$p(x) = c \\quad (c \\neq 0)$</td><td><strong>$0$</strong> ($c = cx^0$)</td><td>No zeroes</td></tr>\n  <tr><td><strong>Linear Polynomial</strong></td><td>$p(x) = ax + b \\quad (a \\neq 0)$</td><td><strong>$1$</strong></td><td>Exactly 1 zero ($x = -b/a$)</td></tr>\n  <tr><td><strong>Quadratic Polynomial</strong></td><td>$p(x) = ax^2 + bx + c \\quad (a \\neq 0)$</td><td><strong>$2$</strong></td><td>At most 2 real zeroes</td></tr>\n  <tr><td><strong>Cubic Polynomial</strong></td><td>$p(x) = ax^3 + bx^2 + cx + d \\quad (a \\neq 0)$</td><td><strong>$3$</strong></td><td>At most 3 real zeroes</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Linear Equations in Two Variables ($ax + by + c = 0$)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>Every linear equation in two variables represents a <strong>straight line</strong> on the Cartesian plane with <strong>infinitely many solutions</strong>.</p>\n<h4>Key Line Forms & Formulas</h4>\n<p>• <strong>General Form:</strong> $Ax + By + C = 0 \\implies \\text{Slope } m = -\\frac{A}{B}, \\quad x\\text{-intercept} = -\\frac{C}{A}, \\quad y\\text{-intercept} = -\\frac{C}{B}$.</p>\n<p>• <strong>Slope-Intercept Form:</strong> $y = mx + c$, where $m$ is the slope and $c$ is the $y$-intercept.</p>\n<p>• <strong>Intercept Form:</strong> $\\frac{x}{a} + \\frac{y}{b} = 1$, where $a$ is the $x$-intercept $(a, 0)$ and $b$ is the $y$-intercept $(0, b)$.</p>\n<p>• <strong>Horizontal Line:</strong> $y = k$ (Slope $m = 0$, parallel to $x$-axis).</p>\n<p>• <strong>Vertical Line:</strong> $x = k$ (Slope $m$ is <strong>undefined</strong>, parallel to $y$-axis).</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Constant Rate of Change (Slope $m$)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>$$\\text{Slope } m = \\frac{\\text{Rise}}{\\text{Run}} = \\frac{\\Delta y}{\\Delta x} = \\frac{y_2 - y_1}{x_2 - x_1}$$</p>\n<p>• <strong>Linear Growth ($m > 0$):</strong> Line rises from left to right ($\\Delta y > 0$). Physical models: Savings accumulation $S(n) = 150n + 500$, constant velocity $s = vt$.</p>\n<p>• <strong>Linear Decay ($m < 0$):</strong> Line falls from left to right ($\\Delta y < 0$). Physical models: Battery drain $B(t) = 100 - 18t$, altitude descent.</p>\n<p>• <strong>Parallel Lines:</strong> $m_1 = m_2$.</p>\n<p>• <strong>Perpendicular Lines:</strong> $m_1 \\cdot m_2 = -1 \\iff m_2 = -\\frac{1}{m_1}$.</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>3. Algebraic Identities & Factoring Master Table (Chapter 4)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>The 13 Core Identities</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<table class=\"diff-table\">\n  <tr><th>ID #</th><th>Algebraic Identity</th><th>Primary Use / Application</th></tr>\n  <tr><td><strong>1</strong></td><td>$(x + a)(x + b) = x^2 + (a + b)x + ab$</td><td>Binomial multiplication, factoring quadratics.</td></tr>\n  <tr><td><strong>2</strong></td><td>$(a + b)^2 = a^2 + 2ab + b^2$</td><td>Square of binomial sum.</td></tr>\n  <tr><td><strong>3</strong></td><td>$(a - b)^2 = a^2 - 2ab + b^2$</td><td>Square of binomial difference.</td></tr>\n  <tr><td><strong>4</strong></td><td>$a^2 - b^2 = (a - b)(a + b)$</td><td>Difference of two squares (factoring).</td></tr>\n  <tr><td><strong>5</strong></td><td>$(a + b + c)^2 = a^2 + b^2 + c^2 + 2(ab + bc + ca)$</td><td>Trinomial square expansion.</td></tr>\n  <tr><td><strong>6</strong></td><td>$a^2 + b^2 + c^2 = (a + b + c)^2 - 2(ab + bc + ca)$</td><td>Finding sum of squares from linear & pairwise sums.</td></tr>\n  <tr><td><strong>7</strong></td><td>$(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 = a^3 + b^3 + 3ab(a + b)$</td><td>Cube of a sum.</td></tr>\n  <tr><td><strong>8</strong></td><td>$(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 = a^3 - b^3 - 3ab(a - b)$</td><td>Cube of a difference.</td></tr>\n  <tr><td><strong>9</strong></td><td>$a^3 + b^3 = (a + b)(a^2 - ab + b^2)$</td><td>Sum of two cubes (factoring).</td></tr>\n  <tr><td><strong>10</strong></td><td>$a^3 - b^3 = (a - b)(a^2 + ab + b^2)$</td><td>Difference of two cubes (factoring).</td></tr>\n  <tr><td><strong>11</strong></td><td>$a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)$</td><td>Three-variable cubic master identity.</td></tr>\n  <tr><td><strong>12</strong></td><td>$a^3 + b^3 + c^3 - 3abc = \\frac{1}{2}(a + b + c)\\left[(a - b)^2 + (b - c)^2 + (c - a)^2\\right]$</td><td>Alternative SOS (sum of squares) form.</td></tr>\n  <tr><td><strong>13</strong></td><td><strong>Conditional Zero Rule:</strong> If $a + b + c = 0$, then $\\mathbf{a^3 + b^3 + c^3 = 3abc}$</td><td>Rapid evaluation of cubic sums without direct cubing.</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>High-Yield Reciprocal Identities (Exam Classics)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>When given $x + \\frac{1}{x} = k$ or $x - \\frac{1}{x} = k$:</p>\n<p>• <strong>Square Sum:</strong></p>\n<p>$$x^2 + \\frac{1}{x^2} = \\left(x + \\frac{1}{x}\\right)^2 - 2 = k^2 - 2$$</p>\n<p>$$x^2 + \\frac{1}{x^2} = \\left(x - \\frac{1}{x}\\right)^2 + 2 = k^2 + 2$$</p>\n<p>• <strong>Cube Sum / Difference:</strong></p>\n<p>$$x^3 + \\frac{1}{x^3} = \\left(x + \\frac{1}{x}\\right)^3 - 3\\left(x + \\frac{1}{x}\\right) = k^3 - 3k$$</p>\n<p>$$x^3 - \\frac{1}{x^3} = \\left(x - \\frac{1}{x}\\right)^3 + 3\\left(x - \\frac{1}{x}\\right) = k^3 + 3k$$</p>\n<p>• <strong>Fourth Power:</strong></p>\n<p>$$x^4 + \\frac{1}{x^4} = \\left(x^2 + \\frac{1}{x^2}\\right)^2 - 2$$</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Remainder & Factor Theorems</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>• <strong>Remainder Theorem:</strong> If a polynomial $p(x)$ is divided by $(x - a)$, the remainder is $R = p(a)$. If divided by $(ax + b)$, remainder is $R = p(-b/a)$.</p>\n<p>• <strong>Factor Theorem:</strong> A linear polynomial $(x - a)$ is a factor of $p(x)$ <strong>if and only if</strong> $p(a) = 0$.</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Algebra Tiles Area Representation</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>• $x^2$ tile: Large square of side $x$.</p>\n<p>• $x$ tile: Rectangle of dimensions $x \\times 1$.</p>\n<p>• $1$ tile: Small unit square of side $1$.</p>\n<p>• <strong>Geometric Factoring:</strong> Arranging $x^2 + (p+q)x + pq$ tiles into a large rectangle of length $(x + p)$ and breadth $(x + q)$ confirms the factors algebraically and visually.</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>4. Coordinate Geometry & Analytical Tools (Chapter 1)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Cartesian Grid & Sign Conventions</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<table class=\"diff-table\">\n  <tr><th>Quadrant / Axis</th><th>Abscissa ($x$)</th><th>Ordinate ($y$)</th><th>Coordinate Form</th><th>Location on Plane</th></tr>\n  <tr><td><strong>Quadrant I</strong></td><td>$x > 0$ ($+$)</td><td>$y > 0$ ($+$)</td><td>$(+, +)$</td><td>Top-Right</td></tr>\n  <tr><td><strong>Quadrant II</strong></td><td>$x < 0$ ($-$)</td><td>$y > 0$ ($+$)</td><td>$(-, +)$</td><td>Top-Left</td></tr>\n  <tr><td><strong>Quadrant III</strong></td><td>$x < 0$ ($-$)</td><td>$y < 0$ ($-$)</td><td>$(-, -)$</td><td>Bottom-Left</td></tr>\n  <tr><td><strong>Quadrant IV</strong></td><td>$x > 0$ ($+$)</td><td>$y < 0$ ($-$)</td><td>$(+, -)$</td><td>Bottom-Right</td></tr>\n  <tr><td><strong>$x$-axis</strong></td><td>Any real $x$</td><td>$y = 0$</td><td>$(x, 0)$</td><td>Horizontal dividing line</td></tr>\n  <tr><td><strong>$y$-axis</strong></td><td>$x = 0$</td><td>Any real $y$</td><td>$(0, y)$</td><td>Vertical dividing line</td></tr>\n  <tr><td><strong>Origin ($O$)</strong></td><td>$x = 0$</td><td>$y = 0$</td><td>$(0, 0)$</td><td>Intersection of coordinate axes</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Essential Coordinate Formulas</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<h4>1. Perpendicular Distance to Axes</h4>\n<p>• Distance of point $P(x, y)$ from the <strong>$x$-axis</strong> $= |y|$ (absolute ordinate).</p>\n<p>• Distance of point $P(x, y)$ from the <strong>$y$-axis</strong> $= |x|$ (absolute abscissa).</p>\n<h4>2. Reflections Across Axes</h4>\n<p>• <strong>Reflection in $x$-axis:</strong> $(x, y) \\to (x, -y)$ (negate ordinate).</p>\n<p>• <strong>Reflection in $y$-axis:</strong> $(x, y) \\to (-x, y)$ (negate abscissa).</p>\n<p>• <strong>Reflection in Origin:</strong> $(x, y) \\to (-x, -y)$ (negate both).</p>\n<h4>3. Baudhāyana–Pythagoras Distance Formula</h4>\n<p>$$d(P, Q) = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$$</p>\n<p>• <strong>Distance from Origin $O(0, 0)$:</strong> $OP = \\sqrt{x^2 + y^2}$.</p>\n<h4>4. Midpoint Formula & Missing Endpoints</h4>\n<p>$$M(x_M, y_M) = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$$</p>\n<p>• <strong>Finding Missing Endpoint $B(x_B, y_B)$ given $A$ and $M$:</strong></p>\n<p>$$x_B = 2x_M - x_A, \\quad y_B = 2y_M - y_A$$</p>\n<h4>5. Points of Trisection ($P, Q$ dividing $AB$ into 3 equal parts)</h4>\n<p>$$\\delta x = \\frac{x_B - x_A}{3}, \\quad \\delta y = \\frac{y_B - y_A}{3}$$</p>\n<p>$$P(x_A + \\delta x, y_A + \\delta y), \\quad Q(x_A + 2\\delta x, y_A + 2\\delta y)$$</p>\n<h4>6. Triangle Reconstruction from Side Midpoints</h4>\n<p><em>Let $D, E, F$ be the midpoints of sides $BC, CA, AB$ respectively:</em></p>\n<p>$$x_A = x_E + x_F - x_D, \\quad y_A = y_E + y_F - y_D$$</p>\n<p>$$x_B = x_D + x_F - x_E, \\quad y_B = y_D + y_F - y_E$$</p>\n<p>$$x_C = x_D + x_E - x_F, \\quad y_C = y_D + y_E - y_F$$</p>\n<p><em>(Rule: Add the coordinates of the two adjacent midpoints and subtract the opposite midpoint).</em></p>\n<h4>7. Circle Locus Boundary Test</h4>\n<p><em>Center $C(h, k)$, radius $r$. For any point $P(x, y)$, calculate $d^2 = (x - h)^2 + (y - k)^2$:</em></p>\n<p>• $d < r \\implies P$ lies <strong>strictly inside</strong> the circle.</p>\n<p>• $d = r \\implies P$ lies <strong>exactly on the boundary</strong> of the circle.</p>\n<p>• $d > r \\implies P$ lies <strong>strictly outside</strong> the circle.</p>\n<h4>8. Collinearity Criteria</h4>\n<p>Three points $A, B, C$ are collinear if and only if:</p>\n<p>1. <strong>Distance Method:</strong> $AB + BC = AC$ (longest segment equals sum of shorter segments).</p>\n<p>2. <strong>Equal Slope Method:</strong> $\\frac{y_B - y_A}{x_B - x_A} = \\frac{y_C - y_B}{x_C - x_B}$.</p>\n<h4>9. Area of Triangle Formed by a Line with Axes</h4>\n<p>For $Ax + By + C = 0$:</p>\n<p>$$\\text{Area} = \\frac{1}{2} \\times |x\\text{-intercept}| \\times |y\\text{-intercept}| = \\frac{1}{2} \\left|\\frac{-C}{A}\\right| \\left|\\frac{-C}{B}\\right| = \\frac{C^2}{2|AB|}$$</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>5. Perimeter & Area: Mensuration Formulas (Chapter 6)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Heron's Master Formula for Triangles</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>For any triangle with side lengths $a, b, c$:</p>\n<p>$$\\text{Semi-Perimeter: } s = \\frac{a + b + c}{2}$$</p>\n<p>$$\\mathbf{\\text{Area} = \\sqrt{s(s - a)(s - b)(s - c)}}$$</p>\n<p>• <strong>Existence Condition:</strong> $s > a, s > b, s > c$ (equivalent to triangle inequalities $a + b > c, b + c > a, c + a > b$).</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Special Triangle Reference Card</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<table class=\"diff-table\">\n  <tr><th>Triangle</th><th>Knowns</th><th>Area Formula</th><th>Altitude Formula</th></tr>\n  <tr><td><strong>Equilateral</strong></td><td>Side $a$</td><td>$\\text{Area} = \\frac{\\sqrt{3}}{4}a^2$</td><td>$h = \\frac{\\sqrt{3}}{2}a$</td></tr>\n  <tr><td><strong>Isosceles</strong></td><td>Equal legs $a$, base $b$</td><td>$\\text{Area} = \\frac{b}{4}\\sqrt{4a^2 - b^2}$</td><td>$h = \\sqrt{a^2 - \\left(\\frac{b}{2}\\right)^2}$</td></tr>\n  <tr><td><strong>Right-Angled</strong></td><td>Base $b$, perpendicular $p$</td><td>$\\text{Area} = \\frac{1}{2} \\times b \\times p$</td><td>Hypotenuse $c = \\sqrt{b^2 + p^2}$</td></tr>\n  <tr><td><strong>Any Triangle</strong></td><td>Base $b$, altitude $h$</td><td>$\\text{Area} = \\frac{1}{2} \\times b \\times h$</td><td>Altitude to side $a$: $h_a = \\frac{2 \\times \\text{Area}}{a}$</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Quadrilateral Area Decomposition Techniques</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>1. <strong>Rhombus (Diagonals $d_1, d_2$):</strong> $\\text{Area} = \\frac{1}{2} \\times d_1 \\times d_2$. Each side $a = \\sqrt{(d_1/2)^2 + (d_2/2)^2}$.</p>\n<p>2. <strong>Trapezium (Parallel sides $a$ and $b$, height $h$):</strong></p>\n<p>$$\\text{Area} = \\frac{1}{2}(a + b)h$$</p>\n<p><em>Decomposition method when height is not given:</em> Draw a line from one upper vertex parallel to the opposite oblique leg to create a <strong>parallelogram</strong> and a <strong>triangle</strong>. Use Heron's formula on the triangle to find height $h = \\frac{2 \\times \\text{Area}}{\\text{base}}$, then find trapezium area.</p>\n<p>3. <strong>General Quadrilateral via Diagonal:</strong> Split into two triangles $\\Delta_1$ and $\\Delta_2$ along diagonal $d$. $\\text{Area} = \\text{Area}(\\Delta_1) + \\text{Area}(\\Delta_2)$.</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Brahmagupta's Master Formula (Cyclic Quadrilaterals)</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>For a quadrilateral whose four vertices lie on a circle (cyclic quadrilateral) with side lengths $a, b, c, d$:</p>\n<p>$$\\text{Semi-Perimeter: } s = \\frac{a + b + c + d}{2}$$</p>\n<p>$$\\mathbf{\\text{Area} = \\sqrt{(s - a)(s - b)(s - c)(s - d)}}$$</p>\n<div class=\"callout-box tip\">💡 <strong>Key Takeaway:</strong> <strong>Reduction to Heron's Formula:</strong> When one side shrinks to a point ($d \\to 0$), the cyclic quadrilateral degenerates into a triangle with sides $a, b, c$. Since $(s - 0) = s$, Brahmagupta's formula reduces directly to: $$\\text{Area} = \\sqrt{s(s - a)(s - b)(s - c)} \\quad \\text{(Heron's Formula)}$$</div>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Circle, Arc & Sector Formulas</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<table class=\"diff-table\">\n  <tr><th>Circle Element</th><th>Formula</th><th>Notes</th></tr>\n  <tr><td><strong>Circumference</strong></td><td>$C = 2\\pi r = \\pi d$</td><td>Ratio $\\frac{C}{d} = \\pi \\approx \\frac{22}{7} \\approx 3.14159$</td></tr>\n  <tr><td><strong>Circle Area</strong></td><td>$A = \\pi r^2$</td><td>Area of circular boundary</td></tr>\n  <tr><td><strong>Arc Length of Sector</strong></td><td>$L = \\frac{\\theta}{360^\\circ} \\times 2\\pi r$</td><td>Subtended central angle $\\theta$ in degrees</td></tr>\n  <tr><td><strong>Sector Area</strong></td><td>$A_{\\text{sector}} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2 = \\frac{1}{2} L r$</td><td>Equivalent to $(1/2) \\times \\text{Arc Length} \\times \\text{Radius}$</td></tr>\n  <tr><td><strong>Sector Perimeter</strong></td><td>$P_{\\text{sector}} = L + 2r$</td><td>Arc length plus two radial boundary edges</td></tr>\n  <tr><td><strong>Minor Segment Area</strong></td><td>$A_{\\text{segment}} = A_{\\text{sector}} - \\text{Area of } \\Delta OAB$</td><td>For $\\theta = 90^\\circ$: Sector $- \\frac{1}{2}r^2$<br>For $\\theta = 60^\\circ$: Sector $- \\frac{\\sqrt{3}}{4}r^2$</td></tr>\n</table>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>Area Scaling Principle</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>If all linear dimensions (sides) of a 2D geometric figure are multiplied by a scale factor $k$:</p>\n<p>$$\\text{Perimeter Scales by } k \\implies P' = k \\cdot P$$</p>\n<p>$$\\mathbf{\\text{Area Scales by } k^2 \\implies A' = k^2 \\cdot A}$$</p>\n<p>• Example: If sides are doubled ($k = 2$), Area quadruples ($A' = 4A$), which is a <strong>$300\\%$ increase</strong>.</p>\n<p>• Example: If sides are tripled ($k = 3$), Area becomes $9A$, which is an <strong>$800\\%$ increase</strong>.</p>\n  </div>\n</div>\n<div class=\"concept-accordion\">\n  <div class=\"accordion-header\" onclick=\"toggleAccordion(this)\">\n    <span>💡 Top 10 High-Stakes Exam Traps Checklist</span><span class=\"accordion-arrow\">▸</span>\n  </div>\n  <div class=\"accordion-body\">\n<p>1. <strong>Negative Exponent Trap:</strong> $a^{-n} = \\frac{1}{a^n}$; it does <em>not</em> make the number negative (e.g., $2^{-3} = \\frac{1}{8}$, NOT $-8$).</p>\n<p>2. <strong>Perpendicular Distance from Axes:</strong> Distance from $x$-axis is $|y|$; distance from $y$-axis is $|x|$.</p>\n<p>3. <strong>Degree of Constant vs Zero Polynomial:</strong> Degree of constant $c \\neq 0$ is $0$; degree of zero polynomial $0$ is <strong>undefined</strong>.</p>\n<p>4. <strong>Fractional Exponents:</strong> Simplify root before power: $81^{3/4} = (\\sqrt[4]{81})^3 = 3^3 = 27$.</p>\n<p>5. <strong>Cubic Reciprocal Adjustments:</strong> $(x + 1/x)^3 = x^3 + 1/x^3 + 3(x + 1/x)$. Do not forget the $+ 3(x + 1/x)$ cross term!</p>\n<p>6. <strong>Signs in Cubic Differences:</strong> $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3$. Notice $+3ab^2$ is positive!</p>\n<p>7. <strong>Triangle Semi-Perimeter:</strong> Remember to divide perimeter by <strong>2</strong>, not by 3 ($s = \\frac{a+b+c}{2}$).</p>\n<p>8. <strong>Trapezium Height Mistake:</strong> The slant non-parallel sides are <em>not</em> the height. Decompose into parallelogram + triangle to find vertical height $h$.</p>\n<p>9. <strong>Sector Perimeter Edge Trap:</strong> Perimeter of a sector is $L + 2r$, not just arc length $L$.</p>\n<p>10. <strong>Perpendicular Slope Rule:</strong> $m_1 \\cdot m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}$. Remember both <strong>negative</strong> and <strong>reciprocal</strong>!</p>\n  </div>\n</div>",
+    "flashcards": [
+      {
+        "id": "rev_fc_01",
+        "front": "What is the condition for a rational fraction p/q (in lowest terms) to have a terminating decimal expansion?",
+        "back": "The prime factorization of the denominator q must be strictly of the form 2^m &times; 5^n, where m and n are non-negative integers. If any other prime factor (such as 3, 7, 11) is present, the decimal is non-terminating recurring.",
+        "category": "NUMBER SYSTEMS",
+        "tag": "TERMINATING DECIMALS"
+      },
+      {
+        "id": "rev_fc_02",
+        "front": "State the shortcut rule for converting a mixed recurring decimal 0.āb̄ into p/q form.",
+        "back": "0.ab̅ = (ab - a) / 90. Numerator = Full digits minus non-repeating digits. Denominator = As many 9s as repeating digits (1), followed by as many 0s as non-repeating digits (1). Example: 0.23̅ = (23 - 2)/90 = 21/90 = 7/30.",
+        "category": "NUMBER SYSTEMS",
+        "tag": "RECURRING DECIMALS"
+      },
+      {
+        "id": "rev_fc_03",
+        "front": "What are the degrees of (i) a non-zero constant polynomial, and (ii) the zero polynomial?",
+        "back": "(i) Non-zero constant polynomial p(x) = c (c &ne; 0) has degree 0 (since c = cx^0).\n(ii) Zero polynomial p(x) = 0 has an UNDEFINED degree (cannot determine a unique leading power).",
+        "category": "POLYNOMIALS",
+        "tag": "DEGREE CLASSIFICATION"
+      },
+      {
+        "id": "rev_fc_04",
+        "front": "How do you calculate the slope (constant rate of change) of a straight line passing through (x1, y1) and (x2, y2)?",
+        "back": "Slope m = &Delta;y / &Delta;x = (y2 - y1) / (x2 - x1).\n• m > 0 &rArr; Linear Growth (line rises left-to-right).\n• m < 0 &rArr; Linear Decay (line falls left-to-right).\n• m = 0 &rArr; Horizontal line.\n• m undefined &rArr; Vertical line.",
+        "category": "ALGEBRA",
+        "tag": "SLOPE & RATE OF CHANGE"
+      },
+      {
+        "id": "rev_fc_05",
+        "front": "State the slopes condition for two non-vertical straight lines to be: (i) Parallel, and (ii) Perpendicular.",
+        "back": "(i) Parallel Lines: m1 = m2 (equal slopes).\n(ii) Perpendicular Lines: m1 &times; m2 = -1 &rArr; m2 = -1 / m1 (negative reciprocal slopes).",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "PARALLEL & PERPENDICULAR"
+      },
+      {
+        "id": "rev_fc_06",
+        "front": "What is the three-variable cubic identity for a^3 + b^3 + c^3 - 3abc?",
+        "back": "a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)\nAlternative Form = (1/2)(a + b + c)[(a - b)^2 + (b - c)^2 + (c - a)^2].",
+        "category": "ALGEBRAIC IDENTITIES",
+        "tag": "THREE-VARIABLE CUBIC"
+      },
+      {
+        "id": "rev_fc_07",
+        "front": "What is the Conditional Zero Property of the three-variable cubic identity?",
+        "back": "If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc.\nUsed to evaluate cubic sums like (28)^3 + (-15)^3 + (-13)^3 = 3(28)(-15)(-13) = 16,380 instantly without direct cubing.",
+        "category": "ALGEBRAIC IDENTITIES",
+        "tag": "CONDITIONAL ZERO"
+      },
+      {
+        "id": "rev_fc_08",
+        "front": "If x + 1/x = k, what are the values of: (i) x^2 + 1/x^2, and (ii) x^3 + 1/x^3?",
+        "back": "(i) x^2 + 1/x^2 = (x + 1/x)^2 - 2 = k^2 - 2.\n(ii) x^3 + 1/x^3 = (x + 1/x)^3 - 3(x + 1/x) = k^3 - 3k.",
+        "category": "ALGEBRAIC IDENTITIES",
+        "tag": "RECIPROCAL IDENTITIES"
+      },
+      {
+        "id": "rev_fc_09",
+        "front": "State the Remainder Theorem and the Factor Theorem.",
+        "back": "• Remainder Theorem: When polynomial p(x) is divided by (x - a), the remainder is R = p(a).\n• Factor Theorem: (x - a) is a factor of p(x) if and only if p(a) = 0.",
+        "category": "POLYNOMIALS",
+        "tag": "FACTOR & REMAINDER"
+      },
+      {
+        "id": "rev_fc_10",
+        "front": "What is the perpendicular distance of a point P(x, y) from: (i) the x-axis, and (ii) the y-axis?",
+        "back": "(i) Distance from x-axis = |y| (absolute ordinate).\n(ii) Distance from y-axis = |x| (absolute abscissa).\nDistance is always non-negative.",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "AXIS DISTANCES"
+      },
+      {
+        "id": "rev_fc_11",
+        "front": "State the Baudhāyana–Pythagoras Distance Formula between points (x1, y1) and (x2, y2).",
+        "back": "d = &radic;[(x2 - x1)^2 + (y2 - y1)^2].\nDistance from the origin O(0, 0) to P(x, y) simplifies to: OP = &radic;(x^2 + y^2).",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "DISTANCE FORMULA"
+      },
+      {
+        "id": "rev_fc_12",
+        "front": "How do you find the missing endpoint B(xB, yB) when midpoint M(xM, yM) and endpoint A(xA, yA) are given?",
+        "back": "Inverse midpoint formulas:\nxB = 2xM - xA\nyB = 2yM - yA.",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "MIDPOINT REVERSAL"
+      },
+      {
+        "id": "rev_fc_13",
+        "front": "How do you reconstruct vertex A of &Delta;ABC given side midpoints D (opp A), E (opp B), and F (opp C)?",
+        "back": "xA = xE + xF - xD\nyA = yE + yF - yD\nRule: Add the coordinates of the two adjacent midpoints and subtract the opposite midpoint.",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "TRIANGLE RECONSTRUCTION"
+      },
+      {
+        "id": "rev_fc_14",
+        "front": "How do you test whether a point P(x, y) lies inside, on, or outside a circle with center C(h, k) and radius r?",
+        "back": "Compute d^2 = (x - h)^2 + (y - k)^2:\n• d < r &rArr; Strictly inside the circle.\n• d = r &rArr; Exactly on the circle boundary.\n• d > r &rArr; Strictly outside the circle.",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "CIRCLE LOCUS"
+      },
+      {
+        "id": "rev_fc_15",
+        "front": "State Heron's Formula for the area of any triangle and its semi-perimeter formula.",
+        "back": "Semi-perimeter s = (a + b + c) / 2.\nArea = &radic;[s(s - a)(s - b)(s - c)].\nValid only if s > a, s > b, s > c (triangle inequality).",
+        "category": "PERIMETER & AREA",
+        "tag": "HERON FORMULA"
+      },
+      {
+        "id": "rev_fc_16",
+        "front": "What are the area and altitude formulas for an equilateral triangle of side length a?",
+        "back": "• Area = (&radic;3 / 4) &times; a^2\n• Altitude (height) h = (&radic;3 / 2) &times; a.",
+        "category": "PERIMETER & AREA",
+        "tag": "EQUILATERAL TRIANGLE"
+      },
+      {
+        "id": "rev_fc_17",
+        "front": "State Brahmagupta's Master Formula for the area of a cyclic quadrilateral.",
+        "back": "Semi-perimeter s = (a + b + c + d) / 2.\nArea = &radic;[(s - a)(s - b)(s - c)(s - d)].\nAs d &rarr; 0, this formula degenerates directly into Heron's Formula for a triangle.",
+        "category": "PERIMETER & AREA",
+        "tag": "BRAHMAGUPTA FORMULA"
+      },
+      {
+        "id": "rev_fc_18",
+        "front": "State the formulas for: (i) Arc Length L, (ii) Sector Area, and (iii) Sector Perimeter of a circular sector of radius r and angle &theta;.",
+        "back": "(i) Arc Length L = (&theta; / 360&deg;) &times; 2&pi;r\n(ii) Sector Area = (&theta; / 360&deg;) &times; &pi;r^2 = (1/2)Lr\n(iii) Sector Perimeter = L + 2r (arc length + two radial boundaries).",
+        "category": "PERIMETER & AREA",
+        "tag": "SECTORS & ARCS"
+      },
+      {
+        "id": "rev_fc_19",
+        "front": "If every side of a 2D geometric figure is multiplied by scale factor k, how do perimeter and area change?",
+        "back": "• Perimeter scales linearly: P' = k &times; P.\n• Area scales quadratically: A' = k^2 &times; A.\nIf sides are doubled (k = 2), area quadruples (4A), representing a 300% increase.",
+        "category": "PERIMETER & AREA",
+        "tag": "AREA SCALING"
+      },
+      {
+        "id": "rev_fc_20",
+        "front": "What are the coordinates of the reflection of point P(x, y) across: (i) x-axis, (ii) y-axis, and (iii) origin?",
+        "back": "(i) Reflection across x-axis: (x, -y)\n(ii) Reflection across y-axis: (-x, y)\n(iii) Reflection across origin: (-x, -y).",
+        "category": "COORDINATE GEOMETRY",
+        "tag": "REFLECTIONS"
+      }
+    ],
+    "questions": [
+      {
+        "id": "rev_q_01",
+        "title": "Checkpoint 1 • Decimal Expansion & Rationality Classification",
+        "type": "MCQ",
+        "marks": 1,
+        "prompt": "Which of the following numbers has a non-terminating non-recurring decimal representation?<br><br><strong>(A)</strong> 3/8<br><strong>(B)</strong> 2/11<br><strong>(C)</strong> &radic;17<br><strong>(D)</strong> 0.23&#773;",
+        "options": [
+          "(A) 3/8",
+          "(B) 2/11",
+          "(C) &radic;17",
+          "(D) 0.23&#773;"
+        ],
+        "answer": "<strong>Correct Answer: (C) &radic;17</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Rational numbers have decimal expansions that either terminate (denominator has only prime factors 2 and 5) or repeat periodically (non-terminating recurring).<br>• 3/8: Denominator 8 = 2<sup>3</sup> &rarr; Terminating decimal (0.375).<br>• 2/11: Denominator has prime factor 11 &rarr; Non-terminating recurring (0.181818...).<br>• 0.23&#773; is in bar notation &rarr; Non-terminating recurring (21/90 = 7/30).<br>2. An irrational number has a <strong>non-terminating non-recurring</strong> decimal expansion.<br>3. Since 17 is a prime number and not a perfect square, <strong>&radic;17</strong> is irrational and its decimal digits never terminate and never repeat.",
+        "solution": "<strong>Correct Answer: (C) &radic;17</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Rational numbers have decimal expansions that either terminate (denominator has only prime factors 2 and 5) or repeat periodically (non-terminating recurring).<br>• 3/8: Denominator 8 = 2<sup>3</sup> &rarr; Terminating decimal (0.375).<br>• 2/11: Denominator has prime factor 11 &rarr; Non-terminating recurring (0.181818...).<br>• 0.23&#773; is in bar notation &rarr; Non-terminating recurring (21/90 = 7/30).<br>2. An irrational number has a <strong>non-terminating non-recurring</strong> decimal expansion.<br>3. Since 17 is a prime number and not a perfect square, <strong>&radic;17</strong> is irrational and its decimal digits never terminate and never repeat.",
+        "markingScheme": "• Classifying rational vs irrational decimals: 0.5 mark<br>• Correct option (C) &radic;17: 0.5 mark",
+        "examinerTip": "Square roots of all non-perfect square integers are irrational."
+      },
+      {
+        "id": "rev_q_02",
+        "title": "Checkpoint 2 • Laws of Exponents Synthesis",
+        "type": "VSA",
+        "marks": 2,
+        "prompt": "Evaluate using laws of exponents: <strong>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup></strong>.",
+        "answer": "1. Express the composite bases as powers of prime numbers:<br>• 81 = 3<sup>4</sup> &rArr; (81)<sup>-3/4</sup> = (3<sup>4</sup>)<sup>-3/4</sup>.<br>• 16 = 2<sup>4</sup> &rArr; (16)<sup>3/4</sup> = (2<sup>4</sup>)<sup>3/4</sup>.<br><br>2. Apply the power of a power law (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>• (3<sup>4</sup>)<sup>-3/4</sup> = 3<sup>4 &times; (-3/4)</sup> = 3<sup>-3</sup> = 1 / 3<sup>3</sup> = 1 / 27.<br>• (2<sup>4</sup>)<sup>3/4</sup> = 2<sup>4 &times; (3/4)</sup> = 2<sup>3</sup> = 8.<br><br>3. Multiply the simplified terms:<br>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup> = (1 / 27) &times; 8 = <strong>8 / 27</strong>.",
+        "solution": "1. Express the composite bases as powers of prime numbers:<br>• 81 = 3<sup>4</sup> &rArr; (81)<sup>-3/4</sup> = (3<sup>4</sup>)<sup>-3/4</sup>.<br>• 16 = 2<sup>4</sup> &rArr; (16)<sup>3/4</sup> = (2<sup>4</sup>)<sup>3/4</sup>.<br><br>2. Apply the power of a power law (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>• (3<sup>4</sup>)<sup>-3/4</sup> = 3<sup>4 &times; (-3/4)</sup> = 3<sup>-3</sup> = 1 / 3<sup>3</sup> = 1 / 27.<br>• (2<sup>4</sup>)<sup>3/4</sup> = 2<sup>4 &times; (3/4)</sup> = 2<sup>3</sup> = 8.<br><br>3. Multiply the simplified terms:<br>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup> = (1 / 27) &times; 8 = <strong>8 / 27</strong>.",
+        "markingScheme": "• Simplifying (81)<sup>-3/4</sup> = 1/27: 1 mark<br>• Simplifying (16)<sup>3/4</sup> = 8 and final answer 8/27: 1 mark",
+        "examinerTip": "Always reduce fractional exponents by factoring bases into prime powers first."
+      },
+      {
+        "id": "rev_q_03",
+        "title": "Checkpoint 3 • Linear Modeling & Rate of Change",
+        "type": "VSA",
+        "marks": 2,
+        "prompt": "A gym membership charges a monthly fee modeled by C(m) = 250m + 500, where m is the number of months. What is the constant rate of change (slope) and the initial enrollment fee?",
+        "answer": "1. In the slope-intercept linear model y = mx + c:<br>• m represents the constant rate of change (slope).<br>• c represents the y-intercept (the initial value at m = 0).<br><br>2. Comparing C(m) = 250m + 500 with y = mx + c:<br>• Slope m = <strong>₹250 per month</strong> (rate of change).<br>• Initial enrollment fee c = C(0) = 250(0) + 500 = <strong>₹500</strong>.",
+        "solution": "1. In the slope-intercept linear model y = mx + c:<br>• m represents the constant rate of change (slope).<br>• c represents the y-intercept (the initial value at m = 0).<br><br>2. Comparing C(m) = 250m + 500 with y = mx + c:<br>• Slope m = <strong>₹250 per month</strong> (rate of change).<br>• Initial enrollment fee c = C(0) = 250(0) + 500 = <strong>₹500</strong>.",
+        "markingScheme": "• Identifying constant rate of change m = ₹250/month: 1 mark<br>• Identifying initial fee c = ₹500: 1 mark",
+        "examinerTip": "The coefficient of the independent variable is always the slope / unit rate of change."
+      },
+      {
+        "id": "rev_q_04",
+        "title": "Checkpoint 4 • Reciprocal Algebraic Identities",
+        "type": "SA",
+        "marks": 3,
+        "prompt": "If x + 1/x = 6, find the numerical values of:<br>(i) x<sup>2</sup> + 1/x<sup>2</sup> (1.5m)<br>(ii) x<sup>3</sup> + 1/x<sup>3</sup> (1.5m)",
+        "answer": "(i) Square both sides of x + 1/x = 6:<br>(x + 1/x)<sup>2</sup> = 6<sup>2</sup> = 36<br>x<sup>2</sup> + 2(x)(1/x) + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 1/x<sup>2</sup> = 36 - 2 = <strong>34</strong>.<br><br>(ii) Cube both sides using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(x + 1/x)<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(x &times; 1/x)(x + 1/x)<br>6<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(1)(6)<br>216 = x<sup>3</sup> + 1/x<sup>3</sup> + 18<br>x<sup>3</sup> + 1/x<sup>3</sup> = 216 - 18 = <strong>198</strong>.",
+        "solution": "(i) Square both sides of x + 1/x = 6:<br>(x + 1/x)<sup>2</sup> = 6<sup>2</sup> = 36<br>x<sup>2</sup> + 2(x)(1/x) + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 1/x<sup>2</sup> = 36 - 2 = <strong>34</strong>.<br><br>(ii) Cube both sides using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(x + 1/x)<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(x &times; 1/x)(x + 1/x)<br>6<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(1)(6)<br>216 = x<sup>3</sup> + 1/x<sup>3</sup> + 18<br>x<sup>3</sup> + 1/x<sup>3</sup> = 216 - 18 = <strong>198</strong>.",
+        "markingScheme": "• (i) (x + 1/x)<sup>2</sup> expansion and x<sup>2</sup> + 1/x<sup>2</sup> = 34: 1.5 marks<br>• (ii) (x + 1/x)<sup>3</sup> expansion and x<sup>3</sup> + 1/x<sup>3</sup> = 198: 1.5 marks",
+        "examinerTip": "Direct formulas: k^2 - 2 and k^3 - 3k."
+      },
+      {
+        "id": "rev_q_05",
+        "title": "Checkpoint 5 • Conditional Zero Identity Application",
+        "type": "VSA",
+        "marks": 2,
+        "prompt": "Evaluate without direct cubing using algebraic identities: <strong>(35)<sup>3</sup> + (-20)<sup>3</sup> + (-15)<sup>3</sup></strong>.",
+        "answer": "Let a = 35, b = -20, and c = -15.<br>1. Check the sum a + b + c:<br>a + b + c = 35 + (-20) + (-15) = 35 - 35 = 0.<br><br>2. Recall the conditional zero property:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>3. Compute 3abc:<br>3(35)(-20)(-15) = 105 &times; 300 = <strong>31,500</strong>.",
+        "solution": "Let a = 35, b = -20, and c = -15.<br>1. Check the sum a + b + c:<br>a + b + c = 35 + (-20) + (-15) = 35 - 35 = 0.<br><br>2. Recall the conditional zero property:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>3. Compute 3abc:<br>3(35)(-20)(-15) = 105 &times; 300 = <strong>31,500</strong>.",
+        "markingScheme": "• Verifying a + b + c = 0: 0.5 mark<br>• Stating identity a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc: 0.5 mark<br>• Computing 3(35)(-20)(-15) = 31,500: 1 mark",
+        "examinerTip": "Multiplying two negative numbers produces a positive result."
+      },
+      {
+        "id": "rev_q_06",
+        "title": "Checkpoint 6 • Distances from Axes & Coordinate Reflections",
+        "type": "VSA",
+        "marks": 2,
+        "prompt": "For the point P(-4, 7):<br>(i) State its perpendicular distance from the x-axis and from the y-axis.<br>(ii) Find the coordinates of its reflection across the origin.",
+        "answer": "(i) Distances from Axes:<br>• Distance from x-axis = |ordinate y| = |7| = <strong>7 units</strong>.<br>• Distance from y-axis = |abscissa x| = |-4| = <strong>4 units</strong>.<br><br>(ii) Reflection across Origin:<br>Transformation rule: (x, y) &rarr; (-x, -y).<br>Applying to P(-4, 7):<br>P'(-(-4), -(7)) = <strong>P'(4, -7)</strong>.",
+        "solution": "(i) Distances from Axes:<br>• Distance from x-axis = |ordinate y| = |7| = <strong>7 units</strong>.<br>• Distance from y-axis = |abscissa x| = |-4| = <strong>4 units</strong>.<br><br>(ii) Reflection across Origin:<br>Transformation rule: (x, y) &rarr; (-x, -y).<br>Applying to P(-4, 7):<br>P'(-(-4), -(7)) = <strong>P'(4, -7)</strong>.",
+        "markingScheme": "• Distance from x-axis = 7 units and y-axis = 4 units: 1 mark<br>• Reflected point across origin P'(4, -7): 1 mark",
+        "examinerTip": "Distances can never be negative. Abscissa distance is to the y-axis, ordinate distance is to the x-axis."
+      },
+      {
+        "id": "rev_q_07",
+        "title": "Checkpoint 7 • Inverse Midpoint & Endpoint Calculation",
+        "type": "SA",
+        "marks": 3,
+        "prompt": "Line segment AB has midpoint M(3, -2). If endpoint A has coordinates (-1, 4), find the coordinates of endpoint B and calculate the length of AB.",
+        "answer": "1. By the inverse midpoint formula:<br>x_B = 2x_M - x_A = 2(3) - (-1) = 6 + 1 = <strong>7</strong>.<br>y_B = 2y_M - y_A = 2(-2) - 4 = -4 - 4 = <strong>-8</strong>.<br>Therefore, endpoint B is <strong>(7, -8)</strong>.<br><br>2. Calculate length AB using the Baudh&amacron;yana-Pythagoras distance formula:<br>d(AB) = &radic;[(x_B - x_A)<sup>2</sup> + (y_B - y_A)<sup>2</sup>]<br>= &radic;[(7 - (-1))<sup>2</sup> + (-8 - 4)<sup>2</sup>]<br>= &radic;[8<sup>2</sup> + (-12)<sup>2</sup>]<br>= &radic;[64 + 144] = &radic;208 = &radic;(16 &times; 13) = <strong>4&radic;13 units</strong> &approx; 14.42 units.<br>*(Alternatively: d(AM) = &radic;[(3 - (-1))^2 + (-2 - 4)^2] = &radic;[16 + 36] = &radic;52 = 2&radic;13 &rArr; AB = 2 &times; AM = 4&radic;13 units)*.",
+        "solution": "1. By the inverse midpoint formula:<br>x_B = 2x_M - x_A = 2(3) - (-1) = 6 + 1 = <strong>7</strong>.<br>y_B = 2y_M - y_A = 2(-2) - 4 = -4 - 4 = <strong>-8</strong>.<br>Therefore, endpoint B is <strong>(7, -8)</strong>.<br><br>2. Calculate length AB using the Baudh&amacron;yana-Pythagoras distance formula:<br>d(AB) = &radic;[(x_B - x_A)<sup>2</sup> + (y_B - y_A)<sup>2</sup>]<br>= &radic;[(7 - (-1))<sup>2</sup> + (-8 - 4)<sup>2</sup>]<br>= &radic;[8<sup>2</sup> + (-12)<sup>2</sup>]<br>= &radic;[64 + 144] = &radic;208 = &radic;(16 &times; 13) = <strong>4&radic;13 units</strong> &approx; 14.42 units.<br>*(Alternatively: d(AM) = &radic;[(3 - (-1))^2 + (-2 - 4)^2] = &radic;[16 + 36] = &radic;52 = 2&radic;13 &rArr; AB = 2 &times; AM = 4&radic;13 units)*.",
+        "markingScheme": "• Finding x_B = 7 and y_B = -8: 1.5 marks<br>• Distance formula calculation AB = 4&radic;13 units: 1.5 marks",
+        "examinerTip": "Remember that AB = 2 &times; AM, providing an instant sanity check on length."
+      },
+      {
+        "id": "rev_q_08",
+        "title": "Checkpoint 8 • Triangle Reconstruction from Midpoints",
+        "type": "SA",
+        "marks": 3,
+        "prompt": "The midpoints of the sides of &Delta;ABC are D(2, 3), E(5, 7), and F(1, 6), where D, E, F are the midpoints of BC, CA, and AB respectively. Find the coordinates of vertex A.",
+        "answer": "By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>Vertex A is adjacent to midpoints E (on AC) and F (on AB), and opposite to midpoint D (on BC).<br><br>Formula for vertex A:<br>x_A = x_E + x_F - x_D<br>y_A = y_E + y_F - y_D<br><br>Substitute coordinates of D(2, 3), E(5, 7), and F(1, 6):<br>x_A = 5 + 1 - 2 = 6 - 2 = <strong>4</strong>.<br>y_A = 7 + 6 - 3 = 13 - 3 = <strong>10</strong>.<br><br>Therefore, the coordinates of vertex A are <strong>(4, 10)</strong>.<br>*(Verification: Midpoint of AB with B(x_D+x_F-x_E, y_D+y_F-y_E) = B(-2, 2) is ((4+(-2))/2, (10+2)/2) = (1, 6) = F)*.",
+        "solution": "By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>Vertex A is adjacent to midpoints E (on AC) and F (on AB), and opposite to midpoint D (on BC).<br><br>Formula for vertex A:<br>x_A = x_E + x_F - x_D<br>y_A = y_E + y_F - y_D<br><br>Substitute coordinates of D(2, 3), E(5, 7), and F(1, 6):<br>x_A = 5 + 1 - 2 = 6 - 2 = <strong>4</strong>.<br>y_A = 7 + 6 - 3 = 13 - 3 = <strong>10</strong>.<br><br>Therefore, the coordinates of vertex A are <strong>(4, 10)</strong>.<br>*(Verification: Midpoint of AB with B(x_D+x_F-x_E, y_D+y_F-y_E) = B(-2, 2) is ((4+(-2))/2, (10+2)/2) = (1, 6) = F)*.",
+        "markingScheme": "• Stating reconstruction formula x_A = x_E + x_F - x_D: 1 mark<br>• Calculating x_A = 4: 1 mark<br>• Calculating y_A = 10 &rArr; A(4, 10): 1 mark",
+        "examinerTip": "Remember the mnemonic: Add the two adjacent midpoints, subtract the opposite."
+      },
+      {
+        "id": "rev_q_09",
+        "title": "Checkpoint 9 • Heron's Formula Area & Altitude",
+        "type": "SA",
+        "marks": 3,
+        "prompt": "A triangle has side lengths a = 13 cm, b = 14 cm, and c = 15 cm.<br>(i) Calculate its area using Heron's formula.<br>(ii) Find the length of the altitude corresponding to the longest side (15 cm).",
+        "answer": "(i) Semi-perimeter s:<br>s = (a + b + c)/2 = (13 + 14 + 15)/2 = 42/2 = <strong>21 cm</strong>.<br><br>Compute factors:<br>s - a = 21 - 13 = 8 cm<br>s - b = 21 - 14 = 7 cm<br>s - c = 21 - 15 = 6 cm.<br><br>Apply Heron's formula:<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (4 &times; 2) &times; 7 &times; (3 &times; 2)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>2</sup> &times; 4]<br>= 7 &times; 3 &times; 2 &times; 2 = <strong>84 cm<sup>2</sup></strong>.<br><br>(ii) Altitude to longest side (c = 15 cm):<br>Area = (1/2) &times; base &times; h<br>84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 cm</strong>.",
+        "solution": "(i) Semi-perimeter s:<br>s = (a + b + c)/2 = (13 + 14 + 15)/2 = 42/2 = <strong>21 cm</strong>.<br><br>Compute factors:<br>s - a = 21 - 13 = 8 cm<br>s - b = 21 - 14 = 7 cm<br>s - c = 21 - 15 = 6 cm.<br><br>Apply Heron's formula:<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (4 &times; 2) &times; 7 &times; (3 &times; 2)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>2</sup> &times; 4]<br>= 7 &times; 3 &times; 2 &times; 2 = <strong>84 cm<sup>2</sup></strong>.<br><br>(ii) Altitude to longest side (c = 15 cm):<br>Area = (1/2) &times; base &times; h<br>84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 cm</strong>.",
+        "markingScheme": "• (i) s = 21 cm and Area = 84 cm<sup>2</sup> via Heron's formula: 2 marks<br>• (ii) Altitude h = 11.2 cm: 1 mark",
+        "examinerTip": "Pair up prime factors under the radical: 21 &times; 8 &times; 7 &times; 6 = (7 &times; 3) &times; 8 &times; 7 &times; (2 &times; 3) = 7^2 &times; 3^2 &times; 16."
+      },
+      {
+        "id": "rev_q_10",
+        "title": "Checkpoint 10 • Brahmagupta Cyclic Quadrilateral Formula",
+        "type": "SA",
+        "marks": 3,
+        "prompt": "A cyclic quadrilateral has boundary sides a = 9 m, b = 12 m, c = 5 m, and d = 10 m. Calculate its area using Brahmagupta's formula.",
+        "answer": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> &approx; 74.94 m<sup>2</sup>.",
+        "solution": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> &approx; 74.94 m<sup>2</sup>.",
+        "markingScheme": "• Semi-perimeter s = 18 m: 1 mark<br>• Setting up Brahmagupta's formula: 1 mark<br>• Factoring Area = 12&radic;39 m<sup>2</sup>: 1 mark",
+        "examinerTip": "Brahmagupta's formula requires all 4 vertices to lie on a circle."
+      }
+    ],
+    "subName": "Master Revision"
+  },
   {
     "id": "iemh101",
     "sub": "geom",

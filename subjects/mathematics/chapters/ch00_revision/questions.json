@@ -1,0 +1,118 @@
+[
+  {
+    "id": "rev_q_01",
+    "title": "Checkpoint 1 • Decimal Expansion & Rationality Classification",
+    "type": "MCQ",
+    "marks": 1,
+    "prompt": "Which of the following numbers has a non-terminating non-recurring decimal representation?<br><br><strong>(A)</strong> 3/8<br><strong>(B)</strong> 2/11<br><strong>(C)</strong> &radic;17<br><strong>(D)</strong> 0.23&#773;",
+    "options": [
+      "(A) 3/8",
+      "(B) 2/11",
+      "(C) &radic;17",
+      "(D) 0.23&#773;"
+    ],
+    "answer": "<strong>Correct Answer: (C) &radic;17</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Rational numbers have decimal expansions that either terminate (denominator has only prime factors 2 and 5) or repeat periodically (non-terminating recurring).<br>• 3/8: Denominator 8 = 2<sup>3</sup> &rarr; Terminating decimal (0.375).<br>• 2/11: Denominator has prime factor 11 &rarr; Non-terminating recurring (0.181818...).<br>• 0.23&#773; is in bar notation &rarr; Non-terminating recurring (21/90 = 7/30).<br>2. An irrational number has a <strong>non-terminating non-recurring</strong> decimal expansion.<br>3. Since 17 is a prime number and not a perfect square, <strong>&radic;17</strong> is irrational and its decimal digits never terminate and never repeat.",
+    "solution": "<strong>Correct Answer: (C) &radic;17</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Rational numbers have decimal expansions that either terminate (denominator has only prime factors 2 and 5) or repeat periodically (non-terminating recurring).<br>• 3/8: Denominator 8 = 2<sup>3</sup> &rarr; Terminating decimal (0.375).<br>• 2/11: Denominator has prime factor 11 &rarr; Non-terminating recurring (0.181818...).<br>• 0.23&#773; is in bar notation &rarr; Non-terminating recurring (21/90 = 7/30).<br>2. An irrational number has a <strong>non-terminating non-recurring</strong> decimal expansion.<br>3. Since 17 is a prime number and not a perfect square, <strong>&radic;17</strong> is irrational and its decimal digits never terminate and never repeat.",
+    "markingScheme": "• Classifying rational vs irrational decimals: 0.5 mark<br>• Correct option (C) &radic;17: 0.5 mark",
+    "examinerTip": "Square roots of all non-perfect square integers are irrational."
+  },
+  {
+    "id": "rev_q_02",
+    "title": "Checkpoint 2 • Laws of Exponents Synthesis",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "Evaluate using laws of exponents: <strong>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup></strong>.",
+    "answer": "1. Express the composite bases as powers of prime numbers:<br>• 81 = 3<sup>4</sup> &rArr; (81)<sup>-3/4</sup> = (3<sup>4</sup>)<sup>-3/4</sup>.<br>• 16 = 2<sup>4</sup> &rArr; (16)<sup>3/4</sup> = (2<sup>4</sup>)<sup>3/4</sup>.<br><br>2. Apply the power of a power law (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>• (3<sup>4</sup>)<sup>-3/4</sup> = 3<sup>4 &times; (-3/4)</sup> = 3<sup>-3</sup> = 1 / 3<sup>3</sup> = 1 / 27.<br>• (2<sup>4</sup>)<sup>3/4</sup> = 2<sup>4 &times; (3/4)</sup> = 2<sup>3</sup> = 8.<br><br>3. Multiply the simplified terms:<br>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup> = (1 / 27) &times; 8 = <strong>8 / 27</strong>.",
+    "solution": "1. Express the composite bases as powers of prime numbers:<br>• 81 = 3<sup>4</sup> &rArr; (81)<sup>-3/4</sup> = (3<sup>4</sup>)<sup>-3/4</sup>.<br>• 16 = 2<sup>4</sup> &rArr; (16)<sup>3/4</sup> = (2<sup>4</sup>)<sup>3/4</sup>.<br><br>2. Apply the power of a power law (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>• (3<sup>4</sup>)<sup>-3/4</sup> = 3<sup>4 &times; (-3/4)</sup> = 3<sup>-3</sup> = 1 / 3<sup>3</sup> = 1 / 27.<br>• (2<sup>4</sup>)<sup>3/4</sup> = 2<sup>4 &times; (3/4)</sup> = 2<sup>3</sup> = 8.<br><br>3. Multiply the simplified terms:<br>(81)<sup>-3/4</sup> &times; (16)<sup>3/4</sup> = (1 / 27) &times; 8 = <strong>8 / 27</strong>.",
+    "markingScheme": "• Simplifying (81)<sup>-3/4</sup> = 1/27: 1 mark<br>• Simplifying (16)<sup>3/4</sup> = 8 and final answer 8/27: 1 mark",
+    "examinerTip": "Always reduce fractional exponents by factoring bases into prime powers first."
+  },
+  {
+    "id": "rev_q_03",
+    "title": "Checkpoint 3 • Linear Modeling & Rate of Change",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "A gym membership charges a monthly fee modeled by C(m) = 250m + 500, where m is the number of months. What is the constant rate of change (slope) and the initial enrollment fee?",
+    "answer": "1. In the slope-intercept linear model y = mx + c:<br>• m represents the constant rate of change (slope).<br>• c represents the y-intercept (the initial value at m = 0).<br><br>2. Comparing C(m) = 250m + 500 with y = mx + c:<br>• Slope m = <strong>₹250 per month</strong> (rate of change).<br>• Initial enrollment fee c = C(0) = 250(0) + 500 = <strong>₹500</strong>.",
+    "solution": "1. In the slope-intercept linear model y = mx + c:<br>• m represents the constant rate of change (slope).<br>• c represents the y-intercept (the initial value at m = 0).<br><br>2. Comparing C(m) = 250m + 500 with y = mx + c:<br>• Slope m = <strong>₹250 per month</strong> (rate of change).<br>• Initial enrollment fee c = C(0) = 250(0) + 500 = <strong>₹500</strong>.",
+    "markingScheme": "• Identifying constant rate of change m = ₹250/month: 1 mark<br>• Identifying initial fee c = ₹500: 1 mark",
+    "examinerTip": "The coefficient of the independent variable is always the slope / unit rate of change."
+  },
+  {
+    "id": "rev_q_04",
+    "title": "Checkpoint 4 • Reciprocal Algebraic Identities",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "If x + 1/x = 6, find the numerical values of:<br>(i) x<sup>2</sup> + 1/x<sup>2</sup> (1.5m)<br>(ii) x<sup>3</sup> + 1/x<sup>3</sup> (1.5m)",
+    "answer": "(i) Square both sides of x + 1/x = 6:<br>(x + 1/x)<sup>2</sup> = 6<sup>2</sup> = 36<br>x<sup>2</sup> + 2(x)(1/x) + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 1/x<sup>2</sup> = 36 - 2 = <strong>34</strong>.<br><br>(ii) Cube both sides using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(x + 1/x)<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(x &times; 1/x)(x + 1/x)<br>6<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(1)(6)<br>216 = x<sup>3</sup> + 1/x<sup>3</sup> + 18<br>x<sup>3</sup> + 1/x<sup>3</sup> = 216 - 18 = <strong>198</strong>.",
+    "solution": "(i) Square both sides of x + 1/x = 6:<br>(x + 1/x)<sup>2</sup> = 6<sup>2</sup> = 36<br>x<sup>2</sup> + 2(x)(1/x) + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 36<br>x<sup>2</sup> + 1/x<sup>2</sup> = 36 - 2 = <strong>34</strong>.<br><br>(ii) Cube both sides using identity (a + b)<sup>3</sup> = a<sup>3</sup> + b<sup>3</sup> + 3ab(a + b):<br>(x + 1/x)<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(x &times; 1/x)(x + 1/x)<br>6<sup>3</sup> = x<sup>3</sup> + 1/x<sup>3</sup> + 3(1)(6)<br>216 = x<sup>3</sup> + 1/x<sup>3</sup> + 18<br>x<sup>3</sup> + 1/x<sup>3</sup> = 216 - 18 = <strong>198</strong>.",
+    "markingScheme": "• (i) (x + 1/x)<sup>2</sup> expansion and x<sup>2</sup> + 1/x<sup>2</sup> = 34: 1.5 marks<br>• (ii) (x + 1/x)<sup>3</sup> expansion and x<sup>3</sup> + 1/x<sup>3</sup> = 198: 1.5 marks",
+    "examinerTip": "Direct formulas: k^2 - 2 and k^3 - 3k."
+  },
+  {
+    "id": "rev_q_05",
+    "title": "Checkpoint 5 • Conditional Zero Identity Application",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "Evaluate without direct cubing using algebraic identities: <strong>(35)<sup>3</sup> + (-20)<sup>3</sup> + (-15)<sup>3</sup></strong>.",
+    "answer": "Let a = 35, b = -20, and c = -15.<br>1. Check the sum a + b + c:<br>a + b + c = 35 + (-20) + (-15) = 35 - 35 = 0.<br><br>2. Recall the conditional zero property:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>3. Compute 3abc:<br>3(35)(-20)(-15) = 105 &times; 300 = <strong>31,500</strong>.",
+    "solution": "Let a = 35, b = -20, and c = -15.<br>1. Check the sum a + b + c:<br>a + b + c = 35 + (-20) + (-15) = 35 - 35 = 0.<br><br>2. Recall the conditional zero property:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>3. Compute 3abc:<br>3(35)(-20)(-15) = 105 &times; 300 = <strong>31,500</strong>.",
+    "markingScheme": "• Verifying a + b + c = 0: 0.5 mark<br>• Stating identity a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc: 0.5 mark<br>• Computing 3(35)(-20)(-15) = 31,500: 1 mark",
+    "examinerTip": "Multiplying two negative numbers produces a positive result."
+  },
+  {
+    "id": "rev_q_06",
+    "title": "Checkpoint 6 • Distances from Axes & Coordinate Reflections",
+    "type": "VSA",
+    "marks": 2,
+    "prompt": "For the point P(-4, 7):<br>(i) State its perpendicular distance from the x-axis and from the y-axis.<br>(ii) Find the coordinates of its reflection across the origin.",
+    "answer": "(i) Distances from Axes:<br>• Distance from x-axis = |ordinate y| = |7| = <strong>7 units</strong>.<br>• Distance from y-axis = |abscissa x| = |-4| = <strong>4 units</strong>.<br><br>(ii) Reflection across Origin:<br>Transformation rule: (x, y) &rarr; (-x, -y).<br>Applying to P(-4, 7):<br>P'(-(-4), -(7)) = <strong>P'(4, -7)</strong>.",
+    "solution": "(i) Distances from Axes:<br>• Distance from x-axis = |ordinate y| = |7| = <strong>7 units</strong>.<br>• Distance from y-axis = |abscissa x| = |-4| = <strong>4 units</strong>.<br><br>(ii) Reflection across Origin:<br>Transformation rule: (x, y) &rarr; (-x, -y).<br>Applying to P(-4, 7):<br>P'(-(-4), -(7)) = <strong>P'(4, -7)</strong>.",
+    "markingScheme": "• Distance from x-axis = 7 units and y-axis = 4 units: 1 mark<br>• Reflected point across origin P'(4, -7): 1 mark",
+    "examinerTip": "Distances can never be negative. Abscissa distance is to the y-axis, ordinate distance is to the x-axis."
+  },
+  {
+    "id": "rev_q_07",
+    "title": "Checkpoint 7 • Inverse Midpoint & Endpoint Calculation",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "Line segment AB has midpoint M(3, -2). If endpoint A has coordinates (-1, 4), find the coordinates of endpoint B and calculate the length of AB.",
+    "answer": "1. By the inverse midpoint formula:<br>x_B = 2x_M - x_A = 2(3) - (-1) = 6 + 1 = <strong>7</strong>.<br>y_B = 2y_M - y_A = 2(-2) - 4 = -4 - 4 = <strong>-8</strong>.<br>Therefore, endpoint B is <strong>(7, -8)</strong>.<br><br>2. Calculate length AB using the Baudh&amacron;yana-Pythagoras distance formula:<br>d(AB) = &radic;[(x_B - x_A)<sup>2</sup> + (y_B - y_A)<sup>2</sup>]<br>= &radic;[(7 - (-1))<sup>2</sup> + (-8 - 4)<sup>2</sup>]<br>= &radic;[8<sup>2</sup> + (-12)<sup>2</sup>]<br>= &radic;[64 + 144] = &radic;208 = &radic;(16 &times; 13) = <strong>4&radic;13 units</strong> &approx; 14.42 units.<br>*(Alternatively: d(AM) = &radic;[(3 - (-1))^2 + (-2 - 4)^2] = &radic;[16 + 36] = &radic;52 = 2&radic;13 &rArr; AB = 2 &times; AM = 4&radic;13 units)*.",
+    "solution": "1. By the inverse midpoint formula:<br>x_B = 2x_M - x_A = 2(3) - (-1) = 6 + 1 = <strong>7</strong>.<br>y_B = 2y_M - y_A = 2(-2) - 4 = -4 - 4 = <strong>-8</strong>.<br>Therefore, endpoint B is <strong>(7, -8)</strong>.<br><br>2. Calculate length AB using the Baudh&amacron;yana-Pythagoras distance formula:<br>d(AB) = &radic;[(x_B - x_A)<sup>2</sup> + (y_B - y_A)<sup>2</sup>]<br>= &radic;[(7 - (-1))<sup>2</sup> + (-8 - 4)<sup>2</sup>]<br>= &radic;[8<sup>2</sup> + (-12)<sup>2</sup>]<br>= &radic;[64 + 144] = &radic;208 = &radic;(16 &times; 13) = <strong>4&radic;13 units</strong> &approx; 14.42 units.<br>*(Alternatively: d(AM) = &radic;[(3 - (-1))^2 + (-2 - 4)^2] = &radic;[16 + 36] = &radic;52 = 2&radic;13 &rArr; AB = 2 &times; AM = 4&radic;13 units)*.",
+    "markingScheme": "• Finding x_B = 7 and y_B = -8: 1.5 marks<br>• Distance formula calculation AB = 4&radic;13 units: 1.5 marks",
+    "examinerTip": "Remember that AB = 2 &times; AM, providing an instant sanity check on length."
+  },
+  {
+    "id": "rev_q_08",
+    "title": "Checkpoint 8 • Triangle Reconstruction from Midpoints",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "The midpoints of the sides of &Delta;ABC are D(2, 3), E(5, 7), and F(1, 6), where D, E, F are the midpoints of BC, CA, and AB respectively. Find the coordinates of vertex A.",
+    "answer": "By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>Vertex A is adjacent to midpoints E (on AC) and F (on AB), and opposite to midpoint D (on BC).<br><br>Formula for vertex A:<br>x_A = x_E + x_F - x_D<br>y_A = y_E + y_F - y_D<br><br>Substitute coordinates of D(2, 3), E(5, 7), and F(1, 6):<br>x_A = 5 + 1 - 2 = 6 - 2 = <strong>4</strong>.<br>y_A = 7 + 6 - 3 = 13 - 3 = <strong>10</strong>.<br><br>Therefore, the coordinates of vertex A are <strong>(4, 10)</strong>.<br>*(Verification: Midpoint of AB with B(x_D+x_F-x_E, y_D+y_F-y_E) = B(-2, 2) is ((4+(-2))/2, (10+2)/2) = (1, 6) = F)*.",
+    "solution": "By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>Vertex A is adjacent to midpoints E (on AC) and F (on AB), and opposite to midpoint D (on BC).<br><br>Formula for vertex A:<br>x_A = x_E + x_F - x_D<br>y_A = y_E + y_F - y_D<br><br>Substitute coordinates of D(2, 3), E(5, 7), and F(1, 6):<br>x_A = 5 + 1 - 2 = 6 - 2 = <strong>4</strong>.<br>y_A = 7 + 6 - 3 = 13 - 3 = <strong>10</strong>.<br><br>Therefore, the coordinates of vertex A are <strong>(4, 10)</strong>.<br>*(Verification: Midpoint of AB with B(x_D+x_F-x_E, y_D+y_F-y_E) = B(-2, 2) is ((4+(-2))/2, (10+2)/2) = (1, 6) = F)*.",
+    "markingScheme": "• Stating reconstruction formula x_A = x_E + x_F - x_D: 1 mark<br>• Calculating x_A = 4: 1 mark<br>• Calculating y_A = 10 &rArr; A(4, 10): 1 mark",
+    "examinerTip": "Remember the mnemonic: Add the two adjacent midpoints, subtract the opposite."
+  },
+  {
+    "id": "rev_q_09",
+    "title": "Checkpoint 9 • Heron's Formula Area & Altitude",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "A triangle has side lengths a = 13 cm, b = 14 cm, and c = 15 cm.<br>(i) Calculate its area using Heron's formula.<br>(ii) Find the length of the altitude corresponding to the longest side (15 cm).",
+    "answer": "(i) Semi-perimeter s:<br>s = (a + b + c)/2 = (13 + 14 + 15)/2 = 42/2 = <strong>21 cm</strong>.<br><br>Compute factors:<br>s - a = 21 - 13 = 8 cm<br>s - b = 21 - 14 = 7 cm<br>s - c = 21 - 15 = 6 cm.<br><br>Apply Heron's formula:<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (4 &times; 2) &times; 7 &times; (3 &times; 2)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>2</sup> &times; 4]<br>= 7 &times; 3 &times; 2 &times; 2 = <strong>84 cm<sup>2</sup></strong>.<br><br>(ii) Altitude to longest side (c = 15 cm):<br>Area = (1/2) &times; base &times; h<br>84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 cm</strong>.",
+    "solution": "(i) Semi-perimeter s:<br>s = (a + b + c)/2 = (13 + 14 + 15)/2 = 42/2 = <strong>21 cm</strong>.<br><br>Compute factors:<br>s - a = 21 - 13 = 8 cm<br>s - b = 21 - 14 = 7 cm<br>s - c = 21 - 15 = 6 cm.<br><br>Apply Heron's formula:<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6]<br>= &radic;[(7 &times; 3) &times; (4 &times; 2) &times; 7 &times; (3 &times; 2)]<br>= &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 2<sup>2</sup> &times; 4]<br>= 7 &times; 3 &times; 2 &times; 2 = <strong>84 cm<sup>2</sup></strong>.<br><br>(ii) Altitude to longest side (c = 15 cm):<br>Area = (1/2) &times; base &times; h<br>84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 cm</strong>.",
+    "markingScheme": "• (i) s = 21 cm and Area = 84 cm<sup>2</sup> via Heron's formula: 2 marks<br>• (ii) Altitude h = 11.2 cm: 1 mark",
+    "examinerTip": "Pair up prime factors under the radical: 21 &times; 8 &times; 7 &times; 6 = (7 &times; 3) &times; 8 &times; 7 &times; (2 &times; 3) = 7^2 &times; 3^2 &times; 16."
+  },
+  {
+    "id": "rev_q_10",
+    "title": "Checkpoint 10 • Brahmagupta Cyclic Quadrilateral Formula",
+    "type": "SA",
+    "marks": 3,
+    "prompt": "A cyclic quadrilateral has boundary sides a = 9 m, b = 12 m, c = 5 m, and d = 10 m. Calculate its area using Brahmagupta's formula.",
+    "answer": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> &approx; 74.94 m<sup>2</sup>.",
+    "solution": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> &approx; 74.94 m<sup>2</sup>.",
+    "markingScheme": "• Semi-perimeter s = 18 m: 1 mark<br>• Setting up Brahmagupta's formula: 1 mark<br>• Factoring Area = 12&radic;39 m<sup>2</sup>: 1 mark",
+    "examinerTip": "Brahmagupta's formula requires all 4 vertices to lie on a circle."
+  }
+]

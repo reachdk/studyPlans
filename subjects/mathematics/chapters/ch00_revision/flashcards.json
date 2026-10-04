@@ -1,0 +1,142 @@
+[
+  {
+    "id": "rev_fc_01",
+    "front": "What is the condition for a rational fraction p/q (in lowest terms) to have a terminating decimal expansion?",
+    "back": "The prime factorization of the denominator q must be strictly of the form 2^m &times; 5^n, where m and n are non-negative integers. If any other prime factor (such as 3, 7, 11) is present, the decimal is non-terminating recurring.",
+    "category": "NUMBER SYSTEMS",
+    "tag": "TERMINATING DECIMALS"
+  },
+  {
+    "id": "rev_fc_02",
+    "front": "State the shortcut rule for converting a mixed recurring decimal 0.a\u0304b\u0304 into p/q form.",
+    "back": "0.ab\u0305 = (ab - a) / 90. Numerator = Full digits minus non-repeating digits. Denominator = As many 9s as repeating digits (1), followed by as many 0s as non-repeating digits (1). Example: 0.23\u0305 = (23 - 2)/90 = 21/90 = 7/30.",
+    "category": "NUMBER SYSTEMS",
+    "tag": "RECURRING DECIMALS"
+  },
+  {
+    "id": "rev_fc_03",
+    "front": "What are the degrees of (i) a non-zero constant polynomial, and (ii) the zero polynomial?",
+    "back": "(i) Non-zero constant polynomial p(x) = c (c &ne; 0) has degree 0 (since c = cx^0).\n(ii) Zero polynomial p(x) = 0 has an UNDEFINED degree (cannot determine a unique leading power).",
+    "category": "POLYNOMIALS",
+    "tag": "DEGREE CLASSIFICATION"
+  },
+  {
+    "id": "rev_fc_04",
+    "front": "How do you calculate the slope (constant rate of change) of a straight line passing through (x1, y1) and (x2, y2)?",
+    "back": "Slope m = &Delta;y / &Delta;x = (y2 - y1) / (x2 - x1).\n• m > 0 &rArr; Linear Growth (line rises left-to-right).\n• m < 0 &rArr; Linear Decay (line falls left-to-right).\n• m = 0 &rArr; Horizontal line.\n• m undefined &rArr; Vertical line.",
+    "category": "ALGEBRA",
+    "tag": "SLOPE & RATE OF CHANGE"
+  },
+  {
+    "id": "rev_fc_05",
+    "front": "State the slopes condition for two non-vertical straight lines to be: (i) Parallel, and (ii) Perpendicular.",
+    "back": "(i) Parallel Lines: m1 = m2 (equal slopes).\n(ii) Perpendicular Lines: m1 &times; m2 = -1 &rArr; m2 = -1 / m1 (negative reciprocal slopes).",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "PARALLEL & PERPENDICULAR"
+  },
+  {
+    "id": "rev_fc_06",
+    "front": "What is the three-variable cubic identity for a^3 + b^3 + c^3 - 3abc?",
+    "back": "a^3 + b^3 + c^3 - 3abc = (a + b + c)(a^2 + b^2 + c^2 - ab - bc - ca)\nAlternative Form = (1/2)(a + b + c)[(a - b)^2 + (b - c)^2 + (c - a)^2].",
+    "category": "ALGEBRAIC IDENTITIES",
+    "tag": "THREE-VARIABLE CUBIC"
+  },
+  {
+    "id": "rev_fc_07",
+    "front": "What is the Conditional Zero Property of the three-variable cubic identity?",
+    "back": "If a + b + c = 0, then a^3 + b^3 + c^3 = 3abc.\nUsed to evaluate cubic sums like (28)^3 + (-15)^3 + (-13)^3 = 3(28)(-15)(-13) = 16,380 instantly without direct cubing.",
+    "category": "ALGEBRAIC IDENTITIES",
+    "tag": "CONDITIONAL ZERO"
+  },
+  {
+    "id": "rev_fc_08",
+    "front": "If x + 1/x = k, what are the values of: (i) x^2 + 1/x^2, and (ii) x^3 + 1/x^3?",
+    "back": "(i) x^2 + 1/x^2 = (x + 1/x)^2 - 2 = k^2 - 2.\n(ii) x^3 + 1/x^3 = (x + 1/x)^3 - 3(x + 1/x) = k^3 - 3k.",
+    "category": "ALGEBRAIC IDENTITIES",
+    "tag": "RECIPROCAL IDENTITIES"
+  },
+  {
+    "id": "rev_fc_09",
+    "front": "State the Remainder Theorem and the Factor Theorem.",
+    "back": "• Remainder Theorem: When polynomial p(x) is divided by (x - a), the remainder is R = p(a).\n• Factor Theorem: (x - a) is a factor of p(x) if and only if p(a) = 0.",
+    "category": "POLYNOMIALS",
+    "tag": "FACTOR & REMAINDER"
+  },
+  {
+    "id": "rev_fc_10",
+    "front": "What is the perpendicular distance of a point P(x, y) from: (i) the x-axis, and (ii) the y-axis?",
+    "back": "(i) Distance from x-axis = |y| (absolute ordinate).\n(ii) Distance from y-axis = |x| (absolute abscissa).\nDistance is always non-negative.",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "AXIS DISTANCES"
+  },
+  {
+    "id": "rev_fc_11",
+    "front": "State the Baudh\u0101yana\u2013Pythagoras Distance Formula between points (x1, y1) and (x2, y2).",
+    "back": "d = &radic;[(x2 - x1)^2 + (y2 - y1)^2].\nDistance from the origin O(0, 0) to P(x, y) simplifies to: OP = &radic;(x^2 + y^2).",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "DISTANCE FORMULA"
+  },
+  {
+    "id": "rev_fc_12",
+    "front": "How do you find the missing endpoint B(xB, yB) when midpoint M(xM, yM) and endpoint A(xA, yA) are given?",
+    "back": "Inverse midpoint formulas:\nxB = 2xM - xA\nyB = 2yM - yA.",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "MIDPOINT REVERSAL"
+  },
+  {
+    "id": "rev_fc_13",
+    "front": "How do you reconstruct vertex A of &Delta;ABC given side midpoints D (opp A), E (opp B), and F (opp C)?",
+    "back": "xA = xE + xF - xD\nyA = yE + yF - yD\nRule: Add the coordinates of the two adjacent midpoints and subtract the opposite midpoint.",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "TRIANGLE RECONSTRUCTION"
+  },
+  {
+    "id": "rev_fc_14",
+    "front": "How do you test whether a point P(x, y) lies inside, on, or outside a circle with center C(h, k) and radius r?",
+    "back": "Compute d^2 = (x - h)^2 + (y - k)^2:\n• d < r &rArr; Strictly inside the circle.\n• d = r &rArr; Exactly on the circle boundary.\n• d > r &rArr; Strictly outside the circle.",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "CIRCLE LOCUS"
+  },
+  {
+    "id": "rev_fc_15",
+    "front": "State Heron's Formula for the area of any triangle and its semi-perimeter formula.",
+    "back": "Semi-perimeter s = (a + b + c) / 2.\nArea = &radic;[s(s - a)(s - b)(s - c)].\nValid only if s > a, s > b, s > c (triangle inequality).",
+    "category": "PERIMETER & AREA",
+    "tag": "HERON FORMULA"
+  },
+  {
+    "id": "rev_fc_16",
+    "front": "What are the area and altitude formulas for an equilateral triangle of side length a?",
+    "back": "• Area = (&radic;3 / 4) &times; a^2\n• Altitude (height) h = (&radic;3 / 2) &times; a.",
+    "category": "PERIMETER & AREA",
+    "tag": "EQUILATERAL TRIANGLE"
+  },
+  {
+    "id": "rev_fc_17",
+    "front": "State Brahmagupta's Master Formula for the area of a cyclic quadrilateral.",
+    "back": "Semi-perimeter s = (a + b + c + d) / 2.\nArea = &radic;[(s - a)(s - b)(s - c)(s - d)].\nAs d &rarr; 0, this formula degenerates directly into Heron's Formula for a triangle.",
+    "category": "PERIMETER & AREA",
+    "tag": "BRAHMAGUPTA FORMULA"
+  },
+  {
+    "id": "rev_fc_18",
+    "front": "State the formulas for: (i) Arc Length L, (ii) Sector Area, and (iii) Sector Perimeter of a circular sector of radius r and angle &theta;.",
+    "back": "(i) Arc Length L = (&theta; / 360&deg;) &times; 2&pi;r\n(ii) Sector Area = (&theta; / 360&deg;) &times; &pi;r^2 = (1/2)Lr\n(iii) Sector Perimeter = L + 2r (arc length + two radial boundaries).",
+    "category": "PERIMETER & AREA",
+    "tag": "SECTORS & ARCS"
+  },
+  {
+    "id": "rev_fc_19",
+    "front": "If every side of a 2D geometric figure is multiplied by scale factor k, how do perimeter and area change?",
+    "back": "• Perimeter scales linearly: P' = k &times; P.\n• Area scales quadratically: A' = k^2 &times; A.\nIf sides are doubled (k = 2), area quadruples (4A), representing a 300% increase.",
+    "category": "PERIMETER & AREA",
+    "tag": "AREA SCALING"
+  },
+  {
+    "id": "rev_fc_20",
+    "front": "What are the coordinates of the reflection of point P(x, y) across: (i) x-axis, (ii) y-axis, and (iii) origin?",
+    "back": "(i) Reflection across x-axis: (x, -y)\n(ii) Reflection across y-axis: (-x, y)\n(iii) Reflection across origin: (-x, -y).",
+    "category": "COORDINATE GEOMETRY",
+    "tag": "REFLECTIONS"
+  }
+]

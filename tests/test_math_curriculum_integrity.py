@@ -89,6 +89,33 @@ def test_chapter_6_perimeter_and_area_coverage():
     assert "Brahmagupta" in questions, "Ch 6 questions missing Brahmagupta problem"
     print("✅ Chapter 6 (Perimeter & Area) covers Circles, Arcs, Sectors, and Brahmagupta formula.")
 
+def test_revision_chapter_coverage():
+    """Verify Revision meta-chapter collates formulas and identities across all chapters."""
+    rev_dir = CHAPTERS_DIR / "ch00_revision"
+    assert rev_dir.exists(), "ch00_revision folder missing"
+    
+    meta = json.loads((rev_dir / "meta.json").read_text(encoding="utf-8"))
+    assert meta["id"] == "math_rev", "Revision meta ID mismatch"
+    assert meta["code"] == "Revision", "Revision code mismatch"
+    
+    guide = (rev_dir / "guide.md").read_text(encoding="utf-8")
+    assert "Baudhāyana–Pythagoras" in guide, "Revision guide missing Distance formula"
+    assert "Heron's Master Formula" in guide or "Heron's Formula" in guide, "Revision guide missing Heron's formula"
+    assert "Brahmagupta" in guide, "Revision guide missing Brahmagupta's formula"
+    assert "Laws of Exponents" in guide, "Revision guide missing Laws of Exponents"
+    assert "Algebraic Identities" in guide, "Revision guide missing Algebraic Identities"
+    assert "Midpoint Formula" in guide, "Revision guide missing Midpoint Formula"
+    assert "Trisection" in guide, "Revision guide missing Trisection"
+    assert "Top 10 High-Stakes Exam Traps" in guide, "Revision guide missing Top 10 traps checklist"
+    
+    flashcards = json.loads((rev_dir / "flashcards.json").read_text(encoding="utf-8"))
+    assert len(flashcards) >= 15, f"Expected at least 15 flashcards, got {len(flashcards)}"
+    
+    questions = json.loads((rev_dir / "questions.json").read_text(encoding="utf-8"))
+    assert len(questions) >= 8, f"Expected at least 8 questions, got {len(questions)}"
+    
+    print(f"✅ Revision Meta-Chapter verified with {len(flashcards)} flashcards and {len(questions)} checkpoints.")
+
 def test_compiled_dashboard_integrity():
     """Verify compiled dashboard file exists, is valid size, and has zero unrendered templates."""
     dash = ROOT / "study_math_dashboard.html"
@@ -103,6 +130,7 @@ def test_compiled_dashboard_integrity():
     assert "{{PORTAL_TITLE}}" not in content, "Unrendered PORTAL_TITLE placeholder"
     assert "calcDualPoints" in content, "calcDualPoints interactive widget handler missing from compiled dashboard"
     assert "Midpoint Formula" in content, "Midpoint Formula missing from compiled dashboard"
+    assert "math_rev" in content, "math_rev missing from compiled dashboard"
     
     print(f"✅ Compiled study_math_dashboard.html ({len(content):,} bytes) verified with zero unrendered tags.")
 
@@ -114,5 +142,6 @@ if __name__ == "__main__":
     test_chapter_3_world_of_numbers_coverage()
     test_chapter_4_algebraic_identities_coverage()
     test_chapter_6_perimeter_and_area_coverage()
+    test_revision_chapter_coverage()
     test_compiled_dashboard_integrity()
-    print("🎉 All 7 Mathematics Curriculum Integrity Tests Passed Successfully!")
+    print("🎉 All 8 Mathematics Curriculum Integrity Tests Passed Successfully!")

@@ -7,6 +7,14 @@
   "subtitle": "NCERT Ganita Manjari • CBSE Exam Preparation",
   "categories": [
     {
+      "id": "rev",
+      "name": "Master Revision",
+      "color": "#d97706",
+      "light": "#fffbeb",
+      "colorDark": "#f59e0b",
+      "lightDark": "#451a03"
+    },
+    {
       "id": "num",
       "name": "Number Systems",
       "color": "#0284c7",
@@ -32,6 +40,7 @@
     }
   ],
   "defaultActiveScope": [
+    "math_rev",
     "iemh101",
     "iemh102",
     "iemh103",
@@ -39,6 +48,7 @@
     "iemh106"
   ],
   "chapters": [
+    { "folder": "ch00_revision" },
     { "folder": "ch01_coordinates" },
     { "folder": "ch02_linear_polynomials" },
     { "folder": "ch03_world_of_numbers" },
