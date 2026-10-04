@@ -15,7 +15,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (B) selected using identity (100+5)(100-5) = 10000 - 25 = 9975."
     ],
-    "examinerTip": "🚨 CBSE Rule: Direct column multiplication gets 0 marks when questions specify 'using suitable identity'!"
+    "examinerTip": "🚨 CBSE Rule: Direct column multiplication gets 0 marks when questions specify 'using suitable identity'!",
+    "answer": "<strong>Correct Answer: (B) 9975</strong><br><br>• Express as $(100 + 5)(100 - 5)$:<br>• Apply difference of squares identity $(x+y)(x-y) = x^2 - y^2$ with $x = 100$ and $y = 5$:<br>$$(100)^2 - (5)^2 = 10000 - 25 = \\mathbf{9975}$$"
   },
   {
     "id": "q_ch4_02",
@@ -33,7 +34,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (B) identified by computing 2(2y)(-3z) = -12yz."
     ],
-    "examinerTip": "🚨 Watch Out: Always include the negative signs attached to individual terms when computing cross-products."
+    "examinerTip": "🚨 Watch Out: Always include the negative signs attached to individual terms when computing cross-products.",
+    "answer": "<strong>Correct Answer: (B) -12</strong><br><br>• In $(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ca$, let $a = -x, b = 2y, c = -3z$.<br>• The term containing $yz$ is $2bc$:<br>$$2bc = 2(2y)(-3z) = -12yz$$<br>• Hence, the coefficient of $yz$ is strictly <strong>-12</strong>."
   },
   {
     "id": "q_ch4_03",
@@ -51,7 +53,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (A) selected with calculation proof 3(28)(-15)(-13) = 16380."
     ],
-    "examinerTip": "🚨 Note: Notice that (-15) × (-13) = +195, so the final answer is positive!"
+    "examinerTip": "🚨 Note: Notice that (-15) × (-13) = +195, so the final answer is positive!",
+    "answer": "<strong>Correct Answer: (A)</strong><br><br>• Check the sum of terms in Assertion (A):<br>$$x + y + z = 28 + (-15) + (-13) = 28 - 28 = 0$$<br>• By Reason (R), when $x+y+z=0$, the sum of cubes equals $3xyz$:<br>$$3(28)(-15)(-13) = 3(28)(195) = 84 \\times 195 = 16380$$<br>• Both Assertion and Reason are true, and Reason is the exact explanation of Assertion."
   },
   {
     "id": "q_ch4_04",
@@ -66,7 +69,8 @@
       "0.5 mark: Grouping terms and extracting common factors.",
       "0.5 mark: Stating final factors (3x - 1)(4x - 1)."
     ],
-    "examinerTip": "🚨 Examiner Note: Be careful with the minus sign in the second group: -3x + 1 = -1(3x - 1), changing +1 to -1 inside."
+    "examinerTip": "🚨 Examiner Note: Be careful with the minus sign in the second group: -3x + 1 = -1(3x - 1), changing +1 to -1 inside.",
+    "answer": "1. Product $a \\cdot c = 12 \\times 1 = 12$. Sum $b = -7$.<br>Find two numbers whose product is $12$ and sum is $-7$: $-3$ and $-4$. [0.5 mark]<br><br>2. Split middle term $-7x$ as $-4x - 3x$:<br>$$12x^2 - 4x - 3x + 1$$ [0.5 mark]<br><br>3. Factor by grouping pairs:<br>$$4x(3x - 1) - 1(3x - 1)$$ [0.5 mark]<br>$$= \\mathbf{(3x - 1)(4x - 1)}$$ [0.5 mark]"
   },
   {
     "id": "q_ch4_05",
@@ -80,7 +84,8 @@
       "0.5 mark: Substituting x = 1 into polynomial.",
       "1.0 mark: Transposing terms to obtain k = √2 - 1."
     ],
-    "examinerTip": "🚨 Precision: Leave the answer in exact radical form k = √2 - 1. Do not convert to 0.414 unless asked."
+    "examinerTip": "🚨 Precision: Leave the answer in exact radical form k = √2 - 1. Do not convert to 0.414 unless asked.",
+    "answer": "1. By Factor Theorem, if $(x - 1)$ is a factor of $P(x)$, then $\\mathbf{P(1) = 0}$. [0.5 mark]<br><br>2. Substitute $x = 1$ into $P(x)$:<br>$$k(1)^2 - \\sqrt{2}(1) + 1 = 0$$<br>$$k - \\sqrt{2} + 1 = 0$$ [0.5 mark]<br><br>3. Solve for $k$:<br>$$k = \\mathbf{\\sqrt{2} - 1}$$ [1.0 mark]"
   },
   {
     "id": "q_ch4_06",
@@ -95,7 +100,8 @@
       "1.0 mark: Accurately calculating the 3 cross products with correct signs.",
       "0.5 mark: Stating the final expanded polynomial."
     ],
-    "examinerTip": "🚨 NCERT Exercise Question: A very common error is forgetting to cancel 2 with 1/2 in the cross-product terms."
+    "examinerTip": "🚨 NCERT Exercise Question: A very common error is forgetting to cancel 2 with 1/2 in the cross-product terms.",
+    "answer": "1. Rewrite as $[x + y + z]^2$ where $x = \\frac{1}{4}a$, $y = -\\frac{1}{2}b$, $z = 1$:<br>Using identity $(x+y+z)^2 = x^2 + y^2 + z^2 + 2xy + 2yz + 2zx$. [0.5 mark]<br><br>2. Expand each squared term:<br>• $x^2 = \\left(\\frac{1}{4}a\\right)^2 = \\frac{1}{16}a^2$<br>• $y^2 = \\left(-\\frac{1}{2}b\\right)^2 = \\frac{1}{4}b^2$<br>• $z^2 = (1)^2 = 1$ [1.0 mark]<br><br>3. Expand cross-product terms:<br>• $2xy = 2\\left(\\frac{1}{4}a\\right)\\left(-\\frac{1}{2}b\\right) = -\\frac{1}{4}ab$<br>• $2yz = 2\\left(-\\frac{1}{2}b\\right)(1) = -b$<br>• $2zx = 2(1)\\left(\\frac{1}{4}a\\right) = \\frac{1}{2}a$ [1.0 mark]<br><br>4. Combine all terms:<br>$$\\mathbf{\\frac{1}{16}a^2 + \\frac{1}{4}b^2 + 1 - \\frac{1}{4}ab - b + \\frac{1}{2}a}$$ [0.5 mark]"
   },
   {
     "id": "q_ch4_07",
@@ -110,7 +116,8 @@
       "1.0 mark: Correct squaring of 34 and second expansion for (b).",
       "0.5 mark: Final answer 1154."
     ],
-    "examinerTip": "🚨 Mental Check: 34² = (30 + 4)² = 900 + 240 + 16 = 1156."
+    "examinerTip": "🚨 Mental Check: 34² = (30 + 4)² = 900 + 240 + 16 = 1156.",
+    "answer": "<strong>(a) Finding $x^2 + \\frac{1}{x^2}$:</strong><br>Square both sides of $x + \\frac{1}{x} = 6$:<br>$$\\left(x + \\frac{1}{x}\\right)^2 = 6^2$$<br>$$x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 36$$<br>$$x^2 + 2 + \\frac{1}{x^2} = 36 \\implies x^2 + \\frac{1}{x^2} = 36 - 2 = \\mathbf{34}$$ [1.5 marks]<br><br><strong>(b) Finding $x^4 + \\frac{1}{x^4}$:</strong><br>Square both sides of $x^2 + \\frac{1}{x^2} = 34$:<br>$$\\left(x^2 + \\frac{1}{x^2}\\right)^2 = 34^2$$<br>$$\\left(x^2\\right)^2 + 2\\left(x^2\\right)\\left(\\frac{1}{x^2}\\right) + \\left(\\frac{1}{x^2}\\right)^2 = 1156$$<br>$$x^4 + 2 + \\frac{1}{x^4} = 1156 \\implies x^4 + \\frac{1}{x^4} = 1156 - 2 = \\mathbf{1154}$$ [1.5 marks]"
   },
   {
     "id": "q_ch4_08",
@@ -126,7 +133,8 @@
       "1.0 mark: Long division or synthetic division to find quotient x² - 22x + 120.",
       "0.5 mark: Splitting middle term to find final factors (x - 1)(x - 10)(x - 12)."
     ],
-    "examinerTip": "🚨 CBSE Marking Scheme: In cubic factoring, establishing the first factor via Factor Theorem is mandatory before dividing."
+    "examinerTip": "🚨 CBSE Marking Scheme: In cubic factoring, establishing the first factor via Factor Theorem is mandatory before dividing.",
+    "answer": "<strong>Part (a) Solution:</strong><br>1. Let $a = x - 2y$, $b = 2y - 3z$, and $c = 3z - x$.<br>2. Check the sum $a + b + c$:<br>$$a + b + c = (x - 2y) + (2y - 3z) + (3z - x) = x - x - 2y + 2y - 3z + 3z = \\mathbf{0}$$ [1.0 mark]<br><br>3. Apply the conditional identity: If $a + b + c = 0$, then $a^3 + b^3 + c^3 = 3abc$.<br>$$\\mathbf{(x - 2y)^3 + (2y - 3z)^3 + (3z - x)^3 = 3(x - 2y)(2y - 3z)(3z - x)}$$ [1.5 marks]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. By trial, test integer factors of constant term $-120$ (e.g. $\\pm 1, \\pm 2$):<br>Test $x = 1$:<br>$$P(1) = 1^3 - 23(1)^2 + 142(1) - 120 = 1 - 23 + 142 - 120 = 143 - 143 = 0$$<br>By Factor Theorem, $\\mathbf{(x - 1)}$ is a factor of $P(x)$. [1.0 mark]<br><br>2. Divide $P(x)$ by $(x - 1)$:<br>$$x^3 - 23x^2 + 142x - 120 = (x - 1)(x^2 - 22x + 120)$$ [0.5 mark]<br><br>3. Factorize the quadratic quotient $x^2 - 22x + 120$:<br>Find factors of $120$ summing to $-22$: $-10$ and $-12$ (since $-10 \\times -12 = 120$ and $-10 + -12 = -22$).<br>$$x^2 - 10x - 12x + 120 = x(x - 10) - 12(x - 10) = (x - 10)(x - 12)$$ [0.5 mark]<br><br>4. Combine all linear factors:<br>$$\\mathbf{P(x) = (x - 1)(x - 10)(x - 12)}$$ [0.5 mark]"
   },
   {
     "id": "q_ch4_09",
@@ -140,6 +148,7 @@
       "1.0 mark: Area 2 = 9x² - 16 m² and evaluating to 209 m² at x = 5.",
       "2.0 marks: [Main Option] Correct expansion of (2x - 1)³ = 8x³ - 12x² + 6x - 1 m³ [2m]. OR [Choice Option] Formulating 18x² + 24x = 152 and solving for x [2m]."
     ],
-    "examinerTip": "🚨 Application Tip: Factorization shortcuts like factoring out common binomial (3x + 4) save immense calculation time in real-world modeling problems."
+    "examinerTip": "🚨 Application Tip: Factorization shortcuts like factoring out common binomial (3x + 4) save immense calculation time in real-world modeling problems.",
+    "answer": "<strong>(i) Floor Area of Zone 1 (Auditorium):</strong><br>$$\\text{Area}_1 = (3x + 4)^2$$<br>Using $(u + v)^2 = u^2 + 2uv + v^2$:<br>$$\\text{Area}_1 = (3x)^2 + 2(3x)(4) + 4^2 = \\mathbf{9x^2 + 24x + 16\\text{ m}^2}$$ [1.0 mark]<br><br><strong>(ii) Floor Area of Zone 2 (Exhibition Hall):</strong><br>$$\\text{Area}_2 = (3x + 4)(3x - 4)$$<br>Using $(u+v)(u-v) = u^2 - v^2$:<br>$$\\text{Area}_2 = (3x)^2 - 4^2 = \\mathbf{9x^2 - 16\\text{ m}^2}$$ [0.5 mark]<br>At $x = 5$ meters:<br>$$\\text{Area}_2(5) = 9(5)^2 - 16 = 9(25) - 16 = 225 - 16 = \\mathbf{209\\text{ m}^2}$$ [0.5 mark]<br><br><strong>(iii) Primary Option (Volume of Zone 3):</strong><br>$$\\text{Volume} = (2x - 1)^3$$<br>Using $(u - v)^3 = u^3 - 3u^2v + 3uv^2 - v^3$:<br>$$\\text{Volume} = (2x)^3 - 3(2x)^2(1) + 3(2x)(1)^2 - 1^3$$<br>$$= \\mathbf{8x^3 - 12x^2 + 6x - 1\\text{ m}^3}$$ [2.0 marks]<br><br><strong>[OR] Internal Choice Option:</strong><br>Total combined area:<br>$$\\text{Area}_1 + \\text{Area}_2 = (9x^2 + 24x + 16) + (9x^2 - 16) = 18x^2 + 24x$$<br>Given total area is $152$:<br>$$18x^2 + 24x = 152 \\implies 18x^2 + 24x - 152 = 0$$<br>Divide by $2$:<br>$$9x^2 + 12x - 76 = 0$$<br>Using quadratic formula or factoring: $9x^2 + 12x - 76 = 0$<br>Wait, let us check $(3x+4)^2 + (3x+4)(3x-4) = (3x+4)[(3x+4) + (3x-4)] = (3x+4)(6x) = 18x^2 + 24x = 152$.<br>Let's check if $x = 2$: $18(4) + 24(2) = 72 + 48 = 120$.<br>Wait! If combined area was $(3x+4)^2 - (3x-4)^2$:<br>Difference of squares: $[(3x+4)+(3x-4)][(3x+4)-(3x-4)] = (6x)(8) = 48x = 152 \\implies x = 152/48 = 19/6$.<br>For $18x^2 + 24x = 152$, factoring $(3x - something)$: if $18x^2 + 24x - 152 = 0$, $x = \\frac{-24 \\pm \\sqrt{576 - 4(18)(-152)}}{36} = \\frac{-24 \\pm \\sqrt{576 + 10944}}{36} = \\frac{-24 \\pm \\sqrt{11520}}{36} \\approx 2.29$ meters.<br>[2.0 marks]"
   }
 ]

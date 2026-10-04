@@ -15,7 +15,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (A) identified with reasoning that distance to y-axis is |x| = |-4| = 4 units."
     ],
-    "examinerTip": "🚨 Classic Trap: Over 40% of students write -4 or 7. Distance from y-axis is horizontal (|x|), and distance can never be negative."
+    "examinerTip": "🚨 Classic Trap: Over 40% of students write -4 or 7. Distance from y-axis is horizontal (|x|), and distance can never be negative.",
+    "answer": "<strong>Correct Answer: (A) 4 units</strong><br><br>• The perpendicular distance of any point $(x, y)$ from the $y$-axis is given by the absolute value of its abscissa: $|x|$.<br>• Here, abscissa $x = -4$, so the perpendicular distance is $|-4| = \\mathbf{4\\text{ units}}$.<br>• Distance is a physical geometric measure and cannot be negative."
   },
   {
     "id": "q_ch1_02",
@@ -33,7 +34,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (A) selected after applying (x1+x2)/2 and (y1+y2)/2."
     ],
-    "examinerTip": "🚨 Tip: Be careful with negative signs when adding: -8 + 6 = -2, -2/2 = -1."
+    "examinerTip": "🚨 Tip: Be careful with negative signs when adding: -8 + 6 = -2, -2/2 = -1.",
+    "answer": "<strong>Correct Answer: (A) $(-1, 2)$</strong><br><br>By the Midpoint Formula:<br>$$M = \\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right) = \\left(\\frac{-8 + 6}{2}, \\frac{7 + (-3)}{2}\\right) = \\left(\\frac{-2}{2}, \\frac{4}{2}\\right) = \\mathbf{(-1, 2)}$$"
   },
   {
     "id": "q_ch1_03",
@@ -51,7 +53,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (A) identified with valid conceptual reasoning."
     ],
-    "examinerTip": "🚨 CBSE Rule: Quadrants are open geometric sets bounded by the axes. The axes themselves are boundary lines, not part of any quadrant."
+    "examinerTip": "🚨 CBSE Rule: Quadrants are open geometric sets bounded by the axes. The axes themselves are boundary lines, not part of any quadrant.",
+    "answer": "<strong>Correct Answer: (A)</strong><br><br>• <strong>Assertion (A) is true:</strong> Since the $x$-coordinate is $0$, point $M(0, -5)$ lies on the negative $y$-axis, not in any quadrant.<br>• <strong>Reason (R) is true:</strong> By definition, points on the axes separate the quadrants and do not belong to Quadrants I, II, III, or IV.<br>• Reason (R) correctly explains Assertion (A)."
   },
   {
     "id": "q_ch1_04",
@@ -63,7 +66,8 @@
     "markingScheme": [
       "0.5 mark for each correct location precisely specified."
     ],
-    "examinerTip": "🚨 Note: For (iii) and (iv), specifying 'negative x-axis' or 'positive y-axis' demonstrates top-tier precision."
+    "examinerTip": "🚨 Note: For (iii) and (iv), specifying 'negative x-axis' or 'positive y-axis' demonstrates top-tier precision.",
+    "answer": "• <strong>(i) Point $A(-3, 5)$:</strong> $x < 0, y > 0 \\implies$ <strong>Quadrant II</strong>. [0.5 mark]<br>• <strong>(ii) Point $B(4, -2)$:</strong> $x > 0, y < 0 \\implies$ <strong>Quadrant IV</strong>. [0.5 mark]<br>• <strong>(iii) Point $C(-6, 0)$:</strong> Since $y = 0$ and $x < 0 \\implies$ <strong>Negative $x$-axis</strong>. [0.5 mark]<br>• <strong>(iv) Point $D(0, 7)$:</strong> Since $x = 0$ and $y > 0 \\implies$ <strong>Positive $y$-axis</strong>. [0.5 mark]"
   },
   {
     "id": "q_ch1_05",
@@ -76,7 +80,8 @@
       "1.0 mark for formula OP = √(x² + y²).",
       "1.0 mark for computing √169 = 13 units."
     ],
-    "examinerTip": "🚨 Tip: (-5)² = +25, never -25! Squaring any real coordinate always gives a positive quantity."
+    "examinerTip": "🚨 Tip: (-5)² = +25, never -25! Squaring any real coordinate always gives a positive quantity.",
+    "answer": "By the Baudhāyana–Pythagoras Distance Formula:<br>$$OP = \\sqrt{x^2 + y^2}$$<br>$$OP = \\sqrt{(-5)^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = \\mathbf{13\\text{ units}}$$ [2.0 marks]"
   },
   {
     "id": "q_ch1_06",
@@ -90,7 +95,8 @@
       "1.0 mark for solving -4 + y = 2 => y = 6.",
       "1.0 mark for identifying Quadrant II."
     ],
-    "examinerTip": "🚨 Diagnostic Check: Always substitute your answer back into (x_A + x_B)/2 to verify: (3 + (-17))/2 = -14/2 = -7."
+    "examinerTip": "🚨 Diagnostic Check: Always substitute your answer back into (x_A + x_B)/2 to verify: (3 + (-17))/2 = -14/2 = -7.",
+    "answer": "<strong>(a) Finding Coordinates of $B(x, y)$:</strong><br>Using the Midpoint Formula:<br>$$\\frac{x_A + x_B}{2} = x_M \\implies \\frac{3 + x}{2} = -7$$<br>$$3 + x = -14 \\implies x = -14 - 3 = \\mathbf{-17}$$ [1.0 mark]<br><br>$$\\frac{y_A + y_B}{2} = y_M \\implies \\frac{-4 + y}{2} = 1$$<br>$$-4 + y = 2 \\implies y = 2 + 4 = \\mathbf{6}$$ [1.0 mark]<br>Hence, endpoint $B$ is $\\mathbf{(-17, 6)}$.<br><br><strong>(b) Quadrant Location:</strong><br>For $B(-17, 6)$, abscissa is negative ($x < 0$) and ordinate is positive ($y > 0$).<br>Therefore, point $B$ lies in <strong>Quadrant II</strong>. [1.0 mark]"
   },
   {
     "id": "q_ch1_07",
@@ -104,7 +110,8 @@
       "1.0 mark: Correct coordinates for P(8, 4).",
       "1.0 mark: Correct coordinates for Q(12, 1)."
     ],
-    "examinerTip": "🚨 CBSE Method: You do NOT need the Class 10 section formula! The step-delta method or iterative midpoint method gets full marks in Class 9."
+    "examinerTip": "🚨 CBSE Method: You do NOT need the Class 10 section formula! The step-delta method or iterative midpoint method gets full marks in Class 9.",
+    "answer": "<strong>(a) Midpoint Connection:</strong><br>Since $P$ and $Q$ trisect $AB$, we have $AP = PQ = QB$.<br>Therefore:<br>• $P$ is the midpoint of segment $AQ$.<br>• $Q$ is the midpoint of segment $PB$. [1.0 mark]<br><br><strong>(b) Calculating Coordinates of $P$ and $Q$:</strong><br>Total horizontal shift: $\\Delta x = 16 - 4 = 12$.<br>Step size for each of the three equal parts: $\\delta x = \\frac{12}{3} = 4$.<br><br>Total vertical shift: $\\Delta y = -2 - 7 = -9$.<br>Step size for each of the three equal parts: $\\delta y = \\frac{-9}{3} = -3$.<br><br>• For point $P$ (1 step from $A$):<br>$$x_P = 4 + 4 = 8, \\quad y_P = 7 + (-3) = 4 \\implies \\mathbf{P(8, 4)}$$ [1.0 mark]<br><br>• For point $Q$ (2 steps from $A$, or 1 step from $P$):<br>$$x_Q = 8 + 4 = 12, \\quad y_Q = 4 + (-3) = 1 \\implies \\mathbf{Q(12, 1)}$$ [1.0 mark]<br><br><em>Midpoint Check:</em> Midpoint of $PB = \\left(\\frac{8 + 16}{2}, \\frac{4 + (-2)}{2}\\right) = (12, 1) = Q$. Verified!"
   },
   {
     "id": "q_ch1_08",
@@ -118,7 +125,8 @@
       "1.0 mark for calculating OD = √61 and concluding inside.",
       "1.0 mark for calculating OE = √81 and concluding outside."
     ],
-    "examinerTip": "🚨 Geometric Logic: Any point with distance d < r is inside; d = r is on the circle; d > r is outside."
+    "examinerTip": "🚨 Geometric Logic: Any point with distance d < r is inside; d = r is on the circle; d > r is outside.",
+    "answer": "<strong>(a) Radius of Circle $K$:</strong><br>The radius is the distance from center $O(0, 0)$ to any point on the circle, e.g., $A(1, -8)$:<br>$$r = OA = \\sqrt{1^2 + (-8)^2} = \\sqrt{1 + 64} = \\mathbf{\\sqrt{65}\\text{ units}}$$ [1.0 mark]<br>(Notice: $OB = \\sqrt{(-4)^2 + 7^2} = \\sqrt{65}$ and $OC = \\sqrt{(-7)^2 + (-4)^2} = \\sqrt{65}$).<br><br><strong>(b) Testing Point $D(-5, 6)$:</strong><br>Calculate the distance of $D$ from center $O(0, 0)$:<br>$$OD = \\sqrt{(-5)^2 + 6^2} = \\sqrt{25 + 36} = \\sqrt{61}\\text{ units}$$<br>Since $OD = \\sqrt{61} < \\sqrt{65} = r$, point $D$ lies <strong>strictly within (inside) the circle $K$</strong>. [1.0 mark]<br><br><strong>(c) Testing Point $E(0, 9)$:</strong><br>$$OE = \\sqrt{0^2 + 9^2} = \\sqrt{81} = 9\\text{ units}$$<br>Since $OE = \\sqrt{81} > \\sqrt{65} = r$, point $E$ lies <strong>strictly outside the circle $K$</strong>. [1.0 mark]"
   },
   {
     "id": "q_ch1_09",
@@ -131,7 +139,8 @@
       "1.5 marks for complete Slope method showing equal slopes (4/3) and common point A.",
       "1.5 marks for complete Distance method showing MA + AG = 5 + 10 = 15 = MG."
     ],
-    "examinerTip": "🚨 CBSE Standard: Both the slope method and segment distance addition method are fully accepted in Class 9."
+    "examinerTip": "🚨 CBSE Standard: Both the slope method and segment distance addition method are fully accepted in Class 9.",
+    "answer": "<strong>Method 1: Slope / Gradient Method:</strong><br>• $\\text{Slope of } MA = \\frac{y_2 - y_1}{x_2 - x_1} = \\frac{0 - (-4)}{0 - (-3)} = \\frac{4}{3}$. [0.5 mark]<br>• $\\text{Slope of } AG = \\frac{8 - 0}{6 - 0} = \\frac{8}{6} = \\frac{4}{3}$. [0.5 mark]<br>Since $\\text{Slope}(MA) = \\text{Slope}(AG)$ and point $A$ is common to both segments, points $M, A, G$ must lie on the same straight line.<br>Hence, <strong>$M, A, G$ are collinear</strong>. [0.5 mark]<br><br><strong>Method 2: Distance Sum Method (Baudhāyana–Pythagoras):</strong><br>• $MA = \\sqrt{(0 - (-3))^2 + (0 - (-4))^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5$ units. [0.5 mark]<br>• $AG = \\sqrt{(6 - 0)^2 + (8 - 0)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$ units. [0.5 mark]<br>• $MG = \\sqrt{(6 - (-3))^2 + (8 - (-4))^2} = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15$ units.<br>Since $MA + AG = 5 + 10 = 15 = MG$, the points lie on a single continuous straight line. [0.5 mark]"
   },
   {
     "id": "q_ch1_10",
@@ -145,7 +154,8 @@
       "1.5 marks for correctly finding x_A = -1, x_B = 11, x_C = 1.",
       "1.5 marks for correctly finding y_A = -1, y_B = 3, y_C = 7."
     ],
-    "examinerTip": "🚨 Shortcut to remember: Vertex A = Midpoint D + Midpoint F - Midpoint E. That is: x_A = 5 + 0 - 6 = -1; y_A = 1 + 3 - 5 = -1."
+    "examinerTip": "🚨 Shortcut to remember: Vertex A = Midpoint D + Midpoint F - Midpoint E. That is: x_A = 5 + 0 - 6 = -1; y_A = 1 + 3 - 5 = -1.",
+    "answer": "<strong>(a) Setting Up the Midpoint Equations:</strong><br>Using the midpoint formula for each of the three sides:<br>• For midpoint $D(5, 1)$ of $AB$:<br>  $$x_A + x_B = 2(5) = 10 \\quad \\text{--- (1)}, \\qquad y_A + y_B = 2(1) = 2 \\quad \\text{--- (4)}$$ [0.5 mark]<br>• For midpoint $E(6, 5)$ of $BC$:<br>  $$x_B + x_C = 2(6) = 12 \\quad \\text{--- (2)}, \\qquad y_B + y_C = 2(5) = 10 \\quad \\text{--- (5)}$$ [0.5 mark]<br>• For midpoint $F(0, 3)$ of $CA$:<br>  $$x_C + x_A = 2(0) = 0 \\quad \\text{--- (3)}, \\qquad y_C + y_A = 2(3) = 6 \\quad \\text{--- (6)}$$ [1.0 mark]<br><br><strong>(b) Solving for the $x$-coordinates:</strong><br>Adding equations (1), (2), and (3):<br>$$2(x_A + x_B + x_C) = 10 + 12 + 0 = 22 \\implies x_A + x_B + x_C = 11 \\quad \\text{--- (7)}$$<br>• Subtract (2) from (7): $x_A = 11 - (x_B + x_C) = 11 - 12 = \\mathbf{-1}$<br>• Subtract (3) from (7): $x_B = 11 - (x_C + x_A) = 11 - 0 = \\mathbf{11}$<br>• Subtract (1) from (7): $x_C = 11 - (x_A + x_B) = 11 - 10 = \\mathbf{1}$ [1.5 marks]<br><br><strong>Solving for the $y$-coordinates:</strong><br>Adding equations (4), (5), and (6):<br>$$2(y_A + y_B + y_C) = 2 + 10 + 6 = 18 \\implies y_A + y_B + y_C = 9 \\quad \\text{--- (8)}$$<br>• Subtract (5) from (8): $y_A = 9 - (y_B + y_C) = 9 - 10 = \\mathbf{-1}$<br>• Subtract (6) from (8): $y_B = 9 - (y_C + y_A) = 9 - 6 = \\mathbf{3}$<br>• Subtract (4) from (8): $y_C = 9 - (y_A + y_B) = 9 - 2 = \\mathbf{7}$ [1.5 marks]<br><br><strong>Final Conclusion:</strong><br>The vertices of $\\Delta ABC$ are:<br>$$\\mathbf{A(-1, -1), \\quad B(11, 3), \\quad C(1, 7)}$$"
   },
   {
     "id": "q_ch1_11",
@@ -160,7 +170,8 @@
       "1.0 mark for proving quadrilateral is a square (equal sides + equal diagonals).",
       "0.5 mark for Area = 10 sq units."
     ],
-    "examinerTip": "🚨 Crucial Distinction: Proving 4 sides equal proves only a Rhombus! You MUST prove both diagonals are equal to confirm a Square."
+    "examinerTip": "🚨 Crucial Distinction: Proving 4 sides equal proves only a Rhombus! You MUST prove both diagonals are equal to confirm a Square.",
+    "answer": "<strong>(a) Calculating Side Lengths:</strong><br>• $AB = \\sqrt{(-1 - 2)^2 + (2 - 1)^2} = \\sqrt{(-3)^2 + 1^2} = \\sqrt{9 + 1} = \\mathbf{\\sqrt{10}\\text{ units}}$<br>• $BC = \\sqrt{(-2 - (-1))^2 + (-1 - 2)^2} = \\sqrt{(-1)^2 + (-3)^2} = \\sqrt{1 + 9} = \\mathbf{\\sqrt{10}\\text{ units}}$<br>• $CD = \\sqrt{(1 - (-2))^2 + (-2 - (-1))^2} = \\sqrt{3^2 + (-1)^2} = \\sqrt{9 + 1} = \\mathbf{\\sqrt{10}\\text{ units}}$<br>• $DA = \\sqrt{(2 - 1)^2 + (1 - (-2))^2} = \\sqrt{1^2 + 3^2} = \\sqrt{1 + 9} = \\mathbf{\\sqrt{10}\\text{ units}}$<br>All four sides are equal: $AB = BC = CD = DA = \\sqrt{10}$. [2.0 marks]<br><br><strong>(b) Calculating Diagonal Lengths:</strong><br>• $AC = \\sqrt{(-2 - 2)^2 + (-1 - 1)^2} = \\sqrt{(-4)^2 + (-2)^2} = \\sqrt{16 + 4} = \\mathbf{\\sqrt{20}\\text{ units}}$<br>• $BD = \\sqrt{(1 - (-1))^2 + (-2 - 2)^2} = \\sqrt{2^2 + (-4)^2} = \\sqrt{4 + 16} = \\mathbf{\\sqrt{20}\\text{ units}}$<br>Both diagonals are equal: $AC = BD = \\sqrt{20}$. [1.5 marks]<br><br><strong>(c) Geometric Deduction & Area:</strong><br>• A quadrilateral with 4 equal sides is a rhombus. Since its diagonals are also equal ($AC = BD$), **$ABCD$ is strictly a Square**! [1.0 mark]<br>• $\\text{Area} = \\text{side}^2 = (\\sqrt{10})^2 = \\mathbf{10\\text{ sq units}}$. [0.5 mark]"
   },
   {
     "id": "q_ch1_12",
@@ -174,6 +185,7 @@
       "1.0 mark for computing center distance AB = 170 pixels.",
       "2.0 marks: [Main Option] Stating R1 + R2 = 180 pixels and concluding intersection since AB < R1 + R2. OR [Choice Option] Midpoint M(175, 190) [1m] and distance from right edge = 625 pixels [1m]."
     ],
-    "examinerTip": "🚨 Practical Geometry Rule: Two circles intersect if |R1 - R2| < Distance < R1 + R2."
+    "examinerTip": "🚨 Practical Geometry Rule: Two circles intersect if |R1 - R2| < Distance < R1 + R2.",
+    "answer": "<strong>(i) Testing Icon 1 Screen Boundaries:</strong><br>• Center $A(100, 150)$ has distance to left boundary ($x=0$) equal to $100$ pixels.<br>  Since $100 > R_1$ ($100 > 80$), it does not cross the left edge.<br>• Distance to bottom boundary ($y=0$) is $150$ pixels.<br>  Since $150 > R_1$ ($150 > 80$), it does not cross the bottom edge.<br>Hence, <strong>no part of Icon 1 lies outside the screen</strong>. [1.0 mark]<br><br><strong>(ii) Distance Between Centers $AB$:</strong><br>$$AB = \\sqrt{(250 - 100)^2 + (230 - 150)^2} = \\sqrt{150^2 + 80^2}$$<br>$$AB = \\sqrt{22500 + 6400} = \\sqrt{28900} = \\mathbf{170\\text{ pixels}}$$ [1.0 mark]<br><br><strong>(iii) Primary Option (Intersection Test):</strong><br>• Sum of the radii $= R_1 + R_2 = 80 + 100 = 180$ pixels.<br>• Center distance $= AB = 170$ pixels.<br>• Since the distance between centers is strictly less than the sum of radii ($AB < R_1 + R_2$ because $170 < 180$), the two circular icons <strong>intersect each other</strong> (they overlap by $180 - 170 = 10$ pixels). [2.0 marks]<br><br><strong>[OR] Choice Option (Midpoint & Right Edge):</strong><br>• Center of Icon 3 is midpoint $M$ of $AB$:<br>  $$M = \\left(\\frac{100 + 250}{2}, \\frac{150 + 230}{2}\\right) = \\left(\\frac{350}{2}, \\frac{380}{2}\\right) = \\mathbf{(175, 190)}$$ [1.0 mark]<br>• Distance from right edge ($x = 800$):<br>  $$\\text{Distance} = 800 - 175 = \\mathbf{625\\text{ pixels}}$$ [1.0 mark]"
   }
 ]

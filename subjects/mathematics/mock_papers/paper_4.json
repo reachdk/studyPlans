@@ -17,9 +17,10 @@
         "(c) Only S",
         "(d) P, R, and T"
       ],
-      "answer": "<strong>(b) Q and R</strong>",
-      "markingScheme": "• Quadrant IV points satisfy x > 0 and y < 0. For Q(3, -4), 3 > 0, -4 < 0. For R(1, -1), 1 > 0, -1 < 0. [1 mark]",
-      "examinerTip": "Points in Quadrant IV have positive abscissa and negative ordinate (+, -)."
+      "answer": "<strong>Correct Answer: (b) Q and R</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate plane, points lying strictly in Quadrant IV must satisfy: abscissa x > 0 (positive) and ordinate y < 0 (negative).<br>2. Check each given point:<br>• P(-1, 1): x = -1 < 0, y = 1 > 0 &rarr; Quadrant II<br>• <strong>Q(3, -4):</strong> x = 3 > 0, y = -4 < 0 &rarr; <strong>Quadrant IV</strong><br>• <strong>R(1, -1):</strong> x = 1 > 0, y = -1 < 0 &rarr; <strong>Quadrant IV</strong><br>• S(-2, -3): x = -2 < 0, y = -3 < 0 &rarr; Quadrant III<br>• T(-4, 4): x = -4 < 0, y = 4 > 0 &rarr; Quadrant II.<br>3. Therefore, only points <strong>Q and R</strong> lie in the fourth quadrant.",
+      "markingScheme": "• Recalling Quadrant IV sign condition (+, -): 0.5 mark<br>• Testing all points and identifying Q(3, -4) and R(1, -1) (Option b): 0.5 mark",
+      "examinerTip": "Points in Quadrant IV have positive abscissa and negative ordinate (+, -).",
+      "solution": "<strong>Correct Answer: (b) Q and R</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate plane, points lying strictly in Quadrant IV must satisfy: abscissa x > 0 (positive) and ordinate y < 0 (negative).<br>2. Check each given point:<br>• P(-1, 1): x = -1 < 0, y = 1 > 0 &rarr; Quadrant II<br>• <strong>Q(3, -4):</strong> x = 3 > 0, y = -4 < 0 &rarr; <strong>Quadrant IV</strong><br>• <strong>R(1, -1):</strong> x = 1 > 0, y = -1 < 0 &rarr; <strong>Quadrant IV</strong><br>• S(-2, -3): x = -2 < 0, y = -3 < 0 &rarr; Quadrant III<br>• T(-4, 4): x = -4 < 0, y = 4 > 0 &rarr; Quadrant II.<br>3. Therefore, only points <strong>Q and R</strong> lie in the fourth quadrant."
     },
     {
       "section": "A",
@@ -33,9 +34,10 @@
         "(c) 1/3",
         "(d) 1/81"
       ],
-      "answer": "<strong>(b) 1/9</strong>",
-      "markingScheme": "• (81<sup>-2</sup>)<sup>1/4</sup> = 81<sup>-2/4</sup> = 81<sup>-1/2</sup> = 1 / &radic;81 = 1/9 [1 mark]",
-      "examinerTip": "Apply law of exponents (a^m)^n = a^(mn)."
+      "answer": "<strong>Correct Answer: (b) 1/9</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The 4th root can be written as an exponent of 1/4:<br>&radic;[4]{(81)<sup>-2</sup>} = [(81)<sup>-2</sup>]<sup>1/4</sup>.<br>2. Apply the power of a power law of exponents: (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>= 81<sup>(-2) &times; (1/4)</sup> = 81<sup>-2/4</sup> = 81<sup>-1/2</sup>.<br>3. Apply the negative exponent law: a<sup>-m</sup> = 1 / a<sup>m</sup>:<br>81<sup>-1/2</sup> = 1 / (81<sup>1/2</sup>) = 1 / &radic;81.<br>4. Since &radic;81 = 9:<br>= <strong>1/9</strong>.",
+      "markingScheme": "• Applying (a<sup>m</sup>)<sup>n</sup> to get 81<sup>-1/2</sup>: 0.5 mark<br>• Simplifying 1 / &radic;81 = 1/9 (Option b): 0.5 mark",
+      "examinerTip": "Apply law of exponents (a^m)^n = a^(mn).",
+      "solution": "<strong>Correct Answer: (b) 1/9</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The 4th root can be written as an exponent of 1/4:<br>&radic;[4]{(81)<sup>-2</sup>} = [(81)<sup>-2</sup>]<sup>1/4</sup>.<br>2. Apply the power of a power law of exponents: (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>= 81<sup>(-2) &times; (1/4)</sup> = 81<sup>-2/4</sup> = 81<sup>-1/2</sup>.<br>3. Apply the negative exponent law: a<sup>-m</sup> = 1 / a<sup>m</sup>:<br>81<sup>-1/2</sup> = 1 / (81<sup>1/2</sup>) = 1 / &radic;81.<br>4. Since &radic;81 = 9:<br>= <strong>1/9</strong>."
     },
     {
       "section": "A",
@@ -49,9 +51,10 @@
         "(c) 50",
         "(d) 52"
       ],
-      "answer": "<strong>(c) 50</strong>",
-      "markingScheme": "• By Remainder Theorem, R = p(-1) = (-1)<sup>51</sup> + 51 = -1 + 51 = 50 [1 mark]",
-      "examinerTip": "(-1) raised to an odd power is always -1."
+      "answer": "<strong>Correct Answer: (c) 50</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Remainder Theorem, when a polynomial p(x) is divided by a linear factor (x - a), the remainder is given by p(a).<br>2. Here the divisor is (x + 1) = [x - (-1)], so a = -1.<br>3. Evaluate p(-1) for p(x) = x<sup>51</sup> + 51:<br>Remainder R = p(-1) = (-1)<sup>51</sup> + 51.<br>4. Since 51 is an odd integer, (-1) raised to any odd power equals -1:<br>(-1)<sup>51</sup> = -1.<br>5. Compute remainder:<br>R = -1 + 51 = <strong>50</strong>.",
+      "markingScheme": "• Stating Remainder Theorem R = p(-1): 0.5 mark<br>• Evaluating (-1)<sup>51</sup> + 51 = -1 + 51 = 50 (Option c): 0.5 mark",
+      "examinerTip": "(-1) raised to an odd power is always -1.",
+      "solution": "<strong>Correct Answer: (c) 50</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Remainder Theorem, when a polynomial p(x) is divided by a linear factor (x - a), the remainder is given by p(a).<br>2. Here the divisor is (x + 1) = [x - (-1)], so a = -1.<br>3. Evaluate p(-1) for p(x) = x<sup>51</sup> + 51:<br>Remainder R = p(-1) = (-1)<sup>51</sup> + 51.<br>4. Since 51 is an odd integer, (-1) raised to any odd power equals -1:<br>(-1)<sup>51</sup> = -1.<br>5. Compute remainder:<br>R = -1 + 51 = <strong>50</strong>."
     },
     {
       "section": "A",
@@ -65,9 +68,10 @@
         "(c) (0, -4)",
         "(d) (0, 4)"
       ],
-      "answer": "<strong>(c) (0, -4)</strong>",
-      "markingScheme": "• On y-axis, x = 0, so P is (0, 4). Reflection across x-axis negates y-coordinate: (0, -4) [1 mark]",
-      "examinerTip": "Reflection across x-axis transforms (x, y) &rarr; (x, -y)."
+      "answer": "<strong>Correct Answer: (c) (0, -4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Any point lying on the y-axis has abscissa (x-coordinate) equal to 0.<br>2. Given that ordinate y = 4, the initial point P has coordinates (0, 4).<br>3. In geometric reflection across the horizontal x-axis:<br>The x-coordinate remains unchanged, while the y-coordinate is negated: (x, y) &rarr; (x, -y).<br>4. Applying this transformation to P(0, 4):<br>P'(0, -4).<br>5. Therefore, the coordinates of the reflected point are <strong>(0, -4)</strong>.",
+      "markingScheme": "• Point on y-axis is P(0, 4): 0.5 mark<br>• Reflection across x-axis gives (0, -4) (Option c): 0.5 mark",
+      "examinerTip": "Reflection across x-axis transforms (x, y) &rarr; (x, -y).",
+      "solution": "<strong>Correct Answer: (c) (0, -4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Any point lying on the y-axis has abscissa (x-coordinate) equal to 0.<br>2. Given that ordinate y = 4, the initial point P has coordinates (0, 4).<br>3. In geometric reflection across the horizontal x-axis:<br>The x-coordinate remains unchanged, while the y-coordinate is negated: (x, y) &rarr; (x, -y).<br>4. Applying this transformation to P(0, 4):<br>P'(0, -4).<br>5. Therefore, the coordinates of the reflected point are <strong>(0, -4)</strong>."
     },
     {
       "section": "A",
@@ -81,9 +85,10 @@
         "(c) 23",
         "(d) 21"
       ],
-      "answer": "<strong>(c) 23</strong>",
-      "markingScheme": "• (x + 1/x)<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> + 2 &rArr; 25 = x<sup>2</sup> + 1/x<sup>2</sup> + 2 &rArr; x<sup>2</sup> + 1/x<sup>2</sup> = 23 [1 mark]",
-      "examinerTip": "Always subtract 2 &times; x &times; (1/x) = 2 when squaring a reciprocal sum."
+      "answer": "<strong>Correct Answer: (c) 23</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given: x + 1/x = 5.<br>2. Square both sides of the equation:<br>(x + 1/x)<sup>2</sup> = 5<sup>2</sup> = 25.<br>3. Expand the left side using the identity (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>:<br>x<sup>2</sup> + 2(x)(1/x) + (1/x)<sup>2</sup> = 25<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 25.<br>4. Subtract 2 from both sides:<br>x<sup>2</sup> + 1/x<sup>2</sup> = 25 - 2 = <strong>23</strong>.",
+      "markingScheme": "• Expanding (x + 1/x)<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> + 2 = 25: 0.5 mark<br>• Solving x<sup>2</sup> + 1/x<sup>2</sup> = 23 (Option c): 0.5 mark",
+      "examinerTip": "Always subtract 2 &times; x &times; (1/x) = 2 when squaring a reciprocal sum.",
+      "solution": "<strong>Correct Answer: (c) 23</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given: x + 1/x = 5.<br>2. Square both sides of the equation:<br>(x + 1/x)<sup>2</sup> = 5<sup>2</sup> = 25.<br>3. Expand the left side using the identity (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>:<br>x<sup>2</sup> + 2(x)(1/x) + (1/x)<sup>2</sup> = 25<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 25.<br>4. Subtract 2 from both sides:<br>x<sup>2</sup> + 1/x<sup>2</sup> = 25 - 2 = <strong>23</strong>."
     },
     {
       "section": "A",
@@ -97,9 +102,10 @@
         "(c) 400&radic;3 m<sup>2</sup>",
         "(d) 100 m<sup>2</sup>"
       ],
-      "answer": "<strong>(a) 100&radic;3 m<sup>2</sup></strong>",
-      "markingScheme": "• Side a = 60/3 = 20 m. Area = (&radic;3/4) &times; a<sup>2</sup> = (&radic;3/4) &times; 400 = 100&radic;3 m<sup>2</sup> [1 mark]",
-      "examinerTip": "Area of equilateral triangle formula is (&radic;3 / 4) &times; a^2."
+      "answer": "<strong>Correct Answer: (a) 100&radic;3 m<sup>2</sup></strong><br><br><strong>Step-by-Step Solution:</strong><br>1. An equilateral triangle has three equal sides of length a.<br>Perimeter = 3a = 60 m &rArr; a = 60 / 3 = 20 m.<br>2. Formula for the area of an equilateral triangle:<br>Area = (&radic;3 / 4) &times; a<sup>2</sup>.<br>3. Substitute a = 20 m:<br>Area = (&radic;3 / 4) &times; (20)<sup>2</sup> = (&radic;3 / 4) &times; 400.<br>4. Simplify:<br>Area = &radic;3 &times; 100 = <strong>100&radic;3 m<sup>2</sup></strong>.",
+      "markingScheme": "• Side a = 60/3 = 20 m: 0.5 mark<br>• Area = (&radic;3/4)(400) = 100&radic;3 m<sup>2</sup> (Option a): 0.5 mark",
+      "examinerTip": "Area of equilateral triangle formula is (&radic;3 / 4) &times; a^2.",
+      "solution": "<strong>Correct Answer: (a) 100&radic;3 m<sup>2</sup></strong><br><br><strong>Step-by-Step Solution:</strong><br>1. An equilateral triangle has three equal sides of length a.<br>Perimeter = 3a = 60 m &rArr; a = 60 / 3 = 20 m.<br>2. Formula for the area of an equilateral triangle:<br>Area = (&radic;3 / 4) &times; a<sup>2</sup>.<br>3. Substitute a = 20 m:<br>Area = (&radic;3 / 4) &times; (20)<sup>2</sup> = (&radic;3 / 4) &times; 400.<br>4. Simplify:<br>Area = &radic;3 &times; 100 = <strong>100&radic;3 m<sup>2</sup></strong>."
     },
     {
       "section": "A",
@@ -113,9 +119,10 @@
         "(c) 8 units",
         "(d) &radic;40 units"
       ],
-      "answer": "<strong>(c) 8 units</strong>",
-      "markingScheme": "• Points share x = 0 (vertical line). Distance = |y2 - y1| = |6 - (-2)| = 8 units [1 mark]",
-      "examinerTip": "For points on the same vertical axis, distance is the absolute difference of ordinates."
+      "answer": "<strong>Correct Answer: (c) 8 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Points are A(0, 6) and B(0, -2).<br>Both points share the same abscissa x = 0 (both lie on the vertical y-axis).<br>2. By the Baudh&amacron;yana-Pythagoras distance formula:<br>d = &radic;[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>]<br>= &radic;[(0 - 0)<sup>2</sup> + (-2 - 6)<sup>2</sup>]<br>= &radic;[0 + (-8)<sup>2</sup>] = &radic;64 = <strong>8 units</strong>.<br>3. Alternatively, for two points on a vertical line, distance = |y<sub>2</sub> - y<sub>1</sub>| = |6 - (-2)| = |8| = 8 units.",
+      "markingScheme": "• Applying distance formula or vertical difference |y<sub>2</sub> - y<sub>1</sub>|: 0.5 mark<br>• Distance = 8 units (Option c): 0.5 mark",
+      "examinerTip": "For points on the same vertical axis, distance is the absolute difference of ordinates.",
+      "solution": "<strong>Correct Answer: (c) 8 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Points are A(0, 6) and B(0, -2).<br>Both points share the same abscissa x = 0 (both lie on the vertical y-axis).<br>2. By the Baudh&amacron;yana-Pythagoras distance formula:<br>d = &radic;[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>]<br>= &radic;[(0 - 0)<sup>2</sup> + (-2 - 6)<sup>2</sup>]<br>= &radic;[0 + (-8)<sup>2</sup>] = &radic;64 = <strong>8 units</strong>.<br>3. Alternatively, for two points on a vertical line, distance = |y<sub>2</sub> - y<sub>1</sub>| = |6 - (-2)| = |8| = 8 units."
     },
     {
       "section": "A",
@@ -129,9 +136,10 @@
         "(c) 2 / (&radic;5 - &radic;3)",
         "(d) (&radic;5 + &radic;3) / 2"
       ],
-      "answer": "<strong>(a) 2 / (&radic;5 + &radic;3)</strong>",
-      "markingScheme": "• Rationalizing: 2 / (&radic;5 + &radic;3) = 2(&radic;5 - &radic;3) / (5 - 3) = 2(&radic;5 - &radic;3) / 2 = &radic;5 - &radic;3 [1 mark]",
-      "examinerTip": "Conjugate multiplication simplifies (a - b)(a + b) = a^2 - b^2."
+      "answer": "<strong>Correct Answer: (a) 2 / (&radic;5 + &radic;3)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Consider the expression: 2 / (&radic;5 + &radic;3).<br>2. Rationalize the denominator by multiplying numerator and denominator by the conjugate surd (&radic;5 - &radic;3):<br>= [2(&radic;5 - &radic;3)] / [(&radic;5 + &radic;3)(&radic;5 - &radic;3)].<br>3. Apply the difference of squares identity (a + b)(a - b) = a<sup>2</sup> - b<sup>2</sup> in the denominator:<br>(&radic;5)<sup>2</sup> - (&radic;3)<sup>2</sup> = 5 - 3 = 2.<br>4. Substitute back into the fraction:<br>= [2(&radic;5 - &radic;3)] / 2 = <strong>&radic;5 - &radic;3</strong>.<br>5. Therefore, 2 / (&radic;5 + &radic;3) is identically equal to &radic;5 - &radic;3.",
+      "markingScheme": "• Rationalizing denominator with conjugate (&radic;5 - &radic;3): 0.5 mark<br>• Simplifying to &radic;5 - &radic;3 &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Conjugate multiplication simplifies (a - b)(a + b) = a^2 - b^2.",
+      "solution": "<strong>Correct Answer: (a) 2 / (&radic;5 + &radic;3)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Consider the expression: 2 / (&radic;5 + &radic;3).<br>2. Rationalize the denominator by multiplying numerator and denominator by the conjugate surd (&radic;5 - &radic;3):<br>= [2(&radic;5 - &radic;3)] / [(&radic;5 + &radic;3)(&radic;5 - &radic;3)].<br>3. Apply the difference of squares identity (a + b)(a - b) = a<sup>2</sup> - b<sup>2</sup> in the denominator:<br>(&radic;5)<sup>2</sup> - (&radic;3)<sup>2</sup> = 5 - 3 = 2.<br>4. Substitute back into the fraction:<br>= [2(&radic;5 - &radic;3)] / 2 = <strong>&radic;5 - &radic;3</strong>.<br>5. Therefore, 2 / (&radic;5 + &radic;3) is identically equal to &radic;5 - &radic;3."
     },
     {
       "section": "A",
@@ -145,9 +153,10 @@
         "(c) (2, 0)",
         "(d) (0, 3)"
       ],
-      "answer": "<strong>(b) (3, 0)</strong>",
-      "markingScheme": "• Put y = 0 &rArr; 2x + 3(0) = 6 &rArr; 2x = 6 &rArr; x = 3. Point is (3, 0) [1 mark]",
-      "examinerTip": "Every point on the x-axis has ordinate y = 0."
+      "answer": "<strong>Correct Answer: (b) (3, 0)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A point where a graph intersects the horizontal x-axis is called its x-intercept.<br>2. Every point on the x-axis has y-coordinate equal to 0 (y = 0).<br>3. Substitute y = 0 into the linear equation 2x + 3y = 6:<br>2x + 3(0) = 6<br>2x = 6.<br>4. Solve for x:<br>x = 6 / 2 = 3.<br>5. Therefore, the coordinates of the intersection point are <strong>(3, 0)</strong>.",
+      "markingScheme": "• Setting y = 0 &rArr; 2x = 6: 0.5 mark<br>• Point is (3, 0) (Option b): 0.5 mark",
+      "examinerTip": "Every point on the x-axis has ordinate y = 0.",
+      "solution": "<strong>Correct Answer: (b) (3, 0)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A point where a graph intersects the horizontal x-axis is called its x-intercept.<br>2. Every point on the x-axis has y-coordinate equal to 0 (y = 0).<br>3. Substitute y = 0 into the linear equation 2x + 3y = 6:<br>2x + 3(0) = 6<br>2x = 6.<br>4. Solve for x:<br>x = 6 / 2 = 3.<br>5. Therefore, the coordinates of the intersection point are <strong>(3, 0)</strong>."
     },
     {
       "section": "A",
@@ -161,9 +170,10 @@
         "(c) &pi; units",
         "(d) 4 units"
       ],
-      "answer": "<strong>(b) 2 units</strong>",
-      "markingScheme": "• 2&pi;r = &pi;r<sup>2</sup> &rArr; 2r = r<sup>2</sup> (since r &ne; 0) &rArr; r = 2 units [1 mark]",
-      "examinerTip": "Divide both sides by &pi;r since radius cannot be zero."
+      "answer": "<strong>Correct Answer: (b) 2 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let r be the radius of the circle.<br>2. Perimeter (Circumference) of the circle = 2&pi;r.<br>3. Area of the circle = &pi;r<sup>2</sup>.<br>4. We are given that the numerical values are equal:<br>2&pi;r = &pi;r<sup>2</sup>.<br>5. Since a circle has non-zero radius (r > 0), divide both sides by &pi;r:<br>2 = r &rArr; r = <strong>2 units</strong>.<br>6. Verification: Perimeter = 2&pi;(2) = 4&pi;; Area = &pi;(2<sup>2</sup>) = 4&pi;.",
+      "markingScheme": "• Equating 2&pi;r = &pi;r<sup>2</sup>: 0.5 mark<br>• Solving r = 2 units (Option b): 0.5 mark",
+      "examinerTip": "Divide both sides by &pi;r since radius cannot be zero.",
+      "solution": "<strong>Correct Answer: (b) 2 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let r be the radius of the circle.<br>2. Perimeter (Circumference) of the circle = 2&pi;r.<br>3. Area of the circle = &pi;r<sup>2</sup>.<br>4. We are given that the numerical values are equal:<br>2&pi;r = &pi;r<sup>2</sup>.<br>5. Since a circle has non-zero radius (r > 0), divide both sides by &pi;r:<br>2 = r &rArr; r = <strong>2 units</strong>.<br>6. Verification: Perimeter = 2&pi;(2) = 4&pi;; Area = &pi;(2<sup>2</sup>) = 4&pi;."
     },
     {
       "section": "A",
@@ -177,9 +187,10 @@
         "(c) Any real number",
         "(d) Not defined"
       ],
-      "answer": "<strong>(d) Not defined</strong>",
-      "markingScheme": "• The zero polynomial 0 = 0 &times; x<sup>n</sup> has no unique exponent, hence its degree is undefined [1 mark]",
-      "examinerTip": "A non-zero constant polynomial like p(x) = 5 has degree 0, but the zero polynomial has undefined degree."
+      "answer": "<strong>Correct Answer: (d) Not defined</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A polynomial is expressed as p(x) = a<sub>n</sub>x<sup>n</sup> + ... + a<sub>1</sub>x + a<sub>0</sub>, where the degree is defined as the highest power n with non-zero coefficient a<sub>n</sub> &ne; 0.<br>2. For the zero polynomial p(x) = 0, every coefficient is zero. It can be written as 0x<sup>0</sup>, 0x<sup>1</sup>, 0x<sup>2</sup>, or 0x<sup>n</sup> for any n.<br>3. Because no unique non-zero leading term exists, mathematicians define the degree of the zero polynomial to be <strong>not defined</strong>.<br>*(Note: A non-zero constant polynomial like p(x) = 5 = 5x<sup>0</sup> has degree 0).*",
+      "markingScheme": "• Explaining definition of degree of zero polynomial: 0.5 mark<br>• Correct option (d): 0.5 mark",
+      "examinerTip": "A non-zero constant polynomial like p(x) = 5 has degree 0, but the zero polynomial has undefined degree.",
+      "solution": "<strong>Correct Answer: (d) Not defined</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A polynomial is expressed as p(x) = a<sub>n</sub>x<sup>n</sup> + ... + a<sub>1</sub>x + a<sub>0</sub>, where the degree is defined as the highest power n with non-zero coefficient a<sub>n</sub> &ne; 0.<br>2. For the zero polynomial p(x) = 0, every coefficient is zero. It can be written as 0x<sup>0</sup>, 0x<sup>1</sup>, 0x<sup>2</sup>, or 0x<sup>n</sup> for any n.<br>3. Because no unique non-zero leading term exists, mathematicians define the degree of the zero polynomial to be <strong>not defined</strong>.<br>*(Note: A non-zero constant polynomial like p(x) = 5 = 5x<sup>0</sup> has degree 0).*"
     },
     {
       "section": "A",
@@ -193,9 +204,10 @@
         "(c) (6, 8)",
         "(d) (1, 0)"
       ],
-      "answer": "<strong>(a) (0, 1)</strong>",
-      "markingScheme": "• x_M = (x_A + x_B)/2 &rArr; 2 = (4 + x)/2 &rArr; x = 0; y_M = (y_A + y_B)/2 &rArr; 3 = (5 + y)/2 &rArr; y = 1 &rArr; (0, 1) [1 mark]",
-      "examinerTip": "Reverse midpoint formula: x_B = 2x_M - x_A and y_B = 2y_M - y_A."
+      "answer": "<strong>Correct Answer: (a) (0, 1)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Midpoint Formula, the coordinates of midpoint M(x<sub>M</sub>, y<sub>M</sub>) between A(x<sub>A</sub>, y<sub>A</sub>) and B(x, y) are:<br>x<sub>M</sub> = (x<sub>A</sub> + x) / 2 and y<sub>M</sub> = (y<sub>A</sub> + y) / 2.<br>2. Here A is (4, 5) and M is (2, 3):<br>• For x: 2 = (4 + x) / 2 &rArr; 4 = 4 + x &rArr; x = 4 - 4 = <strong>0</strong>.<br>• For y: 3 = (5 + y) / 2 &rArr; 6 = 5 + y &rArr; y = 6 - 5 = <strong>1</strong>.<br>3. Therefore, the coordinates of B are <strong>(0, 1)</strong>.",
+      "markingScheme": "• Applying inverse midpoint formula x = 2x<sub>M</sub> - x<sub>A</sub>: 0.5 mark<br>• Finding B(0, 1) (Option a): 0.5 mark",
+      "examinerTip": "Reverse midpoint formula: x_B = 2x_M - x_A and y_B = 2y_M - y_A.",
+      "solution": "<strong>Correct Answer: (a) (0, 1)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Midpoint Formula, the coordinates of midpoint M(x<sub>M</sub>, y<sub>M</sub>) between A(x<sub>A</sub>, y<sub>A</sub>) and B(x, y) are:<br>x<sub>M</sub> = (x<sub>A</sub> + x) / 2 and y<sub>M</sub> = (y<sub>A</sub> + y) / 2.<br>2. Here A is (4, 5) and M is (2, 3):<br>• For x: 2 = (4 + x) / 2 &rArr; 4 = 4 + x &rArr; x = 4 - 4 = <strong>0</strong>.<br>• For y: 3 = (5 + y) / 2 &rArr; 6 = 5 + y &rArr; y = 6 - 5 = <strong>1</strong>.<br>3. Therefore, the coordinates of B are <strong>(0, 1)</strong>."
     },
     {
       "section": "A",
@@ -209,9 +221,10 @@
         "(c) 0.285714",
         "(d) 0.14"
       ],
-      "answer": "<strong>(b) 0.15015001500015...</strong>",
-      "markingScheme": "• 0.150150015... is non-terminating and non-repeating (irrational) and 0.1428 < 0.1501 < 0.2857 [1 mark]",
-      "examinerTip": "Non-terminating, non-repeating decimal patterns guarantee irrationality."
+      "answer": "<strong>Correct Answer: (b) 0.15015001500015...</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. First convert the given fractions to decimals by long division:<br>• 1/7 = 0.142857142857...<br>• 2/7 = 0.285714285714...<br>2. A number is irrational if its decimal expansion is non-terminating and non-repeating.<br>3. Looking at the options:<br>• (a) 0.15 is terminating (rational).<br>• (b) 0.15015001500015... has an ever-increasing count of zeroes between the digit 15, so it is strictly non-repeating and non-terminating (irrational). Also, 0.1428... < 0.1501... < 0.2857..., so it lies between 1/7 and 2/7.<br>• (c) 0.285714 is terminating.<br>• (d) 0.14 is less than 1/7 &approx; 0.1428.<br>Therefore, <strong>(b)</strong> is the correct irrational number.",
+      "markingScheme": "• Computing decimal ranges 1/7 &approx; 0.1428 and 2/7 &approx; 0.2857: 0.5 mark<br>• Identifying non-repeating pattern in range (Option b): 0.5 mark",
+      "examinerTip": "Non-terminating, non-repeating decimal patterns guarantee irrationality.",
+      "solution": "<strong>Correct Answer: (b) 0.15015001500015...</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. First convert the given fractions to decimals by long division:<br>• 1/7 = 0.142857142857...<br>• 2/7 = 0.285714285714...<br>2. A number is irrational if its decimal expansion is non-terminating and non-repeating.<br>3. Looking at the options:<br>• (a) 0.15 is terminating (rational).<br>• (b) 0.15015001500015... has an ever-increasing count of zeroes between the digit 15, so it is strictly non-repeating and non-terminating (irrational). Also, 0.1428... < 0.1501... < 0.2857..., so it lies between 1/7 and 2/7.<br>• (c) 0.285714 is terminating.<br>• (d) 0.14 is less than 1/7 &approx; 0.1428.<br>Therefore, <strong>(b)</strong> is the correct irrational number."
     },
     {
       "section": "A",
@@ -225,9 +238,10 @@
         "(c) 3",
         "(d) 3abc"
       ],
-      "answer": "<strong>(c) 3</strong>",
-      "markingScheme": "• Common denominator abc gives (a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup>)/abc. When a+b+c=0, a<sup>3</sup>+b<sup>3</sup>+c<sup>3</sup> = 3abc. Hence 3abc/abc = 3 [1 mark]",
-      "examinerTip": "Standard algebraic identity application: a+b+c=0 &rArr; a^3+b^3+c^3 = 3abc."
+      "answer": "<strong>Correct Answer: (c) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Combine the fractions over a common denominator abc:<br>(a<sup>2</sup> / bc) + (b<sup>2</sup> / ca) + (c<sup>2</sup> / ab) = (a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup>) / abc.<br>2. Recall the conditional algebraic identity:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br>3. Substitute 3abc in place of the numerator:<br>= (3abc) / abc.<br>4. Cancelling abc (since a, b, c &ne; 0):<br>= <strong>3</strong>.",
+      "markingScheme": "• Expressing over common denominator as (a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup>)/abc: 0.5 mark<br>• Applying identity a<sup>3</sup>+b<sup>3</sup>+c<sup>3</sup>=3abc &rArr; 3 (Option c): 0.5 mark",
+      "examinerTip": "Standard algebraic identity application: a+b+c=0 &rArr; a^3+b^3+c^3 = 3abc.",
+      "solution": "<strong>Correct Answer: (c) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Combine the fractions over a common denominator abc:<br>(a<sup>2</sup> / bc) + (b<sup>2</sup> / ca) + (c<sup>2</sup> / ab) = (a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup>) / abc.<br>2. Recall the conditional algebraic identity:<br>If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br>3. Substitute 3abc in place of the numerator:<br>= (3abc) / abc.<br>4. Cancelling abc (since a, b, c &ne; 0):<br>= <strong>3</strong>."
     },
     {
       "section": "A",
@@ -241,9 +255,10 @@
         "(c) 250 cm",
         "(d) 60 cm"
       ],
-      "answer": "<strong>(a) 120 cm</strong>",
-      "markingScheme": "• 12x + 17x + 25x = 54x = 540 &rArr; x = 10 cm. Shortest side = 12(10) = 120 cm [1 mark]",
-      "examinerTip": "Always sum ratio parts to find common multiplier x."
+      "answer": "<strong>Correct Answer: (a) 120 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let the common ratio factor be x cm.<br>The three sides are a = 12x, b = 17x, and c = 25x.<br>2. Perimeter is the sum of the sides:<br>Perimeter = 12x + 17x + 25x = 54x.<br>3. Given Perimeter = 540 cm:<br>54x = 540 &rArr; x = 540 / 54 = 10 cm.<br>4. Calculate each side:<br>• Shortest side = 12x = 12 &times; 10 = <strong>120 cm</strong>.<br>• Middle side = 17x = 17 &times; 10 = 170 cm.<br>• Longest side = 25x = 25 &times; 10 = 250 cm.<br>5. Therefore, the shortest side is 120 cm.",
+      "markingScheme": "• Setting 54x = 540 &rArr; x = 10: 0.5 mark<br>• Shortest side = 12(10) = 120 cm (Option a): 0.5 mark",
+      "examinerTip": "Always sum ratio parts to find common multiplier x.",
+      "solution": "<strong>Correct Answer: (a) 120 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let the common ratio factor be x cm.<br>The three sides are a = 12x, b = 17x, and c = 25x.<br>2. Perimeter is the sum of the sides:<br>Perimeter = 12x + 17x + 25x = 54x.<br>3. Given Perimeter = 540 cm:<br>54x = 540 &rArr; x = 540 / 54 = 10 cm.<br>4. Calculate each side:<br>• Shortest side = 12x = 12 &times; 10 = <strong>120 cm</strong>.<br>• Middle side = 17x = 17 &times; 10 = 170 cm.<br>• Longest side = 25x = 25 &times; 10 = 250 cm.<br>5. Therefore, the shortest side is 120 cm."
     },
     {
       "section": "A",
@@ -257,9 +272,10 @@
         "(c) -1",
         "(d) -2"
       ],
-      "answer": "<strong>(b) 1</strong>",
-      "markingScheme": "• Abscissa of P = -2. Abscissa of Q = -3. Difference = -2 - (-3) = -2 + 3 = 1 [1 mark]",
-      "examinerTip": "Abscissa refers strictly to the x-coordinate."
+      "answer": "<strong>Correct Answer: (b) 1</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In Cartesian coordinates, the abscissa refers strictly to the x-coordinate of a point.<br>2. For point P(-2, 3):<br>Abscissa of P = -2.<br>3. For point Q(-3, 5):<br>Abscissa of Q = -3.<br>4. Compute the difference (abscissa of P) - (abscissa of Q):<br>= -2 - (-3)<br>= -2 + 3 = <strong>1</strong>.",
+      "markingScheme": "• Identifying abscissa of P = -2 and Q = -3: 0.5 mark<br>• Computing -2 - (-3) = 1 (Option b): 0.5 mark",
+      "examinerTip": "Abscissa refers strictly to the x-coordinate.",
+      "solution": "<strong>Correct Answer: (b) 1</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In Cartesian coordinates, the abscissa refers strictly to the x-coordinate of a point.<br>2. For point P(-2, 3):<br>Abscissa of P = -2.<br>3. For point Q(-3, 5):<br>Abscissa of Q = -3.<br>4. Compute the difference (abscissa of P) - (abscissa of Q):<br>= -2 - (-3)<br>= -2 + 3 = <strong>1</strong>."
     },
     {
       "section": "A",
@@ -273,9 +289,10 @@
         "(c) Infinitely many solutions",
         "(d) No solution"
       ],
-      "answer": "<strong>(c) Infinitely many solutions</strong>",
-      "markingScheme": "• Every linear equation in two variables represents a straight line with infinitely many coordinate points lying on it [1 mark]",
-      "examinerTip": "For every chosen value of x, there exists a unique corresponding y on the line."
+      "answer": "<strong>Correct Answer: (c) Infinitely many solutions</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A linear equation in two variables ax + by + c = 0 represents a straight line on the Cartesian plane.<br>2. For every chosen real value of x, there exists a unique corresponding real value of y = (-ax - c) / b.<br>3. Since the set of real numbers is infinite, there are infinitely many coordinate pairs (x, y) that satisfy the equation.<br>4. Geometrically, every single point on the infinite line is a solution. Therefore, it has <strong>infinitely many solutions</strong>.",
+      "markingScheme": "• Stating that linear equation in two variables represents a straight line: 0.5 mark<br>• Correct option (c) Infinitely many solutions: 0.5 mark",
+      "examinerTip": "For every chosen value of x, there exists a unique corresponding y on the line.",
+      "solution": "<strong>Correct Answer: (c) Infinitely many solutions</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A linear equation in two variables ax + by + c = 0 represents a straight line on the Cartesian plane.<br>2. For every chosen real value of x, there exists a unique corresponding real value of y = (-ax - c) / b.<br>3. Since the set of real numbers is infinite, there are infinitely many coordinate pairs (x, y) that satisfy the equation.<br>4. Geometrically, every single point on the infinite line is a solution. Therefore, it has <strong>infinitely many solutions</strong>."
     },
     {
       "section": "A",
@@ -289,9 +306,10 @@
         "(c) 77/3 cm",
         "(d) 11 cm"
       ],
-      "answer": "<strong>(a) 22/3 cm</strong>",
-      "markingScheme": "• Arc length L = (&theta;/360&deg;) &times; 2&pi;r = (60/360) &times; 2 &times; (22/7) &times; 7 = (1/6) &times; 44 = 22/3 cm [1 mark]",
-      "examinerTip": "Arc length is proportional to the fraction of the full 360-degree rotation."
+      "answer": "<strong>Correct Answer: (a) 22/3 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The formula for the length of an arc of a circle of radius r subtending central angle &theta; is:<br>Arc Length L = (&theta; / 360&deg;) &times; 2&pi;r.<br>2. Given radius r = 7 cm, angle &theta; = 60&deg;, and &pi; = 22/7:<br>L = (60&deg; / 360&deg;) &times; 2 &times; (22 / 7) &times; 7.<br>3. Simplify the fraction and cancel 7 in numerator and denominator:<br>60 / 360 = 1/6<br>L = (1/6) &times; 2 &times; 22 = (1/6) &times; 44.<br>4. Divide numerator and denominator by 2:<br>L = 44 / 6 = <strong>22/3 cm</strong>.",
+      "markingScheme": "• Applying formula L = (&theta;/360)&times;2&pi;r: 0.5 mark<br>• (1/6) &times; 44 = 22/3 cm (Option a): 0.5 mark",
+      "examinerTip": "Arc length is proportional to the fraction of the full 360-degree rotation.",
+      "solution": "<strong>Correct Answer: (a) 22/3 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The formula for the length of an arc of a circle of radius r subtending central angle &theta; is:<br>Arc Length L = (&theta; / 360&deg;) &times; 2&pi;r.<br>2. Given radius r = 7 cm, angle &theta; = 60&deg;, and &pi; = 22/7:<br>L = (60&deg; / 360&deg;) &times; 2 &times; (22 / 7) &times; 7.<br>3. Simplify the fraction and cancel 7 in numerator and denominator:<br>60 / 360 = 1/6<br>L = (1/6) &times; 2 &times; 22 = (1/6) &times; 44.<br>4. Divide numerator and denominator by 2:<br>L = 44 / 6 = <strong>22/3 cm</strong>."
     },
     {
       "section": "A",
@@ -305,9 +323,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-      "markingScheme": "• 0.2777... = (27-2)/90 = 25/90 = 5/18 (rational). Non-terminating repeating decimals are rational by definition in (R) [1 mark]",
-      "examinerTip": "Bar notation denotes recurring decimals, which are rational numbers."
+      "answer": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> 0.27&#773; is a rational number.<br>Let x = 0.2777...<br>10x = 2.777... and 100x = 27.777...<br>Subtracting gives 90x = 25 &rArr; x = 25/90 = 5/18.<br>Since 5/18 is a ratio of integers with non-zero denominator, it is a rational number. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Every decimal number having a non-terminating repeating expansion can be expressed in the form p/q, where p and q are integers and q &ne; 0.<br>This is the fundamental definition of rational numbers in Class 9 Number Systems. Thus Reason (R) is <strong>true</strong>.<br>3. Since Reason (R) provides the exact mathematical rationale for why 0.27&#773; is rational, (R) correctly explains (A). Correct option is <strong>(a)</strong>.",
+      "markingScheme": "• Converting 0.27&#773; = 5/18 &rArr; (A) is true: 0.25 mark<br>• Verifying definition of rational numbers &rArr; (R) is true: 0.25 mark<br>• (R) explains (A) &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Bar notation denotes recurring decimals, which are rational numbers.",
+      "solution": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> 0.27&#773; is a rational number.<br>Let x = 0.2777...<br>10x = 2.777... and 100x = 27.777...<br>Subtracting gives 90x = 25 &rArr; x = 25/90 = 5/18.<br>Since 5/18 is a ratio of integers with non-zero denominator, it is a rational number. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Every decimal number having a non-terminating repeating expansion can be expressed in the form p/q, where p and q are integers and q &ne; 0.<br>This is the fundamental definition of rational numbers in Class 9 Number Systems. Thus Reason (R) is <strong>true</strong>.<br>3. Since Reason (R) provides the exact mathematical rationale for why 0.27&#773; is rational, (R) correctly explains (A). Correct option is <strong>(a)</strong>."
     },
     {
       "section": "A",
@@ -321,9 +340,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(c) (A) is true but (R) is false.</strong>",
-      "markingScheme": "• p(x) = (x - 2)<sup>2</sup> has only one unique real zero (x = 2). A quadratic can have 2, 1, or 0 real zeroes, so (R) is false [1 mark]",
-      "examinerTip": "Equal roots mean only one distinct zero."
+      "answer": "<strong>Correct Answer: (c) (A) is true but (R) is false.</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The polynomial p(x) = x<sup>2</sup> - 4x + 4 has exactly one distinct zero.<br>Factor p(x): x<sup>2</sup> - 4x + 4 = (x - 2)<sup>2</sup>.<br>Setting p(x) = 0 gives (x - 2)<sup>2</sup> = 0 &rArr; x = 2 (repeated root).<br>There is only 1 distinct real zero, which is x = 2. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Every quadratic polynomial must have two distinct real zeroes.<br>A quadratic polynomial can have two distinct real zeroes, one repeated real zero, or no real zeroes. Thus Reason (R) is <strong>false</strong>.<br>3. Since (A) is true but (R) is false, the correct option is <strong>(c)</strong>.",
+      "markingScheme": "• Factoring (x - 2)<sup>2</sup> &rArr; 1 distinct zero &rArr; (A) is true: 0.5 mark<br>• Identifying that quadratics can have repeated zeroes &rArr; (R) is false &rArr; Option (c): 0.5 mark",
+      "examinerTip": "Equal roots mean only one distinct zero.",
+      "solution": "<strong>Correct Answer: (c) (A) is true but (R) is false.</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The polynomial p(x) = x<sup>2</sup> - 4x + 4 has exactly one distinct zero.<br>Factor p(x): x<sup>2</sup> - 4x + 4 = (x - 2)<sup>2</sup>.<br>Setting p(x) = 0 gives (x - 2)<sup>2</sup> = 0 &rArr; x = 2 (repeated root).<br>There is only 1 distinct real zero, which is x = 2. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Every quadratic polynomial must have two distinct real zeroes.<br>A quadratic polynomial can have two distinct real zeroes, one repeated real zero, or no real zeroes. Thus Reason (R) is <strong>false</strong>.<br>3. Since (A) is true but (R) is false, the correct option is <strong>(c)</strong>."
     },
     {
       "section": "B",
@@ -333,7 +353,8 @@
       "prompt": "Find the values of rational numbers a and b if:<br><strong>(&radic;3 - 1) / (&radic;3 + 1) = a + b&radic;3</strong>.",
       "answer": "Multiply numerator and denominator by conjugate (&radic;3 - 1):<br>= (&radic;3 - 1)<sup>2</sup> / [(&radic;3 + 1)(&radic;3 - 1)]<br>= (3 - 2&radic;3 + 1) / (3 - 1)<br>= (4 - 2&radic;3) / 2 = <strong>2 - &radic;3</strong>.<br><br>Equating with a + b&radic;3:<br><strong>a = 2</strong> and <strong>b = -1</strong>.",
       "markingScheme": "• Multiplying by conjugate and expanding numerator: 1 mark<br>• Dividing by 2 to get 2 - &radic;3: 0.5 mark<br>• Stating a = 2, b = -1: 0.5 mark",
-      "examinerTip": "Do not forget that the coefficient of &radic;3 is negative, so b = -1, not 1."
+      "examinerTip": "Do not forget that the coefficient of &radic;3 is negative, so b = -1, not 1.",
+      "solution": "Multiply numerator and denominator by conjugate (&radic;3 - 1):<br>= (&radic;3 - 1)<sup>2</sup> / [(&radic;3 + 1)(&radic;3 - 1)]<br>= (3 - 2&radic;3 + 1) / (3 - 1)<br>= (4 - 2&radic;3) / 2 = <strong>2 - &radic;3</strong>.<br><br>Equating with a + b&radic;3:<br><strong>a = 2</strong> and <strong>b = -1</strong>."
     },
     {
       "section": "B",
@@ -343,7 +364,8 @@
       "prompt": "Points A(2, 3), B(-2, 3), C(-2, -3), and D(2, -3) are plotted on a Cartesian plane. Join them in order to form quadrilateral ABCD.<br>(i) Name the type of quadrilateral formed.<br>(ii) Find its perimeter and area.",
       "answer": "(i) Length AB = |2 - (-2)| = 4 units (horizontal).<br>Length BC = |3 - (-3)| = 6 units (vertical).<br>Length CD = |2 - (-2)| = 4 units.<br>Length DA = |3 - (-3)| = 6 units.<br>Adjacent sides are perpendicular (parallel to axes). Hence ABCD is a <strong>Rectangle</strong>.<br><br>(ii) Perimeter = 2(length + breadth) = 2(6 + 4) = <strong>20 units</strong>.<br>Area = length &times; breadth = 6 &times; 4 = <strong>24 square units</strong>.",
       "markingScheme": "• Identifying Rectangle with side lengths 4 and 6: 1 mark<br>• Perimeter = 20 units: 0.5 mark<br>• Area = 24 sq units: 0.5 mark",
-      "examinerTip": "Coordinates aligned with axes have side lengths equal to absolute coordinate differences."
+      "examinerTip": "Coordinates aligned with axes have side lengths equal to absolute coordinate differences.",
+      "solution": "(i) Length AB = |2 - (-2)| = 4 units (horizontal).<br>Length BC = |3 - (-3)| = 6 units (vertical).<br>Length CD = |2 - (-2)| = 4 units.<br>Length DA = |3 - (-3)| = 6 units.<br>Adjacent sides are perpendicular (parallel to axes). Hence ABCD is a <strong>Rectangle</strong>.<br><br>(ii) Perimeter = 2(length + breadth) = 2(6 + 4) = <strong>20 units</strong>.<br>Area = length &times; breadth = 6 &times; 4 = <strong>24 square units</strong>."
     },
     {
       "section": "B",
@@ -353,7 +375,8 @@
       "prompt": "Evaluate without direct cubing using algebraic identities:<br><strong>(28)<sup>3</sup> + (-15)<sup>3</sup> + (-13)<sup>3</sup></strong>.",
       "answer": "Let a = 28, b = -15, c = -13.<br>Compute sum: a + b + c = 28 + (-15) + (-13) = 28 - 28 = 0.<br><br>Since a + b + c = 0, we have the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>Therefore:<br>(28)<sup>3</sup> + (-15)<sup>3</sup> + (-13)<sup>3</sup> = 3(28)(-15)(-13)<br>= 84 &times; 195 = <strong>16,380</strong>.",
       "markingScheme": "• Verifying a + b + c = 0: 0.5 mark<br>• Stating identity a<sup>3</sup>+b<sup>3</sup>+c<sup>3</sup> = 3abc: 0.5 mark<br>• Correct evaluation 3 &times; 28 &times; (-15) &times; (-13) = 16,380: 1 mark",
-      "examinerTip": "Product of two negative terms is positive: (-15) &times; (-13) = +195."
+      "examinerTip": "Product of two negative terms is positive: (-15) &times; (-13) = +195.",
+      "solution": "Let a = 28, b = -15, c = -13.<br>Compute sum: a + b + c = 28 + (-15) + (-13) = 28 - 28 = 0.<br><br>Since a + b + c = 0, we have the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc.<br><br>Therefore:<br>(28)<sup>3</sup> + (-15)<sup>3</sup> + (-13)<sup>3</sup> = 3(28)(-15)(-13)<br>= 84 &times; 195 = <strong>16,380</strong>."
     },
     {
       "section": "B",
@@ -363,7 +386,8 @@
       "prompt": "Find the value of k if the linear equation 2x - 3y = k passes through the point of intersection of the vertical line x = 4 and the horizontal line y = -1.",
       "answer": "The intersection point of x = 4 and y = -1 is (4, -1).<br><br>Substitute x = 4 and y = -1 into 2x - 3y = k:<br>2(4) - 3(-1) = k<br>8 + 3 = k<br><strong>k = 11</strong>.",
       "markingScheme": "• Stating point of intersection (4, -1): 1 mark<br>• Substituting into equation and finding k = 11: 1 mark",
-      "examinerTip": "Vertical and horizontal lines intersect at (constant x, constant y)."
+      "examinerTip": "Vertical and horizontal lines intersect at (constant x, constant y).",
+      "solution": "The intersection point of x = 4 and y = -1 is (4, -1).<br><br>Substitute x = 4 and y = -1 into 2x - 3y = k:<br>2(4) - 3(-1) = k<br>8 + 3 = k<br><strong>k = 11</strong>."
     },
     {
       "section": "B",
@@ -373,7 +397,8 @@
       "prompt": "An isosceles right-angled triangle has an area of 8 cm<sup>2</sup>. Find the length of its hypotenuse.",
       "answer": "Let the two equal legs be of length a cm.<br>Area = (1/2) &times; base &times; height = (1/2) &times; a &times; a = a<sup>2</sup> / 2.<br>Given a<sup>2</sup> / 2 = 8 &rArr; a<sup>2</sup> = 16 &rArr; a = 4 cm.<br><br>By Baudh&amacron;yana-Pythagoras theorem:<br>Hypotenuse h = &radic;(a<sup>2</sup> + a<sup>2</sup>) = &radic;(16 + 16) = &radic;32 = <strong>4&radic;2 cm</strong> (or approx 5.66 cm).",
       "markingScheme": "• Setting up (1/2)a<sup>2</sup> = 8 to find a = 4 cm: 1 mark<br>• Calculating hypotenuse h = &radic;(4<sup>2</sup> + 4<sup>2</sup>) = 4&radic;2 cm: 1 mark",
-      "examinerTip": "In an isosceles right triangle, hypotenuse is always equal to side &times; &radic;2."
+      "examinerTip": "In an isosceles right triangle, hypotenuse is always equal to side &times; &radic;2.",
+      "solution": "Let the two equal legs be of length a cm.<br>Area = (1/2) &times; base &times; height = (1/2) &times; a &times; a = a<sup>2</sup> / 2.<br>Given a<sup>2</sup> / 2 = 8 &rArr; a<sup>2</sup> = 16 &rArr; a = 4 cm.<br><br>By Baudh&amacron;yana-Pythagoras theorem:<br>Hypotenuse h = &radic;(a<sup>2</sup> + a<sup>2</sup>) = &radic;(16 + 16) = &radic;32 = <strong>4&radic;2 cm</strong> (or approx 5.66 cm)."
     },
     {
       "section": "C",
@@ -383,7 +408,8 @@
       "prompt": "Represent &radic;9.3 geometrically on the number line and write the steps of construction.",
       "answer": "<strong>Steps of Construction:</strong><br>1. Draw a line segment AB = 9.3 units on a straight line.<br>2. Extend AB by 1 unit to point C such that BC = 1 unit. Total AC = 10.3 units.<br>3. Find the midpoint O of AC by drawing perpendicular bisector of AC (radius OA = OC = 10.3/2 = 5.15 units).<br>4. With O as center and radius OA, draw a semicircle passing through A and C.<br>5. Draw a line perpendicular to AC at point B, cutting the semicircle at point D.<br>6. By Pythagoras theorem, length <strong>BD = &radic;9.3 units</strong>.<br>7. With B as origin (0) and radius BD, draw an arc intersecting the number line at point E. Point E represents <strong>&radic;9.3</strong>.",
       "markingScheme": "• Steps 1-3 (Drawing AB=9.3, BC=1, finding midpoint O): 1 mark<br>• Steps 4-5 (Semicircle and perpendicular BD): 1 mark<br>• Mathematical justification OD<sup>2</sup> - OB<sup>2</sup> = BD<sup>2</sup> &rArr; BD = &radic;9.3: 1 mark",
-      "examinerTip": "OD = 5.15, OB = 5.15 - 1 = 4.15. BD^2 = 5.15^2 - 4.15^2 = (5.15 - 4.15)(5.15 + 4.15) = 1 &times; 9.3 = 9.3."
+      "examinerTip": "OD = 5.15, OB = 5.15 - 1 = 4.15. BD^2 = 5.15^2 - 4.15^2 = (5.15 - 4.15)(5.15 + 4.15) = 1 &times; 9.3 = 9.3.",
+      "solution": "<strong>Steps of Construction:</strong><br>1. Draw a line segment AB = 9.3 units on a straight line.<br>2. Extend AB by 1 unit to point C such that BC = 1 unit. Total AC = 10.3 units.<br>3. Find the midpoint O of AC by drawing perpendicular bisector of AC (radius OA = OC = 10.3/2 = 5.15 units).<br>4. With O as center and radius OA, draw a semicircle passing through A and C.<br>5. Draw a line perpendicular to AC at point B, cutting the semicircle at point D.<br>6. By Pythagoras theorem, length <strong>BD = &radic;9.3 units</strong>.<br>7. With B as origin (0) and radius BD, draw an arc intersecting the number line at point E. Point E represents <strong>&radic;9.3</strong>."
     },
     {
       "section": "C",
@@ -393,7 +419,8 @@
       "prompt": "If (x - 1) and (x + 2) are factors of the polynomial p(x) = x<sup>3</sup> + ax<sup>2</sup> + bx - 6, find the values of a and b. Hence, find the third linear factor of p(x).",
       "answer": "1. Since (x - 1) is a factor, p(1) = 0:<br>1<sup>3</sup> + a(1)<sup>2</sup> + b(1) - 6 = 0 &rArr; 1 + a + b - 6 = 0 &rArr; <strong>a + b = 5</strong> --- (Eq 1)<br><br>2. Since (x + 2) is a factor, p(-2) = 0:<br>(-2)<sup>3</sup> + a(-2)<sup>2</sup> + b(-2) - 6 = 0 &rArr; -8 + 4a - 2b - 6 = 0 &rArr; 4a - 2b = 14 &rArr; <strong>2a - b = 7</strong> --- (Eq 2)<br><br>3. Add Eq 1 and Eq 2:<br>(a + b) + (2a - b) = 5 + 7 &rArr; 3a = 12 &rArr; <strong>a = 4</strong>.<br>From Eq 1: 4 + b = 5 &rArr; <strong>b = 1</strong>.<br><br>4. The polynomial is p(x) = x<sup>3</sup> + 4x<sup>2</sup> + x - 6.<br>Known product of factors = (x - 1)(x + 2) = x<sup>2</sup> + x - 2.<br>Dividing p(x) by (x<sup>2</sup> + x - 2):<br>(x<sup>3</sup> + 4x<sup>2</sup> + x - 6) = (x<sup>2</sup> + x - 2)(x + 3).<br>Therefore, the third factor is <strong>(x + 3)</strong>.",
       "markingScheme": "• Forming Eq 1 (a + b = 5): 1 mark<br>• Forming Eq 2 (2a - b = 7) and solving for a = 4, b = 1: 1 mark<br>• Finding third factor (x + 3): 1 mark",
-      "examinerTip": "Constant term check: (-1) &times; (+2) &times; (+3) = -6, which matches the constant term."
+      "examinerTip": "Constant term check: (-1) &times; (+2) &times; (+3) = -6, which matches the constant term.",
+      "solution": "1. Since (x - 1) is a factor, p(1) = 0:<br>1<sup>3</sup> + a(1)<sup>2</sup> + b(1) - 6 = 0 &rArr; 1 + a + b - 6 = 0 &rArr; <strong>a + b = 5</strong> --- (Eq 1)<br><br>2. Since (x + 2) is a factor, p(-2) = 0:<br>(-2)<sup>3</sup> + a(-2)<sup>2</sup> + b(-2) - 6 = 0 &rArr; -8 + 4a - 2b - 6 = 0 &rArr; 4a - 2b = 14 &rArr; <strong>2a - b = 7</strong> --- (Eq 2)<br><br>3. Add Eq 1 and Eq 2:<br>(a + b) + (2a - b) = 5 + 7 &rArr; 3a = 12 &rArr; <strong>a = 4</strong>.<br>From Eq 1: 4 + b = 5 &rArr; <strong>b = 1</strong>.<br><br>4. The polynomial is p(x) = x<sup>3</sup> + 4x<sup>2</sup> + x - 6.<br>Known product of factors = (x - 1)(x + 2) = x<sup>2</sup> + x - 2.<br>Dividing p(x) by (x<sup>2</sup> + x - 2):<br>(x<sup>3</sup> + 4x<sup>2</sup> + x - 6) = (x<sup>2</sup> + x - 2)(x + 3).<br>Therefore, the third factor is <strong>(x + 3)</strong>."
     },
     {
       "section": "C",
@@ -403,7 +430,8 @@
       "prompt": "If point P(x, y) is equidistant from the points A(5, 1) and B(-1, 5), prove that 3x = 2y.",
       "answer": "Given PA = PB &rArr; PA<sup>2</sup> = PB<sup>2</sup>.<br><br>Using the Baudh&amacron;yana-Pythagoras distance formula:<br>PA<sup>2</sup> = (x - 5)<sup>2</sup> + (y - 1)<sup>2</sup> = x<sup>2</sup> - 10x + 25 + y<sup>2</sup> - 2y + 1 = x<sup>2</sup> + y<sup>2</sup> - 10x - 2y + 26.<br><br>PB<sup>2</sup> = (x - (-1))<sup>2</sup> + (y - 5)<sup>2</sup> = (x + 1)<sup>2</sup> + (y - 5)<sup>2</sup> = x<sup>2</sup> + 2x + 1 + y<sup>2</sup> - 10y + 25 = x<sup>2</sup> + y<sup>2</sup> + 2x - 10y + 26.<br><br>Equating PA<sup>2</sup> = PB<sup>2</sup>:<br>x<sup>2</sup> + y<sup>2</sup> - 10x - 2y + 26 = x<sup>2</sup> + y<sup>2</sup> + 2x - 10y + 26<br>-10x - 2y = 2x - 10y<br>-10x - 2x = -10y + 2y<br>-12x = -8y<br>Divide both sides by -4:<br><strong>3x = 2y</strong>. (Hence Proved).",
       "markingScheme": "• Expanding PA<sup>2</sup> and PB<sup>2</sup>: 1.5 marks<br>• Cancelling common terms and simplifying: 1 mark<br>• Reaching 3x = 2y: 0.5 mark",
-      "examinerTip": "Always square distances first (PA^2 = PB^2) to eliminate the square root radical."
+      "examinerTip": "Always square distances first (PA^2 = PB^2) to eliminate the square root radical.",
+      "solution": "Given PA = PB &rArr; PA<sup>2</sup> = PB<sup>2</sup>.<br><br>Using the Baudh&amacron;yana-Pythagoras distance formula:<br>PA<sup>2</sup> = (x - 5)<sup>2</sup> + (y - 1)<sup>2</sup> = x<sup>2</sup> - 10x + 25 + y<sup>2</sup> - 2y + 1 = x<sup>2</sup> + y<sup>2</sup> - 10x - 2y + 26.<br><br>PB<sup>2</sup> = (x - (-1))<sup>2</sup> + (y - 5)<sup>2</sup> = (x + 1)<sup>2</sup> + (y - 5)<sup>2</sup> = x<sup>2</sup> + 2x + 1 + y<sup>2</sup> - 10y + 25 = x<sup>2</sup> + y<sup>2</sup> + 2x - 10y + 26.<br><br>Equating PA<sup>2</sup> = PB<sup>2</sup>:<br>x<sup>2</sup> + y<sup>2</sup> - 10x - 2y + 26 = x<sup>2</sup> + y<sup>2</sup> + 2x - 10y + 26<br>-10x - 2y = 2x - 10y<br>-10x - 2x = -10y + 2y<br>-12x = -8y<br>Divide both sides by -4:<br><strong>3x = 2y</strong>. (Hence Proved)."
     },
     {
       "section": "C",
@@ -413,7 +441,8 @@
       "prompt": "For the linear equation 3x + 2y = 12:<br>(i) Find the points where its graph cuts the x-axis and the y-axis.<br>(ii) Calculate the area of the triangle formed by this straight line with the coordinate axes.",
       "answer": "(i) To find the x-intercept: put y = 0:<br>3x + 2(0) = 12 &rArr; 3x = 12 &rArr; x = 4. Point A is <strong>(4, 0)</strong>.<br>To find the y-intercept: put x = 0:<br>3(0) + 2y = 12 &rArr; 2y = 12 &rArr; y = 6. Point B is <strong>(0, 6)</strong>.<br><br>(ii) The coordinate axes meet at origin O(0, 0) at a right angle (90&deg;).<br>&Delta;OAB is a right-angled triangle with base OA = 4 units and height OB = 6 units.<br>Area = (1/2) &times; base &times; height = (1/2) &times; 4 &times; 6 = <strong>12 square units</strong>.",
       "markingScheme": "• Finding (4, 0) and (0, 6): 1.5 marks<br>• Right-triangle area formula (1/2 &times; OA &times; OB): 0.5 mark<br>• Area = 12 sq units: 1 mark",
-      "examinerTip": "Triangle formed with axes always has area = (1/2) &times; |x-intercept| &times; |y-intercept|."
+      "examinerTip": "Triangle formed with axes always has area = (1/2) &times; |x-intercept| &times; |y-intercept|.",
+      "solution": "(i) To find the x-intercept: put y = 0:<br>3x + 2(0) = 12 &rArr; 3x = 12 &rArr; x = 4. Point A is <strong>(4, 0)</strong>.<br>To find the y-intercept: put x = 0:<br>3(0) + 2y = 12 &rArr; 2y = 12 &rArr; y = 6. Point B is <strong>(0, 6)</strong>.<br><br>(ii) The coordinate axes meet at origin O(0, 0) at a right angle (90&deg;).<br>&Delta;OAB is a right-angled triangle with base OA = 4 units and height OB = 6 units.<br>Area = (1/2) &times; base &times; height = (1/2) &times; 4 &times; 6 = <strong>12 square units</strong>."
     },
     {
       "section": "C",
@@ -423,7 +452,8 @@
       "prompt": "A triangular park has sides 120 m, 80 m, and 50 m. A gardener has to put a fence all around it leaving a space 3 m wide for a gate on one side.<br>(i) Find the total length and cost of fencing at the rate of ₹20 per meter. (1.5m)<br>(ii) Find the area of the park using Heron's formula. (1.5m)",
       "answer": "(i) Perimeter = 120 + 80 + 50 = 250 m.<br>Length of fence required = Perimeter - Gate width = 250 - 3 = <strong>247 m</strong>.<br>Cost of fencing = 247 &times; ₹20 = <strong>₹4,940</strong>.<br><br>(ii) Semi-perimeter s = 250 / 2 = 125 m.<br>s - a = 125 - 120 = 5 m<br>s - b = 125 - 80 = 45 m<br>s - c = 125 - 50 = 75 m.<br>Area = &radic;[125 &times; 5 &times; 45 &times; 75]<br>= &radic;[(25 &times; 5) &times; 5 &times; (9 &times; 5) &times; (25 &times; 3)]<br>= &radic;[25<sup>2</sup> &times; 5<sup>2</sup> &times; 9 &times; 15]<br>= 25 &times; 5 &times; 3 &times; &radic;15 = <strong>375&radic;15 m<sup>2</sup></strong> (approx 1452.37 m<sup>2</sup>).",
       "markingScheme": "• (i) Net fencing length 247 m and cost ₹4,940: 1.5 marks<br>• (ii) s = 125 m and Heron's formula factoring Area = 375&radic;15 m<sup>2</sup>: 1.5 marks",
-      "examinerTip": "Remember to subtract the 3m gate before calculating the fencing cost."
+      "examinerTip": "Remember to subtract the 3m gate before calculating the fencing cost.",
+      "solution": "(i) Perimeter = 120 + 80 + 50 = 250 m.<br>Length of fence required = Perimeter - Gate width = 250 - 3 = <strong>247 m</strong>.<br>Cost of fencing = 247 &times; ₹20 = <strong>₹4,940</strong>.<br><br>(ii) Semi-perimeter s = 250 / 2 = 125 m.<br>s - a = 125 - 120 = 5 m<br>s - b = 125 - 80 = 45 m<br>s - c = 125 - 50 = 75 m.<br>Area = &radic;[125 &times; 5 &times; 45 &times; 75]<br>= &radic;[(25 &times; 5) &times; 5 &times; (9 &times; 5) &times; (25 &times; 3)]<br>= &radic;[25<sup>2</sup> &times; 5<sup>2</sup> &times; 9 &times; 15]<br>= 25 &times; 5 &times; 3 &times; &radic;15 = <strong>375&radic;15 m<sup>2</sup></strong> (approx 1452.37 m<sup>2</sup>)."
     },
     {
       "section": "C",
@@ -433,7 +463,8 @@
       "prompt": "Factorize completely using algebraic identities: <strong>x<sup>6</sup> - 64</strong>.",
       "answer": "1. Express as difference of squares first (preferable over cubes):<br>x<sup>6</sup> - 64 = (x<sup>3</sup>)<sup>2</sup> - (8)<sup>2</sup><br>= (x<sup>3</sup> - 8)(x<sup>3</sup> + 8)<br><br>2. Apply difference of cubes to (x<sup>3</sup> - 8):<br>x<sup>3</sup> - 2<sup>3</sup> = (x - 2)(x<sup>2</sup> + 2x + 4)<br><br>3. Apply sum of cubes to (x<sup>3</sup> + 8):<br>x<sup>3</sup> + 2<sup>3</sup> = (x + 2)(x<sup>2</sup> - 2x + 4)<br><br>4. Combining all factors:<br><strong>(x - 2)(x + 2)(x<sup>2</sup> + 2x + 4)(x<sup>2</sup> - 2x + 4)</strong>.",
       "markingScheme": "• Difference of squares (x<sup>3</sup> - 8)(x<sup>3</sup> + 8): 1 mark<br>• Factoring (x<sup>3</sup> - 8): 1 mark<br>• Factoring (x<sup>3</sup> + 8) and final four-factor product: 1 mark",
-      "examinerTip": "Factoring difference of squares first produces cleaner, irreducible quadratic factors."
+      "examinerTip": "Factoring difference of squares first produces cleaner, irreducible quadratic factors.",
+      "solution": "1. Express as difference of squares first (preferable over cubes):<br>x<sup>6</sup> - 64 = (x<sup>3</sup>)<sup>2</sup> - (8)<sup>2</sup><br>= (x<sup>3</sup> - 8)(x<sup>3</sup> + 8)<br><br>2. Apply difference of cubes to (x<sup>3</sup> - 8):<br>x<sup>3</sup> - 2<sup>3</sup> = (x - 2)(x<sup>2</sup> + 2x + 4)<br><br>3. Apply sum of cubes to (x<sup>3</sup> + 8):<br>x<sup>3</sup> + 2<sup>3</sup> = (x + 2)(x<sup>2</sup> - 2x + 4)<br><br>4. Combining all factors:<br><strong>(x - 2)(x + 2)(x<sup>2</sup> + 2x + 4)(x<sup>2</sup> - 2x + 4)</strong>."
     },
     {
       "section": "D",
@@ -443,7 +474,8 @@
       "prompt": "If x = 3 + 2&radic;2, evaluate the following step-by-step:<br>(i) 1/x (1m)<br>(ii) x + 1/x (1m)<br>(iii) x<sup>2</sup> + 1/x<sup>2</sup> (1m)<br>(iv) x<sup>3</sup> + 1/x<sup>3</sup> (1m)<br>(v) &radic;x + 1/&radic;x (1m)",
       "answer": "(i) 1/x = 1 / (3 + 2&radic;2) = (3 - 2&radic;2) / [3<sup>2</sup> - (2&radic;2)<sup>2</sup>] = (3 - 2&radic;2) / (9 - 8) = <strong>3 - 2&radic;2</strong>.<br><br>(ii) x + 1/x = (3 + 2&radic;2) + (3 - 2&radic;2) = <strong>6</strong>.<br><br>(iii) x<sup>2</sup> + 1/x<sup>2</sup> = (x + 1/x)<sup>2</sup> - 2 = 6<sup>2</sup> - 2 = 36 - 2 = <strong>34</strong>.<br><br>(iv) x<sup>3</sup> + 1/x<sup>3</sup> = (x + 1/x)<sup>3</sup> - 3(x + 1/x) = 6<sup>3</sup> - 3(6) = 216 - 18 = <strong>198</strong>.<br><br>(v) Let u = &radic;x + 1/&radic;x.<br>u<sup>2</sup> = (&radic;x + 1/&radic;x)<sup>2</sup> = x + 1/x + 2 = 6 + 2 = 8.<br>Since x > 0, &radic;x + 1/&radic;x > 0 &rArr; u = &radic;8 = <strong>2&radic;2</strong>.",
       "markingScheme": "• (i) 1/x = 3 - 2&radic;2: 1 mark<br>• (ii) x + 1/x = 6: 1 mark<br>• (iii) x<sup>2</sup> + 1/x<sup>2</sup> = 34: 1 mark<br>• (iv) x<sup>3</sup> + 1/x<sup>3</sup> = 198: 1 mark<br>• (v) &radic;x + 1/&radic;x = 2&radic;2: 1 mark",
-      "examinerTip": "Notice how all sub-parts cascade naturally once x + 1/x = 6 is computed."
+      "examinerTip": "Notice how all sub-parts cascade naturally once x + 1/x = 6 is computed.",
+      "solution": "(i) 1/x = 1 / (3 + 2&radic;2) = (3 - 2&radic;2) / [3<sup>2</sup> - (2&radic;2)<sup>2</sup>] = (3 - 2&radic;2) / (9 - 8) = <strong>3 - 2&radic;2</strong>.<br><br>(ii) x + 1/x = (3 + 2&radic;2) + (3 - 2&radic;2) = <strong>6</strong>.<br><br>(iii) x<sup>2</sup> + 1/x<sup>2</sup> = (x + 1/x)<sup>2</sup> - 2 = 6<sup>2</sup> - 2 = 36 - 2 = <strong>34</strong>.<br><br>(iv) x<sup>3</sup> + 1/x<sup>3</sup> = (x + 1/x)<sup>3</sup> - 3(x + 1/x) = 6<sup>3</sup> - 3(6) = 216 - 18 = <strong>198</strong>.<br><br>(v) Let u = &radic;x + 1/&radic;x.<br>u<sup>2</sup> = (&radic;x + 1/&radic;x)<sup>2</sup> = x + 1/x + 2 = 6 + 2 = 8.<br>Since x > 0, &radic;x + 1/&radic;x > 0 &rArr; u = &radic;8 = <strong>2&radic;2</strong>."
     },
     {
       "section": "D",
@@ -453,7 +485,8 @@
       "prompt": "A field is in the shape of a trapezium whose parallel sides are 25 m and 10 m, and non-parallel sides are 14 m and 13 m. Find the area of the field by decomposing it into a parallelogram and a triangle.",
       "answer": "1. Let trapezium be ABCD with AB = 25 m, CD = 10 m (parallel), AD = 13 m, BC = 14 m.<br>2. Draw CE parallel to DA meeting AB at E.<br>Then AECD is a parallelogram &rArr; AE = CD = 10 m and CE = AD = 13 m.<br>3. Length EB = AB - AE = 25 - 10 = 15 m.<br>Now &Delta;CEB has sides: CE = 13 m, BC = 14 m, EB = 15 m.<br><br>4. Compute area of &Delta;CEB by Heron's formula:<br>Semi-perimeter s = (13 + 14 + 15)/2 = 42/2 = 21 m.<br>s - 13 = 8, s - 14 = 7, s - 15 = 6.<br>Area(&Delta;CEB) = &radic;[21 &times; 8 &times; 7 &times; 6] = &radic;[(7 &times; 3) &times; 8 &times; 7 &times; (2 &times; 3)] = &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 16] = 7 &times; 3 &times; 4 = <strong>84 m<sup>2</sup></strong>.<br><br>5. Let h be height of &Delta;CEB (which is also height of trapezium):<br>Area(&Delta;CEB) = (1/2) &times; base &times; h &rArr; 84 = (1/2) &times; 15 &times; h &rArr; h = 168/15 = 11.2 m.<br><br>6. Area of Trapezium = (1/2) &times; (sum of parallel sides) &times; h<br>= (1/2) &times; (25 + 10) &times; 11.2 = (1/2) &times; 35 &times; 11.2 = 35 &times; 5.6 = <strong>196 m<sup>2</sup></strong>.",
       "markingScheme": "• Geometric decomposition into parallelogram and triangle with side 15 m: 1.5 marks<br>• Heron's area of triangle CEB = 84 m<sup>2</sup>: 1.5 marks<br>• Height h = 11.2 m: 1 mark<br>• Total trapezium area = 196 m<sup>2</sup>: 1 mark",
-      "examinerTip": "Classic NCERT HOTS problem. Area can also be found as Area(Parallelogram) + Area(Triangle) = (10 &times; 11.2) + 84 = 112 + 84 = 196 m^2."
+      "examinerTip": "Classic NCERT HOTS problem. Area can also be found as Area(Parallelogram) + Area(Triangle) = (10 &times; 11.2) + 84 = 112 + 84 = 196 m^2.",
+      "solution": "1. Let trapezium be ABCD with AB = 25 m, CD = 10 m (parallel), AD = 13 m, BC = 14 m.<br>2. Draw CE parallel to DA meeting AB at E.<br>Then AECD is a parallelogram &rArr; AE = CD = 10 m and CE = AD = 13 m.<br>3. Length EB = AB - AE = 25 - 10 = 15 m.<br>Now &Delta;CEB has sides: CE = 13 m, BC = 14 m, EB = 15 m.<br><br>4. Compute area of &Delta;CEB by Heron's formula:<br>Semi-perimeter s = (13 + 14 + 15)/2 = 42/2 = 21 m.<br>s - 13 = 8, s - 14 = 7, s - 15 = 6.<br>Area(&Delta;CEB) = &radic;[21 &times; 8 &times; 7 &times; 6] = &radic;[(7 &times; 3) &times; 8 &times; 7 &times; (2 &times; 3)] = &radic;[7<sup>2</sup> &times; 3<sup>2</sup> &times; 16] = 7 &times; 3 &times; 4 = <strong>84 m<sup>2</sup></strong>.<br><br>5. Let h be height of &Delta;CEB (which is also height of trapezium):<br>Area(&Delta;CEB) = (1/2) &times; base &times; h &rArr; 84 = (1/2) &times; 15 &times; h &rArr; h = 168/15 = 11.2 m.<br><br>6. Area of Trapezium = (1/2) &times; (sum of parallel sides) &times; h<br>= (1/2) &times; (25 + 10) &times; 11.2 = (1/2) &times; 35 &times; 11.2 = 35 &times; 5.6 = <strong>196 m<sup>2</sup></strong>."
     },
     {
       "section": "D",
@@ -463,7 +496,8 @@
       "prompt": "If x + y + z = 1, xy + yz + zx = -1, and xyz = -1, find the value of x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup>.",
       "answer": "1. Recall the standard identity:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - xy - yz - zx)  --- (1)<br><br>2. We need x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>:<br>(x + y + z)<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2(xy + yz + zx)<br>1<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2(-1)<br>1 = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - 2<br><strong>x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 3</strong>.<br><br>3. Compute (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - (xy + yz + zx)):<br>= 3 - (-1) = 3 + 1 = 4.<br><br>4. Substitute into identity (1):<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(-1) = (1) &times; (4)<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> + 3 = 4<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 4 - 3<br><strong>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 1</strong>.",
       "markingScheme": "• Stating identity: 1 mark<br>• Finding x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 3: 2 marks<br>• Substituting all terms into identity: 1 mark<br>• Final answer 1: 1 mark",
-      "examinerTip": "Carefully track negative signs: - 3xyz becomes - 3(-1) = +3."
+      "examinerTip": "Carefully track negative signs: - 3xyz becomes - 3(-1) = +3.",
+      "solution": "1. Recall the standard identity:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - xy - yz - zx)  --- (1)<br><br>2. We need x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>:<br>(x + y + z)<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2(xy + yz + zx)<br>1<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2(-1)<br>1 = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - 2<br><strong>x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 3</strong>.<br><br>3. Compute (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - (xy + yz + zx)):<br>= 3 - (-1) = 3 + 1 = 4.<br><br>4. Substitute into identity (1):<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(-1) = (1) &times; (4)<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> + 3 = 4<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 4 - 3<br><strong>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 1</strong>."
     },
     {
       "section": "D",
@@ -473,7 +507,8 @@
       "prompt": "The coordinates of the midpoints of the sides of &Delta;ABC are D(3, 4), E(4, 6), and F(2, 5), where D, E, F are the midpoints of BC, CA, and AB respectively.<br>(i) Reconstruct the coordinates of vertices A, B, and C. (3m)<br>(ii) Find the length of the side BC using the Baudh&amacron;yana-Pythagoras distance formula. (2m)",
       "answer": "(i) By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>For vertex A: opposite midpoint is D(3, 4), adjacent midpoints are E(4, 6) and F(2, 5):<br>x_A = x_E + x_F - x_D = 4 + 2 - 3 = <strong>3</strong>.<br>y_A = y_E + y_F - y_D = 6 + 5 - 4 = <strong>7</strong>.<br>So, <strong>A(3, 7)</strong>.<br><br>For vertex B: opposite midpoint is E(4, 6), adjacent are D(3, 4) and F(2, 5):<br>x_B = x_D + x_F - x_E = 3 + 2 - 4 = <strong>1</strong>.<br>y_B = y_D + y_F - y_E = 4 + 5 - 6 = <strong>3</strong>.<br>So, <strong>B(1, 3)</strong>.<br><br>For vertex C: opposite midpoint is F(2, 5), adjacent are D(3, 4) and E(4, 6):<br>x_C = x_D + x_E - x_F = 3 + 4 - 2 = <strong>5</strong>.<br>y_C = y_D + y_E - y_F = 4 + 6 - 5 = <strong>5</strong>.<br>So, <strong>C(5, 5)</strong>.<br><br>(ii) Side BC connects B(1, 3) and C(5, 5):<br>d(BC) = &radic;[(5 - 1)<sup>2</sup> + (5 - 3)<sup>2</sup>]<br>= &radic;[4<sup>2</sup> + 2<sup>2</sup>] = &radic;[16 + 4] = &radic;20 = <strong>2&radic;5 units</strong> (approx 4.47 units).",
       "markingScheme": "• (i) Formula x_A = x_E + x_F - x_D and finding A(3, 7): 1 mark<br>• Finding B(1, 3) and C(5, 5): 2 marks<br>• (ii) Applying distance formula for BC: 1 mark<br>• BC = &radic;20 = 2&radic;5 units: 1 mark",
-      "examinerTip": "Direct application of NCERT Ganita Manjari Chapter 1 midpoint reconstruction theorem."
+      "examinerTip": "Direct application of NCERT Ganita Manjari Chapter 1 midpoint reconstruction theorem.",
+      "solution": "(i) By the NCERT Ganita Manjari Midpoint Reconstruction Theorem:<br>For vertex A: opposite midpoint is D(3, 4), adjacent midpoints are E(4, 6) and F(2, 5):<br>x_A = x_E + x_F - x_D = 4 + 2 - 3 = <strong>3</strong>.<br>y_A = y_E + y_F - y_D = 6 + 5 - 4 = <strong>7</strong>.<br>So, <strong>A(3, 7)</strong>.<br><br>For vertex B: opposite midpoint is E(4, 6), adjacent are D(3, 4) and F(2, 5):<br>x_B = x_D + x_F - x_E = 3 + 2 - 4 = <strong>1</strong>.<br>y_B = y_D + y_F - y_E = 4 + 5 - 6 = <strong>3</strong>.<br>So, <strong>B(1, 3)</strong>.<br><br>For vertex C: opposite midpoint is F(2, 5), adjacent are D(3, 4) and E(4, 6):<br>x_C = x_D + x_E - x_F = 3 + 4 - 2 = <strong>5</strong>.<br>y_C = y_D + y_E - y_F = 4 + 6 - 5 = <strong>5</strong>.<br>So, <strong>C(5, 5)</strong>.<br><br>(ii) Side BC connects B(1, 3) and C(5, 5):<br>d(BC) = &radic;[(5 - 1)<sup>2</sup> + (5 - 3)<sup>2</sup>]<br>= &radic;[4<sup>2</sup> + 2<sup>2</sup>] = &radic;[16 + 4] = &radic;20 = <strong>2&radic;5 units</strong> (approx 4.47 units)."
     },
     {
       "section": "E",
@@ -483,7 +518,8 @@
       "prompt": "An architect is planning an exhibition pavilion using physical Algebra Tiles to model modular floor spaces. The layout requires 1 large square zone of side x meters (area x<sup>2</sup>), 7 rectangular passage strips of dimensions x &times; 1 meters, and 10 small unit storage squares of side 1 meter.<br><br><strong>Questions:</strong><br>(i) Write the polynomial A(x) representing the total floor area. (1m)<br>(ii) Factorize A(x) into two linear binomial dimensions representing length and breadth. (1m)<br>(iii) If x = 8 meters, calculate the numerical length, breadth, and total floor area. If carpet installation costs ₹250 per m<sup>2</sup>, find the total cost. (2m)",
       "answer": "(i) Total Area polynomial A(x) = 1(x<sup>2</sup>) + 7(x) + 10(1) = <strong>x<sup>2</sup> + 7x + 10</strong>.<br><br>(ii) Splitting the middle term (factors of 10 that sum to 7 are 5 and 2):<br>x<sup>2</sup> + 5x + 2x + 10 = x(x + 5) + 2(x + 5) = <strong>(x + 5)(x + 2)</strong>.<br>So the dimensions are Length = (x + 5) m and Breadth = (x + 2) m.<br><br>(iii) For x = 8 m:<br>Length = 8 + 5 = 13 m.<br>Breadth = 8 + 2 = 10 m.<br>Total Area = 13 &times; 10 = 130 m<sup>2</sup>.<br>Total Flooring Cost = 130 &times; ₹250 = <strong>₹32,500</strong>.",
       "markingScheme": "• (i) Polynomial x<sup>2</sup> + 7x + 10: 1 mark<br>• (ii) Factoring (x + 5)(x + 2): 1 mark<br>• (iii) Dimensions 13m &times; 10m, area 130 m<sup>2</sup>, and cost ₹32,500: 2 marks",
-      "examinerTip": "Algebra tiles geometrically justify the splitting-of-the-middle-term technique."
+      "examinerTip": "Algebra tiles geometrically justify the splitting-of-the-middle-term technique.",
+      "solution": "(i) Total Area polynomial A(x) = 1(x<sup>2</sup>) + 7(x) + 10(1) = <strong>x<sup>2</sup> + 7x + 10</strong>.<br><br>(ii) Splitting the middle term (factors of 10 that sum to 7 are 5 and 2):<br>x<sup>2</sup> + 5x + 2x + 10 = x(x + 5) + 2(x + 5) = <strong>(x + 5)(x + 2)</strong>.<br>So the dimensions are Length = (x + 5) m and Breadth = (x + 2) m.<br><br>(iii) For x = 8 m:<br>Length = 8 + 5 = 13 m.<br>Breadth = 8 + 2 = 10 m.<br>Total Area = 13 &times; 10 = 130 m<sup>2</sup>.<br>Total Flooring Cost = 130 &times; ₹250 = <strong>₹32,500</strong>."
     },
     {
       "section": "E",
@@ -493,7 +529,8 @@
       "prompt": "A modern drone delivery network maps its operations over a city grid measured in kilometers. The central control dispatch tower is located at the origin O(0, 0). Two primary hospital receiving hubs are situated at P(6, 8) and Q(-6, 8).<br><br><strong>Questions:</strong><br>(i) Calculate the direct flight distance from dispatch O(0, 0) to hub P(6, 8) using the Baudh&amacron;yana-Pythagoras distance formula. (1m)<br>(ii) Determine the coordinates of waypoint M, which is the exact midpoint between hospital hubs P and Q. (1m)<br>(iii) A solar recharge relay R is located at (0, 16). Verify whether dispatch tower O(0, 0), waypoint M, and relay R are collinear. What is the total flight path distance from O to P and then P to R? (2m)",
       "answer": "(i) Distance OP = &radic;[(6 - 0)<sup>2</sup> + (8 - 0)<sup>2</sup>] = &radic;[36 + 64] = &radic;100 = <strong>10 km</strong>.<br><br>(ii) Midpoint M = ((6 + (-6))/2, (8 + 8)/2) = (0/2, 16/2) = <strong>(0, 8)</strong>.<br><br>(iii) All three points O(0, 0), M(0, 8), and R(0, 16) have x-coordinate equal to 0. Since their abscissa is constant 0, they all lie on the y-axis, hence they are <strong>Collinear</strong>.<br>Distance PR = &radic;[(0 - 6)<sup>2</sup> + (16 - 8)<sup>2</sup>] = &radic;[(-6)<sup>2</sup> + 8<sup>2</sup>] = &radic;[36 + 64] = &radic;100 = 10 km.<br>Total flight distance O &rarr; P &rarr; R = OP + PR = 10 km + 10 km = <strong>20 km</strong>.",
       "markingScheme": "• (i) OP = 10 km: 1 mark<br>• (ii) M(0, 8): 1 mark<br>• (iii) Collinearity justification (x = 0 / y-axis): 1 mark; Total distance 20 km: 1 mark",
-      "examinerTip": "Points lying on the same coordinate axis or line x = c are immediately collinear."
+      "examinerTip": "Points lying on the same coordinate axis or line x = c are immediately collinear.",
+      "solution": "(i) Distance OP = &radic;[(6 - 0)<sup>2</sup> + (8 - 0)<sup>2</sup>] = &radic;[36 + 64] = &radic;100 = <strong>10 km</strong>.<br><br>(ii) Midpoint M = ((6 + (-6))/2, (8 + 8)/2) = (0/2, 16/2) = <strong>(0, 8)</strong>.<br><br>(iii) All three points O(0, 0), M(0, 8), and R(0, 16) have x-coordinate equal to 0. Since their abscissa is constant 0, they all lie on the y-axis, hence they are <strong>Collinear</strong>.<br>Distance PR = &radic;[(0 - 6)<sup>2</sup> + (16 - 8)<sup>2</sup>] = &radic;[(-6)<sup>2</sup> + 8<sup>2</sup>] = &radic;[36 + 64] = &radic;100 = 10 km.<br>Total flight distance O &rarr; P &rarr; R = OP + PR = 10 km + 10 km = <strong>20 km</strong>."
     },
     {
       "section": "E",
@@ -503,7 +540,8 @@
       "prompt": "An agricultural research station manages a triangular test plantation plot whose boundary lengths are a = 35 m, b = 53 m, and c = 66 m.<br><br><strong>Questions:</strong><br>(i) Calculate the semi-perimeter s of the plantation plot. (1m)<br>(ii) Calculate the total area of the triangular plot using Heron's formula. (2m)<br>(iii) A central rotary sprinkler irrigates a circular area of radius r = 7 m inside this plot. Calculate the remaining unirrigated area of the plantation (take &pi; = 22/7). (1m)",
       "answer": "(i) Semi-perimeter s = (a + b + c)/2 = (35 + 53 + 66)/2 = 154/2 = <strong>77 m</strong>.<br><br>(ii) Applying Heron's formula:<br>s - a = 77 - 35 = 42 m<br>s - b = 77 - 53 = 24 m<br>s - c = 77 - 66 = 11 m.<br>Area = &radic;[s(s - a)(s - b)(s - c)] = &radic;[77 &times; 42 &times; 24 &times; 11]<br>= &radic;[(7 &times; 11) &times; (7 &times; 6) &times; (6 &times; 4) &times; 11]<br>= &radic;[7<sup>2</sup> &times; 11<sup>2</sup> &times; 6<sup>2</sup> &times; 2<sup>2</sup>]<br>= 7 &times; 11 &times; 6 &times; 2 = 77 &times; 12 = <strong>924 m<sup>2</sup></strong>.<br><br>(iii) Circular irrigated area = &pi;r<sup>2</sup> = (22/7) &times; 7 &times; 7 = 154 m<sup>2</sup>.<br>Remaining unirrigated area = Total Area - Irrigated Area = 924 - 154 = <strong>770 m<sup>2</sup></strong>.",
       "markingScheme": "• (i) s = 77 m: 1 mark<br>• (ii) Heron's formula factoring and Area = 924 m<sup>2</sup>: 2 marks<br>• (iii) Circle area 154 m<sup>2</sup> and remaining area 770 m<sup>2</sup>: 1 mark",
-      "examinerTip": "Factor 77 = 7 &times; 11 and 42 = 7 &times; 6 to easily pair up perfect squares under the radical."
+      "examinerTip": "Factor 77 = 7 &times; 11 and 42 = 7 &times; 6 to easily pair up perfect squares under the radical.",
+      "solution": "(i) Semi-perimeter s = (a + b + c)/2 = (35 + 53 + 66)/2 = 154/2 = <strong>77 m</strong>.<br><br>(ii) Applying Heron's formula:<br>s - a = 77 - 35 = 42 m<br>s - b = 77 - 53 = 24 m<br>s - c = 77 - 66 = 11 m.<br>Area = &radic;[s(s - a)(s - b)(s - c)] = &radic;[77 &times; 42 &times; 24 &times; 11]<br>= &radic;[(7 &times; 11) &times; (7 &times; 6) &times; (6 &times; 4) &times; 11]<br>= &radic;[7<sup>2</sup> &times; 11<sup>2</sup> &times; 6<sup>2</sup> &times; 2<sup>2</sup>]<br>= 7 &times; 11 &times; 6 &times; 2 = 77 &times; 12 = <strong>924 m<sup>2</sup></strong>.<br><br>(iii) Circular irrigated area = &pi;r<sup>2</sup> = (22/7) &times; 7 &times; 7 = 154 m<sup>2</sup>.<br>Remaining unirrigated area = Total Area - Irrigated Area = 924 - 154 = <strong>770 m<sup>2</sup></strong>."
     }
   ]
 }

@@ -11,10 +11,16 @@
       "qNo": 1,
       "type": "MCQ",
       "prompt": "If x = 2 and y = -3, in which quadrant does the point P(x, y) lie?",
-      "options": ["(a) Quadrant I", "(b) Quadrant II", "(c) Quadrant III", "(d) Quadrant IV"],
-      "answer": "<strong>(d) Quadrant IV</strong>",
-      "markingScheme": "• x > 0 and y < 0 corresponds to Quadrant IV [1 mark]",
-      "examinerTip": "Quadrant IV has signs (+, -)."
+      "options": [
+        "(a) Quadrant I",
+        "(b) Quadrant II",
+        "(c) Quadrant III",
+        "(d) Quadrant IV"
+      ],
+      "answer": "<strong>Correct Answer: (d) Quadrant IV</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate system, the plane is divided into four quadrants by the x-axis and y-axis:<br>• Quadrant I: x > 0, y > 0 (+, +)<br>• Quadrant II: x < 0, y > 0 (-, +)<br>• Quadrant III: x < 0, y < 0 (-, -)<br>• Quadrant IV: x > 0, y < 0 (+, -)<br>2. Given point P(x, y) has x = 2 (positive) and y = -3 (negative).<br>3. Since the abscissa is positive and the ordinate is negative (+, -), point P(2, -3) lies strictly in <strong>Quadrant IV</strong>.",
+      "markingScheme": "• Identifying that x = 2 > 0 and y = -3 < 0: 0.5 mark<br>• Correct option (d) Quadrant IV: 0.5 mark",
+      "examinerTip": "Quadrant IV has signs (+, -).",
+      "solution": "<strong>Correct Answer: (d) Quadrant IV</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate system, the plane is divided into four quadrants by the x-axis and y-axis:<br>• Quadrant I: x > 0, y > 0 (+, +)<br>• Quadrant II: x < 0, y > 0 (-, +)<br>• Quadrant III: x < 0, y < 0 (-, -)<br>• Quadrant IV: x > 0, y < 0 (+, -)<br>2. Given point P(x, y) has x = 2 (positive) and y = -3 (negative).<br>3. Since the abscissa is positive and the ordinate is negative (+, -), point P(2, -3) lies strictly in <strong>Quadrant IV</strong>."
     },
     {
       "section": "A",
@@ -28,9 +34,10 @@
         "(c) Non-terminating non-recurring",
         "(d) None of the above"
       ],
-      "answer": "<strong>(c) Non-terminating non-recurring</strong>",
-      "markingScheme": "• Definition of irrational number decimal expansion [1 mark]",
-      "examinerTip": "Fundamental CBSE NCERT definition."
+      "answer": "<strong>Correct Answer: (c) Non-terminating non-recurring</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By definition, a real number is rational if and only if its decimal representation is either terminating (e.g., 0.5 = 1/2) or non-terminating recurring/repeating (e.g., 0.333... = 1/3).<br>2. An irrational number is defined as a real number that cannot be written in the form p/q (where p, q &isin; &integers;, q &ne; 0).<br>3. Consequently, the decimal representation of an irrational number is always <strong>non-terminating and non-recurring</strong> (e.g., &radic;2 = 1.41421356..., &pi; = 3.14159265...).",
+      "markingScheme": "• Recalling the decimal classification of irrational numbers: 0.5 mark<br>• Correct option (c): 0.5 mark",
+      "examinerTip": "Fundamental CBSE NCERT definition.",
+      "solution": "<strong>Correct Answer: (c) Non-terminating non-recurring</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By definition, a real number is rational if and only if its decimal representation is either terminating (e.g., 0.5 = 1/2) or non-terminating recurring/repeating (e.g., 0.333... = 1/3).<br>2. An irrational number is defined as a real number that cannot be written in the form p/q (where p, q &isin; &integers;, q &ne; 0).<br>3. Consequently, the decimal representation of an irrational number is always <strong>non-terminating and non-recurring</strong> (e.g., &radic;2 = 1.41421356..., &pi; = 3.14159265...)."
     },
     {
       "section": "A",
@@ -38,10 +45,16 @@
       "qNo": 3,
       "type": "MCQ",
       "prompt": "The zero of the polynomial p(x) = 5x - 2 is:",
-      "options": ["(a) 2/5", "(b) -2/5", "(c) 5/2", "(d) -5/2"],
-      "answer": "<strong>(a) 2/5</strong>",
-      "markingScheme": "• Set 5x - 2 = 0 &rArr; 5x = 2 &rArr; x = 2/5 [1 mark]",
-      "examinerTip": "For ax - b = 0, zero is +b/a."
+      "options": [
+        "(a) 2/5",
+        "(b) -2/5",
+        "(c) 5/2",
+        "(d) -5/2"
+      ],
+      "answer": "<strong>Correct Answer: (a) 2/5</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A zero of a polynomial p(x) is the value of x for which p(x) = 0.<br>2. Set the given linear polynomial equal to zero:<br>5x - 2 = 0<br>3. Add 2 to both sides:<br>5x = 2<br>4. Divide both sides by 5:<br>x = <strong>2/5</strong>.<br>5. Verification: p(2/5) = 5(2/5) - 2 = 2 - 2 = 0.",
+      "markingScheme": "• Equating 5x - 2 = 0 and solving for x: 0.5 mark<br>• Correct option (a) 2/5: 0.5 mark",
+      "examinerTip": "For ax - b = 0, zero is +b/a.",
+      "solution": "<strong>Correct Answer: (a) 2/5</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A zero of a polynomial p(x) is the value of x for which p(x) = 0.<br>2. Set the given linear polynomial equal to zero:<br>5x - 2 = 0<br>3. Add 2 to both sides:<br>5x = 2<br>4. Divide both sides by 5:<br>x = <strong>2/5</strong>.<br>5. Verification: p(2/5) = 5(2/5) - 2 = 2 - 2 = 0."
     },
     {
       "section": "A",
@@ -49,10 +62,16 @@
       "qNo": 4,
       "type": "MCQ",
       "prompt": "Which of the following points lies on the negative y-axis?",
-      "options": ["(a) (0, -4)", "(b) (-4, 0)", "(c) (0, 4)", "(d) (-4, -4)"],
-      "answer": "<strong>(a) (0, -4)</strong>",
-      "markingScheme": "• Point on y-axis has x = 0; negative y-axis has y < 0 &rArr; (0, -4) [1 mark]",
-      "examinerTip": "Do not confuse (-4, 0) which is on the negative x-axis."
+      "options": [
+        "(a) (0, -4)",
+        "(b) (-4, 0)",
+        "(c) (0, 4)",
+        "(d) (-4, -4)"
+      ],
+      "answer": "<strong>Correct Answer: (a) (0, -4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Any point lying on the y-axis has its x-coordinate (abscissa) equal to 0, having coordinates of the form (0, y).<br>2. For the point to lie on the <em>negative</em> y-axis, its y-coordinate (ordinate) must be strictly negative (y < 0).<br>3. Evaluating options:<br>• (a) (0, -4): x = 0, y = -4 < 0 &rarr; Lies on negative y-axis.<br>• (b) (-4, 0): Lies on negative x-axis.<br>• (c) (0, 4): Lies on positive y-axis.<br>• (d) (-4, -4): Lies in Quadrant III.<br>Therefore, <strong>(0, -4)</strong> is the correct point.",
+      "markingScheme": "• Condition for negative y-axis (x = 0, y < 0): 0.5 mark<br>• Correct option (a): 0.5 mark",
+      "examinerTip": "Do not confuse (-4, 0) which is on the negative x-axis.",
+      "solution": "<strong>Correct Answer: (a) (0, -4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Any point lying on the y-axis has its x-coordinate (abscissa) equal to 0, having coordinates of the form (0, y).<br>2. For the point to lie on the <em>negative</em> y-axis, its y-coordinate (ordinate) must be strictly negative (y < 0).<br>3. Evaluating options:<br>• (a) (0, -4): x = 0, y = -4 < 0 &rarr; Lies on negative y-axis.<br>• (b) (-4, 0): Lies on negative x-axis.<br>• (c) (0, 4): Lies on positive y-axis.<br>• (d) (-4, -4): Lies in Quadrant III.<br>Therefore, <strong>(0, -4)</strong> is the correct point."
     },
     {
       "section": "A",
@@ -60,10 +79,16 @@
       "qNo": 5,
       "type": "MCQ",
       "prompt": "The value of 99<sup>2</sup> - 1 evaluated using algebraic identity is:",
-      "options": ["(a) 9800", "(b) 9801", "(c) 9799", "(d) 9900"],
-      "answer": "<strong>(a) 9800</strong>",
-      "markingScheme": "• (99 - 1)(99 + 1) = 98 &times; 100 = 9800 [1 mark]",
-      "examinerTip": "Use a^2 - b^2 = (a - b)(a + b) with b = 1."
+      "options": [
+        "(a) 9800",
+        "(b) 9801",
+        "(c) 9799",
+        "(d) 9900"
+      ],
+      "answer": "<strong>Correct Answer: (a) 9800</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given expression is 99<sup>2</sup> - 1, which can be written as 99<sup>2</sup> - 1<sup>2</sup>.<br>2. Apply the difference of squares algebraic identity: a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b).<br>3. Here, a = 99 and b = 1:<br>99<sup>2</sup> - 1<sup>2</sup> = (99 - 1)(99 + 1)<br>4. Compute the factors:<br>= 98 &times; 100 = <strong>9800</strong>.",
+      "markingScheme": "• Identifying identity a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b): 0.5 mark<br>• Computing 98 &times; 100 = 9800 and selecting option (a): 0.5 mark",
+      "examinerTip": "Use a^2 - b^2 = (a - b)(a + b) with b = 1.",
+      "solution": "<strong>Correct Answer: (a) 9800</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given expression is 99<sup>2</sup> - 1, which can be written as 99<sup>2</sup> - 1<sup>2</sup>.<br>2. Apply the difference of squares algebraic identity: a<sup>2</sup> - b<sup>2</sup> = (a - b)(a + b).<br>3. Here, a = 99 and b = 1:<br>99<sup>2</sup> - 1<sup>2</sup> = (99 - 1)(99 + 1)<br>4. Compute the factors:<br>= 98 &times; 100 = <strong>9800</strong>."
     },
     {
       "section": "A",
@@ -71,10 +96,16 @@
       "qNo": 6,
       "type": "MCQ",
       "prompt": "The sides of a triangle are in the ratio 3 : 4 : 5 and its perimeter is 36 cm. The longest side is:",
-      "options": ["(a) 9 cm", "(b) 12 cm", "(c) 15 cm", "(d) 18 cm"],
-      "answer": "<strong>(c) 15 cm</strong>",
-      "markingScheme": "• 3x + 4x + 5x = 12x = 36 &rArr; x = 3 cm. Longest side = 5(3) = 15 cm [1 mark]",
-      "examinerTip": "Classic 3-4-5 right triangle scale."
+      "options": [
+        "(a) 9 cm",
+        "(b) 12 cm",
+        "(c) 15 cm",
+        "(d) 18 cm"
+      ],
+      "answer": "<strong>Correct Answer: (c) 15 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let the common ratio multiplier for the three sides be x cm.<br>Then the side lengths are a = 3x, b = 4x, and c = 5x.<br>2. Perimeter is the sum of all three sides:<br>Perimeter = a + b + c = 3x + 4x + 5x = 12x.<br>3. Given Perimeter = 36 cm:<br>12x = 36 &rArr; x = 36 / 12 = 3 cm.<br>4. The longest side is 5x:<br>Longest side = 5 &times; 3 = <strong>15 cm</strong>.",
+      "markingScheme": "• Setting up 12x = 36 to find x = 3: 0.5 mark<br>• Longest side = 5(3) = 15 cm (Option c): 0.5 mark",
+      "examinerTip": "Classic 3-4-5 right triangle scale.",
+      "solution": "<strong>Correct Answer: (c) 15 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let the common ratio multiplier for the three sides be x cm.<br>Then the side lengths are a = 3x, b = 4x, and c = 5x.<br>2. Perimeter is the sum of all three sides:<br>Perimeter = a + b + c = 3x + 4x + 5x = 12x.<br>3. Given Perimeter = 36 cm:<br>12x = 36 &rArr; x = 36 / 12 = 3 cm.<br>4. The longest side is 5x:<br>Longest side = 5 &times; 3 = <strong>15 cm</strong>."
     },
     {
       "section": "A",
@@ -88,9 +119,10 @@
         "(c) Infinitely many rational numbers",
         "(d) Only irrational numbers"
       ],
-      "answer": "<strong>(c) Infinitely many rational numbers</strong>",
-      "markingScheme": "• Density property of real/rational numbers [1 mark]",
-      "examinerTip": "Density property of the number line."
+      "answer": "<strong>Correct Answer: (c) Infinitely many rational numbers</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Density Property of Rational Numbers, between any two distinct rational numbers a and b (with a < b), there exists another rational number, for example the arithmetic mean (a + b) / 2.<br>2. This averaging process can be repeated infinitely many times between each new pair of rational numbers.<br>3. Hence, between any two distinct rational numbers, there exist <strong>infinitely many rational numbers</strong>.",
+      "markingScheme": "• Recalling the density theorem of rational numbers: 0.5 mark<br>• Correct option (c): 0.5 mark",
+      "examinerTip": "Density property of the number line.",
+      "solution": "<strong>Correct Answer: (c) Infinitely many rational numbers</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Density Property of Rational Numbers, between any two distinct rational numbers a and b (with a < b), there exists another rational number, for example the arithmetic mean (a + b) / 2.<br>2. This averaging process can be repeated infinitely many times between each new pair of rational numbers.<br>3. Hence, between any two distinct rational numbers, there exist <strong>infinitely many rational numbers</strong>."
     },
     {
       "section": "A",
@@ -98,10 +130,16 @@
       "qNo": 8,
       "type": "MCQ",
       "prompt": "The degree of the polynomial 4x<sup>4</sup> + 0x<sup>5</sup> + 5x<sup>3</sup> + 7 is:",
-      "options": ["(a) 5", "(b) 4", "(c) 3", "(d) 7"],
-      "answer": "<strong>(b) 4</strong>",
-      "markingScheme": "• Coefficient of x<sup>5</sup> is 0, so the highest term with non-zero coefficient is 4x<sup>4</sup> &rArr; Degree = 4 [1 mark]",
-      "examinerTip": "Trick question: Terms with coefficient 0 do not contribute to degree."
+      "options": [
+        "(a) 5",
+        "(b) 4",
+        "(c) 3",
+        "(d) 7"
+      ],
+      "answer": "<strong>Correct Answer: (b) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The degree of a polynomial in one variable is the highest exponent of the variable with a <em>non-zero</em> coefficient.<br>2. The given polynomial is: 4x<sup>4</sup> + 0x<sup>5</sup> + 5x<sup>3</sup> + 7.<br>3. Notice that the term 0x<sup>5</sup> has a coefficient of 0, so 0x<sup>5</sup> = 0. It does not contribute to the polynomial.<br>4. Rewriting non-zero terms: 4x<sup>4</sup> + 5x<sup>3</sup> + 7.<br>5. The highest power of x with a non-zero coefficient is 4. Hence, the degree is <strong>4</strong>.",
+      "markingScheme": "• Recognizing that 0x<sup>5</sup> has a zero coefficient: 0.5 mark<br>• Stating highest non-zero power is 4 (Option b): 0.5 mark",
+      "examinerTip": "Trick question: Terms with coefficient 0 do not contribute to degree.",
+      "solution": "<strong>Correct Answer: (b) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The degree of a polynomial in one variable is the highest exponent of the variable with a <em>non-zero</em> coefficient.<br>2. The given polynomial is: 4x<sup>4</sup> + 0x<sup>5</sup> + 5x<sup>3</sup> + 7.<br>3. Notice that the term 0x<sup>5</sup> has a coefficient of 0, so 0x<sup>5</sup> = 0. It does not contribute to the polynomial.<br>4. Rewriting non-zero terms: 4x<sup>4</sup> + 5x<sup>3</sup> + 7.<br>5. The highest power of x with a non-zero coefficient is 4. Hence, the degree is <strong>4</strong>."
     },
     {
       "section": "A",
@@ -109,10 +147,16 @@
       "qNo": 9,
       "type": "MCQ",
       "prompt": "The value of (256)<sup>0.16</sup> &times; (256)<sup>0.09</sup> is:",
-      "options": ["(a) 4", "(b) 16", "(c) 64", "(d) 256.25"],
-      "answer": "<strong>(a) 4</strong>",
-      "markingScheme": "• 256<sup>0.16 + 0.09</sup> = 256<sup>0.25</sup> = 256<sup>1/4</sup> = (4<sup>4</sup>)<sup>1/4</sup> = 4 [1 mark]",
-      "examinerTip": "0.16 + 0.09 = 0.25 = 1/4."
+      "options": [
+        "(a) 4",
+        "(b) 16",
+        "(c) 64",
+        "(d) 256.25"
+      ],
+      "answer": "<strong>Correct Answer: (a) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Apply the Law of Exponents: a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m + n</sup>.<br>2. Here base a = 256:<br>(256)<sup>0.16</sup> &times; (256)<sup>0.09</sup> = (256)<sup>0.16 + 0.09</sup> = (256)<sup>0.25</sup>.<br>3. Convert the decimal exponent to a fraction: 0.25 = 25/100 = 1/4.<br>So the expression becomes (256)<sup>1/4</sup>.<br>4. Express 256 as a power of 4:<br>256 = 4 &times; 4 &times; 4 &times; 4 = 4<sup>4</sup>.<br>5. Apply (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>(4<sup>4</sup>)<sup>1/4</sup> = 4<sup>4 &times; (1/4)</sup> = 4<sup>1</sup> = <strong>4</strong>.",
+      "markingScheme": "• Adding exponents 0.16 + 0.09 = 0.25 = 1/4: 0.5 mark<br>• Computing 256<sup>1/4</sup> = 4 (Option a): 0.5 mark",
+      "examinerTip": "0.16 + 0.09 = 0.25 = 1/4.",
+      "solution": "<strong>Correct Answer: (a) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Apply the Law of Exponents: a<sup>m</sup> &times; a<sup>n</sup> = a<sup>m + n</sup>.<br>2. Here base a = 256:<br>(256)<sup>0.16</sup> &times; (256)<sup>0.09</sup> = (256)<sup>0.16 + 0.09</sup> = (256)<sup>0.25</sup>.<br>3. Convert the decimal exponent to a fraction: 0.25 = 25/100 = 1/4.<br>So the expression becomes (256)<sup>1/4</sup>.<br>4. Express 256 as a power of 4:<br>256 = 4 &times; 4 &times; 4 &times; 4 = 4<sup>4</sup>.<br>5. Apply (a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup>:<br>(4<sup>4</sup>)<sup>1/4</sup> = 4<sup>4 &times; (1/4)</sup> = 4<sup>1</sup> = <strong>4</strong>."
     },
     {
       "section": "A",
@@ -120,10 +164,16 @@
       "qNo": 10,
       "type": "MCQ",
       "prompt": "The area of an equilateral triangle with side 2&radic;3 cm is:",
-      "options": ["(a) 3&radic;3 cm<sup>2</sup>", "(b) 6 cm<sup>2</sup>", "(c) 12 cm<sup>2</sup>", "(d) 9&radic;3 cm<sup>2</sup>"],
-      "answer": "<strong>(a) 3&radic;3 cm<sup>2</sup></strong>",
-      "markingScheme": "• Area = (&radic;3 / 4) a<sup>2</sup> = (&radic;3 / 4) &times; (2&radic;3)<sup>2</sup> = (&radic;3 / 4) &times; 12 = 3&radic;3 cm<sup>2</sup> [1 mark]",
-      "examinerTip": "(2&radic;3)^2 = 4 &times; 3 = 12."
+      "options": [
+        "(a) 3&radic;3 cm<sup>2</sup>",
+        "(b) 6 cm<sup>2</sup>",
+        "(c) 12 cm<sup>2</sup>",
+        "(d) 9&radic;3 cm<sup>2</sup>"
+      ],
+      "answer": "<strong>Correct Answer: (a) 3&radic;3 cm<sup>2</sup></strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The formula for the area of an equilateral triangle of side a is:<br>Area = (&radic;3 / 4) &times; a<sup>2</sup>.<br>2. Given side a = 2&radic;3 cm.<br>3. Compute a<sup>2</sup>:<br>a<sup>2</sup> = (2&radic;3)<sup>2</sup> = 2<sup>2</sup> &times; (&radic;3)<sup>2</sup> = 4 &times; 3 = 12.<br>4. Substitute into the area formula:<br>Area = (&radic;3 / 4) &times; 12 = 3&radic;3 cm<sup>2</sup>.",
+      "markingScheme": "• Applying formula Area = (&radic;3/4)a<sup>2</sup>: 0.5 mark<br>• Computing Area = 3&radic;3 cm<sup>2</sup> (Option a): 0.5 mark",
+      "examinerTip": "(2&radic;3)^2 = 4 &times; 3 = 12.",
+      "solution": "<strong>Correct Answer: (a) 3&radic;3 cm<sup>2</sup></strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The formula for the area of an equilateral triangle of side a is:<br>Area = (&radic;3 / 4) &times; a<sup>2</sup>.<br>2. Given side a = 2&radic;3 cm.<br>3. Compute a<sup>2</sup>:<br>a<sup>2</sup> = (2&radic;3)<sup>2</sup> = 2<sup>2</sup> &times; (&radic;3)<sup>2</sup> = 4 &times; 3 = 12.<br>4. Substitute into the area formula:<br>Area = (&radic;3 / 4) &times; 12 = 3&radic;3 cm<sup>2</sup>."
     },
     {
       "section": "A",
@@ -131,10 +181,16 @@
       "qNo": 11,
       "type": "MCQ",
       "prompt": "If x + 1/x = 4, then the value of x<sup>2</sup> + 1/x<sup>2</sup> is:",
-      "options": ["(a) 16", "(b) 14", "(c) 18", "(d) 12"],
-      "answer": "<strong>(b) 14</strong>",
-      "markingScheme": "• (x + 1/x)<sup>2</sup> = x<sup>2</sup> + 2 + 1/x<sup>2</sup> &rArr; 4<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> + 2 &rArr; 16 - 2 = 14 [1 mark]",
-      "examinerTip": "Remember to subtract the 2ab term which equals 2(x)(1/x) = 2."
+      "options": [
+        "(a) 16",
+        "(b) 14",
+        "(c) 18",
+        "(d) 12"
+      ],
+      "answer": "<strong>Correct Answer: (b) 14</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given: x + 1/x = 4.<br>2. Square both sides of the equation:<br>(x + 1/x)<sup>2</sup> = 4<sup>2</sup>.<br>3. Expand the left side using (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>:<br>x<sup>2</sup> + 2 &times; x &times; (1/x) + (1/x)<sup>2</sup> = 16<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 16.<br>4. Subtract 2 from both sides:<br>x<sup>2</sup> + 1/x<sup>2</sup> = 16 - 2 = <strong>14</strong>.",
+      "markingScheme": "• Squaring both sides and expanding (x + 1/x)<sup>2</sup>: 0.5 mark<br>• Finding x<sup>2</sup> + 1/x<sup>2</sup> = 14 (Option b): 0.5 mark",
+      "examinerTip": "Remember to subtract the 2ab term which equals 2(x)(1/x) = 2.",
+      "solution": "<strong>Correct Answer: (b) 14</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given: x + 1/x = 4.<br>2. Square both sides of the equation:<br>(x + 1/x)<sup>2</sup> = 4<sup>2</sup>.<br>3. Expand the left side using (a + b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup>:<br>x<sup>2</sup> + 2 &times; x &times; (1/x) + (1/x)<sup>2</sup> = 16<br>x<sup>2</sup> + 2 + 1/x<sup>2</sup> = 16.<br>4. Subtract 2 from both sides:<br>x<sup>2</sup> + 1/x<sup>2</sup> = 16 - 2 = <strong>14</strong>."
     },
     {
       "section": "A",
@@ -142,10 +198,16 @@
       "qNo": 12,
       "type": "MCQ",
       "prompt": "The perpendicular distance of the point P(-3, 8) from the x-axis is:",
-      "options": ["(a) -3 units", "(b) 3 units", "(c) 8 units", "(d) -8 units"],
-      "answer": "<strong>(c) 8 units</strong>",
-      "markingScheme": "• Distance from x-axis is |y-coordinate| = |8| = 8 units [1 mark]",
-      "examinerTip": "Distance is always positive."
+      "options": [
+        "(a) -3 units",
+        "(b) 3 units",
+        "(c) 8 units",
+        "(d) -8 units"
+      ],
+      "answer": "<strong>Correct Answer: (c) 8 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate plane, the perpendicular distance of any point P(x, y) from the x-axis is given by the absolute value of its y-coordinate (ordinate): |y|.<br>2. Here, P has coordinates (-3, 8), so x = -3 and y = 8.<br>3. Perpendicular distance from x-axis = |y| = |8| = <strong>8 units</strong>.<br>*(Note: Perpendicular distance from the y-axis would be |x| = |-3| = 3 units).*",
+      "markingScheme": "• Stating distance from x-axis is |y|: 0.5 mark<br>• Distance = 8 units (Option c): 0.5 mark",
+      "examinerTip": "Distance is always positive.",
+      "solution": "<strong>Correct Answer: (c) 8 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In the Cartesian coordinate plane, the perpendicular distance of any point P(x, y) from the x-axis is given by the absolute value of its y-coordinate (ordinate): |y|.<br>2. Here, P has coordinates (-3, 8), so x = -3 and y = 8.<br>3. Perpendicular distance from x-axis = |y| = |8| = <strong>8 units</strong>.<br>*(Note: Perpendicular distance from the y-axis would be |x| = |-3| = 3 units).*"
     },
     {
       "section": "A",
@@ -153,10 +215,16 @@
       "qNo": 13,
       "type": "MCQ",
       "prompt": "Which of the following is a factor of (x + y)<sup>3</sup> - (x<sup>3</sup> + y<sup>3</sup>)?",
-      "options": ["(a) x<sup>2</sup> + y<sup>2</sup>", "(b) 3xy", "(c) x - y", "(d) x<sup>2</sup> - y<sup>2</sup>"],
-      "answer": "<strong>(b) 3xy</strong>",
-      "markingScheme": "• (x + y)<sup>3</sup> - (x<sup>3</sup> + y<sup>3</sup>) = [x<sup>3</sup> + y<sup>3</sup> + 3xy(x + y)] - (x<sup>3</sup> + y<sup>3</sup>) = 3xy(x + y). Hence 3xy is a factor [1 mark]",
-      "examinerTip": "Expand (x+y)^3 using Identity VI."
+      "options": [
+        "(a) x<sup>2</sup> + y<sup>2</sup>",
+        "(b) 3xy",
+        "(c) x - y",
+        "(d) x<sup>2</sup> - y<sup>2</sup>"
+      ],
+      "answer": "<strong>Correct Answer: (b) 3xy</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Recall the cubic expansion identity:<br>(x + y)<sup>3</sup> = x<sup>3</sup> + y<sup>3</sup> + 3xy(x + y).<br>2. Rearranging gives:<br>(x + y)<sup>3</sup> - (x<sup>3</sup> + y<sup>3</sup>) = 3xy(x + y).<br>3. The factors of this expression are 3, x, y, xy, 3xy, and (x + y).<br>4. Among the given choices, <strong>3xy</strong> is a direct factor.",
+      "markingScheme": "• Expanding (x+y)<sup>3</sup> and subtracting x<sup>3</sup>+y<sup>3</sup> to get 3xy(x+y): 0.5 mark<br>• Identifying 3xy as factor (Option b): 0.5 mark",
+      "examinerTip": "Expand (x+y)^3 using Identity VI.",
+      "solution": "<strong>Correct Answer: (b) 3xy</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Recall the cubic expansion identity:<br>(x + y)<sup>3</sup> = x<sup>3</sup> + y<sup>3</sup> + 3xy(x + y).<br>2. Rearranging gives:<br>(x + y)<sup>3</sup> - (x<sup>3</sup> + y<sup>3</sup>) = 3xy(x + y).<br>3. The factors of this expression are 3, x, y, xy, 3xy, and (x + y).<br>4. Among the given choices, <strong>3xy</strong> is a direct factor."
     },
     {
       "section": "A",
@@ -164,10 +232,16 @@
       "qNo": 14,
       "type": "MCQ",
       "prompt": "An irrational number between 2 and 3 is:",
-      "options": ["(a) &radic;2", "(b) &radic;3", "(c) &radic;5", "(d) &radic;10"],
-      "answer": "<strong>(c) &radic;5</strong>",
-      "markingScheme": "• 2<sup>2</sup> = 4 and 3<sup>2</sup> = 9. Since 4 < 5 < 9, &radic;5 lies between 2 and 3 [1 mark]",
-      "examinerTip": "Square the boundaries: 2^2=4 and 3^2=9."
+      "options": [
+        "(a) &radic;2",
+        "(b) &radic;3",
+        "(c) &radic;5",
+        "(d) &radic;10"
+      ],
+      "answer": "<strong>Correct Answer: (c) &radic;5</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We want an irrational number x such that 2 < x < 3.<br>2. Squaring the inequality: 2<sup>2</sup> < x<sup>2</sup> < 3<sup>2</sup> &rArr; 4 < x<sup>2</sup> < 9.<br>3. Check the square roots in the options:<br>• (a) &radic;2 &approx; 1.414 (less than 2)<br>• (b) &radic;3 &approx; 1.732 (less than 2)<br>• (c) &radic;5: Since 4 < 5 < 9, &radic;4 < &radic;5 < &radic;9 &rArr; 2 < &radic;5 < 3 &approx; 2.236 (lies between 2 and 3).<br>• (d) &radic;11: Since 11 > 9, &radic;11 > 3.<br>Therefore, <strong>&radic;5</strong> is the required irrational number.",
+      "markingScheme": "• Checking 4 < 5 < 9 to deduce 2 < &radic;5 < 3: 0.5 mark<br>• Correct option (c): 0.5 mark",
+      "examinerTip": "Square the boundaries: 2^2=4 and 3^2=9.",
+      "solution": "<strong>Correct Answer: (c) &radic;5</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We want an irrational number x such that 2 < x < 3.<br>2. Squaring the inequality: 2<sup>2</sup> < x<sup>2</sup> < 3<sup>2</sup> &rArr; 4 < x<sup>2</sup> < 9.<br>3. Check the square roots in the options:<br>• (a) &radic;2 &approx; 1.414 (less than 2)<br>• (b) &radic;3 &approx; 1.732 (less than 2)<br>• (c) &radic;5: Since 4 < 5 < 9, &radic;4 < &radic;5 < &radic;9 &rArr; 2 < &radic;5 < 3 &approx; 2.236 (lies between 2 and 3).<br>• (d) &radic;11: Since 11 > 9, &radic;11 > 3.<br>Therefore, <strong>&radic;5</strong> is the required irrational number."
     },
     {
       "section": "A",
@@ -175,10 +249,16 @@
       "qNo": 15,
       "type": "MCQ",
       "prompt": "If the perimeter of each face of a cube is 24 cm, its edge length is:",
-      "options": ["(a) 12 cm", "(b) 6 cm", "(c) 4 cm", "(d) 8 cm"],
-      "answer": "<strong>(b) 6 cm</strong>",
-      "markingScheme": "• Face of cube is a square: Perimeter = 4a = 24 &rArr; a = 6 cm [1 mark]",
-      "examinerTip": "Face is a square with 4 equal sides."
+      "options": [
+        "(a) 12 cm",
+        "(b) 6 cm",
+        "(c) 4 cm",
+        "(d) 8 cm"
+      ],
+      "answer": "<strong>Correct Answer: (b) 6 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A cube has 6 faces, and each face is a square of edge length a.<br>2. The perimeter of a square face of edge a is given by:<br>Perimeter = 4a.<br>3. Given Perimeter = 24 cm:<br>4a = 24<br>a = 24 / 4 = <strong>6 cm</strong>.<br>4. Hence, the edge length of the cube is 6 cm.",
+      "markingScheme": "• Formula Perimeter = 4a: 0.5 mark<br>• Solving a = 24/4 = 6 cm (Option b): 0.5 mark",
+      "examinerTip": "Face is a square with 4 equal sides.",
+      "solution": "<strong>Correct Answer: (b) 6 cm</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. A cube has 6 faces, and each face is a square of edge length a.<br>2. The perimeter of a square face of edge a is given by:<br>Perimeter = 4a.<br>3. Given Perimeter = 24 cm:<br>4a = 24<br>a = 24 / 4 = <strong>6 cm</strong>.<br>4. Hence, the edge length of the cube is 6 cm."
     },
     {
       "section": "A",
@@ -186,10 +266,16 @@
       "qNo": 16,
       "type": "MCQ",
       "prompt": "The value of 0.2333... in simplest p/q form is:",
-      "options": ["(a) 23/99", "(b) 7/30", "(c) 23/90", "(d) 21/90"],
-      "answer": "<strong>(b) 7/30</strong>",
-      "markingScheme": "• 10x = 2.333..., 100x = 23.333... &rArr; 90x = 21 &rArr; x = 21/90 = 7/30 [1 mark]",
-      "examinerTip": "Always reduce to simplest form: 21/90 = 7/30."
+      "options": [
+        "(a) 23/99",
+        "(b) 7/30",
+        "(c) 23/90",
+        "(d) 21/90"
+      ],
+      "answer": "<strong>Correct Answer: (b) 7/30</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let x = 0.2333...  --- (Equation 1)<br>2. Multiply Equation 1 by 10 (to bring the non-repeating digit before the decimal):<br>10x = 2.3333...      --- (Equation 2)<br>3. Multiply Equation 2 by 10 (since 1 digit repeats):<br>100x = 23.3333...    --- (Equation 3)<br>4. Subtract Equation 2 from Equation 3:<br>100x - 10x = 23.3333... - 2.3333...<br>90x = 21.<br>5. Solve for x and simplify:<br>x = 21 / 90 = (21 &divide; 3) / (90 &divide; 3) = <strong>7/30</strong>.",
+      "markingScheme": "• Setting up equations 10x = 2.333... and 100x = 23.333...: 0.5 mark<br>• 90x = 21 &rArr; x = 7/30 (Option b): 0.5 mark",
+      "examinerTip": "Always reduce to simplest form: 21/90 = 7/30.",
+      "solution": "<strong>Correct Answer: (b) 7/30</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let x = 0.2333...  --- (Equation 1)<br>2. Multiply Equation 1 by 10 (to bring the non-repeating digit before the decimal):<br>10x = 2.3333...      --- (Equation 2)<br>3. Multiply Equation 2 by 10 (since 1 digit repeats):<br>100x = 23.3333...    --- (Equation 3)<br>4. Subtract Equation 2 from Equation 3:<br>100x - 10x = 23.3333... - 2.3333...<br>90x = 21.<br>5. Solve for x and simplify:<br>x = 21 / 90 = (21 &divide; 3) / (90 &divide; 3) = <strong>7/30</strong>."
     },
     {
       "section": "A",
@@ -197,10 +283,16 @@
       "qNo": 17,
       "type": "MCQ",
       "prompt": "If a + b + c = 0, then a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> equals:",
-      "options": ["(a) 0", "(b) abc", "(c) 3abc", "(d) -3abc"],
-      "answer": "<strong>(c) 3abc</strong>",
-      "markingScheme": "• Direct application of conditional cubic identity [1 mark]",
-      "examinerTip": "Standard CBSE identity result."
+      "options": [
+        "(a) 0",
+        "(b) abc",
+        "(c) 3abc",
+        "(d) -3abc"
+      ],
+      "answer": "<strong>Correct Answer: (c) 3abc</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Recall the standard algebraic identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca).<br>2. We are given the condition: a + b + c = 0.<br>3. Substitute a + b + c = 0 into the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (0) &times; (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca) = 0.<br>4. Add 3abc to both sides:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = <strong>3abc</strong>.",
+      "markingScheme": "• Stating identity and substituting a + b + c = 0: 0.5 mark<br>• Concluding a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 3abc (Option c): 0.5 mark",
+      "examinerTip": "Standard CBSE identity result.",
+      "solution": "<strong>Correct Answer: (c) 3abc</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Recall the standard algebraic identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca).<br>2. We are given the condition: a + b + c = 0.<br>3. Substitute a + b + c = 0 into the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (0) &times; (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca) = 0.<br>4. Add 3abc to both sides:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = <strong>3abc</strong>."
     },
     {
       "section": "A",
@@ -214,9 +306,10 @@
         "(c) IV and II quadrants respectively",
         "(d) II and III quadrants respectively"
       ],
-      "answer": "<strong>(b) II and IV quadrants respectively</strong>",
-      "markingScheme": "• (-2, 4) has x<0, y>0 &rArr; Quad II; (4, -2) has x>0, y<0 &rArr; Quad IV [1 mark]",
-      "examinerTip": "Order matters in ordered pairs."
+      "answer": "<strong>Correct Answer: (b) II and IV quadrants respectively</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. For point (-2, 4):<br>Abscissa x = -2 < 0 (negative) and ordinate y = 4 > 0 (positive).<br>The sign combination (-, +) corresponds to <strong>Quadrant II</strong>.<br>2. For point (4, -2):<br>Abscissa x = 4 > 0 (positive) and ordinate y = -2 < 0 (negative).<br>The sign combination (+, -) corresponds to <strong>Quadrant IV</strong>.<br>3. Therefore, (-2, 4) and (4, -2) lie in <strong>II and IV quadrants respectively</strong>.",
+      "markingScheme": "• Identifying (-2, 4) in Quad II and (4, -2) in Quad IV: 0.5 mark<br>• Correct option (b): 0.5 mark",
+      "examinerTip": "Order matters in ordered pairs.",
+      "solution": "<strong>Correct Answer: (b) II and IV quadrants respectively</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. For point (-2, 4):<br>Abscissa x = -2 < 0 (negative) and ordinate y = 4 > 0 (positive).<br>The sign combination (-, +) corresponds to <strong>Quadrant II</strong>.<br>2. For point (4, -2):<br>Abscissa x = 4 > 0 (positive) and ordinate y = -2 < 0 (negative).<br>The sign combination (+, -) corresponds to <strong>Quadrant IV</strong>.<br>3. Therefore, (-2, 4) and (4, -2) lie in <strong>II and IV quadrants respectively</strong>."
     },
     {
       "section": "A",
@@ -230,9 +323,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-      "markingScheme": "• Since 3 is not a perfect square, &radic;3 is irrational by theorem in (R) [1 mark]",
-      "examinerTip": "Standard Class 9 Number Systems theorem."
+      "answer": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> &radic;3 is an irrational number.<br>This is a true statement because 3 is a prime number and not a perfect square.<br>2. <strong>Reason (R):</strong> The square root of every positive integer which is not a perfect square is an irrational number.<br>This is a standard theorem in Class 9 Number Systems. Since 3 is a positive integer that is not a perfect square (1<sup>2</sup> = 1, 2<sup>2</sup> = 4), its square root &radic;3 is irrational.<br>3. Therefore, Reason (R) is true and is the exact mathematical justification that explains Assertion (A).",
+      "markingScheme": "• Verifying Assertion (A) is true: 0.25 mark<br>• Verifying Reason (R) is true: 0.25 mark<br>• Establishing that (R) correctly explains (A) &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Standard Class 9 Number Systems theorem.",
+      "solution": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> &radic;3 is an irrational number.<br>This is a true statement because 3 is a prime number and not a perfect square.<br>2. <strong>Reason (R):</strong> The square root of every positive integer which is not a perfect square is an irrational number.<br>This is a standard theorem in Class 9 Number Systems. Since 3 is a positive integer that is not a perfect square (1<sup>2</sup> = 1, 2<sup>2</sup> = 4), its square root &radic;3 is irrational.<br>3. Therefore, Reason (R) is true and is the exact mathematical justification that explains Assertion (A)."
     },
     {
       "section": "A",
@@ -246,9 +340,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-      "markingScheme": "• Both points have y=0 and thus lie on x-axis [1 mark]",
-      "examinerTip": "Direct application of axis definition."
+      "answer": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The points A(2, 0) and B(-3, 0) lie on the x-axis.<br>Both points have their y-coordinates equal to 0, which is the defining condition for points on the x-axis. Hence, Assertion (A) is true.<br>2. <strong>Reason (R):</strong> The equation of the x-axis is y = 0, and every point on the x-axis has ordinate 0.<br>This is the fundamental definition in coordinate geometry. Hence, Reason (R) is true.<br>3. Because A and B have ordinate 0, they satisfy the equation y = 0, proving they lie on the x-axis. Thus, Reason (R) is the correct explanation of Assertion (A).",
+      "markingScheme": "• Verifying Assertion (A) is true: 0.25 mark<br>• Verifying Reason (R) is true: 0.25 mark<br>• Establishing that (R) correctly explains (A) &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Direct application of axis definition.",
+      "solution": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The points A(2, 0) and B(-3, 0) lie on the x-axis.<br>Both points have their y-coordinates equal to 0, which is the defining condition for points on the x-axis. Hence, Assertion (A) is true.<br>2. <strong>Reason (R):</strong> The equation of the x-axis is y = 0, and every point on the x-axis has ordinate 0.<br>This is the fundamental definition in coordinate geometry. Hence, Reason (R) is true.<br>3. Because A and B have ordinate 0, they satisfy the equation y = 0, proving they lie on the x-axis. Thus, Reason (R) is the correct explanation of Assertion (A)."
     },
     {
       "section": "B",
@@ -258,7 +353,8 @@
       "prompt": "Rationalize the denominator of: 1 / (7 + 3&radic;2).",
       "answer": "Multiply numerator and denominator by conjugate (7 - 3&radic;2):<br>= (7 - 3&radic;2) / [(7 + 3&radic;2)(7 - 3&radic;2)]<br>= (7 - 3&radic;2) / [7<sup>2</sup> - (3&radic;2)<sup>2</sup>]<br>= (7 - 3&radic;2) / [49 - 18] = <strong>(7 - 3&radic;2) / 31</strong>.",
       "markingScheme": "• Multiplying by (7 - 3&radic;2): 1 mark<br>• Denominator 49 - 18 = 31 and final answer: 1 mark",
-      "examinerTip": "(3&radic;2)^2 = 9 &times; 2 = 18."
+      "examinerTip": "(3&radic;2)^2 = 9 &times; 2 = 18.",
+      "solution": "Multiply numerator and denominator by conjugate (7 - 3&radic;2):<br>= (7 - 3&radic;2) / [(7 + 3&radic;2)(7 - 3&radic;2)]<br>= (7 - 3&radic;2) / [7<sup>2</sup> - (3&radic;2)<sup>2</sup>]<br>= (7 - 3&radic;2) / [49 - 18] = <strong>(7 - 3&radic;2) / 31</strong>."
     },
     {
       "section": "B",
@@ -268,7 +364,8 @@
       "prompt": "Find the value of k if x = 2, y = 1 is a solution of the equation 2x + 3y = k.",
       "answer": "Substitute x = 2 and y = 1 into 2x + 3y = k:<br>2(2) + 3(1) = k<br>4 + 3 = k &rArr; <strong>k = 7</strong>.",
       "markingScheme": "• Substituting values into equation: 1 mark<br>• Correct evaluation k = 7: 1 mark",
-      "examinerTip": "Simple substitution verification."
+      "examinerTip": "Simple substitution verification.",
+      "solution": "Substitute x = 2 and y = 1 into 2x + 3y = k:<br>2(2) + 3(1) = k<br>4 + 3 = k &rArr; <strong>k = 7</strong>."
     },
     {
       "section": "B",
@@ -278,7 +375,8 @@
       "prompt": "Find the zeroes of the quadratic polynomial: p(x) = x<sup>2</sup> - 5x + 6.",
       "answer": "Set p(x) = 0:<br>x<sup>2</sup> - 5x + 6 = 0<br>Split the middle term: -5 = -2 - 3 and (-2)(-3) = 6<br>(x - 2)(x - 3) = 0<br>&rArr; <strong>x = 2</strong> or <strong>x = 3</strong>.",
       "markingScheme": "• Factoring into (x - 2)(x - 3): 1 mark<br>• Stating zeroes x = 2, 3: 1 mark",
-      "examinerTip": "Always verify by substituting back."
+      "examinerTip": "Always verify by substituting back.",
+      "solution": "Set p(x) = 0:<br>x<sup>2</sup> - 5x + 6 = 0<br>Split the middle term: -5 = -2 - 3 and (-2)(-3) = 6<br>(x - 2)(x - 3) = 0<br>&rArr; <strong>x = 2</strong> or <strong>x = 3</strong>."
     },
     {
       "section": "B",
@@ -288,7 +386,8 @@
       "prompt": "Find the area of an isosceles triangle each of whose equal sides is 13 cm and whose base is 24 cm.",
       "answer": "Sides are a = 13 cm, b = 13 cm, c = 24 cm.<br>Semi-perimeter s = (13 + 13 + 24)/2 = 50/2 = 25 cm.<br>Area = &radic;[25(25 - 13)(25 - 13)(25 - 24)]<br>= &radic;[25 &times; 12 &times; 12 &times; 1] = 5 &times; 12 = <strong>60 cm<sup>2</sup></strong>.",
       "markingScheme": "• Calculating s = 25 cm: 0.5 mark<br>• Applying Heron's formula and obtaining 60 cm<sup>2</sup>: 1.5 marks",
-      "examinerTip": "Notice 12 &times; 12 gives an immediate square root pair."
+      "examinerTip": "Notice 12 &times; 12 gives an immediate square root pair.",
+      "solution": "Sides are a = 13 cm, b = 13 cm, c = 24 cm.<br>Semi-perimeter s = (13 + 13 + 24)/2 = 50/2 = 25 cm.<br>Area = &radic;[25(25 - 13)(25 - 13)(25 - 24)]<br>= &radic;[25 &times; 12 &times; 12 &times; 1] = 5 &times; 12 = <strong>60 cm<sup>2</sup></strong>."
     },
     {
       "section": "B",
@@ -298,7 +397,8 @@
       "prompt": "Evaluate (103)<sup>3</sup> using an appropriate algebraic identity.",
       "answer": "Write 103 as (100 + 3):<br>(100 + 3)<sup>3</sup> = 100<sup>3</sup> + 3<sup>3</sup> + 3(100)(3)(100 + 3)<br>= 1,000,000 + 27 + 900(103)<br>= 1,000,000 + 27 + 92,700 = <strong>1,092,727</strong>.",
       "markingScheme": "• Expanding with identity (a + b)<sup>3</sup>: 1 mark<br>• Correct arithmetic to obtain 1,092,727: 1 mark",
-      "examinerTip": "Direct multiplication receives zero marks in CBSE marking criteria."
+      "examinerTip": "Direct multiplication receives zero marks in CBSE marking criteria.",
+      "solution": "Write 103 as (100 + 3):<br>(100 + 3)<sup>3</sup> = 100<sup>3</sup> + 3<sup>3</sup> + 3(100)(3)(100 + 3)<br>= 1,000,000 + 27 + 900(103)<br>= 1,000,000 + 27 + 92,700 = <strong>1,092,727</strong>."
     },
     {
       "section": "C",
@@ -308,7 +408,8 @@
       "prompt": "Express 0.235&#773; (bar on 35) in the form p/q, where p and q are integers and q &ne; 0.",
       "answer": "Let x = 0.2353535...  --- (1)<br>Multiply by 10 (non-repeating digit before decimal):<br>10x = 2.353535...   --- (2)<br>Multiply (2) by 100 (two digits repeat):<br>1000x = 235.3535... --- (3)<br>Subtract (2) from (3):<br>1000x - 10x = 235.3535... - 2.3535...<br>990x = 233 &rArr; <strong>x = 233/990</strong>.",
       "markingScheme": "• 10x and 1000x equations: 1.5 marks<br>• Subtracting to get 990x = 233: 1 mark<br>• Final answer 233/990: 0.5 mark",
-      "examinerTip": "233 is prime, so 233/990 is already in simplest form."
+      "examinerTip": "233 is prime, so 233/990 is already in simplest form.",
+      "solution": "Let x = 0.2353535...  --- (1)<br>Multiply by 10 (non-repeating digit before decimal):<br>10x = 2.353535...   --- (2)<br>Multiply (2) by 100 (two digits repeat):<br>1000x = 235.3535... --- (3)<br>Subtract (2) from (3):<br>1000x - 10x = 235.3535... - 2.3535...<br>990x = 233 &rArr; <strong>x = 233/990</strong>."
     },
     {
       "section": "C",
@@ -318,7 +419,8 @@
       "prompt": "If x + y + z = 1, xy + yz + zx = -1, and xyz = -1, find the value of x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup>.",
       "answer": "We know x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = (x + y + z)<sup>2</sup> - 2(xy + yz + zx) = 1<sup>2</sup> - 2(-1) = 1 + 2 = 3.<br><br>Now apply Identity VIII:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - [xy + yz + zx])<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(-1) = (1)(3 - [-1])<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> + 3 = 1(4) = 4<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 4 - 3 = <strong>1</strong>.",
       "markingScheme": "• Finding x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 3: 1 mark<br>• Writing identity VIII and substituting values: 1 mark<br>• Evaluating x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 1: 1 mark",
-      "examinerTip": "Watch the signs: -3(-1) = +3, and 3 - (-1) = 4."
+      "examinerTip": "Watch the signs: -3(-1) = +3, and 3 - (-1) = 4.",
+      "solution": "We know x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = (x + y + z)<sup>2</sup> - 2(xy + yz + zx) = 1<sup>2</sup> - 2(-1) = 1 + 2 = 3.<br><br>Now apply Identity VIII:<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3xyz = (x + y + z)(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - [xy + yz + zx])<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> - 3(-1) = (1)(3 - [-1])<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> + 3 = 1(4) = 4<br>x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 4 - 3 = <strong>1</strong>."
     },
     {
       "section": "C",
@@ -328,7 +430,8 @@
       "prompt": "Three vertices of a rectangle ABCD are A(3, 1), B(-3, 1), and C(-3, -3). Plot these points, find the coordinates of vertex D, and calculate the area of the rectangle.",
       "answer": "1. Plotting: AB is horizontal from x = 3 to x = -3 &rArr; Length = 3 - (-3) = 6 units.<br>BC is vertical from y = 1 to y = -3 &rArr; Breadth = 1 - (-3) = 4 units.<br><br>2. Vertex D must have the same x-coordinate as A (x = 3) and same y-coordinate as C (y = -3):<br>Coordinates of <strong>D = (3, -3)</strong>.<br><br>3. Area of rectangle = Length &times; Breadth = 6 &times; 4 = <strong>24 sq. units</strong>.",
       "markingScheme": "• Identifying D(3, -3): 1.5 marks<br>• Calculating length 6 and breadth 4: 0.5 mark<br>• Area = 24 sq. units: 1 mark",
-      "examinerTip": "Always state square units for coordinate areas."
+      "examinerTip": "Always state square units for coordinate areas.",
+      "solution": "1. Plotting: AB is horizontal from x = 3 to x = -3 &rArr; Length = 3 - (-3) = 6 units.<br>BC is vertical from y = 1 to y = -3 &rArr; Breadth = 1 - (-3) = 4 units.<br><br>2. Vertex D must have the same x-coordinate as A (x = 3) and same y-coordinate as C (y = -3):<br>Coordinates of <strong>D = (3, -3)</strong>.<br><br>3. Area of rectangle = Length &times; Breadth = 6 &times; 4 = <strong>24 sq. units</strong>."
     },
     {
       "section": "C",
@@ -338,7 +441,8 @@
       "prompt": "A triangular park ABC has sides 120 m, 80 m, and 50 m. A gardener has to put a fence all around it and also plant grass inside. How much area does she need to plant? Find the cost of fencing it with barbed wire at the rate of ₹ 20 per metre leaving a space 3 m wide for a gate on one side.",
       "answer": "1. Semi-perimeter s = (120 + 80 + 50)/2 = 250/2 = 125 m.<br>s - a = 125 - 120 = 5 m<br>s - b = 125 - 80 = 45 m<br>s - c = 125 - 50 = 75 m.<br><br>2. Planting Area = &radic;[125 &times; 5 &times; 45 &times; 75]<br>= &radic;[(5<sup>3</sup>) &times; 5 &times; (9 &times; 5) &times; (25 &times; 3)]<br>= &radic;[5<sup>4</sup> &times; 3<sup>2</sup> &times; 5 &times; 5<sup>2</sup> &times; 3] = &radic;[5<sup>6</sup> &times; 3<sup>2</sup> &times; 15]<br>= 5<sup>3</sup> &times; 3 &times; &radic;15 = 125 &times; 3 &times; &radic;15 = <strong>375&radic;15 m<sup>2</sup></strong> (approx 1452.37 m<sup>2</sup>).<br><br>3. Length of fencing required = Perimeter - Gate width = 250 - 3 = 247 m.<br>Cost of fencing = 247 &times; ₹ 20 = <strong>₹ 4,940</strong>.",
       "markingScheme": "• Area calculation (375&radic;15 m<sup>2</sup>): 1.5 marks<br>• Fencing length (247 m): 0.5 mark<br>• Total cost (₹ 4,940): 1 mark",
-      "examinerTip": "Remember to subtract the 3 m gate width from total perimeter before multiplying by rate."
+      "examinerTip": "Remember to subtract the 3 m gate width from total perimeter before multiplying by rate.",
+      "solution": "1. Semi-perimeter s = (120 + 80 + 50)/2 = 250/2 = 125 m.<br>s - a = 125 - 120 = 5 m<br>s - b = 125 - 80 = 45 m<br>s - c = 125 - 50 = 75 m.<br><br>2. Planting Area = &radic;[125 &times; 5 &times; 45 &times; 75]<br>= &radic;[(5<sup>3</sup>) &times; 5 &times; (9 &times; 5) &times; (25 &times; 3)]<br>= &radic;[5<sup>4</sup> &times; 3<sup>2</sup> &times; 5 &times; 5<sup>2</sup> &times; 3] = &radic;[5<sup>6</sup> &times; 3<sup>2</sup> &times; 15]<br>= 5<sup>3</sup> &times; 3 &times; &radic;15 = 125 &times; 3 &times; &radic;15 = <strong>375&radic;15 m<sup>2</sup></strong> (approx 1452.37 m<sup>2</sup>).<br><br>3. Length of fencing required = Perimeter - Gate width = 250 - 3 = 247 m.<br>Cost of fencing = 247 &times; ₹ 20 = <strong>₹ 4,940</strong>."
     },
     {
       "section": "C",
@@ -348,7 +452,8 @@
       "prompt": "Simplify by combining exponents: [ (81/16)<sup>-3/4</sup> &times; (25/9)<sup>-3/2</sup> ] &divide; (5/2)<sup>-3</sup>.",
       "answer": "1. (81/16)<sup>-3/4</sup> = [(3/2)<sup>4</sup>]<sup>-3/4</sup> = (3/2)<sup>-3</sup> = (2/3)<sup>3</sup> = 8/27.<br><br>2. (25/9)<sup>-3/2</sup> = [(5/3)<sup>2</sup>]<sup>-3/2</sup> = (5/3)<sup>-3</sup> = (3/5)<sup>3</sup> = 27/125.<br><br>3. Product of terms 1 and 2: (8/27) &times; (27/125) = 8/125.<br><br>4. (5/2)<sup>-3</sup> = (2/5)<sup>3</sup> = 8/125.<br><br>5. Quotient = (8/125) &divide; (8/125) = <strong>1</strong>.",
       "markingScheme": "• Simplifying first term to 8/27: 1 mark<br>• Simplifying second term to 27/125: 1 mark<br>• Performing division to obtain 1: 1 mark",
-      "examinerTip": "Work term by term. Beautiful simplification to 1."
+      "examinerTip": "Work term by term. Beautiful simplification to 1.",
+      "solution": "1. (81/16)<sup>-3/4</sup> = [(3/2)<sup>4</sup>]<sup>-3/4</sup> = (3/2)<sup>-3</sup> = (2/3)<sup>3</sup> = 8/27.<br><br>2. (25/9)<sup>-3/2</sup> = [(5/3)<sup>2</sup>]<sup>-3/2</sup> = (5/3)<sup>-3</sup> = (3/5)<sup>3</sup> = 27/125.<br><br>3. Product of terms 1 and 2: (8/27) &times; (27/125) = 8/125.<br><br>4. (5/2)<sup>-3</sup> = (2/5)<sup>3</sup> = 8/125.<br><br>5. Quotient = (8/125) &divide; (8/125) = <strong>1</strong>."
     },
     {
       "section": "C",
@@ -358,7 +463,8 @@
       "prompt": "Without actual division, prove that 2x<sup>4</sup> - 5x<sup>3</sup> + 2x<sup>2</sup> - x + 2 is divisible by x<sup>2</sup> - 3x + 2.",
       "answer": "1. Factorize divisor: x<sup>2</sup> - 3x + 2 = (x - 1)(x - 2).<br>For p(x) to be divisible by (x - 1)(x - 2), we must have p(1) = 0 and p(2) = 0.<br><br>2. Evaluate p(1):<br>p(1) = 2(1)<sup>4</sup> - 5(1)<sup>3</sup> + 2(1)<sup>2</sup> - 1 + 2 = 2 - 5 + 2 - 1 + 2 = 0.<br>Thus, (x - 1) is a factor.<br><br>3. Evaluate p(2):<br>p(2) = 2(2)<sup>4</sup> - 5(2)<sup>3</sup> + 2(2)<sup>2</sup> - 2 + 2 = 2(16) - 5(8) + 2(4) = 32 - 40 + 8 = 0.<br>Thus, (x - 2) is a factor.<br><br>Since both (x - 1) and (x - 2) are factors, p(x) is divisible by (x<sup>2</sup> - 3x + 2).",
       "markingScheme": "• Factoring divisor into (x - 1)(x - 2): 1 mark<br>• Proving p(1) = 0: 1 mark<br>• Proving p(2) = 0 and concluding proof: 1 mark",
-      "examinerTip": "Factor theorem application."
+      "examinerTip": "Factor theorem application.",
+      "solution": "1. Factorize divisor: x<sup>2</sup> - 3x + 2 = (x - 1)(x - 2).<br>For p(x) to be divisible by (x - 1)(x - 2), we must have p(1) = 0 and p(2) = 0.<br><br>2. Evaluate p(1):<br>p(1) = 2(1)<sup>4</sup> - 5(1)<sup>3</sup> + 2(1)<sup>2</sup> - 1 + 2 = 2 - 5 + 2 - 1 + 2 = 0.<br>Thus, (x - 1) is a factor.<br><br>3. Evaluate p(2):<br>p(2) = 2(2)<sup>4</sup> - 5(2)<sup>3</sup> + 2(2)<sup>2</sup> - 2 + 2 = 2(16) - 5(8) + 2(4) = 32 - 40 + 8 = 0.<br>Thus, (x - 2) is a factor.<br><br>Since both (x - 1) and (x - 2) are factors, p(x) is divisible by (x<sup>2</sup> - 3x + 2)."
     },
     {
       "section": "D",
@@ -368,7 +474,8 @@
       "prompt": "If x = ( &radic;3 + 1 ) / ( &radic;3 - 1 ) and y = ( &radic;3 - 1 ) / ( &radic;3 + 1 ), find the value of x<sup>2</sup> + y<sup>2</sup> + xy.",
       "answer": "1. Rationalize x:<br>x = (&radic;3 + 1)<sup>2</sup> / [(&radic;3 - 1)(&radic;3 + 1)] = (3 + 2&radic;3 + 1) / (3 - 1) = (4 + 2&radic;3) / 2 = 2 + &radic;3.<br><br>2. Rationalize y:<br>y = (&radic;3 - 1)<sup>2</sup> / [(&radic;3 + 1)(&radic;3 - 1)] = (3 - 2&radic;3 + 1) / (3 - 1) = (4 - 2&radic;3) / 2 = 2 - &radic;3.<br><br>3. Compute sums and products:<br>x + y = (2 + &radic;3) + (2 - &radic;3) = 4.<br>xy = (2 + &radic;3)(2 - &radic;3) = 2<sup>2</sup> - (&radic;3)<sup>2</sup> = 4 - 3 = 1.<br><br>4. Compute x<sup>2</sup> + y<sup>2</sup> + xy:<br>x<sup>2</sup> + y<sup>2</sup> = (x + y)<sup>2</sup> - 2xy = 4<sup>2</sup> - 2(1) = 16 - 2 = 14.<br>Therefore, x<sup>2</sup> + y<sup>2</sup> + xy = 14 + 1 = <strong>15</strong>.",
       "markingScheme": "• Rationalizing x = 2 + &radic;3: 1.5 marks<br>• Rationalizing y = 2 - &radic;3: 1.5 marks<br>• Finding x + y = 4 and xy = 1: 1 mark<br>• Final evaluation x<sup>2</sup> + y<sup>2</sup> + xy = 15: 1 mark",
-      "examinerTip": "Classic 5-marker board question. Using (x+y)^2 - xy avoids computing large square expansions separately."
+      "examinerTip": "Classic 5-marker board question. Using (x+y)^2 - xy avoids computing large square expansions separately.",
+      "solution": "1. Rationalize x:<br>x = (&radic;3 + 1)<sup>2</sup> / [(&radic;3 - 1)(&radic;3 + 1)] = (3 + 2&radic;3 + 1) / (3 - 1) = (4 + 2&radic;3) / 2 = 2 + &radic;3.<br><br>2. Rationalize y:<br>y = (&radic;3 - 1)<sup>2</sup> / [(&radic;3 + 1)(&radic;3 - 1)] = (3 - 2&radic;3 + 1) / (3 - 1) = (4 - 2&radic;3) / 2 = 2 - &radic;3.<br><br>3. Compute sums and products:<br>x + y = (2 + &radic;3) + (2 - &radic;3) = 4.<br>xy = (2 + &radic;3)(2 - &radic;3) = 2<sup>2</sup> - (&radic;3)<sup>2</sup> = 4 - 3 = 1.<br><br>4. Compute x<sup>2</sup> + y<sup>2</sup> + xy:<br>x<sup>2</sup> + y<sup>2</sup> = (x + y)<sup>2</sup> - 2xy = 4<sup>2</sup> - 2(1) = 16 - 2 = 14.<br>Therefore, x<sup>2</sup> + y<sup>2</sup> + xy = 14 + 1 = <strong>15</strong>."
     },
     {
       "section": "D",
@@ -378,7 +485,8 @@
       "prompt": "Factorize completely:<br>(i) x<sup>3</sup> - 23x<sup>2</sup> + 142x - 120 (3m)<br>(ii) 8a<sup>3</sup> - b<sup>3</sup> - 12a<sup>2</sup>b + 6ab<sup>2</sup> (2m)",
       "answer": "(i) Let p(x) = x<sup>3</sup> - 23x<sup>2</sup> + 142x - 120.<br>Factors of -120 include &plusmn;1, &plusmn;2, &plusmn;3, &plusmn;4, &plusmn;5...<br>Test x = 1: p(1) = 1 - 23 + 142 - 120 = 143 - 143 = 0.<br>&rArr; (x - 1) is a factor.<br><br>Divide p(x) by (x - 1):<br>x<sup>3</sup> - 23x<sup>2</sup> + 142x - 120 = (x - 1)(x<sup>2</sup> - 22x + 120).<br>Now split the middle term for quadratic: -22 = -12 - 10 and (-12)(-10) = 120.<br>x<sup>2</sup> - 22x + 120 = (x - 12)(x - 10).<br>Complete factorization: <strong>(x - 1)(x - 10)(x - 12)</strong>.<br><br>(ii) 8a<sup>3</sup> - b<sup>3</sup> - 12a<sup>2</sup>b + 6ab<sup>2</sup><br>= (2a)<sup>3</sup> - b<sup>3</sup> - 3(2a)<sup>2</sup>(b) + 3(2a)(b)<sup>2</sup><br>Using identity (x - y)<sup>3</sup> = x<sup>3</sup> - y<sup>3</sup> - 3x<sup>2</sup>y + 3xy<sup>2</sup>:<br>= <strong>(2a - b)<sup>3</sup></strong> or (2a - b)(2a - b)(2a - b).",
       "markingScheme": "• (i) Finding (x - 1) factor: 1 mark; Quotient x<sup>2</sup> - 22x + 120: 1 mark; Factoring to (x - 1)(x - 10)(x - 12): 1 mark<br>• (ii) Identifying (2a - b)<sup>3</sup> identity: 2 marks",
-      "examinerTip": "Part (i) is a standard NCERT Exemplar question."
+      "examinerTip": "Part (i) is a standard NCERT Exemplar question.",
+      "solution": "(i) Let p(x) = x<sup>3</sup> - 23x<sup>2</sup> + 142x - 120.<br>Factors of -120 include &plusmn;1, &plusmn;2, &plusmn;3, &plusmn;4, &plusmn;5...<br>Test x = 1: p(1) = 1 - 23 + 142 - 120 = 143 - 143 = 0.<br>&rArr; (x - 1) is a factor.<br><br>Divide p(x) by (x - 1):<br>x<sup>3</sup> - 23x<sup>2</sup> + 142x - 120 = (x - 1)(x<sup>2</sup> - 22x + 120).<br>Now split the middle term for quadratic: -22 = -12 - 10 and (-12)(-10) = 120.<br>x<sup>2</sup> - 22x + 120 = (x - 12)(x - 10).<br>Complete factorization: <strong>(x - 1)(x - 10)(x - 12)</strong>.<br><br>(ii) 8a<sup>3</sup> - b<sup>3</sup> - 12a<sup>2</sup>b + 6ab<sup>2</sup><br>= (2a)<sup>3</sup> - b<sup>3</sup> - 3(2a)<sup>2</sup>(b) + 3(2a)(b)<sup>2</sup><br>Using identity (x - y)<sup>3</sup> = x<sup>3</sup> - y<sup>3</sup> - 3x<sup>2</sup>y + 3xy<sup>2</sup>:<br>= <strong>(2a - b)<sup>3</sup></strong> or (2a - b)(2a - b)(2a - b)."
     },
     {
       "section": "D",
@@ -388,7 +496,8 @@
       "prompt": "A field is in the shape of a trapezium whose parallel sides are 25 m and 10 m. The non-parallel sides are 14 m and 13 m. Find the area of the field.",
       "answer": "Let trapezium be ABCD with AB = 25 m, CD = 10 m, AD = 13 m, BC = 14 m, and AB || CD.<br><br>1. Draw CE || DA meeting AB at E.<br>Then AECD is a parallelogram &rArr; AE = CD = 10 m, CE = AD = 13 m.<br>Then EB = AB - AE = 25 - 10 = 15 m.<br><br>2. In &Delta;CEB, the sides are CE = 13 m, BC = 14 m, EB = 15 m.<br>Semi-perimeter s = (13 + 14 + 15)/2 = 42/2 = 21 m.<br>Area(&Delta;CEB) = &radic;[21 &times; (21 - 13) &times; (21 - 14) &times; (21 - 15)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6] = <strong>84 m<sup>2</sup></strong>.<br><br>3. Altitude (height h) of triangle from C to EB:<br>Area = (1/2) &times; Base &times; Height &rArr; 84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 m</strong>.<br><br>4. Area of Trapezium ABCD:<br>Area = (1/2) &times; (Sum of parallel sides) &times; Height<br>= (1/2) &times; (25 + 10) &times; 11.2 = (1/2) &times; 35 &times; 11.2 = 35 &times; 5.6 = <strong>196 m<sup>2</sup></strong>.",
       "markingScheme": "• Construction of CE || DA and identifying parallelogram AE = 10 m, EB = 15 m: 1.5 marks<br>• Area of &Delta;CEB = 84 m<sup>2</sup> using Heron's formula: 1.5 marks<br>• Finding altitude h = 11.2 m: 1 mark<br>• Area of Trapezium = 196 m<sup>2</sup>: 1 mark",
-      "examinerTip": "Crucial Class 9 mensuration problem. Construction of parallel segment CE is mandatory."
+      "examinerTip": "Crucial Class 9 mensuration problem. Construction of parallel segment CE is mandatory.",
+      "solution": "Let trapezium be ABCD with AB = 25 m, CD = 10 m, AD = 13 m, BC = 14 m, and AB || CD.<br><br>1. Draw CE || DA meeting AB at E.<br>Then AECD is a parallelogram &rArr; AE = CD = 10 m, CE = AD = 13 m.<br>Then EB = AB - AE = 25 - 10 = 15 m.<br><br>2. In &Delta;CEB, the sides are CE = 13 m, BC = 14 m, EB = 15 m.<br>Semi-perimeter s = (13 + 14 + 15)/2 = 42/2 = 21 m.<br>Area(&Delta;CEB) = &radic;[21 &times; (21 - 13) &times; (21 - 14) &times; (21 - 15)]<br>= &radic;[21 &times; 8 &times; 7 &times; 6] = <strong>84 m<sup>2</sup></strong>.<br><br>3. Altitude (height h) of triangle from C to EB:<br>Area = (1/2) &times; Base &times; Height &rArr; 84 = (1/2) &times; 15 &times; h<br>h = (84 &times; 2) / 15 = 168 / 15 = <strong>11.2 m</strong>.<br><br>4. Area of Trapezium ABCD:<br>Area = (1/2) &times; (Sum of parallel sides) &times; Height<br>= (1/2) &times; (25 + 10) &times; 11.2 = (1/2) &times; 35 &times; 11.2 = 35 &times; 5.6 = <strong>196 m<sup>2</sup></strong>."
     },
     {
       "section": "D",
@@ -398,7 +507,8 @@
       "prompt": "Plot the points A(1, 3), B(1, -1), C(7, -1), and D(7, 3) on a graph sheet.<br>(i) Write the coordinates of the vertices. (1m)<br>(ii) Name the figure ABCD and state its dimensions. (2m)<br>(iii) Find the coordinates of the point of intersection of its diagonals. (2m)",
       "answer": "(i) Vertices are A(1, 3), B(1, -1), C(7, -1), D(7, 3).<br><br>(ii) Side AB is vertical: Length = |3 - (-1)| = 4 units.<br>Side BC is horizontal: Length = |7 - 1| = 6 units.<br>Side CD is vertical: Length = |3 - (-1)| = 4 units.<br>Side DA is horizontal: Length = |7 - 1| = 6 units.<br>Since opposite sides are equal, parallel, and adjacent sides are perpendicular (horizontal meets vertical at 90&deg;), <strong>ABCD is a Rectangle</strong> of dimensions <strong>6 units &times; 4 units</strong>.<br><br>(iii) In a rectangle, diagonals bisect each other at their common midpoint.<br>Midpoint of diagonal AC:<br>x = (1 + 7)/2 = 8/2 = 4<br>y = (3 + (-1))/2 = 2/2 = 1.<br>Therefore, the point of intersection of the diagonals is <strong>M(4, 1)</strong>.",
       "markingScheme": "• (i) 1 mark for plotting/verifying coordinates<br>• (ii) Proving ABCD is a Rectangle of 6 &times; 4: 2 marks<br>• (iii) Midpoint calculation M(4, 1): 2 marks",
-      "examinerTip": "The midpoint formula (x1+x2)/2, (y1+y2)/2 is the fastest way to find diagonal intersection."
+      "examinerTip": "The midpoint formula (x1+x2)/2, (y1+y2)/2 is the fastest way to find diagonal intersection.",
+      "solution": "(i) Vertices are A(1, 3), B(1, -1), C(7, -1), D(7, 3).<br><br>(ii) Side AB is vertical: Length = |3 - (-1)| = 4 units.<br>Side BC is horizontal: Length = |7 - 1| = 6 units.<br>Side CD is vertical: Length = |3 - (-1)| = 4 units.<br>Side DA is horizontal: Length = |7 - 1| = 6 units.<br>Since opposite sides are equal, parallel, and adjacent sides are perpendicular (horizontal meets vertical at 90&deg;), <strong>ABCD is a Rectangle</strong> of dimensions <strong>6 units &times; 4 units</strong>.<br><br>(iii) In a rectangle, diagonals bisect each other at their common midpoint.<br>Midpoint of diagonal AC:<br>x = (1 + 7)/2 = 8/2 = 4<br>y = (3 + (-1))/2 = 2/2 = 1.<br>Therefore, the point of intersection of the diagonals is <strong>M(4, 1)</strong>."
     },
     {
       "section": "E",
@@ -408,7 +518,8 @@
       "prompt": "A residential welfare association designed an eco-park comprising a triangular floral garden. The three sides of the garden measure 50 m, 65 m, and 65 m.<br><br><strong>Questions:</strong><br>(i) What type of triangle is the garden based on side lengths? (1m)<br>(ii) Calculate the semi-perimeter of the garden. (1m)<br>(iii) Find the area of the garden using Heron's formula. (2m)",
       "answer": "(i) Since two sides are equal (65 m and 65 m), the garden is an <strong>Isosceles Triangle</strong>.<br><br>(ii) Semi-perimeter s = (a + b + c)/2 = (50 + 65 + 65)/2 = 180/2 = <strong>90 m</strong>.<br><br>(iii) By Heron's Formula:<br>s - a = 90 - 50 = 40 m<br>s - b = 90 - 65 = 25 m<br>s - c = 90 - 65 = 25 m.<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[90 &times; 40 &times; 25 &times; 25]<br>= &radic;[(9 &times; 10) &times; (4 &times; 10) &times; 25<sup>2</sup>]<br>= &radic;[9 &times; 4 &times; 100 &times; 25<sup>2</sup>]<br>= 3 &times; 2 &times; 10 &times; 25 = 6 &times; 250 = <strong>1500 m<sup>2</sup></strong>.",
       "markingScheme": "• (i) Identifying isosceles triangle: 1 mark<br>• (ii) s = 90 m: 1 mark<br>• (iii) Applying Heron's formula and finding Area = 1500 m<sup>2</sup>: 2 marks",
-      "examinerTip": "Pairing 25 &times; 25 allows pulling out 25 directly."
+      "examinerTip": "Pairing 25 &times; 25 allows pulling out 25 directly.",
+      "solution": "(i) Since two sides are equal (65 m and 65 m), the garden is an <strong>Isosceles Triangle</strong>.<br><br>(ii) Semi-perimeter s = (a + b + c)/2 = (50 + 65 + 65)/2 = 180/2 = <strong>90 m</strong>.<br><br>(iii) By Heron's Formula:<br>s - a = 90 - 50 = 40 m<br>s - b = 90 - 65 = 25 m<br>s - c = 90 - 65 = 25 m.<br>Area = &radic;[s(s - a)(s - b)(s - c)]<br>= &radic;[90 &times; 40 &times; 25 &times; 25]<br>= &radic;[(9 &times; 10) &times; (4 &times; 10) &times; 25<sup>2</sup>]<br>= &radic;[9 &times; 4 &times; 100 &times; 25<sup>2</sup>]<br>= 3 &times; 2 &times; 10 &times; 25 = 6 &times; 250 = <strong>1500 m<sup>2</sup></strong>."
     },
     {
       "section": "E",
@@ -418,7 +529,8 @@
       "prompt": "A drone delivery company utilizes a Cartesian coordinate tracking system over a district grid with origin O(0, 0) at their main dispatch center. 1 grid unit represents 1 km.<br>• Drone A is at position (3, 4).<br>• Drone B is at position (-3, 4).<br>• Drone C is at position (-3, -4).<br><br><strong>Questions:</strong><br>(i) State the quadrant for each drone. (1m)<br>(ii) What is the distance between Drone A and Drone B? (1m)<br>(iii) What are the coordinates of Drone D such that ABCD forms a rectangle? Find the area enclosed. (2m)",
       "answer": "(i) Drone A(3, 4) &rArr; <strong>Quadrant I</strong> (+, +); Drone B(-3, 4) &rArr; <strong>Quadrant II</strong> (-, +); Drone C(-3, -4) &rArr; <strong>Quadrant III</strong> (-, -).<br><br>(ii) Line AB is horizontal along y = 4. Distance AB = |3 - (-3)| = 3 + 3 = <strong>6 km</strong>.<br><br>(iii) For ABCD to form a rectangle, point D must have the x-coordinate of A (x = 3) and y-coordinate of C (y = -4):<br>Coordinates of <strong>D = (3, -4)</strong>.<br>Breadth BC = |4 - (-4)| = 8 km.<br>Area = Length &times; Breadth = 6 &times; 8 = <strong>48 sq. km</strong>.",
       "markingScheme": "• (i) Correct quadrants: 1 mark<br>• (ii) Distance AB = 6 km: 1 mark<br>• (iii) D(3, -4) (1 mark) and Area = 48 sq. km (1 mark): 2 marks",
-      "examinerTip": "Direct application of Cartesian coordinate geometry."
+      "examinerTip": "Direct application of Cartesian coordinate geometry.",
+      "solution": "(i) Drone A(3, 4) &rArr; <strong>Quadrant I</strong> (+, +); Drone B(-3, 4) &rArr; <strong>Quadrant II</strong> (-, +); Drone C(-3, -4) &rArr; <strong>Quadrant III</strong> (-, -).<br><br>(ii) Line AB is horizontal along y = 4. Distance AB = |3 - (-3)| = 3 + 3 = <strong>6 km</strong>.<br><br>(iii) For ABCD to form a rectangle, point D must have the x-coordinate of A (x = 3) and y-coordinate of C (y = -4):<br>Coordinates of <strong>D = (3, -4)</strong>.<br>Breadth BC = |4 - (-4)| = 8 km.<br>Area = Length &times; Breadth = 6 &times; 8 = <strong>48 sq. km</strong>."
     },
     {
       "section": "E",
@@ -428,7 +540,8 @@
       "prompt": "An architect designs an exhibition pavilion whose floor plan layout is modeled by polynomial functions for cost and structural load:<br>• The cost per square meter is given by P(x) = 2x<sup>2</sup> - 8x + 15 (in thousands of rupees), where x is a dimensional design factor.<br><br><strong>Questions:</strong><br>(i) What is the degree and name of the polynomial P(x)? (1m)<br>(ii) Find the cost per square meter when design factor x = 3. (1m)<br>(iii) If the cost expression is modified to Q(x) = 2x<sup>2</sup> - 8x + 8, find the zeroes of Q(x) and interpret what they represent. (2m)",
       "answer": "(i) The highest power of x is 2, so the degree is <strong>2</strong>; it is a <strong>Quadratic Polynomial</strong>.<br><br>(ii) For x = 3:<br>P(3) = 2(3)<sup>2</sup> - 8(3) + 15 = 2(9) - 24 + 15 = 18 - 24 + 15 = <strong>9 thousand rupees (₹ 9,000)</strong>.<br><br>(iii) To find zeroes of Q(x) = 2x<sup>2</sup> - 8x + 8:<br>Set Q(x) = 0 &rArr; 2(x<sup>2</sup> - 4x + 4) = 0<br>2(x - 2)<sup>2</sup> = 0 &rArr; <strong>x = 2</strong>.<br>Zeroes represent the design factor value where the modified cost function would reach zero.",
       "markingScheme": "• (i) Degree 2, quadratic polynomial: 1 mark<br>• (ii) P(3) = 9: 1 mark<br>• (iii) Factoring 2(x - 2)<sup>2</sup> = 0 &rArr; x = 2 (repeated zero): 2 marks",
-      "examinerTip": "Notice that x^2 - 4x + 4 is a perfect square (x - 2)^2."
+      "examinerTip": "Notice that x^2 - 4x + 4 is a perfect square (x - 2)^2.",
+      "solution": "(i) The highest power of x is 2, so the degree is <strong>2</strong>; it is a <strong>Quadratic Polynomial</strong>.<br><br>(ii) For x = 3:<br>P(3) = 2(3)<sup>2</sup> - 8(3) + 15 = 2(9) - 24 + 15 = 18 - 24 + 15 = <strong>9 thousand rupees (₹ 9,000)</strong>.<br><br>(iii) To find zeroes of Q(x) = 2x<sup>2</sup> - 8x + 8:<br>Set Q(x) = 0 &rArr; 2(x<sup>2</sup> - 4x + 4) = 0<br>2(x - 2)<sup>2</sup> = 0 &rArr; <strong>x = 2</strong>.<br>Zeroes represent the design factor value where the modified cost function would reach zero."
     }
   ]
 }

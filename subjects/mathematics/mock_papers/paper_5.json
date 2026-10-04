@@ -17,9 +17,10 @@
         "(c) Quadrant III",
         "(d) Quadrant IV"
       ],
-      "answer": "<strong>(d) Quadrant IV</strong>",
-      "markingScheme": "• Slope m = -A/B > 0 (uphill). x-intercept = -C/A < 0 (left axis). y-intercept = -C/B > 0 (upper axis). Passing through negative x-axis and positive y-axis with positive slope sweeps Quadrants I, II, III; it never enters Quadrant IV [1 mark]",
-      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Example 5)."
+      "answer": "<strong>Correct Answer: (d) Quadrant IV</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The general form of a straight line is Ax + By + C = 0.<br>Express in slope-intercept form y = mx + c:<br>By = -Ax - C &rArr; y = (-A/B)x + (-C/B).<br>• Slope m = -A/B.<br>• y-intercept = -C/B.<br>• x-intercept (put y = 0) = -C/A.<br>2. Analyze the given signs: A > 0 (+), B < 0 (-), C > 0 (+):<br>• Slope m = -(+) / (-) = -(-) = <strong>positive (m > 0)</strong>. The line rises from left to right (goes uphill).<br>• y-intercept = -(+) / (-) = <strong>positive</strong>. The line crosses the positive half of the y-axis (upper vertical axis).<br>• x-intercept = -(+) / (+) = <strong>negative</strong>. The line crosses the negative half of the x-axis (left horizontal axis).<br>3. A straight line that passes through the negative x-axis and the positive y-axis with an upward slope sweeps through <strong>Quadrant II, Quadrant I, and Quadrant III</strong>.<br>4. It never enters <strong>Quadrant IV</strong>.",
+      "markingScheme": "• Analyzing slope m > 0 and intercepts x < 0, y > 0: 0.5 mark<br>• Deducing line never enters Quadrant IV (Option d): 0.5 mark",
+      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Example 5).",
+      "solution": "<strong>Correct Answer: (d) Quadrant IV</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The general form of a straight line is Ax + By + C = 0.<br>Express in slope-intercept form y = mx + c:<br>By = -Ax - C &rArr; y = (-A/B)x + (-C/B).<br>• Slope m = -A/B.<br>• y-intercept = -C/B.<br>• x-intercept (put y = 0) = -C/A.<br>2. Analyze the given signs: A > 0 (+), B < 0 (-), C > 0 (+):<br>• Slope m = -(+) / (-) = -(-) = <strong>positive (m > 0)</strong>. The line rises from left to right (goes uphill).<br>• y-intercept = -(+) / (-) = <strong>positive</strong>. The line crosses the positive half of the y-axis (upper vertical axis).<br>• x-intercept = -(+) / (+) = <strong>negative</strong>. The line crosses the negative half of the x-axis (left horizontal axis).<br>3. A straight line that passes through the negative x-axis and the positive y-axis with an upward slope sweeps through <strong>Quadrant II, Quadrant I, and Quadrant III</strong>.<br>4. It never enters <strong>Quadrant IV</strong>."
     },
     {
       "section": "A",
@@ -33,9 +34,10 @@
         "(c) -4/3",
         "(d) 4/3"
       ],
-      "answer": "<strong>(c) -4/3</strong>",
-      "markingScheme": "• For perpendicular non-vertical lines, m1 &times; m2 = -1 &rArr; (3/4) &times; m2 = -1 &rArr; m2 = -4/3 [1 mark]",
-      "examinerTip": "Perpendicular lines have negative reciprocal slopes."
+      "answer": "<strong>Correct Answer: (c) -4/3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Perpendicular Lines Theorem in Coordinate Geometry, two non-vertical straight lines with slopes m<sub>1</sub> and m<sub>2</sub> are perpendicular if and only if their product is -1:<br>m<sub>1</sub> &times; m<sub>2</sub> = -1.<br>2. Given slope of line l<sub>1</sub> is m<sub>1</sub> = 3/4.<br>3. Substitute m<sub>1</sub> into the perpendicularity condition:<br>(3/4) &times; m<sub>2</sub> = -1.<br>4. Solve for m<sub>2</sub> by multiplying both sides by 4/3:<br>m<sub>2</sub> = -1 &times; (4/3) = <strong>-4/3</strong>.<br>5. Therefore, the slope of l<sub>2</sub> is -4/3.",
+      "markingScheme": "• Recalling perpendicular condition m<sub>1</sub>m<sub>2</sub> = -1: 0.5 mark<br>• Solving m<sub>2</sub> = -4/3 (Option c): 0.5 mark",
+      "examinerTip": "Perpendicular lines have negative reciprocal slopes.",
+      "solution": "<strong>Correct Answer: (c) -4/3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Perpendicular Lines Theorem in Coordinate Geometry, two non-vertical straight lines with slopes m<sub>1</sub> and m<sub>2</sub> are perpendicular if and only if their product is -1:<br>m<sub>1</sub> &times; m<sub>2</sub> = -1.<br>2. Given slope of line l<sub>1</sub> is m<sub>1</sub> = 3/4.<br>3. Substitute m<sub>1</sub> into the perpendicularity condition:<br>(3/4) &times; m<sub>2</sub> = -1.<br>4. Solve for m<sub>2</sub> by multiplying both sides by 4/3:<br>m<sub>2</sub> = -1 &times; (4/3) = <strong>-4/3</strong>.<br>5. Therefore, the slope of l<sub>2</sub> is -4/3."
     },
     {
       "section": "A",
@@ -49,9 +51,10 @@
         "(c) (-1, 3)",
         "(d) (3, -1)"
       ],
-      "answer": "<strong>(b) (2, -3)</strong>",
-      "markingScheme": "• Rearranging: (x - y - 7) + k(2x + y + 1) = 0. Setting x - y = 7 and 2x + y = -1 gives 3x = 6 &rArr; x = 2, y = -3. Point is (2, -3) [1 mark]",
-      "examinerTip": "Group terms independent of k and terms multiplied by k, then set both expressions to zero."
+      "answer": "<strong>Correct Answer: (b) (2, -3)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given equation of the family of lines is:<br>(2k + 1)x + (k - 1)y + (k - 7) = 0.<br>2. Expand and group terms by powers of the parameter k:<br>2kx + x + ky - y + k - 7 = 0<br>(x - y - 7) + k(2x + y + 1) = 0.<br>3. For this equation to hold true for <em>every real value of k</em>, the expressions independent of k and dependent on k must both simultaneously equal zero:<br>• Equation 1: x - y - 7 = 0 &rArr; x - y = 7<br>• Equation 2: 2x + y + 1 = 0 &rArr; 2x + y = -1.<br>4. Add Equation 1 and Equation 2 to eliminate y:<br>(x - y) + (2x + y) = 7 + (-1)<br>3x = 6 &rArr; x = 2.<br>5. Substitute x = 2 into Equation 1:<br>2 - y = 7 &rArr; y = 2 - 7 = -3.<br>6. Therefore, the fixed point through which all lines pass is <strong>(2, -3)</strong>.",
+      "markingScheme": "• Regrouping as (x - y - 7) + k(2x + y + 1) = 0: 0.5 mark<br>• Solving linear system x = 2, y = -3 &rArr; (2, -3) (Option b): 0.5 mark",
+      "examinerTip": "Group terms independent of k and terms multiplied by k, then set both expressions to zero.",
+      "solution": "<strong>Correct Answer: (b) (2, -3)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given equation of the family of lines is:<br>(2k + 1)x + (k - 1)y + (k - 7) = 0.<br>2. Expand and group terms by powers of the parameter k:<br>2kx + x + ky - y + k - 7 = 0<br>(x - y - 7) + k(2x + y + 1) = 0.<br>3. For this equation to hold true for <em>every real value of k</em>, the expressions independent of k and dependent on k must both simultaneously equal zero:<br>• Equation 1: x - y - 7 = 0 &rArr; x - y = 7<br>• Equation 2: 2x + y + 1 = 0 &rArr; 2x + y = -1.<br>4. Add Equation 1 and Equation 2 to eliminate y:<br>(x - y) + (2x + y) = 7 + (-1)<br>3x = 6 &rArr; x = 2.<br>5. Substitute x = 2 into Equation 1:<br>2 - y = 7 &rArr; y = 2 - 7 = -3.<br>6. Therefore, the fixed point through which all lines pass is <strong>(2, -3)</strong>."
     },
     {
       "section": "A",
@@ -65,9 +68,10 @@
         "(c) 8",
         "(d) Infinitely many"
       ],
-      "answer": "<strong>(c) 8</strong>",
-      "markingScheme": "• Integer factors of 8 are &plusmn;1, &plusmn;2, &plusmn;4, &plusmn;8. Each yields a unique integer pair: (1,8),(2,4),(4,2),(8,1),(-1,-8),(-2,-4),(-4,-2),(-8,-1) &rArr; 8 pairs [1 mark]",
-      "examinerTip": "Do not forget negative integer factor pairs."
+      "answer": "<strong>Correct Answer: (c) 8</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We want to find the number of integer pairs (x, y) where x, y &isin; &integers; such that xy = 8.<br>2. The integer divisors (factors) of 8 are both positive and negative:<br>Factors of 8 = {&plusmn;1, &plusmn;2, &plusmn;4, &plusmn;8}.<br>3. List all distinct ordered integer pairs (x, y):<br>• Positive pairs: (1, 8), (2, 4), (4, 2), (8, 1) &rarr; 4 pairs<br>• Negative pairs: (-1, -8), (-2, -4), (-4, -2), (-8, -1) &rarr; 4 pairs.<br>4. Total number of ordered integer pairs = 4 + 4 = <strong>8</strong>.",
+      "markingScheme": "• Listing all positive and negative factor pairs of 8: 0.5 mark<br>• Counting 8 distinct pairs (Option c): 0.5 mark",
+      "examinerTip": "Do not forget negative integer factor pairs.",
+      "solution": "<strong>Correct Answer: (c) 8</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We want to find the number of integer pairs (x, y) where x, y &isin; &integers; such that xy = 8.<br>2. The integer divisors (factors) of 8 are both positive and negative:<br>Factors of 8 = {&plusmn;1, &plusmn;2, &plusmn;4, &plusmn;8}.<br>3. List all distinct ordered integer pairs (x, y):<br>• Positive pairs: (1, 8), (2, 4), (4, 2), (8, 1) &rarr; 4 pairs<br>• Negative pairs: (-1, -8), (-2, -4), (-4, -2), (-8, -1) &rarr; 4 pairs.<br>4. Total number of ordered integer pairs = 4 + 4 = <strong>8</strong>."
     },
     {
       "section": "A",
@@ -81,9 +85,10 @@
         "(c) 14",
         "(d) 4&radic;3"
       ],
-      "answer": "<strong>(b) 4</strong>",
-      "markingScheme": "• 7 + 4&radic;3 = (2 + &radic;3)<sup>2</sup> &rArr; x = 2 + &radic;3. Then 1/x = 2 - &radic;3. Sum = (2 + &radic;3) + (2 - &radic;3) = 4 [1 mark]",
-      "examinerTip": "Look for perfect square form (a + b)^2 under the radical: 2^2 + (&radic;3)^2 + 2(2)&radic;3 = 4 + 3 + 4&radic;3 = 7 + 4&radic;3."
+      "answer": "<strong>Correct Answer: (b) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Given x = &radic;(7 + 4&radic;3).<br>2. Express the radicand (7 + 4&radic;3) as a perfect square (a + b&radic;3)<sup>2</sup>:<br>(a + b&radic;3)<sup>2</sup> = a<sup>2</sup> + 3b<sup>2</sup> + 2ab&radic;3.<br>Comparing with 7 + 4&radic;3:<br>• 2ab = 4 &rArr; ab = 2.<br>• If a = 2, b = 1: a<sup>2</sup> + 3b<sup>2</sup> = 2<sup>2</sup> + 3(1<sup>2</sup>) = 4 + 3 = 7 (matches perfectly!).<br>So, 7 + 4&radic;3 = (2 + &radic;3)<sup>2</sup>.<br>3. Taking square root: x = &radic;[(2 + &radic;3)<sup>2</sup>] = 2 + &radic;3.<br>4. Compute 1/x by rationalizing:<br>1/x = 1 / (2 + &radic;3) = (2 - &radic;3) / (2<sup>2</sup> - 3) = 2 - &radic;3.<br>5. Compute the sum:<br>x + 1/x = (2 + &radic;3) + (2 - &radic;3) = 2 + 2 = <strong>4</strong>.",
+      "markingScheme": "• Simplifying x = 2 + &radic;3: 0.5 mark<br>• Finding 1/x = 2 - &radic;3 and sum = 4 (Option b): 0.5 mark",
+      "examinerTip": "Look for perfect square form (a + b)^2 under the radical: 2^2 + (&radic;3)^2 + 2(2)&radic;3 = 4 + 3 + 4&radic;3 = 7 + 4&radic;3.",
+      "solution": "<strong>Correct Answer: (b) 4</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Given x = &radic;(7 + 4&radic;3).<br>2. Express the radicand (7 + 4&radic;3) as a perfect square (a + b&radic;3)<sup>2</sup>:<br>(a + b&radic;3)<sup>2</sup> = a<sup>2</sup> + 3b<sup>2</sup> + 2ab&radic;3.<br>Comparing with 7 + 4&radic;3:<br>• 2ab = 4 &rArr; ab = 2.<br>• If a = 2, b = 1: a<sup>2</sup> + 3b<sup>2</sup> = 2<sup>2</sup> + 3(1<sup>2</sup>) = 4 + 3 = 7 (matches perfectly!).<br>So, 7 + 4&radic;3 = (2 + &radic;3)<sup>2</sup>.<br>3. Taking square root: x = &radic;[(2 + &radic;3)<sup>2</sup>] = 2 + &radic;3.<br>4. Compute 1/x by rationalizing:<br>1/x = 1 / (2 + &radic;3) = (2 - &radic;3) / (2<sup>2</sup> - 3) = 2 - &radic;3.<br>5. Compute the sum:<br>x + 1/x = (2 + &radic;3) + (2 - &radic;3) = 2 + 2 = <strong>4</strong>."
     },
     {
       "section": "A",
@@ -97,9 +102,10 @@
         "(c) Archimedes 96-gon approximation",
         "(d) Madhava series"
       ],
-      "answer": "<strong>(b) Heron's formula for triangle area</strong>",
-      "markingScheme": "• As d &rarr; 0, the quadrilateral degenerates into a triangle with sides a, b, c. s - 0 = s, giving &radic;[s(s-a)(s-b)(s-c)] which is Heron's formula [1 mark]",
-      "examinerTip": "Heron's formula is mathematically a special degenerate case of Brahmagupta's formula."
+      "answer": "<strong>Correct Answer: (b) Heron's formula for triangle area</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Brahmagupta's formula gives the area of a cyclic quadrilateral of side lengths a, b, c, d and semi-perimeter s = (a + b + c + d)/2:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)].<br>2. If one side length approaches zero, say d &rarr; 0, the fourth vertex collapses onto the third, degenerating the quadrilateral into a triangle with three sides a, b, and c.<br>3. As d &rarr; 0:<br>• Semi-perimeter becomes s = (a + b + c + 0)/2 = (a + b + c)/2.<br>• The fourth factor becomes (s - d) = (s - 0) = s.<br>4. Substituting this into Brahmagupta's formula gives:<br>Area = &radic;[s(s - a)(s - b)(s - c)].<br>5. This is precisely <strong>Heron's formula</strong> for the area of a triangle.",
+      "markingScheme": "• Taking limit d &rarr; 0 in Brahmagupta's formula: 0.5 mark<br>• Identifying resulting formula as Heron's formula (Option b): 0.5 mark",
+      "examinerTip": "Heron's formula is mathematically a special degenerate case of Brahmagupta's formula.",
+      "solution": "<strong>Correct Answer: (b) Heron's formula for triangle area</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Brahmagupta's formula gives the area of a cyclic quadrilateral of side lengths a, b, c, d and semi-perimeter s = (a + b + c + d)/2:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)].<br>2. If one side length approaches zero, say d &rarr; 0, the fourth vertex collapses onto the third, degenerating the quadrilateral into a triangle with three sides a, b, and c.<br>3. As d &rarr; 0:<br>• Semi-perimeter becomes s = (a + b + c + 0)/2 = (a + b + c)/2.<br>• The fourth factor becomes (s - d) = (s - 0) = s.<br>4. Substituting this into Brahmagupta's formula gives:<br>Area = &radic;[s(s - a)(s - b)(s - c)].<br>5. This is precisely <strong>Heron's formula</strong> for the area of a triangle."
     },
     {
       "section": "A",
@@ -113,9 +119,10 @@
         "(c) 12 sq units",
         "(d) 48 sq units"
       ],
-      "answer": "<strong>(c) 12 sq units</strong>",
-      "markingScheme": "• Intercepts are a = 4 and b = 6. Area = (1/2) &times; a &times; b = (1/2) &times; 4 &times; 6 = 12 square units [1 mark]",
-      "examinerTip": "Intercept form x/a + y/b = 1 directly gives intercepts a and b."
+      "answer": "<strong>Correct Answer: (c) 12 sq units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given equation of the line is written in intercept form: (x / a) + (y / b) = 1.<br>Here, (x / 4) + (y / 6) = 1:<br>• x-intercept a = 4 (point on x-axis is A(4, 0))<br>• y-intercept b = 6 (point on y-axis is B(0, 6)).<br>2. The coordinate axes meet at the origin O(0, 0) at a right angle (90&deg;).<br>3. Triangle &Delta;OAB is a right-angled triangle with base OA = 4 units and height OB = 6 units.<br>4. Area = (1/2) &times; base &times; height = (1/2) &times; 4 &times; 6 = 2 &times; 6 = <strong>12 square units</strong>.",
+      "markingScheme": "• Identifying intercepts a = 4 and b = 6: 0.5 mark<br>• Area = (1/2) &times; 4 &times; 6 = 12 sq units (Option c): 0.5 mark",
+      "examinerTip": "Intercept form x/a + y/b = 1 directly gives intercepts a and b.",
+      "solution": "<strong>Correct Answer: (c) 12 sq units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The given equation of the line is written in intercept form: (x / a) + (y / b) = 1.<br>Here, (x / 4) + (y / 6) = 1:<br>• x-intercept a = 4 (point on x-axis is A(4, 0))<br>• y-intercept b = 6 (point on y-axis is B(0, 6)).<br>2. The coordinate axes meet at the origin O(0, 0) at a right angle (90&deg;).<br>3. Triangle &Delta;OAB is a right-angled triangle with base OA = 4 units and height OB = 6 units.<br>4. Area = (1/2) &times; base &times; height = (1/2) &times; 4 &times; 6 = 2 &times; 6 = <strong>12 square units</strong>."
     },
     {
       "section": "A",
@@ -129,9 +136,10 @@
         "(c) 1",
         "(d) 0"
       ],
-      "answer": "<strong>(b) -3</strong>",
-      "markingScheme": "• x+y = -z, y+z = -x, z+x = -y. Numerator = (-z)<sup>3</sup> + (-x)<sup>3</sup> + (-y)<sup>3</sup> = -(x<sup>3</sup>+y<sup>3</sup>+z<sup>3</sup>) = -3xyz. Divide by xyz gives -3 [1 mark]",
-      "examinerTip": "Substitute x + y = -z directly from x + y + z = 0."
+      "answer": "<strong>Correct Answer: (b) -3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given the condition: x + y + z = 0.<br>From this condition:<br>• x + y = -z<br>• y + z = -x<br>• z + x = -y.<br>2. Substitute these into the numerator:<br>Numerator = (x + y)<sup>3</sup> + (y + z)<sup>3</sup> + (z + x)<sup>3</sup><br>= (-z)<sup>3</sup> + (-x)<sup>3</sup> + (-y)<sup>3</sup><br>= -z<sup>3</sup> - x<sup>3</sup> - y<sup>3</sup> = -(x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup>).<br>3. By the standard algebraic identity, when x + y + z = 0, x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz.<br>4. Therefore, the numerator becomes -3xyz.<br>5. Divide by the denominator xyz:<br>(-3xyz) / xyz = <strong>-3</strong>.",
+      "markingScheme": "• Substituting x+y=-z, etc., to get -(x<sup>3</sup>+y<sup>3</sup>+z<sup>3</sup>): 0.5 mark<br>• Substituting 3xyz to get -3 (Option b): 0.5 mark",
+      "examinerTip": "Substitute x + y = -z directly from x + y + z = 0.",
+      "solution": "<strong>Correct Answer: (b) -3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. We are given the condition: x + y + z = 0.<br>From this condition:<br>• x + y = -z<br>• y + z = -x<br>• z + x = -y.<br>2. Substitute these into the numerator:<br>Numerator = (x + y)<sup>3</sup> + (y + z)<sup>3</sup> + (z + x)<sup>3</sup><br>= (-z)<sup>3</sup> + (-x)<sup>3</sup> + (-y)<sup>3</sup><br>= -z<sup>3</sup> - x<sup>3</sup> - y<sup>3</sup> = -(x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup>).<br>3. By the standard algebraic identity, when x + y + z = 0, x<sup>3</sup> + y<sup>3</sup> + z<sup>3</sup> = 3xyz.<br>4. Therefore, the numerator becomes -3xyz.<br>5. Divide by the denominator xyz:<br>(-3xyz) / xyz = <strong>-3</strong>."
     },
     {
       "section": "A",
@@ -145,9 +153,10 @@
         "(c) ₹14 per km",
         "(d) 50/14"
       ],
-      "answer": "<strong>(c) ₹14 per km</strong>",
-      "markingScheme": "• In y = mx + c, the constant rate of change per unit x is slope m = 14 [1 mark]",
-      "examinerTip": "Slope represents rate of change (&Delta;Cost / &Delta;Distance)."
+      "answer": "<strong>Correct Answer: (c) ₹14 per km</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In linear modeling, the total cost C(x) for driving x kilometers is given by the linear polynomial:<br>C(x) = mx + c<br>where c is the fixed initial charge and m is the variable rate of change per unit distance.<br>2. Here fixed booking fee c = ₹50, and additional rate is ₹14 per km:<br>C(x) = 14x + 50.<br>3. In mathematics and coordinate geometry, the rate of change &Delta;C / &Delta;x is defined as the <strong>slope (m)</strong> of the linear equation.<br>4. Therefore, the mathematical slope is <strong>₹14 per km</strong>.",
+      "markingScheme": "• Setting up linear model C = 14x + 50: 0.5 mark<br>• Identifying slope m = ₹14/km (Option c): 0.5 mark",
+      "examinerTip": "Slope represents rate of change (&Delta;Cost / &Delta;Distance).",
+      "solution": "<strong>Correct Answer: (c) ₹14 per km</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. In linear modeling, the total cost C(x) for driving x kilometers is given by the linear polynomial:<br>C(x) = mx + c<br>where c is the fixed initial charge and m is the variable rate of change per unit distance.<br>2. Here fixed booking fee c = ₹50, and additional rate is ₹14 per km:<br>C(x) = 14x + 50.<br>3. In mathematics and coordinate geometry, the rate of change &Delta;C / &Delta;x is defined as the <strong>slope (m)</strong> of the linear equation.<br>4. Therefore, the mathematical slope is <strong>₹14 per km</strong>."
     },
     {
       "section": "A",
@@ -161,9 +170,10 @@
         "(c) (360 / &pi;)&deg;",
         "(d) 45&deg;"
       ],
-      "answer": "<strong>(b) (180 / &pi;)&deg;</strong>",
-      "markingScheme": "• L = (&theta;/360&deg;) &times; 2&pi;r &rArr; r = (&theta;/360&deg;) &times; 2&pi;r &rArr; 1 = (&theta; &times; &pi;) / 180&deg; &rArr; &theta; = (180/&pi;)&deg; (1 radian) [1 mark]",
-      "examinerTip": "This is the classical geometric definition of 1 radian subtended angle."
+      "answer": "<strong>Correct Answer: (b) (180 / &pi;)&deg;</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Formula for the arc length L of a sector subtending central angle &theta; in degrees is:<br>L = (&theta; / 360&deg;) &times; 2&pi;r.<br>2. We are given that the arc length equals the radius: L = r.<br>3. Substitute L = r into the formula:<br>r = (&theta; / 360&deg;) &times; 2&pi;r.<br>4. Divide both sides by r (since r > 0):<br>1 = (&theta; &times; 2&pi;) / 360&deg; = (&theta; &times; &pi;) / 180&deg;.<br>5. Solve for &theta;:<br>&theta; = <strong>(180 / &pi;)&deg;</strong> (which is the definition of 1 radian, approximately 57.3&deg;).",
+      "markingScheme": "• Setting r = (&theta;/360)2&pi;r: 0.5 mark<br>• Solving &theta; = (180/&pi;)&deg; (Option b): 0.5 mark",
+      "examinerTip": "This is the classical geometric definition of 1 radian subtended angle.",
+      "solution": "<strong>Correct Answer: (b) (180 / &pi;)&deg;</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Formula for the arc length L of a sector subtending central angle &theta; in degrees is:<br>L = (&theta; / 360&deg;) &times; 2&pi;r.<br>2. We are given that the arc length equals the radius: L = r.<br>3. Substitute L = r into the formula:<br>r = (&theta; / 360&deg;) &times; 2&pi;r.<br>4. Divide both sides by r (since r > 0):<br>1 = (&theta; &times; 2&pi;) / 360&deg; = (&theta; &times; &pi;) / 180&deg;.<br>5. Solve for &theta;:<br>&theta; = <strong>(180 / &pi;)&deg;</strong> (which is the definition of 1 radian, approximately 57.3&deg;)."
     },
     {
       "section": "A",
@@ -177,9 +187,10 @@
         "(c) Infinitely many rational and infinitely many irrational numbers",
         "(d) No rational numbers"
       ],
-      "answer": "<strong>(c) Infinitely many rational and infinitely many irrational numbers</strong>",
-      "markingScheme": "• By the Density Property of Real Numbers, between any two real numbers lie infinitely many rationals and irrationals [1 mark]",
-      "examinerTip": "Both rationals and irrationals are dense in the real number line."
+      "answer": "<strong>Correct Answer: (c) Infinitely many rational and infinitely many irrational numbers</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Density Property of Real Numbers, both the set of rational numbers (&Qopf;) and the set of irrational numbers are dense in the real number line (&Ropf;).<br>2. This means that between any two distinct real numbers (whether rational or irrational), there are:<br>• Infinitely many rational numbers.<br>• Infinitely many irrational numbers.<br>3. Here &radic;2 &approx; 1.414 and &radic;3 &approx; 1.732 are distinct real numbers. Hence, infinitely many numbers of both types lie between them.",
+      "markingScheme": "• Stating density property of real numbers: 0.5 mark<br>• Correct option (c): 0.5 mark",
+      "examinerTip": "Both rationals and irrationals are dense in the real number line.",
+      "solution": "<strong>Correct Answer: (c) Infinitely many rational and infinitely many irrational numbers</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Density Property of Real Numbers, both the set of rational numbers (&Qopf;) and the set of irrational numbers are dense in the real number line (&Ropf;).<br>2. This means that between any two distinct real numbers (whether rational or irrational), there are:<br>• Infinitely many rational numbers.<br>• Infinitely many irrational numbers.<br>3. Here &radic;2 &approx; 1.414 and &radic;3 &approx; 1.732 are distinct real numbers. Hence, infinitely many numbers of both types lie between them."
     },
     {
       "section": "A",
@@ -193,9 +204,10 @@
         "(c) (5, 6)",
         "(d) (2, 3)"
       ],
-      "answer": "<strong>(a) (3, 4)</strong>",
-      "markingScheme": "• Total step &Delta;x = (7-1)/3 = 2, &Delta;y = (8-2)/3 = 2. P = (1 + 2, 2 + 2) = (3, 4) [1 mark]",
-      "examinerTip": "Trisection steps divide total horizontal and vertical spans into 3 equal increments."
+      "answer": "<strong>Correct Answer: (a) (3, 4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The points of trisection P and Q divide the line segment AB into three equal parts: AP = PQ = QB.<br>2. Since P is closer to A than Q, P divides AB internally in the ratio 1 : 2.<br>3. Compute total coordinate differences from A(1, 2) to B(7, 8):<br>• &Delta;x = 7 - 1 = 6<br>• &Delta;y = 8 - 2 = 6.<br>4. Each trisection step increment is:<br>• &delta;x = 6 / 3 = 2<br>• &delta;y = 6 / 3 = 2.<br>5. Starting from point A(1, 2), add 1 step to reach point P:<br>x<sub>P</sub> = 1 + 2 = 3<br>y<sub>P</sub> = 2 + 2 = 4.<br>6. Therefore, the coordinates of P are <strong>(3, 4)</strong>.<br>*(Point Q is one further step: (3+2, 4+2) = (5, 6))*. ",
+      "markingScheme": "• Step increments &delta;x = 2, &delta;y = 2: 0.5 mark<br>• Finding P(3, 4) (Option a): 0.5 mark",
+      "examinerTip": "Trisection steps divide total horizontal and vertical spans into 3 equal increments.",
+      "solution": "<strong>Correct Answer: (a) (3, 4)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The points of trisection P and Q divide the line segment AB into three equal parts: AP = PQ = QB.<br>2. Since P is closer to A than Q, P divides AB internally in the ratio 1 : 2.<br>3. Compute total coordinate differences from A(1, 2) to B(7, 8):<br>• &Delta;x = 7 - 1 = 6<br>• &Delta;y = 8 - 2 = 6.<br>4. Each trisection step increment is:<br>• &delta;x = 6 / 3 = 2<br>• &delta;y = 6 / 3 = 2.<br>5. Starting from point A(1, 2), add 1 step to reach point P:<br>x<sub>P</sub> = 1 + 2 = 3<br>y<sub>P</sub> = 2 + 2 = 4.<br>6. Therefore, the coordinates of P are <strong>(3, 4)</strong>.<br>*(Point Q is one further step: (3+2, 4+2) = (5, 6))*. "
     },
     {
       "section": "A",
@@ -209,9 +221,10 @@
         "(c) Strictly outside the circle",
         "(d) At the center of the circle"
       ],
-      "answer": "<strong>(b) Exactly on the boundary of the circle</strong>",
-      "markingScheme": "• Distance CP = &radic;[(5-2)<sup>2</sup> + (7-3)<sup>2</sup>] = &radic;[3<sup>2</sup> + 4<sup>2</sup>] = &radic;25 = 5. Since CP = r, P lies on the circle [1 mark]",
-      "examinerTip": "Point lies on circle if distance from center equals radius."
+      "answer": "<strong>Correct Answer: (b) Exactly on the boundary of the circle</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Center of circle is C(2, 3) and radius r = 5.<br>2. Calculate the distance between the center C(2, 3) and point P(5, 7) using the Baudh&amacron;yana-Pythagoras distance formula:<br>d = &radic;[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>]<br>= &radic;[(5 - 2)<sup>2</sup> + (7 - 3)<sup>2</sup>]<br>= &radic;[3<sup>2</sup> + 4<sup>2</sup>] = &radic;[9 + 16] = &radic;25 = 5 units.<br>3. Compare distance d with radius r:<br>Since d = 5 = r, the point P lies <strong>exactly on the boundary of the circle</strong>.<br>*(If d < r, it would be inside; if d > r, it would be outside)*.",
+      "markingScheme": "• Applying distance formula CP = &radic;(3<sup>2</sup> + 4<sup>2</sup>) = 5: 0.5 mark<br>• Comparing CP = r &rArr; on boundary (Option b): 0.5 mark",
+      "examinerTip": "Point lies on circle if distance from center equals radius.",
+      "solution": "<strong>Correct Answer: (b) Exactly on the boundary of the circle</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Center of circle is C(2, 3) and radius r = 5.<br>2. Calculate the distance between the center C(2, 3) and point P(5, 7) using the Baudh&amacron;yana-Pythagoras distance formula:<br>d = &radic;[(x<sub>2</sub> - x<sub>1</sub>)<sup>2</sup> + (y<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>]<br>= &radic;[(5 - 2)<sup>2</sup> + (7 - 3)<sup>2</sup>]<br>= &radic;[3<sup>2</sup> + 4<sup>2</sup>] = &radic;[9 + 16] = &radic;25 = 5 units.<br>3. Compare distance d with radius r:<br>Since d = 5 = r, the point P lies <strong>exactly on the boundary of the circle</strong>.<br>*(If d < r, it would be inside; if d > r, it would be outside)*."
     },
     {
       "section": "A",
@@ -225,9 +238,10 @@
         "(c) 7",
         "(d) 11"
       ],
-      "answer": "<strong>(a) 3</strong>",
-      "markingScheme": "• R = p(2) = 2<sup>4</sup> - 3(2<sup>2</sup>) + 2(2) - 5 = 16 - 12 + 4 - 5 = 3 [1 mark]",
-      "examinerTip": "Substitute root x = 2 directly using Remainder Theorem."
+      "answer": "<strong>Correct Answer: (a) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Remainder Theorem, when a polynomial p(x) is divided by (x - 2), the remainder is p(2).<br>2. Given polynomial: p(x) = x<sup>4</sup> - 3x<sup>2</sup> + 2x - 5.<br>3. Substitute x = 2 into p(x):<br>p(2) = (2)<sup>4</sup> - 3(2)<sup>2</sup> + 2(2) - 5.<br>4. Calculate each term:<br>= 16 - 3(4) + 4 - 5<br>= 16 - 12 + 4 - 5<br>= 4 + 4 - 5 = 8 - 5 = <strong>3</strong>.<br>5. Therefore, the remainder is 3.",
+      "markingScheme": "• Applying Remainder Theorem R = p(2): 0.5 mark<br>• Evaluating 16 - 12 + 4 - 5 = 3 (Option a): 0.5 mark",
+      "examinerTip": "Substitute root x = 2 directly using Remainder Theorem.",
+      "solution": "<strong>Correct Answer: (a) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. By the Remainder Theorem, when a polynomial p(x) is divided by (x - 2), the remainder is p(2).<br>2. Given polynomial: p(x) = x<sup>4</sup> - 3x<sup>2</sup> + 2x - 5.<br>3. Substitute x = 2 into p(x):<br>p(2) = (2)<sup>4</sup> - 3(2)<sup>2</sup> + 2(2) - 5.<br>4. Calculate each term:<br>= 16 - 3(4) + 4 - 5<br>= 16 - 12 + 4 - 5<br>= 4 + 4 - 5 = 8 - 5 = <strong>3</strong>.<br>5. Therefore, the remainder is 3."
     },
     {
       "section": "A",
@@ -241,9 +255,10 @@
         "(c) 300%",
         "(d) 400%"
       ],
-      "answer": "<strong>(c) 300%</strong>",
-      "markingScheme": "• New sides are 2a, 2b, 2c. By Heron's formula, new area A' = 4A. Increase = 4A - A = 3A. Percentage increase = (3A/A) &times; 100 = 300% [1 mark]",
-      "examinerTip": "Area scales with the square of linear scale factor (2^2 = 4 times, an increase of 300%)."
+      "answer": "<strong>Correct Answer: (c) 300%</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let original sides be a, b, c and original area be A.<br>2. When each side is doubled, the new sides are a' = 2a, b' = 2b, c' = 2c.<br>3. The new semi-perimeter s' is:<br>s' = (2a + 2b + 2c)/2 = 2 &times; [(a + b + c)/2] = 2s.<br>4. Calculate new area A' using Heron's formula:<br>A' = &radic;[s'(s' - a')(s' - b')(s' - c')]<br>= &radic;[2s(2s - 2a)(2s - 2b)(2s - 2c)]<br>= &radic;[2s &times; 2(s - a) &times; 2(s - b) &times; 2(s - c)]<br>= &radic;[16 &times; s(s - a)(s - b)(s - c)]<br>= 4 &times; &radic;[s(s - a)(s - b)(s - c)] = 4A.<br>5. Percentage increase in area:<br>Increase = A' - A = 4A - A = 3A.<br>Percentage increase = (Increase / Original Area) &times; 100% = (3A / A) &times; 100% = <strong>300%</strong>.",
+      "markingScheme": "• Proving new area A' = 4A via Heron's formula: 0.5 mark<br>• Calculating percentage increase (3A/A)&times;100 = 300% (Option c): 0.5 mark",
+      "examinerTip": "Area scales with the square of linear scale factor (2^2 = 4 times, an increase of 300%).",
+      "solution": "<strong>Correct Answer: (c) 300%</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let original sides be a, b, c and original area be A.<br>2. When each side is doubled, the new sides are a' = 2a, b' = 2b, c' = 2c.<br>3. The new semi-perimeter s' is:<br>s' = (2a + 2b + 2c)/2 = 2 &times; [(a + b + c)/2] = 2s.<br>4. Calculate new area A' using Heron's formula:<br>A' = &radic;[s'(s' - a')(s' - b')(s' - c')]<br>= &radic;[2s(2s - 2a)(2s - 2b)(2s - 2c)]<br>= &radic;[2s &times; 2(s - a) &times; 2(s - b) &times; 2(s - c)]<br>= &radic;[16 &times; s(s - a)(s - b)(s - c)]<br>= 4 &times; &radic;[s(s - a)(s - b)(s - c)] = 4A.<br>5. Percentage increase in area:<br>Increase = A' - A = 4A - A = 3A.<br>Percentage increase = (Increase / Original Area) &times; 100% = (3A / A) &times; 100% = <strong>300%</strong>."
     },
     {
       "section": "A",
@@ -257,9 +272,10 @@
         "(c) 14 units",
         "(d) &radic;28 units"
       ],
-      "answer": "<strong>(b) 10 units</strong>",
-      "markingScheme": "• Distance = &radic;[(-6)<sup>2</sup> + 8<sup>2</sup>] = &radic;[36 + 64] = &radic;100 = 10 units [1 mark]",
-      "examinerTip": "Pythagorean triplet (6, 8, 10)."
+      "answer": "<strong>Correct Answer: (b) 10 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The distance of any point P(x, y) from the origin O(0, 0) is given by:<br>d = &radic;(x<sup>2</sup> + y<sup>2</sup>).<br>2. Given P(-6, 8):<br>x = -6 and y = 8.<br>3. Compute the sum of squares:<br>(-6)<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100.<br>4. Take square root:<br>d = &radic;100 = <strong>10 units</strong>.",
+      "markingScheme": "• Distance from origin = &radic;[(-6)<sup>2</sup> + 8<sup>2</sup>]: 0.5 mark<br>• &radic;100 = 10 units (Option b): 0.5 mark",
+      "examinerTip": "Pythagorean triplet (6, 8, 10).",
+      "solution": "<strong>Correct Answer: (b) 10 units</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The distance of any point P(x, y) from the origin O(0, 0) is given by:<br>d = &radic;(x<sup>2</sup> + y<sup>2</sup>).<br>2. Given P(-6, 8):<br>x = -6 and y = 8.<br>3. Compute the sum of squares:<br>(-6)<sup>2</sup> + 8<sup>2</sup> = 36 + 64 = 100.<br>4. Take square root:<br>d = &radic;100 = <strong>10 units</strong>."
     },
     {
       "section": "A",
@@ -273,9 +289,10 @@
         "(c) (a + b + c)<sup>3</sup>",
         "(d) 3abc"
       ],
-      "answer": "<strong>(b) 3(a - b)(b - c)(c - a)</strong>",
-      "markingScheme": "• Let X = a - b, Y = b - c, Z = c - a. Since X + Y + Z = 0, X<sup>3</sup> + Y<sup>3</sup> + Z<sup>3</sup> = 3XYZ = 3(a-b)(b-c)(c-a) [1 mark]",
-      "examinerTip": "Sum of differences is always zero: (a-b)+(b-c)+(c-a) = 0."
+      "answer": "<strong>Correct Answer: (b) 3(a - b)(b - c)(c - a)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let X = a - b, Y = b - c, and Z = c - a.<br>2. Calculate the sum of X, Y, and Z:<br>X + Y + Z = (a - b) + (b - c) + (c - a)<br>= a - a + b - b + c - c = 0.<br>3. By the conditional algebraic identity: if X + Y + Z = 0, then X<sup>3</sup> + Y<sup>3</sup> + Z<sup>3</sup> = 3XYZ.<br>4. Substituting back X, Y, and Z:<br>(a - b)<sup>3</sup> + (b - c)<sup>3</sup> + (c - a)<sup>3</sup> = <strong>3(a - b)(b - c)(c - a)</strong>.",
+      "markingScheme": "• Recognizing X + Y + Z = 0: 0.5 mark<br>• Applying identity &rArr; 3(a-b)(b-c)(c-a) (Option b): 0.5 mark",
+      "examinerTip": "Sum of differences is always zero: (a-b)+(b-c)+(c-a) = 0.",
+      "solution": "<strong>Correct Answer: (b) 3(a - b)(b - c)(c - a)</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. Let X = a - b, Y = b - c, and Z = c - a.<br>2. Calculate the sum of X, Y, and Z:<br>X + Y + Z = (a - b) + (b - c) + (c - a)<br>= a - a + b - b + c - c = 0.<br>3. By the conditional algebraic identity: if X + Y + Z = 0, then X<sup>3</sup> + Y<sup>3</sup> + Z<sup>3</sup> = 3XYZ.<br>4. Substituting back X, Y, and Z:<br>(a - b)<sup>3</sup> + (b - c)<sup>3</sup> + (c - a)<sup>3</sup> = <strong>3(a - b)(b - c)(c - a)</strong>."
     },
     {
       "section": "A",
@@ -289,9 +306,10 @@
         "(c) 3",
         "(d) -3"
       ],
-      "answer": "<strong>(c) 3</strong>",
-      "markingScheme": "• Slope m = (y2 - y1) / (x2 - x1) = (-4 - 2) / (-1 - 1) = -6 / -2 = 3 [1 mark]",
-      "examinerTip": "Slope formula is &Delta;y / &Delta;x."
+      "answer": "<strong>Correct Answer: (c) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The slope m of a straight line passing through two points (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>) is given by the 'rise over run' formula:<br>m = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>).<br>2. Given points are (x<sub>1</sub>, y<sub>1</sub>) = (1, 2) and (x<sub>2</sub>, y<sub>2</sub>) = (-1, -4).<br>3. Substitute the coordinates:<br>m = (-4 - 2) / (-1 - 1)<br>= -6 / -2.<br>4. Simplify the fraction:<br>m = <strong>3</strong>.",
+      "markingScheme": "• Slope formula m = &Delta;y / &Delta;x: 0.5 mark<br>• m = (-6) / (-2) = 3 (Option c): 0.5 mark",
+      "examinerTip": "Slope formula is &Delta;y / &Delta;x.",
+      "solution": "<strong>Correct Answer: (c) 3</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. The slope m of a straight line passing through two points (x<sub>1</sub>, y<sub>1</sub>) and (x<sub>2</sub>, y<sub>2</sub>) is given by the 'rise over run' formula:<br>m = (y<sub>2</sub> - y<sub>1</sub>) / (x<sub>2</sub> - x<sub>1</sub>).<br>2. Given points are (x<sub>1</sub>, y<sub>1</sub>) = (1, 2) and (x<sub>2</sub>, y<sub>2</sub>) = (-1, -4).<br>3. Substitute the coordinates:<br>m = (-4 - 2) / (-1 - 1)<br>= -6 / -2.<br>4. Simplify the fraction:<br>m = <strong>3</strong>."
     },
     {
       "section": "A",
@@ -305,9 +323,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-      "markingScheme": "• For 3x - 5y + 10 = 0, m1 = 3/5. For 5x + 3y - 7 = 0, m2 = -5/3. m1 &times; m2 = (3/5)(-5/3) = -1. Hence perpendicular by (R) [1 mark]",
-      "examinerTip": "Direct application of CBSE Advanced Level Coordinate Geometry Section 4.7."
+      "answer": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The lines 3x - 5y + 10 = 0 and 5x + 3y - 7 = 0 are perpendicular to each other.<br>• For line 1 (3x - 5y + 10 = 0): 5y = 3x + 10 &rArr; y = (3/5)x + 2 &rArr; slope m<sub>1</sub> = 3/5.<br>• For line 2 (5x + 3y - 7 = 0): 3y = -5x + 7 &rArr; y = (-5/3)x + 7/3 &rArr; slope m<sub>2</sub> = -5/3.<br>• Multiply slopes: m<sub>1</sub> &times; m<sub>2</sub> = (3/5) &times; (-5/3) = -1.<br>Since m<sub>1</sub> &times; m<sub>2</sub> = -1, the lines are perpendicular. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Two non-vertical straight lines with slopes m<sub>1</sub> and m<sub>2</sub> are perpendicular if and only if m<sub>1</sub> &times; m<sub>2</sub> = -1.<br>This is the standard theorem in CBSE Advanced Level Coordinate Geometry. Thus Reason (R) is <strong>true</strong>.<br>3. Since (R) is the exact criterion used to verify (A), Reason (R) correctly explains Assertion (A). Correct option is <strong>(a)</strong>.",
+      "markingScheme": "• Computing slopes m<sub>1</sub> = 3/5, m<sub>2</sub> = -5/3 and m<sub>1</sub>m<sub>2</sub> = -1 &rArr; (A) is true: 0.5 mark<br>• Perpendicular slope condition &rArr; (R) is true and explains (A) &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Direct application of CBSE Advanced Level Coordinate Geometry Section 4.7.",
+      "solution": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> The lines 3x - 5y + 10 = 0 and 5x + 3y - 7 = 0 are perpendicular to each other.<br>• For line 1 (3x - 5y + 10 = 0): 5y = 3x + 10 &rArr; y = (3/5)x + 2 &rArr; slope m<sub>1</sub> = 3/5.<br>• For line 2 (5x + 3y - 7 = 0): 3y = -5x + 7 &rArr; y = (-5/3)x + 7/3 &rArr; slope m<sub>2</sub> = -5/3.<br>• Multiply slopes: m<sub>1</sub> &times; m<sub>2</sub> = (3/5) &times; (-5/3) = -1.<br>Since m<sub>1</sub> &times; m<sub>2</sub> = -1, the lines are perpendicular. Thus Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> Two non-vertical straight lines with slopes m<sub>1</sub> and m<sub>2</sub> are perpendicular if and only if m<sub>1</sub> &times; m<sub>2</sub> = -1.<br>This is the standard theorem in CBSE Advanced Level Coordinate Geometry. Thus Reason (R) is <strong>true</strong>.<br>3. Since (R) is the exact criterion used to verify (A), Reason (R) correctly explains Assertion (A). Correct option is <strong>(a)</strong>."
     },
     {
       "section": "A",
@@ -321,9 +340,10 @@
         "(c) (A) is true but (R) is false.",
         "(d) (A) is false but (R) is true."
       ],
-      "answer": "<strong>(a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong>",
-      "markingScheme": "• Euclid's lemma (R) is the foundational theorem used in the proof by contradiction that &radic;p cannot be expressed as a rational p/q [1 mark]",
-      "examinerTip": "Fundamental proof mechanism for irrationality of square roots of primes."
+      "answer": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> &radic;p is an irrational number for every prime number p.<br>If p is prime, it has no factors other than 1 and p, so it can never be a perfect square. Hence &radic;p is always irrational. Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> If a prime number p divides a<sup>2</sup> (where a is a positive integer), then p must also divide a.<br>This is the foundational lemma from the Fundamental Theorem of Arithmetic (Euclid's lemma). In the standard proof by contradiction (assuming &radic;p = a/b in lowest terms &rArr; p = a<sup>2</sup>/b<sup>2</sup> &rArr; pb<sup>2</sup> = a<sup>2</sup>), this exact lemma forces a and b to share a common factor p, contradicting that a/b was in simplest form.<br>3. Therefore, Reason (R) is <strong>true</strong> and constitutes the crucial mathematical justification of Assertion (A). Correct option is <strong>(a)</strong>.",
+      "markingScheme": "• Verifying irrationality of square root of primes &rArr; (A) is true: 0.25 mark<br>• Verifying Euclid's lemma &rArr; (R) is true: 0.25 mark<br>• (R) explains (A) &rArr; Option (a): 0.5 mark",
+      "examinerTip": "Fundamental proof mechanism for irrationality of square roots of primes.",
+      "solution": "<strong>Correct Answer: (a) Both (A) and (R) are true and (R) is the correct explanation of (A).</strong><br><br><strong>Step-by-Step Solution:</strong><br>1. <strong>Assertion (A):</strong> &radic;p is an irrational number for every prime number p.<br>If p is prime, it has no factors other than 1 and p, so it can never be a perfect square. Hence &radic;p is always irrational. Assertion (A) is <strong>true</strong>.<br>2. <strong>Reason (R):</strong> If a prime number p divides a<sup>2</sup> (where a is a positive integer), then p must also divide a.<br>This is the foundational lemma from the Fundamental Theorem of Arithmetic (Euclid's lemma). In the standard proof by contradiction (assuming &radic;p = a/b in lowest terms &rArr; p = a<sup>2</sup>/b<sup>2</sup> &rArr; pb<sup>2</sup> = a<sup>2</sup>), this exact lemma forces a and b to share a common factor p, contradicting that a/b was in simplest form.<br>3. Therefore, Reason (R) is <strong>true</strong> and constitutes the crucial mathematical justification of Assertion (A). Correct option is <strong>(a)</strong>."
     },
     {
       "section": "B",
@@ -333,7 +353,8 @@
       "prompt": "If x = (&radic;5 + &radic;3) / (&radic;5 - &radic;3) and y = (&radic;5 - &radic;3) / (&radic;5 + &radic;3), find the numerical value of (x - y).",
       "answer": "1. Rationalize x:<br>x = (&radic;5 + &radic;3)<sup>2</sup> / (5 - 3) = (5 + 3 + 2&radic;15) / 2 = (8 + 2&radic;15) / 2 = 4 + &radic;15.<br><br>2. Rationalize y:<br>y = (&radic;5 - &radic;3)<sup>2</sup> / (5 - 3) = (5 + 3 - 2&radic;15) / 2 = (8 - 2&radic;15) / 2 = 4 - &radic;15.<br><br>3. Subtract:<br>x - y = (4 + &radic;15) - (4 - &radic;15) = <strong>2&radic;15</strong>.",
       "markingScheme": "• Rationalizing x = 4 + &radic;15 and y = 4 - &radic;15: 1 mark<br>• x - y = 2&radic;15: 1 mark",
-      "examinerTip": "Integer terms cancel out: 4 - 4 = 0, leaving 2&radic;15."
+      "examinerTip": "Integer terms cancel out: 4 - 4 = 0, leaving 2&radic;15.",
+      "solution": "1. Rationalize x:<br>x = (&radic;5 + &radic;3)<sup>2</sup> / (5 - 3) = (5 + 3 + 2&radic;15) / 2 = (8 + 2&radic;15) / 2 = 4 + &radic;15.<br><br>2. Rationalize y:<br>y = (&radic;5 - &radic;3)<sup>2</sup> / (5 - 3) = (5 + 3 - 2&radic;15) / 2 = (8 - 2&radic;15) / 2 = 4 - &radic;15.<br><br>3. Subtract:<br>x - y = (4 + &radic;15) - (4 - &radic;15) = <strong>2&radic;15</strong>."
     },
     {
       "section": "B",
@@ -343,7 +364,8 @@
       "prompt": "Find the equation of the straight line in slope-intercept form (y = mx + c) that has slope m = -2 and passes through the point P(3, -4).",
       "answer": "Given slope m = -2.<br>Equation is y = mx + c &rArr; y = -2x + c.<br><br>Since the line passes through (3, -4), substitute x = 3 and y = -4:<br>-4 = -2(3) + c<br>-4 = -6 + c<br>c = -4 + 6 = 2.<br><br>Therefore, the required equation is <strong>y = -2x + 2</strong>.",
       "markingScheme": "• Writing y = -2x + c and substituting (3, -4): 1 mark<br>• Solving c = 2 and writing y = -2x + 2: 1 mark",
-      "examinerTip": "Direct application of slope-intercept form y = mx + c."
+      "examinerTip": "Direct application of slope-intercept form y = mx + c.",
+      "solution": "Given slope m = -2.<br>Equation is y = mx + c &rArr; y = -2x + c.<br><br>Since the line passes through (3, -4), substitute x = 3 and y = -4:<br>-4 = -2(3) + c<br>-4 = -6 + c<br>c = -4 + 6 = 2.<br><br>Therefore, the required equation is <strong>y = -2x + 2</strong>."
     },
     {
       "section": "B",
@@ -353,7 +375,8 @@
       "prompt": "If x<sup>2</sup> + 1/x<sup>2</sup> = 83, find the numerical value of x<sup>3</sup> - 1/x<sup>3</sup> (given x > 0).",
       "answer": "1. (x - 1/x)<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> - 2 = 83 - 2 = 81.<br>Since x > 1 (from x^2 + 1/x^2 = 83), x - 1/x = &radic;81 = 9.<br><br>2. Recall identity for difference of cubes:<br>x<sup>3</sup> - 1/x<sup>3</sup> = (x - 1/x)<sup>3</sup> + 3(x - 1/x)<br>= 9<sup>3</sup> + 3(9) = 729 + 27 = <strong>756</strong>.",
       "markingScheme": "• Finding x - 1/x = 9: 1 mark<br>• Evaluating x<sup>3</sup> - 1/x<sup>3</sup> = 756: 1 mark",
-      "examinerTip": "Remember that (x - 1/x)^3 has a + 3(x - 1/x) adjustment term."
+      "examinerTip": "Remember that (x - 1/x)^3 has a + 3(x - 1/x) adjustment term.",
+      "solution": "1. (x - 1/x)<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> - 2 = 83 - 2 = 81.<br>Since x > 1 (from x^2 + 1/x^2 = 83), x - 1/x = &radic;81 = 9.<br><br>2. Recall identity for difference of cubes:<br>x<sup>3</sup> - 1/x<sup>3</sup> = (x - 1/x)<sup>3</sup> + 3(x - 1/x)<br>= 9<sup>3</sup> + 3(9) = 729 + 27 = <strong>756</strong>."
     },
     {
       "section": "B",
@@ -363,7 +386,8 @@
       "prompt": "The midpoints of the sides of &Delta;ABC are D(1, 1), E(2, -3), and F(3, 4). Find the coordinates of the centroid G of &Delta;ABC.",
       "answer": "A known theorem states that the centroid of &Delta;ABC is identical to the centroid of its midpoint triangle &Delta;DEF.<br><br>Centroid G = ((x_D + x_E + x_F)/3, (y_D + y_E + y_F)/3)<br>= ((1 + 2 + 3)/3, (1 + (-3) + 4)/3)<br>= (6/3, 2/3) = <strong>(2, 2/3)</strong>.",
       "markingScheme": "• Stating centroid theorem or computing triangle vertices: 1 mark<br>• Finding centroid coordinates (2, 2/3): 1 mark",
-      "examinerTip": "The centroid of the midpoint triangle coincides with the centroid of the parent triangle."
+      "examinerTip": "The centroid of the midpoint triangle coincides with the centroid of the parent triangle.",
+      "solution": "A known theorem states that the centroid of &Delta;ABC is identical to the centroid of its midpoint triangle &Delta;DEF.<br><br>Centroid G = ((x_D + x_E + x_F)/3, (y_D + y_E + y_F)/3)<br>= ((1 + 2 + 3)/3, (1 + (-3) + 4)/3)<br>= (6/3, 2/3) = <strong>(2, 2/3)</strong>."
     },
     {
       "section": "B",
@@ -373,7 +397,8 @@
       "prompt": "A chord of a circle of radius 10 cm subtends a right angle (90&deg;) at the center. Find the area of the minor sector formed (take &pi; = 3.14).",
       "answer": "Area of sector = (&theta; / 360&deg;) &times; &pi;r<sup>2</sup><br>= (90&deg; / 360&deg;) &times; 3.14 &times; 10<sup>2</sup><br>= (1/4) &times; 3.14 &times; 100<br>= (1/4) &times; 314 = <strong>78.5 cm<sup>2</sup></strong>.",
       "markingScheme": "• Applying formula (&theta;/360)&pi;r<sup>2</sup>: 1 mark<br>• Area = 78.5 cm<sup>2</sup>: 1 mark",
-      "examinerTip": "A 90-degree central angle covers exactly 1/4 of the total circle area."
+      "examinerTip": "A 90-degree central angle covers exactly 1/4 of the total circle area.",
+      "solution": "Area of sector = (&theta; / 360&deg;) &times; &pi;r<sup>2</sup><br>= (90&deg; / 360&deg;) &times; 3.14 &times; 10<sup>2</sup><br>= (1/4) &times; 3.14 &times; 100<br>= (1/4) &times; 314 = <strong>78.5 cm<sup>2</sup></strong>."
     },
     {
       "section": "C",
@@ -383,7 +408,8 @@
       "prompt": "The line kx + 3y - 12 = 0 forms a right-angled triangle with the x and y coordinate axes. If the total area of this triangle is 12 square units, find all possible values for k and the slope of this line.",
       "answer": "1. Find intercepts of kx + 3y - 12 = 0:<br>Put y = 0 &rArr; kx = 12 &rArr; x-intercept a = 12/k (where k &ne; 0).<br>Put x = 0 &rArr; 3y = 12 &rArr; y-intercept b = 4.<br><br>2. Area of triangle with axes:<br>Area = (1/2) &times; |a| &times; |b| = (1/2) &times; |12/k| &times; 4 = 24 / |k|.<br><br>3. Given Area = 12:<br>24 / |k| = 12 &rArr; |k| = 2 &rArr; <strong>k = 2 or k = -2</strong>.<br><br>4. Finding slopes:<br>kx + 3y - 12 = 0 &rArr; 3y = -kx + 12 &rArr; y = (-k/3)x + 4.<br>Slope m = -k/3.<br>For k = 2 &rArr; <strong>m = -2/3</strong>.<br>For k = -2 &rArr; <strong>m = 2/3</strong>.",
       "markingScheme": "• Finding intercepts a = 12/k and b = 4: 1 mark<br>• Setting (1/2)|a||b| = 12 to find k = &plusmn;2: 1 mark<br>• Finding slopes m = -2/3 and m = 2/3: 1 mark",
-      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Exercise 4.4, Q1)."
+      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Exercise 4.4, Q1).",
+      "solution": "1. Find intercepts of kx + 3y - 12 = 0:<br>Put y = 0 &rArr; kx = 12 &rArr; x-intercept a = 12/k (where k &ne; 0).<br>Put x = 0 &rArr; 3y = 12 &rArr; y-intercept b = 4.<br><br>2. Area of triangle with axes:<br>Area = (1/2) &times; |a| &times; |b| = (1/2) &times; |12/k| &times; 4 = 24 / |k|.<br><br>3. Given Area = 12:<br>24 / |k| = 12 &rArr; |k| = 2 &rArr; <strong>k = 2 or k = -2</strong>.<br><br>4. Finding slopes:<br>kx + 3y - 12 = 0 &rArr; 3y = -kx + 12 &rArr; y = (-k/3)x + 4.<br>Slope m = -k/3.<br>For k = 2 &rArr; <strong>m = -2/3</strong>.<br>For k = -2 &rArr; <strong>m = 2/3</strong>."
     },
     {
       "section": "C",
@@ -393,7 +419,8 @@
       "prompt": "The coefficients of the straight line Ax + By + C = 0 satisfy the relation 2B = A + C. Prove that no matter what real numbers are chosen for A, B, and C, the line always passes through one specific, fixed point. Find the coordinates of that fixed point.",
       "answer": "1. Given condition: 2B = A + C.<br>Rearrange to: A - 2B + C = 0.<br><br>2. Compare this with the given line equation:<br>Ax + By + C = 0.<br><br>3. Notice that if we substitute x = 1 and y = -2 into the line equation, we get:<br>A(1) + B(-2) + C = A - 2B + C.<br><br>4. Since A - 2B + C = 0 is always true by the given condition, the point (1, -2) satisfies the line equation for all valid A, B, and C.<br><br>Therefore, the line always passes through the fixed point <strong>(1, -2)</strong>. (Hence Proved).",
       "markingScheme": "• Rewriting condition as A - 2B + C = 0: 1 mark<br>• Comparing coefficients with Ax + By + C = 0: 1 mark<br>• Concluding fixed point is (1, -2): 1 mark",
-      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Example 6)."
+      "examinerTip": "Direct problem from CBSE Mathematics at Advanced Level Grade 9 (Example 6).",
+      "solution": "1. Given condition: 2B = A + C.<br>Rearrange to: A - 2B + C = 0.<br><br>2. Compare this with the given line equation:<br>Ax + By + C = 0.<br><br>3. Notice that if we substitute x = 1 and y = -2 into the line equation, we get:<br>A(1) + B(-2) + C = A - 2B + C.<br><br>4. Since A - 2B + C = 0 is always true by the given condition, the point (1, -2) satisfies the line equation for all valid A, B, and C.<br><br>Therefore, the line always passes through the fixed point <strong>(1, -2)</strong>. (Hence Proved)."
     },
     {
       "section": "C",
@@ -403,7 +430,8 @@
       "prompt": "Find the coordinates of the two points of trisection P and Q of the line segment joining A(-3, 8) and B(9, -4).",
       "answer": "Points P and Q divide AB into three equal segments: AP = PQ = QB.<br><br>1. Total coordinate changes:<br>&Delta;x = x_B - x_A = 9 - (-3) = 12.<br>&Delta;y = y_B - y_A = -4 - 8 = -12.<br><br>2. Step-delta for each 1/3 segment:<br>&delta;x = 12 / 3 = 4.<br>&delta;y = -12 / 3 = -4.<br><br>3. Point P (first trisection point, 1 step from A):<br>x_P = -3 + 4 = 1.<br>y_P = 8 + (-4) = 4.<br>So, <strong>P(1, 4)</strong>.<br><br>4. Point Q (second trisection point, 1 step from P):<br>x_Q = 1 + 4 = 5.<br>y_Q = 4 + (-4) = 0.<br>So, <strong>Q(5, 0)</strong>.",
       "markingScheme": "• Finding delta steps &delta;x = 4 and &delta;y = -4: 1 mark<br>• Finding P(1, 4): 1 mark<br>• Finding Q(5, 0): 1 mark",
-      "examinerTip": "Trisection can also be verified because Q is the midpoint of PB: ((1+9)/2, (4+(-4))/2) = (5, 0)."
+      "examinerTip": "Trisection can also be verified because Q is the midpoint of PB: ((1+9)/2, (4+(-4))/2) = (5, 0).",
+      "solution": "Points P and Q divide AB into three equal segments: AP = PQ = QB.<br><br>1. Total coordinate changes:<br>&Delta;x = x_B - x_A = 9 - (-3) = 12.<br>&Delta;y = y_B - y_A = -4 - 8 = -12.<br><br>2. Step-delta for each 1/3 segment:<br>&delta;x = 12 / 3 = 4.<br>&delta;y = -12 / 3 = -4.<br><br>3. Point P (first trisection point, 1 step from A):<br>x_P = -3 + 4 = 1.<br>y_P = 8 + (-4) = 4.<br>So, <strong>P(1, 4)</strong>.<br><br>4. Point Q (second trisection point, 1 step from P):<br>x_Q = 1 + 4 = 5.<br>y_Q = 4 + (-4) = 0.<br>So, <strong>Q(5, 0)</strong>."
     },
     {
       "section": "C",
@@ -413,7 +441,8 @@
       "prompt": "Prove by contradiction that &radic;3 + &radic;5 is an irrational number.",
       "answer": "1. Assume on the contrary that &radic;3 + &radic;5 is rational. Let x = &radic;3 + &radic;5 where x &isin; &Qopf;.<br><br>2. Rearrange and square both sides:<br>x - &radic;3 = &radic;5<br>(x - &radic;3)<sup>2</sup> = (&radic;5)<sup>2</sup><br>x<sup>2</sup> - 2x&radic;3 + 3 = 5<br>x<sup>2</sup> - 2 = 2x&radic;3.<br><br>3. Isolate &radic;3:<br>&radic;3 = (x<sup>2</sup> - 2) / (2x).<br><br>4. Since x is rational and non-zero, (x<sup>2</sup> - 2) / (2x) is a rational number.<br>This implies that &radic;3 is a rational number.<br><br>5. But this contradicts the well-established theorem that &radic;3 is irrational.<br>Hence, our initial assumption was false.<br>Therefore, <strong>&radic;3 + &radic;5 is irrational</strong>. (Hence Proved).",
       "markingScheme": "• Assumption x = &radic;3 + &radic;5 is rational and squaring: 1 mark<br>• Isolating &radic;3 = (x<sup>2</sup> - 2)/(2x): 1 mark<br>• Contradiction statement and conclusion: 1 mark",
-      "examinerTip": "Classic Class 9 proof by contradiction technique."
+      "examinerTip": "Classic Class 9 proof by contradiction technique.",
+      "solution": "1. Assume on the contrary that &radic;3 + &radic;5 is rational. Let x = &radic;3 + &radic;5 where x &isin; &Qopf;.<br><br>2. Rearrange and square both sides:<br>x - &radic;3 = &radic;5<br>(x - &radic;3)<sup>2</sup> = (&radic;5)<sup>2</sup><br>x<sup>2</sup> - 2x&radic;3 + 3 = 5<br>x<sup>2</sup> - 2 = 2x&radic;3.<br><br>3. Isolate &radic;3:<br>&radic;3 = (x<sup>2</sup> - 2) / (2x).<br><br>4. Since x is rational and non-zero, (x<sup>2</sup> - 2) / (2x) is a rational number.<br>This implies that &radic;3 is a rational number.<br><br>5. But this contradicts the well-established theorem that &radic;3 is irrational.<br>Hence, our initial assumption was false.<br>Therefore, <strong>&radic;3 + &radic;5 is irrational</strong>. (Hence Proved)."
     },
     {
       "section": "C",
@@ -423,7 +452,8 @@
       "prompt": "A cyclic quadrilateral ABCD has side lengths a = 10 cm, b = 24 cm, c = 7 cm, and d = 15 cm. Calculate its area using Brahmagupta's formula.",
       "answer": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (10 + 24 + 7 + 15)/2 = 56/2 = <strong>28 cm</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 28 - 10 = 18 cm<br>s - b = 28 - 24 = 4 cm<br>s - c = 28 - 7 = 21 cm<br>s - d = 28 - 15 = 13 cm.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[18 &times; 4 &times; 21 &times; 13]<br>= &radic;[(9 &times; 2) &times; 4 &times; (3 &times; 7) &times; 13]<br>= &radic;[36 &times; 36 &times; 13]<br>= &radic;[1296 &times; 13] = 36&radic;13 cm<sup>2</sup> &approx; <strong>129.8 cm<sup>2</sup></strong>.",
       "markingScheme": "• Semi-perimeter s = 28 cm: 1 mark<br>• Substituting factors into Brahmagupta's formula: 1 mark<br>• Area = 36&radic;13 cm<sup>2</sup>: 1 mark",
-      "examinerTip": "Brahmagupta's formula applies strictly to cyclic quadrilaterals whose vertices lie on a circle."
+      "examinerTip": "Brahmagupta's formula applies strictly to cyclic quadrilaterals whose vertices lie on a circle.",
+      "solution": "1. Calculate semi-perimeter s:<br>s = (a + b + c + d)/2 = (10 + 24 + 7 + 15)/2 = 56/2 = <strong>28 cm</strong>.<br><br>2. Compute individual factors (s - side):<br>s - a = 28 - 10 = 18 cm<br>s - b = 28 - 24 = 4 cm<br>s - c = 28 - 7 = 21 cm<br>s - d = 28 - 15 = 13 cm.<br><br>3. Apply Brahmagupta's Master Formula for cyclic quadrilaterals:<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[18 &times; 4 &times; 21 &times; 13]<br>= &radic;[(9 &times; 2) &times; 4 &times; (3 &times; 7) &times; 13]<br>= &radic;[36 &times; 36 &times; 13]<br>= &radic;[1296 &times; 13] = 36&radic;13 cm<sup>2</sup> &approx; <strong>129.8 cm<sup>2</sup></strong>."
     },
     {
       "section": "C",
@@ -433,7 +463,8 @@
       "prompt": "If a + b + c = 6 and ab + bc + ca = 11, find the value of a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc.",
       "answer": "1. Recall the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca).<br><br>2. Compute a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>:<br>(a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)<br>6<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(11)<br>36 = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 22<br><strong>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 14</strong>.<br><br>3. Substitute into identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (6)[14 - 11] = 6 &times; 3 = <strong>18</strong>.",
       "markingScheme": "• Stating identity: 1 mark<br>• Finding a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 14: 1 mark<br>• Final evaluation = 18: 1 mark",
-      "examinerTip": "Factor (a^2 + b^2 + c^2 - (ab + bc + ca)) = 14 - 11 = 3."
+      "examinerTip": "Factor (a^2 + b^2 + c^2 - (ab + bc + ca)) = 14 - 11 = 3.",
+      "solution": "1. Recall the identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (a + b + c)(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> - ab - bc - ca).<br><br>2. Compute a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>:<br>(a + b + c)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(ab + bc + ca)<br>6<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 2(11)<br>36 = a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + 22<br><strong>a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> = 14</strong>.<br><br>3. Substitute into identity:<br>a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - 3abc = (6)[14 - 11] = 6 &times; 3 = <strong>18</strong>."
     },
     {
       "section": "D",
@@ -443,7 +474,8 @@
       "prompt": "Find rational numbers a and b such that:<br><strong>(4 + 3&radic;5) / (4 - 3&radic;5) = a + b&radic;5</strong>.<br>Hence, evaluate the numerical value of (a<sup>2</sup> - 45b<sup>2</sup>).",
       "answer": "1. Rationalize the denominator by multiplying by conjugate (4 + 3&radic;5):<br>= (4 + 3&radic;5)<sup>2</sup> / [(4 - 3&radic;5)(4 + 3&radic;5)]<br>= [4<sup>2</sup> + 2(4)(3&radic;5) + (3&radic;5)<sup>2</sup>] / [4<sup>2</sup> - (3&radic;5)<sup>2</sup>]<br>= [16 + 24&radic;5 + 45] / [16 - 45]<br>= (61 + 24&radic;5) / (-29)<br>= <strong>-61/29 - (24/29)&radic;5</strong>.<br><br>2. Equating with a + b&radic;5:<br><strong>a = -61/29</strong> and <strong>b = -24/29</strong>.<br><br>3. Compute a<sup>2</sup> - 45b<sup>2</sup>:<br>Notice that a + b&radic;5 is the value of the fraction.<br>Its conjugate is a - b&radic;5 = (4 - 3&radic;5) / (4 + 3&radic;5).<br>Therefore:<br>a<sup>2</sup> - 45b<sup>2</sup> = (a + b&radic;5)(a - b&radic;5)<br>= [(4 + 3&radic;5)/(4 - 3&radic;5)] &times; [(4 - 3&radic;5)/(4 + 3&radic;5)] = <strong>1</strong>.",
       "markingScheme": "• Expanding numerator (61 + 24&radic;5) and denominator (-29): 2 marks<br>• Identifying a = -61/29 and b = -24/29: 1.5 marks<br>• Evaluating a<sup>2</sup> - 45b<sup>2</sup> = 1 using conjugate product or direct squaring: 1.5 marks",
-      "examinerTip": "Using the algebraic property (a + b&radic;k)(a - b&radic;k) = 1 is vastly faster than calculating 61^2 and 24^2."
+      "examinerTip": "Using the algebraic property (a + b&radic;k)(a - b&radic;k) = 1 is vastly faster than calculating 61^2 and 24^2.",
+      "solution": "1. Rationalize the denominator by multiplying by conjugate (4 + 3&radic;5):<br>= (4 + 3&radic;5)<sup>2</sup> / [(4 - 3&radic;5)(4 + 3&radic;5)]<br>= [4<sup>2</sup> + 2(4)(3&radic;5) + (3&radic;5)<sup>2</sup>] / [4<sup>2</sup> - (3&radic;5)<sup>2</sup>]<br>= [16 + 24&radic;5 + 45] / [16 - 45]<br>= (61 + 24&radic;5) / (-29)<br>= <strong>-61/29 - (24/29)&radic;5</strong>.<br><br>2. Equating with a + b&radic;5:<br><strong>a = -61/29</strong> and <strong>b = -24/29</strong>.<br><br>3. Compute a<sup>2</sup> - 45b<sup>2</sup>:<br>Notice that a + b&radic;5 is the value of the fraction.<br>Its conjugate is a - b&radic;5 = (4 - 3&radic;5) / (4 + 3&radic;5).<br>Therefore:<br>a<sup>2</sup> - 45b<sup>2</sup> = (a + b&radic;5)(a - b&radic;5)<br>= [(4 + 3&radic;5)/(4 - 3&radic;5)] &times; [(4 - 3&radic;5)/(4 + 3&radic;5)] = <strong>1</strong>."
     },
     {
       "section": "D",
@@ -453,7 +485,8 @@
       "prompt": "The polynomial p(x) = x<sup>4</sup> + ax<sup>3</sup> - 7x<sup>2</sup> + bx + c is exactly divisible by (x<sup>2</sup> - 1), and leaves a remainder of 12 when divided by (x - 2). Find the numerical values of the constants a, b, and c.",
       "answer": "1. Factoring x<sup>2</sup> - 1 = (x - 1)(x + 1).<br>Since (x<sup>2</sup> - 1) divides p(x), both (x - 1) and (x + 1) are factors.<br><br>2. p(1) = 0:<br>1<sup>4</sup> + a(1)<sup>3</sup> - 7(1)<sup>2</sup> + b(1) + c = 0<br>1 + a - 7 + b + c = 0 &rArr; <strong>a + b + c = 6</strong> --- (Eq 1)<br><br>3. p(-1) = 0:<br>(-1)<sup>4</sup> + a(-1)<sup>3</sup> - 7(-1)<sup>2</sup> + b(-1) + c = 0<br>1 - a - 7 - b + c = 0 &rArr; <strong>-a - b + c = 6</strong> &rArr; <strong>-(a + b) + c = 6</strong> --- (Eq 2)<br><br>4. Add Eq 1 and Eq 2:<br>(a + b + c) + (-(a + b) + c) = 6 + 6<br>2c = 12 &rArr; <strong>c = 6</strong>.<br>Substitute c = 6 into Eq 1: a + b + 6 = 6 &rArr; <strong>a + b = 0 &rArr; b = -a</strong> --- (Eq 3)<br><br>5. Use Remainder condition: p(2) = 12:<br>2<sup>4</sup> + a(2)<sup>3</sup> - 7(2)<sup>2</sup> + b(2) + c = 12<br>16 + 8a - 28 + 2b + 6 = 12<br>8a + 2b - 6 = 12 &rArr; 8a + 2b = 18 &rArr; <strong>4a + b = 9</strong> --- (Eq 4)<br><br>6. Substitute b = -a into Eq 4:<br>4a - a = 9 &rArr; 3a = 9 &rArr; <strong>a = 3</strong>.<br>From Eq 3: <strong>b = -3</strong>.<br><br>Final values: <strong>a = 3, b = -3, c = 6</strong>.",
       "markingScheme": "• Setting p(1) = 0 and p(-1) = 0 to get Equations 1 & 2: 1.5 marks<br>• Solving c = 6 and a + b = 0: 1.5 marks<br>• Setting p(2) = 12: 1 mark<br>• Solving a = 3, b = -3: 1 mark",
-      "examinerTip": "Recognizing x^2 - 1 = (x-1)(x+1) gives two immediate roots x = 1 and x = -1."
+      "examinerTip": "Recognizing x^2 - 1 = (x-1)(x+1) gives two immediate roots x = 1 and x = -1.",
+      "solution": "1. Factoring x<sup>2</sup> - 1 = (x - 1)(x + 1).<br>Since (x<sup>2</sup> - 1) divides p(x), both (x - 1) and (x + 1) are factors.<br><br>2. p(1) = 0:<br>1<sup>4</sup> + a(1)<sup>3</sup> - 7(1)<sup>2</sup> + b(1) + c = 0<br>1 + a - 7 + b + c = 0 &rArr; <strong>a + b + c = 6</strong> --- (Eq 1)<br><br>3. p(-1) = 0:<br>(-1)<sup>4</sup> + a(-1)<sup>3</sup> - 7(-1)<sup>2</sup> + b(-1) + c = 0<br>1 - a - 7 - b + c = 0 &rArr; <strong>-a - b + c = 6</strong> &rArr; <strong>-(a + b) + c = 6</strong> --- (Eq 2)<br><br>4. Add Eq 1 and Eq 2:<br>(a + b + c) + (-(a + b) + c) = 6 + 6<br>2c = 12 &rArr; <strong>c = 6</strong>.<br>Substitute c = 6 into Eq 1: a + b + 6 = 6 &rArr; <strong>a + b = 0 &rArr; b = -a</strong> --- (Eq 3)<br><br>5. Use Remainder condition: p(2) = 12:<br>2<sup>4</sup> + a(2)<sup>3</sup> - 7(2)<sup>2</sup> + b(2) + c = 12<br>16 + 8a - 28 + 2b + 6 = 12<br>8a + 2b - 6 = 12 &rArr; 8a + 2b = 18 &rArr; <strong>4a + b = 9</strong> --- (Eq 4)<br><br>6. Substitute b = -a into Eq 4:<br>4a - a = 9 &rArr; 3a = 9 &rArr; <strong>a = 3</strong>.<br>From Eq 3: <strong>b = -3</strong>.<br><br>Final values: <strong>a = 3, b = -3, c = 6</strong>."
     },
     {
       "section": "D",
@@ -463,7 +496,8 @@
       "prompt": "(i) Prove that the points A(3, 1), B(6, 4), and C(1, 3) form an isosceles triangle using the Baudh&amacron;yana-Pythagoras distance formula. (2.5m)<br>(ii) Find the coordinates of point D such that ABCD forms a square, or state why it cannot. (2.5m)",
       "answer": "(i) Compute side lengths using distance formula:<br>AB<sup>2</sup> = (6 - 3)<sup>2</sup> + (4 - 1)<sup>2</sup> = 3<sup>2</sup> + 3<sup>2</sup> = 9 + 9 = 18 &rArr; AB = &radic;18 = 3&radic;2.<br>BC<sup>2</sup> = (1 - 6)<sup>2</sup> + (3 - 4)<sup>2</sup> = (-5)<sup>2</sup> + (-1)<sup>2</sup> = 25 + 1 = 26 &rArr; BC = &radic;26.<br>CA<sup>2</sup> = (3 - 1)<sup>2</sup> + (1 - 3)<sup>2</sup> = 2<sup>2</sup> + (-2)<sup>2</sup> = 4 + 4 = 8 &rArr; CA = &radic;8 = 2&radic;2.<br>Notice: AB<sup>2</sup> + CA<sup>2</sup> = 18 + 8 = 26 = BC<sup>2</sup>.<br>This is a <strong>Right-Angled Triangle</strong> with right angle at A, but sides AB &ne; CA &ne; BC (lengths 3&radic;2, 2&radic;2, &radic;26).<br>To form an isosceles right triangle with equal legs of length 3&radic;2, consider vertex C'(0, 4) where AC' = &radic;[(0-3)<sup>2</sup> + (4-1)<sup>2</sup>] = &radic;18.<br>For points A(3, 1), B(6, 4), C(3, 7), D(0, 4):<br>AB = &radic;18, BC = &radic;18, CD = &radic;18, DA = &radic;18.<br>All four sides equal &radic;18, diagonals AC = 6, BD = 6 (equal and perpendicular).<br>Thus, fourth vertex D is <strong>(0, 4)</strong>.",
       "markingScheme": "• (i) Distance calculations AB, BC, CA and Baudh&amacron;yana verification: 2.5 marks<br>• (ii) Finding fourth vertex D(0, 4) by midpoint of diagonal equality or vector step: 2.5 marks",
-      "examinerTip": "In a square, the midpoints of both diagonals must coincide."
+      "examinerTip": "In a square, the midpoints of both diagonals must coincide.",
+      "solution": "(i) Compute side lengths using distance formula:<br>AB<sup>2</sup> = (6 - 3)<sup>2</sup> + (4 - 1)<sup>2</sup> = 3<sup>2</sup> + 3<sup>2</sup> = 9 + 9 = 18 &rArr; AB = &radic;18 = 3&radic;2.<br>BC<sup>2</sup> = (1 - 6)<sup>2</sup> + (3 - 4)<sup>2</sup> = (-5)<sup>2</sup> + (-1)<sup>2</sup> = 25 + 1 = 26 &rArr; BC = &radic;26.<br>CA<sup>2</sup> = (3 - 1)<sup>2</sup> + (1 - 3)<sup>2</sup> = 2<sup>2</sup> + (-2)<sup>2</sup> = 4 + 4 = 8 &rArr; CA = &radic;8 = 2&radic;2.<br>Notice: AB<sup>2</sup> + CA<sup>2</sup> = 18 + 8 = 26 = BC<sup>2</sup>.<br>This is a <strong>Right-Angled Triangle</strong> with right angle at A, but sides AB &ne; CA &ne; BC (lengths 3&radic;2, 2&radic;2, &radic;26).<br>To form an isosceles right triangle with equal legs of length 3&radic;2, consider vertex C'(0, 4) where AC' = &radic;[(0-3)<sup>2</sup> + (4-1)<sup>2</sup>] = &radic;18.<br>For points A(3, 1), B(6, 4), C(3, 7), D(0, 4):<br>AB = &radic;18, BC = &radic;18, CD = &radic;18, DA = &radic;18.<br>All four sides equal &radic;18, diagonals AC = 6, BD = 6 (equal and perpendicular).<br>Thus, fourth vertex D is <strong>(0, 4)</strong>."
     },
     {
       "section": "D",
@@ -473,7 +507,8 @@
       "prompt": "The perimeter of a right-angled triangle is 144 cm and its hypotenuse is 65 cm.<br>(i) Find the lengths of the other two sides using algebraic identities without trial and error. (3m)<br>(ii) Calculate the area of the triangle and the length of the perpendicular drawn from the right angle to the hypotenuse. (2m)",
       "answer": "1. Let legs be a and b, hypotenuse c = 65 cm.<br>Perimeter = a + b + c = 144 &rArr; a + b + 65 = 144 &rArr; <strong>a + b = 79 cm</strong>.<br><br>2. By Baudh&amacron;yana-Pythagoras theorem: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> = 65<sup>2</sup> = <strong>4225</strong>.<br><br>3. Use algebraic identity (a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab:<br>79<sup>2</sup> = 4225 + 2ab<br>6241 = 4225 + 2ab<br>2ab = 6241 - 4225 = 2016 &rArr; <strong>ab = 1008</strong>.<br><br>4. Use identity (a - b)<sup>2</sup> = (a + b)<sup>2</sup> - 4ab:<br>(a - b)<sup>2</sup> = 6241 - 4(1008) = 6241 - 4032 = 2209.<br>a - b = &radic;2209 = <strong>47 cm</strong>.<br><br>5. Solving linear system:<br>a + b = 79<br>a - b = 47<br>Adding gives 2a = 126 &rArr; <strong>a = 63 cm</strong>.<br>Then b = 79 - 63 = <strong>16 cm</strong>.<br>The two sides are <strong>63 cm</strong> and <strong>16 cm</strong>.<br><br>(ii) Area = (1/2) &times; a &times; b = (1/2) &times; 63 &times; 16 = 63 &times; 8 = <strong>504 cm<sup>2</sup></strong>.<br>Let perpendicular from right angle to hypotenuse be p:<br>Area = (1/2) &times; c &times; p &rArr; 504 = (1/2) &times; 65 &times; p &rArr; p = 1008 / 65 &approx; <strong>15.51 cm</strong>.",
       "markingScheme": "• (i) Finding a + b = 79 and 2ab = 2016: 1.5 marks<br>• Finding a - b = 47 and solving a = 63 cm, b = 16 cm: 1.5 marks<br>• (ii) Area = 504 cm<sup>2</sup>: 1 mark<br>• Altitude to hypotenuse p = 1008/65 cm: 1 mark",
-      "examinerTip": "Connecting (a+b)^2, a^2+b^2, and (a-b)^2 allows solving without quadratic formula."
+      "examinerTip": "Connecting (a+b)^2, a^2+b^2, and (a-b)^2 allows solving without quadratic formula.",
+      "solution": "1. Let legs be a and b, hypotenuse c = 65 cm.<br>Perimeter = a + b + c = 144 &rArr; a + b + 65 = 144 &rArr; <strong>a + b = 79 cm</strong>.<br><br>2. By Baudh&amacron;yana-Pythagoras theorem: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> = 65<sup>2</sup> = <strong>4225</strong>.<br><br>3. Use algebraic identity (a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2ab:<br>79<sup>2</sup> = 4225 + 2ab<br>6241 = 4225 + 2ab<br>2ab = 6241 - 4225 = 2016 &rArr; <strong>ab = 1008</strong>.<br><br>4. Use identity (a - b)<sup>2</sup> = (a + b)<sup>2</sup> - 4ab:<br>(a - b)<sup>2</sup> = 6241 - 4(1008) = 6241 - 4032 = 2209.<br>a - b = &radic;2209 = <strong>47 cm</strong>.<br><br>5. Solving linear system:<br>a + b = 79<br>a - b = 47<br>Adding gives 2a = 126 &rArr; <strong>a = 63 cm</strong>.<br>Then b = 79 - 63 = <strong>16 cm</strong>.<br>The two sides are <strong>63 cm</strong> and <strong>16 cm</strong>.<br><br>(ii) Area = (1/2) &times; a &times; b = (1/2) &times; 63 &times; 16 = 63 &times; 8 = <strong>504 cm<sup>2</sup></strong>.<br>Let perpendicular from right angle to hypotenuse be p:<br>Area = (1/2) &times; c &times; p &rArr; 504 = (1/2) &times; 65 &times; p &rArr; p = 1008 / 65 &approx; <strong>15.51 cm</strong>."
     },
     {
       "section": "E",
@@ -483,7 +518,8 @@
       "prompt": "An aerospace tracking radar monitors an unmanned experimental aircraft flying across a test range mapped onto a Cartesian coordinate grid (units in tens of kilometers). The aircraft trajectory is modeled by the linear equation 3x - 4y + 24 = 0.<br><br><strong>Questions:</strong><br>(i) Find the x-intercept and y-intercept of the aircraft trajectory. (1m)<br>(ii) Determine the slope m of the flight path and explain whether the aircraft is gaining or losing altitude as it moves eastwards (positive x). (1m)<br>(iii) A radar telemetry tracking station is stationed at S(8, 2). It needs to steer its antenna perpendicular to the flight path. What is the required slope of the antenna signal line? Also verify whether the checkpoint (4, 9) lies directly on the aircraft path. (2m)",
       "answer": "(i) For x-intercept: put y = 0 &rArr; 3x + 24 = 0 &rArr; 3x = -24 &rArr; x = -8. Intercept is <strong>(-8, 0)</strong>.<br>For y-intercept: put x = 0 &rArr; -4y + 24 = 0 &rArr; 4y = 24 &rArr; y = 6. Intercept is <strong>(0, 6)</strong>.<br><br>(ii) 3x - 4y + 24 = 0 &rArr; 4y = 3x + 24 &rArr; y = (3/4)x + 6.<br>Slope m = <strong>3/4</strong>.<br>Since slope m > 0, the altitude y is <strong>gaining (increasing)</strong> as the aircraft moves in the positive x direction.<br><br>(iii) For perpendicular antenna line: m_perpendicular = -1 / m = -1 / (3/4) = <strong>-4/3</strong>.<br>Check point (4, 9): substitute x = 4 and y = 9 into 3x - 4y + 24:<br>3(4) - 4(9) + 24 = 12 - 36 + 24 = 36 - 36 = 0.<br>Since the equation is satisfied (0 = 0), point (4, 9) <strong>lies directly on the flight path</strong>.",
       "markingScheme": "• (i) Intercepts (-8, 0) and (0, 6): 1 mark<br>• (ii) Slope m = 3/4 and gaining altitude: 1 mark<br>• (iii) Perpendicular slope -4/3: 1 mark; Verification of (4, 9): 1 mark",
-      "examinerTip": "Direct application of CBSE Advanced Coordinate Geometry principles."
+      "examinerTip": "Direct application of CBSE Advanced Coordinate Geometry principles.",
+      "solution": "(i) For x-intercept: put y = 0 &rArr; 3x + 24 = 0 &rArr; 3x = -24 &rArr; x = -8. Intercept is <strong>(-8, 0)</strong>.<br>For y-intercept: put x = 0 &rArr; -4y + 24 = 0 &rArr; 4y = 24 &rArr; y = 6. Intercept is <strong>(0, 6)</strong>.<br><br>(ii) 3x - 4y + 24 = 0 &rArr; 4y = 3x + 24 &rArr; y = (3/4)x + 6.<br>Slope m = <strong>3/4</strong>.<br>Since slope m > 0, the altitude y is <strong>gaining (increasing)</strong> as the aircraft moves in the positive x direction.<br><br>(iii) For perpendicular antenna line: m_perpendicular = -1 / m = -1 / (3/4) = <strong>-4/3</strong>.<br>Check point (4, 9): substitute x = 4 and y = 9 into 3x - 4y + 24:<br>3(4) - 4(9) + 24 = 12 - 36 + 24 = 36 - 36 = 0.<br>Since the equation is satisfied (0 = 0), point (4, 9) <strong>lies directly on the flight path</strong>."
     },
     {
       "section": "E",
@@ -493,7 +529,8 @@
       "prompt": "An electric utility monitors energy storage in an industrial battery system. During charging, the battery percentage C(t) increases linearly according to C(t) = 15t + 20, where t is time in hours. During peak operation, the system discharges according to D(t) = 100 - 18t.<br><br><strong>Questions:</strong><br>(i) What was the initial battery percentage at t = 0 before charging began, and what is the hourly charging rate? (1m)<br>(ii) How many hours of charging are required to charge the battery completely to 100%? (1m)<br>(iii) If the battery begins discharging from 100% capacity, after how many hours will the battery level drop to 10%? Explain the physical meaning of the negative slope (-18). (2m)",
       "answer": "(i) At t = 0, C(0) = 15(0) + 20 = <strong>20%</strong>.<br>The hourly charging rate (slope) is <strong>15% per hour</strong>.<br><br>(ii) Set C(t) = 100%:<br>15t + 20 = 100 &rArr; 15t = 80 &rArr; t = 80 / 15 = 16 / 3 = <strong>5 hours 20 minutes</strong> (5.33 hours).<br><br>(iii) Set D(t) = 10%:<br>100 - 18t = 10 &rArr; 18t = 90 &rArr; t = 90 / 18 = <strong>5 hours</strong>.<br>Physical meaning of negative slope (-18): The energy level decreases at a constant rate of 18 percentage points for every 1 hour of operational discharge.",
       "markingScheme": "• (i) Initial charge 20% and rate 15%/hr: 1 mark<br>• (ii) Charging time t = 5h 20m: 1 mark<br>• (iii) Discharge time t = 5 hours: 1 mark; Physical interpretation of negative slope: 1 mark",
-      "examinerTip": "Constant rate of change in practical scenarios is the slope of the linear equation."
+      "examinerTip": "Constant rate of change in practical scenarios is the slope of the linear equation.",
+      "solution": "(i) At t = 0, C(0) = 15(0) + 20 = <strong>20%</strong>.<br>The hourly charging rate (slope) is <strong>15% per hour</strong>.<br><br>(ii) Set C(t) = 100%:<br>15t + 20 = 100 &rArr; 15t = 80 &rArr; t = 80 / 15 = 16 / 3 = <strong>5 hours 20 minutes</strong> (5.33 hours).<br><br>(iii) Set D(t) = 10%:<br>100 - 18t = 10 &rArr; 18t = 90 &rArr; t = 90 / 18 = <strong>5 hours</strong>.<br>Physical meaning of negative slope (-18): The energy level decreases at a constant rate of 18 percentage points for every 1 hour of operational discharge."
     },
     {
       "section": "E",
@@ -503,7 +540,8 @@
       "prompt": "A municipal surveyor surveys an ancient reservoir surrounded by four stone markers A, B, C, and D that all lie on a circular stone embankment (forming a cyclic quadrilateral). The boundary distances measured along the perimeter are AB = 9 m, BC = 12 m, CD = 5 m, and DA = 10 m.<br><br><strong>Questions:</strong><br>(i) Calculate the semi-perimeter s of the cyclic quadrilateral reservoir. (1m)<br>(ii) Calculate the total surface area of the reservoir using Brahmagupta's formula. (2m)<br>(iii) Angle &ang;ABC is measured to be a right angle (90&deg;). Calculate the area of &Delta;ABC directly and determine the length of the diagonal chord AC. (1m)",
       "answer": "(i) Semi-perimeter s = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>(ii) By Brahmagupta's formula:<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> (approx 74.94 m<sup>2</sup>).<br><br>(iii) Since &ang;ABC = 90&deg;, &Delta;ABC is a right-angled triangle with legs 9 m and 12 m.<br>Area(&Delta;ABC) = (1/2) &times; 9 &times; 12 = <strong>54 m<sup>2</sup></strong>.<br>Diagonal AC = &radic;[9<sup>2</sup> + 12<sup>2</sup>] = &radic;[81 + 144] = &radic;225 = <strong>15 m</strong>.",
       "markingScheme": "• (i) s = 18 m: 1 mark<br>• (ii) Area = 12&radic;39 m<sup>2</sup> via Brahmagupta: 2 marks<br>• (iii) Area(&Delta;ABC) = 54 m<sup>2</sup> and chord AC = 15 m: 1 mark",
-      "examinerTip": "Cyclic quadrilateral inscribed in a circle with a 90&deg; angle means AC is a diameter of the circle."
+      "examinerTip": "Cyclic quadrilateral inscribed in a circle with a 90&deg; angle means AC is a diameter of the circle.",
+      "solution": "(i) Semi-perimeter s = (9 + 12 + 5 + 10)/2 = 36/2 = <strong>18 m</strong>.<br><br>(ii) By Brahmagupta's formula:<br>s - a = 18 - 9 = 9 m<br>s - b = 18 - 12 = 6 m<br>s - c = 18 - 5 = 13 m<br>s - d = 18 - 10 = 8 m.<br>Area = &radic;[(s - a)(s - b)(s - c)(s - d)]<br>= &radic;[9 &times; 6 &times; 13 &times; 8]<br>= &radic;[9 &times; 48 &times; 13]<br>= &radic;[9 &times; 16 &times; 3 &times; 13]<br>= 3 &times; 4 &times; &radic;39 = <strong>12&radic;39 m<sup>2</sup></strong> (approx 74.94 m<sup>2</sup>).<br><br>(iii) Since &ang;ABC = 90&deg;, &Delta;ABC is a right-angled triangle with legs 9 m and 12 m.<br>Area(&Delta;ABC) = (1/2) &times; 9 &times; 12 = <strong>54 m<sup>2</sup></strong>.<br>Diagonal AC = &radic;[9<sup>2</sup> + 12<sup>2</sup>] = &radic;[81 + 144] = &radic;225 = <strong>15 m</strong>."
     }
   ]
 }

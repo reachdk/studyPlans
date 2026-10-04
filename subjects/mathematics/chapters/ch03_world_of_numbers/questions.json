@@ -15,7 +15,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (D) selected with definition of non-terminating non-recurring decimal."
     ],
-    "examinerTip": "🚨 CBSE Standard Rule: A decimal is only rational if it either terminates or repeats a strictly periodic block of digits."
+    "examinerTip": "🚨 CBSE Standard Rule: A decimal is only rational if it either terminates or repeats a strictly periodic block of digits.",
+    "answer": "<strong>Correct Answer: (D)</strong><br><br>• <strong>(A)</strong> $\\sqrt{225} = 15 = \\frac{15}{1}$ (Rational).<br>• <strong>(B)</strong> $0.3796$ is terminating (Rational).<br>• <strong>(C)</strong> $7.478478\\dots = 7.\\overline{478}$ is non-terminating recurring (Rational).<br>• <strong>(D)</strong> The decimal $1.1010010001\\dots$ is <strong>non-terminating and non-recurring</strong> (the count of zeroes increases indefinitely, so no block of digits repeats periodically). Hence, it is strictly <strong>irrational</strong>."
   },
   {
     "id": "q_ch3_02",
@@ -33,7 +34,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (B) selected with step-by-step exponent calculation."
     ],
-    "examinerTip": "🚨 Common Trap: Students pick (C) assuming a negative power produces a negative number! Negative powers mean reciprocal, not negative sign."
+    "examinerTip": "🚨 Common Trap: Students pick (C) assuming a negative power produces a negative number! Negative powers mean reciprocal, not negative sign.",
+    "answer": "<strong>Correct Answer: (B) 8/27</strong><br><br>1. Express bases in prime power form: $81 = 3^4$ and $16 = 2^4$:<br>$$\\frac{81}{16} = \\left(\\frac{3}{2}\\right)^4$$<br>2. Apply power of a power law $(a^p)^q = a^{pq}$:<br>$$\\left[\\left(\\frac{3}{2}\\right)^4\\right]^{-3/4} = \\left(\\frac{3}{2}\\right)^{4 \\times (-3/4)} = \\left(\\frac{3}{2}\\right)^{-3}$$<br>3. Negative power inverts base:<br>$$\\left(\\frac{3}{2}\\right)^{-3} = \\left(\\frac{2}{3}\\right)^3 = \\frac{2^3}{3^3} = \\mathbf{\\frac{8}{27}}$$"
   },
   {
     "id": "q_ch3_03",
@@ -51,7 +53,8 @@
     "markingScheme": [
       "1.0 mark: Correct option (C) identified with counter-example disproving Reason (R)."
     ],
-    "examinerTip": "🚨 Key Concept: The set of irrational numbers is NOT closed under addition, subtraction, multiplication, or division."
+    "examinerTip": "🚨 Key Concept: The set of irrational numbers is NOT closed under addition, subtraction, multiplication, or division.",
+    "answer": "<strong>Correct Answer: (C)</strong><br><br>• <strong>Assertion (A) is true:</strong> $\\sqrt{3} \\times \\sqrt{27} = \\sqrt{3 \\times 27} = \\sqrt{81} = 9 = \\frac{9}{1}$, which is rational.<br>• <strong>Reason (R) is FALSE:</strong> The product of two irrationals is <em>not always</em> irrational; it can be rational (as proven in Assertion A) or irrational (e.g. $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6}$).<br>• Hence, Assertion (A) is true but Reason (R) is false."
   },
   {
     "id": "q_ch3_04",
@@ -64,7 +67,8 @@
       "0.5 mark for setting up 10x = 2.3535... and 0.5 mark for 1000x = 235.3535...",
       "1.0 mark for subtracting and solving to obtain x = 233/990."
     ],
-    "examinerTip": "🚨 Step-Marking Tip: Always align the decimal parts so they cancel out completely upon subtraction."
+    "examinerTip": "🚨 Step-Marking Tip: Always align the decimal parts so they cancel out completely upon subtraction.",
+    "answer": "1. Let $x = 0.2353535\\dots \\quad \\text{--- (Equation 1)}$<br><br>2. Multiply by $10$ to shift non-repeating digit to left of decimal:<br>$$10x = 2.353535\\dots \\quad \\text{--- (Equation 2)}$$ [0.5 mark]<br><br>3. Since 2 digits repeat ($35$), multiply Eq. 2 by $100$:<br>$$1000x = 235.353535\\dots \\quad \\text{--- (Equation 3)}$$ [0.5 mark]<br><br>4. Subtract Eq. 2 from Eq. 3:<br>$$1000x - 10x = 235.3535\\dots - 2.3535\\dots$$<br>$$990x = 233$$<br>$$x = \\mathbf{\\frac{233}{990}}$$ [1.0 mark]"
   },
   {
     "id": "q_ch3_05",
@@ -77,7 +81,8 @@
       "1.0 mark: Correct conjugate multiplication and denominator evaluation to 4.",
       "1.0 mark: Accurate numerator expansion and cancellation to (47 + 21√5)/2."
     ],
-    "examinerTip": "🚨 Common Mistake: (3√5)² = 3² × (√5)² = 9 × 5 = 45, NOT 15!"
+    "examinerTip": "🚨 Common Mistake: (3√5)² = 3² × (√5)² = 9 × 5 = 45, NOT 15!",
+    "answer": "1. Multiply numerator and denominator by conjugate $(7 + 3\\sqrt{5})$:<br>$$\\frac{(7 + 3\\sqrt{5})(7 + 3\\sqrt{5})}{(7 - 3\\sqrt{5})(7 + 3\\sqrt{5})} = \\frac{(7 + 3\\sqrt{5})^2}{7^2 - (3\\sqrt{5})^2}$$ [1.0 mark]<br><br>2. Expand numerator: $7^2 + 2(7)(3\\sqrt{5}) + (3\\sqrt{5})^2 = 49 + 42\\sqrt{5} + 45 = 94 + 42\\sqrt{5}$.<br>3. Denominator: $49 - (9 \\times 5) = 49 - 45 = 4$.<br><br>4. Divide terms:<br>$$\\frac{94 + 42\\sqrt{5}}{4} = \\frac{2(47 + 21\\sqrt{5})}{4} = \\mathbf{\\frac{47 + 21\\sqrt{5}}{2}}$$ [1.0 mark]"
   },
   {
     "id": "q_ch3_06",
@@ -91,7 +96,8 @@
       "1.0 mark: Accurate expansion of numerator to 11 - 6√3.",
       "1.0 mark: Equating rational and irrational parts to yield a = 11, b = -6."
     ],
-    "examinerTip": "🚨 Don't forget the negative sign on b: b = -6, not +6!"
+    "examinerTip": "🚨 Don't forget the negative sign on b: b = -6, not +6!",
+    "answer": "1. Multiply LHS by conjugate $(7 - 4\\sqrt{3})$:<br>$$\\text{LHS} = \\frac{(5 + 2\\sqrt{3})(7 - 4\\sqrt{3})}{(7 + 4\\sqrt{3})(7 - 4\\sqrt{3})}$$ [0.5 mark]<br><br>2. Evaluate Denominator:<br>$$7^2 - (4\\sqrt{3})^2 = 49 - (16 \\times 3) = 49 - 48 = \\mathbf{1}$$ [0.5 mark]<br><br>3. Expand Numerator using FOIL:<br>$$(5)(7) + (5)(-4\\sqrt{3}) + (2\\sqrt{3})(7) + (2\\sqrt{3})(-4\\sqrt{3})$$<br>$$= 35 - 20\\sqrt{3} + 14\\sqrt{3} - (8 \\times 3)$$<br>$$= 35 - 6\\sqrt{3} - 24 = \\mathbf{11 - 6\\sqrt{3}}$$ [1.0 mark]<br><br>4. Compare with RHS: $a + b\\sqrt{3} = 11 - 6\\sqrt{3}$:<br>$$\\mathbf{a = 11}, \\quad \\mathbf{b = -6}$$ [1.0 mark]"
   },
   {
     "id": "q_ch3_07",
@@ -105,7 +111,8 @@
       "1.0 mark: Adding terms to obtain x + 1/x = 6.",
       "1.0 mark: Applying identity (x + 1/x)² - 2 = 36 - 2 = 34."
     ],
-    "examinerTip": "🚨 Masterclass Shortcut: Whenever the difference of squares of terms in x equals 1 (here 3² - (2√2)² = 9 - 8 = 1), 1/x is simply the conjugate with a minus sign!"
+    "examinerTip": "🚨 Masterclass Shortcut: Whenever the difference of squares of terms in x equals 1 (here 3² - (2√2)² = 9 - 8 = 1), 1/x is simply the conjugate with a minus sign!",
+    "answer": "<strong>(a) Value of $\\frac{1}{x}$:</strong><br>$$\\frac{1}{x} = \\frac{1}{3 + 2\\sqrt{2}} \\times \\frac{3 - 2\\sqrt{2}}{3 - 2\\sqrt{2}} = \\frac{3 - 2\\sqrt{2}}{3^2 - (2\\sqrt{2})^2} = \\frac{3 - 2\\sqrt{2}}{9 - 8} = \\mathbf{3 - 2\\sqrt{2}}$$ [1.0 mark]<br><br><strong>(b) Value of $x + \\frac{1}{x}$:</strong><br>$$x + \\frac{1}{x} = (3 + 2\\sqrt{2}) + (3 - 2\\sqrt{2}) = 3 + 3 = \\mathbf{6}$$ [1.0 mark]<br><br><strong>(c) Value of $x^2 + \\frac{1}{x^2}$:</strong><br>Square both sides of $x + \\frac{1}{x} = 6$:<br>$$\\left(x + \\frac{1}{x}\\right)^2 = 6^2 \\implies x^2 + 2(x)\\left(\\frac{1}{x}\\right) + \\frac{1}{x^2} = 36$$<br>$$x^2 + 2 + \\frac{1}{x^2} = 36 \\implies x^2 + \\frac{1}{x^2} = 36 - 2 = \\mathbf{34}$$ [1.0 mark]"
   },
   {
     "id": "q_ch3_08",
@@ -121,7 +128,8 @@
       "1.0 mark: Introducing parameter k and expressing 2, 3, 12 as powers of k.",
       "1.0 mark: Using 12 = 2² · 3 to equate exponents and prove 1/z = 2/x + 1/y."
     ],
-    "examinerTip": "🚨 CBSE Exemplar Proof: This is an iconic 5-mark question frequently tested in school final exams and olympiads."
+    "examinerTip": "🚨 CBSE Exemplar Proof: This is an iconic 5-mark question frequently tested in school final exams and olympiads.",
+    "answer": "<strong>Part (a) Solution:</strong><br>1. In the first fraction, write $x^{b-a} = \\frac{x^b}{x^a}$ and $x^{c-a} = \\frac{x^c}{x^a}$:<br>$$\\frac{1}{1 + \\frac{x^b}{x^a} + \\frac{x^c}{x^a}} = \\frac{1}{\\frac{x^a + x^b + x^c}{x^a}} = \\frac{x^a}{x^a + x^b + x^c}$$ [1.0 mark]<br><br>2. Similarly, for the second and third fractions:<br>$$\\text{Fraction 2} = \\frac{x^b}{x^a + x^b + x^c}, \\quad \\text{Fraction 3} = \\frac{x^c}{x^a + x^b + x^c}$$ [1.0 mark]<br><br>3. Add all three fractions having the identical common denominator $(x^a + x^b + x^c)$:<br>$$\\text{LHS} = \\frac{x^a + x^b + x^c}{x^a + x^b + x^c} = \\mathbf{1 = \\text{RHS}} \\quad \\text{(Hence Proved!)}$$ [1.0 mark]<br><br>---<br><br><strong>Part (b) Solution:</strong><br>1. Let $2^x = 3^y = 12^z = k$ (where $k > 0$).<br>Then $2 = k^{1/x}$, $3 = k^{1/y}$, and $12 = k^{1/z}$. [0.5 mark]<br><br>2. Express $12$ in prime factors: $12 = 2^2 \\times 3$. [0.5 mark]<br><br>3. Substitute in terms of $k$:<br>$$k^{1/z} = (k^{1/x})^2 \\times (k^{1/y}) = k^{2/x} \\cdot k^{1/y} = k^{\\frac{2}{x} + \\frac{1}{y}}$$ [0.5 mark]<br><br>4. Since bases are identical ($k$), equate powers:<br>$$\\mathbf{\\frac{1}{z} = \\frac{2}{x} + \\frac{1}{y}} \\quad \\text{(Hence Proved!)}$$ [0.5 mark]"
   },
   {
     "id": "q_ch3_09",
@@ -135,6 +143,7 @@
       "1.0 mark: Stating non-terminating recurring and noting denominator prime factor is 11 (not 2 or 5).",
       "2.0 marks: [Main Option] Rationalizing to (√5 + √2)/3 [1m] and evaluating to 1.217 mm [1m]. OR [Choice Option] Calculating d_C = 3 mm and stating it is rational [2m]."
     ],
-    "examinerTip": "🚨 Precision Tip: Keep decimals to 3 decimal places as given in the problem approximations."
+    "examinerTip": "🚨 Precision Tip: Keep decimals to 3 decimal places as given in the problem approximations.",
+    "answer": "<strong>(i) Converting $d_A = 0.\\overline{36}$ to Fraction:</strong><br>Let $x = 0.3636\\dots$<br>$100x = 36.3636\\dots$<br>Subtracting: $99x = 36 \\implies x = \\frac{36}{99} = \\mathbf{\\frac{4}{11}\\text{ mm}}$. [1.0 mark]<br><br><strong>(ii) Decimal Behavior Explanation:</strong><br>• It is a <strong>non-terminating recurring decimal</strong>.<br>• The prime factorization of denominator in lowest terms is $11$, which contains a prime factor other than $2$ or $5$. Hence, it cannot terminate. [1.0 mark]<br><br><strong>(iii) Primary Option: Rationalizing $d_B$:</strong><br>$$d_B = \\frac{1}{\\sqrt{5} - \\sqrt{2}} \\times \\frac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} + \\sqrt{2}} = \\frac{\\sqrt{5} + \\sqrt{2}}{(\\sqrt{5})^2 - (\\sqrt{2})^2} = \\mathbf{\\frac{\\sqrt{5} + \\sqrt{2}}{3}\\text{ mm}}$$ [1.0 mark]<br>Approximate numerical evaluation:<br>$$d_B \\approx \\frac{2.236 + 1.414}{3} = \\frac{3.650}{3} \\approx \\mathbf{1.217\\text{ mm}}$$ [1.0 mark]<br><br><strong>[OR] Internal Choice Option:</strong><br>$$d_C = (\\sqrt{5} + \\sqrt{2})(\\sqrt{5} - \\sqrt{2}) = (\\sqrt{5})^2 - (\\sqrt{2})^2 = 5 - 2 = \\mathbf{3\\text{ mm}}$$<br>• Since $3 = \\frac{3}{1}$ is an integer ratio, $d_C$ is strictly a <strong>Rational Number</strong>. [2.0 marks]"
   }
 ]

@@ -2785,7 +2785,7 @@
                 <button class="btn-rehide" onclick="hideQuestion('${qId}')">Hide solution</button>
               </div>
               <div style="line-height:1.6; font-size:0.95rem; margin-bottom:14px;">
-                ${q.answer}
+                ${q.solution || q.answer}
                 ${q.markingScheme ? `<div class="marking-scheme"><strong>📝 Step-by-Step Marking Criteria:</strong><br>${q.markingScheme}</div>` : ''}
                 ${q.examinerTip ? `<div class="callout-box warning" style="margin-top:10px;">💡 <strong>Examiner Guidance:</strong> ${q.examinerTip}</div>` : ''}
               </div>
@@ -2940,7 +2940,7 @@
                 <button class="btn-rehide" onclick="hidePaperQuestion('${qId}')">Hide solution</button>
               </div>
               <div style="line-height:1.6; font-size:0.95rem; margin-bottom:14px;">
-                ${q.answer}
+                ${q.answer || q.solution}
                 ${q.markingScheme ? `<div class="marking-scheme"><strong>📝 Step-by-Step Mark Breakdown:</strong><br>${q.markingScheme}</div>` : ''}
                 ${q.examinerTip ? `<div class="callout-box warning" style="margin-top:10px;">💡 <strong>Examiner Guidance:</strong> ${q.examinerTip}</div>` : ''}
               </div>
